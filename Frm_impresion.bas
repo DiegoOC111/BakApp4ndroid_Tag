@@ -260,7 +260,7 @@ End Sub
 Private Sub ListView1_ItemClick (Position As Int, Value As Object)
 	Dim selectedData As TableData = DataList.Get(Position)
 	
-	Dim Js As HttpJob = Bsc("Principal",selectedData.CODIGO,Me,Variables.Gl_Empresa,"CM ","PR ", stringPrecio1)
+	Dim Js As HttpJob = Bsc("Principal",selectedData.CODIGO,Me,Variables.Gl_Empresa,Variables.Gl_Sucursal,Variables.Gl_Bodega, stringPrecio1)
 	Wait For (Js) JobDone(Js As HttpJob)
 		
 	If Js.Success Then
@@ -602,7 +602,7 @@ Sub EnviarEtiqueta(DescProd As String, CodigoProd As String, PrecioProd As Strin
 		Dim ZPL As String
 		' Crear el ZPL dinámicamente con los datos proporcionados
 		If tip = "Venta" Then 
-			 ZPL = CrearZPLVenta(CodigoProd, DescProd, PrecioProd,FechaActual , "Agricola Villarica","Todo en un solo lugar" )
+			 ZPL = CrearZPLVenta(CodigoProd, DescProd, PrecioProd,FechaActual , "AGricola","Todo en un solo lugar" )
 		else if  tip = "Bodega" Then
 '			CodigoProd, DescProd, ,FechaActual , "Agricola Villarica"
 			ZPL  = CrearZPLBodega(CodigoProd,DescProd,FechaActual,"Agricola Villarica")

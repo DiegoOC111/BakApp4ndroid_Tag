@@ -85,6 +85,6 @@ ModuleClosedNodes6=4
 ModuleClosedNodes7=7
 ModuleClosedNodes8=
 ModuleClosedNodes9=
-NavigationStack=Frm_etiquetas,ParseOtherPriceJSON,129,0,Frm_etiquetas,CrearDatos,163,3,Diseñador Visual,Impresion.bal,-100,6,Frm_impresion,Txt_codigo_EnterPressed,498,1,Frm_impresion,Btn_imprimir_Click,503,0,Frm_etiquetas,Btn_Ed_Nombre_Click,375,0,Frm_etiquetas,Btn_Probar_Conexion_Click,374,0,Frm_etiquetas,LeerDatos,223,6,Frm_impresion,EnviarEtiqueta,613,0
+NavigationStack=Frm_etiquetas,Btn_Ed_Nombre_Click,375,0,Frm_etiquetas,Btn_Probar_Conexion_Click,374,0,Frm_etiquetas,LeerDatos,223,6,Frm_impresion,ParseJSON,143,0,Frm_impresion,Buscar_x_Comentario,408,0,Frm_impresion,AddLineBreak,512,0,Frm_impresion,CrearZPLBodega,586,0,Frm_impresion,ListView1_ItemClick,265,4,Frm_impresion,CrearZPLVenta,513,0,Frm_impresion,EnviarEtiqueta,600,6
 SelectedBuild=0
 VisibleModules=16,25,15,23
