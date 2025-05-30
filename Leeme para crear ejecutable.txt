@@ -1,0 +1,6 @@
+1 * Se debe dejar el modo compilación en Release
+2 * Ejecutar la aplicación
+3 * Creara un archivo .apk (Para instalar en Android)
+4 * El archivo se crea en la carpeta Objects de la raiz del sistema
+
+D:\Bakapp4Android\Android\BakApp4ndroid\Objects\Bakapp_Movil.apk

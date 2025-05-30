@@ -1,0 +1,632 @@
+﻿Build1=Default,BaKapp.Movil.Tag
+File1=Acreditacion_Login.bal
+File10=Cp_Documentos_Generados.bal
+File11=Cp_Menu_Post_Venta.bal
+File12=Cp_Post.bal
+File13=Cp_Post_01_Descuentos.bal
+File14=Cp_Post_01_DespSimple.bal
+File15=Cp_Post_01_Detalle.bal
+File16=Cp_Post_01_Encabezado.bal
+File17=Cp_Post_01_Observaciones.bal
+File18=Cp_Post_01_Producto.bal
+File19=Cp_Post_01_Totales.bal
+File2=BakApp.png
+File20=Cp_ValidarPermisoUsuario.bal
+File21=delivery.png
+File22=delivery_.png
+File23=document-delivery-receipt-ok-2.png
+File24=emoticon-sad.png
+File25=Etiqueta_bodega.png
+File26=Etiqueta_men.bal
+File27=Etiqueta_venta.png
+File28=exit.png
+File29=Impresion.bal
+File3=bakapp_db.db
+File30=item_nombre_imagen.bal
+File31=Items_Descuentos.bal
+File32=Items_Detalle.bal
+File33=Items_Documentos_Generados.bal
+File34=Items_Entidades.bal
+File35=Items_Productos.bal
+File36=Items_StockXProducto.bal
+File37=key.png
+File38=mail-back-all-arrow-right.png
+File39=Menu_Principal.bal
+File4=Buscador.bal
+File40=ok_button.png
+File41=Op_Edita_Observaciones.bal
+File42=Op_Edita_Print_Email_Etc.bal
+File43=printer.png
+File44=proforma-arrow-right.png
+File45=proforma-edit.png
+File46=proforma-find.png
+File47=proforma-ok-2.png
+File48=question.png
+File49=save.png
+File5=calc.png
+File50=secure_ok.png
+File51=security-danger.png
+File52=send-mail-back.png
+File53=send-mail-back-printer.png
+File54=St_StockXBodega.bal
+File55=symbol-cancel.png
+File56=symbol-delete.png
+File57=user.png
+File58=user_.png
+File59=view_details.png
+File6=calc_.png
+File60=view_details_.png
+File61=warning.png
+File7=comment.png
+File8=comment_.png
+File9=Conf_Local1.bal
+FileGroup1=Default Group
+FileGroup10=Default Group\Sistemas\Modulos compartidos\Documentos
+FileGroup11=Default Group\Sistemas\Bk-Post
+FileGroup12=Default Group\Sistemas\Bk-Post\Tomar pedido
+FileGroup13=Default Group\Sistemas\Bk-Post\Tomar pedido
+FileGroup14=Default Group\Sistemas\Bk-Post\Tomar pedido
+FileGroup15=Default Group\Sistemas\Bk-Post\Tomar pedido
+FileGroup16=Default Group\Sistemas\Bk-Post\Tomar pedido
+FileGroup17=Default Group\Sistemas\Bk-Post\Tomar pedido
+FileGroup18=Default Group\Sistemas\Bk-Post\Tomar pedido
+FileGroup19=Default Group\Sistemas\Bk-Post\Tomar pedido
+FileGroup2=Imagenes
+FileGroup20=Default Group\Funciones
+FileGroup21=Default Group\Sistemas\Bk-Post\Tomar pedido\Imagenes
+FileGroup22=Default Group\Sistemas\Bk-Post\Tomar pedido\Imagenes
+FileGroup23=Imagenes
+FileGroup24=Imagenes
+FileGroup25=Imagenes
+FileGroup26=Default Group\Sistemas\Etiquetas
+FileGroup27=Imagenes
+FileGroup28=Imagenes
+FileGroup29=Default Group\Sistemas\Etiquetas
+FileGroup3=Default Group\Conexiones
+FileGroup30=Default Group\Sistemas\Etiquetas
+FileGroup31=Default Group\Sistemas\Bk-Post\Tomar pedido
+FileGroup32=Default Group\Sistemas\Bk-Post\Tomar pedido
+FileGroup33=Default Group\Sistemas\Modulos compartidos\Documentos
+FileGroup34=Default Group\Sistemas\Modulos compartidos\Entidades
+FileGroup35=Default Group\Sistemas\Modulos compartidos\Productos\Buscar productos
+FileGroup36=Default Group\Sistemas\Modulos compartidos\Productos\StockXBodega
+FileGroup37=Imagenes
+FileGroup38=Imagenes
+FileGroup39=Default Group
+FileGroup4=Default Group\Sistemas\Modulos compartidos
+FileGroup40=Imagenes
+FileGroup41=Default Group\Sistemas\Bk-Post
+FileGroup42=Default Group\Sistemas\Bk-Post
+FileGroup43=Imagenes
+FileGroup44=Imagenes
+FileGroup45=Imagenes
+FileGroup46=Imagenes
+FileGroup47=Imagenes
+FileGroup48=Imagenes
+FileGroup49=Imagenes
+FileGroup5=Default Group\Sistemas\Bk-Post\Tomar pedido\Imagenes
+FileGroup50=Imagenes
+FileGroup51=Imagenes
+FileGroup52=Imagenes
+FileGroup53=Imagenes
+FileGroup54=Default Group\Sistemas\Modulos compartidos\Productos\StockXBodega
+FileGroup55=Imagenes
+FileGroup56=Imagenes
+FileGroup57=Default Group\Sistemas\Bk-Post\Tomar pedido\Imagenes
+FileGroup58=Default Group\Sistemas\Bk-Post\Tomar pedido\Imagenes
+FileGroup59=Default Group\Sistemas\Bk-Post\Tomar pedido\Imagenes
+FileGroup6=Default Group\Sistemas\Bk-Post\Tomar pedido\Imagenes
+FileGroup60=Default Group\Sistemas\Bk-Post\Tomar pedido\Imagenes
+FileGroup61=Imagenes
+FileGroup7=Default Group\Sistemas\Bk-Post\Tomar pedido\Imagenes
+FileGroup8=Default Group\Sistemas\Bk-Post\Tomar pedido\Imagenes
+FileGroup9=Default Group
+Group=Default Group
+Library1=core
+Library10=reflection
+Library11=runtimepermissions
+Library12=serial
+Library13=sql
+Library14=xcustomlistview
+Library15=xmlsax
+Library16=xui
+Library17=xui views
+Library18=network
+Library2=dateutils
+Library3=ime
+Library4=javaobject
+Library5=json
+Library6=okhttp
+Library7=okhttputils2
+Library8=phone
+Library9=randomaccessfile
+ManifestCode='This code will be applied to the manifest file during compilation.~\n~'You do not need to modify it in most cases.~\n~'See this link for for more information: https://www.b4x.com/forum/showthread.php?p=78136~\n~AddManifestText(~\n~<uses-sdk android:minSdkVersion="5" android:targetSdkVersion="30"/>~\n~<supports-screens android:largeScreens="true" ~\n~    android:normalScreens="true" ~\n~    android:smallScreens="true" ~\n~    android:anyDensity="true"/>)~\n~SetApplicationAttribute(android:icon, "@drawable/icon")~\n~SetApplicationAttribute(android:label, "$LABEL$")~\n~CreateResourceFromFile(Macro, Themes.DarkTheme)~\n~SetApplicationAttribute(android:usesCleartextTraffic, "true")~\n~'End of default text.~\n~
+Module1=Buscar_entidad
+Module10=Crear_Documento
+Module11=DBUtils
+Module12=Frm_Buscar_Documento
+Module13=Frm_Documentos_Generados
+Module14=Frm_Editar_ObsOc
+Module15=Frm_etiquetas
+Module16=Frm_impresion
+Module17=Frm_InfoStockXProd
+Module18=Frm_Menu_Post_Venta
+Module19=Frm_Menu_Principal
+Module2=Buscar_productos
+Module20=Frm_Post_01_Descuentos
+Module21=Frm_Post_01_Formulario
+Module22=Frm_Post_01_Producto
+Module23=Funciones
+Module24=Mensajes
+Module25=Producto
+Module26=TidoNudo
+Module27=Variables
+Module28=Xml2Map
+Module3=Cl_Conf_Local
+Module4=Cl_PermisoXui
+Module5=Cl_StXbodXprod
+Module6=ClFunciones
+Module7=ClFunciones2
+Module8=Conectar_Conf
+Module9=Conf_local
+NumberOfFiles=61
+NumberOfLibraries=18
+NumberOfModules=28
+Version=13.1
+@EndOfDesignText@
+#Region  Project Attributes 
+
+	#ApplicationLabel: BakApp Movil TAG
+	#VersionCode: 1
+	#VersionName: 1.0.1
+	'SupportedOrientations possible values: unspecified, landscape or portrait.
+	#SupportedOrientations: portrait 
+	#CanInstallToExternalStorage: false
+	#BridgeLogger: True
+	'#AdditionalJar: jtds-1.3.1.jar
+		
+#End Region	
+
+#Region  Activity Attributes 
+
+	#FullScreen: True
+	#IncludeTitle: False
+	
+#End Region
+
+Sub Process_Globals
+
+	'These global variables will be declared once when the application starts.
+	'These variables can be accessed from all modules.
+	' ACA SE DECLARAN LAS VARIABLES GLOBALES
+  
+End Sub
+
+
+Sub Globals
+	
+	'These global variables will be redeclared each time the activity is created.
+	'These variables can only be accessed from this module.
+	
+	Dim Consulta_Sql As String
+	
+	Private Txt_Clave As EditText
+	Private Btn_Aceptar_Login As Button
+	Private Lbl_Version As Label
+	
+	Dim TecladoSoft As IME ' biblioteca IME
+	
+	Private Lbl_Id_Dispositivo As Label
+	Private Btn_Conf_Acceso_WS As Button
+	
+	Dim xui As XUI
+	Private dialog As B4XDialog
+	
+	Private Txt_Flp_WebService As B4XFloatTextField
+	
+End Sub
+
+Sub Activity_Create(FirstTime As Boolean)
+	
+	'Do not forget to load the layout file created with the visual designer. For example:
+
+	Activity.LoadLayout("Acreditacion_Login")
+	dialog.Initialize(Activity)
+	dialog.Title = "Conexión WebService"
+
+'	Msgbox2Async( "hola", "Chao", "Ok", "", "", Null, False)
+'	Wait For Msgbox_Result (Result As Int)
+
+
+	DisableStrictMode
+	
+	Variables.Global_Version_BakApp = Application.VersionName
+
+	'Variables.Global_Ip_WebService = "192.168.0.11:8082"
+	Lbl_Version.Text = Application.LabelName & " Versión: " &  Application.VersionName
+	Txt_Clave.PasswordMode=False
+	
+	Dim DBFileName As String = "bakapp_db.db" '"BakApp_Db.db"
+	Dim DBFileDir As String
+	Dim DirectorioDef As String= DBUtils.GetDBFolder
+	
+	If File.Exists(DirectorioDef, DBFileName) = True Then
+		File.Delete(DirectorioDef, "bakapp_db.db")
+	End If
+	
+	DBFileDir = DBUtils.CopyDBFromAssets(DBFileName)
+	Variables.vSql.Initialize(DBFileDir, DBFileName, True)
+	'Variables.vSql.Initialize(DBFileDir, DBFileName, True)
+	
+'	DBFileName = "ConexionWebService.txt"
+'	
+'	If Not(File.Exists(DirectorioDef, DBFileName)) Then
+'		DBFileDir = DBUtils.CopyDBFromAssets(DBFileName)
+'	End If
+	
+	
+	
+	Variables.Global_IdDispositivo = Funciones.Fx_Traer_IdDispositivo
+	
+	TecladoSoft.ShowKeyboard(Txt_Clave)
+	Lbl_Id_Dispositivo.Text = "Id. dispositivo: " & Variables.Global_IdDispositivo
+	
+'	Dim ConfLocal As Cl_Conf_Local
+'	ConfLocal.Initialize
+'	ConfLocal.Sb_Revisar_WebService
+	'
+'	Wait For(ConfLocal.Sb_Revisar_WebService) Complete (Rs As Boolean)
+'	
+'	If Not(Rs) Then
+'		If Variables.Global_Ip_WebService = "..." Then
+'			Msgbox2Async("Falta la configuración al Web Service." , "Validación", "Ok", "", "", Null, False)
+'			Wait For Msgbox_Result (Result As Int)	
+'			Btn_Aceptar_Login.Enabled = False
+'		End If
+'	End If
+
+	Dim TargetDir As String = DBUtils.GetDBFolder
+
+	If Not(File.Exists(TargetDir, "ConexionWebService.txt")) Then
+		Msgbox2Async("Falta la configuración al Web Service." , "Validación", "Ok", "", "", Null, False)
+		Wait For Msgbox_Result (Result As Int)
+		Log("No existe el archivo ConexionWebService.txt")
+	Else
+		For Each line As String In File.ReadList(TargetDir, "ConexionWebService.txt")
+'		Dim s() As String = Regex.Split(":", line)
+'		Dim Name As String = s(0)
+			Variables.Global_Ip_WebService = line
+			Exit
+		Next
+		Log(Variables.Global_Ip_WebService)
+	End If
+
+'	If Variables.Global_Ip_WebService = "..." Then
+'		Msgbox2Async("Falta la configuración al Web Service." , "Validación", "Ok", "", "", Null, False)
+'		Wait For Msgbox_Result (Result As Int)
+'		Btn_Aceptar_Login.Enabled = False
+'		Txt_Clave.Enabled = False
+'	End If
+	
+			
+End Sub
+
+Sub Activity_Resume
+
+End Sub
+
+Sub Activity_Pause (UserClosed As Boolean)
+
+End Sub
+
+Sub Btn_Aceptar_Login_Click
+	
+'	Dim Conf As Cl_Conf_Local
+'	Conf.Initialize
+'	Conf.Sb_Revisar_WebService
+	
+'	Wait For(Conf.Sb_Revisar_WebService) Complete (Rs As Boolean)
+'	
+'	If Not(Rs) Then
+'		If Variables.Global_Ip_WebService = "..." Then
+'			Msgbox2Async("Falta la configuración al Web Service." , "Validación", "Ok", "", "", Null, False)
+'			Wait For Msgbox_Result (Result As Int)
+'			Btn_Aceptar_Login.Enabled = False
+'			Txt_Clave.Enabled = False
+'		End If
+'	End If
+	
+
+	Dim bmp1 As Bitmap
+
+	Btn_Aceptar_Login.Enabled = False
+	Txt_Clave.Enabled = False
+	Btn_Conf_Acceso_WS.Enabled = False
+	
+	Dim Conf As Conectar_Conf
+	Conf.Initialize
+	
+	ProgressDialogShow("Cargando datos de configuración...")
+'	only test/////////
+
+'	Solo para pruebas //////////
+	Wait For(Conf.Sb_Cargar_Datos_De_Configuracion()) Complete (Result As Int)
+	ProgressDialogHide
+		
+	If Result = 0 Then
+		
+		bmp1 = LoadBitmap(File.DirAssets, "symbol-cancel.png")
+		Msgbox2Async("No es posible ingresar al sistema, faltan configuraciones desde Bakapp Windows Form" , "Validación", "Ok", "", "", bmp1, False)
+		Wait For Msgbox_Result (Result As Int)
+		Btn_Aceptar_Login.Enabled = True
+		Txt_Clave.Enabled = True
+		Btn_Conf_Acceso_WS.Enabled = True
+		Return
+		
+	End If
+	
+	If Result = 2 Then
+		
+		bmp1 = LoadBitmap(File.DirAssets, "symbol-cancel.png")
+		Msgbox2Async("No es posible ingresar al sistema, faltan configuraciones en WebService" , "Validación", "Ok", "", "", bmp1, False)
+		Wait For Msgbox_Result (Result As Int)
+		Btn_Aceptar_Login.Enabled = True
+		Txt_Clave.Enabled = True
+		Btn_Conf_Acceso_WS.Enabled = True
+		Return
+		
+	End If
+
+	ProgressDialogHide
+
+	bmp1 = LoadBitmap(File.DirAssets, "ok_button.png")
+	Msgbox2Async("ACCESO AUTORIZADO" , "Ingresar al sistema", "Ok", "", "", bmp1, False)
+	Wait For Msgbox_Result (Result As Int)
+
+	StartActivity(Frm_Menu_Principal)
+	
+	Btn_Aceptar_Login.Enabled = True
+	Txt_Clave.Enabled = True
+	Btn_Conf_Acceso_WS.Enabled = True
+	
+End Sub
+
+Sub Txt_Clave_EnterPressed
+		
+	Sb_Login_Ws_Json(Txt_Clave.Text)
+		
+End Sub
+
+Sub Sb_Login_Ws_Json(vClave As String)
+		
+	Dim vMensaje As String
+	vClave = Funciones.Fx_TraeClaveRD(vClave)
+	
+	If vClave.Trim = "" Then vClave = "X"
+	
+	Consulta_Sql = "Select Top 1 * From TABFU Where PWFU = '" & vClave  & "'"
+	Log(vClave)
+	
+	Dim Js As HttpJob = Funciones.Fx_HttJob_Ws_Sb_GetDataSet_Json(Consulta_Sql,Me)
+	Wait For (Js) JobDone(Js As HttpJob)
+		
+	If Js.Success Then
+		
+		Dim vJson As String = Js.GetString
+		
+		If  vJson <> $"{"Table":[]}"$ Then
+			
+			Variables.Global_Row_Usuario_Activo = Funciones.Fx_DataRow(Js.GetString)
+			
+			Dim vNOKOFU As String = Variables.Global_Row_Usuario_Activo.Get("NOKOFU")
+		
+			vMensaje = "Bienvenido: " & vNOKOFU
+			Consulta_Sql = 	"Select Top 1 *,NOKOCARAC+'.dbo.' As Global_BaseBk From TABCARAC Where KOTABLA = 'BAKAPP' And KOCARAC = 'BASE'"
+			
+			Dim Js As HttpJob = Funciones.Fx_HttJob_Ws_Sb_GetDataSet_Json(Consulta_Sql,Me)
+			Wait For (Js) JobDone(Js As HttpJob)
+		
+			If Js.Success Then
+				
+				Dim vJson As String = Js.GetString
+				
+				If  vJson <> $"{"Table":[]}"$ Then
+				
+					Dim Fila As Map = Funciones.Fx_DataRow(Js.GetString)
+				
+					Variables.Global_BaseBk = Fila.Get("Global_BaseBk")
+					Variables.Global_Sesion_Star = True
+										
+					Consulta_Sql = "Select Top 1 * From CONFIEST" & CRLF & _
+				   				   "Inner Join " &  Variables.Global_BaseBk & "Zw_Configuracion On Empresa = EMPRESA And Modalidad = MODALIDAD" & CRLF & _
+				   				   "Where EMPRESA = '01'"
+		
+					Dim Js As HttpJob = Funciones.Fx_HttJob_Ws_Sb_GetDataSet_Json(Consulta_Sql,Me)
+					Wait For (Js) JobDone(Js As HttpJob)
+		
+					If Js.Success Then
+						
+						Dim vJson As String = Js.GetString
+						
+						If  vJson <> $"{"Table":[]}"$ Then
+							
+							Variables.Global_Row_Configuracion_General = Funciones.Fx_DataRow(Js.GetString)
+							
+							Variables.Gl_Empresa = Variables.Global_Row_Configuracion_General.Get("EMPRESA")
+							Variables.Gl_Sucursal = Variables.Global_Row_Configuracion_General.Get("ESUCURSAL")
+							Variables.Gl_Bodega = Variables.Global_Row_Configuracion_General.Get("EBODEGA")
+							Variables.Gl_Caja = Variables.Global_Row_Configuracion_General.Get("ECAJA")
+							Variables.Gl_Lista_Precios =  Funciones.Mid(Variables.Global_Row_Configuracion_General.Get("ELISTAVEN"),6,3)
+							Variables.Gl_Lista_Costos = Funciones.Mid(Variables.Global_Row_Configuracion_General.Get("ELISTACOM"),6,3)
+											
+						Else
+							Variables.Global_Row_Configuracion_General = Null
+						End If
+						
+					Else
+						Log(Js.ErrorMessage)
+					End If
+					
+					StartActivity(Frm_Menu_Principal)
+					
+				End If
+				
+			End If
+			
+		Else
+			vMensaje = "ACCESO DENEGADO"
+			Txt_Clave.Text = ""
+		End If
+		
+		Log(Variables.Global_BaseBk)
+		'ToastMessageShow(vMensaje,3)
+		'Msgbox(vMensaje, "Login")
+		
+	Else
+		Log(Js.ErrorMessage)
+	End If
+	'ProgressDialogHide
+End Sub
+
+Sub Activity_KeyPress (KeyCode As Int) As Boolean 'Devuelve True para consumir el evento.
+	If KeyCode = KeyCodes.KEYCODE_BACK Then
+		Private vSalir As Int
+		Dim bmp1 As Bitmap
+		bmp1 = LoadBitmap(File.DirAssets, "exit.png")
+		vSalir = Msgbox2("¿Estas seguro de cerrar la aplicación?", "S A L I R", "Si", "", "No", bmp1)
+		
+'		Dim bmp1 As Bitmap
+'		bmp1 = LoadBitmap(File.DirAssets, "ok_button.png")
+'		Msgbox2Async("¿Estas seguro de cerrar la aplicación?" , "S A L I R", "Si", "", "No", bmp1, False)
+'		Wait For Msgbox_Result (vSalir As Int)
+		
+		If vSalir = DialogResponse.POSITIVE Then
+			Return False
+		Else
+			Return True
+		End If
+	End If
+	Return False
+End Sub
+
+Private Sub Btn_Conf_Acceso_WS_Click
+
+	Wait For (Sb_Clave_ConfLocal) Complete (RsConf As Boolean)
+	
+	If Not(RsConf) Then
+		Return
+	End If
+
+	Dim Old_Global_Ip_WebService As String = Variables.Global_Ip_WebService
+'
+	Dim p As B4XView = xui.CreatePanel("")
+	p.SetLayoutAnimated(0, 0, 20dip, 300dip, 80dip)
+	p.LoadLayout("Conf_Local1")
+	
+	Txt_Flp_WebService.Text = Variables.Global_Ip_WebService
+	
+	dialog.PutAtTop = True 'put the dialog at the top of the screen
+	Wait For (dialog.ShowCustom(p, "OK", "", "CANCEL")) Complete (Result As Int)
+	If Result = xui.DialogResponse_Positive Then
+		
+		Variables.Global_Ip_WebService = Txt_Flp_WebService.Text.Trim
+		
+		Consulta_Sql = "Select Top 1 EMPRESA From CONFIES"
+		ProgressDialogShow("Probando conexión")
+		Dim Js As HttpJob = Funciones.Fx_HttJob_Ws_Sb_GetDataSet_Json(Consulta_Sql,Me)
+		Wait For (Js) JobDone(Js As HttpJob)
+		
+		If Js.Success Then
+	
+			Dim vJson As String = Js.GetString
+			If  vJson <> $"{"Table":[]}"$ Then
+				ProgressDialogHide
+				
+				Dim bmp1 As Bitmap = LoadBitmap(File.DirAssets, "ok_button.png")
+				
+				Msgbox2Async("Conexion existosa" , "Conexión WebService", "Ok", "", "",bmp1, False)
+				Wait For Msgbox_Result (Result As Int)
+		
+				Dim TargetDir As String = DBUtils.GetDBFolder
+				File.Delete(TargetDir, "ConexionWebService.txt")
+				File.WriteString(TargetDir,"ConexionWebService.txt",Variables.Global_Ip_WebService)
+		
+				'DBUtils.UpdateRecord(Variables.vSql,"Conf_Local","Ip_Webservice",Variables.Global_Ip_WebService,CreateMap("IdDispositivo": Variables.Global_IdDispositivo ))
+				'DBUtils.UpdateRecord(Variables.vSql,"Conf_Local","Ip_Webservice",Variables.Global_Ip_WebService,CreateMap("IdDispositivo": Variables.Global_IdDispositivo ))
+					
+				'Activity.Finish
+			
+			End If
+		Else
+			ProgressDialogHide
+			Msgbox2Async("No se pudo establecer la conexion con el Web Service" , "Conexión WebService", "Ok", "", "", Null, False)
+			Variables.Global_Ip_WebService = Old_Global_Ip_WebService
+		End If
+		
+	End If
+	
+	'StartActivity(Conf_local)
+	
+End Sub
+
+
+Sub DisableStrictMode
+	Dim jo As JavaObject
+	jo.InitializeStatic("android.os.Build.VERSION")
+	If jo.GetField("SDK_INT") > 9 Then
+		Dim policy As JavaObject
+		policy = policy.InitializeNewInstance("android.os.StrictMode.ThreadPolicy.Builder", Null)
+		policy = policy.RunMethodJO("permitAll", Null).RunMethodJO("build", Null)
+		Dim sm As JavaObject
+		sm.InitializeStatic("android.os.StrictMode").RunMethod("setThreadPolicy", Array(policy))
+	End If
+End Sub
+
+
+Private Sub Lbl_Id_Dispositivo_LongClick	
+	xui.MsgboxAsync(Lbl_Id_Dispositivo.Text, "Bakapp información")
+End Sub
+
+Sub Sb_Clave_ConfLocal() As ResumableSub
+	
+	Private InputTemplate As B4XInputTemplate
+	Private Base As B4XView
+	Private dialog As B4XDialog
+	Dim Clave_Aceptada As Boolean
+	Dim Msg As String
+	Dim bmp1 As Bitmap
+	
+	InputTemplate.Initialize
+	
+	Base = Activity
+	dialog.Initialize (Base)
+	
+	bmp1 = LoadBitmap(File.DirAssets, "key.png")
+	Msg = "Para ingresar a la configuración debera ingresar una clave de validación"
+	Msgbox2Async(Msg , "Configuración local", "Ok", "Cancelar", "", bmp1, False)
+	Wait For Msgbox_Result (Result As Int)
+	
+	If Result <> xui.DialogResponse_Positive Then
+		Return False
+	End If
+				
+	InputTemplate.lblTitle.Text = "Ingrese Clave de Conf.Local"
+	InputTemplate.Text = ""
+	InputTemplate.ConfigureForNumbers(False,False)
+				
+	Wait For (dialog.ShowTemplate(InputTemplate, "OK", "", "CANCEL")) Complete (RsClave As Int)
+	If RsClave = xui.DialogResponse_Positive Then
+		If	InputTemplate.Text = "971364" Then
+			bmp1 = LoadBitmap(File.DirAssets, "ok_button.png")
+			Clave_Aceptada = True
+		Else
+			bmp1 = LoadBitmap(File.DirAssets, "symbol-cancel.png")
+			Msg = "Clave incorrecta"
+			Msgbox2Async(Msg , "Configuración local", "Ok", "", "", bmp1, False)
+			Clave_Aceptada = False
+		End If
+	End If
+	
+	Return Clave_Aceptada
+	
+End Sub
