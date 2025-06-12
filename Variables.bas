@@ -35,7 +35,7 @@ Sub Process_Globals
 	Public Gl_Lista_Precios As String
 	Public Gl_Lista_Costos As String
 	Public Gl_Fecha_Servidor As String
-	
+	Public GL_NombreEmpresa as String
 	Public Global_Listas_Precios_Usuario As List
 	Public Global_Row_Entidad_X_Defecto As Map
 	

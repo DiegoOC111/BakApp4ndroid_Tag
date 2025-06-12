@@ -15,6 +15,7 @@ public b4a.example.dateutils _dateutils = null;
 public BaKapp.Movil.Tag.main _main = null;
 public BaKapp.Movil.Tag.frm_impresion _frm_impresion = null;
 public BaKapp.Movil.Tag.frm_etiquetas _frm_etiquetas = null;
+public BaKapp.Movil.Tag.variables _variables = null;
 public BaKapp.Movil.Tag.buscar_entidad _buscar_entidad = null;
 public BaKapp.Movil.Tag.buscar_productos _buscar_productos = null;
 public BaKapp.Movil.Tag.conf_local _conf_local = null;
@@ -28,7 +29,6 @@ public BaKapp.Movil.Tag.frm_menu_principal _frm_menu_principal = null;
 public BaKapp.Movil.Tag.frm_post_01_descuentos _frm_post_01_descuentos = null;
 public BaKapp.Movil.Tag.frm_post_01_formulario _frm_post_01_formulario = null;
 public BaKapp.Movil.Tag.frm_post_01_producto _frm_post_01_producto = null;
-public BaKapp.Movil.Tag.variables _variables = null;
 public BaKapp.Movil.Tag.httputils2service _httputils2service = null;
 public BaKapp.Movil.Tag.xuiviewsutils _xuiviewsutils = null;
 public static boolean  _cbool(anywheresoftware.b4a.BA _ba,double _inint) throws Exception{
@@ -748,12 +748,12 @@ _matchemail = anywheresoftware.b4a.keywords.Common.Regex.Matcher("^(?i)[a-z0-9!#
  //BA.debugLineNum = 931;BA.debugLine="If MatchEmail.Find = True Then";
 if (_matchemail.Find()==anywheresoftware.b4a.keywords.Common.True) { 
  //BA.debugLineNum = 932;BA.debugLine="Log(MatchEmail.Match)";
-anywheresoftware.b4a.keywords.Common.LogImpl("37143427",_matchemail.getMatch(),0);
+anywheresoftware.b4a.keywords.Common.LogImpl("724969219",_matchemail.getMatch(),0);
  //BA.debugLineNum = 933;BA.debugLine="Return True";
 if (true) return anywheresoftware.b4a.keywords.Common.True;
  }else {
  //BA.debugLineNum = 935;BA.debugLine="Log(\"Oops, Por favor vuelve a comprobar tu direc";
-anywheresoftware.b4a.keywords.Common.LogImpl("37143430","Oops, Por favor vuelve a comprobar tu dirección de email",0);
+anywheresoftware.b4a.keywords.Common.LogImpl("724969222","Oops, Por favor vuelve a comprobar tu dirección de email",0);
  //BA.debugLineNum = 936;BA.debugLine="Return False";
 if (true) return anywheresoftware.b4a.keywords.Common.False;
  };
