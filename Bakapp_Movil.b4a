@@ -178,7 +178,7 @@ Version=13.1
 
 	#ApplicationLabel: BakApp Movil TAG
 	#VersionCode: 1
-	#VersionName: 1.0.1
+	#VersionName: 1.0.2
 	'SupportedOrientations possible values: unspecified, landscape or portrait.
 	#SupportedOrientations: portrait 
 	#CanInstallToExternalStorage: false
