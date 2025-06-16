@@ -45,7 +45,7 @@ public b4a.example.dateutils _dateutils = null;
 public BaKapp.Movil.Tag.main _main = null;
 public BaKapp.Movil.Tag.frm_impresion _frm_impresion = null;
 public BaKapp.Movil.Tag.frm_etiquetas _frm_etiquetas = null;
-public BaKapp.Movil.Tag.funciones _funciones = null;
+public BaKapp.Movil.Tag.variables _variables = null;
 public BaKapp.Movil.Tag.buscar_entidad _buscar_entidad = null;
 public BaKapp.Movil.Tag.buscar_productos _buscar_productos = null;
 public BaKapp.Movil.Tag.conf_local _conf_local = null;
@@ -59,7 +59,7 @@ public BaKapp.Movil.Tag.frm_menu_principal _frm_menu_principal = null;
 public BaKapp.Movil.Tag.frm_post_01_descuentos _frm_post_01_descuentos = null;
 public BaKapp.Movil.Tag.frm_post_01_formulario _frm_post_01_formulario = null;
 public BaKapp.Movil.Tag.frm_post_01_producto _frm_post_01_producto = null;
-public BaKapp.Movil.Tag.variables _variables = null;
+public BaKapp.Movil.Tag.funciones _funciones = null;
 public BaKapp.Movil.Tag.httputils2service _httputils2service = null;
 public BaKapp.Movil.Tag.xuiviewsutils _xuiviewsutils = null;
 public String  _class_globals() throws Exception{
@@ -768,7 +768,7 @@ case 34:
 //C
 this.state = 35;
  //BA.debugLineNum = 1277;BA.debugLine="Log(Codigo & \"-\" & Descripcion)";
-parent.__c.LogImpl("312517523",_codigo+"-"+_descripcion,0);
+parent.__c.LogImpl("210289299",_codigo+"-"+_descripcion,0);
  if (true) break;
 
 case 35:
@@ -915,7 +915,7 @@ this.state = 47;
  //BA.debugLineNum = 1339;BA.debugLine="DBUtils.UpdateRecord2(Variables.vSql,\"Detall";
 parent._dbutils._updaterecord2 /*String*/ (parent.getActivityBA(),parent._variables._vsql /*anywheresoftware.b4a.sql.SQL*/ ,"Detalle_Doc",_new_row,_fila_id);
  //BA.debugLineNum = 1341;BA.debugLine="Log(Codigo & \"-\" & Descripcion)";
-parent.__c.LogImpl("312517587",_codigo+"-"+_descripcion,0);
+parent.__c.LogImpl("210289363",_codigo+"-"+_descripcion,0);
  if (true) break;
 
 case 47:
@@ -1208,7 +1208,7 @@ case 4:
 this.state = 5;
 ;
  //BA.debugLineNum = 88;BA.debugLine="Log(\"Documento cargado... Id_DocEnc = \" & Id_DocE";
-parent.__c.LogImpl("312255286","Documento cargado... Id_DocEnc = "+BA.NumberToString(parent._id_docenc),0);
+parent.__c.LogImpl("210027062","Documento cargado... Id_DocEnc = "+BA.NumberToString(parent._id_docenc),0);
  //BA.debugLineNum = 91;BA.debugLine="Dim FechaEmision As Long = DateTime.Now";
 _fechaemision = parent.__c.DateTime.getNow();
  //BA.debugLineNum = 92;BA.debugLine="Dim Fecha_1er_Vencimiento As Long = FechaEmision";
@@ -2347,7 +2347,7 @@ case 9:
 //C
 this.state = 10;
  //BA.debugLineNum = 1502;BA.debugLine="Log(Js.ErrorMessage)";
-parent.__c.LogImpl("312714025",_js._errormessage /*String*/ ,0);
+parent.__c.LogImpl("210485801",_js._errormessage /*String*/ ,0);
  //BA.debugLineNum = 1503;BA.debugLine="ToastMessageShow(\"CONCEPTO NO ENCONTRADO\", False";
 parent.__c.ToastMessageShow(BA.ObjectToCharSequence("CONCEPTO NO ENCONTRADO"),parent.__c.False);
  if (true) break;
@@ -2552,7 +2552,7 @@ case 9:
 //C
 this.state = 10;
  //BA.debugLineNum = 1753;BA.debugLine="Log(Js.ErrorMessage)";
-parent.__c.LogImpl("313041687",_js._errormessage /*String*/ ,0);
+parent.__c.LogImpl("210813463",_js._errormessage /*String*/ ,0);
  if (true) break;
 
 case 10:
@@ -2659,7 +2659,7 @@ case 9:
 //C
 this.state = 10;
  //BA.debugLineNum = 1693;BA.debugLine="Log(Js.ErrorMessage)";
-parent.__c.LogImpl("312910615",_js._errormessage /*String*/ ,0);
+parent.__c.LogImpl("210682391",_js._errormessage /*String*/ ,0);
  if (true) break;
 
 case 10:
@@ -2770,7 +2770,7 @@ case 9:
 //C
 this.state = 10;
  //BA.debugLineNum = 1123;BA.debugLine="Log(Js.ErrorMessage)";
-parent.__c.LogImpl("312451863",_js._errormessage /*String*/ ,0);
+parent.__c.LogImpl("210223639",_js._errormessage /*String*/ ,0);
  if (true) break;
 
 case 10:
@@ -2877,7 +2877,7 @@ case 9:
 //C
 this.state = 10;
  //BA.debugLineNum = 1723;BA.debugLine="Log(Js.ErrorMessage)";
-parent.__c.LogImpl("312976151",_js._errormessage /*String*/ ,0);
+parent.__c.LogImpl("210747927",_js._errormessage /*String*/ ,0);
  if (true) break;
 
 case 10:

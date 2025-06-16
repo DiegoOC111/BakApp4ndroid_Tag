@@ -14,12 +14,13 @@ Sub Process_Globals
 	'These variables can be accessed from all modules.
 	Private Serial1 As Serial
 	Private ConnectedPrinter As Socket
-	Private PrinterPort As Int = 9100  ' Puerto estándar para impresión Zebra
+	 ' Puerto estándar para impresión Zebra
 	Private AStreams As AsyncStreams
 	Dim stringPrecio As String
 End Sub
 
 Sub Globals
+	Dim Etiquetas As List
 	
 	'These global variables will be redeclared each time the activity is created.
 	'These variables can only be accessed from this module.
@@ -57,6 +58,9 @@ Sub Globals
 	
 	Private Btn_Volver As Button
 	Private Lbl_precio_act As Label
+	Private Lbl_puerto As Label
+	Private Btn_editarPuerto As Button
+	
 End Sub
 
 Sub Activity_Create(FirstTime As Boolean)
@@ -107,9 +111,13 @@ Sub Activity_Create(FirstTime As Boolean)
 	stringPrecio = aux.KOLT
 	LeerDatos
 	CargarLista
-
+	
+	
+	
 
 End Sub
+
+
 Sub ParseOtherPriceJSON(json As String) As List
 	Dim parser As JSONParser
 	parser.Initialize(json)
@@ -174,6 +182,9 @@ Sub CrearDatos()
 	datos.Put("Ip",Lbl_IP.Text )
 	datos.Put("Nombre", Lbl_Nombre.Text )
 	datos.Put("Seleccionado", SelectedPrice)
+	Dim ipText As String = Lbl_puerto.Text
+	Dim IpINT As Int =  ipText
+	datos.Put("Puerto", IpINT)
 	Dim aux As OtherPriceData = DataPrice.Get(SelectedPrice)
 	stringPrecio = aux.KOLT
 	Dim stringNoPrecio As String  = aux.NOKOLT
@@ -186,26 +197,99 @@ Sub CrearDatos()
 	
 End Sub
 Sub CargarLista
+	ProgressDialogShow2("Cargando etiquetas",False)
 	clv.Clear
 	Dim ListaPersonas As List
 	ListaPersonas.Initialize
 
-	Dim Etiqueta As Map
-	Etiqueta.Initialize
-	Etiqueta.Put("tipo", "Venta")
-	Etiqueta.Put("imagen", "Etiqueta_venta.png")
+	
+	
+	
+	
+	Dim Js As HttpJob = Sb_TraerEtiquetas(Me)
+	Wait For (Js) JobDone(Js As HttpJob)
+		
+	If Js.Success Then
+		Dim vJson As String = Js.GetString
+			
+		If  vJson = $"{"Table":[]}"$ Then
+			Dim bmp1 As Bitmap
+			ProgressDialogHide
+			
+			bmp1 = LoadBitmap(File.DirAssets, "emoticon-sad.png")
+			Msgbox2Async("No hay etiquetas de tipo '(Movil)' en la base de datos.", "Error", "OK", "", "", bmp1, False)
+			Wait For Msgbox_Result (Result5 As Int)
+			
+			If(Result5 = DialogResponse.POSITIVE)Then
+			
+				Btn_Etq1.Enabled = False
+			
+			End If
+			Return
+		
+		End If
+		Etiquetas = ParseEtiquetas(vJson)
+		
+		For Each ET As Etiqueta In Etiquetas
+			Dim job As HttpJob
+			job.Initialize("", Me)
+			
+			
+			Dim Ancho, Alto As Float
 
-	Dim Etiqueta2 As Map
-	Etiqueta2.Initialize
-	Etiqueta2.Put("tipo", "Bodega")
-	Etiqueta2.Put("imagen", "Etiqueta_bodega.png")
+			Dim m As Matcher = Regex.Matcher("(\d+)[xX](\d+)", ET.NombreEtiqueta)
+			If m.Find Then
+				Ancho = m.Group(1)
+				Alto = m.Group(2)
+				Ancho = Ancho / 2.54
+				Alto = Alto / 2.54
+				Ancho = NumberFormat2(Ancho, 1, 2, 2, False)
+				Alto = NumberFormat2(Alto, 1, 2, 2, False)
+				Log("Ancho: " & Ancho)
+				Log("Alto: " & Alto)
+				job.PostString($"https://api.labelary.com/v1/printers/8dpmm/labels/${Alto}x${Ancho}/0/"$, ET.FUNCION)
+			Else
+				job.PostString($"https://api.labelary.com/v1/printers/8dpmm/labels/2x5/0/"$, ET.FUNCION)
+			End If
+			
+			
+			job.GetRequest.SetHeader("Accept", "image/png")
 
-	ListaPersonas.Add(Etiqueta)
-	ListaPersonas.Add(Etiqueta2)
+			Wait For (job) JobDone(j As HttpJob)
+			If j.Success Then
+				Dim bmp As Bitmap = j.GetBitmap
+				Dim Etiqueta As Map
+				Etiqueta.Initialize
+				Etiqueta.Put("tipo", ET.NombreEtiqueta)
+				Etiqueta.Put("imagen", bmp)
+
+	
+				ListaPersonas.Add(Etiqueta)
+
+			Else
+				Log("Error: " & j.ErrorMessage)
+				ToastMessageShow("No se pudo generar la etiqueta", True)
+			End If
+			j.Release
+		Next
+		
+	Else
+		
+		bmp1 = LoadBitmap(File.DirAssets, "emoticon-sad.png")
+		Msgbox2Async("Error al traer las etiquetas.", "Error", "OK", "", "", bmp1, False)
+		Wait For Msgbox_Result (Result5 As Int)
+		If(Result5 = DialogResponse.POSITIVE)Then 
+			ProgressDialogHide
+			
+			Btn_Etq1.Enabled = False
+			
+		End If
+		Return
+	End If
 
 	For Each Etiqueta As Map In ListaPersonas
 		Dim p As Panel = xui.CreatePanel("")
-		p.SetLayoutAnimated(0, 0, 0, clv.AsView.Width, 150dip)
+		p.SetLayoutAnimated(0, 0, 0, clv.AsView.Width, 250dip)
 		p.LoadLayout("item_nombre_imagen")
 
 		' Asignamos los controles desde el panel
@@ -213,10 +297,56 @@ Sub CargarLista
 		Dim img As ImageView = p.GetView(1) ' segundo control
 		
 		lbl.Text = Etiqueta.Get("tipo")
-		img.Bitmap = LoadBitmap(File.DirAssets, Etiqueta.Get("imagen"))
+		img.Bitmap = Etiqueta.Get("imagen")
 
 		clv.Add(p, "")
+		
 	Next
+	ProgressDialogHide
+End Sub
+
+
+Private Sub Sb_TraerEtiquetas(Me_ As Object) As HttpJob
+	
+	Dim vXml As String = $"<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <Sb_TraerEtiquetas xmlns="http://BakApp" />
+  </soap:Body>
+</soap:Envelope>
+"$
+
+	Dim PostString As String ="http://" & Variables.Global_Ip_WebService & "/Ws_BakApp.asmx"
+	Dim Js As HttpJob
+	
+	Js.Initialize("",Me_)'
+	Js.PostString(PostString,vXml)
+	Js.GetRequest.SetContentType("text/xml; charset=utf-8")
+	Js.GetRequest.SetHeader("SOAPAction",$""http://BakApp/Sb_TraerEtiquetas""$)
+	Return Js
+	
+End Sub
+	
+Sub ParseEtiquetas(Json As String ) As List
+	Dim parser As JSONParser
+	parser.Initialize(Json)
+	Dim root As Map = parser.NextObject
+	Dim tableList As List = root.Get("Table")
+    
+	Dim result As List
+	result.Initialize
+
+	For Each entry As Map In tableList
+		Dim data As Etiqueta
+		data.Initialize
+		data.NombreEtiqueta = entry.Get("NombreEtiqueta")
+		data.FUNCION = entry.Get("FUNCION")
+		
+    
+		result.Add(data)
+	Next
+
+	Return result
 End Sub
 Sub LeerDatos()
 	If File.Exists(File.DirInternal, "impresora.map") Then
@@ -227,6 +357,7 @@ Sub LeerDatos()
 		Dim aux As OtherPriceData = DataPrice.Get(SelectedPrice)
 		SelectedPrice = datos.Get("Seleccionado")
 		stringPrecio = aux.KOLT
+		Lbl_puerto.Text = datos.Get("Puerto")
 		Dim bmp1 As Bitmap
 		bmp1 = LoadBitmap(File.DirAssets, "printer.png")
 		Msgbox2Async("Se encontro la configuración de impresora", "Impresora encontrada", "Ok", "", "", bmp1, False)
@@ -421,11 +552,19 @@ Private Sub Btn_Guardar_Click
 		Msgbox2Async("¿Desea guardar la configuración actual?" , "Configuración local", "Si", "No", "", bmp1, False)
 		Wait For Msgbox_Result (Result As Int)
 		If Result = xui.DialogResponse_Positive Then
+			If Lbl_puerto.Text <> "---" Then 
+				
 			If Lbl_IP.Text <> "---" Then
 				If Lbl_Nombre.Text <> "---" Then
+						
 					CrearDatos
 					Btn_Etq1.Enabled = True
 					Lbl_Imprimir.Visible = False
+						Dim bmp1 As Bitmap
+						bmp1 = LoadBitmap(File.DirAssets, "printer.png")
+						Msgbox2Async("Datos guardados correctamente" , "Configuración Impresora", "Continuar", "", "", bmp1, False)
+						Wait For Msgbox_Result (Result As Int)
+						Btn_Cerrar_Click
 				Else
 					Dim bmp1 As Bitmap
 					bmp1 = LoadBitmap(File.DirAssets, "security-danger.png")
@@ -440,6 +579,13 @@ Private Sub Btn_Guardar_Click
 				Wait For Msgbox_Result (Result As Int)
 				Return
 			End If
+			Else 
+				Dim bmp1 As Bitmap
+				bmp1 = LoadBitmap(File.DirAssets, "security-danger.png")
+				Msgbox2Async("No puede quedar un parametro en blanco, Asigne un puerto" , "Configuración Impresora ", "Continuar", "", "", bmp1, False)
+				Wait For Msgbox_Result (Result As Int)
+				Return
+		End If
 		
 			
 		End If
@@ -471,5 +617,41 @@ End Sub
 
 Private Sub Btn_Volver_Click
 	Activity.Finish
+	
+End Sub
+
+Private Sub Btn_editarPuerto_Click
+	Private InputTemplate As B4XInputTemplate
+	Private Base As B4XView
+	Private dialog As B4XDialog
+
+	InputTemplate.Initialize
+	Base = Activity
+	dialog.Initialize(Base)
+
+	InputTemplate.lblTitle.Text = "Ingrese el puerto"
+	If (Lbl_puerto.Text <> Null) Then 
+		InputTemplate.Text = Lbl_puerto.Text
+		Else
+		InputTemplate.Text = ""
+			
+	End If
+	
+	InputTemplate.ConfigureForNumbers(False,False)
+	
+	Wait For (dialog.ShowTemplate(InputTemplate, "Guardar", "Por defecto", "Cancel")) Complete (Res As Int)
+	If (Res = DialogResponse.CANCEL) Then
+		Return
+	End If
+	If(Res = DialogResponse.NEGATIVE) Then 
+		Changes = True
+		Lbl_puerto.Text = 9100
+	End If
+	If(Res = DialogResponse.POSITIVE) Then
+		Changes = True
+		Lbl_puerto.Text = InputTemplate.Text
+	End If
+	
+	
 	
 End Sub

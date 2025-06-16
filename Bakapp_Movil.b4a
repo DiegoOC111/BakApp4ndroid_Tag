@@ -467,6 +467,7 @@ Sub Sb_Login_Ws_Json(vClave As String)
 						Log(Js.ErrorMessage)
 					End If
 					
+					
 					StartActivity(Frm_Menu_Principal)
 					
 				End If
@@ -487,7 +488,6 @@ Sub Sb_Login_Ws_Json(vClave As String)
 	End If
 	'ProgressDialogHide
 End Sub
-
 Sub Activity_KeyPress (KeyCode As Int) As Boolean 'Devuelve True para consumir el evento.
 	If KeyCode = KeyCodes.KEYCODE_BACK Then
 		Private vSalir As Int

@@ -362,7 +362,7 @@ public b4a.example.dateutils _dateutils = null;
 public BaKapp.Movil.Tag.main _main = null;
 public BaKapp.Movil.Tag.frm_impresion _frm_impresion = null;
 public BaKapp.Movil.Tag.frm_etiquetas _frm_etiquetas = null;
-public BaKapp.Movil.Tag.funciones _funciones = null;
+public BaKapp.Movil.Tag.variables _variables = null;
 public BaKapp.Movil.Tag.buscar_entidad _buscar_entidad = null;
 public BaKapp.Movil.Tag.conf_local _conf_local = null;
 public BaKapp.Movil.Tag.dbutils _dbutils = null;
@@ -375,7 +375,7 @@ public BaKapp.Movil.Tag.frm_menu_principal _frm_menu_principal = null;
 public BaKapp.Movil.Tag.frm_post_01_descuentos _frm_post_01_descuentos = null;
 public BaKapp.Movil.Tag.frm_post_01_formulario _frm_post_01_formulario = null;
 public BaKapp.Movil.Tag.frm_post_01_producto _frm_post_01_producto = null;
-public BaKapp.Movil.Tag.variables _variables = null;
+public BaKapp.Movil.Tag.funciones _funciones = null;
 public BaKapp.Movil.Tag.httputils2service _httputils2service = null;
 public BaKapp.Movil.Tag.xuiviewsutils _xuiviewsutils = null;
 
@@ -553,7 +553,7 @@ this.state = 11;
  //BA.debugLineNum = 266;BA.debugLine="Dim Codigo As String = Fila.Get(\"Codigo\")";
 _codigo = BA.ObjectToString(parent._fila.Get((Object)("Codigo")));
  //BA.debugLineNum = 267;BA.debugLine="Log(Codigo)";
-anywheresoftware.b4a.keywords.Common.LogImpl("38650781",_codigo,0);
+anywheresoftware.b4a.keywords.Common.LogImpl("26422557",_codigo,0);
  //BA.debugLineNum = 268;BA.debugLine="Dim Descripcion As String = Fila.Get(\"Descripci";
 _descripcion = BA.ObjectToString(parent._fila.Get((Object)("Descripcion")));
  //BA.debugLineNum = 269;BA.debugLine="Dim StockBodega As Double  = Fila.Get(\"StockBod";
@@ -651,7 +651,7 @@ case 19:
 //C
 this.state = 20;
  //BA.debugLineNum = 321;BA.debugLine="Log(Js.ErrorMessage)";
-anywheresoftware.b4a.keywords.Common.LogImpl("38650835",_js._errormessage /*String*/ ,0);
+anywheresoftware.b4a.keywords.Common.LogImpl("26422611",_js._errormessage /*String*/ ,0);
  if (true) break;
 
 case 20:
@@ -797,7 +797,7 @@ parent._fila = (anywheresoftware.b4a.objects.collections.Map) anywheresoftware.b
  //BA.debugLineNum = 199;BA.debugLine="Dim Codigo As String = Fila.Get(\"Codigo\")";
 _codigo = BA.ObjectToString(parent._fila.Get((Object)("Codigo")));
  //BA.debugLineNum = 200;BA.debugLine="Log(Codigo)";
-anywheresoftware.b4a.keywords.Common.LogImpl("38519701",_codigo,0);
+anywheresoftware.b4a.keywords.Common.LogImpl("26291477",_codigo,0);
  //BA.debugLineNum = 201;BA.debugLine="Dim Descripcion As String = Fila.Get(\"Descripci";
 _descripcion = BA.ObjectToString(parent._fila.Get((Object)("Descripcion")));
  //BA.debugLineNum = 202;BA.debugLine="Dim StockBodega As Double  = Fila.Get(\"StockBod";
@@ -861,7 +861,7 @@ case 15:
 //C
 this.state = 16;
  //BA.debugLineNum = 229;BA.debugLine="Log(Js.ErrorMessage)";
-anywheresoftware.b4a.keywords.Common.LogImpl("38519730",_js._errormessage /*String*/ ,0);
+anywheresoftware.b4a.keywords.Common.LogImpl("26291506",_js._errormessage /*String*/ ,0);
  if (true) break;
 
 case 16:
@@ -1006,7 +1006,7 @@ case 10:
 //C
 this.state = 11;
  //BA.debugLineNum = 125;BA.debugLine="Log(vJson)";
-anywheresoftware.b4a.keywords.Common.LogImpl("38388653",_vjson,0);
+anywheresoftware.b4a.keywords.Common.LogImpl("26160429",_vjson,0);
  //BA.debugLineNum = 126;BA.debugLine="Dim parser As JSONParser";
 _parser = new anywheresoftware.b4a.objects.collections.JSONParser();
  //BA.debugLineNum = 127;BA.debugLine="parser.Initialize(vJson)";
@@ -1084,7 +1084,7 @@ case 14:
 this.state = 17;
 ;
  //BA.debugLineNum = 160;BA.debugLine="Log(CODIGO & \" - \" & DESCRIPCION)";
-anywheresoftware.b4a.keywords.Common.LogImpl("38388688",_codigo+" - "+_descripcion,0);
+anywheresoftware.b4a.keywords.Common.LogImpl("26160464",_codigo+" - "+_descripcion,0);
  if (true) break;
 
 case 16:
