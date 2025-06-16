@@ -17,10 +17,11 @@ Sub Process_Globals
 	 ' Puerto estándar para impresión Zebra
 	Private AStreams As AsyncStreams
 	Dim stringPrecio As String
+	Dim Etiquetas As List
+	Dim default As String
 End Sub
 
 Sub Globals
-	Dim Etiquetas As List
 	
 	'These global variables will be redeclared each time the activity is created.
 	'These variables can only be accessed from this module.
@@ -299,7 +300,7 @@ Sub CargarLista
 		lbl.Text = Etiqueta.Get("tipo")
 		img.Bitmap = Etiqueta.Get("imagen")
 
-		clv.Add(p, "")
+		clv.Add(p, Etiqueta.Get("tipo"))
 		
 	Next
 	ProgressDialogHide
@@ -439,7 +440,7 @@ End Sub
 
 Private Sub Btn_Conf_Click
 	General.Visible= False
-	Btn_Guardar.Color = ColorDisabled
+	Btn_Guardar.Color = ColorEnabled
 	IsEnabled = False
 	Panel_Conf.Visible = True
 End Sub
@@ -509,7 +510,7 @@ Private Sub Btn_Ed_Nombre_Click
 	Lbl_Nombre.Text = InputTemplate.Text
 End Sub
 
-Private Sub Btn_Probar_Conexion_Click
+Private Sub Btn_Probar_Conexion_Click As ResumableSub
 '	-----SOlO PRUEBAS
 '	Dim bmp1 As Bitmap
 '	bmp1 = LoadBitmap(File.DirAssets, "printer.png")
@@ -530,22 +531,23 @@ Private Sub Btn_Probar_Conexion_Click
 		IsEnabled = True
 		Changes = False
 		Btn_Guardar.Color = ColorEnabled
-		Return
+		Return True
 	End If
 	Dim bmp1 As Bitmap
 	bmp1 = LoadBitmap(File.DirAssets, "security-danger.png")
 	Msgbox2Async("Conexión Fallida" , "Notificación", "Aceptar", "", "", bmp1, False)
 	Wait For Msgbox_Result (Result As Int)
+	Return True
+	
+End Sub
+Sub EsperarConfirmacion As ResumableSub
+	Wait For Btn_Probar_Conexion_Click
+	Return True
 End Sub
 
 Private Sub Btn_Guardar_Click
-	If Changes Then
-		Dim bmp1 As Bitmap
-		bmp1 = LoadBitmap(File.DirAssets, "security-danger.png")
-		Msgbox2Async("Se realizaron cambios en la configuración, debe probar conexión antes de guradar" , "Configuración Impresora ", "Continuar", "", "", bmp1, False)
-		Wait For Msgbox_Result (Result As Int)
-		Return
-	End If
+	Wait For (Btn_Probar_Conexion_Click) Complete (Result1 As Boolean)
+	
 	If IsEnabled Then
 		Dim bmp1 As Bitmap
 		bmp1 = LoadBitmap(File.DirAssets, "save.png")
@@ -654,4 +656,20 @@ Private Sub Btn_editarPuerto_Click
 	
 	
 	
+End Sub
+
+
+Private Sub clv_ItemClick (Index As Int, Value As Object)
+	Dim bmp1 As Bitmap
+	bmp1 = LoadBitmap(File.DirAssets, "question.png")
+	Msgbox2Async("Etiqueta seleccionada: "&Value , "Confirmación de etiqueta", "Seleccionar", "", "Cancelar", bmp1, False)
+	Wait For Msgbox_Result (Result5 As Int)
+			
+	If Result5 = DialogResponse.POSITIVE Then
+		default = Value
+		ToastMessageShow("La etiqueta "&default& "Designada para impresión", False)
+		Btn_Etq1_Click
+	End If
+
+	Return
 End Sub

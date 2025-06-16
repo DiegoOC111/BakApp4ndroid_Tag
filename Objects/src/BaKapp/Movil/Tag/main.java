@@ -350,6 +350,7 @@ public b4a.example.dateutils _dateutils = null;
 public BaKapp.Movil.Tag.frm_impresion _frm_impresion = null;
 public BaKapp.Movil.Tag.frm_etiquetas _frm_etiquetas = null;
 public BaKapp.Movil.Tag.variables _variables = null;
+public BaKapp.Movil.Tag.funciones _funciones = null;
 public BaKapp.Movil.Tag.buscar_entidad _buscar_entidad = null;
 public BaKapp.Movil.Tag.buscar_productos _buscar_productos = null;
 public BaKapp.Movil.Tag.conf_local _conf_local = null;
@@ -363,7 +364,6 @@ public BaKapp.Movil.Tag.frm_menu_principal _frm_menu_principal = null;
 public BaKapp.Movil.Tag.frm_post_01_descuentos _frm_post_01_descuentos = null;
 public BaKapp.Movil.Tag.frm_post_01_formulario _frm_post_01_formulario = null;
 public BaKapp.Movil.Tag.frm_post_01_producto _frm_post_01_producto = null;
-public BaKapp.Movil.Tag.funciones _funciones = null;
 public BaKapp.Movil.Tag.httputils2service _httputils2service = null;
 public BaKapp.Movil.Tag.xuiviewsutils _xuiviewsutils = null;
 
@@ -497,7 +497,7 @@ this.state = 14;
 _result = (Integer) result[0];
 ;
  //BA.debugLineNum = 117;BA.debugLine="Log(\"No existe el archivo ConexionWebService.txt";
-anywheresoftware.b4a.keywords.Common.LogImpl("2131136","No existe el archivo ConexionWebService.txt",0);
+anywheresoftware.b4a.keywords.Common.LogImpl("5131136","No existe el archivo ConexionWebService.txt",0);
  if (true) break;
 
 case 9:
@@ -545,7 +545,7 @@ case 13:
 this.state = 14;
 ;
  //BA.debugLineNum = 125;BA.debugLine="Log(Variables.Global_Ip_WebService)";
-anywheresoftware.b4a.keywords.Common.LogImpl("2131144",parent.mostCurrent._variables._global_ip_webservice /*String*/ ,0);
+anywheresoftware.b4a.keywords.Common.LogImpl("5131144",parent.mostCurrent._variables._global_ip_webservice /*String*/ ,0);
  if (true) break;
 
 case 14:
@@ -1024,6 +1024,7 @@ main._process_globals();
 frm_impresion._process_globals();
 frm_etiquetas._process_globals();
 variables._process_globals();
+funciones._process_globals();
 buscar_entidad._process_globals();
 buscar_productos._process_globals();
 conf_local._process_globals();
@@ -1037,7 +1038,6 @@ frm_menu_principal._process_globals();
 frm_post_01_descuentos._process_globals();
 frm_post_01_formulario._process_globals();
 frm_post_01_producto._process_globals();
-funciones._process_globals();
 httputils2service._process_globals();
 xuiviewsutils._process_globals();
 		
@@ -1271,7 +1271,7 @@ this.state = 7;
  //BA.debugLineNum = 231;BA.debugLine="Consulta_Sql = \"Select Top 1 * From TABFU Where P";
 parent.mostCurrent._consulta_sql = "Select Top 1 * From TABFU Where PWFU = '"+_vclave+"'";
  //BA.debugLineNum = 232;BA.debugLine="Log(vClave)";
-anywheresoftware.b4a.keywords.Common.LogImpl("2458760",_vclave,0);
+anywheresoftware.b4a.keywords.Common.LogImpl("5458760",_vclave,0);
  //BA.debugLineNum = 234;BA.debugLine="Dim Js As HttpJob = Funciones.Fx_HttJob_Ws_Sb_Get";
 _js = parent.mostCurrent._funciones._fx_httjob_ws_sb_getdataset_json /*BaKapp.Movil.Tag.httpjob*/ (mostCurrent.activityBA,parent.mostCurrent._consulta_sql,main.getObject());
  //BA.debugLineNum = 235;BA.debugLine="Wait For (Js) JobDone(Js As HttpJob)";
@@ -1447,7 +1447,7 @@ case 29:
 //C
 this.state = 30;
  //BA.debugLineNum = 291;BA.debugLine="Log(Js.ErrorMessage)";
-anywheresoftware.b4a.keywords.Common.LogImpl("2458819",_js._errormessage /*String*/ ,0);
+anywheresoftware.b4a.keywords.Common.LogImpl("5458819",_js._errormessage /*String*/ ,0);
  if (true) break;
 
 case 30:
@@ -1484,14 +1484,14 @@ case 35:
 this.state = 38;
 ;
  //BA.debugLineNum = 306;BA.debugLine="Log(Variables.Global_BaseBk)";
-anywheresoftware.b4a.keywords.Common.LogImpl("2458834",parent.mostCurrent._variables._global_basebk /*String*/ ,0);
+anywheresoftware.b4a.keywords.Common.LogImpl("5458834",parent.mostCurrent._variables._global_basebk /*String*/ ,0);
  if (true) break;
 
 case 37:
 //C
 this.state = 38;
  //BA.debugLineNum = 311;BA.debugLine="Log(Js.ErrorMessage)";
-anywheresoftware.b4a.keywords.Common.LogImpl("2458839",_js._errormessage /*String*/ ,0);
+anywheresoftware.b4a.keywords.Common.LogImpl("5458839",_js._errormessage /*String*/ ,0);
  if (true) break;
 
 case 38:
