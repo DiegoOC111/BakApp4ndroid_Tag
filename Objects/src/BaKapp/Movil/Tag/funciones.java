@@ -748,12 +748,12 @@ _matchemail = anywheresoftware.b4a.keywords.Common.Regex.Matcher("^(?i)[a-z0-9!#
  //BA.debugLineNum = 931;BA.debugLine="If MatchEmail.Find = True Then";
 if (_matchemail.Find()==anywheresoftware.b4a.keywords.Common.True) { 
  //BA.debugLineNum = 932;BA.debugLine="Log(MatchEmail.Match)";
-anywheresoftware.b4a.keywords.Common.LogImpl("224969219",_matchemail.getMatch(),0);
+anywheresoftware.b4a.keywords.Common.LogImpl("59043971",_matchemail.getMatch(),0);
  //BA.debugLineNum = 933;BA.debugLine="Return True";
 if (true) return anywheresoftware.b4a.keywords.Common.True;
  }else {
  //BA.debugLineNum = 935;BA.debugLine="Log(\"Oops, Por favor vuelve a comprobar tu direc";
-anywheresoftware.b4a.keywords.Common.LogImpl("224969222","Oops, Por favor vuelve a comprobar tu dirección de email",0);
+anywheresoftware.b4a.keywords.Common.LogImpl("59043974","Oops, Por favor vuelve a comprobar tu dirección de email",0);
  //BA.debugLineNum = 936;BA.debugLine="Return False";
 if (true) return anywheresoftware.b4a.keywords.Common.False;
  };

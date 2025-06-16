@@ -36,6 +36,7 @@ public BaKapp.Movil.Tag.main _main = null;
 public BaKapp.Movil.Tag.frm_impresion _frm_impresion = null;
 public BaKapp.Movil.Tag.frm_etiquetas _frm_etiquetas = null;
 public BaKapp.Movil.Tag.variables _variables = null;
+public BaKapp.Movil.Tag.funciones _funciones = null;
 public BaKapp.Movil.Tag.buscar_entidad _buscar_entidad = null;
 public BaKapp.Movil.Tag.buscar_productos _buscar_productos = null;
 public BaKapp.Movil.Tag.conf_local _conf_local = null;
@@ -49,7 +50,6 @@ public BaKapp.Movil.Tag.frm_menu_principal _frm_menu_principal = null;
 public BaKapp.Movil.Tag.frm_post_01_descuentos _frm_post_01_descuentos = null;
 public BaKapp.Movil.Tag.frm_post_01_formulario _frm_post_01_formulario = null;
 public BaKapp.Movil.Tag.frm_post_01_producto _frm_post_01_producto = null;
-public BaKapp.Movil.Tag.funciones _funciones = null;
 public BaKapp.Movil.Tag.httputils2service _httputils2service = null;
 public BaKapp.Movil.Tag.xuiviewsutils _xuiviewsutils = null;
 public String  _base_resize(double _width,double _height) throws Exception{
@@ -979,7 +979,7 @@ case 8:
 this.state = 9;
 this.catchState = 0;
  //BA.debugLineNum = 108;BA.debugLine="Log(LastException)";
-parent.__c.LogImpl("28192022",BA.ObjectToString(parent.__c.LastException(ba)),0);
+parent.__c.LogImpl("512320790",BA.ObjectToString(parent.__c.LastException(ba)),0);
  //BA.debugLineNum = 109;BA.debugLine="bmp1 = LoadBitmap(File.DirAssets, \"symbol-cance";
 _bmp1 = parent.__c.LoadBitmap(parent.__c.File.getDirAssets(),"symbol-cancel.png");
  //BA.debugLineNum = 110;BA.debugLine="Msgbox2Async(\"Error!\",LastException, \"Ok\", \"\",";

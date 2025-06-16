@@ -10,7 +10,14 @@ Version=13.1
 #End Region
 
 Sub Process_Globals
-	Type TableData(CODIGO As String, CODTECNICO As String, DESCRIPCION As String, MRPR As String, STFI1 As Double, RAPIDO As String, KOPRAL As String, DATOSUBIC As String)
+	Type TableData( _
+    CODIGO As String, _
+    CODTECNICO As String, _
+    DESCRIPCION As String, _
+    MRPR As String, _
+    RAPIDO As String, _
+    KOPRAL As String)
+	
 	Dim DataList As List
 	Dim DataPrice As List
 	Type OtherPriceData (TILT As String, KOLT As String, MELT As String, MOLT As String, TIMOLT As String, NOKOLT As String, FEVI As String, OPERA As String, ECUDEF01UD As String, ECUDEF02UD As String)
@@ -24,11 +31,13 @@ Sub Globals
 	'These variables can only be accessed from this module.
 	Private tip As String
 	Private Ancho As Float = 2
+	Dim IME1 As IME
 	Private Alto As Float = 1.6
 	Private Btn_Buscar As Button
 	Private Panelinfo As Panel
 	Private Btn_BuscarProd As Button
 	Private Panel_Buscador As Panel
+	Private YaBusco As Boolean = False
 	Private ListView1 As ListView
 	Private EditText1 As EditText
 	Private B4XComboBox1 As B4XComboBox
@@ -60,6 +69,7 @@ Sub Globals
 	Dim etiqueta_ZPL As String
 	Private B4XPlusMinus1 As B4XPlusMinus
 	Private Spinner_cant As Spinner
+	Private Btn_limpiar As Button
 End Sub
 
 Sub Activity_Create(FirstTime As Boolean)
@@ -69,9 +79,10 @@ Sub Activity_Create(FirstTime As Boolean)
 	DataList.Initialize
 	Dim stringList As List
 	stringList.Initialize
+	stringList.Add("Principal")
+	
 	stringList.Add("Tecnico")
 	stringList.Add("Rapido")
-	stringList.Add("Principal")
 	stringList.Add("Descripcion")
 	
 	Dim stringList2 As List
@@ -80,43 +91,57 @@ Sub Activity_Create(FirstTime As Boolean)
 	For i = 1 To 10
 		Spinner_cant.Add(i) ' B4A lo convierte automáticamente a string
 	Next
+	cantidad = 1
 	Combo_TipoBusqueda.SetItems(stringList)
 	Combo_Impresion.SetItems(stringList2)
-	selectedString = "Tecnico"
+	selectedString = "Principal"
 	LeerDatos
-	Dim Js As HttpJob = Sb_TraerEtiquetas(Me)
-	Wait For (Js) JobDone(Js As HttpJob)
-		
-	If Js.Success Then
-		Dim vJson As String = Js.GetString
-			
-		If  vJson = $"{"Table":[]}"$ Then
-			Dim bmp1 As Bitmap
-			
-			bmp1 = LoadBitmap(File.DirAssets, "emoticon-sad.png")
-			Msgbox2Async("Error al buscar las etiquetas.", "Error", "OK", "", "", bmp1, False)
-			Wait For Msgbox_Result (Result5 As Int)
-			
-			If Result5 = DialogResponse.POSITIVE Then
-	
-			End If
-
-			Return
-				
-		End If
-		Etiquetas = ParseEtiquetas(vJson)
+'	Dim Js As HttpJob = Sb_TraerEtiquetas(Me)
+'	Wait For (Js) JobDone(Js As HttpJob)
+'		
+'	If Js.Success Then
+'		Dim vJson As String = Js.GetString
+'			
+'		If  vJson = $"{"Table":[]}"$ Then
+'			Dim bmp1 As Bitmap
+'			
+'			bmp1 = LoadBitmap(File.DirAssets, "emoticon-sad.png")
+'			Msgbox2Async("Error al buscar las etiquetas.", "Error", "OK", "", "", bmp1, False)
+'			Wait For Msgbox_Result (Result5 As Int)
+'			
+'			If Result5 = DialogResponse.POSITIVE Then
+'	
+'			End If
+'
+'			Return
+'				
+'		End If
+		Etiquetas = Frm_etiquetas.Etiquetas
 		For Each ET As Etiqueta In Etiquetas
 			stringList2.Add(ET.NombreEtiqueta)
 		Next
 		
-	Else
-		bmp1 = LoadBitmap(File.DirAssets, "emoticon-sad.png")
-		Msgbox2Async("Error al traer las etiquetas.", "Error", "OK", "", "", bmp1, False)
-		Wait For Msgbox_Result (Result5 As Int)
-		Return
-	End If
+'	Else
+'		bmp1 = LoadBitmap(File.DirAssets, "emoticon-sad.png")
+'		Msgbox2Async("Error al traer las etiquetas.", "Error", "OK", "", "", bmp1, False)
+'		Wait For Msgbox_Result (Result5 As Int)
+'		Return
+'	End If
 	Combo_Impresion.SetItems(stringList2)
-	tip = Combo_Impresion.GetItem(0)
+	If (Frm_etiquetas.default <> Null) Then
+		Dim valorBuscado As String = Frm_etiquetas.default
+		
+		For i = 0 To Combo_Impresion.Size - 1
+			If Combo_Impresion.GetItem(i) = valorBuscado Then
+				Combo_Impresion.SelectedIndex = i
+				Exit
+			End If
+		Next
+		tip = Frm_etiquetas.default
+	End If
+	
+	
+	
 '	Dim Js As HttpJob = Sb_BuscarListaPrecios(Me)
 '	Wait For (Js) JobDone(Js As HttpJob)
 '		
@@ -158,6 +183,8 @@ Sub Activity_Create(FirstTime As Boolean)
 '	SelectedPrice = 0
 '	Dim aux As OtherPriceData = DataPrice.Get(SelectedPrice)
 '	stringPrecio = aux.KOLT
+	Btn_Buscar_Click
+	
 	
 End Sub
 Sub ParseEtiquetas(Json As String ) As List
@@ -198,7 +225,33 @@ Sub LeerDatos()
 	End If
 	
 End Sub
-	
+Sub Activity_KeyPress (KeyCode As Int) As Boolean
+	If KeyCode = KeyCodes.KEYCODE_BACK Then
+		' Aquí manejas el botón volver
+		IME1.HideKeyboard
+		If YaBusco = False Then 
+			Activity.Finish
+		End If
+		If Panel_Buscador.Visible = True Then 
+			Panel_Buscador.Visible = False 
+			Btn_Buscar.Visible = True
+			Panelinfo.Visible = True
+		else If PanelVista.Visible = True Then
+			PanelVista.Visible = False
+			Btn_Buscar.Visible = True
+			Panelinfo.Visible = True
+			
+		Else
+			Btn_Volver_Click
+		End If
+		
+		
+		' Devuelve True para indicar que lo manejaste tú
+		Return True
+	End If
+	' Devuelve False para que se maneje normalmente
+	Return False
+End Sub
 	
 Private Sub Sb_TraerEtiquetas(Me_ As Object) As HttpJob
 	
@@ -232,15 +285,15 @@ Sub Activity_Pause (UserClosed As Boolean)
 End Sub
 
 
-
 Sub ParseJSON(json As String)
 	Dim parser As JSONParser
 	parser.Initialize(json)
 	Dim root As Map = parser.NextObject
 	Dim tableList As List = root.Get("Table")
-    
+
 	DataList.Initialize
-    
+	ListView1.Clear
+
 	For Each entry As Map In tableList
 		Dim data As TableData
 		data.Initialize
@@ -248,17 +301,19 @@ Sub ParseJSON(json As String)
 		data.CODTECNICO = entry.Get("CODTECNICO")
 		data.DESCRIPCION = entry.Get("DESCRIPCION")
 		data.MRPR = entry.Get("MRPR")
-		data.STFI1 = entry.Get("STFI1")
 		data.RAPIDO = entry.Get("RAPIDO")
 		data.KOPRAL = entry.Get("KOPRAL")
-		data.DATOSUBIC = entry.Get("DATOSUBIC")
-        
+
 		DataList.Add(data)
+
+		
+	
 '		Dim text As String =  & " | " & 
 '		ListView1.Add
-		ListView1.AddTwoLinesAndBitmap("Codigo: "&data.CODIGO, data.DESCRIPCION, Null) 
+		ListView1.AddTwoLinesAndBitmap("Codigo: "&data.CODIGO, data.DESCRIPCION, Null)
 	Next
 End Sub
+
 Sub ParseOtherJSON(json As String)
 	Dim parser As JSONParser
 	parser.Initialize(json)
@@ -332,11 +387,16 @@ End Sub
 Private Sub Btn_Buscar_Click
 	Panel_Buscador.Visible = True
 	Btn_Buscar.Visible = False
+	Txt_codigo.Text = ""
+	ListView1.Clear
+	Txt_codigo.RequestFocus
 End Sub
 
 Private Sub Btn_BuscarProd_Click
 	Log("Preess")
 	If(Txt_codigo.Text <> "") Then
+		IME1.HideKeyboard
+		
 		wait for(Buscar_x_Comentario(selectedString,Txt_codigo.Text,Me)) complete(ac As Int)
 		Else
 			Return
@@ -374,7 +434,7 @@ Private Sub ListView1_ItemClick (Position As Int, Value As Object)
 	Panel_Buscador.Visible = False
 	Lbl_codigo.Text = ObjSelec.Principal
 	Lbl_Desc.Text = ObjSelec.Descripcion
-
+	Lbl_precio.Text = stringPrecio1
 	
 	Dim Js2 As HttpJob = Sb_ImprimirEtiquetaZPL_01(Me, ObjSelec.Principal)
 	Wait For (Js2) JobDone(Js2 As HttpJob)
@@ -387,7 +447,7 @@ Private Sub ListView1_ItemClick (Position As Int, Value As Object)
 		Dim EsCorrecto As Boolean = m.Get("EsCorrecto")
 		Dim Etiqueta As String = m.Get("Etiqueta")
 		Dim Mensaje As String = m.Get("Mensaje")
-    
+		YaBusco = True
 		If EsCorrecto Then
 			etiqueta_ZPL = Etiqueta
 		Else
@@ -440,6 +500,9 @@ Private Sub B4XComboBox1_SelectedIndexChanged (Index As Int)
 End Sub
 
 Private Sub Btn_CerrarBuscador_Click
+	If YaBusco = False Then
+		Activity.Finish
+	End If
 	Btn_Buscar.Visible= True
 	
 	Panel_Buscador.Visible = False
@@ -526,6 +589,15 @@ Private Sub Buscar_x_Comentario(Tipo As String, VDescripcion As String, Me_ As O
 						 Consul & CRLF & _
                    "Order by Mp.KOPR" & CRLF & _
                    "Option ( Fast 25 )"
+				   
+	Consulta_Sql = $"SELECT distinct TOP (25) Mp.KOPR AS CODIGO,Mp.KOPRTE As CODTECNICO, NOKOPR AS DESCRIPCION,MRPR, KOPRRA as RAPIDO,
+Isnull((Select Top 1 KOPRAL From TABCODAL Tcd Where Mp.KOPR = Tcd.KOPR),'') As KOPRAL
+From MAEPR Mp With (Nolock)
+left join TABCODAL ta on Mp.KOPR = ta.KOPR
+inner join MAEPREM Me on Me.EMPRESA = '${Empresa}' and Me.KOPR = Mp.KOPR
+
+${Consul}
+Order by Mp.KOPR"$
 				   
 				   
 	Dim Js As HttpJob = Funciones.Fx_HttJob_Ws_Sb_GetDataSet_Json(Consulta_Sql,Me)
@@ -789,9 +861,8 @@ Sub EnviarCalibrar(ZPL As String)
 			AStreams.Write(ZPL.GetBytes("UTF8"))
 			Log("Impresora Calibrada Exitosamente.")
 			ProgressDialogHide
-			bmp1 = LoadBitmap(File.DirAssets, "printer.png")
-			Msgbox2Async("Impresora Calibrada Exitosamente","Calibración exitosa", "Ok", "", "", bmp1, False)
-			Wait For Msgbox_Result (Result As Int)
+			ToastMessageShow("Calibración completa",False)
+
 		Else
 			ProgressDialogHide
 			Log("Error al conectar con la impresora.")
@@ -820,6 +891,7 @@ Sub EnviarEtiqueta(zpl As String )
 	Dim bmp1 As Bitmap
 	Try
 		Dim FechaActual As String
+		ProgressDialogShow("Imprimiendo etiquetas")
 
 
 		
@@ -840,7 +912,6 @@ Sub EnviarEtiqueta(zpl As String )
 		Wait For ConnectedPrinter_Connected (Success As Boolean)
 		If Success Then
 			Log("Conectado a la impresora.")
-			ProgressDialogShow("Mandando a impresión...")
 			
 			' Crear AsyncStreams para enviar datos
 			If AStreams.IsInitialized Then
@@ -857,8 +928,8 @@ Sub EnviarEtiqueta(zpl As String )
 			
 			ProgressDialogHide
 			bmp1 = LoadBitmap(File.DirAssets, "printer.png")
-			Msgbox2Async("Se ha impreso la etiqueta","Impresión exitosa", "Ok", "", "", bmp1, False)
-			Wait For Msgbox_Result (Result As Int)
+			ToastMessageShow("impresión exitosa",False)
+			
 		Else
 			ProgressDialogHide
 			Log("Error al conectar con la impresora.")
@@ -919,7 +990,14 @@ Private Sub Combo_TipoBusqueda_SelectedIndexChanged (Index As Int)
 End Sub
 
 Private Sub Btn_Volver_Click
-	Activity.Finish
+	Dim bmp1 As Bitmap
+	bmp1 = LoadBitmap(File.DirAssets, "question.png")
+	Msgbox2Async("Si sales, se perdera la información de la etiqueta actual" , "Advertencia", "Salir", "Cancelar", "", bmp1, False)
+	Wait For Msgbox_Result (Result As Int)
+	If(Result = DialogResponse.POSITIVE ) Then
+		Activity.Finish
+
+	End If
 	
 End Sub
 
@@ -1022,4 +1100,8 @@ End Sub
 Private Sub Spinner_cant_ItemClick (Position As Int, Value As Object)
 	Dim seleccionado As Int = Value
 	cantidad = seleccionado
+End Sub
+
+Private Sub Btn_limpiar_Click
+	Txt_codigo.Text = ""
 End Sub

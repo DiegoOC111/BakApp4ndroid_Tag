@@ -29,6 +29,7 @@ public BaKapp.Movil.Tag.main _main = null;
 public BaKapp.Movil.Tag.frm_impresion _frm_impresion = null;
 public BaKapp.Movil.Tag.frm_etiquetas _frm_etiquetas = null;
 public BaKapp.Movil.Tag.variables _variables = null;
+public BaKapp.Movil.Tag.funciones _funciones = null;
 public BaKapp.Movil.Tag.buscar_entidad _buscar_entidad = null;
 public BaKapp.Movil.Tag.buscar_productos _buscar_productos = null;
 public BaKapp.Movil.Tag.conf_local _conf_local = null;
@@ -42,7 +43,6 @@ public BaKapp.Movil.Tag.frm_menu_principal _frm_menu_principal = null;
 public BaKapp.Movil.Tag.frm_post_01_descuentos _frm_post_01_descuentos = null;
 public BaKapp.Movil.Tag.frm_post_01_formulario _frm_post_01_formulario = null;
 public BaKapp.Movil.Tag.frm_post_01_producto _frm_post_01_producto = null;
-public BaKapp.Movil.Tag.funciones _funciones = null;
 public BaKapp.Movil.Tag.httputils2service _httputils2service = null;
 public BaKapp.Movil.Tag.xuiviewsutils _xuiviewsutils = null;
 public String  _class_globals() throws Exception{
@@ -99,7 +99,7 @@ this.state = 1;
 _js = (BaKapp.Movil.Tag.httpjob) result[0];
 ;
  //BA.debugLineNum = 45;BA.debugLine="Log(\"Revisando la existencia de Tabla \" & Tabla)";
-parent.__c.LogImpl("27798794","Revisando la existencia de Tabla "+_tabla,0);
+parent.__c.LogImpl("511927562","Revisando la existencia de Tabla "+_tabla,0);
  //BA.debugLineNum = 47;BA.debugLine="If Js.Success Then";
 if (true) break;
 

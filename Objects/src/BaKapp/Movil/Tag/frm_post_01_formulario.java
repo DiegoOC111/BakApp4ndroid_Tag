@@ -426,6 +426,7 @@ public BaKapp.Movil.Tag.main _main = null;
 public BaKapp.Movil.Tag.frm_impresion _frm_impresion = null;
 public BaKapp.Movil.Tag.frm_etiquetas _frm_etiquetas = null;
 public BaKapp.Movil.Tag.variables _variables = null;
+public BaKapp.Movil.Tag.funciones _funciones = null;
 public BaKapp.Movil.Tag.buscar_entidad _buscar_entidad = null;
 public BaKapp.Movil.Tag.buscar_productos _buscar_productos = null;
 public BaKapp.Movil.Tag.conf_local _conf_local = null;
@@ -438,7 +439,6 @@ public BaKapp.Movil.Tag.frm_menu_post_venta _frm_menu_post_venta = null;
 public BaKapp.Movil.Tag.frm_menu_principal _frm_menu_principal = null;
 public BaKapp.Movil.Tag.frm_post_01_descuentos _frm_post_01_descuentos = null;
 public BaKapp.Movil.Tag.frm_post_01_producto _frm_post_01_producto = null;
-public BaKapp.Movil.Tag.funciones _funciones = null;
 public BaKapp.Movil.Tag.httputils2service _httputils2service = null;
 public BaKapp.Movil.Tag.xuiviewsutils _xuiviewsutils = null;
 
@@ -1653,7 +1653,7 @@ case 31:
 //C
 this.state = 32;
  //BA.debugLineNum = 3359;BA.debugLine="Log(Js.ErrorMessage)";
-anywheresoftware.b4a.keywords.Common.LogImpl("219529823",_js._errormessage /*String*/ ,0);
+anywheresoftware.b4a.keywords.Common.LogImpl("522741087",_js._errormessage /*String*/ ,0);
  //BA.debugLineNum = 3360;BA.debugLine="ToastMessageShow(\"CONCEPTO NO ENCONTRADO\", False";
 anywheresoftware.b4a.keywords.Common.ToastMessageShow(BA.ObjectToCharSequence("CONCEPTO NO ENCONTRADO"),anywheresoftware.b4a.keywords.Common.False);
  if (true) break;
@@ -4020,7 +4020,7 @@ _hola = "Aca";
  } 
        catch (Exception e37) {
 			processBA.setLastException(e37); //BA.debugLineNum = 3251;BA.debugLine="Log(LastException)";
-anywheresoftware.b4a.keywords.Common.LogImpl("219464242",BA.ObjectToString(anywheresoftware.b4a.keywords.Common.LastException(mostCurrent.activityBA)),0);
+anywheresoftware.b4a.keywords.Common.LogImpl("522675506",BA.ObjectToString(anywheresoftware.b4a.keywords.Common.LastException(mostCurrent.activityBA)),0);
  };
  }
 };
@@ -5386,7 +5386,7 @@ case 30:
 this.state = 31;
 this.catchState = 0;
  //BA.debugLineNum = 3451;BA.debugLine="Log(LastException)";
-anywheresoftware.b4a.keywords.Common.LogImpl("219595347",BA.ObjectToString(anywheresoftware.b4a.keywords.Common.LastException(mostCurrent.activityBA)),0);
+anywheresoftware.b4a.keywords.Common.LogImpl("522806611",BA.ObjectToString(anywheresoftware.b4a.keywords.Common.LastException(mostCurrent.activityBA)),0);
  //BA.debugLineNum = 3452;BA.debugLine="bmp1 = LoadBitmap(File.DirAssets, \"symbol-ca";
 parent.mostCurrent._bmp1 = anywheresoftware.b4a.keywords.Common.LoadBitmap(anywheresoftware.b4a.keywords.Common.File.getDirAssets(),"symbol-cancel.png");
  //BA.debugLineNum = 3453;BA.debugLine="Msgbox2Async(\"Error!\",LastException, \"Ok\", \"";
@@ -5923,7 +5923,7 @@ case 17:
 this.state = 18;
 ;
  //BA.debugLineNum = 369;BA.debugLine="Log(\"Documento cargado... Id_DocEnc = \" & Id_DocE";
-anywheresoftware.b4a.keywords.Common.LogImpl("217498181","Documento cargado... Id_DocEnc = "+BA.NumberToString(parent._id_docenc),0);
+anywheresoftware.b4a.keywords.Common.LogImpl("520709445","Documento cargado... Id_DocEnc = "+BA.NumberToString(parent._id_docenc),0);
  //BA.debugLineNum = 371;BA.debugLine="Wait For (Sb_Cargar_Entidad(Editar_Documento)) Co";
 anywheresoftware.b4a.keywords.Common.WaitFor("complete", processBA, this, _sb_cargar_entidad(parent._editar_documento));
 this.state = 37;
@@ -6076,7 +6076,7 @@ case 35:
 this.state = 36;
 this.catchState = 0;
  //BA.debugLineNum = 416;BA.debugLine="Log(LastException)";
-anywheresoftware.b4a.keywords.Common.LogImpl("217498228",BA.ObjectToString(anywheresoftware.b4a.keywords.Common.LastException(mostCurrent.activityBA)),0);
+anywheresoftware.b4a.keywords.Common.LogImpl("520709492",BA.ObjectToString(anywheresoftware.b4a.keywords.Common.LastException(mostCurrent.activityBA)),0);
  if (true) break;
 if (true) break;
 
@@ -6176,7 +6176,7 @@ parent.mostCurrent._txt_direcciondesp.setText(BA.ObjectToCharSequence(parent._fi
  //BA.debugLineNum = 465;BA.debugLine="Txt_ObservacionesDesp.Text = Fila_DespaFacil.Get(";
 parent.mostCurrent._txt_observacionesdesp.setText(BA.ObjectToCharSequence(parent._fila_despafacil.Get((Object)("ObservacionesDesp".toLowerCase()))));
  //BA.debugLineNum = 467;BA.debugLine="Log(\"Documento cargado... Id_DocEnc = \" & Id_DocE";
-anywheresoftware.b4a.keywords.Common.LogImpl("217563685","Documento cargado... Id_DocEnc = "+BA.NumberToString(parent._id_docenc),0);
+anywheresoftware.b4a.keywords.Common.LogImpl("520774949","Documento cargado... Id_DocEnc = "+BA.NumberToString(parent._id_docenc),0);
  //BA.debugLineNum = 469;BA.debugLine="Wait For (Sb_Cargar_Entidad(False)) Complete (Fin";
 anywheresoftware.b4a.keywords.Common.WaitFor("complete", processBA, this, _sb_cargar_entidad(anywheresoftware.b4a.keywords.Common.False));
 this.state = 1;
@@ -6314,7 +6314,7 @@ case 10:
 this.state = 13;
 ;
  //BA.debugLineNum = 507;BA.debugLine="Log(\"Entidad cargada \" & Koen.Trim & \" - \" & No";
-anywheresoftware.b4a.keywords.Common.LogImpl("217629208","Entidad cargada "+_koen.trim()+" - "+_nokoen,0);
+anywheresoftware.b4a.keywords.Common.LogImpl("520840472","Entidad cargada "+_koen.trim()+" - "+_nokoen,0);
  if (true) break;
 
 case 12:
@@ -6332,7 +6332,7 @@ case 15:
 //C
 this.state = 16;
  //BA.debugLineNum = 514;BA.debugLine="Log(Js.ErrorMessage)";
-anywheresoftware.b4a.keywords.Common.LogImpl("217629215",_js._errormessage /*String*/ ,0);
+anywheresoftware.b4a.keywords.Common.LogImpl("520840479",_js._errormessage /*String*/ ,0);
  if (true) break;
 
 case 16:
@@ -6779,7 +6779,7 @@ this.catchState = 0;
  //BA.debugLineNum = 2833;BA.debugLine="Para = \"\"";
 _para = "";
  //BA.debugLineNum = 2834;BA.debugLine="Log(LastException)";
-anywheresoftware.b4a.keywords.Common.LogImpl("219267724",BA.ObjectToString(anywheresoftware.b4a.keywords.Common.LastException(mostCurrent.activityBA)),0);
+anywheresoftware.b4a.keywords.Common.LogImpl("522478988",BA.ObjectToString(anywheresoftware.b4a.keywords.Common.LastException(mostCurrent.activityBA)),0);
  if (true) break;
 if (true) break;
 
@@ -7078,7 +7078,7 @@ this.state = 62;
 _resultado = (String) result[0];
 ;
  //BA.debugLineNum = 2950;BA.debugLine="Log(Resultado)";
-anywheresoftware.b4a.keywords.Common.LogImpl("219267840",_resultado,0);
+anywheresoftware.b4a.keywords.Common.LogImpl("522479104",_resultado,0);
  //BA.debugLineNum = 2951;BA.debugLine="If Resultado <> \"Ok\" Then";
 if (true) break;
 
@@ -7394,7 +7394,7 @@ _json = _jsongenerator.ToPrettyString((int) (1));
  //BA.debugLineNum = 3104;BA.debugLine="Dim Json2 As String = JSONGenerator.ToString";
 _json2 = _jsongenerator.ToString();
  //BA.debugLineNum = 3106;BA.debugLine="Log(Json2)'(JSONGenerator.ToPrettyString(2))";
-anywheresoftware.b4a.keywords.Common.LogImpl("219398713",_json2,0);
+anywheresoftware.b4a.keywords.Common.LogImpl("522609977",_json2,0);
  //BA.debugLineNum = 3108;BA.debugLine="Dim Js As HttpJob = Funciones.Fx_HttJob_Ws_Sb_Get";
 _js = parent.mostCurrent._funciones._fx_httjob_ws_sb_getdataset_sb_json_impbk /*BaKapp.Movil.Tag.httpjob*/ (mostCurrent.activityBA,frm_post_01_formulario.getObject(),_json,"Encabezado");
  //BA.debugLineNum = 3109;BA.debugLine="Wait For (Js) JobDone(Js As HttpJob)";
@@ -8124,7 +8124,7 @@ this.catchState = 0;
  //BA.debugLineNum = 2551;BA.debugLine="Para = \"\"";
 _para = "";
  //BA.debugLineNum = 2552;BA.debugLine="Log(LastException)";
-anywheresoftware.b4a.keywords.Common.LogImpl("219202206",BA.ObjectToString(anywheresoftware.b4a.keywords.Common.LastException(mostCurrent.activityBA)),0);
+anywheresoftware.b4a.keywords.Common.LogImpl("522413470",BA.ObjectToString(anywheresoftware.b4a.keywords.Common.LastException(mostCurrent.activityBA)),0);
  if (true) break;
 if (true) break;
 
@@ -8380,7 +8380,7 @@ this.state = 73;
 _resultado = (String) result[0];
 ;
  //BA.debugLineNum = 2646;BA.debugLine="Log(Resultado)";
-anywheresoftware.b4a.keywords.Common.LogImpl("219202300",_resultado,0);
+anywheresoftware.b4a.keywords.Common.LogImpl("522413564",_resultado,0);
  //BA.debugLineNum = 2647;BA.debugLine="If Resultado <> \"Ok\" Then";
 if (true) break;
 
@@ -8673,7 +8673,7 @@ case 8:
 this.state = 9;
 this.catchState = 0;
  //BA.debugLineNum = 3019;BA.debugLine="Log(LastException)";
-anywheresoftware.b4a.keywords.Common.LogImpl("219333139",BA.ObjectToString(anywheresoftware.b4a.keywords.Common.LastException(mostCurrent.activityBA)),0);
+anywheresoftware.b4a.keywords.Common.LogImpl("522544403",BA.ObjectToString(anywheresoftware.b4a.keywords.Common.LastException(mostCurrent.activityBA)),0);
  //BA.debugLineNum = 3020;BA.debugLine="bmp1 = LoadBitmap(File.DirAssets, \"symbol-cance";
 parent.mostCurrent._bmp1 = anywheresoftware.b4a.keywords.Common.LoadBitmap(anywheresoftware.b4a.keywords.Common.File.getDirAssets(),"symbol-cancel.png");
  //BA.debugLineNum = 3021;BA.debugLine="Msgbox2Async(\"Error!\",LastException, \"Ok\", \"\",";
@@ -8891,7 +8891,7 @@ mostCurrent._txt_direcciondesp.setText(BA.ObjectToCharSequence(""));
 mostCurrent._txt_observacionesdesp.setText(BA.ObjectToCharSequence(""));
  };
  //BA.debugLineNum = 1846;BA.debugLine="Log(\"Documento cargado... Id_DocEnc = \" & Id_DocE";
-anywheresoftware.b4a.keywords.Common.LogImpl("218546776","Documento cargado... Id_DocEnc = "+BA.NumberToString(_id_docenc),0);
+anywheresoftware.b4a.keywords.Common.LogImpl("521758040","Documento cargado... Id_DocEnc = "+BA.NumberToString(_id_docenc),0);
  //BA.debugLineNum = 1848;BA.debugLine="DateTime.DateFormat = \"dd-MM-yyyy\"";
 anywheresoftware.b4a.keywords.Common.DateTime.setDateFormat("dd-MM-yyyy");
  //BA.debugLineNum = 1851;BA.debugLine="Dim FechaEmision As Long = DateTime.Now";
@@ -10074,7 +10074,7 @@ _stock_disponible = (double)(BA.ObjectToNumber(_filastk.Get((Object)("Stock_Disp
  //BA.debugLineNum = 4046;BA.debugLine="Dim Stock_Fisico As Double = FilaStk.Get(\"Stock";
 _stock_fisico = (double)(BA.ObjectToNumber(_filastk.Get((Object)("Stock_Fisico"))));
  //BA.debugLineNum = 4047;BA.debugLine="Log(\"Stock disponible: \" & Stock_Disponible & \"";
-anywheresoftware.b4a.keywords.Common.LogImpl("220185113","Stock disponible: "+BA.NumberToString(_stock_disponible)+", Stock fisico: "+BA.NumberToString(_stock_fisico),0);
+anywheresoftware.b4a.keywords.Common.LogImpl("523396377","Stock disponible: "+BA.NumberToString(_stock_disponible)+", Stock fisico: "+BA.NumberToString(_stock_fisico),0);
  //BA.debugLineNum = 4049;BA.debugLine="Dim Stock_Suficiente As Boolean";
 _stock_suficiente = false;
  //BA.debugLineNum = 4051;BA.debugLine="If Stock_Disponible <= 0 Then";
@@ -10174,7 +10174,7 @@ case 25:
 //C
 this.state = 26;
  //BA.debugLineNum = 4076;BA.debugLine="Log(Js.ErrorMessage)";
-anywheresoftware.b4a.keywords.Common.LogImpl("220185142",_js._errormessage /*String*/ ,0);
+anywheresoftware.b4a.keywords.Common.LogImpl("523396406",_js._errormessage /*String*/ ,0);
  if (true) break;
 
 case 26:
@@ -10747,7 +10747,7 @@ case 9:
 //C
 this.state = 10;
  //BA.debugLineNum = 850;BA.debugLine="Log(Js.ErrorMessage)";
-anywheresoftware.b4a.keywords.Common.LogImpl("218022452",_js._errormessage /*String*/ ,0);
+anywheresoftware.b4a.keywords.Common.LogImpl("521233716",_js._errormessage /*String*/ ,0);
  //BA.debugLineNum = 851;BA.debugLine="ToastMessageShow(\"CONCEPTO NO ENCONTRADO\", False";
 anywheresoftware.b4a.keywords.Common.ToastMessageShow(BA.ObjectToCharSequence("CONCEPTO NO ENCONTRADO"),anywheresoftware.b4a.keywords.Common.False);
  //BA.debugLineNum = 853;BA.debugLine="Buscar_productos.ProductoABuscar = Txt_Codigo.Te";
@@ -11186,7 +11186,7 @@ case 29:
 //C
 this.state = 30;
  //BA.debugLineNum = 785;BA.debugLine="Log(Js.ErrorMessage)";
-anywheresoftware.b4a.keywords.Common.LogImpl("217956960",_js._errormessage /*String*/ ,0);
+anywheresoftware.b4a.keywords.Common.LogImpl("521168224",_js._errormessage /*String*/ ,0);
  //BA.debugLineNum = 788;BA.debugLine="Buscar_productos.ProductoABuscar = Txt_Codigo.Te";
 parent.mostCurrent._buscar_productos._productoabuscar /*String*/  = parent.mostCurrent._txt_codigo.getText().trim();
  //BA.debugLineNum = 789;BA.debugLine="StartActivity(Buscar_productos)";
@@ -11530,7 +11530,7 @@ case 34:
 this.state = 35;
 this.catchState = 0;
  //BA.debugLineNum = 2340;BA.debugLine="Log(LastException)";
-anywheresoftware.b4a.keywords.Common.LogImpl("218874451",BA.ObjectToString(anywheresoftware.b4a.keywords.Common.LastException(mostCurrent.activityBA)),0);
+anywheresoftware.b4a.keywords.Common.LogImpl("522085715",BA.ObjectToString(anywheresoftware.b4a.keywords.Common.LastException(mostCurrent.activityBA)),0);
  if (true) break;
 if (true) break;
 
