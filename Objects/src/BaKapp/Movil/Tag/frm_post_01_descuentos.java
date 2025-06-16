@@ -961,7 +961,7 @@ case 34:
 this.state = 35;
 this.catchState = 0;
  //BA.debugLineNum = 314;BA.debugLine="Log(LastException)";
-anywheresoftware.b4a.keywords.Common.LogImpl("717039428",BA.ObjectToString(anywheresoftware.b4a.keywords.Common.LastException(mostCurrent.activityBA)),0);
+anywheresoftware.b4a.keywords.Common.LogImpl("217039428",BA.ObjectToString(anywheresoftware.b4a.keywords.Common.LastException(mostCurrent.activityBA)),0);
  //BA.debugLineNum = 315;BA.debugLine="bmp1 = LoadBitmap(File.DirAssets, \"symbol-cance";
 parent.mostCurrent._bmp1 = anywheresoftware.b4a.keywords.Common.LoadBitmap(anywheresoftware.b4a.keywords.Common.File.getDirAssets(),"symbol-cancel.png");
  //BA.debugLineNum = 316;BA.debugLine="Msgbox2Async(\"Error!\",LastException, \"Ok\", \"\",";

@@ -820,7 +820,7 @@ this.state = 12;
  //BA.debugLineNum = 247;BA.debugLine="Row_Documento = Null";
 _row_documento = (anywheresoftware.b4a.objects.collections.Map) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.collections.Map(), (java.util.Map)(anywheresoftware.b4a.keywords.Common.Null));
  //BA.debugLineNum = 248;BA.debugLine="Log(Js.ErrorMessage)";
-anywheresoftware.b4a.keywords.Common.LogImpl("715466518",_js._errormessage /*String*/ ,0);
+anywheresoftware.b4a.keywords.Common.LogImpl("215466518",_js._errormessage /*String*/ ,0);
  if (true) break;
 
 case 12:
@@ -938,7 +938,7 @@ this.state = 12;
  //BA.debugLineNum = 276;BA.debugLine="Row_Documento = Null";
 _row_documento = (anywheresoftware.b4a.objects.collections.Map) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.collections.Map(), (java.util.Map)(anywheresoftware.b4a.keywords.Common.Null));
  //BA.debugLineNum = 277;BA.debugLine="Log(Js.ErrorMessage)";
-anywheresoftware.b4a.keywords.Common.LogImpl("715532054",_js._errormessage /*String*/ ,0);
+anywheresoftware.b4a.keywords.Common.LogImpl("215532054",_js._errormessage /*String*/ ,0);
  if (true) break;
 
 case 12:
@@ -1059,7 +1059,7 @@ this.state = 12;
  //BA.debugLineNum = 307;BA.debugLine="Row_Entidad = Null";
 _row_entidad = (anywheresoftware.b4a.objects.collections.Map) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.collections.Map(), (java.util.Map)(anywheresoftware.b4a.keywords.Common.Null));
  //BA.debugLineNum = 308;BA.debugLine="Log(Js.ErrorMessage)";
-anywheresoftware.b4a.keywords.Common.LogImpl("715597592",_js._errormessage /*String*/ ,0);
+anywheresoftware.b4a.keywords.Common.LogImpl("215597592",_js._errormessage /*String*/ ,0);
  if (true) break;
 
 case 12:

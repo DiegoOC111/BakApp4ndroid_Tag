@@ -515,7 +515,7 @@ case 8:
 //C
 this.state = 9;
  //BA.debugLineNum = 77;BA.debugLine="Log(\"Traer Stock x bodega\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("714745624","Traer Stock x bodega",0);
+anywheresoftware.b4a.keywords.Common.LogImpl("214745624","Traer Stock x bodega",0);
  //BA.debugLineNum = 78;BA.debugLine="Dim TblStockXbodega As List = Funciones.Fx_Data";
 _tblstockxbodega = new anywheresoftware.b4a.objects.collections.List();
 _tblstockxbodega = parent.mostCurrent._funciones._fx_datatable /*anywheresoftware.b4a.objects.collections.List*/ (mostCurrent.activityBA,_vjson);

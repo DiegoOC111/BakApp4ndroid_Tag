@@ -159,7 +159,7 @@ this.catchState = 0;
  //BA.debugLineNum = 35;BA.debugLine="Variables.Global_Ip_WebService = \"...\"";
 parent._variables._global_ip_webservice /*String*/  = "...";
  //BA.debugLineNum = 36;BA.debugLine="Log(LastException)";
-parent.__c.LogImpl("76619160",BA.ObjectToString(parent.__c.LastException(parent.getActivityBA())),0);
+parent.__c.LogImpl("26619160",BA.ObjectToString(parent.__c.LastException(parent.getActivityBA())),0);
  if (true) break;
 if (true) break;
 

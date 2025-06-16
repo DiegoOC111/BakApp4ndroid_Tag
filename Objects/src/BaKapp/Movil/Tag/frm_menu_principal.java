@@ -581,7 +581,7 @@ this.state = 9;
  //BA.debugLineNum = 85;BA.debugLine="Variables.Global_Row_Entidad_X_Defecto = Funcio";
 parent.mostCurrent._variables._global_row_entidad_x_defecto /*anywheresoftware.b4a.objects.collections.Map*/  = parent.mostCurrent._funciones._fx_datarow /*anywheresoftware.b4a.objects.collections.Map*/ (mostCurrent.activityBA,_js._getstring /*String*/ ());
  //BA.debugLineNum = 86;BA.debugLine="Log(\"8.- Cargamos la Entidad por defecto\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("716187408","8.- Cargamos la Entidad por defecto",0);
+anywheresoftware.b4a.keywords.Common.LogImpl("216187408","8.- Cargamos la Entidad por defecto",0);
  //BA.debugLineNum = 88;BA.debugLine="StartActivity(Frm_Menu_Post_Venta)";
 anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(parent.mostCurrent._frm_menu_post_venta.getObject()));
  if (true) break;

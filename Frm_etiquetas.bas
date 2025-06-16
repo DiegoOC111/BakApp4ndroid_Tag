@@ -289,7 +289,7 @@ Sub CargarLista
 
 	For Each Etiqueta As Map In ListaPersonas
 		Dim p As Panel = xui.CreatePanel("")
-		p.SetLayoutAnimated(0, 0, 0, clv.AsView.Width, 150dip)
+		p.SetLayoutAnimated(0, 0, 0, clv.AsView.Width, 250dip)
 		p.LoadLayout("item_nombre_imagen")
 
 		' Asignamos los controles desde el panel
@@ -556,9 +556,15 @@ Private Sub Btn_Guardar_Click
 				
 			If Lbl_IP.Text <> "---" Then
 				If Lbl_Nombre.Text <> "---" Then
+						
 					CrearDatos
 					Btn_Etq1.Enabled = True
 					Lbl_Imprimir.Visible = False
+						Dim bmp1 As Bitmap
+						bmp1 = LoadBitmap(File.DirAssets, "printer.png")
+						Msgbox2Async("Datos guardados correctamente" , "Configuración Impresora", "Continuar", "", "", bmp1, False)
+						Wait For Msgbox_Result (Result As Int)
+						Btn_Cerrar_Click
 				Else
 					Dim bmp1 As Bitmap
 					bmp1 = LoadBitmap(File.DirAssets, "security-danger.png")

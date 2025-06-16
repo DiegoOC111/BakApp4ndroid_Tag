@@ -345,36 +345,36 @@ End Sub
 
 Private Sub ListView1_ItemClick (Position As Int, Value As Object)
 	Dim selectedData As TableData = DataList.Get(Position)
-	
+	ProgressDialogShow2("Rellenando la etiqueta", False)
 	Dim Js As HttpJob = Bsc("Principal",selectedData.CODIGO,Me,Variables.Gl_Empresa,Variables.Gl_Sucursal,Variables.Gl_Bodega, stringPrecio1)
 	Wait For (Js) JobDone(Js As HttpJob)
 		
 	If Js.Success Then
 	
-	Dim vJson As String = Js.GetString
+		Dim vJson As String = Js.GetString
 			
-	If  vJson = $"{"Table":[{"Codigo":"Error_No hay ninguna fila en la posición 0.","Version":"1.0.0.35"}]}"$ Then
-				
-		Dim bmp1 As Bitmap
+		If  vJson = $"{"Table":[{"Codigo":"Error_No hay ninguna fila en la posición 0.","Version":"1.0.0.35"}]}"$ Then
+			ProgressDialogHide
+			Dim bmp1 As Bitmap
 			
-		bmp1 = LoadBitmap(File.DirAssets, "emoticon-sad.png")
-		Msgbox2Async("Producto no encontrado en la base de datos.", "Error", "OK", "", "", bmp1, False)
-		Wait For Msgbox_Result (Result5 As Int)
+			bmp1 = LoadBitmap(File.DirAssets, "emoticon-sad.png")
+			Msgbox2Async("Producto no encontrado en la base de datos.", "Error", "OK", "", "", bmp1, False)
+			Wait For Msgbox_Result (Result5 As Int)
 			
-		If Result5 = DialogResponse.POSITIVE Then
-		End If
+			If Result5 = DialogResponse.POSITIVE Then
+			End If
 
-		Return
+			Return
 				
-	End If
+		End If
 		ParseOtherJSON(Js.GetString)
-End If
+	End If
 	Btn_Buscar.Visible= True
 	Panelinfo.Visible = True
 	Panel_Buscador.Visible = False
-	Lbl_codigo.Text = ObjSelec.Principal.As(String)
+	Lbl_codigo.Text = ObjSelec.Principal
 	Lbl_Desc.Text = ObjSelec.Descripcion
-	Lbl_precio.Text = "$"&FormatearMiles(ObjSelec.PrecioListaUd1)&".-"
+
 	
 	Dim Js2 As HttpJob = Sb_ImprimirEtiquetaZPL_01(Me, ObjSelec.Principal)
 	Wait For (Js2) JobDone(Js2 As HttpJob)
@@ -401,9 +401,16 @@ End If
 			End If
 		End If
 	Else
+		bmp1 = LoadBitmap(File.DirAssets, "emoticon-sad.png")
+		Msgbox2Async("Error de comunicación.", "Error", "OK", "", "", bmp1, False)
+		Wait For Msgbox_Result (Result5 As Int)
+			
+		If Result5 = DialogResponse.POSITIVE Then
+		End If
 		Log("Error en la petición HTTP")
 	End If
-
+	ProgressDialogHide
+	
 	Js2.Release
 End Sub
 
@@ -477,13 +484,14 @@ Private Sub Buscar_x_Comentario(Tipo As String, VDescripcion As String, Me_ As O
 '	Lv_Productos.Clear
 
 	'B4XLoading.Show
+	ProgressDialogShow("Buscando prooductos...")
 
 	Dim Consulta_Sql As String
 	Dim Empresa As String = Variables.Gl_Empresa
-	Dim Sucursal As String = "CM "
-	Dim Bodega As String = "PR "
+	Dim Sucursal As String = Variables.Gl_Sucursal
+	Dim Bodega As String = Variables.Gl_Bodega
 	Dim Consul As String  = ""
-	
+	Dim tabcodal As String = ""
 	If selectedString = "Tecnico" Then
 		
 		Consul = "WHERE Mp.KOPRTE  Like '%" & vCadena & "%'"
@@ -494,41 +502,18 @@ Private Sub Buscar_x_Comentario(Tipo As String, VDescripcion As String, Me_ As O
 	  
 	Else if selectedString = "Principal" Then
 		
-		Consul = "WHERE Mp.KOPR  Like '%" & vCadena & "%'"
+		Consul = "WHERE (Mp.KOPR  Like '%" & vCadena & "%') OR ((ta.KOPRAL = '"& VDescripcion  &"' ) and (ta.KOEN = '')) "
+		tabcodal = "left join TABCODAL ta on Mp.KOPR = ta.KOPR"
+		
 			
 	Else if selectedString = "Descripcion" Then
 		
 		Consul = "WHERE Mp.NOKOPR  Like '%" & vCadena & "%'"
 		
 	End If
-''	Consulta_Sql = "SELECT TOP (100) Mp.KOPR AS CODIGO,Mp.KOPRTE As CODTECNICO, NOKOPR AS DESCRIPCION,MRPR,Isnull(Ms.STFI1,0) As STFI1, KOPRRA as RAPIDO," & CRLF & _
-'	'                   "Isnull((Select Top 1 KOPRAL From TABCODAL Tcd Where Mp.KOPR = Tcd.KOPR),'') As KOPRAL,Isnull(DATOSUBIC,'') As DATOSUBIC" & CRLF & _
-'	'                   "From MAEPR Mp With (Nolock)" & CRLF & _
-''				   "Left Join MAEST Ms On Ms.EMPRESA = '" & Empresa & _
-''				   		"' And Ms.KOSU = '" & Sucursal & _
-''						"' AND Ms.KOBO = '" & Bodega & "' AND Mp.KOPR = Ms.KOPR" & CRLF & _
-''				   "Left Join TABBOPR Tb On Tb.EMPRESA = '" & Empresa & _
-''				   		"' And Tb.KOSU = '" & Sucursal & _
-''						"' AND Tb.KOBO = '" & Bodega & "' AND Tb.KOPR = Ms.KOPR" & CRLF & _
-'	'                   "WHERE Mp.KOPR+Mp.NOKOPR  Like '%" & vCadena & "%'" & CRLF & _
-'	'                   "Order by Mp.KOPR" & CRLF & _
-'	'                   "Option ( Fast 20 )"
-''				   
-''	Consulta_Sql = "SELECT TOP (25) Mp.KOPR AS CODIGO,Mp.KOPRTE As CODTECNICO, NOKOPR AS DESCRIPCION,MRPR,Isnull(Ms.STFI1,0) As STFI1, KOPRRA as RAPIDO," & CRLF & _
-'	'                   "Isnull((Select Top 1 KOPRAL From TABCODAL Tcd Where Mp.KOPR = Tcd.KOPR),'') As KOPRAL,Isnull(DATOSUBIC,'') As DATOSUBIC" & CRLF & _
-'	'                   "From MAEPR Mp With (Nolock)" & CRLF & _
-''				   "Left Join MAEST Ms On Ms.EMPRESA = '" & Empresa & _
-''				   		"' And Ms.KOSU = '" & Sucursal & _
-''						"' AND Ms.KOBO = '" & Bodega & "' AND Mp.KOPR = Ms.KOPR" & CRLF & _
-''				   "Left Join TABBOPR Tb On Tb.EMPRESA = '" & Empresa & _
-''				   		"' And Tb.KOSU = '" & Sucursal & _
-''						"' AND Tb.KOBO = '" & Bodega & "' AND Tb.KOPR = Ms.KOPR" & CRLF & _
-'	'                   Consul & CRLF & _
-'	'                   "Order by Mp.KOPR" & CRLF & _
-'	'                   "Option ( Fast 25 )"
-	'----este
+
 					   
-	Consulta_Sql = "SELECT TOP (25) Mp.KOPR AS CODIGO,Mp.KOPRTE As CODTECNICO, NOKOPR AS DESCRIPCION,MRPR,Isnull(Ms.STFI1,0) As STFI1, KOPRRA as RAPIDO," & CRLF & _
+	Consulta_Sql = "SELECT distinct TOP (25) Mp.KOPR AS CODIGO,Mp.KOPRTE As CODTECNICO, NOKOPR AS DESCRIPCION,MRPR,Isnull(Ms.STFI1,0) As STFI1, KOPRRA as RAPIDO," & CRLF & _
                    "Isnull((Select Top 1 KOPRAL From TABCODAL Tcd Where Mp.KOPR = Tcd.KOPR),'') As KOPRAL,Isnull(DATOSUBIC,'') As DATOSUBIC" & CRLF & _
                    "From MAEPR Mp With (Nolock)" & CRLF & _
 				   "RIGHT Join MAEST Ms On Ms.EMPRESA = '" & Empresa & _
@@ -537,6 +522,7 @@ Private Sub Buscar_x_Comentario(Tipo As String, VDescripcion As String, Me_ As O
 				   "RIGHT Join TABBOPR Tb On Tb.EMPRESA = '" & Empresa & _
 				   		"' And Tb.KOSU = '" & Sucursal & _
 						"' AND Tb.KOBO = '" & Bodega & "' AND Tb.KOPR = Ms.KOPR " & CRLF & _
+						tabcodal &CRLF & _
 						 Consul & CRLF & _
                    "Order by Mp.KOPR" & CRLF & _
                    "Option ( Fast 25 )"
@@ -544,8 +530,6 @@ Private Sub Buscar_x_Comentario(Tipo As String, VDescripcion As String, Me_ As O
 				   
 	Dim Js As HttpJob = Funciones.Fx_HttJob_Ws_Sb_GetDataSet_Json(Consulta_Sql,Me)
 	Wait For (Js) JobDone(Js As HttpJob)
-	ProgressDialogShow("Buscando prooductos...")
-
 	If Js.Success Then
 		
 		Dim vJson As String = Js.GetString
@@ -737,12 +721,15 @@ Sub EnviarEtiquetaZPL(ZPL As String)
 			If AStreams.IsInitialized Then
 				AStreams.Close ' Cerrar AsyncStreams si estaban inicializados
 			End If
-			AStreams.Initialize(ConnectedPrinter.InputStream, ConnectedPrinter.OutputStream, "AStreams")
-			Dim residuales As String = "^XA^IDR:*.*^XZ"
-			AStreams.Write(residuales.GetBytes("UTF8"))
 			
-			AStreams.Write(ZPL.GetBytes("UTF8"))
-			Log("Etiqueta enviada exitosamente.")
+				AStreams.Initialize(ConnectedPrinter.InputStream, ConnectedPrinter.OutputStream, "AStreams")
+				Dim residuales As String = "^XA^IDR:*.*^XZ"
+				AStreams.Write(residuales.GetBytes("UTF8"))
+			
+				AStreams.Write(ZPL.GetBytes("UTF8"))
+				Log("Etiqueta enviada exitosamente.")
+			
+			
 			ProgressDialogHide
 			bmp1 = LoadBitmap(File.DirAssets, "printer.png")
 			Msgbox2Async("Se ha impreso la etiqueta","Impresión exitosa", "Ok", "", "", bmp1, False)
@@ -860,11 +847,14 @@ Sub EnviarEtiqueta(zpl As String )
 				AStreams.Close ' Cerrar AsyncStreams si estaban inicializados
 			End If
 			AStreams.Initialize(ConnectedPrinter.InputStream, ConnectedPrinter.OutputStream, "AStreams")
-			Dim residuales As String = "^XA^IDR:*.*^XZ"
-			AStreams.Write(residuales.GetBytes("UTF8"))
+			For i = 1 To cantidad
+				Dim residuales As String = "^XA^IDR:*.*^XZ"
+				AStreams.Write(residuales.GetBytes("UTF8"))
 			
-			AStreams.Write(zpl.GetBytes("UTF8"))
-			Log("Etiqueta enviada exitosamente.")
+				AStreams.Write(zpl.GetBytes("UTF8"))
+				Log("Etiqueta enviada exitosamente.")
+			Next
+			
 			ProgressDialogHide
 			bmp1 = LoadBitmap(File.DirAssets, "printer.png")
 			Msgbox2Async("Se ha impreso la etiqueta","Impresión exitosa", "Ok", "", "", bmp1, False)
