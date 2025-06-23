@@ -373,22 +373,22 @@ public anywheresoftware.b4a.objects.EditTextWrapper _txt_top = null;
 public anywheresoftware.b4a.objects.B4XViewWrapper _lbl_sucursal = null;
 public b4a.example.dateutils _dateutils = null;
 public BaKapp.Movil.Tag.main _main = null;
-public BaKapp.Movil.Tag.frm_impresion _frm_impresion = null;
-public BaKapp.Movil.Tag.frm_etiquetas _frm_etiquetas = null;
-public BaKapp.Movil.Tag.variables _variables = null;
-public BaKapp.Movil.Tag.funciones _funciones = null;
 public BaKapp.Movil.Tag.buscar_entidad _buscar_entidad = null;
 public BaKapp.Movil.Tag.buscar_productos _buscar_productos = null;
 public BaKapp.Movil.Tag.conf_local _conf_local = null;
 public BaKapp.Movil.Tag.dbutils _dbutils = null;
 public BaKapp.Movil.Tag.frm_buscar_documento _frm_buscar_documento = null;
 public BaKapp.Movil.Tag.frm_editar_obsoc _frm_editar_obsoc = null;
+public BaKapp.Movil.Tag.frm_etiquetas _frm_etiquetas = null;
+public BaKapp.Movil.Tag.frm_impresion _frm_impresion = null;
 public BaKapp.Movil.Tag.frm_infostockxprod _frm_infostockxprod = null;
 public BaKapp.Movil.Tag.frm_menu_post_venta _frm_menu_post_venta = null;
 public BaKapp.Movil.Tag.frm_menu_principal _frm_menu_principal = null;
 public BaKapp.Movil.Tag.frm_post_01_descuentos _frm_post_01_descuentos = null;
 public BaKapp.Movil.Tag.frm_post_01_formulario _frm_post_01_formulario = null;
 public BaKapp.Movil.Tag.frm_post_01_producto _frm_post_01_producto = null;
+public BaKapp.Movil.Tag.funciones _funciones = null;
+public BaKapp.Movil.Tag.variables _variables = null;
 public BaKapp.Movil.Tag.httputils2service _httputils2service = null;
 public BaKapp.Movil.Tag.xuiviewsutils _xuiviewsutils = null;
 
@@ -661,7 +661,7 @@ case 22:
 //C
 this.state = 23;
  //BA.debugLineNum = 199;BA.debugLine="Log(vJson)";
-anywheresoftware.b4a.keywords.Common.LogImpl("516842803",_vjson,0);
+anywheresoftware.b4a.keywords.Common.LogImpl("033816627",_vjson,0);
  //BA.debugLineNum = 200;BA.debugLine="Dim parser As JSONParser";
 _parser = new anywheresoftware.b4a.objects.collections.JSONParser();
  //BA.debugLineNum = 201;BA.debugLine="parser.Initialize(vJson)";
@@ -822,7 +822,7 @@ this.state = 45;
  //BA.debugLineNum = 253;BA.debugLine="XclvDetalle.Add(p,\"\")";
 parent.mostCurrent._xclvdetalle._add(_p,(Object)(""));
  //BA.debugLineNum = 255;BA.debugLine="Log(Lbl_Idmaeedo.Text)";
-anywheresoftware.b4a.keywords.Common.LogImpl("516842859",parent.mostCurrent._lbl_idmaeedo.getText(),0);
+anywheresoftware.b4a.keywords.Common.LogImpl("033816683",parent.mostCurrent._lbl_idmaeedo.getText(),0);
  if (true) break;
 if (true) break;
 

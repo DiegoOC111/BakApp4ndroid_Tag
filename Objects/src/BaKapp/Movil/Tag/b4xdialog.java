@@ -55,10 +55,6 @@ public int[] _buttonsorder = null;
 public anywheresoftware.b4a.objects.collections.Map _buttonsstate = null;
 public b4a.example.dateutils _dateutils = null;
 public BaKapp.Movil.Tag.main _main = null;
-public BaKapp.Movil.Tag.frm_impresion _frm_impresion = null;
-public BaKapp.Movil.Tag.frm_etiquetas _frm_etiquetas = null;
-public BaKapp.Movil.Tag.variables _variables = null;
-public BaKapp.Movil.Tag.funciones _funciones = null;
 public BaKapp.Movil.Tag.buscar_entidad _buscar_entidad = null;
 public BaKapp.Movil.Tag.buscar_productos _buscar_productos = null;
 public BaKapp.Movil.Tag.conf_local _conf_local = null;
@@ -66,22 +62,26 @@ public BaKapp.Movil.Tag.dbutils _dbutils = null;
 public BaKapp.Movil.Tag.frm_buscar_documento _frm_buscar_documento = null;
 public BaKapp.Movil.Tag.frm_documentos_generados _frm_documentos_generados = null;
 public BaKapp.Movil.Tag.frm_editar_obsoc _frm_editar_obsoc = null;
+public BaKapp.Movil.Tag.frm_etiquetas _frm_etiquetas = null;
+public BaKapp.Movil.Tag.frm_impresion _frm_impresion = null;
 public BaKapp.Movil.Tag.frm_infostockxprod _frm_infostockxprod = null;
 public BaKapp.Movil.Tag.frm_menu_post_venta _frm_menu_post_venta = null;
 public BaKapp.Movil.Tag.frm_menu_principal _frm_menu_principal = null;
 public BaKapp.Movil.Tag.frm_post_01_descuentos _frm_post_01_descuentos = null;
 public BaKapp.Movil.Tag.frm_post_01_formulario _frm_post_01_formulario = null;
 public BaKapp.Movil.Tag.frm_post_01_producto _frm_post_01_producto = null;
+public BaKapp.Movil.Tag.funciones _funciones = null;
+public BaKapp.Movil.Tag.variables _variables = null;
 public BaKapp.Movil.Tag.httputils2service _httputils2service = null;
 public BaKapp.Movil.Tag.xuiviewsutils _xuiviewsutils = null;
 public String  _background_click() throws Exception{
- //BA.debugLineNum = 258;BA.debugLine="Private Sub Background_Click";
- //BA.debugLineNum = 260;BA.debugLine="End Sub";
+ //BA.debugLineNum = 261;BA.debugLine="Private Sub Background_Click";
+ //BA.debugLineNum = 263;BA.debugLine="End Sub";
 return "";
 }
 public String  _background_touch(int _action,float _x,float _y) throws Exception{
- //BA.debugLineNum = 253;BA.debugLine="Private Sub Background_Touch (Action As Int, X As";
- //BA.debugLineNum = 255;BA.debugLine="End Sub";
+ //BA.debugLineNum = 256;BA.debugLine="Private Sub Background_Touch (Action As Int, X As";
+ //BA.debugLineNum = 258;BA.debugLine="End Sub";
 return "";
 }
 public b4a.example.bitmapcreator  _blur(anywheresoftware.b4a.objects.B4XViewWrapper.B4XBitmapWrapper _bmp) throws Exception{
@@ -94,18 +94,18 @@ int _m = 0;
 int _steps = 0;
 int _y = 0;
 int _x = 0;
- //BA.debugLineNum = 287;BA.debugLine="Private Sub Blur (bmp As B4XBitmap) As BitmapCreat";
- //BA.debugLineNum = 288;BA.debugLine="Dim bc As BitmapCreator";
+ //BA.debugLineNum = 290;BA.debugLine="Private Sub Blur (bmp As B4XBitmap) As BitmapCreat";
+ //BA.debugLineNum = 291;BA.debugLine="Dim bc As BitmapCreator";
 _bc = new b4a.example.bitmapcreator();
- //BA.debugLineNum = 289;BA.debugLine="Dim ReduceScale As Int = BlurReduceScale";
+ //BA.debugLineNum = 292;BA.debugLine="Dim ReduceScale As Int = BlurReduceScale";
 _reducescale = _blurreducescale;
- //BA.debugLineNum = 290;BA.debugLine="bc.Initialize(bmp.Width / ReduceScale / bmp.Scale";
+ //BA.debugLineNum = 293;BA.debugLine="bc.Initialize(bmp.Width / ReduceScale / bmp.Scale";
 _bc._initialize(ba,(int) (_bmp.getWidth()/(double)_reducescale/(double)_bmp.getScale()),(int) (_bmp.getHeight()/(double)_reducescale/(double)_bmp.getScale()));
- //BA.debugLineNum = 291;BA.debugLine="bc.CopyPixelsFromBitmap(bmp)";
+ //BA.debugLineNum = 294;BA.debugLine="bc.CopyPixelsFromBitmap(bmp)";
 _bc._copypixelsfrombitmap(_bmp);
- //BA.debugLineNum = 292;BA.debugLine="Dim count As Int = 2";
+ //BA.debugLineNum = 295;BA.debugLine="Dim count As Int = 2";
 _count = (int) (2);
- //BA.debugLineNum = 293;BA.debugLine="Dim clrs(3) As ARGBColor";
+ //BA.debugLineNum = 296;BA.debugLine="Dim clrs(3) As ARGBColor";
 _clrs = new b4a.example.bitmapcreator._argbcolor[(int) (3)];
 {
 int d0 = _clrs.length;
@@ -114,83 +114,83 @@ _clrs[i0] = new b4a.example.bitmapcreator._argbcolor();
 }
 }
 ;
- //BA.debugLineNum = 294;BA.debugLine="Dim temp As ARGBColor";
+ //BA.debugLineNum = 297;BA.debugLine="Dim temp As ARGBColor";
 _temp = new b4a.example.bitmapcreator._argbcolor();
- //BA.debugLineNum = 295;BA.debugLine="Dim m As Int";
+ //BA.debugLineNum = 298;BA.debugLine="Dim m As Int";
 _m = 0;
- //BA.debugLineNum = 296;BA.debugLine="For steps = 1 To count";
+ //BA.debugLineNum = 299;BA.debugLine="For steps = 1 To count";
 {
 final int step9 = 1;
 final int limit9 = _count;
 _steps = (int) (1) ;
 for (;_steps <= limit9 ;_steps = _steps + step9 ) {
- //BA.debugLineNum = 297;BA.debugLine="For y = 0 To bc.mHeight - 1";
+ //BA.debugLineNum = 300;BA.debugLine="For y = 0 To bc.mHeight - 1";
 {
 final int step10 = 1;
 final int limit10 = (int) (_bc._mheight-1);
 _y = (int) (0) ;
 for (;_y <= limit10 ;_y = _y + step10 ) {
- //BA.debugLineNum = 298;BA.debugLine="For x = 0 To 2";
+ //BA.debugLineNum = 301;BA.debugLine="For x = 0 To 2";
 {
 final int step11 = 1;
 final int limit11 = (int) (2);
 _x = (int) (0) ;
 for (;_x <= limit11 ;_x = _x + step11 ) {
- //BA.debugLineNum = 299;BA.debugLine="bc.GetARGB(x, y, clrs(x))";
+ //BA.debugLineNum = 302;BA.debugLine="bc.GetARGB(x, y, clrs(x))";
 _bc._getargb(_x,_y,_clrs[_x]);
  }
 };
- //BA.debugLineNum = 301;BA.debugLine="SetAvg(bc, 1, y, clrs, temp)";
+ //BA.debugLineNum = 304;BA.debugLine="SetAvg(bc, 1, y, clrs, temp)";
 _setavg(_bc,(int) (1),_y,_clrs,_temp);
- //BA.debugLineNum = 302;BA.debugLine="m = 0";
+ //BA.debugLineNum = 305;BA.debugLine="m = 0";
 _m = (int) (0);
- //BA.debugLineNum = 303;BA.debugLine="For x = 2 To bc.mWidth - 2";
+ //BA.debugLineNum = 306;BA.debugLine="For x = 2 To bc.mWidth - 2";
 {
 final int step16 = 1;
 final int limit16 = (int) (_bc._mwidth-2);
 _x = (int) (2) ;
 for (;_x <= limit16 ;_x = _x + step16 ) {
- //BA.debugLineNum = 304;BA.debugLine="bc.GetARGB(x + 1, y, clrs(m))";
+ //BA.debugLineNum = 307;BA.debugLine="bc.GetARGB(x + 1, y, clrs(m))";
 _bc._getargb((int) (_x+1),_y,_clrs[_m]);
- //BA.debugLineNum = 305;BA.debugLine="m = (m + 1) Mod 3";
+ //BA.debugLineNum = 308;BA.debugLine="m = (m + 1) Mod 3";
 _m = (int) ((_m+1)%3);
- //BA.debugLineNum = 306;BA.debugLine="SetAvg(bc, x, y, clrs, temp)";
+ //BA.debugLineNum = 309;BA.debugLine="SetAvg(bc, x, y, clrs, temp)";
 _setavg(_bc,_x,_y,_clrs,_temp);
  }
 };
  }
 };
- //BA.debugLineNum = 309;BA.debugLine="For x = 0 To bc.mWidth - 1";
+ //BA.debugLineNum = 312;BA.debugLine="For x = 0 To bc.mWidth - 1";
 {
 final int step22 = 1;
 final int limit22 = (int) (_bc._mwidth-1);
 _x = (int) (0) ;
 for (;_x <= limit22 ;_x = _x + step22 ) {
- //BA.debugLineNum = 310;BA.debugLine="For y = 0 To 2";
+ //BA.debugLineNum = 313;BA.debugLine="For y = 0 To 2";
 {
 final int step23 = 1;
 final int limit23 = (int) (2);
 _y = (int) (0) ;
 for (;_y <= limit23 ;_y = _y + step23 ) {
- //BA.debugLineNum = 311;BA.debugLine="bc.GetARGB(x, y, clrs(y))";
+ //BA.debugLineNum = 314;BA.debugLine="bc.GetARGB(x, y, clrs(y))";
 _bc._getargb(_x,_y,_clrs[_y]);
  }
 };
- //BA.debugLineNum = 313;BA.debugLine="SetAvg(bc, x, 1, clrs, temp)";
+ //BA.debugLineNum = 316;BA.debugLine="SetAvg(bc, x, 1, clrs, temp)";
 _setavg(_bc,_x,(int) (1),_clrs,_temp);
- //BA.debugLineNum = 314;BA.debugLine="m = 0";
+ //BA.debugLineNum = 317;BA.debugLine="m = 0";
 _m = (int) (0);
- //BA.debugLineNum = 315;BA.debugLine="For y = 2 To bc.mHeight - 2";
+ //BA.debugLineNum = 318;BA.debugLine="For y = 2 To bc.mHeight - 2";
 {
 final int step28 = 1;
 final int limit28 = (int) (_bc._mheight-2);
 _y = (int) (2) ;
 for (;_y <= limit28 ;_y = _y + step28 ) {
- //BA.debugLineNum = 316;BA.debugLine="bc.GetARGB(x, y + 1, clrs(m))";
+ //BA.debugLineNum = 319;BA.debugLine="bc.GetARGB(x, y + 1, clrs(m))";
 _bc._getargb(_x,(int) (_y+1),_clrs[_m]);
- //BA.debugLineNum = 317;BA.debugLine="m = (m + 1) Mod 3";
+ //BA.debugLineNum = 320;BA.debugLine="m = (m + 1) Mod 3";
 _m = (int) ((_m+1)%3);
- //BA.debugLineNum = 318;BA.debugLine="SetAvg(bc, x, y, clrs, temp)";
+ //BA.debugLineNum = 321;BA.debugLine="SetAvg(bc, x, y, clrs, temp)";
 _setavg(_bc,_x,_y,_clrs,_temp);
  }
 };
@@ -198,23 +198,23 @@ _setavg(_bc,_x,_y,_clrs,_temp);
 };
  }
 };
- //BA.debugLineNum = 322;BA.debugLine="Return bc";
+ //BA.debugLineNum = 325;BA.debugLine="Return bc";
 if (true) return _bc;
- //BA.debugLineNum = 323;BA.debugLine="End Sub";
+ //BA.debugLineNum = 326;BA.debugLine="End Sub";
 return null;
 }
 public String  _button_click() throws Exception{
 anywheresoftware.b4a.objects.B4XViewWrapper _b = null;
- //BA.debugLineNum = 233;BA.debugLine="Private Sub Button_Click";
- //BA.debugLineNum = 234;BA.debugLine="Dim b As B4XView = Sender";
+ //BA.debugLineNum = 236;BA.debugLine="Private Sub Button_Click";
+ //BA.debugLineNum = 237;BA.debugLine="Dim b As B4XView = Sender";
 _b = new anywheresoftware.b4a.objects.B4XViewWrapper();
 _b = (anywheresoftware.b4a.objects.B4XViewWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.B4XViewWrapper(), (java.lang.Object)(__c.Sender(ba)));
- //BA.debugLineNum = 235;BA.debugLine="If ButtonsState.GetDefault(b.Tag, True) = False T";
+ //BA.debugLineNum = 238;BA.debugLine="If ButtonsState.GetDefault(b.Tag, True) = False T";
 if ((_buttonsstate.GetDefault(_b.getTag(),(Object)(__c.True))).equals((Object)(__c.False))) { 
 if (true) return "";};
- //BA.debugLineNum = 236;BA.debugLine="Close(b.Tag)";
+ //BA.debugLineNum = 239;BA.debugLine="Close(b.Tag)";
 _close((int)(BA.ObjectToNumber(_b.getTag())));
- //BA.debugLineNum = 237;BA.debugLine="End Sub";
+ //BA.debugLineNum = 240;BA.debugLine="End Sub";
 return "";
 }
 public String  _class_globals() throws Exception{
@@ -281,60 +281,60 @@ _buttonsstate = new anywheresoftware.b4a.objects.collections.Map();
 return "";
 }
 public boolean  _close(int _result) throws Exception{
- //BA.debugLineNum = 239;BA.debugLine="Public Sub Close (Result As Int) As Boolean";
- //BA.debugLineNum = 240;BA.debugLine="If getVisible Then";
+ //BA.debugLineNum = 242;BA.debugLine="Public Sub Close (Result As Int) As Boolean";
+ //BA.debugLineNum = 243;BA.debugLine="If getVisible Then";
 if (_getvisible()) { 
- //BA.debugLineNum = 241;BA.debugLine="CallSubDelayed2(Me, \"CloseMessage\", Result)";
+ //BA.debugLineNum = 244;BA.debugLine="CallSubDelayed2(Me, \"CloseMessage\", Result)";
 __c.CallSubDelayed2(ba,this,"CloseMessage",(Object)(_result));
- //BA.debugLineNum = 242;BA.debugLine="Return True";
+ //BA.debugLineNum = 245;BA.debugLine="Return True";
 if (true) return __c.True;
  };
- //BA.debugLineNum = 244;BA.debugLine="Return False";
+ //BA.debugLineNum = 247;BA.debugLine="Return False";
 if (true) return __c.False;
- //BA.debugLineNum = 245;BA.debugLine="End Sub";
+ //BA.debugLineNum = 248;BA.debugLine="End Sub";
 return false;
 }
 public String  _createbutton(Object _text,int _code) throws Exception{
 anywheresoftware.b4a.objects.LabelWrapper _btn = null;
 anywheresoftware.b4a.objects.B4XViewWrapper _xbtn = null;
 int _numberofbuttons = 0;
- //BA.debugLineNum = 193;BA.debugLine="Private Sub CreateButton (Text As Object, Code As";
- //BA.debugLineNum = 194;BA.debugLine="If Text = \"\" Then Return";
+ //BA.debugLineNum = 196;BA.debugLine="Private Sub CreateButton (Text As Object, Code As";
+ //BA.debugLineNum = 197;BA.debugLine="If Text = \"\" Then Return";
 if ((_text).equals((Object)(""))) { 
 if (true) return "";};
- //BA.debugLineNum = 198;BA.debugLine="Dim btn As Label";
+ //BA.debugLineNum = 201;BA.debugLine="Dim btn As Label";
 _btn = new anywheresoftware.b4a.objects.LabelWrapper();
- //BA.debugLineNum = 200;BA.debugLine="btn.Initialize(\"Button\")";
+ //BA.debugLineNum = 203;BA.debugLine="btn.Initialize(\"Button\")";
 _btn.Initialize(ba,"Button");
- //BA.debugLineNum = 201;BA.debugLine="Dim xbtn As B4XView = btn";
+ //BA.debugLineNum = 204;BA.debugLine="Dim xbtn As B4XView = btn";
 _xbtn = new anywheresoftware.b4a.objects.B4XViewWrapper();
 _xbtn = (anywheresoftware.b4a.objects.B4XViewWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.B4XViewWrapper(), (java.lang.Object)(_btn.getObject()));
- //BA.debugLineNum = 202;BA.debugLine="XUIViewsUtils.SetTextOrCSBuilderToLabel(xbtn, Tex";
+ //BA.debugLineNum = 205;BA.debugLine="XUIViewsUtils.SetTextOrCSBuilderToLabel(xbtn, Tex";
 _xuiviewsutils._settextorcsbuildertolabel /*String*/ (ba,_xbtn,_text);
- //BA.debugLineNum = 203;BA.debugLine="xbtn.Tag = Code";
+ //BA.debugLineNum = 206;BA.debugLine="xbtn.Tag = Code";
 _xbtn.setTag((Object)(_code));
- //BA.debugLineNum = 204;BA.debugLine="xbtn.SetColorAndBorder(ButtonsColor, 0dip, Border";
+ //BA.debugLineNum = 207;BA.debugLine="xbtn.SetColorAndBorder(ButtonsColor, 0dip, Border";
 _xbtn.SetColorAndBorder(_buttonscolor,__c.DipToCurrent((int) (0)),_bordercolor,__c.DipToCurrent((int) (5)));
- //BA.debugLineNum = 205;BA.debugLine="xbtn.SetTextAlignment(\"CENTER\", \"CENTER\")";
+ //BA.debugLineNum = 208;BA.debugLine="xbtn.SetTextAlignment(\"CENTER\", \"CENTER\")";
 _xbtn.SetTextAlignment("CENTER","CENTER");
- //BA.debugLineNum = 206;BA.debugLine="xbtn.TextColor = ButtonsTextColor";
+ //BA.debugLineNum = 209;BA.debugLine="xbtn.TextColor = ButtonsTextColor";
 _xbtn.setTextColor(_buttonstextcolor);
- //BA.debugLineNum = 207;BA.debugLine="xbtn.Font = ButtonsFont";
+ //BA.debugLineNum = 210;BA.debugLine="xbtn.Font = ButtonsFont";
 _xbtn.setFont(_buttonsfont);
- //BA.debugLineNum = 208;BA.debugLine="Dim numberOfButtons As Int = Base.NumberOfViews '";
+ //BA.debugLineNum = 211;BA.debugLine="Dim numberOfButtons As Int = Base.NumberOfViews '";
 _numberofbuttons = _base.getNumberOfViews();
- //BA.debugLineNum = 209;BA.debugLine="Base.AddView(xbtn, Base.Width - 4dip - numberOfBu";
+ //BA.debugLineNum = 212;BA.debugLine="Base.AddView(xbtn, Base.Width - 4dip - numberOfBu";
 _base.AddView((android.view.View)(_xbtn.getObject()),(int) (_base.getWidth()-__c.DipToCurrent((int) (4))-_numberofbuttons*(_buttonwidth+__c.DipToCurrent((int) (5)))-_buttonwidth),(int) (_base.getHeight()-_buttonsheight-__c.DipToCurrent((int) (4))),_buttonwidth,_buttonsheight);
- //BA.debugLineNum = 211;BA.debugLine="If Code = xui.DialogResponse_Cancel Then xbtn.Req";
+ //BA.debugLineNum = 214;BA.debugLine="If Code = xui.DialogResponse_Cancel Then xbtn.Req";
 if (_code==_xui.DialogResponse_Cancel) { 
 _xbtn.RequestFocus();};
- //BA.debugLineNum = 212;BA.debugLine="End Sub";
+ //BA.debugLineNum = 215;BA.debugLine="End Sub";
 return "";
 }
 public anywheresoftware.b4a.objects.B4XViewWrapper  _getbutton(int _resultcode) throws Exception{
 anywheresoftware.b4a.objects.B4XViewWrapper _b = null;
- //BA.debugLineNum = 215;BA.debugLine="Public Sub GetButton (ResultCode As Int) As B4XVie";
- //BA.debugLineNum = 216;BA.debugLine="For Each b As B4XView In Base.GetAllViewsRecursiv";
+ //BA.debugLineNum = 218;BA.debugLine="Public Sub GetButton (ResultCode As Int) As B4XVie";
+ //BA.debugLineNum = 219;BA.debugLine="For Each b As B4XView In Base.GetAllViewsRecursiv";
 _b = new anywheresoftware.b4a.objects.B4XViewWrapper();
 {
 final anywheresoftware.b4a.BA.IterableList group1 = _base.GetAllViewsRecursive();
@@ -343,21 +343,21 @@ final int groupLen1 = group1.getSize()
 ;
 for (; index1 < groupLen1;index1++){
 _b = (anywheresoftware.b4a.objects.B4XViewWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.B4XViewWrapper(), (java.lang.Object)(group1.Get(index1)));
- //BA.debugLineNum = 217;BA.debugLine="If b.Tag = ResultCode Then Return b 'ignore";
+ //BA.debugLineNum = 220;BA.debugLine="If b.Tag = ResultCode Then Return b 'ignore";
 if ((_b.getTag()).equals((Object)(_resultcode))) { 
 if (true) return _b;};
  }
 };
- //BA.debugLineNum = 219;BA.debugLine="Return Null";
+ //BA.debugLineNum = 222;BA.debugLine="Return Null";
 if (true) return (anywheresoftware.b4a.objects.B4XViewWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.B4XViewWrapper(), (java.lang.Object)(__c.Null));
- //BA.debugLineNum = 220;BA.debugLine="End Sub";
+ //BA.debugLineNum = 223;BA.debugLine="End Sub";
 return null;
 }
 public boolean  _getvisible() throws Exception{
- //BA.debugLineNum = 189;BA.debugLine="Public Sub getVisible As Boolean";
- //BA.debugLineNum = 190;BA.debugLine="Return Background.IsInitialized And Background.Pa";
+ //BA.debugLineNum = 192;BA.debugLine="Public Sub getVisible As Boolean";
+ //BA.debugLineNum = 193;BA.debugLine="Return Background.IsInitialized And Background.Pa";
 if (true) return _background.IsInitialized() && _background.getParent().IsInitialized();
- //BA.debugLineNum = 191;BA.debugLine="End Sub";
+ //BA.debugLineNum = 194;BA.debugLine="End Sub";
 return false;
 }
 public String  _initialize(anywheresoftware.b4a.BA _ba,anywheresoftware.b4a.objects.B4XViewWrapper _parent) throws Exception{
@@ -390,45 +390,45 @@ _buttonsstate.Initialize();
 return "";
 }
 public String  _internaladdstubtoclvifneeded(b4a.example3.customlistview _customlistview1,int _color) throws Exception{
- //BA.debugLineNum = 343;BA.debugLine="Public Sub InternalAddStubToCLVIfNeeded(CustomList";
- //BA.debugLineNum = 344;BA.debugLine="XUIViewsUtils.AddStubToCLVIfNeeded(CustomListView";
+ //BA.debugLineNum = 346;BA.debugLine="Public Sub InternalAddStubToCLVIfNeeded(CustomList";
+ //BA.debugLineNum = 347;BA.debugLine="XUIViewsUtils.AddStubToCLVIfNeeded(CustomListView";
 _xuiviewsutils._addstubtoclvifneeded /*String*/ (ba,_customlistview1,_color);
- //BA.debugLineNum = 345;BA.debugLine="End Sub";
+ //BA.debugLineNum = 348;BA.debugLine="End Sub";
 return "";
 }
 public String  _internalsettextorcsbuildertolabel(anywheresoftware.b4a.objects.B4XViewWrapper _xlbl,Object _text) throws Exception{
- //BA.debugLineNum = 339;BA.debugLine="Public Sub InternalSetTextOrCSBuilderToLabel(xlbl";
- //BA.debugLineNum = 340;BA.debugLine="XUIViewsUtils.SetTextOrCSBuilderToLabel(xlbl, Tex";
+ //BA.debugLineNum = 342;BA.debugLine="Public Sub InternalSetTextOrCSBuilderToLabel(xlbl";
+ //BA.debugLineNum = 343;BA.debugLine="XUIViewsUtils.SetTextOrCSBuilderToLabel(xlbl, Tex";
 _xuiviewsutils._settextorcsbuildertolabel /*String*/ (ba,_xlbl,_text);
- //BA.debugLineNum = 341;BA.debugLine="End Sub";
+ //BA.debugLineNum = 344;BA.debugLine="End Sub";
 return "";
 }
 public String  _resize(int _width,int _height) throws Exception{
 int _top = 0;
- //BA.debugLineNum = 263;BA.debugLine="Public Sub Resize (Width As Int, Height As Int)";
- //BA.debugLineNum = 265;BA.debugLine="Dim Top As Int = Round(Background.Height / 2 - Ba";
+ //BA.debugLineNum = 266;BA.debugLine="Public Sub Resize (Width As Int, Height As Int)";
+ //BA.debugLineNum = 268;BA.debugLine="Dim Top As Int = Round(Background.Height / 2 - Ba";
 _top = (int) (__c.Round(_background.getHeight()/(double)2-_base.getHeight()/(double)2));
- //BA.debugLineNum = 266;BA.debugLine="If PutAtTop Then Top = 20dip";
+ //BA.debugLineNum = 269;BA.debugLine="If PutAtTop Then Top = 20dip";
 if (_putattop) { 
 _top = __c.DipToCurrent((int) (20));};
- //BA.debugLineNum = 267;BA.debugLine="Background.SetLayoutAnimated(0, 0, 0, Width, Heig";
+ //BA.debugLineNum = 270;BA.debugLine="Background.SetLayoutAnimated(0, 0, 0, Width, Heig";
 _background.SetLayoutAnimated((int) (0),(int) (0),(int) (0),_width,_height);
- //BA.debugLineNum = 268;BA.debugLine="Base.SetLayoutAnimated(200, Round(Background.Widt";
+ //BA.debugLineNum = 271;BA.debugLine="Base.SetLayoutAnimated(200, Round(Background.Widt";
 _base.SetLayoutAnimated((int) (200),(int) (__c.Round(_background.getWidth()/(double)2-_base.getWidth()/(double)2)),_top,_base.getWidth(),_base.getHeight());
- //BA.debugLineNum = 269;BA.debugLine="If xui.IsB4J Then";
+ //BA.debugLineNum = 272;BA.debugLine="If xui.IsB4J Then";
 if (_xui.getIsB4J()) { 
- //BA.debugLineNum = 270;BA.debugLine="UpdateBlur";
+ //BA.debugLineNum = 273;BA.debugLine="UpdateBlur";
 _updateblur();
  };
- //BA.debugLineNum = 272;BA.debugLine="End Sub";
+ //BA.debugLineNum = 275;BA.debugLine="End Sub";
 return "";
 }
 public String  _setavg(b4a.example.bitmapcreator _bc,int _x,int _y,b4a.example.bitmapcreator._argbcolor[] _clrs,b4a.example.bitmapcreator._argbcolor _temp) throws Exception{
 b4a.example.bitmapcreator._argbcolor _c = null;
- //BA.debugLineNum = 325;BA.debugLine="Private Sub SetAvg(bc As BitmapCreator, x As Int,";
- //BA.debugLineNum = 326;BA.debugLine="temp.Initialize";
+ //BA.debugLineNum = 328;BA.debugLine="Private Sub SetAvg(bc As BitmapCreator, x As Int,";
+ //BA.debugLineNum = 329;BA.debugLine="temp.Initialize";
 _temp.Initialize();
- //BA.debugLineNum = 327;BA.debugLine="For Each c As ARGBColor In clrs";
+ //BA.debugLineNum = 330;BA.debugLine="For Each c As ARGBColor In clrs";
 {
 final b4a.example.bitmapcreator._argbcolor[] group2 = _clrs;
 final int groupLen2 = group2.length
@@ -436,46 +436,46 @@ final int groupLen2 = group2.length
 ;
 for (; index2 < groupLen2;index2++){
 _c = group2[index2];
- //BA.debugLineNum = 328;BA.debugLine="temp.r = temp.r + c.r";
+ //BA.debugLineNum = 331;BA.debugLine="temp.r = temp.r + c.r";
 _temp.r = (int) (_temp.r+_c.r);
- //BA.debugLineNum = 329;BA.debugLine="temp.g = temp.g + c.g";
+ //BA.debugLineNum = 332;BA.debugLine="temp.g = temp.g + c.g";
 _temp.g = (int) (_temp.g+_c.g);
- //BA.debugLineNum = 330;BA.debugLine="temp.b = temp.b + c.b";
+ //BA.debugLineNum = 333;BA.debugLine="temp.b = temp.b + c.b";
 _temp.b = (int) (_temp.b+_c.b);
  }
 };
- //BA.debugLineNum = 332;BA.debugLine="temp.a = 255";
+ //BA.debugLineNum = 335;BA.debugLine="temp.a = 255";
 _temp.a = (int) (255);
- //BA.debugLineNum = 333;BA.debugLine="temp.r = temp.r / 3";
+ //BA.debugLineNum = 336;BA.debugLine="temp.r = temp.r / 3";
 _temp.r = (int) (_temp.r/(double)3);
- //BA.debugLineNum = 334;BA.debugLine="temp.g = temp.g / 3";
+ //BA.debugLineNum = 337;BA.debugLine="temp.g = temp.g / 3";
 _temp.g = (int) (_temp.g/(double)3);
- //BA.debugLineNum = 335;BA.debugLine="temp.b = temp.b / 3";
+ //BA.debugLineNum = 338;BA.debugLine="temp.b = temp.b / 3";
 _temp.b = (int) (_temp.b/(double)3);
- //BA.debugLineNum = 336;BA.debugLine="bc.SetARGB(x, y, temp)";
+ //BA.debugLineNum = 339;BA.debugLine="bc.SetARGB(x, y, temp)";
 _bc._setargb(_x,_y,_temp);
- //BA.debugLineNum = 337;BA.debugLine="End Sub";
+ //BA.debugLineNum = 340;BA.debugLine="End Sub";
 return "";
 }
 public String  _setbuttonstate(int _resultcode,boolean _enabled) throws Exception{
 anywheresoftware.b4a.objects.B4XViewWrapper _b = null;
- //BA.debugLineNum = 223;BA.debugLine="Public Sub SetButtonState (ResultCode As Int, Enab";
- //BA.debugLineNum = 224;BA.debugLine="Dim b As B4XView = GetButton(ResultCode)";
+ //BA.debugLineNum = 226;BA.debugLine="Public Sub SetButtonState (ResultCode As Int, Enab";
+ //BA.debugLineNum = 227;BA.debugLine="Dim b As B4XView = GetButton(ResultCode)";
 _b = new anywheresoftware.b4a.objects.B4XViewWrapper();
 _b = _getbutton(_resultcode);
- //BA.debugLineNum = 225;BA.debugLine="If b.IsInitialized Then";
+ //BA.debugLineNum = 228;BA.debugLine="If b.IsInitialized Then";
 if (_b.IsInitialized()) { 
- //BA.debugLineNum = 226;BA.debugLine="b.Enabled = Enabled";
+ //BA.debugLineNum = 229;BA.debugLine="b.Enabled = Enabled";
 _b.setEnabled(_enabled);
- //BA.debugLineNum = 227;BA.debugLine="If Enabled Then b.TextColor = ButtonsTextColor E";
+ //BA.debugLineNum = 230;BA.debugLine="If Enabled Then b.TextColor = ButtonsTextColor E";
 if (_enabled) { 
 _b.setTextColor(_buttonstextcolor);}
 else {
 _b.setTextColor(_buttonstextcolordisabled);};
- //BA.debugLineNum = 228;BA.debugLine="ButtonsState.Put(ResultCode, Enabled)";
+ //BA.debugLineNum = 231;BA.debugLine="ButtonsState.Put(ResultCode, Enabled)";
 _buttonsstate.Put((Object)(_resultcode),(Object)(_enabled));
  };
- //BA.debugLineNum = 230;BA.debugLine="End Sub";
+ //BA.debugLineNum = 233;BA.debugLine="End Sub";
 return "";
 }
 public anywheresoftware.b4a.keywords.Common.ResumableSubWrapper  _show(Object _text,Object _yes,Object _no,Object _cancel) throws Exception{
@@ -593,14 +593,14 @@ int _result = 0;
 anywheresoftware.b4a.BA.IterableList group1;
 int index1;
 int groupLen1;
-int step46;
-int limit46;
-anywheresoftware.b4a.BA.IterableList group74;
-int index74;
-int groupLen74;
-anywheresoftware.b4a.BA.IterableList group78;
-int index78;
-int groupLen78;
+int step49;
+int limit49;
+anywheresoftware.b4a.BA.IterableList group77;
+int index77;
+int groupLen77;
+anywheresoftware.b4a.BA.IterableList group81;
+int index81;
+int groupLen81;
 
 @Override
 public void resume(BA ba, Object[] result) throws Exception{
@@ -623,10 +623,10 @@ _v = new anywheresoftware.b4a.objects.B4XViewWrapper();
 group1 = parent._mparent.GetAllViewsRecursive();
 index1 = 0;
 groupLen1 = group1.getSize();
-this.state = 60;
+this.state = 64;
 if (true) break;
 
-case 60:
+case 64:
 //C
 this.state = 8;
 if (index1 < groupLen1) {
@@ -634,9 +634,9 @@ this.state = 3;
 _v = (anywheresoftware.b4a.objects.B4XViewWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.B4XViewWrapper(), (java.lang.Object)(group1.Get(index1)));}
 if (true) break;
 
-case 61:
+case 65:
 //C
-this.state = 60;
+this.state = 64;
 index1++;
 if (true) break;
 
@@ -665,7 +665,7 @@ if (true) break;
 
 case 7:
 //C
-this.state = 61;
+this.state = 65;
 ;
  if (true) break;
 if (true) break;
@@ -724,327 +724,300 @@ _p = new anywheresoftware.b4a.objects.PanelWrapper();
 _p = (anywheresoftware.b4a.objects.PanelWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.PanelWrapper(), (android.view.ViewGroup)(parent._background.getObject()));
  //BA.debugLineNum = 118;BA.debugLine="p.Elevation = 4dip";
 _p.setElevation((float) (parent.__c.DipToCurrent((int) (4))));
- //BA.debugLineNum = 120;BA.debugLine="mParent.AddView(Background, 0, 0, mParent.Width,";
-parent._mparent.AddView((android.view.View)(parent._background.getObject()),(int) (0),(int) (0),parent._mparent.getWidth(),parent._mparent.getHeight());
- //BA.debugLineNum = 121;BA.debugLine="UpdateBlur";
-parent._updateblur();
- //BA.debugLineNum = 122;BA.debugLine="Base = xui.CreatePanel(\"\")";
-parent._base = parent._xui.CreatePanel(ba,"");
- //BA.debugLineNum = 123;BA.debugLine="Base.SetColorAndBorder(BackgroundColor, BorderWid";
-parent._base.SetColorAndBorder(parent._backgroundcolor,parent._borderwidth,parent._bordercolor,parent._bordercornersradius);
- //BA.debugLineNum = 124;BA.debugLine="Base.RequestFocus";
-parent._base.RequestFocus();
- //BA.debugLineNum = 125;BA.debugLine="Dim IncludeTitle As Boolean = Title <> \"\"";
-_includetitle = (parent._title).equals((Object)("")) == false;
- //BA.debugLineNum = 126;BA.debugLine="Dim TempTitleBarHeight As Int = 0";
-_temptitlebarheight = (int) (0);
- //BA.debugLineNum = 127;BA.debugLine="If IncludeTitle Then";
+ //BA.debugLineNum = 120;BA.debugLine="If mParent.Width = 0 Or mParent.Height = 0 Then";
 if (true) break;
 
 case 15:
 //if
 this.state = 18;
-if (_includetitle) { 
+if (parent._mparent.getWidth()==0 || parent._mparent.getHeight()==0) { 
 this.state = 17;
 }if (true) break;
 
 case 17:
 //C
 this.state = 18;
- //BA.debugLineNum = 128;BA.debugLine="TempTitleBarHeight = TitleBarHeight";
-_temptitlebarheight = parent._titlebarheight;
+ //BA.debugLineNum = 121;BA.debugLine="Log(\"Warning: dialog shown with zero sized paren";
+parent.__c.LogImpl("913303832","Warning: dialog shown with zero sized parent.",0);
  if (true) break;
 
 case 18:
 //C
 this.state = 19;
 ;
- //BA.debugLineNum = 130;BA.debugLine="Dim height As Int = Content.Height + ButtonsHeigh";
-_height = (int) (_content.getHeight()+parent._buttonsheight+parent.__c.DipToCurrent((int) (3))+parent.__c.DipToCurrent((int) (3))+_temptitlebarheight);
- //BA.debugLineNum = 131;BA.debugLine="Dim width As Int = Content.Width + 4dip";
-_width = (int) (_content.getWidth()+parent.__c.DipToCurrent((int) (4)));
- //BA.debugLineNum = 132;BA.debugLine="Dim Top As Int = Round(Background.Height / 2 - he";
-_top = (int) (parent.__c.Round(parent._background.getHeight()/(double)2-_height/(double)2));
- //BA.debugLineNum = 133;BA.debugLine="Dim RemoveTitle As Boolean";
-_removetitle = false;
- //BA.debugLineNum = 134;BA.debugLine="If PutAtTop Then";
+ //BA.debugLineNum = 123;BA.debugLine="mParent.AddView(Background, 0, 0, mParent.Width,";
+parent._mparent.AddView((android.view.View)(parent._background.getObject()),(int) (0),(int) (0),parent._mparent.getWidth(),parent._mparent.getHeight());
+ //BA.debugLineNum = 124;BA.debugLine="UpdateBlur";
+parent._updateblur();
+ //BA.debugLineNum = 125;BA.debugLine="Base = xui.CreatePanel(\"\")";
+parent._base = parent._xui.CreatePanel(ba,"");
+ //BA.debugLineNum = 126;BA.debugLine="Base.SetColorAndBorder(BackgroundColor, BorderWid";
+parent._base.SetColorAndBorder(parent._backgroundcolor,parent._borderwidth,parent._bordercolor,parent._bordercornersradius);
+ //BA.debugLineNum = 127;BA.debugLine="Base.RequestFocus";
+parent._base.RequestFocus();
+ //BA.debugLineNum = 128;BA.debugLine="Dim IncludeTitle As Boolean = Title <> \"\"";
+_includetitle = (parent._title).equals((Object)("")) == false;
+ //BA.debugLineNum = 129;BA.debugLine="Dim TempTitleBarHeight As Int = 0";
+_temptitlebarheight = (int) (0);
+ //BA.debugLineNum = 130;BA.debugLine="If IncludeTitle Then";
 if (true) break;
 
 case 19:
 //if
-this.state = 28;
-if (parent._putattop) { 
+this.state = 22;
+if (_includetitle) { 
 this.state = 21;
 }if (true) break;
 
 case 21:
 //C
 this.state = 22;
- //BA.debugLineNum = 135;BA.debugLine="Top = 20dip";
-_top = parent.__c.DipToCurrent((int) (20));
- //BA.debugLineNum = 136;BA.debugLine="If Background.Height - Top - height < 200dip The";
-if (true) break;
+ //BA.debugLineNum = 131;BA.debugLine="TempTitleBarHeight = TitleBarHeight";
+_temptitlebarheight = parent._titlebarheight;
+ if (true) break;
 
 case 22:
-//if
-this.state = 27;
-if (parent._background.getHeight()-_top-_height<parent.__c.DipToCurrent((int) (200))) { 
-this.state = 24;
-;}if (true) break;
-
-case 24:
 //C
-this.state = 27;
-_removetitle = parent.__c.True;
+this.state = 23;
+;
+ //BA.debugLineNum = 133;BA.debugLine="Dim height As Int = Content.Height + ButtonsHeigh";
+_height = (int) (_content.getHeight()+parent._buttonsheight+parent.__c.DipToCurrent((int) (3))+parent.__c.DipToCurrent((int) (3))+_temptitlebarheight);
+ //BA.debugLineNum = 134;BA.debugLine="Dim width As Int = Content.Width + 4dip";
+_width = (int) (_content.getWidth()+parent.__c.DipToCurrent((int) (4)));
+ //BA.debugLineNum = 135;BA.debugLine="Dim Top As Int = Round(Background.Height / 2 - he";
+_top = (int) (parent.__c.Round(parent._background.getHeight()/(double)2-_height/(double)2));
+ //BA.debugLineNum = 136;BA.debugLine="Dim RemoveTitle As Boolean";
+_removetitle = false;
+ //BA.debugLineNum = 137;BA.debugLine="If PutAtTop Then";
 if (true) break;
 
-case 27:
-//C
-this.state = 28;
-;
- if (true) break;
-;
- //BA.debugLineNum = 138;BA.debugLine="If RemoveTitle Or Background.Height < height Then";
-
-case 28:
+case 23:
 //if
-this.state = 31;
-if (_removetitle || parent._background.getHeight()<_height) { 
-this.state = 30;
+this.state = 32;
+if (parent._putattop) { 
+this.state = 25;
 }if (true) break;
 
-case 30:
+case 25:
+//C
+this.state = 26;
+ //BA.debugLineNum = 138;BA.debugLine="Top = 20dip";
+_top = parent.__c.DipToCurrent((int) (20));
+ //BA.debugLineNum = 139;BA.debugLine="If Background.Height - Top - height < 200dip The";
+if (true) break;
+
+case 26:
+//if
+this.state = 31;
+if (parent._background.getHeight()-_top-_height<parent.__c.DipToCurrent((int) (200))) { 
+this.state = 28;
+;}if (true) break;
+
+case 28:
 //C
 this.state = 31;
- //BA.debugLineNum = 139;BA.debugLine="Top = 1dip";
-_top = parent.__c.DipToCurrent((int) (1));
- //BA.debugLineNum = 140;BA.debugLine="IncludeTitle = False";
-_includetitle = parent.__c.False;
- //BA.debugLineNum = 141;BA.debugLine="height = height - TempTitleBarHeight - 3dip";
-_height = (int) (_height-_temptitlebarheight-parent.__c.DipToCurrent((int) (3)));
- //BA.debugLineNum = 142;BA.debugLine="TempTitleBarHeight = 0";
-_temptitlebarheight = (int) (0);
- if (true) break;
+_removetitle = parent.__c.True;
+if (true) break;
 
 case 31:
 //C
 this.state = 32;
 ;
- //BA.debugLineNum = 144;BA.debugLine="Background.AddView(Base, Round(Background.Width /";
-parent._background.AddView((android.view.View)(parent._base.getObject()),(int) (parent.__c.Round(parent._background.getWidth()/(double)2-_width/(double)2)),_top,(int) (parent.__c.Round(_width)),(int) (parent.__c.Round(_height)));
- //BA.debugLineNum = 146;BA.debugLine="For i = ButtonsOrder.Length - 1 To 0 Step - 1";
-if (true) break;
+ if (true) break;
+;
+ //BA.debugLineNum = 141;BA.debugLine="If RemoveTitle Or Background.Height < height Then";
 
 case 32:
-//for
-this.state = 43;
-step46 = -1;
-limit46 = (int) (0);
-_i = (int) (parent._buttonsorder.length-1) ;
-this.state = 62;
-if (true) break;
-
-case 62:
-//C
-this.state = 43;
-if ((step46 > 0 && _i <= limit46) || (step46 < 0 && _i >= limit46)) this.state = 34;
-if (true) break;
-
-case 63:
-//C
-this.state = 62;
-_i = ((int)(0 + _i + step46)) ;
-if (true) break;
+//if
+this.state = 35;
+if (_removetitle || parent._background.getHeight()<_height) { 
+this.state = 34;
+}if (true) break;
 
 case 34:
 //C
 this.state = 35;
- //BA.debugLineNum = 147;BA.debugLine="Dim btype As Int = ButtonsOrder(i)";
-_btype = parent._buttonsorder[_i];
- //BA.debugLineNum = 148;BA.debugLine="Select btype";
-if (true) break;
+ //BA.debugLineNum = 142;BA.debugLine="Top = 1dip";
+_top = parent.__c.DipToCurrent((int) (1));
+ //BA.debugLineNum = 143;BA.debugLine="IncludeTitle = False";
+_includetitle = parent.__c.False;
+ //BA.debugLineNum = 144;BA.debugLine="height = height - TempTitleBarHeight - 3dip";
+_height = (int) (_height-_temptitlebarheight-parent.__c.DipToCurrent((int) (3)));
+ //BA.debugLineNum = 145;BA.debugLine="TempTitleBarHeight = 0";
+_temptitlebarheight = (int) (0);
+ if (true) break;
 
 case 35:
+//C
+this.state = 36;
+;
+ //BA.debugLineNum = 147;BA.debugLine="Background.AddView(Base, Round(Background.Width /";
+parent._background.AddView((android.view.View)(parent._base.getObject()),(int) (parent.__c.Round(parent._background.getWidth()/(double)2-_width/(double)2)),_top,(int) (parent.__c.Round(_width)),(int) (parent.__c.Round(_height)));
+ //BA.debugLineNum = 149;BA.debugLine="For i = ButtonsOrder.Length - 1 To 0 Step - 1";
+if (true) break;
+
+case 36:
+//for
+this.state = 47;
+step49 = -1;
+limit49 = (int) (0);
+_i = (int) (parent._buttonsorder.length-1) ;
+this.state = 66;
+if (true) break;
+
+case 66:
+//C
+this.state = 47;
+if ((step49 > 0 && _i <= limit49) || (step49 < 0 && _i >= limit49)) this.state = 38;
+if (true) break;
+
+case 67:
+//C
+this.state = 66;
+_i = ((int)(0 + _i + step49)) ;
+if (true) break;
+
+case 38:
+//C
+this.state = 39;
+ //BA.debugLineNum = 150;BA.debugLine="Dim btype As Int = ButtonsOrder(i)";
+_btype = parent._buttonsorder[_i];
+ //BA.debugLineNum = 151;BA.debugLine="Select btype";
+if (true) break;
+
+case 39:
 //select
-this.state = 42;
+this.state = 46;
 switch (BA.switchObjectToInt(_btype,parent._xui.DialogResponse_Cancel,parent._xui.DialogResponse_Negative,parent._xui.DialogResponse_Positive)) {
 case 0: {
-this.state = 37;
-if (true) break;
-}
-case 1: {
-this.state = 39;
-if (true) break;
-}
-case 2: {
 this.state = 41;
 if (true) break;
 }
+case 1: {
+this.state = 43;
+if (true) break;
+}
+case 2: {
+this.state = 45;
+if (true) break;
+}
 }
 if (true) break;
 
-case 37:
+case 41:
 //C
-this.state = 42;
- //BA.debugLineNum = 150;BA.debugLine="CreateButton(Cancel, btype)";
+this.state = 46;
+ //BA.debugLineNum = 153;BA.debugLine="CreateButton(Cancel, btype)";
 parent._createbutton(_cancel,_btype);
  if (true) break;
 
-case 39:
+case 43:
 //C
-this.state = 42;
- //BA.debugLineNum = 152;BA.debugLine="CreateButton(No, btype)";
+this.state = 46;
+ //BA.debugLineNum = 155;BA.debugLine="CreateButton(No, btype)";
 parent._createbutton(_no,_btype);
  if (true) break;
 
-case 41:
+case 45:
 //C
-this.state = 42;
- //BA.debugLineNum = 154;BA.debugLine="CreateButton(Yes, btype)";
+this.state = 46;
+ //BA.debugLineNum = 157;BA.debugLine="CreateButton(Yes, btype)";
 parent._createbutton(_yes,_btype);
  if (true) break;
 
-case 42:
-//C
-this.state = 63;
-;
- if (true) break;
-if (true) break;
-
-case 43:
-//C
-this.state = 44;
-;
- //BA.debugLineNum = 157;BA.debugLine="Base.Visible = False";
-parent._base.setVisible(parent.__c.False);
- //BA.debugLineNum = 158;BA.debugLine="If IncludeTitle Then";
-if (true) break;
-
-case 44:
-//if
-this.state = 47;
-if (_includetitle) { 
-this.state = 46;
-}if (true) break;
-
 case 46:
 //C
-this.state = 47;
- //BA.debugLineNum = 159;BA.debugLine="TitleBar = xui.CreatePanel(\"TitleBar\")";
-parent._titlebar = parent._xui.CreatePanel(ba,"TitleBar");
- //BA.debugLineNum = 160;BA.debugLine="TitleBar.Color = TitleBarColor";
-parent._titlebar.setColor(parent._titlebarcolor);
- //BA.debugLineNum = 161;BA.debugLine="Base.AddView(TitleBar, 2dip, 2dip, Content.Width";
-parent._base.AddView((android.view.View)(parent._titlebar.getObject()),parent.__c.DipToCurrent((int) (2)),parent.__c.DipToCurrent((int) (2)),_content.getWidth(),_temptitlebarheight);
- //BA.debugLineNum = 162;BA.debugLine="Dim lbl As Label";
-_lbl = new anywheresoftware.b4a.objects.LabelWrapper();
- //BA.debugLineNum = 163;BA.debugLine="lbl.Initialize(\"\")";
-_lbl.Initialize(ba,"");
- //BA.debugLineNum = 164;BA.debugLine="Dim xlbl As B4XView = lbl";
-_xlbl = new anywheresoftware.b4a.objects.B4XViewWrapper();
-_xlbl = (anywheresoftware.b4a.objects.B4XViewWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.B4XViewWrapper(), (java.lang.Object)(_lbl.getObject()));
- //BA.debugLineNum = 165;BA.debugLine="XUIViewsUtils.SetTextOrCSBuilderToLabel(xlbl, Ti";
-parent._xuiviewsutils._settextorcsbuildertolabel /*String*/ (ba,_xlbl,parent._title);
- //BA.debugLineNum = 166;BA.debugLine="xlbl.TextColor = TitleBarTextColor";
-_xlbl.setTextColor(parent._titlebartextcolor);
- //BA.debugLineNum = 167;BA.debugLine="xlbl.Font = TitleBarFont";
-_xlbl.setFont(parent._titlebarfont);
- //BA.debugLineNum = 168;BA.debugLine="xlbl.SetTextAlignment(\"CENTER\", \"CENTER\")";
-_xlbl.SetTextAlignment("CENTER","CENTER");
- //BA.debugLineNum = 169;BA.debugLine="TitleBar.AddView(xlbl, 0, 0, TitleBar.Width, Tit";
-parent._titlebar.AddView((android.view.View)(_xlbl.getObject()),(int) (0),(int) (0),parent._titlebar.getWidth(),parent._titlebar.getHeight());
+this.state = 67;
+;
  if (true) break;
+if (true) break;
 
 case 47:
 //C
 this.state = 48;
 ;
- //BA.debugLineNum = 171;BA.debugLine="Content.RemoveViewFromParent";
-_content.RemoveViewFromParent();
- //BA.debugLineNum = 172;BA.debugLine="Base.AddView(Content, 2dip, 2dip + TempTitleBarHe";
-parent._base.AddView((android.view.View)(_content.getObject()),parent.__c.DipToCurrent((int) (2)),(int) (parent.__c.DipToCurrent((int) (2))+_temptitlebarheight),_content.getWidth(),_content.getHeight());
- //BA.debugLineNum = 173;BA.debugLine="Base.SetVisibleAnimated(VisibleAnimationDuration,";
-parent._base.SetVisibleAnimated(parent._visibleanimationduration,parent.__c.True);
- //BA.debugLineNum = 174;BA.debugLine="For Each v As B4XView In Background.GetAllViewsRe";
+ //BA.debugLineNum = 160;BA.debugLine="Base.Visible = False";
+parent._base.setVisible(parent.__c.False);
+ //BA.debugLineNum = 161;BA.debugLine="If IncludeTitle Then";
 if (true) break;
 
 case 48:
-//for
+//if
 this.state = 51;
-_v = new anywheresoftware.b4a.objects.B4XViewWrapper();
-group74 = parent._background.GetAllViewsRecursive();
-index74 = 0;
-groupLen74 = group74.getSize();
-this.state = 64;
-if (true) break;
-
-case 64:
-//C
-this.state = 51;
-if (index74 < groupLen74) {
+if (_includetitle) { 
 this.state = 50;
-_v = (anywheresoftware.b4a.objects.B4XViewWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.B4XViewWrapper(), (java.lang.Object)(group74.Get(index74)));}
-if (true) break;
-
-case 65:
-//C
-this.state = 64;
-index74++;
-if (true) break;
+}if (true) break;
 
 case 50:
 //C
-this.state = 65;
- //BA.debugLineNum = 175;BA.debugLine="v.Enabled = True";
-_v.setEnabled(parent.__c.True);
+this.state = 51;
+ //BA.debugLineNum = 162;BA.debugLine="TitleBar = xui.CreatePanel(\"TitleBar\")";
+parent._titlebar = parent._xui.CreatePanel(ba,"TitleBar");
+ //BA.debugLineNum = 163;BA.debugLine="TitleBar.Color = TitleBarColor";
+parent._titlebar.setColor(parent._titlebarcolor);
+ //BA.debugLineNum = 164;BA.debugLine="Base.AddView(TitleBar, 2dip, 2dip, Content.Width";
+parent._base.AddView((android.view.View)(parent._titlebar.getObject()),parent.__c.DipToCurrent((int) (2)),parent.__c.DipToCurrent((int) (2)),_content.getWidth(),_temptitlebarheight);
+ //BA.debugLineNum = 165;BA.debugLine="Dim lbl As Label";
+_lbl = new anywheresoftware.b4a.objects.LabelWrapper();
+ //BA.debugLineNum = 166;BA.debugLine="lbl.Initialize(\"\")";
+_lbl.Initialize(ba,"");
+ //BA.debugLineNum = 167;BA.debugLine="Dim xlbl As B4XView = lbl";
+_xlbl = new anywheresoftware.b4a.objects.B4XViewWrapper();
+_xlbl = (anywheresoftware.b4a.objects.B4XViewWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.B4XViewWrapper(), (java.lang.Object)(_lbl.getObject()));
+ //BA.debugLineNum = 168;BA.debugLine="XUIViewsUtils.SetTextOrCSBuilderToLabel(xlbl, Ti";
+parent._xuiviewsutils._settextorcsbuildertolabel /*String*/ (ba,_xlbl,parent._title);
+ //BA.debugLineNum = 169;BA.debugLine="xlbl.TextColor = TitleBarTextColor";
+_xlbl.setTextColor(parent._titlebartextcolor);
+ //BA.debugLineNum = 170;BA.debugLine="xlbl.Font = TitleBarFont";
+_xlbl.setFont(parent._titlebarfont);
+ //BA.debugLineNum = 171;BA.debugLine="xlbl.SetTextAlignment(\"CENTER\", \"CENTER\")";
+_xlbl.SetTextAlignment("CENTER","CENTER");
+ //BA.debugLineNum = 172;BA.debugLine="TitleBar.AddView(xlbl, 0, 0, TitleBar.Width, Tit";
+parent._titlebar.AddView((android.view.View)(_xlbl.getObject()),(int) (0),(int) (0),parent._titlebar.getWidth(),parent._titlebar.getHeight());
  if (true) break;
-if (true) break;
 
 case 51:
 //C
 this.state = 52;
 ;
- //BA.debugLineNum = 177;BA.debugLine="Wait For CloseMessage (Result As Int)";
-parent.__c.WaitFor("closemessage", ba, this, null);
-this.state = 66;
-return;
-case 66:
-//C
-this.state = 52;
-_result = (Integer) result[0];
-;
- //BA.debugLineNum = 178;BA.debugLine="For Each v As B4XView In Background.GetAllViewsRe";
+ //BA.debugLineNum = 174;BA.debugLine="Content.RemoveViewFromParent";
+_content.RemoveViewFromParent();
+ //BA.debugLineNum = 175;BA.debugLine="Base.AddView(Content, 2dip, 2dip + TempTitleBarHe";
+parent._base.AddView((android.view.View)(_content.getObject()),parent.__c.DipToCurrent((int) (2)),(int) (parent.__c.DipToCurrent((int) (2))+_temptitlebarheight),_content.getWidth(),_content.getHeight());
+ //BA.debugLineNum = 176;BA.debugLine="Base.SetVisibleAnimated(VisibleAnimationDuration,";
+parent._base.SetVisibleAnimated(parent._visibleanimationduration,parent.__c.True);
+ //BA.debugLineNum = 177;BA.debugLine="For Each v As B4XView In Background.GetAllViewsRe";
 if (true) break;
 
 case 52:
 //for
 this.state = 55;
 _v = new anywheresoftware.b4a.objects.B4XViewWrapper();
-group78 = parent._background.GetAllViewsRecursive();
-index78 = 0;
-groupLen78 = group78.getSize();
-this.state = 67;
-if (true) break;
-
-case 67:
-//C
-this.state = 55;
-if (index78 < groupLen78) {
-this.state = 54;
-_v = (anywheresoftware.b4a.objects.B4XViewWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.B4XViewWrapper(), (java.lang.Object)(group78.Get(index78)));}
+group77 = parent._background.GetAllViewsRecursive();
+index77 = 0;
+groupLen77 = group77.getSize();
+this.state = 68;
 if (true) break;
 
 case 68:
 //C
-this.state = 67;
-index78++;
+this.state = 55;
+if (index77 < groupLen77) {
+this.state = 54;
+_v = (anywheresoftware.b4a.objects.B4XViewWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.B4XViewWrapper(), (java.lang.Object)(group77.Get(index77)));}
+if (true) break;
+
+case 69:
+//C
+this.state = 68;
+index77++;
 if (true) break;
 
 case 54:
 //C
-this.state = 68;
- //BA.debugLineNum = 179;BA.debugLine="v.Enabled = False";
-_v.setEnabled(parent.__c.False);
+this.state = 69;
+ //BA.debugLineNum = 178;BA.debugLine="v.Enabled = True";
+_v.setEnabled(parent.__c.True);
  if (true) break;
 if (true) break;
 
@@ -1052,41 +1025,89 @@ case 55:
 //C
 this.state = 56;
 ;
- //BA.debugLineNum = 181;BA.debugLine="Base.SetVisibleAnimated(VisibleAnimationDuration,";
-parent._base.SetVisibleAnimated(parent._visibleanimationduration,parent.__c.False);
- //BA.debugLineNum = 182;BA.debugLine="If VisibleAnimationDuration > 0 Then";
+ //BA.debugLineNum = 180;BA.debugLine="Wait For CloseMessage (Result As Int)";
+parent.__c.WaitFor("closemessage", ba, this, null);
+this.state = 70;
+return;
+case 70:
+//C
+this.state = 56;
+_result = (Integer) result[0];
+;
+ //BA.debugLineNum = 181;BA.debugLine="For Each v As B4XView In Background.GetAllViewsRe";
 if (true) break;
 
 case 56:
-//if
+//for
 this.state = 59;
-if (parent._visibleanimationduration>0) { 
+_v = new anywheresoftware.b4a.objects.B4XViewWrapper();
+group81 = parent._background.GetAllViewsRecursive();
+index81 = 0;
+groupLen81 = group81.getSize();
+this.state = 71;
+if (true) break;
+
+case 71:
+//C
+this.state = 59;
+if (index81 < groupLen81) {
 this.state = 58;
-}if (true) break;
+_v = (anywheresoftware.b4a.objects.B4XViewWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.B4XViewWrapper(), (java.lang.Object)(group81.Get(index81)));}
+if (true) break;
+
+case 72:
+//C
+this.state = 71;
+index81++;
+if (true) break;
 
 case 58:
 //C
-this.state = 59;
- //BA.debugLineNum = 183;BA.debugLine="Sleep(VisibleAnimationDuration)";
-parent.__c.Sleep(ba,this,parent._visibleanimationduration);
-this.state = 69;
-return;
-case 69:
-//C
-this.state = 59;
-;
+this.state = 72;
+ //BA.debugLineNum = 182;BA.debugLine="v.Enabled = False";
+_v.setEnabled(parent.__c.False);
  if (true) break;
+if (true) break;
 
 case 59:
 //C
+this.state = 60;
+;
+ //BA.debugLineNum = 184;BA.debugLine="Base.SetVisibleAnimated(VisibleAnimationDuration,";
+parent._base.SetVisibleAnimated(parent._visibleanimationduration,parent.__c.False);
+ //BA.debugLineNum = 185;BA.debugLine="If VisibleAnimationDuration > 0 Then";
+if (true) break;
+
+case 60:
+//if
+this.state = 63;
+if (parent._visibleanimationduration>0) { 
+this.state = 62;
+}if (true) break;
+
+case 62:
+//C
+this.state = 63;
+ //BA.debugLineNum = 186;BA.debugLine="Sleep(VisibleAnimationDuration)";
+parent.__c.Sleep(ba,this,parent._visibleanimationduration);
+this.state = 73;
+return;
+case 73:
+//C
+this.state = 63;
+;
+ if (true) break;
+
+case 63:
+//C
 this.state = -1;
 ;
- //BA.debugLineNum = 185;BA.debugLine="Background.RemoveViewFromParent";
+ //BA.debugLineNum = 188;BA.debugLine="Background.RemoveViewFromParent";
 parent._background.RemoveViewFromParent();
- //BA.debugLineNum = 186;BA.debugLine="Return Result";
+ //BA.debugLineNum = 189;BA.debugLine="Return Result";
 if (true) {
 parent.__c.ReturnFromResumableSub(this,(Object)(_result));return;};
- //BA.debugLineNum = 187;BA.debugLine="End Sub";
+ //BA.debugLineNum = 190;BA.debugLine="End Sub";
 if (true) break;
 
             }
@@ -1156,36 +1177,36 @@ if (true) break;
     }
 }
 public String  _stub_click() throws Exception{
- //BA.debugLineNum = 349;BA.debugLine="Private Sub Stub_Click";
- //BA.debugLineNum = 351;BA.debugLine="End Sub";
+ //BA.debugLineNum = 352;BA.debugLine="Private Sub Stub_Click";
+ //BA.debugLineNum = 354;BA.debugLine="End Sub";
 return "";
 }
 public String  _updateblur() throws Exception{
 anywheresoftware.b4a.objects.B4XViewWrapper.B4XBitmapWrapper _source = null;
 b4a.example.bitmapcreator _blurred = null;
- //BA.debugLineNum = 274;BA.debugLine="Private Sub UpdateBlur";
- //BA.debugLineNum = 275;BA.debugLine="If BlurBackground = False Then Return";
+ //BA.debugLineNum = 277;BA.debugLine="Private Sub UpdateBlur";
+ //BA.debugLineNum = 278;BA.debugLine="If BlurBackground = False Then Return";
 if (_blurbackground==__c.False) { 
 if (true) return "";};
- //BA.debugLineNum = 276;BA.debugLine="Background.Visible = False";
+ //BA.debugLineNum = 279;BA.debugLine="Background.Visible = False";
 _background.setVisible(__c.False);
- //BA.debugLineNum = 277;BA.debugLine="Dim source As B4XBitmap = Background.Parent.Snaps";
+ //BA.debugLineNum = 280;BA.debugLine="Dim source As B4XBitmap = Background.Parent.Snaps";
 _source = new anywheresoftware.b4a.objects.B4XViewWrapper.B4XBitmapWrapper();
 _source = _background.getParent().Snapshot();
- //BA.debugLineNum = 278;BA.debugLine="If source.Width > Background.Width Or source.Heig";
+ //BA.debugLineNum = 281;BA.debugLine="If source.Width > Background.Width Or source.Heig";
 if (_source.getWidth()>_background.getWidth() || _source.getHeight()>_background.getHeight()) { 
- //BA.debugLineNum = 279;BA.debugLine="source = source.Crop(0, 0, Background.Width, Bac";
+ //BA.debugLineNum = 282;BA.debugLine="source = source.Crop(0, 0, Background.Width, Bac";
 _source = _source.Crop((int) (0),(int) (0),_background.getWidth(),_background.getHeight());
  };
- //BA.debugLineNum = 281;BA.debugLine="Background.Visible = True";
+ //BA.debugLineNum = 284;BA.debugLine="Background.Visible = True";
 _background.setVisible(__c.True);
- //BA.debugLineNum = 282;BA.debugLine="BlurImageView.SetLayoutAnimated(0, 0, 0, Backgrou";
+ //BA.debugLineNum = 285;BA.debugLine="BlurImageView.SetLayoutAnimated(0, 0, 0, Backgrou";
 _blurimageview.SetLayoutAnimated((int) (0),(int) (0),(int) (0),_background.getWidth(),_background.getHeight());
- //BA.debugLineNum = 283;BA.debugLine="Dim blurred As BitmapCreator = Blur(source)";
+ //BA.debugLineNum = 286;BA.debugLine="Dim blurred As BitmapCreator = Blur(source)";
 _blurred = _blur(_source);
- //BA.debugLineNum = 284;BA.debugLine="blurred.SetBitmapToImageView(blurred.Bitmap, Blur";
+ //BA.debugLineNum = 287;BA.debugLine="blurred.SetBitmapToImageView(blurred.Bitmap, Blur";
 _blurred._setbitmaptoimageview(_blurred._getbitmap(),_blurimageview);
- //BA.debugLineNum = 285;BA.debugLine="End Sub";
+ //BA.debugLineNum = 288;BA.debugLine="End Sub";
 return "";
 }
 public Object callSub(String sub, Object sender, Object[] args) throws Exception {

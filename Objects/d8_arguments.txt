@@ -5,7 +5,7 @@ C:\Proyectos B4A\BakApp4ndroid_Tag\Objects
 C:\Android\platforms\android-34\android.jar
 --min-api
 21
-C:\Android\tools\..\extras\b4a_local\unpacked-b4ashared-63872366116000\dex_v1\b4ashared.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-b4ashared-63885100974000\dex_v1\b4ashared.zip
 c:\android\tools\..\extras\b4a_remote\androidx\core\core\1.13.1\unpacked-core-1.13.1\jars\classes.zip
 c:\android\tools\..\extras\b4a_remote\androidx\core\core-ktx\1.13.1\unpacked-core-ktx-1.13.1\jars\classes.zip
 c:\android\tools\..\extras\b4a_remote\androidx\core\core-testing\1.13.1\unpacked-core-testing-1.13.1\jars\classes.zip
@@ -44,40 +44,40 @@ c:\android\tools\..\extras\b4a_remote\androidx\arch\core\core-runtime\2.2.0\unpa
 c:\android\tools\..\extras\b4a_remote\androidx\lifecycle\lifecycle-runtime-android\2.8.3\unpacked-lifecycle-runtime-android-2.8.3\jars\classes.zip
 c:\android\tools\..\extras\b4a_remote\androidx\versionedparcelable\versionedparcelable\1.2.0\unpacked-versionedparcelable-1.2.0\jars\classes.zip
 c:\android\tools\..\extras\b4a_remote\androidx\multidex\multidex\2.0.1\unpacked-multidex-2.0.1\jars\classes.zip
-C:\Android\tools\..\extras\b4a_local\unpacked-core-63872366118000\dex_v1\core.zip
-C:\Android\tools\..\extras\b4a_local\unpacked-dateutils-63872366118000\dex_v1\dateutils.zip
-C:\Android\tools\..\extras\b4a_local\unpacked-ime-63872366118000\dex_v1\ime.zip
-C:\Android\tools\..\extras\b4a_local\unpacked-javaobject-63872366118000\dex_v1\javaobject.zip
-C:\Android\tools\..\extras\b4a_local\unpacked-json-63872366118000\dex_v1\json.zip
-C:\Android\tools\..\extras\b4a_local\unpacked-okhttp-63872366118000\dex_v1\okhttp.zip
-C:\Android\tools\..\extras\b4a_local\unpacked-phone-63872366118000\dex_v1\phone.zip
-C:\Android\tools\..\extras\b4a_local\unpacked-randomaccessfile-63872366118000\dex_v1\randomaccessfile.zip
-C:\Android\tools\..\extras\b4a_local\unpacked-reflection-63872366118000\dex_v1\reflection.zip
-C:\Android\tools\..\extras\b4a_local\unpacked-runtimepermissions.androidx-63872366118000\dex_v1\runtimepermissions.zip
-C:\Android\tools\..\extras\b4a_local\unpacked-serial-63872366118000\dex_v1\serial.zip
-C:\Android\tools\..\extras\b4a_local\unpacked-sql-63872366118000\dex_v1\sql.zip
-C:\Android\tools\..\extras\b4a_local\unpacked-xcustomlistview-63872366118000\dex_v1\xcustomlistview.zip
-C:\Android\tools\..\extras\b4a_local\unpacked-xmlsax-63872366118000\dex_v1\xmlsax.zip
-C:\Android\tools\..\extras\b4a_local\unpacked-xui-63872366118000\dex_v1\xui.zip
-C:\Android\tools\..\extras\b4a_local\unpacked-network-63872366118000\dex_v1\network.zip
-C:\Android\tools\..\extras\b4a_local\unpacked-okhttp-4.9.0-63872366118000\dex_v1\okhttp-4.9.0.zip
-C:\Android\tools\..\extras\b4a_local\unpacked-okio-2.8.0-63872366118000\dex_v1\okio-2.8.0.zip
-C:\Android\tools\..\extras\b4a_local\unpacked-okhttp-urlconnection-4.9.3-63872366118000\dex_v1\okhttp-urlconnection-4.9.3.zip
-C:\Android\tools\..\extras\b4a_local\unpacked-org.jetbrains.kotlin-kotlin-stdlib-63872366118000\dex_v1\org.jetbrains.kotlin-kotlin-stdlib.zip
-C:\Android\tools\..\extras\b4a_local\unpacked-stringutils-63872366118000\dex_v1\stringutils.zip
-C:\Android\tools\..\extras\b4a_local\unpacked-bitmapcreator-63872366116000\dex_v1\bitmapcreator.zip
-C:\Android\tools\..\extras\b4a_local\unpacked-remotelogger-63872366118000\dex_v1\remotelogger.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-core-63885100974000\dex_v1\core.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-dateutils-63885100974000\dex_v1\dateutils.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-ime-63885100974000\dex_v1\ime.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-javaobject-63885100974000\dex_v1\javaobject.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-json-63885100974000\dex_v1\json.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-okhttp-63885100974000\dex_v1\okhttp.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-phone-63885100976000\dex_v1\phone.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-randomaccessfile-63885100976000\dex_v1\randomaccessfile.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-reflection-63885100976000\dex_v1\reflection.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-runtimepermissions.androidx-63885100976000\dex_v1\runtimepermissions.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-serial-63885100976000\dex_v1\serial.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-sql-63885100976000\dex_v1\sql.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-xcustomlistview-63885100976000\dex_v1\xcustomlistview.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-xmlsax-63885100976000\dex_v1\xmlsax.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-xui-63885100976000\dex_v1\xui.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-network-63885100974000\dex_v1\network.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-okhttp-4.9.0-63885100974000\dex_v1\okhttp-4.9.0.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-okio-2.8.0-63885100974000\dex_v1\okio-2.8.0.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-okhttp-urlconnection-4.9.3-63885100974000\dex_v1\okhttp-urlconnection-4.9.3.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-org.jetbrains.kotlin-kotlin-stdlib-63885100974000\dex_v1\org.jetbrains.kotlin-kotlin-stdlib.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-stringutils-63885100976000\dex_v1\stringutils.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-bitmapcreator-63885100974000\dex_v1\bitmapcreator.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-remotelogger-63885100976000\dex_v1\remotelogger.zip
 c:\android\tools\..\extras\b4a_remote\androidx\annotation\annotation\1.8.0\annotation-1.8.0.zip
 c:\android\tools\..\extras\b4a_remote\androidx\annotation\annotation-jvm\1.8.0\annotation-jvm-1.8.0.zip
 c:\android\tools\..\extras\b4a_remote\androidx\lifecycle\lifecycle-common\2.8.3\lifecycle-common-2.8.3.zip
 c:\android\tools\..\extras\b4a_remote\androidx\lifecycle\lifecycle-common-java8\2.8.3\lifecycle-common-java8-2.8.3.zip
 c:\android\tools\..\extras\b4a_remote\androidx\lifecycle\lifecycle-compiler\2.8.3\lifecycle-compiler-2.8.3.zip
-C:\Android\tools\..\extras\b4a_local\unpacked-org.jetbrains.kotlinx-kotlinx-coroutines-android-63872366118000\dex_v1\org.jetbrains.kotlinx-kotlinx-coroutines-android.zip
-C:\Android\tools\..\extras\b4a_local\unpacked-io.reactivex.rxjava3-rxjava-63872366118000\dex_v1\io.reactivex.rxjava3-rxjava.zip
-C:\Android\tools\..\extras\b4a_local\unpacked-io.reactivex.rxjava2-rxjava-63872366118000\dex_v1\io.reactivex.rxjava2-rxjava.zip
-C:\Android\tools\..\extras\b4a_local\unpacked-org.jetbrains.kotlinx-kotlinx-coroutines-core-jvm-63872366118000\dex_v1\org.jetbrains.kotlinx-kotlinx-coroutines-core-jvm.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-org.jetbrains.kotlinx-kotlinx-coroutines-android-63885100974000\dex_v1\org.jetbrains.kotlinx-kotlinx-coroutines-android.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-io.reactivex.rxjava3-rxjava-63885100974000\dex_v1\io.reactivex.rxjava3-rxjava.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-io.reactivex.rxjava2-rxjava-63885100974000\dex_v1\io.reactivex.rxjava2-rxjava.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-org.jetbrains.kotlinx-kotlinx-coroutines-core-jvm-63885100974000\dex_v1\org.jetbrains.kotlinx-kotlinx-coroutines-core-jvm.zip
 c:\android\tools\..\extras\b4a_remote\androidx\arch\core\core-common\2.2.0\core-common-2.2.0.zip
-C:\Android\tools\..\extras\b4a_local\unpacked-org.reactivestreams-reactive-streams-63872366118000\dex_v1\org.reactivestreams-reactive-streams.zip
+C:\Android\tools\..\extras\b4a_local\unpacked-org.reactivestreams-reactive-streams-63885100976000\dex_v1\org.reactivestreams-reactive-streams.zip
 c:\android\tools\..\extras\b4a_remote\androidx\lifecycle\lifecycle-common-jvm\2.8.3\lifecycle-common-jvm-2.8.3.zip
 C:\Proyectos B4A\BakApp4ndroid_Tag\Objects\dexed\androidx\activity\R$attr.dex
 C:\Proyectos B4A\BakApp4ndroid_Tag\Objects\dexed\androidx\activity\R$color.dex
@@ -515,6 +515,7 @@ C:\Proyectos B4A\BakApp4ndroid_Tag\Objects\dexed\BaKapp\Movil\Tag\b4xloadingindi
 C:\Proyectos B4A\BakApp4ndroid_Tag\Objects\dexed\BaKapp\Movil\Tag\b4xlongtexttemplate.dex
 C:\Proyectos B4A\BakApp4ndroid_Tag\Objects\dexed\BaKapp\Movil\Tag\b4xplusminus$ResumableSub_StartDownLoop.dex
 C:\Proyectos B4A\BakApp4ndroid_Tag\Objects\dexed\BaKapp\Movil\Tag\b4xplusminus.dex
+C:\Proyectos B4A\BakApp4ndroid_Tag\Objects\dexed\BaKapp\Movil\Tag\b4xprogressdialog.dex
 C:\Proyectos B4A\BakApp4ndroid_Tag\Objects\dexed\BaKapp\Movil\Tag\b4xradiobutton$ResumableSub_SetValueImpl.dex
 C:\Proyectos B4A\BakApp4ndroid_Tag\Objects\dexed\BaKapp\Movil\Tag\b4xradiobutton.dex
 C:\Proyectos B4A\BakApp4ndroid_Tag\Objects\dexed\BaKapp\Movil\Tag\b4xsearchtemplate$ResumableSub_Show.dex

@@ -382,9 +382,6 @@ public anywheresoftware.b4a.objects.SpinnerWrapper _spinner_cant = null;
 public anywheresoftware.b4a.objects.ButtonWrapper _btn_limpiar = null;
 public b4a.example.dateutils _dateutils = null;
 public BaKapp.Movil.Tag.main _main = null;
-public BaKapp.Movil.Tag.frm_etiquetas _frm_etiquetas = null;
-public BaKapp.Movil.Tag.variables _variables = null;
-public BaKapp.Movil.Tag.funciones _funciones = null;
 public BaKapp.Movil.Tag.buscar_entidad _buscar_entidad = null;
 public BaKapp.Movil.Tag.buscar_productos _buscar_productos = null;
 public BaKapp.Movil.Tag.conf_local _conf_local = null;
@@ -392,12 +389,15 @@ public BaKapp.Movil.Tag.dbutils _dbutils = null;
 public BaKapp.Movil.Tag.frm_buscar_documento _frm_buscar_documento = null;
 public BaKapp.Movil.Tag.frm_documentos_generados _frm_documentos_generados = null;
 public BaKapp.Movil.Tag.frm_editar_obsoc _frm_editar_obsoc = null;
+public BaKapp.Movil.Tag.frm_etiquetas _frm_etiquetas = null;
 public BaKapp.Movil.Tag.frm_infostockxprod _frm_infostockxprod = null;
 public BaKapp.Movil.Tag.frm_menu_post_venta _frm_menu_post_venta = null;
 public BaKapp.Movil.Tag.frm_menu_principal _frm_menu_principal = null;
 public BaKapp.Movil.Tag.frm_post_01_descuentos _frm_post_01_descuentos = null;
 public BaKapp.Movil.Tag.frm_post_01_formulario _frm_post_01_formulario = null;
 public BaKapp.Movil.Tag.frm_post_01_producto _frm_post_01_producto = null;
+public BaKapp.Movil.Tag.funciones _funciones = null;
+public BaKapp.Movil.Tag.variables _variables = null;
 public BaKapp.Movil.Tag.httputils2service _httputils2service = null;
 public BaKapp.Movil.Tag.xuiviewsutils _xuiviewsutils = null;
 
@@ -740,7 +740,7 @@ case 0:
 //C
 this.state = 1;
  //BA.debugLineNum = 390;BA.debugLine="Log(\"Preess\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("51638401","Preess",0);
+anywheresoftware.b4a.keywords.Common.LogImpl("037158913","Preess",0);
  //BA.debugLineNum = 391;BA.debugLine="If(Txt_codigo.Text <> \"\") Then";
 if (true) break;
 
@@ -1000,7 +1000,7 @@ case 5:
 //C
 this.state = 6;
  //BA.debugLineNum = 1036;BA.debugLine="Log(\"Error: \" & j.ErrorMessage)";
-anywheresoftware.b4a.keywords.Common.LogImpl("53014672","Error: "+_j._errormessage /*String*/ ,0);
+anywheresoftware.b4a.keywords.Common.LogImpl("038535184","Error: "+_j._errormessage /*String*/ ,0);
  //BA.debugLineNum = 1037;BA.debugLine="ToastMessageShow(\"No se pudo generar la etiqueta";
 anywheresoftware.b4a.keywords.Common.ToastMessageShow(BA.ObjectToCharSequence("No se pudo generar la etiqueta"),anywheresoftware.b4a.keywords.Common.True);
  if (true) break;
@@ -1424,7 +1424,7 @@ case 15:
 //C
 this.state = 16;
  //BA.debugLineNum = 976;BA.debugLine="Log(\"Error en la petición HTTP\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("52752538","Error en la petición HTTP",0);
+anywheresoftware.b4a.keywords.Common.LogImpl("038273050","Error en la petición HTTP",0);
  if (true) break;
 
 case 16:
@@ -1573,7 +1573,7 @@ this.state = 10;
  //BA.debugLineNum = 833;BA.debugLine="ConnectedPrinter.Close";
 parent.mostCurrent._connectedprinter.Close();
  //BA.debugLineNum = 834;BA.debugLine="Log(\"Conexión anterior cerrada.\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("52621450","Conexión anterior cerrada.",0);
+anywheresoftware.b4a.keywords.Common.LogImpl("038141962","Conexión anterior cerrada.",0);
  if (true) break;
 
 case 10:
@@ -1615,7 +1615,7 @@ case 14:
 //C
 this.state = 15;
  //BA.debugLineNum = 844;BA.debugLine="Log(\"Conectado a la impresora.\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("52621460","Conectado a la impresora.",0);
+anywheresoftware.b4a.keywords.Common.LogImpl("038141972","Conectado a la impresora.",0);
  //BA.debugLineNum = 845;BA.debugLine="ProgressDialogShow(\"Mandando a impresión...\")";
 anywheresoftware.b4a.keywords.Common.ProgressDialogShow(mostCurrent.activityBA,BA.ObjectToCharSequence("Mandando a impresión..."));
  //BA.debugLineNum = 848;BA.debugLine="If AStreams.IsInitialized Then";
@@ -1648,7 +1648,7 @@ parent.mostCurrent._astreams.Write(_residuales.getBytes("UTF8"));
  //BA.debugLineNum = 855;BA.debugLine="AStreams.Write(ZPL.GetBytes(\"UTF8\"))";
 parent.mostCurrent._astreams.Write(_zpl.getBytes("UTF8"));
  //BA.debugLineNum = 856;BA.debugLine="Log(\"Impresora Calibrada Exitosamente.\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("52621472","Impresora Calibrada Exitosamente.",0);
+anywheresoftware.b4a.keywords.Common.LogImpl("038141984","Impresora Calibrada Exitosamente.",0);
  //BA.debugLineNum = 857;BA.debugLine="ProgressDialogHide";
 anywheresoftware.b4a.keywords.Common.ProgressDialogHide();
  //BA.debugLineNum = 858;BA.debugLine="ToastMessageShow(\"Calibración completa\",False)";
@@ -1661,7 +1661,7 @@ this.state = 21;
  //BA.debugLineNum = 861;BA.debugLine="ProgressDialogHide";
 anywheresoftware.b4a.keywords.Common.ProgressDialogHide();
  //BA.debugLineNum = 862;BA.debugLine="Log(\"Error al conectar con la impresora.\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("52621478","Error al conectar con la impresora.",0);
+anywheresoftware.b4a.keywords.Common.LogImpl("038141990","Error al conectar con la impresora.",0);
  //BA.debugLineNum = 863;BA.debugLine="bmp1 = LoadBitmap(File.DirAssets, \"symbol-cance";
 _bmp1 = anywheresoftware.b4a.keywords.Common.LoadBitmap(anywheresoftware.b4a.keywords.Common.File.getDirAssets(),"symbol-cancel.png");
  //BA.debugLineNum = 864;BA.debugLine="Msgbox2Async(\"Error de comandos\" , \"Error al ca";
@@ -1690,7 +1690,7 @@ this.catchState = 0;
  //BA.debugLineNum = 868;BA.debugLine="ProgressDialogHide";
 anywheresoftware.b4a.keywords.Common.ProgressDialogHide();
  //BA.debugLineNum = 869;BA.debugLine="Log(\"Error al enviar la etiqueta: \" & LastExcept";
-anywheresoftware.b4a.keywords.Common.LogImpl("52621485","Error al enviar la etiqueta: "+anywheresoftware.b4a.keywords.Common.LastException(mostCurrent.activityBA).getMessage(),0);
+anywheresoftware.b4a.keywords.Common.LogImpl("038141997","Error al enviar la etiqueta: "+anywheresoftware.b4a.keywords.Common.LastException(mostCurrent.activityBA).getMessage(),0);
  //BA.debugLineNum = 870;BA.debugLine="bmp1 = LoadBitmap(File.DirAssets, \"symbol-cancel";
 _bmp1 = anywheresoftware.b4a.keywords.Common.LoadBitmap(anywheresoftware.b4a.keywords.Common.File.getDirAssets(),"symbol-cancel.png");
  //BA.debugLineNum = 871;BA.debugLine="Msgbox2Async( \"Error de impresión: \"&LastExcepti";
@@ -1720,7 +1720,7 @@ this.state = 27;
  //BA.debugLineNum = 876;BA.debugLine="ConnectedPrinter.Close";
 parent.mostCurrent._connectedprinter.Close();
  //BA.debugLineNum = 877;BA.debugLine="Log(\"Conexión cerrada después de enviar.\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("52621493","Conexión cerrada después de enviar.",0);
+anywheresoftware.b4a.keywords.Common.LogImpl("038142005","Conexión cerrada después de enviar.",0);
  if (true) break;
 
 case 27:
@@ -1833,7 +1833,7 @@ this.state = 10;
  //BA.debugLineNum = 897;BA.debugLine="ConnectedPrinter.Close";
 parent.mostCurrent._connectedprinter.Close();
  //BA.debugLineNum = 898;BA.debugLine="Log(\"Conexión anterior cerrada.\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("52686990","Conexión anterior cerrada.",0);
+anywheresoftware.b4a.keywords.Common.LogImpl("038207502","Conexión anterior cerrada.",0);
  if (true) break;
 
 case 10:
@@ -1875,7 +1875,7 @@ case 14:
 //C
 this.state = 15;
  //BA.debugLineNum = 908;BA.debugLine="Log(\"Conectado a la impresora.\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("52687000","Conectado a la impresora.",0);
+anywheresoftware.b4a.keywords.Common.LogImpl("038207512","Conectado a la impresora.",0);
  //BA.debugLineNum = 911;BA.debugLine="If AStreams.IsInitialized Then";
 if (true) break;
 
@@ -1933,7 +1933,7 @@ parent.mostCurrent._astreams.Write(_residuales.getBytes("UTF8"));
  //BA.debugLineNum = 919;BA.debugLine="AStreams.Write(zpl.GetBytes(\"UTF8\"))";
 parent.mostCurrent._astreams.Write(_zpl.getBytes("UTF8"));
  //BA.debugLineNum = 920;BA.debugLine="Log(\"Etiqueta enviada exitosamente.\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("52687012","Etiqueta enviada exitosamente.",0);
+anywheresoftware.b4a.keywords.Common.LogImpl("038207524","Etiqueta enviada exitosamente.",0);
  if (true) break;
 if (true) break;
 
@@ -1955,7 +1955,7 @@ this.state = 25;
  //BA.debugLineNum = 928;BA.debugLine="ProgressDialogHide";
 anywheresoftware.b4a.keywords.Common.ProgressDialogHide();
  //BA.debugLineNum = 929;BA.debugLine="Log(\"Error al conectar con la impresora.\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("52687021","Error al conectar con la impresora.",0);
+anywheresoftware.b4a.keywords.Common.LogImpl("038207533","Error al conectar con la impresora.",0);
  //BA.debugLineNum = 930;BA.debugLine="bmp1 = LoadBitmap(File.DirAssets, \"symbol-cance";
 _bmp1 = anywheresoftware.b4a.keywords.Common.LoadBitmap(anywheresoftware.b4a.keywords.Common.File.getDirAssets(),"symbol-cancel.png");
  //BA.debugLineNum = 931;BA.debugLine="Msgbox2Async(\"Error de impresión\" , \"Error al i";
@@ -1984,7 +1984,7 @@ this.catchState = 0;
  //BA.debugLineNum = 935;BA.debugLine="ProgressDialogHide";
 anywheresoftware.b4a.keywords.Common.ProgressDialogHide();
  //BA.debugLineNum = 936;BA.debugLine="Log(\"Error al enviar la etiqueta: \" & LastExcept";
-anywheresoftware.b4a.keywords.Common.LogImpl("52687028","Error al enviar la etiqueta: "+anywheresoftware.b4a.keywords.Common.LastException(mostCurrent.activityBA).getMessage(),0);
+anywheresoftware.b4a.keywords.Common.LogImpl("038207540","Error al enviar la etiqueta: "+anywheresoftware.b4a.keywords.Common.LastException(mostCurrent.activityBA).getMessage(),0);
  //BA.debugLineNum = 937;BA.debugLine="bmp1 = LoadBitmap(File.DirAssets, \"symbol-cancel";
 _bmp1 = anywheresoftware.b4a.keywords.Common.LoadBitmap(anywheresoftware.b4a.keywords.Common.File.getDirAssets(),"symbol-cancel.png");
  //BA.debugLineNum = 938;BA.debugLine="Msgbox2Async( \"Error de impresión: \"&LastExcepti";
@@ -2014,7 +2014,7 @@ this.state = 31;
  //BA.debugLineNum = 943;BA.debugLine="ConnectedPrinter.Close";
 parent.mostCurrent._connectedprinter.Close();
  //BA.debugLineNum = 944;BA.debugLine="Log(\"Conexión cerrada después de enviar.\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("52687036","Conexión cerrada después de enviar.",0);
+anywheresoftware.b4a.keywords.Common.LogImpl("038207548","Conexión cerrada después de enviar.",0);
  if (true) break;
 
 case 31:
@@ -2117,7 +2117,7 @@ this.state = 10;
  //BA.debugLineNum = 772;BA.debugLine="ConnectedPrinter.Close";
 parent.mostCurrent._connectedprinter.Close();
  //BA.debugLineNum = 773;BA.debugLine="Log(\"Conexión anterior cerrada.\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("52555914","Conexión anterior cerrada.",0);
+anywheresoftware.b4a.keywords.Common.LogImpl("038076426","Conexión anterior cerrada.",0);
  if (true) break;
 
 case 10:
@@ -2159,7 +2159,7 @@ case 14:
 //C
 this.state = 15;
  //BA.debugLineNum = 783;BA.debugLine="Log(\"Conectado a la impresora.\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("52555924","Conectado a la impresora.",0);
+anywheresoftware.b4a.keywords.Common.LogImpl("038076436","Conectado a la impresora.",0);
  //BA.debugLineNum = 784;BA.debugLine="ProgressDialogShow(\"Mandando a impresión...\")";
 anywheresoftware.b4a.keywords.Common.ProgressDialogShow(mostCurrent.activityBA,BA.ObjectToCharSequence("Mandando a impresión..."));
  //BA.debugLineNum = 787;BA.debugLine="If AStreams.IsInitialized Then";
@@ -2192,7 +2192,7 @@ parent.mostCurrent._astreams.Write(_residuales.getBytes("UTF8"));
  //BA.debugLineNum = 795;BA.debugLine="AStreams.Write(ZPL.GetBytes(\"UTF8\"))";
 parent.mostCurrent._astreams.Write(_zpl.getBytes("UTF8"));
  //BA.debugLineNum = 796;BA.debugLine="Log(\"Etiqueta enviada exitosamente.\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("52555937","Etiqueta enviada exitosamente.",0);
+anywheresoftware.b4a.keywords.Common.LogImpl("038076449","Etiqueta enviada exitosamente.",0);
  //BA.debugLineNum = 799;BA.debugLine="ProgressDialogHide";
 anywheresoftware.b4a.keywords.Common.ProgressDialogHide();
  //BA.debugLineNum = 800;BA.debugLine="bmp1 = LoadBitmap(File.DirAssets, \"printer.png\"";
@@ -2216,7 +2216,7 @@ this.state = 21;
  //BA.debugLineNum = 804;BA.debugLine="ProgressDialogHide";
 anywheresoftware.b4a.keywords.Common.ProgressDialogHide();
  //BA.debugLineNum = 805;BA.debugLine="Log(\"Error al conectar con la impresora.\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("52555946","Error al conectar con la impresora.",0);
+anywheresoftware.b4a.keywords.Common.LogImpl("038076458","Error al conectar con la impresora.",0);
  //BA.debugLineNum = 806;BA.debugLine="bmp1 = LoadBitmap(File.DirAssets, \"symbol-cance";
 _bmp1 = anywheresoftware.b4a.keywords.Common.LoadBitmap(anywheresoftware.b4a.keywords.Common.File.getDirAssets(),"symbol-cancel.png");
  //BA.debugLineNum = 807;BA.debugLine="Msgbox2Async(\"Error de impresión\" , \"Error al i";
@@ -2245,7 +2245,7 @@ this.catchState = 0;
  //BA.debugLineNum = 811;BA.debugLine="ProgressDialogHide";
 anywheresoftware.b4a.keywords.Common.ProgressDialogHide();
  //BA.debugLineNum = 812;BA.debugLine="Log(\"Error al enviar la etiqueta: \" & LastExcept";
-anywheresoftware.b4a.keywords.Common.LogImpl("52555953","Error al enviar la etiqueta: "+anywheresoftware.b4a.keywords.Common.LastException(mostCurrent.activityBA).getMessage(),0);
+anywheresoftware.b4a.keywords.Common.LogImpl("038076465","Error al enviar la etiqueta: "+anywheresoftware.b4a.keywords.Common.LastException(mostCurrent.activityBA).getMessage(),0);
  //BA.debugLineNum = 813;BA.debugLine="bmp1 = LoadBitmap(File.DirAssets, \"symbol-cancel";
 _bmp1 = anywheresoftware.b4a.keywords.Common.LoadBitmap(anywheresoftware.b4a.keywords.Common.File.getDirAssets(),"symbol-cancel.png");
  //BA.debugLineNum = 814;BA.debugLine="Msgbox2Async( \"Error de impresión: \"&LastExcepti";
@@ -2275,7 +2275,7 @@ this.state = 27;
  //BA.debugLineNum = 819;BA.debugLine="ConnectedPrinter.Close";
 parent.mostCurrent._connectedprinter.Close();
  //BA.debugLineNum = 820;BA.debugLine="Log(\"Conexión cerrada después de enviar.\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("52555961","Conexión cerrada después de enviar.",0);
+anywheresoftware.b4a.keywords.Common.LogImpl("038076473","Conexión cerrada después de enviar.",0);
  if (true) break;
 
 case 27:
@@ -2450,7 +2450,7 @@ _bmp1 = anywheresoftware.b4a.keywords.Common.LoadBitmap(anywheresoftware.b4a.key
  //BA.debugLineNum = 215;BA.debugLine="Msgbox2Async(\"Falta la configuración la configur";
 anywheresoftware.b4a.keywords.Common.Msgbox2Async(BA.ObjectToCharSequence("Falta la configuración la configuración de la impresora."),BA.ObjectToCharSequence("Alerta"),"Ok","","",_bmp1,processBA,anywheresoftware.b4a.keywords.Common.False);
  //BA.debugLineNum = 217;BA.debugLine="Log(\"El archivo no existe.\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("51114124","El archivo no existe.",0);
+anywheresoftware.b4a.keywords.Common.LogImpl("036569100","El archivo no existe.",0);
  //BA.debugLineNum = 218;BA.debugLine="datos.Initialize  ' Por si necesitas usar el Map";
 mostCurrent._datos.Initialize();
  };
@@ -2741,7 +2741,7 @@ case 31:
 this.state = 32;
 ;
  //BA.debugLineNum = 464;BA.debugLine="Log(\"Error en la petición HTTP\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("51704000","Error en la petición HTTP",0);
+anywheresoftware.b4a.keywords.Common.LogImpl("037224512","Error en la petición HTTP",0);
  if (true) break;
 
 case 32:
@@ -2933,7 +2933,7 @@ _data.PrecioListaUd2 /*double*/  = (double)(BA.ObjectToNumber(_entry.Get((Object
  //BA.debugLineNum = 339;BA.debugLine="ObjSelec = data";
 _objselec = _data;
  //BA.debugLineNum = 341;BA.debugLine="Log(\"Producto: \" & data.Descripcion & \" - \" & da";
-anywheresoftware.b4a.keywords.Common.LogImpl("51441822","Producto: "+_data.Descripcion /*String*/ +" - "+_data.MARCA /*String*/ ,0);
+anywheresoftware.b4a.keywords.Common.LogImpl("036962334","Producto: "+_data.Descripcion /*String*/ +" - "+_data.MARCA /*String*/ ,0);
  }
 };
  //BA.debugLineNum = 344;BA.debugLine="End Sub";

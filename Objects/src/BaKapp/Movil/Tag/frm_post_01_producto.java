@@ -381,10 +381,6 @@ public BaKapp.Movil.Tag.cl_permisoxui _cl_permisox = null;
 public anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper _bmp1 = null;
 public b4a.example.dateutils _dateutils = null;
 public BaKapp.Movil.Tag.main _main = null;
-public BaKapp.Movil.Tag.frm_impresion _frm_impresion = null;
-public BaKapp.Movil.Tag.frm_etiquetas _frm_etiquetas = null;
-public BaKapp.Movil.Tag.variables _variables = null;
-public BaKapp.Movil.Tag.funciones _funciones = null;
 public BaKapp.Movil.Tag.buscar_entidad _buscar_entidad = null;
 public BaKapp.Movil.Tag.buscar_productos _buscar_productos = null;
 public BaKapp.Movil.Tag.conf_local _conf_local = null;
@@ -392,11 +388,15 @@ public BaKapp.Movil.Tag.dbutils _dbutils = null;
 public BaKapp.Movil.Tag.frm_buscar_documento _frm_buscar_documento = null;
 public BaKapp.Movil.Tag.frm_documentos_generados _frm_documentos_generados = null;
 public BaKapp.Movil.Tag.frm_editar_obsoc _frm_editar_obsoc = null;
+public BaKapp.Movil.Tag.frm_etiquetas _frm_etiquetas = null;
+public BaKapp.Movil.Tag.frm_impresion _frm_impresion = null;
 public BaKapp.Movil.Tag.frm_infostockxprod _frm_infostockxprod = null;
 public BaKapp.Movil.Tag.frm_menu_post_venta _frm_menu_post_venta = null;
 public BaKapp.Movil.Tag.frm_menu_principal _frm_menu_principal = null;
 public BaKapp.Movil.Tag.frm_post_01_descuentos _frm_post_01_descuentos = null;
 public BaKapp.Movil.Tag.frm_post_01_formulario _frm_post_01_formulario = null;
+public BaKapp.Movil.Tag.funciones _funciones = null;
+public BaKapp.Movil.Tag.variables _variables = null;
 public BaKapp.Movil.Tag.httputils2service _httputils2service = null;
 public BaKapp.Movil.Tag.xuiviewsutils _xuiviewsutils = null;
 
@@ -1056,7 +1056,7 @@ _stock_disponible = (double)(BA.ObjectToNumber(_filastk.Get((Object)("Stock_Disp
  //BA.debugLineNum = 1223;BA.debugLine="Dim Stock_Fisico As Double = FilaStk.Get(\"Stoc";
 _stock_fisico = (double)(BA.ObjectToNumber(_filastk.Get((Object)("Stock_Fisico"))));
  //BA.debugLineNum = 1224;BA.debugLine="Log(\"Stock disponible: \" & Stock_Disponible &";
-anywheresoftware.b4a.keywords.Common.LogImpl("524641570","Stock disponible: "+BA.NumberToString(_stock_disponible)+", Stock fisico: "+BA.NumberToString(_stock_fisico),0);
+anywheresoftware.b4a.keywords.Common.LogImpl("046006306","Stock disponible: "+BA.NumberToString(_stock_disponible)+", Stock fisico: "+BA.NumberToString(_stock_fisico),0);
  //BA.debugLineNum = 1226;BA.debugLine="Dim Stock_Suficiente As Boolean";
 _stock_suficiente = false;
  //BA.debugLineNum = 1228;BA.debugLine="If Stock_Disponible <= 0 Then";
@@ -1204,7 +1204,7 @@ case 34:
 //C
 this.state = 35;
  //BA.debugLineNum = 1277;BA.debugLine="Log(Js.ErrorMessage)";
-anywheresoftware.b4a.keywords.Common.LogImpl("524641623",_js._errormessage /*String*/ ,0);
+anywheresoftware.b4a.keywords.Common.LogImpl("046006359",_js._errormessage /*String*/ ,0);
  if (true) break;
 
 case 35:
@@ -1798,7 +1798,7 @@ case 20:
 //C
 this.state = 21;
  //BA.debugLineNum = 1562;BA.debugLine="Log(\"Traer Stock x bodega\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("524903738","Traer Stock x bodega",0);
+anywheresoftware.b4a.keywords.Common.LogImpl("046268474","Traer Stock x bodega",0);
  //BA.debugLineNum = 1563;BA.debugLine="Dim TblStockXbodega As List = Funciones.Fx_Data";
 _tblstockxbodega = new anywheresoftware.b4a.objects.collections.List();
 _tblstockxbodega = parent.mostCurrent._funciones._fx_datatable /*anywheresoftware.b4a.objects.collections.List*/ (mostCurrent.activityBA,_vjson);
@@ -2040,7 +2040,7 @@ case 8:
 //C
 this.state = 9;
  //BA.debugLineNum = 1808;BA.debugLine="Log(\"Traer Ubicación x bodega\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("525100325","Traer Ubicación x bodega",0);
+anywheresoftware.b4a.keywords.Common.LogImpl("046465061","Traer Ubicación x bodega",0);
  //BA.debugLineNum = 1809;BA.debugLine="Dim TblUbicXbodega As List = Funciones.Fx_DataT";
 _tblubicxbodega = new anywheresoftware.b4a.objects.collections.List();
 _tblubicxbodega = parent.mostCurrent._funciones._fx_datatable /*anywheresoftware.b4a.objects.collections.List*/ (mostCurrent.activityBA,_vjson);
@@ -2654,7 +2654,7 @@ case 8:
 //C
 this.state = 9;
  //BA.debugLineNum = 1721;BA.debugLine="Log(\"Traer Stock x bodega\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("525034782","Traer Stock x bodega",0);
+anywheresoftware.b4a.keywords.Common.LogImpl("046399518","Traer Stock x bodega",0);
  //BA.debugLineNum = 1722;BA.debugLine="Dim TblStockXbodega As List = Funciones.Fx_Data";
 _tblstockxbodega = new anywheresoftware.b4a.objects.collections.List();
 _tblstockxbodega = parent.mostCurrent._funciones._fx_datatable /*anywheresoftware.b4a.objects.collections.List*/ (mostCurrent.activityBA,_vjson);
@@ -2911,7 +2911,7 @@ case 12:
 //C
 this.state = 13;
  //BA.debugLineNum = 1645;BA.debugLine="Log(\"Traer Stock x bodega\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("524969255","Traer Stock x bodega",0);
+anywheresoftware.b4a.keywords.Common.LogImpl("046333991","Traer Stock x bodega",0);
  //BA.debugLineNum = 1646;BA.debugLine="Dim TblStockXbodega As List = Funciones.Fx_Data";
 _tblstockxbodega = new anywheresoftware.b4a.objects.collections.List();
 _tblstockxbodega = parent.mostCurrent._funciones._fx_datatable /*anywheresoftware.b4a.objects.collections.List*/ (mostCurrent.activityBA,_vjson);
