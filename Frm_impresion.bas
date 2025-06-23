@@ -128,7 +128,7 @@ Sub Activity_Create(FirstTime As Boolean)
 '		Return
 '	End If
 	Combo_Impresion.SetItems(stringList2)
-	If (Frm_etiquetas.default <> Null) Then
+	If (Frm_etiquetas.default.Length <> 0) Then
 		Dim valorBuscado As String = Frm_etiquetas.default
 		
 		For i = 0 To Combo_Impresion.Size - 1
@@ -138,6 +138,8 @@ Sub Activity_Create(FirstTime As Boolean)
 			End If
 		Next
 		tip = Frm_etiquetas.default
+		Else 
+			tip = Combo_Impresion.GetItem(0)
 	End If
 	
 	

@@ -661,7 +661,7 @@ case 22:
 //C
 this.state = 23;
  //BA.debugLineNum = 199;BA.debugLine="Log(vJson)";
-anywheresoftware.b4a.keywords.Common.LogImpl("033816627",_vjson,0);
+anywheresoftware.b4a.keywords.Common.LogImpl("233816627",_vjson,0);
  //BA.debugLineNum = 200;BA.debugLine="Dim parser As JSONParser";
 _parser = new anywheresoftware.b4a.objects.collections.JSONParser();
  //BA.debugLineNum = 201;BA.debugLine="parser.Initialize(vJson)";
@@ -822,7 +822,7 @@ this.state = 45;
  //BA.debugLineNum = 253;BA.debugLine="XclvDetalle.Add(p,\"\")";
 parent.mostCurrent._xclvdetalle._add(_p,(Object)(""));
  //BA.debugLineNum = 255;BA.debugLine="Log(Lbl_Idmaeedo.Text)";
-anywheresoftware.b4a.keywords.Common.LogImpl("033816683",parent.mostCurrent._lbl_idmaeedo.getText(),0);
+anywheresoftware.b4a.keywords.Common.LogImpl("233816683",parent.mostCurrent._lbl_idmaeedo.getText(),0);
  if (true) break;
 if (true) break;
 

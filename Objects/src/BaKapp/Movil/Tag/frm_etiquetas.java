@@ -1613,9 +1613,9 @@ _ancho = (float)(Double.parseDouble(anywheresoftware.b4a.keywords.Common.NumberF
  //BA.debugLineNum = 242;BA.debugLine="Alto = NumberFormat2(Alto, 1, 2, 2, False)";
 _alto = (float)(Double.parseDouble(anywheresoftware.b4a.keywords.Common.NumberFormat2(_alto,(int) (1),(int) (2),(int) (2),anywheresoftware.b4a.keywords.Common.False)));
  //BA.debugLineNum = 243;BA.debugLine="Log(\"Ancho: \" & Ancho)";
-anywheresoftware.b4a.keywords.Common.LogImpl("035061809","Ancho: "+BA.NumberToString(_ancho),0);
+anywheresoftware.b4a.keywords.Common.LogImpl("235061809","Ancho: "+BA.NumberToString(_ancho),0);
  //BA.debugLineNum = 244;BA.debugLine="Log(\"Alto: \" & Alto)";
-anywheresoftware.b4a.keywords.Common.LogImpl("035061810","Alto: "+BA.NumberToString(_alto),0);
+anywheresoftware.b4a.keywords.Common.LogImpl("235061810","Alto: "+BA.NumberToString(_alto),0);
  //BA.debugLineNum = 245;BA.debugLine="job.PostString($\"https://api.labelary.com/v1/p";
 _job._poststring /*String*/ (("https://api.labelary.com/v1/printers/8dpmm/labels/"+anywheresoftware.b4a.keywords.Common.SmartStringFormatter("",(Object)(_alto))+"x"+anywheresoftware.b4a.keywords.Common.SmartStringFormatter("",(Object)(_ancho))+"/0/"),_et.FUNCION /*String*/ );
  if (true) break;
@@ -1676,7 +1676,7 @@ case 25:
 //C
 this.state = 26;
  //BA.debugLineNum = 265;BA.debugLine="Log(\"Error: \" & j.ErrorMessage)";
-anywheresoftware.b4a.keywords.Common.LogImpl("035061831","Error: "+_j._errormessage /*String*/ ,0);
+anywheresoftware.b4a.keywords.Common.LogImpl("235061831","Error: "+_j._errormessage /*String*/ ,0);
  //BA.debugLineNum = 266;BA.debugLine="ToastMessageShow(\"No se pudo generar la etique";
 anywheresoftware.b4a.keywords.Common.ToastMessageShow(BA.ObjectToCharSequence("No se pudo generar la etiqueta"),anywheresoftware.b4a.keywords.Common.True);
  if (true) break;
@@ -2075,7 +2075,7 @@ _btn_conf_click();
  //BA.debugLineNum = 366;BA.debugLine="Btn_Cerrar.Enabled = False";
 mostCurrent._btn_cerrar.setEnabled(anywheresoftware.b4a.keywords.Common.False);
  //BA.debugLineNum = 368;BA.debugLine="Log(\"El archivo no existe.\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("035258390","El archivo no existe.",0);
+anywheresoftware.b4a.keywords.Common.LogImpl("235258390","El archivo no existe.",0);
  //BA.debugLineNum = 369;BA.debugLine="datos.Initialize  ' Por si necesitas usar el Map";
 mostCurrent._datos.Initialize();
  };
