@@ -30,10 +30,6 @@ public anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper _bmp1 =
 public String _estado = "";
 public b4a.example.dateutils _dateutils = null;
 public BaKapp.Movil.Tag.main _main = null;
-public BaKapp.Movil.Tag.frm_impresion _frm_impresion = null;
-public BaKapp.Movil.Tag.frm_etiquetas _frm_etiquetas = null;
-public BaKapp.Movil.Tag.variables _variables = null;
-public BaKapp.Movil.Tag.funciones _funciones = null;
 public BaKapp.Movil.Tag.buscar_entidad _buscar_entidad = null;
 public BaKapp.Movil.Tag.buscar_productos _buscar_productos = null;
 public BaKapp.Movil.Tag.conf_local _conf_local = null;
@@ -41,12 +37,16 @@ public BaKapp.Movil.Tag.dbutils _dbutils = null;
 public BaKapp.Movil.Tag.frm_buscar_documento _frm_buscar_documento = null;
 public BaKapp.Movil.Tag.frm_documentos_generados _frm_documentos_generados = null;
 public BaKapp.Movil.Tag.frm_editar_obsoc _frm_editar_obsoc = null;
+public BaKapp.Movil.Tag.frm_etiquetas _frm_etiquetas = null;
+public BaKapp.Movil.Tag.frm_impresion _frm_impresion = null;
 public BaKapp.Movil.Tag.frm_infostockxprod _frm_infostockxprod = null;
 public BaKapp.Movil.Tag.frm_menu_post_venta _frm_menu_post_venta = null;
 public BaKapp.Movil.Tag.frm_menu_principal _frm_menu_principal = null;
 public BaKapp.Movil.Tag.frm_post_01_descuentos _frm_post_01_descuentos = null;
 public BaKapp.Movil.Tag.frm_post_01_formulario _frm_post_01_formulario = null;
 public BaKapp.Movil.Tag.frm_post_01_producto _frm_post_01_producto = null;
+public BaKapp.Movil.Tag.funciones _funciones = null;
+public BaKapp.Movil.Tag.variables _variables = null;
 public BaKapp.Movil.Tag.httputils2service _httputils2service = null;
 public BaKapp.Movil.Tag.xuiviewsutils _xuiviewsutils = null;
 public String  _class_globals() throws Exception{
@@ -131,11 +131,11 @@ case 6:
 //C
 this.state = 7;
  //BA.debugLineNum = 62;BA.debugLine="Log(\"2.- Una vez que ya tenemos el nombre carga";
-parent.__c.LogImpl("55373968","2.- Una vez que ya tenemos el nombre cargamos la configuración de la estación en la tabla Zw_EstacionesBkp",0);
+parent.__c.LogImpl("03932176","2.- Una vez que ya tenemos el nombre cargamos la configuración de la estación en la tabla Zw_EstacionesBkp",0);
  //BA.debugLineNum = 63;BA.debugLine="Variables.Global_Row_EstacionBk = Funciones.Fx_";
 parent._variables._global_row_estacionbk /*anywheresoftware.b4a.objects.collections.Map*/  = parent._funciones._fx_datarow /*anywheresoftware.b4a.objects.collections.Map*/ (parent.getActivityBA(),_js._getstring /*String*/ ());
  //BA.debugLineNum = 64;BA.debugLine="Log(\"Configuracion_Estacion_Cargada\")";
-parent.__c.LogImpl("55373970","Configuracion_Estacion_Cargada",0);
+parent.__c.LogImpl("03932178","Configuracion_Estacion_Cargada",0);
  //BA.debugLineNum = 65;BA.debugLine="Resultado = 1";
 _resultado = (int) (1);
  if (true) break;
@@ -239,7 +239,7 @@ case 6:
 //C
 this.state = 7;
  //BA.debugLineNum = 157;BA.debugLine="Log(\"6.- Cargamos la configuración por Estación";
-parent.__c.LogImpl("55570579","6.- Cargamos la configuración por Estación CONFIEST",0);
+parent.__c.LogImpl("04128787","6.- Cargamos la configuración por Estación CONFIEST",0);
  //BA.debugLineNum = 159;BA.debugLine="Variables.Global_Row_Configuracion_Estacion = F";
 parent._variables._global_row_configuracion_estacion /*anywheresoftware.b4a.objects.collections.Map*/  = parent._funciones._fx_datarow /*anywheresoftware.b4a.objects.collections.Map*/ (parent.getActivityBA(),_js._getstring /*String*/ ());
  //BA.debugLineNum = 161;BA.debugLine="Variables.Gl_Modalidad = Modalidad";
@@ -304,9 +304,9 @@ case 12:
 //C
 this.state = 15;
  //BA.debugLineNum = 195;BA.debugLine="Log(\"7.- Cargamos la configuración General\")";
-parent.__c.LogImpl("55570617","7.- Cargamos la configuración General",0);
+parent.__c.LogImpl("04128825","7.- Cargamos la configuración General",0);
  //BA.debugLineNum = 196;BA.debugLine="Log(\"Fecha servidor: \" & Variables.Gl_Fecha_S";
-parent.__c.LogImpl("55570618","Fecha servidor: "+parent._variables._gl_fecha_servidor /*String*/ ,0);
+parent.__c.LogImpl("04128826","Fecha servidor: "+parent._variables._gl_fecha_servidor /*String*/ ,0);
  //BA.debugLineNum = 198;BA.debugLine="Variables.Global_Row_Configuracion_General =";
 parent._variables._global_row_configuracion_general /*anywheresoftware.b4a.objects.collections.Map*/  = parent._funciones._fx_datarow /*anywheresoftware.b4a.objects.collections.Map*/ (parent.getActivityBA(),_js._getstring /*String*/ ());
  //BA.debugLineNum = 199;BA.debugLine="Resultado = 1";
@@ -330,9 +330,9 @@ case 17:
 //C
 this.state = 18;
  //BA.debugLineNum = 206;BA.debugLine="Log(\"Error al cargar Configuracion General\")";
-parent.__c.LogImpl("55570628","Error al cargar Configuracion General",0);
+parent.__c.LogImpl("04128836","Error al cargar Configuracion General",0);
  //BA.debugLineNum = 207;BA.debugLine="Log(Js.ErrorMessage)";
-parent.__c.LogImpl("55570629",_js._errormessage /*String*/ ,0);
+parent.__c.LogImpl("04128837",_js._errormessage /*String*/ ,0);
  if (true) break;
 
 case 18:
@@ -358,7 +358,7 @@ case 23:
 //C
 this.state = 24;
  //BA.debugLineNum = 215;BA.debugLine="Log(Js.ErrorMessage)";
-parent.__c.LogImpl("55570637",_js._errormessage /*String*/ ,0);
+parent.__c.LogImpl("04128845",_js._errormessage /*String*/ ,0);
  if (true) break;
 
 case 24:
@@ -446,7 +446,7 @@ case 6:
 //C
 this.state = 7;
  //BA.debugLineNum = 125;BA.debugLine="Log(\"5.- Traemos la lista de precios asociadas";
-parent.__c.LogImpl("55505043","5.- Traemos la lista de precios asociadas al usuario, con las que puede trabajar",0);
+parent.__c.LogImpl("04063251","5.- Traemos la lista de precios asociadas al usuario, con las que puede trabajar",0);
  //BA.debugLineNum = 126;BA.debugLine="Variables.Global_Listas_Precios_Usuario = Funci";
 parent._variables._global_listas_precios_usuario /*anywheresoftware.b4a.objects.collections.List*/  = parent._funciones._fx_datatable /*anywheresoftware.b4a.objects.collections.List*/ (parent.getActivityBA(),_vjson);
  //BA.debugLineNum = 127;BA.debugLine="Resultado = 1";
@@ -542,7 +542,7 @@ case 6:
 //C
 this.state = 7;
  //BA.debugLineNum = 444;BA.debugLine="Log(\"Traemos la lista de tipos de documentos pa";
-parent.__c.LogImpl("55832720","Traemos la lista de tipos de documentos para despacho simple",0);
+parent.__c.LogImpl("04390928","Traemos la lista de tipos de documentos para despacho simple",0);
  //BA.debugLineNum = 445;BA.debugLine="Variables.Global_Sis_DespachoSimple_DocDestino";
 parent._variables._global_sis_despachosimple_docdestino /*anywheresoftware.b4a.objects.collections.List*/  = parent._funciones._fx_datatable /*anywheresoftware.b4a.objects.collections.List*/ (parent.getActivityBA(),_vjson);
  //BA.debugLineNum = 446;BA.debugLine="Resultado = 1";
@@ -638,7 +638,7 @@ case 6:
 //C
 this.state = 7;
  //BA.debugLineNum = 472;BA.debugLine="Log(\"Traemos la lista de tipos de despacho o re";
-parent.__c.LogImpl("55898256","Traemos la lista de tipos de despacho o retiro",0);
+parent.__c.LogImpl("04456464","Traemos la lista de tipos de despacho o retiro",0);
  //BA.debugLineNum = 473;BA.debugLine="Variables.Global_Sis_DespachoSimple_Tipo = Func";
 parent._variables._global_sis_despachosimple_tipo /*anywheresoftware.b4a.objects.collections.List*/  = parent._funciones._fx_datatable /*anywheresoftware.b4a.objects.collections.List*/ (parent.getActivityBA(),_vjson);
  //BA.debugLineNum = 474;BA.debugLine="Resultado = 1";
@@ -734,7 +734,7 @@ case 6:
 //C
 this.state = 7;
  //BA.debugLineNum = 500;BA.debugLine="Log(\"Traemos la lista de tipos de pago\")";
-parent.__c.LogImpl("55963792","Traemos la lista de tipos de pago",0);
+parent.__c.LogImpl("04522000","Traemos la lista de tipos de pago",0);
  //BA.debugLineNum = 501;BA.debugLine="Variables.Global_Sis_DespachoSimple_TipoPago =";
 parent._variables._global_sis_despachosimple_tipopago /*anywheresoftware.b4a.objects.collections.List*/  = parent._funciones._fx_datatable /*anywheresoftware.b4a.objects.collections.List*/ (parent.getActivityBA(),_vjson);
  //BA.debugLineNum = 502;BA.debugLine="Resultado = 1";
@@ -831,14 +831,14 @@ case 6:
 //C
 this.state = 7;
  //BA.debugLineNum = 33;BA.debugLine="Log(\"1.- Obtenemos primero el nombre de la base";
-parent.__c.LogImpl("55308433","1.- Obtenemos primero el nombre de la base de datos de Bakapp",0);
+parent.__c.LogImpl("03866641","1.- Obtenemos primero el nombre de la base de datos de Bakapp",0);
  //BA.debugLineNum = 34;BA.debugLine="Dim Fila As Map = Funciones.Fx_DataRow(Js.GetSt";
 _fila = new anywheresoftware.b4a.objects.collections.Map();
 _fila = parent._funciones._fx_datarow /*anywheresoftware.b4a.objects.collections.Map*/ (parent.getActivityBA(),_js._getstring /*String*/ ());
  //BA.debugLineNum = 35;BA.debugLine="Variables.Global_BaseBk = Fila.Get(\"Global_Base";
 parent._variables._global_basebk /*String*/  = BA.ObjectToString(_fila.Get((Object)("Global_BaseBk")));
  //BA.debugLineNum = 36;BA.debugLine="Log(\"DB BakApp: \" & Variables.Global_BaseBk)";
-parent.__c.LogImpl("55308436","DB BakApp: "+parent._variables._global_basebk /*String*/ ,0);
+parent.__c.LogImpl("03866644","DB BakApp: "+parent._variables._global_basebk /*String*/ ,0);
  //BA.debugLineNum = 37;BA.debugLine="Resultado = 1";
 _resultado = (int) (1);
  if (true) break;
@@ -934,7 +934,7 @@ case 6:
 //C
 this.state = 7;
  //BA.debugLineNum = 93;BA.debugLine="Log(\"4.- Cargamos al usuario por defecto y lo t";
-parent.__c.LogImpl("55439506","4.- Cargamos al usuario por defecto y lo traemos",0);
+parent.__c.LogImpl("03997714","4.- Cargamos al usuario por defecto y lo traemos",0);
  //BA.debugLineNum = 94;BA.debugLine="Variables.Global_Row_Usuario_Activo = Funciones";
 parent._variables._global_row_usuario_activo /*anywheresoftware.b4a.objects.collections.Map*/  = parent._funciones._fx_datarow /*anywheresoftware.b4a.objects.collections.Map*/ (parent.getActivityBA(),_js._getstring /*String*/ ());
  //BA.debugLineNum = 95;BA.debugLine="Resultado = 1";
@@ -1076,7 +1076,7 @@ case 8:
 this.state = 9;
 ;
  //BA.debugLineNum = 246;BA.debugLine="Log(\"3.- Iniciamos la sesion\")";
-parent.__c.LogImpl("55636120","3.- Iniciamos la sesion",0);
+parent.__c.LogImpl("04194328","3.- Iniciamos la sesion",0);
  //BA.debugLineNum = 248;BA.debugLine="Variables.Global_Sesion_Star = True";
 parent._variables._global_sesion_star /*boolean*/  = parent.__c.True;
  //BA.debugLineNum = 250;BA.debugLine="Dim Usar_Datos_X_Defecto As Boolean = Variables.G";
@@ -1526,7 +1526,7 @@ this.state = 16;
 _result = (Integer) result[0];
 ;
  //BA.debugLineNum = 375;BA.debugLine="Log(Js.ErrorMessage)";
-parent.__c.LogImpl("55701678",_js._errormessage /*String*/ ,0);
+parent.__c.LogImpl("04259886",_js._errormessage /*String*/ ,0);
  if (true) break;
 
 case 16:
@@ -1560,7 +1560,7 @@ this.state = 20;
 _result = (Integer) result[0];
 ;
  //BA.debugLineNum = 391;BA.debugLine="Log(Js.ErrorMessage)";
-parent.__c.LogImpl("55701694",_js._errormessage /*String*/ ,0);
+parent.__c.LogImpl("04259902",_js._errormessage /*String*/ ,0);
  if (true) break;
 
 case 20:
