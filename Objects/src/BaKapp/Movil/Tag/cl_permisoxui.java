@@ -560,7 +560,7 @@ this.state = 5;
  //BA.debugLineNum = 164;BA.debugLine="Dim Consulta_Sql As String = \"Select Top 1 * From";
 parent._consulta_sql = "Select Top 1 * From TABFU Where PWFU = '"+_vclave+"'";
  //BA.debugLineNum = 165;BA.debugLine="Log(vClave)";
-parent.__c.LogImpl("02293772",_vclave,0);
+parent.__c.LogImpl("22293772",_vclave,0);
  //BA.debugLineNum = 167;BA.debugLine="ProgressDialogShow(\"Revisando permiso\")";
 parent.__c.ProgressDialogShow(ba,BA.ObjectToCharSequence("Revisando permiso"));
  //BA.debugLineNum = 169;BA.debugLine="Dim Js As HttpJob = Funciones.Fx_HttJob_Ws_Sb_Get";

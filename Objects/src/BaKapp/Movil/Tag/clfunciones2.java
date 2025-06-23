@@ -979,7 +979,7 @@ case 8:
 this.state = 9;
 this.catchState = 0;
  //BA.debugLineNum = 108;BA.debugLine="Log(LastException)";
-parent.__c.LogImpl("03342358",BA.ObjectToString(parent.__c.LastException(ba)),0);
+parent.__c.LogImpl("23342358",BA.ObjectToString(parent.__c.LastException(ba)),0);
  //BA.debugLineNum = 109;BA.debugLine="bmp1 = LoadBitmap(File.DirAssets, \"symbol-cance";
 _bmp1 = parent.__c.LoadBitmap(parent.__c.File.getDirAssets(),"symbol-cancel.png");
  //BA.debugLineNum = 110;BA.debugLine="Msgbox2Async(\"Error!\",LastException, \"Ok\", \"\",";

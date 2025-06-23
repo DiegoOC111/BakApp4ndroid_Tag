@@ -565,7 +565,7 @@ case 6:
 //C
 this.state = 7;
  //BA.debugLineNum = 110;BA.debugLine="Log(vJson)";
-anywheresoftware.b4a.keywords.Common.LogImpl("0852008",_vjson,0);
+anywheresoftware.b4a.keywords.Common.LogImpl("2852008",_vjson,0);
  //BA.debugLineNum = 111;BA.debugLine="Dim parser As JSONParser";
 _parser = new anywheresoftware.b4a.objects.collections.JSONParser();
  //BA.debugLineNum = 112;BA.debugLine="parser.Initialize(vJson)";
@@ -680,7 +680,7 @@ parent.mostCurrent._lbl_direccion.setText(BA.ObjectToCharSequence(_dien));
  //BA.debugLineNum = 152;BA.debugLine="XclvDetalle.Add(p,\"\")";
 parent.mostCurrent._xclvdetalle._add(_p,(Object)(""));
  //BA.debugLineNum = 154;BA.debugLine="Log(Koen & Suen & Nokoen)";
-anywheresoftware.b4a.keywords.Common.LogImpl("0852052",_koen+_suen+_nokoen,0);
+anywheresoftware.b4a.keywords.Common.LogImpl("2852052",_koen+_suen+_nokoen,0);
  if (true) break;
 if (true) break;
 
@@ -824,7 +824,7 @@ _filas = parent.mostCurrent._funciones._fx_datatable /*anywheresoftware.b4a.obje
  //BA.debugLineNum = 190;BA.debugLine="Fila =Filas.Get(0)";
 parent._fila = (anywheresoftware.b4a.objects.collections.Map) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.collections.Map(), (java.util.Map)(_filas.Get((int) (0))));
  //BA.debugLineNum = 192;BA.debugLine="Log(LblKoen.Text)";
-anywheresoftware.b4a.keywords.Common.LogImpl("0917525",_lblkoen.getText(),0);
+anywheresoftware.b4a.keywords.Common.LogImpl("2917525",_lblkoen.getText(),0);
  //BA.debugLineNum = 193;BA.debugLine="Dim Nokoen As String = Fila.Get(\"NOKOEN\")";
 _nokoen = BA.ObjectToString(parent._fila.Get((Object)("NOKOEN")));
  //BA.debugLineNum = 195;BA.debugLine="Dim sf As Object = xui.Msgbox2Async(\"¿Confirma";
@@ -890,7 +890,7 @@ case 15:
 //C
 this.state = 16;
  //BA.debugLineNum = 217;BA.debugLine="Log(Js.ErrorMessage)";
-anywheresoftware.b4a.keywords.Common.LogImpl("0917550",_js._errormessage /*String*/ ,0);
+anywheresoftware.b4a.keywords.Common.LogImpl("2917550",_js._errormessage /*String*/ ,0);
  if (true) break;
 
 case 16:
