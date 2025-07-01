@@ -45,13 +45,13 @@ public b4a.example.dateutils _dateutils = null;
 public BaKapp.Movil.Tag.main _main = null;
 public BaKapp.Movil.Tag.buscar_entidad _buscar_entidad = null;
 public BaKapp.Movil.Tag.buscar_productos _buscar_productos = null;
+public BaKapp.Movil.Tag.frm_impresion _frm_impresion = null;
 public BaKapp.Movil.Tag.conf_local _conf_local = null;
 public BaKapp.Movil.Tag.dbutils _dbutils = null;
 public BaKapp.Movil.Tag.frm_buscar_documento _frm_buscar_documento = null;
 public BaKapp.Movil.Tag.frm_documentos_generados _frm_documentos_generados = null;
 public BaKapp.Movil.Tag.frm_editar_obsoc _frm_editar_obsoc = null;
 public BaKapp.Movil.Tag.frm_etiquetas _frm_etiquetas = null;
-public BaKapp.Movil.Tag.frm_impresion _frm_impresion = null;
 public BaKapp.Movil.Tag.frm_infostockxprod _frm_infostockxprod = null;
 public BaKapp.Movil.Tag.frm_menu_post_venta _frm_menu_post_venta = null;
 public BaKapp.Movil.Tag.frm_menu_principal _frm_menu_principal = null;
@@ -768,7 +768,7 @@ case 34:
 //C
 this.state = 35;
  //BA.debugLineNum = 1277;BA.debugLine="Log(Codigo & \"-\" & Descripcion)";
-parent.__c.LogImpl("230474387",_codigo+"-"+_descripcion,0);
+parent.__c.LogImpl("18650899",_codigo+"-"+_descripcion,0);
  if (true) break;
 
 case 35:
@@ -915,7 +915,7 @@ this.state = 47;
  //BA.debugLineNum = 1339;BA.debugLine="DBUtils.UpdateRecord2(Variables.vSql,\"Detall";
 parent._dbutils._updaterecord2 /*String*/ (parent.getActivityBA(),parent._variables._vsql /*anywheresoftware.b4a.sql.SQL*/ ,"Detalle_Doc",_new_row,_fila_id);
  //BA.debugLineNum = 1341;BA.debugLine="Log(Codigo & \"-\" & Descripcion)";
-parent.__c.LogImpl("230474451",_codigo+"-"+_descripcion,0);
+parent.__c.LogImpl("18650963",_codigo+"-"+_descripcion,0);
  if (true) break;
 
 case 47:
@@ -1208,7 +1208,7 @@ case 4:
 this.state = 5;
 ;
  //BA.debugLineNum = 88;BA.debugLine="Log(\"Documento cargado... Id_DocEnc = \" & Id_DocE";
-parent.__c.LogImpl("230212150","Documento cargado... Id_DocEnc = "+BA.NumberToString(parent._id_docenc),0);
+parent.__c.LogImpl("18388662","Documento cargado... Id_DocEnc = "+BA.NumberToString(parent._id_docenc),0);
  //BA.debugLineNum = 91;BA.debugLine="Dim FechaEmision As Long = DateTime.Now";
 _fechaemision = parent.__c.DateTime.getNow();
  //BA.debugLineNum = 92;BA.debugLine="Dim Fecha_1er_Vencimiento As Long = FechaEmision";
@@ -2347,7 +2347,7 @@ case 9:
 //C
 this.state = 10;
  //BA.debugLineNum = 1502;BA.debugLine="Log(Js.ErrorMessage)";
-parent.__c.LogImpl("230670889",_js._errormessage /*String*/ ,0);
+parent.__c.LogImpl("18847401",_js._errormessage /*String*/ ,0);
  //BA.debugLineNum = 1503;BA.debugLine="ToastMessageShow(\"CONCEPTO NO ENCONTRADO\", False";
 parent.__c.ToastMessageShow(BA.ObjectToCharSequence("CONCEPTO NO ENCONTRADO"),parent.__c.False);
  if (true) break;
@@ -2552,7 +2552,7 @@ case 9:
 //C
 this.state = 10;
  //BA.debugLineNum = 1753;BA.debugLine="Log(Js.ErrorMessage)";
-parent.__c.LogImpl("230998551",_js._errormessage /*String*/ ,0);
+parent.__c.LogImpl("19175063",_js._errormessage /*String*/ ,0);
  if (true) break;
 
 case 10:
@@ -2659,7 +2659,7 @@ case 9:
 //C
 this.state = 10;
  //BA.debugLineNum = 1693;BA.debugLine="Log(Js.ErrorMessage)";
-parent.__c.LogImpl("230867479",_js._errormessage /*String*/ ,0);
+parent.__c.LogImpl("19043991",_js._errormessage /*String*/ ,0);
  if (true) break;
 
 case 10:
@@ -2770,7 +2770,7 @@ case 9:
 //C
 this.state = 10;
  //BA.debugLineNum = 1123;BA.debugLine="Log(Js.ErrorMessage)";
-parent.__c.LogImpl("230408727",_js._errormessage /*String*/ ,0);
+parent.__c.LogImpl("18585239",_js._errormessage /*String*/ ,0);
  if (true) break;
 
 case 10:
@@ -2877,7 +2877,7 @@ case 9:
 //C
 this.state = 10;
  //BA.debugLineNum = 1723;BA.debugLine="Log(Js.ErrorMessage)";
-parent.__c.LogImpl("230933015",_js._errormessage /*String*/ ,0);
+parent.__c.LogImpl("19109527",_js._errormessage /*String*/ ,0);
  if (true) break;
 
 case 10:
