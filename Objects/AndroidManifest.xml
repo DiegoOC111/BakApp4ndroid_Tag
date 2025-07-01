@@ -3,7 +3,7 @@
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	package="BaKapp.Movil.Tag"
 	android:versionCode="1"
-	android:versionName="1.0.3"
+	android:versionName="1.0.4"
 	android:installLocation="internalOnly">
 	
 	<uses-sdk android:minSdkVersion="5" android:targetSdkVersion="30"/>
@@ -52,6 +52,14 @@
 		<activity
 			android:windowSoftInputMode="stateHidden"
 			android:launchMode="singleTop"
+			android:name=".frm_impresion"
+			android:label="BakApp Movil TAG"
+			android:screenOrientation="portrait"
+			android:exported="true">
+		</activity>
+		<activity
+			android:windowSoftInputMode="stateHidden"
+			android:launchMode="singleTop"
 			android:name=".conf_local"
 			android:label="BakApp Movil TAG"
 			android:screenOrientation="portrait"
@@ -85,14 +93,6 @@
 			android:windowSoftInputMode="stateHidden"
 			android:launchMode="singleTop"
 			android:name=".frm_etiquetas"
-			android:label="BakApp Movil TAG"
-			android:screenOrientation="portrait"
-			android:exported="true">
-		</activity>
-		<activity
-			android:windowSoftInputMode="stateHidden"
-			android:launchMode="singleTop"
-			android:name=".frm_impresion"
 			android:label="BakApp Movil TAG"
 			android:screenOrientation="portrait"
 			android:exported="true">
