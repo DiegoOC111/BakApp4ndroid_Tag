@@ -350,8 +350,8 @@ Sub Sb_Cargar_Modedas As ResumableSub
 		If  vJson <> $"{"Table":[]}"$ Then
 			
 			Variables.Global_Row_Moneda = Funciones.Fx_DataRow(Js.GetString)
-			
-			Consulta_Sql = "Select TOP 1 * From MAEMO Where KOMO = 'US$' AND FEMO = '20200110' Order by IDMAEMO DESC"
+
+			Consulta_Sql = $"Select TOP 1 * From MAEMO Where KOMO = 'US$' AND CAST(FEMO AS DATE) = CAST(GETDATE() AS DATE)Order by IDMAEMO DESC"$
 			
 			Dim Js As HttpJob = Funciones.Fx_HttJob_Ws_Sb_GetDataSet_Json(Consulta_Sql,Me)
 			Wait For (Js) JobDone(Js As HttpJob)
