@@ -34,7 +34,7 @@ public class frm_infostockxprod extends Activity implements B4AActivity{
 		super.onCreate(savedInstanceState);
         mostCurrent = this;
 		if (processBA == null) {
-			processBA = new BA(this.getApplicationContext(), null, null, "BaKapp.Movil.Tag", "BaKapp.Movil.Tag.frm_infostockxprod");
+			processBA = new anywheresoftware.b4a.ShellBA(this.getApplicationContext(), null, null, "BaKapp.Movil.Tag", "BaKapp.Movil.Tag.frm_infostockxprod");
 			processBA.loadHtSubs(this.getClass());
 	        float deviceScale = getApplicationContext().getResources().getDisplayMetrics().density;
 	        BALayout.setDeviceScale(deviceScale);
@@ -335,6 +335,15 @@ public class frm_infostockxprod extends Activity implements B4AActivity{
             
     }
 
+
+
+public static void initializeProcessGlobals() {
+             try {
+                Class.forName(BA.applicationContext.getPackageName() + ".main").getMethod("initializeProcessGlobals").invoke(null, null);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+}
 public anywheresoftware.b4a.keywords.Common __c = null;
 public static BaKapp.Movil.Tag.mensajes _msj = null;
 public static String _codigo = "";
@@ -365,68 +374,53 @@ public BaKapp.Movil.Tag.funciones _funciones = null;
 public BaKapp.Movil.Tag.variables _variables = null;
 public BaKapp.Movil.Tag.httputils2service _httputils2service = null;
 public BaKapp.Movil.Tag.xuiviewsutils _xuiviewsutils = null;
-
-public static void initializeProcessGlobals() {
-             try {
-                Class.forName(BA.applicationContext.getPackageName() + ".main").getMethod("initializeProcessGlobals").invoke(null, null);
-            } catch (Exception e) {
-                throw new RuntimeException(e);
-            }
-}
 public static String  _activity_create(boolean _firsttime) throws Exception{
- //BA.debugLineNum = 32;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
- //BA.debugLineNum = 35;BA.debugLine="Activity.LoadLayout(\"St_StockXBodega\")";
+RDebugUtils.currentModule="frm_infostockxprod";
+if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_create", false))
+	 {return ((String) Debug.delegate(mostCurrent.activityBA, "activity_create", new Object[] {_firsttime}));}
+RDebugUtils.currentLine=14614528;
+ //BA.debugLineNum = 14614528;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
+RDebugUtils.currentLine=14614531;
+ //BA.debugLineNum = 14614531;BA.debugLine="Activity.LoadLayout(\"St_StockXBodega\")";
 mostCurrent._activity.LoadLayout("St_StockXBodega",mostCurrent.activityBA);
- //BA.debugLineNum = 36;BA.debugLine="Msj.Initialize";
-_msj._initialize /*String*/ (processBA);
- //BA.debugLineNum = 38;BA.debugLine="Lbl_Codigo.Text = Codigo";
+RDebugUtils.currentLine=14614532;
+ //BA.debugLineNum = 14614532;BA.debugLine="Msj.Initialize";
+_msj._initialize /*String*/ (null,processBA);
+RDebugUtils.currentLine=14614534;
+ //BA.debugLineNum = 14614534;BA.debugLine="Lbl_Codigo.Text = Codigo";
 mostCurrent._lbl_codigo.setText(BA.ObjectToCharSequence(_codigo));
- //BA.debugLineNum = 39;BA.debugLine="Lbl_Descripcion.Text = Descripcion";
+RDebugUtils.currentLine=14614535;
+ //BA.debugLineNum = 14614535;BA.debugLine="Lbl_Descripcion.Text = Descripcion";
 mostCurrent._lbl_descripcion.setText(BA.ObjectToCharSequence(_descripcion));
- //BA.debugLineNum = 41;BA.debugLine="End Sub";
+RDebugUtils.currentLine=14614537;
+ //BA.debugLineNum = 14614537;BA.debugLine="End Sub";
 return "";
 }
 public static String  _activity_pause(boolean _userclosed) throws Exception{
- //BA.debugLineNum = 49;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
- //BA.debugLineNum = 51;BA.debugLine="End Sub";
+RDebugUtils.currentModule="frm_infostockxprod";
+RDebugUtils.currentLine=14745600;
+ //BA.debugLineNum = 14745600;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
+RDebugUtils.currentLine=14745602;
+ //BA.debugLineNum = 14745602;BA.debugLine="End Sub";
 return "";
 }
 public static String  _activity_resume() throws Exception{
- //BA.debugLineNum = 43;BA.debugLine="Sub Activity_Resume";
- //BA.debugLineNum = 45;BA.debugLine="Revisar_Stock";
+RDebugUtils.currentModule="frm_infostockxprod";
+if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_resume", false))
+	 {return ((String) Debug.delegate(mostCurrent.activityBA, "activity_resume", null));}
+RDebugUtils.currentLine=14680064;
+ //BA.debugLineNum = 14680064;BA.debugLine="Sub Activity_Resume";
+RDebugUtils.currentLine=14680066;
+ //BA.debugLineNum = 14680066;BA.debugLine="Revisar_Stock";
 _revisar_stock();
- //BA.debugLineNum = 47;BA.debugLine="End Sub";
-return "";
-}
-public static String  _globals() throws Exception{
- //BA.debugLineNum = 17;BA.debugLine="Sub Globals";
- //BA.debugLineNum = 21;BA.debugLine="Dim bmp1 As Bitmap";
-mostCurrent._bmp1 = new anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper();
- //BA.debugLineNum = 23;BA.debugLine="Private Lbl_Codigo As Label";
-mostCurrent._lbl_codigo = new anywheresoftware.b4a.objects.LabelWrapper();
- //BA.debugLineNum = 24;BA.debugLine="Private Lbl_Descripcion As Label";
-mostCurrent._lbl_descripcion = new anywheresoftware.b4a.objects.LabelWrapper();
- //BA.debugLineNum = 25;BA.debugLine="Private Xclv_StokXbodega As CustomListView";
-mostCurrent._xclv_stokxbodega = new b4a.example3.customlistview();
- //BA.debugLineNum = 27;BA.debugLine="Private Lbl_Bodega As B4XView";
-mostCurrent._lbl_bodega = new anywheresoftware.b4a.objects.B4XViewWrapper();
- //BA.debugLineNum = 28;BA.debugLine="Private Lbl_InfoStock As B4XView";
-mostCurrent._lbl_infostock = new anywheresoftware.b4a.objects.B4XViewWrapper();
- //BA.debugLineNum = 30;BA.debugLine="End Sub";
-return "";
-}
-public static String  _process_globals() throws Exception{
- //BA.debugLineNum = 6;BA.debugLine="Sub Process_Globals";
- //BA.debugLineNum = 10;BA.debugLine="Dim Msj As Mensajes";
-_msj = new BaKapp.Movil.Tag.mensajes();
- //BA.debugLineNum = 12;BA.debugLine="Dim Codigo As String";
-_codigo = "";
- //BA.debugLineNum = 13;BA.debugLine="Dim Descripcion As String";
-_descripcion = "";
- //BA.debugLineNum = 15;BA.debugLine="End Sub";
+RDebugUtils.currentLine=14680068;
+ //BA.debugLineNum = 14680068;BA.debugLine="End Sub";
 return "";
 }
 public static void  _revisar_stock() throws Exception{
+RDebugUtils.currentModule="frm_infostockxprod";
+if (Debug.shouldDelegate(mostCurrent.activityBA, "revisar_stock", false))
+	 {Debug.delegate(mostCurrent.activityBA, "revisar_stock", null); return;}
 ResumableSub_Revisar_Stock rsub = new ResumableSub_Revisar_Stock(null);
 rsub.resume(processBA, null);
 }
@@ -451,6 +445,7 @@ int groupLen21;
 
 @Override
 public void resume(BA ba, Object[] result) throws Exception{
+RDebugUtils.currentModule="frm_infostockxprod";
 
     while (true) {
         switch (state) {
@@ -460,14 +455,18 @@ return;
 case 0:
 //C
 this.state = 1;
- //BA.debugLineNum = 55;BA.debugLine="Dim Consulta_Sql As String";
+RDebugUtils.currentLine=14811138;
+ //BA.debugLineNum = 14811138;BA.debugLine="Dim Consulta_Sql As String";
 _consulta_sql = "";
- //BA.debugLineNum = 57;BA.debugLine="Consulta_Sql = \"Select Tb.EMPRESA,Tb.KOSU,Tb.KOBO";
+RDebugUtils.currentLine=14811140;
+ //BA.debugLineNum = 14811140;BA.debugLine="Consulta_Sql = \"Select Tb.EMPRESA,Tb.KOSU,Tb.KOBO";
 _consulta_sql = "Select Tb.EMPRESA,Tb.KOSU,Tb.KOBO,Ts.NOKOSU,Tb.NOKOBO,STFI1"+anywheresoftware.b4a.keywords.Common.CRLF+"From MAEST Ms"+anywheresoftware.b4a.keywords.Common.CRLF+"Inner Join TABBO Tb On Tb.EMPRESA = Ms.EMPRESA And Tb.KOSU = Ms.KOSU And Tb.KOBO = Ms.KOBO"+anywheresoftware.b4a.keywords.Common.CRLF+"Left Join TABSU Ts On Ts.EMPRESA = Ms.EMPRESA And Ts.KOSU = Ms.KOSU"+anywheresoftware.b4a.keywords.Common.CRLF+"Where KOPR = '"+parent._codigo+"'";
- //BA.debugLineNum = 63;BA.debugLine="Dim Js As HttpJob = Funciones.Fx_HttJob_Ws_Sb_Get";
+RDebugUtils.currentLine=14811146;
+ //BA.debugLineNum = 14811146;BA.debugLine="Dim Js As HttpJob = Funciones.Fx_HttJob_Ws_Sb_Get";
 _js = parent.mostCurrent._funciones._fx_httjob_ws_sb_getdataset_json /*BaKapp.Movil.Tag.httpjob*/ (mostCurrent.activityBA,_consulta_sql,frm_infostockxprod.getObject());
- //BA.debugLineNum = 64;BA.debugLine="Wait For (Js) JobDone(Js As HttpJob)";
-anywheresoftware.b4a.keywords.Common.WaitFor("jobdone", processBA, this, (Object)(_js));
+RDebugUtils.currentLine=14811147;
+ //BA.debugLineNum = 14811147;BA.debugLine="Wait For (Js) JobDone(Js As HttpJob)";
+anywheresoftware.b4a.keywords.Common.WaitFor("jobdone", processBA, new anywheresoftware.b4a.shell.DebugResumableSub.DelegatableResumableSub(this, "frm_infostockxprod", "revisar_stock"), (Object)(_js));
 this.state = 15;
 return;
 case 15:
@@ -475,7 +474,8 @@ case 15:
 this.state = 1;
 _js = (BaKapp.Movil.Tag.httpjob) result[0];
 ;
- //BA.debugLineNum = 66;BA.debugLine="If Js.Success Then";
+RDebugUtils.currentLine=14811149;
+ //BA.debugLineNum = 14811149;BA.debugLine="If Js.Success Then";
 if (true) break;
 
 case 1:
@@ -488,9 +488,11 @@ this.state = 3;
 case 3:
 //C
 this.state = 4;
- //BA.debugLineNum = 68;BA.debugLine="Dim vJson As String = Js.GetString";
-_vjson = _js._getstring /*String*/ ();
- //BA.debugLineNum = 70;BA.debugLine="If	vJson = $\"{\"Table\":[]}\"$ Then";
+RDebugUtils.currentLine=14811151;
+ //BA.debugLineNum = 14811151;BA.debugLine="Dim vJson As String = Js.GetString";
+_vjson = _js._getstring /*String*/ (null);
+RDebugUtils.currentLine=14811153;
+ //BA.debugLineNum = 14811153;BA.debugLine="If	vJson = $\"{\"Table\":[]}\"$ Then";
 if (true) break;
 
 case 4:
@@ -505,37 +507,50 @@ this.state = 8;
 case 6:
 //C
 this.state = 13;
- //BA.debugLineNum = 72;BA.debugLine="Msj.Detalle = \"Información\"";
+RDebugUtils.currentLine=14811155;
+ //BA.debugLineNum = 14811155;BA.debugLine="Msj.Detalle = \"Información\"";
 parent._msj._detalle /*String*/  = "Información";
- //BA.debugLineNum = 73;BA.debugLine="Msj.Mensaje = \"No existe información\"";
+RDebugUtils.currentLine=14811156;
+ //BA.debugLineNum = 14811156;BA.debugLine="Msj.Mensaje = \"No existe información\"";
 parent._msj._mensaje /*String*/  = "No existe información";
  if (true) break;
 
 case 8:
 //C
 this.state = 9;
- //BA.debugLineNum = 77;BA.debugLine="Log(\"Traer Stock x bodega\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("114811160","Traer Stock x bodega",0);
- //BA.debugLineNum = 78;BA.debugLine="Dim TblStockXbodega As List = Funciones.Fx_Data";
+RDebugUtils.currentLine=14811160;
+ //BA.debugLineNum = 14811160;BA.debugLine="Log(\"Traer Stock x bodega\")";
+anywheresoftware.b4a.keywords.Common.LogImpl("614811160","Traer Stock x bodega",0);
+RDebugUtils.currentLine=14811161;
+ //BA.debugLineNum = 14811161;BA.debugLine="Dim TblStockXbodega As List = Funciones.Fx_Data";
 _tblstockxbodega = new anywheresoftware.b4a.objects.collections.List();
 _tblstockxbodega = parent.mostCurrent._funciones._fx_datatable /*anywheresoftware.b4a.objects.collections.List*/ (mostCurrent.activityBA,_vjson);
- //BA.debugLineNum = 80;BA.debugLine="Private SearchTemplateStock As B4XSearchTemplat";
+RDebugUtils.currentLine=14811163;
+ //BA.debugLineNum = 14811163;BA.debugLine="Private SearchTemplateStock As B4XSearchTemplat";
 _searchtemplatestock = new BaKapp.Movil.Tag.b4xsearchtemplate();
- //BA.debugLineNum = 81;BA.debugLine="SearchTemplateStock.Initialize";
-_searchtemplatestock._initialize /*String*/ (mostCurrent.activityBA);
- //BA.debugLineNum = 86;BA.debugLine="Dim xui As XUI";
+RDebugUtils.currentLine=14811164;
+ //BA.debugLineNum = 14811164;BA.debugLine="SearchTemplateStock.Initialize";
+_searchtemplatestock._initialize /*String*/ (null,mostCurrent.activityBA);
+RDebugUtils.currentLine=14811169;
+ //BA.debugLineNum = 14811169;BA.debugLine="Dim xui As XUI";
 _xui = new anywheresoftware.b4a.objects.B4XViewWrapper.XUI();
- //BA.debugLineNum = 87;BA.debugLine="Private Dialog As B4XDialog";
+RDebugUtils.currentLine=14811170;
+ //BA.debugLineNum = 14811170;BA.debugLine="Private Dialog As B4XDialog";
 _dialog = new BaKapp.Movil.Tag.b4xdialog();
- //BA.debugLineNum = 89;BA.debugLine="Dialog.Initialize (Activity)";
-_dialog._initialize /*String*/ (mostCurrent.activityBA,(anywheresoftware.b4a.objects.B4XViewWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.B4XViewWrapper(), (java.lang.Object)(parent.mostCurrent._activity.getObject())));
- //BA.debugLineNum = 90;BA.debugLine="Dialog.Title = \"Stock X Bodega\"";
+RDebugUtils.currentLine=14811172;
+ //BA.debugLineNum = 14811172;BA.debugLine="Dialog.Initialize (Activity)";
+_dialog._initialize /*String*/ (null,mostCurrent.activityBA,(anywheresoftware.b4a.objects.B4XViewWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.B4XViewWrapper(), (java.lang.Object)(parent.mostCurrent._activity.getObject())));
+RDebugUtils.currentLine=14811173;
+ //BA.debugLineNum = 14811173;BA.debugLine="Dialog.Title = \"Stock X Bodega\"";
 _dialog._title /*Object*/  = (Object)("Stock X Bodega");
- //BA.debugLineNum = 92;BA.debugLine="Xclv_StokXbodega.DefaultTextBackgroundColor = C";
+RDebugUtils.currentLine=14811175;
+ //BA.debugLineNum = 14811175;BA.debugLine="Xclv_StokXbodega.DefaultTextBackgroundColor = C";
 parent.mostCurrent._xclv_stokxbodega._defaulttextbackgroundcolor = anywheresoftware.b4a.keywords.Common.Colors.Transparent;
- //BA.debugLineNum = 93;BA.debugLine="Xclv_StokXbodega.Clear";
+RDebugUtils.currentLine=14811176;
+ //BA.debugLineNum = 14811176;BA.debugLine="Xclv_StokXbodega.Clear";
 parent.mostCurrent._xclv_stokxbodega._clear();
- //BA.debugLineNum = 95;BA.debugLine="For Each vFilaStb As Map In TblStockXbodega";
+RDebugUtils.currentLine=14811178;
+ //BA.debugLineNum = 14811178;BA.debugLine="For Each vFilaStb As Map In TblStockXbodega";
 if (true) break;
 
 case 9:
@@ -565,24 +580,33 @@ if (true) break;
 case 11:
 //C
 this.state = 17;
- //BA.debugLineNum = 97;BA.debugLine="Dim p As B4XView = xui.CreatePanel(\"\")";
+RDebugUtils.currentLine=14811180;
+ //BA.debugLineNum = 14811180;BA.debugLine="Dim p As B4XView = xui.CreatePanel(\"\")";
 _p = new anywheresoftware.b4a.objects.B4XViewWrapper();
 _p = _xui.CreatePanel(processBA,"");
- //BA.debugLineNum = 99;BA.debugLine="p.SetLayoutAnimated(100,0,0,Xclv_StokXbodega.A";
+RDebugUtils.currentLine=14811182;
+ //BA.debugLineNum = 14811182;BA.debugLine="p.SetLayoutAnimated(100,0,0,Xclv_StokXbodega.A";
 _p.SetLayoutAnimated((int) (100),(int) (0),(int) (0),parent.mostCurrent._xclv_stokxbodega._asview().getWidth(),anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (100)));
- //BA.debugLineNum = 100;BA.debugLine="p.LoadLayout(\"Items_StockXProducto\")";
+RDebugUtils.currentLine=14811183;
+ //BA.debugLineNum = 14811183;BA.debugLine="p.LoadLayout(\"Items_StockXProducto\")";
 _p.LoadLayout("Items_StockXProducto",mostCurrent.activityBA);
- //BA.debugLineNum = 101;BA.debugLine="p.Color = Colors.Transparent";
+RDebugUtils.currentLine=14811184;
+ //BA.debugLineNum = 14811184;BA.debugLine="p.Color = Colors.Transparent";
 _p.setColor(anywheresoftware.b4a.keywords.Common.Colors.Transparent);
- //BA.debugLineNum = 103;BA.debugLine="Dim Stock As String  = NumberFormat(vFilaStb.G";
+RDebugUtils.currentLine=14811186;
+ //BA.debugLineNum = 14811186;BA.debugLine="Dim Stock As String  = NumberFormat(vFilaStb.G";
 _stock = anywheresoftware.b4a.keywords.Common.NumberFormat((double)(BA.ObjectToNumber(_vfilastb.Get((Object)("STFI1")))),(int) (0),(int) (2));
- //BA.debugLineNum = 107;BA.debugLine="Lbl_Bodega.Text = vFilaStb.Get(\"KOSU\") & \" - \"";
+RDebugUtils.currentLine=14811190;
+ //BA.debugLineNum = 14811190;BA.debugLine="Lbl_Bodega.Text = vFilaStb.Get(\"KOSU\") & \" - \"";
 parent.mostCurrent._lbl_bodega.setText(BA.ObjectToCharSequence(BA.ObjectToString(_vfilastb.Get((Object)("KOSU")))+" - "+BA.ObjectToString(_vfilastb.Get((Object)("KOBO")))+" - "+BA.ObjectToString(_vfilastb.Get((Object)("NOKOBO")))));
- //BA.debugLineNum = 108;BA.debugLine="Lbl_InfoStock.Text = \"Stock disponible: \" & St";
+RDebugUtils.currentLine=14811191;
+ //BA.debugLineNum = 14811191;BA.debugLine="Lbl_InfoStock.Text = \"Stock disponible: \" & St";
 parent.mostCurrent._lbl_infostock.setText(BA.ObjectToCharSequence("Stock disponible: "+_stock));
- //BA.debugLineNum = 109;BA.debugLine="p.Tag =vFilaStb";
+RDebugUtils.currentLine=14811192;
+ //BA.debugLineNum = 14811192;BA.debugLine="p.Tag =vFilaStb";
 _p.setTag((Object)(_vfilastb.getObject()));
- //BA.debugLineNum = 110;BA.debugLine="Xclv_StokXbodega.add(p,\"\")";
+RDebugUtils.currentLine=14811193;
+ //BA.debugLineNum = 14811193;BA.debugLine="Xclv_StokXbodega.add(p,\"\")";
 parent.mostCurrent._xclv_stokxbodega._add(_p,(Object)(""));
  if (true) break;
 if (true) break;
@@ -603,16 +627,18 @@ case 14:
 //C
 this.state = -1;
 ;
- //BA.debugLineNum = 118;BA.debugLine="End Sub";
+RDebugUtils.currentLine=14811201;
+ //BA.debugLineNum = 14811201;BA.debugLine="End Sub";
 if (true) break;
 
             }
         }
     }
 }
-public static void  _jobdone(BaKapp.Movil.Tag.httpjob _js) throws Exception{
-}
 public static void  _xclv_stokxbodega_itemlongclick(int _index,Object _value) throws Exception{
+RDebugUtils.currentModule="frm_infostockxprod";
+if (Debug.shouldDelegate(mostCurrent.activityBA, "xclv_stokxbodega_itemlongclick", false))
+	 {Debug.delegate(mostCurrent.activityBA, "xclv_stokxbodega_itemlongclick", new Object[] {_index,_value}); return;}
 ResumableSub_Xclv_StokXbodega_ItemLongClick rsub = new ResumableSub_Xclv_StokXbodega_ItemLongClick(null,_index,_value);
 rsub.resume(processBA, null);
 }
@@ -635,6 +661,7 @@ int _result = 0;
 
 @Override
 public void resume(BA ba, Object[] result) throws Exception{
+RDebugUtils.currentModule="frm_infostockxprod";
 
     while (true) {
         switch (state) {
@@ -644,28 +671,38 @@ return;
 case 0:
 //C
 this.state = 1;
- //BA.debugLineNum = 124;BA.debugLine="Dim xui As XUI";
+RDebugUtils.currentLine=14876676;
+ //BA.debugLineNum = 14876676;BA.debugLine="Dim xui As XUI";
 _xui = new anywheresoftware.b4a.objects.B4XViewWrapper.XUI();
- //BA.debugLineNum = 125;BA.debugLine="Dim Item As CLVItem  = Xclv_StokXbodega.GetRawLis";
+RDebugUtils.currentLine=14876677;
+ //BA.debugLineNum = 14876677;BA.debugLine="Dim Item As CLVItem  = Xclv_StokXbodega.GetRawLis";
 _item = parent.mostCurrent._xclv_stokxbodega._getrawlistitem(_index);
- //BA.debugLineNum = 126;BA.debugLine="Dim p As Panel = Item.Panel.GetView(0)";
+RDebugUtils.currentLine=14876678;
+ //BA.debugLineNum = 14876678;BA.debugLine="Dim p As Panel = Item.Panel.GetView(0)";
 _p = new anywheresoftware.b4a.objects.PanelWrapper();
 _p = (anywheresoftware.b4a.objects.PanelWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.PanelWrapper(), (android.view.ViewGroup)(_item.Panel.GetView((int) (0)).getObject()));
- //BA.debugLineNum = 129;BA.debugLine="Msj.EsCorrecto = True";
+RDebugUtils.currentLine=14876681;
+ //BA.debugLineNum = 14876681;BA.debugLine="Msj.EsCorrecto = True";
 parent._msj._escorrecto /*boolean*/  = anywheresoftware.b4a.keywords.Common.True;
- //BA.debugLineNum = 130;BA.debugLine="Msj.Tag = p.Tag";
+RDebugUtils.currentLine=14876682;
+ //BA.debugLineNum = 14876682;BA.debugLine="Msj.Tag = p.Tag";
 parent._msj._tag /*Object*/  = _p.getTag();
- //BA.debugLineNum = 131;BA.debugLine="Dim FilaSeleccionada As Map = p.Tag";
+RDebugUtils.currentLine=14876683;
+ //BA.debugLineNum = 14876683;BA.debugLine="Dim FilaSeleccionada As Map = p.Tag";
 _filaseleccionada = new anywheresoftware.b4a.objects.collections.Map();
 _filaseleccionada = (anywheresoftware.b4a.objects.collections.Map) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.collections.Map(), (java.util.Map)(_p.getTag()));
- //BA.debugLineNum = 132;BA.debugLine="bmp1 = LoadBitmap(File.DirAssets, \"ok_button.png\"";
+RDebugUtils.currentLine=14876684;
+ //BA.debugLineNum = 14876684;BA.debugLine="bmp1 = LoadBitmap(File.DirAssets, \"ok_button.png\"";
 parent.mostCurrent._bmp1 = anywheresoftware.b4a.keywords.Common.LoadBitmap(anywheresoftware.b4a.keywords.Common.File.getDirAssets(),"ok_button.png");
- //BA.debugLineNum = 134;BA.debugLine="Dim Stock As String  = NumberFormat(FilaSeleccion";
+RDebugUtils.currentLine=14876686;
+ //BA.debugLineNum = 14876686;BA.debugLine="Dim Stock As String  = NumberFormat(FilaSeleccion";
 _stock = anywheresoftware.b4a.keywords.Common.NumberFormat((double)(BA.ObjectToNumber(_filaseleccionada.Get((Object)("STFI1")))),(int) (0),(int) (2));
- //BA.debugLineNum = 136;BA.debugLine="Dim sf As Object = xui.Msgbox2Async(\"Bodega: \" &";
+RDebugUtils.currentLine=14876688;
+ //BA.debugLineNum = 14876688;BA.debugLine="Dim sf As Object = xui.Msgbox2Async(\"Bodega: \" &";
 _sf = _xui.Msgbox2Async(processBA,BA.ObjectToCharSequence("Bodega: "+BA.ObjectToString(_filaseleccionada.Get((Object)("NOKOBO")))+anywheresoftware.b4a.keywords.Common.CRLF+"Stock disponible: "+_stock),BA.ObjectToCharSequence("Selección de bodega"),"Confirmar","Cancelar","",parent.mostCurrent._bmp1);
- //BA.debugLineNum = 138;BA.debugLine="Wait For (sf) Msgbox_result (Result As Int)";
-anywheresoftware.b4a.keywords.Common.WaitFor("msgbox_result", processBA, this, _sf);
+RDebugUtils.currentLine=14876690;
+ //BA.debugLineNum = 14876690;BA.debugLine="Wait For (sf) Msgbox_result (Result As Int)";
+anywheresoftware.b4a.keywords.Common.WaitFor("msgbox_result", processBA, new anywheresoftware.b4a.shell.DebugResumableSub.DelegatableResumableSub(this, "frm_infostockxprod", "xclv_stokxbodega_itemlongclick"), _sf);
 this.state = 5;
 return;
 case 5:
@@ -673,7 +710,8 @@ case 5:
 this.state = 1;
 _result = (Integer) result[0];
 ;
- //BA.debugLineNum = 140;BA.debugLine="If Result <> DialogResponse.POSITIVE Then";
+RDebugUtils.currentLine=14876692;
+ //BA.debugLineNum = 14876692;BA.debugLine="If Result <> DialogResponse.POSITIVE Then";
 if (true) break;
 
 case 1:
@@ -686,7 +724,8 @@ this.state = 3;
 case 3:
 //C
 this.state = 4;
- //BA.debugLineNum = 141;BA.debugLine="Return";
+RDebugUtils.currentLine=14876693;
+ //BA.debugLineNum = 14876693;BA.debugLine="Return";
 if (true) return ;
  if (true) break;
 
@@ -694,15 +733,15 @@ case 4:
 //C
 this.state = -1;
 ;
- //BA.debugLineNum = 144;BA.debugLine="Activity.Finish";
+RDebugUtils.currentLine=14876696;
+ //BA.debugLineNum = 14876696;BA.debugLine="Activity.Finish";
 parent.mostCurrent._activity.Finish();
- //BA.debugLineNum = 146;BA.debugLine="End Sub";
+RDebugUtils.currentLine=14876698;
+ //BA.debugLineNum = 14876698;BA.debugLine="End Sub";
 if (true) break;
 
             }
         }
     }
-}
-public static void  _msgbox_result(int _result) throws Exception{
 }
 }

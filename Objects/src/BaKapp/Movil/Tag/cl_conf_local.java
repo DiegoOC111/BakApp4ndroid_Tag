@@ -10,7 +10,7 @@ public class cl_conf_local extends B4AClass.ImplB4AClass implements BA.SubDelega
     private static java.util.HashMap<String, java.lang.reflect.Method> htSubs;
     private void innerInitialize(BA _ba) throws Exception {
         if (ba == null) {
-            ba = new BA(_ba, this, htSubs, "BaKapp.Movil.Tag.cl_conf_local");
+            ba = new anywheresoftware.b4a.ShellBA(_ba, this, htSubs, "BaKapp.Movil.Tag.cl_conf_local");
             if (htSubs == null) {
                 ba.loadHtSubs(this.getClass());
                 htSubs = ba.htSubs;
@@ -23,7 +23,14 @@ public class cl_conf_local extends B4AClass.ImplB4AClass implements BA.SubDelega
             ba.raiseEvent2(null, true, "class_globals", false);
     }
 
- public anywheresoftware.b4a.keywords.Common __c = null;
+ 
+    public void  innerInitializeHelper(anywheresoftware.b4a.BA _ba) throws Exception{
+        innerInitialize(_ba);
+    }
+    public Object callSub(String sub, Object sender, Object[] args) throws Exception {
+        return BA.SubDelegator.SubNotFound;
+    }
+public anywheresoftware.b4a.keywords.Common __c = null;
 public String _consulta_sql = "";
 public b4a.example.dateutils _dateutils = null;
 public BaKapp.Movil.Tag.main _main = null;
@@ -46,28 +53,45 @@ public BaKapp.Movil.Tag.funciones _funciones = null;
 public BaKapp.Movil.Tag.variables _variables = null;
 public BaKapp.Movil.Tag.httputils2service _httputils2service = null;
 public BaKapp.Movil.Tag.xuiviewsutils _xuiviewsutils = null;
-public String  _class_globals() throws Exception{
- //BA.debugLineNum = 1;BA.debugLine="Sub Class_Globals";
- //BA.debugLineNum = 3;BA.debugLine="Dim Consulta_Sql As String";
+public String  _class_globals(BaKapp.Movil.Tag.cl_conf_local __ref) throws Exception{
+__ref = this;
+RDebugUtils.currentModule="cl_conf_local";
+RDebugUtils.currentLine=4849664;
+ //BA.debugLineNum = 4849664;BA.debugLine="Sub Class_Globals";
+RDebugUtils.currentLine=4849666;
+ //BA.debugLineNum = 4849666;BA.debugLine="Dim Consulta_Sql As String";
 _consulta_sql = "";
- //BA.debugLineNum = 5;BA.debugLine="End Sub";
+RDebugUtils.currentLine=4849668;
+ //BA.debugLineNum = 4849668;BA.debugLine="End Sub";
 return "";
 }
-public String  _initialize(anywheresoftware.b4a.BA _ba) throws Exception{
+public String  _initialize(BaKapp.Movil.Tag.cl_conf_local __ref,anywheresoftware.b4a.BA _ba) throws Exception{
+__ref = this;
 innerInitialize(_ba);
- //BA.debugLineNum = 8;BA.debugLine="Public Sub Initialize";
- //BA.debugLineNum = 10;BA.debugLine="End Sub";
+RDebugUtils.currentModule="cl_conf_local";
+if (Debug.shouldDelegate(ba, "initialize", false))
+	 {return ((String) Debug.delegate(ba, "initialize", new Object[] {_ba}));}
+RDebugUtils.currentLine=4915200;
+ //BA.debugLineNum = 4915200;BA.debugLine="Public Sub Initialize";
+RDebugUtils.currentLine=4915202;
+ //BA.debugLineNum = 4915202;BA.debugLine="End Sub";
 return "";
 }
-public anywheresoftware.b4a.keywords.Common.ResumableSubWrapper  _sb_revisar_webservice() throws Exception{
-ResumableSub_Sb_Revisar_WebService rsub = new ResumableSub_Sb_Revisar_WebService(this);
+public anywheresoftware.b4a.keywords.Common.ResumableSubWrapper  _sb_revisar_webservice(BaKapp.Movil.Tag.cl_conf_local __ref) throws Exception{
+RDebugUtils.currentModule="cl_conf_local";
+if (Debug.shouldDelegate(ba, "sb_revisar_webservice", false))
+	 {return ((anywheresoftware.b4a.keywords.Common.ResumableSubWrapper) Debug.delegate(ba, "sb_revisar_webservice", null));}
+ResumableSub_Sb_Revisar_WebService rsub = new ResumableSub_Sb_Revisar_WebService(this,__ref);
 rsub.resume(ba, null);
 return (anywheresoftware.b4a.keywords.Common.ResumableSubWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.keywords.Common.ResumableSubWrapper(), rsub);
 }
 public static class ResumableSub_Sb_Revisar_WebService extends BA.ResumableSub {
-public ResumableSub_Sb_Revisar_WebService(BaKapp.Movil.Tag.cl_conf_local parent) {
+public ResumableSub_Sb_Revisar_WebService(BaKapp.Movil.Tag.cl_conf_local parent,BaKapp.Movil.Tag.cl_conf_local __ref) {
 this.parent = parent;
+this.__ref = __ref;
+this.__ref = parent;
 }
+BaKapp.Movil.Tag.cl_conf_local __ref;
 BaKapp.Movil.Tag.cl_conf_local parent;
 boolean _exite_ip_webservice = false;
 int _existe = 0;
@@ -75,6 +99,7 @@ anywheresoftware.b4a.objects.collections.Map _fila = null;
 
 @Override
 public void resume(BA ba, Object[] result) throws Exception{
+RDebugUtils.currentModule="cl_conf_local";
 
     while (true) {
 try {
@@ -86,9 +111,11 @@ parent.__c.ReturnFromResumableSub(this,null);return;}
 case 0:
 //C
 this.state = 1;
- //BA.debugLineNum = 14;BA.debugLine="Dim Exite_Ip_webservice As Boolean";
+RDebugUtils.currentLine=4980738;
+ //BA.debugLineNum = 4980738;BA.debugLine="Dim Exite_Ip_webservice As Boolean";
 _exite_ip_webservice = false;
- //BA.debugLineNum = 16;BA.debugLine="Try";
+RDebugUtils.currentLine=4980740;
+ //BA.debugLineNum = 4980740;BA.debugLine="Try";
 if (true) break;
 
 case 1:
@@ -102,11 +129,14 @@ case 3:
 //C
 this.state = 4;
 this.catchState = 11;
- //BA.debugLineNum = 17;BA.debugLine="Consulta_Sql = \"Select * From Conf_Local\"";
-parent._consulta_sql = "Select * From Conf_Local";
- //BA.debugLineNum = 18;BA.debugLine="Dim Existe As Int = Variables.vSql.ExecQuerySing";
+RDebugUtils.currentLine=4980741;
+ //BA.debugLineNum = 4980741;BA.debugLine="Consulta_Sql = \"Select * From Conf_Local\"";
+__ref._consulta_sql /*String*/  = "Select * From Conf_Local";
+RDebugUtils.currentLine=4980742;
+ //BA.debugLineNum = 4980742;BA.debugLine="Dim Existe As Int = Variables.vSql.ExecQuerySing";
 _existe = (int)(Double.parseDouble(parent._variables._vsql /*anywheresoftware.b4a.sql.SQL*/ .ExecQuerySingleResult("Select Count(*) From Conf_Local")));
- //BA.debugLineNum = 20;BA.debugLine="If Existe = 0 Then";
+RDebugUtils.currentLine=4980744;
+ //BA.debugLineNum = 4980744;BA.debugLine="If Existe = 0 Then";
 if (true) break;
 
 case 4:
@@ -121,18 +151,22 @@ this.state = 8;
 case 6:
 //C
 this.state = 9;
- //BA.debugLineNum = 21;BA.debugLine="Consulta_Sql = \"Insert Into Conf_Local (Ip_WebS";
-parent._consulta_sql = "Insert Into Conf_Local (Ip_WebService,IdDispositivo) Values ('...','"+parent._variables._global_iddispositivo /*String*/ +"')";
- //BA.debugLineNum = 22;BA.debugLine="Variables.vSql.ExecQuery(Consulta_Sql)";
-parent._variables._vsql /*anywheresoftware.b4a.sql.SQL*/ .ExecQuery(parent._consulta_sql);
- //BA.debugLineNum = 23;BA.debugLine="Exite_Ip_webservice = False";
+RDebugUtils.currentLine=4980745;
+ //BA.debugLineNum = 4980745;BA.debugLine="Consulta_Sql = \"Insert Into Conf_Local (Ip_WebS";
+__ref._consulta_sql /*String*/  = "Insert Into Conf_Local (Ip_WebService,IdDispositivo) Values ('...','"+parent._variables._global_iddispositivo /*String*/ +"')";
+RDebugUtils.currentLine=4980746;
+ //BA.debugLineNum = 4980746;BA.debugLine="Variables.vSql.ExecQuery(Consulta_Sql)";
+parent._variables._vsql /*anywheresoftware.b4a.sql.SQL*/ .ExecQuery(__ref._consulta_sql /*String*/ );
+RDebugUtils.currentLine=4980747;
+ //BA.debugLineNum = 4980747;BA.debugLine="Exite_Ip_webservice = False";
 _exite_ip_webservice = parent.__c.False;
  if (true) break;
 
 case 8:
 //C
 this.state = 9;
- //BA.debugLineNum = 25;BA.debugLine="Exite_Ip_webservice = True";
+RDebugUtils.currentLine=4980749;
+ //BA.debugLineNum = 4980749;BA.debugLine="Exite_Ip_webservice = True";
 _exite_ip_webservice = parent.__c.True;
  if (true) break;
 
@@ -140,15 +174,20 @@ case 9:
 //C
 this.state = 12;
 ;
- //BA.debugLineNum = 28;BA.debugLine="Consulta_Sql = \"Select * From Conf_Local\"";
-parent._consulta_sql = "Select * From Conf_Local";
- //BA.debugLineNum = 29;BA.debugLine="Dim Fila As Map";
+RDebugUtils.currentLine=4980752;
+ //BA.debugLineNum = 4980752;BA.debugLine="Consulta_Sql = \"Select * From Conf_Local\"";
+__ref._consulta_sql /*String*/  = "Select * From Conf_Local";
+RDebugUtils.currentLine=4980753;
+ //BA.debugLineNum = 4980753;BA.debugLine="Dim Fila As Map";
 _fila = new anywheresoftware.b4a.objects.collections.Map();
- //BA.debugLineNum = 30;BA.debugLine="Fila.Initialize";
+RDebugUtils.currentLine=4980754;
+ //BA.debugLineNum = 4980754;BA.debugLine="Fila.Initialize";
 _fila.Initialize();
- //BA.debugLineNum = 31;BA.debugLine="Fila = DBUtils.ExecuteMap(Variables.vSql,Consult";
-_fila = parent._dbutils._executemap /*anywheresoftware.b4a.objects.collections.Map*/ (parent.getActivityBA(),parent._variables._vsql /*anywheresoftware.b4a.sql.SQL*/ ,parent._consulta_sql,(String[])(parent.__c.Null));
- //BA.debugLineNum = 33;BA.debugLine="Variables.Global_Ip_WebService = Fila.Get(\"ip_we";
+RDebugUtils.currentLine=4980755;
+ //BA.debugLineNum = 4980755;BA.debugLine="Fila = DBUtils.ExecuteMap(Variables.vSql,Consult";
+_fila = parent._dbutils._executemap /*anywheresoftware.b4a.objects.collections.Map*/ (parent.getActivityBA(),parent._variables._vsql /*anywheresoftware.b4a.sql.SQL*/ ,__ref._consulta_sql /*String*/ ,(String[])(parent.__c.Null));
+RDebugUtils.currentLine=4980757;
+ //BA.debugLineNum = 4980757;BA.debugLine="Variables.Global_Ip_WebService = Fila.Get(\"ip_we";
 parent._variables._global_ip_webservice /*String*/  = BA.ObjectToString(_fila.Get((Object)("ip_webservice")));
  if (true) break;
 
@@ -156,10 +195,12 @@ case 11:
 //C
 this.state = 12;
 this.catchState = 0;
- //BA.debugLineNum = 35;BA.debugLine="Variables.Global_Ip_WebService = \"...\"";
+RDebugUtils.currentLine=4980759;
+ //BA.debugLineNum = 4980759;BA.debugLine="Variables.Global_Ip_WebService = \"...\"";
 parent._variables._global_ip_webservice /*String*/  = "...";
- //BA.debugLineNum = 36;BA.debugLine="Log(LastException)";
-parent.__c.LogImpl("14980760",BA.ObjectToString(parent.__c.LastException(parent.getActivityBA())),0);
+RDebugUtils.currentLine=4980760;
+ //BA.debugLineNum = 4980760;BA.debugLine="Log(LastException)";
+parent.__c.LogImpl("64980760",BA.ObjectToString(parent.__c.LastException(parent.getActivityBA())),0);
  if (true) break;
 if (true) break;
 
@@ -168,10 +209,12 @@ case 12:
 this.state = -1;
 this.catchState = 0;
 ;
- //BA.debugLineNum = 39;BA.debugLine="Return Exite_Ip_webservice";
+RDebugUtils.currentLine=4980763;
+ //BA.debugLineNum = 4980763;BA.debugLine="Return Exite_Ip_webservice";
 if (true) {
 parent.__c.ReturnFromResumableSub(this,(Object)(_exite_ip_webservice));return;};
- //BA.debugLineNum = 41;BA.debugLine="End Sub";
+RDebugUtils.currentLine=4980765;
+ //BA.debugLineNum = 4980765;BA.debugLine="End Sub";
 if (true) break;
 }} 
        catch (Exception e0) {
@@ -184,9 +227,5 @@ ba.setLastException(e0);}
             }
         }
     }
-}
-public Object callSub(String sub, Object sender, Object[] args) throws Exception {
-BA.senderHolder.set(sender);
-return BA.SubDelegator.SubNotFound;
 }
 }
