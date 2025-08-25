@@ -354,6 +354,7 @@ public BaKapp.Movil.Tag.main _main = null;
 public BaKapp.Movil.Tag.buscar_entidad _buscar_entidad = null;
 public BaKapp.Movil.Tag.buscar_productos _buscar_productos = null;
 public BaKapp.Movil.Tag.frm_impresion _frm_impresion = null;
+public BaKapp.Movil.Tag.funciones _funciones = null;
 public BaKapp.Movil.Tag.dbutils _dbutils = null;
 public BaKapp.Movil.Tag.frm_buscar_documento _frm_buscar_documento = null;
 public BaKapp.Movil.Tag.frm_documentos_generados _frm_documentos_generados = null;
@@ -365,7 +366,6 @@ public BaKapp.Movil.Tag.frm_menu_principal _frm_menu_principal = null;
 public BaKapp.Movil.Tag.frm_post_01_descuentos _frm_post_01_descuentos = null;
 public BaKapp.Movil.Tag.frm_post_01_formulario _frm_post_01_formulario = null;
 public BaKapp.Movil.Tag.frm_post_01_producto _frm_post_01_producto = null;
-public BaKapp.Movil.Tag.funciones _funciones = null;
 public BaKapp.Movil.Tag.variables _variables = null;
 public BaKapp.Movil.Tag.httputils2service _httputils2service = null;
 public BaKapp.Movil.Tag.xuiviewsutils _xuiviewsutils = null;
@@ -373,34 +373,34 @@ public static String  _activity_create(boolean _firsttime) throws Exception{
 RDebugUtils.currentModule="conf_local";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_create", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "activity_create", new Object[] {_firsttime}));}
-RDebugUtils.currentLine=7995392;
- //BA.debugLineNum = 7995392;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
-RDebugUtils.currentLine=7995395;
- //BA.debugLineNum = 7995395;BA.debugLine="Activity.LoadLayout(\"Conf_Local1\")";
+RDebugUtils.currentLine=11206656;
+ //BA.debugLineNum = 11206656;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
+RDebugUtils.currentLine=11206659;
+ //BA.debugLineNum = 11206659;BA.debugLine="Activity.LoadLayout(\"Conf_Local1\")";
 mostCurrent._activity.LoadLayout("Conf_Local1",mostCurrent.activityBA);
-RDebugUtils.currentLine=7995397;
- //BA.debugLineNum = 7995397;BA.debugLine="Txt_Ip_WebService.Text = Variables.Global_Ip_WebS";
+RDebugUtils.currentLine=11206661;
+ //BA.debugLineNum = 11206661;BA.debugLine="Txt_Ip_WebService.Text = Variables.Global_Ip_WebS";
 mostCurrent._txt_ip_webservice.setText(BA.ObjectToCharSequence(mostCurrent._variables._global_ip_webservice /*String*/ ));
-RDebugUtils.currentLine=7995399;
- //BA.debugLineNum = 7995399;BA.debugLine="End Sub";
+RDebugUtils.currentLine=11206663;
+ //BA.debugLineNum = 11206663;BA.debugLine="End Sub";
 return "";
 }
 public static String  _activity_pause(boolean _userclosed) throws Exception{
 RDebugUtils.currentModule="conf_local";
-RDebugUtils.currentLine=8126464;
- //BA.debugLineNum = 8126464;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
-RDebugUtils.currentLine=8126466;
- //BA.debugLineNum = 8126466;BA.debugLine="End Sub";
+RDebugUtils.currentLine=11337728;
+ //BA.debugLineNum = 11337728;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
+RDebugUtils.currentLine=11337730;
+ //BA.debugLineNum = 11337730;BA.debugLine="End Sub";
 return "";
 }
 public static String  _activity_resume() throws Exception{
 RDebugUtils.currentModule="conf_local";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_resume", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "activity_resume", null));}
-RDebugUtils.currentLine=8060928;
- //BA.debugLineNum = 8060928;BA.debugLine="Sub Activity_Resume";
-RDebugUtils.currentLine=8060930;
- //BA.debugLineNum = 8060930;BA.debugLine="End Sub";
+RDebugUtils.currentLine=11272192;
+ //BA.debugLineNum = 11272192;BA.debugLine="Sub Activity_Resume";
+RDebugUtils.currentLine=11272194;
+ //BA.debugLineNum = 11272194;BA.debugLine="End Sub";
 return "";
 }
 public static void  _btn_grabar_click() throws Exception{
@@ -431,17 +431,17 @@ return;
 case 0:
 //C
 this.state = 1;
-RDebugUtils.currentLine=8192002;
- //BA.debugLineNum = 8192002;BA.debugLine="Variables.Global_Ip_WebService = Txt_Ip_WebServic";
+RDebugUtils.currentLine=11403266;
+ //BA.debugLineNum = 11403266;BA.debugLine="Variables.Global_Ip_WebService = Txt_Ip_WebServic";
 parent.mostCurrent._variables._global_ip_webservice /*String*/  = parent.mostCurrent._txt_ip_webservice.getText().trim();
-RDebugUtils.currentLine=8192004;
- //BA.debugLineNum = 8192004;BA.debugLine="Consulta_Sql = \"Select Top 1 EMPRESA From CONFIES";
+RDebugUtils.currentLine=11403268;
+ //BA.debugLineNum = 11403268;BA.debugLine="Consulta_Sql = \"Select Top 1 EMPRESA From CONFIES";
 parent._consulta_sql = "Select Top 1 EMPRESA From CONFIES";
-RDebugUtils.currentLine=8192006;
- //BA.debugLineNum = 8192006;BA.debugLine="Dim Js As HttpJob = Funciones.Fx_HttJob_Ws_Sb_Get";
+RDebugUtils.currentLine=11403270;
+ //BA.debugLineNum = 11403270;BA.debugLine="Dim Js As HttpJob = Funciones.Fx_HttJob_Ws_Sb_Get";
 _js = parent.mostCurrent._funciones._fx_httjob_ws_sb_getdataset_json /*BaKapp.Movil.Tag.httpjob*/ (mostCurrent.activityBA,parent._consulta_sql,conf_local.getObject());
-RDebugUtils.currentLine=8192007;
- //BA.debugLineNum = 8192007;BA.debugLine="Wait For (Js) JobDone(Js As HttpJob)";
+RDebugUtils.currentLine=11403271;
+ //BA.debugLineNum = 11403271;BA.debugLine="Wait For (Js) JobDone(Js As HttpJob)";
 anywheresoftware.b4a.keywords.Common.WaitFor("jobdone", processBA, new anywheresoftware.b4a.shell.DebugResumableSub.DelegatableResumableSub(this, "conf_local", "btn_grabar_click"), (Object)(_js));
 this.state = 11;
 return;
@@ -450,11 +450,11 @@ case 11:
 this.state = 1;
 _js = (BaKapp.Movil.Tag.httpjob) result[0];
 ;
-RDebugUtils.currentLine=8192008;
- //BA.debugLineNum = 8192008;BA.debugLine="ProgressDialogShow(\"Probando conexión\")";
+RDebugUtils.currentLine=11403272;
+ //BA.debugLineNum = 11403272;BA.debugLine="ProgressDialogShow(\"Probando conexión\")";
 anywheresoftware.b4a.keywords.Common.ProgressDialogShow(mostCurrent.activityBA,BA.ObjectToCharSequence("Probando conexión"));
-RDebugUtils.currentLine=8192009;
- //BA.debugLineNum = 8192009;BA.debugLine="If Js.Success Then";
+RDebugUtils.currentLine=11403273;
+ //BA.debugLineNum = 11403273;BA.debugLine="If Js.Success Then";
 if (true) break;
 
 case 1:
@@ -469,11 +469,11 @@ this.state = 9;
 case 3:
 //C
 this.state = 4;
-RDebugUtils.currentLine=8192011;
- //BA.debugLineNum = 8192011;BA.debugLine="Dim vJson As String = Js.GetString";
+RDebugUtils.currentLine=11403275;
+ //BA.debugLineNum = 11403275;BA.debugLine="Dim vJson As String = Js.GetString";
 _vjson = _js._getstring /*String*/ (null);
-RDebugUtils.currentLine=8192012;
- //BA.debugLineNum = 8192012;BA.debugLine="If  vJson <> $\"{\"Table\":[]}\"$ Then";
+RDebugUtils.currentLine=11403276;
+ //BA.debugLineNum = 11403276;BA.debugLine="If  vJson <> $\"{\"Table\":[]}\"$ Then";
 if (true) break;
 
 case 4:
@@ -486,14 +486,14 @@ this.state = 6;
 case 6:
 //C
 this.state = 7;
-RDebugUtils.currentLine=8192013;
- //BA.debugLineNum = 8192013;BA.debugLine="ProgressDialogHide";
+RDebugUtils.currentLine=11403277;
+ //BA.debugLineNum = 11403277;BA.debugLine="ProgressDialogHide";
 anywheresoftware.b4a.keywords.Common.ProgressDialogHide();
-RDebugUtils.currentLine=8192014;
- //BA.debugLineNum = 8192014;BA.debugLine="Msgbox2Async(\"Conexion existosa\" , \"Conexión We";
+RDebugUtils.currentLine=11403278;
+ //BA.debugLineNum = 11403278;BA.debugLine="Msgbox2Async(\"Conexion existosa\" , \"Conexión We";
 anywheresoftware.b4a.keywords.Common.Msgbox2Async(BA.ObjectToCharSequence("Conexion existosa"),BA.ObjectToCharSequence("Conexión WebService"),"Ok","","",(anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper(), (android.graphics.Bitmap)(anywheresoftware.b4a.keywords.Common.Null)),processBA,anywheresoftware.b4a.keywords.Common.False);
-RDebugUtils.currentLine=8192015;
- //BA.debugLineNum = 8192015;BA.debugLine="Wait For Msgbox_Result (Result As Int)";
+RDebugUtils.currentLine=11403279;
+ //BA.debugLineNum = 11403279;BA.debugLine="Wait For Msgbox_Result (Result As Int)";
 anywheresoftware.b4a.keywords.Common.WaitFor("msgbox_result", processBA, new anywheresoftware.b4a.shell.DebugResumableSub.DelegatableResumableSub(this, "conf_local", "btn_grabar_click"), null);
 this.state = 12;
 return;
@@ -502,11 +502,11 @@ case 12:
 this.state = 7;
 _result = (Integer) result[0];
 ;
-RDebugUtils.currentLine=8192017;
- //BA.debugLineNum = 8192017;BA.debugLine="DBUtils.UpdateRecord(Variables.vSql,\"Conf_Local";
+RDebugUtils.currentLine=11403281;
+ //BA.debugLineNum = 11403281;BA.debugLine="DBUtils.UpdateRecord(Variables.vSql,\"Conf_Local";
 parent.mostCurrent._dbutils._updaterecord /*String*/ (mostCurrent.activityBA,parent.mostCurrent._variables._vsql /*anywheresoftware.b4a.sql.SQL*/ ,"Conf_Local","Ip_Webservice",(Object)(parent.mostCurrent._variables._global_ip_webservice /*String*/ ),anywheresoftware.b4a.keywords.Common.createMap(new Object[] {(Object)("IdDispositivo"),(Object)(parent.mostCurrent._variables._global_iddispositivo /*String*/ )}));
-RDebugUtils.currentLine=8192019;
- //BA.debugLineNum = 8192019;BA.debugLine="Activity.Finish";
+RDebugUtils.currentLine=11403283;
+ //BA.debugLineNum = 11403283;BA.debugLine="Activity.Finish";
 parent.mostCurrent._activity.Finish();
  if (true) break;
 
@@ -519,11 +519,11 @@ this.state = 10;
 case 9:
 //C
 this.state = 10;
-RDebugUtils.currentLine=8192023;
- //BA.debugLineNum = 8192023;BA.debugLine="ProgressDialogHide";
+RDebugUtils.currentLine=11403287;
+ //BA.debugLineNum = 11403287;BA.debugLine="ProgressDialogHide";
 anywheresoftware.b4a.keywords.Common.ProgressDialogHide();
-RDebugUtils.currentLine=8192024;
- //BA.debugLineNum = 8192024;BA.debugLine="Msgbox2Async(\"No se pudo establecer la conexion";
+RDebugUtils.currentLine=11403288;
+ //BA.debugLineNum = 11403288;BA.debugLine="Msgbox2Async(\"No se pudo establecer la conexion";
 anywheresoftware.b4a.keywords.Common.Msgbox2Async(BA.ObjectToCharSequence("No se pudo establecer la conexion con el Web Service"),BA.ObjectToCharSequence("Conexión WebService"),"Ok","","",(anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper(), (android.graphics.Bitmap)(anywheresoftware.b4a.keywords.Common.Null)),processBA,anywheresoftware.b4a.keywords.Common.False);
  if (true) break;
 
@@ -531,8 +531,8 @@ case 10:
 //C
 this.state = -1;
 ;
-RDebugUtils.currentLine=8192027;
- //BA.debugLineNum = 8192027;BA.debugLine="End Sub";
+RDebugUtils.currentLine=11403291;
+ //BA.debugLineNum = 11403291;BA.debugLine="End Sub";
 if (true) break;
 
             }

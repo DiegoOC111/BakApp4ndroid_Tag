@@ -8,7 +8,7 @@ public class frm_menu_post_venta_subs_0 {
 
 public static RemoteObject  _activity_create(RemoteObject _firsttime) throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Create (frm_menu_post_venta) ","frm_menu_post_venta",18,frm_menu_post_venta.mostCurrent.activityBA,frm_menu_post_venta.mostCurrent,23);
+		Debug.PushSubsStack("Activity_Create (frm_menu_post_venta) ","frm_menu_post_venta",19,frm_menu_post_venta.mostCurrent.activityBA,frm_menu_post_venta.mostCurrent,23);
 if (RapidSub.canDelegate("activity_create")) { return BaKapp.Movil.Tag.frm_menu_post_venta.remoteMe.runUserSub(false, "frm_menu_post_venta","activity_create", _firsttime);}
 Debug.locals.put("FirstTime", _firsttime);
  BA.debugLineNum = 23;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
@@ -28,7 +28,7 @@ finally {
 		}}
 public static RemoteObject  _activity_pause(RemoteObject _userclosed) throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Pause (frm_menu_post_venta) ","frm_menu_post_venta",18,frm_menu_post_venta.mostCurrent.activityBA,frm_menu_post_venta.mostCurrent,52);
+		Debug.PushSubsStack("Activity_Pause (frm_menu_post_venta) ","frm_menu_post_venta",19,frm_menu_post_venta.mostCurrent.activityBA,frm_menu_post_venta.mostCurrent,52);
 if (RapidSub.canDelegate("activity_pause")) { return BaKapp.Movil.Tag.frm_menu_post_venta.remoteMe.runUserSub(false, "frm_menu_post_venta","activity_pause", _userclosed);}
 Debug.locals.put("UserClosed", _userclosed);
  BA.debugLineNum = 52;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
@@ -45,7 +45,7 @@ finally {
 		}}
 public static void  _activity_resume() throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Resume (frm_menu_post_venta) ","frm_menu_post_venta",18,frm_menu_post_venta.mostCurrent.activityBA,frm_menu_post_venta.mostCurrent,29);
+		Debug.PushSubsStack("Activity_Resume (frm_menu_post_venta) ","frm_menu_post_venta",19,frm_menu_post_venta.mostCurrent.activityBA,frm_menu_post_venta.mostCurrent,29);
 if (RapidSub.canDelegate("activity_resume")) { BaKapp.Movil.Tag.frm_menu_post_venta.remoteMe.runUserSub(false, "frm_menu_post_venta","activity_resume"); return;}
 ResumableSub_Activity_Resume rsub = new ResumableSub_Activity_Resume(null);
 rsub.resume(null, null);
@@ -68,7 +68,7 @@ RemoteObject _result = RemoteObject.createImmutable(false);
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Resume (frm_menu_post_venta) ","frm_menu_post_venta",18,frm_menu_post_venta.mostCurrent.activityBA,frm_menu_post_venta.mostCurrent,29);
+		Debug.PushSubsStack("Activity_Resume (frm_menu_post_venta) ","frm_menu_post_venta",19,frm_menu_post_venta.mostCurrent.activityBA,frm_menu_post_venta.mostCurrent,29);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -159,7 +159,7 @@ public static void  _complete(RemoteObject _result) throws Exception{
 }
 public static void  _btn_buscar_documentos_click() throws Exception{
 try {
-		Debug.PushSubsStack("Btn_Buscar_Documentos_Click (frm_menu_post_venta) ","frm_menu_post_venta",18,frm_menu_post_venta.mostCurrent.activityBA,frm_menu_post_venta.mostCurrent,69);
+		Debug.PushSubsStack("Btn_Buscar_Documentos_Click (frm_menu_post_venta) ","frm_menu_post_venta",19,frm_menu_post_venta.mostCurrent.activityBA,frm_menu_post_venta.mostCurrent,69);
 if (RapidSub.canDelegate("btn_buscar_documentos_click")) { BaKapp.Movil.Tag.frm_menu_post_venta.remoteMe.runUserSub(false, "frm_menu_post_venta","btn_buscar_documentos_click"); return;}
 ResumableSub_Btn_Buscar_Documentos_Click rsub = new ResumableSub_Btn_Buscar_Documentos_Click(null);
 rsub.resume(null, null);
@@ -188,7 +188,7 @@ RemoteObject _resultado = RemoteObject.createImmutable(false);
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Btn_Buscar_Documentos_Click (frm_menu_post_venta) ","frm_menu_post_venta",18,frm_menu_post_venta.mostCurrent.activityBA,frm_menu_post_venta.mostCurrent,69);
+		Debug.PushSubsStack("Btn_Buscar_Documentos_Click (frm_menu_post_venta) ","frm_menu_post_venta",19,frm_menu_post_venta.mostCurrent.activityBA,frm_menu_post_venta.mostCurrent,69);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -427,7 +427,7 @@ public static void  _msgbox_result(RemoteObject _result) throws Exception{
 }
 public static RemoteObject  _btn_venta_click() throws Exception{
 try {
-		Debug.PushSubsStack("Btn_Venta_Click (frm_menu_post_venta) ","frm_menu_post_venta",18,frm_menu_post_venta.mostCurrent.activityBA,frm_menu_post_venta.mostCurrent,56);
+		Debug.PushSubsStack("Btn_Venta_Click (frm_menu_post_venta) ","frm_menu_post_venta",19,frm_menu_post_venta.mostCurrent.activityBA,frm_menu_post_venta.mostCurrent,56);
 if (RapidSub.canDelegate("btn_venta_click")) { return BaKapp.Movil.Tag.frm_menu_post_venta.remoteMe.runUserSub(false, "frm_menu_post_venta","btn_venta_click");}
  BA.debugLineNum = 56;BA.debugLine="Sub Btn_Venta_Click";
 Debug.ShouldStop(8388608);
@@ -452,7 +452,7 @@ finally {
 		}}
 public static RemoteObject  _btn_ver_documentos_click() throws Exception{
 try {
-		Debug.PushSubsStack("Btn_Ver_Documentos_Click (frm_menu_post_venta) ","frm_menu_post_venta",18,frm_menu_post_venta.mostCurrent.activityBA,frm_menu_post_venta.mostCurrent,315);
+		Debug.PushSubsStack("Btn_Ver_Documentos_Click (frm_menu_post_venta) ","frm_menu_post_venta",19,frm_menu_post_venta.mostCurrent.activityBA,frm_menu_post_venta.mostCurrent,315);
 if (RapidSub.canDelegate("btn_ver_documentos_click")) { return BaKapp.Movil.Tag.frm_menu_post_venta.remoteMe.runUserSub(false, "frm_menu_post_venta","btn_ver_documentos_click");}
  BA.debugLineNum = 315;BA.debugLine="Private Sub Btn_Ver_Documentos_Click";
 Debug.ShouldStop(67108864);
@@ -492,7 +492,7 @@ return RemoteObject.createImmutable("");
 }
 public static RemoteObject  _sb_buscardoc(RemoteObject _tido,RemoteObject _nudo) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_BuscarDoc (frm_menu_post_venta) ","frm_menu_post_venta",18,frm_menu_post_venta.mostCurrent.activityBA,frm_menu_post_venta.mostCurrent,226);
+		Debug.PushSubsStack("Sb_BuscarDoc (frm_menu_post_venta) ","frm_menu_post_venta",19,frm_menu_post_venta.mostCurrent.activityBA,frm_menu_post_venta.mostCurrent,226);
 if (RapidSub.canDelegate("sb_buscardoc")) { return BaKapp.Movil.Tag.frm_menu_post_venta.remoteMe.runUserSub(false, "frm_menu_post_venta","sb_buscardoc", _tido, _nudo);}
 ResumableSub_Sb_BuscarDoc rsub = new ResumableSub_Sb_BuscarDoc(null,_tido,_nudo);
 rsub.remoteResumableSub = anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSubForFilter();
@@ -523,7 +523,7 @@ RemoteObject _filas = RemoteObject.declareNull("anywheresoftware.b4a.objects.col
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_BuscarDoc (frm_menu_post_venta) ","frm_menu_post_venta",18,frm_menu_post_venta.mostCurrent.activityBA,frm_menu_post_venta.mostCurrent,226);
+		Debug.PushSubsStack("Sb_BuscarDoc (frm_menu_post_venta) ","frm_menu_post_venta",19,frm_menu_post_venta.mostCurrent.activityBA,frm_menu_post_venta.mostCurrent,226);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -618,7 +618,7 @@ Debug.ShouldStop(4194304);
 _row_documento = RemoteObject.declareNull("anywheresoftware.b4a.AbsObjectWrapper").runMethod(false, "ConvertToWrapper", RemoteObject.createNew("anywheresoftware.b4a.objects.collections.Map"), parent.mostCurrent.__c.getField(false,"Null"));Debug.locals.put("Row_Documento", _row_documento);
  BA.debugLineNum = 248;BA.debugLine="Log(Js.ErrorMessage)";
 Debug.ShouldStop(8388608);
-parent.mostCurrent.__c.runVoidMethod ("LogImpl","615532054",_js.getField(true,"_errormessage" /*RemoteObject*/ ),0);
+parent.mostCurrent.__c.runVoidMethod ("LogImpl","218743318",_js.getField(true,"_errormessage" /*RemoteObject*/ ),0);
  if (true) break;
 
 case 12:
@@ -647,7 +647,7 @@ public static void  _jobdone(RemoteObject _js) throws Exception{
 }
 public static RemoteObject  _sb_buscardoc2(RemoteObject _idmaeedo) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_BuscarDoc2 (frm_menu_post_venta) ","frm_menu_post_venta",18,frm_menu_post_venta.mostCurrent.activityBA,frm_menu_post_venta.mostCurrent,255);
+		Debug.PushSubsStack("Sb_BuscarDoc2 (frm_menu_post_venta) ","frm_menu_post_venta",19,frm_menu_post_venta.mostCurrent.activityBA,frm_menu_post_venta.mostCurrent,255);
 if (RapidSub.canDelegate("sb_buscardoc2")) { return BaKapp.Movil.Tag.frm_menu_post_venta.remoteMe.runUserSub(false, "frm_menu_post_venta","sb_buscardoc2", _idmaeedo);}
 ResumableSub_Sb_BuscarDoc2 rsub = new ResumableSub_Sb_BuscarDoc2(null,_idmaeedo);
 rsub.remoteResumableSub = anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSubForFilter();
@@ -676,7 +676,7 @@ RemoteObject _filas = RemoteObject.declareNull("anywheresoftware.b4a.objects.col
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_BuscarDoc2 (frm_menu_post_venta) ","frm_menu_post_venta",18,frm_menu_post_venta.mostCurrent.activityBA,frm_menu_post_venta.mostCurrent,255);
+		Debug.PushSubsStack("Sb_BuscarDoc2 (frm_menu_post_venta) ","frm_menu_post_venta",19,frm_menu_post_venta.mostCurrent.activityBA,frm_menu_post_venta.mostCurrent,255);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -770,7 +770,7 @@ Debug.ShouldStop(524288);
 _row_documento = RemoteObject.declareNull("anywheresoftware.b4a.AbsObjectWrapper").runMethod(false, "ConvertToWrapper", RemoteObject.createNew("anywheresoftware.b4a.objects.collections.Map"), parent.mostCurrent.__c.getField(false,"Null"));Debug.locals.put("Row_Documento", _row_documento);
  BA.debugLineNum = 277;BA.debugLine="Log(Js.ErrorMessage)";
 Debug.ShouldStop(1048576);
-parent.mostCurrent.__c.runVoidMethod ("LogImpl","615597590",_js.getField(true,"_errormessage" /*RemoteObject*/ ),0);
+parent.mostCurrent.__c.runVoidMethod ("LogImpl","218808854",_js.getField(true,"_errormessage" /*RemoteObject*/ ),0);
  if (true) break;
 
 case 12:
@@ -797,7 +797,7 @@ finally {
 }
 public static RemoteObject  _sb_fx_traerdatosentidad(RemoteObject _koen,RemoteObject _suen) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Fx_TraerDatosEntidad (frm_menu_post_venta) ","frm_menu_post_venta",18,frm_menu_post_venta.mostCurrent.activityBA,frm_menu_post_venta.mostCurrent,284);
+		Debug.PushSubsStack("Sb_Fx_TraerDatosEntidad (frm_menu_post_venta) ","frm_menu_post_venta",19,frm_menu_post_venta.mostCurrent.activityBA,frm_menu_post_venta.mostCurrent,284);
 if (RapidSub.canDelegate("sb_fx_traerdatosentidad")) { return BaKapp.Movil.Tag.frm_menu_post_venta.remoteMe.runUserSub(false, "frm_menu_post_venta","sb_fx_traerdatosentidad", _koen, _suen);}
 ResumableSub_Sb_Fx_TraerDatosEntidad rsub = new ResumableSub_Sb_Fx_TraerDatosEntidad(null,_koen,_suen);
 rsub.remoteResumableSub = anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSubForFilter();
@@ -829,7 +829,7 @@ RemoteObject _filas = RemoteObject.declareNull("anywheresoftware.b4a.objects.col
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Fx_TraerDatosEntidad (frm_menu_post_venta) ","frm_menu_post_venta",18,frm_menu_post_venta.mostCurrent.activityBA,frm_menu_post_venta.mostCurrent,284);
+		Debug.PushSubsStack("Sb_Fx_TraerDatosEntidad (frm_menu_post_venta) ","frm_menu_post_venta",19,frm_menu_post_venta.mostCurrent.activityBA,frm_menu_post_venta.mostCurrent,284);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -927,7 +927,7 @@ Debug.ShouldStop(262144);
 _row_entidad = RemoteObject.declareNull("anywheresoftware.b4a.AbsObjectWrapper").runMethod(false, "ConvertToWrapper", RemoteObject.createNew("anywheresoftware.b4a.objects.collections.Map"), parent.mostCurrent.__c.getField(false,"Null"));Debug.locals.put("Row_Entidad", _row_entidad);
  BA.debugLineNum = 308;BA.debugLine="Log(Js.ErrorMessage)";
 Debug.ShouldStop(524288);
-parent.mostCurrent.__c.runVoidMethod ("LogImpl","615663128",_js.getField(true,"_errormessage" /*RemoteObject*/ ),0);
+parent.mostCurrent.__c.runVoidMethod ("LogImpl","218874392",_js.getField(true,"_errormessage" /*RemoteObject*/ ),0);
  if (true) break;
 
 case 12:
@@ -954,7 +954,7 @@ finally {
 }
 public static RemoteObject  _sb_ir_al_documento(RemoteObject _tido,RemoteObject _nudo) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Ir_Al_Documento (frm_menu_post_venta) ","frm_menu_post_venta",18,frm_menu_post_venta.mostCurrent.activityBA,frm_menu_post_venta.mostCurrent,132);
+		Debug.PushSubsStack("Sb_Ir_Al_Documento (frm_menu_post_venta) ","frm_menu_post_venta",19,frm_menu_post_venta.mostCurrent.activityBA,frm_menu_post_venta.mostCurrent,132);
 if (RapidSub.canDelegate("sb_ir_al_documento")) { return BaKapp.Movil.Tag.frm_menu_post_venta.remoteMe.runUserSub(false, "frm_menu_post_venta","sb_ir_al_documento", _tido, _nudo);}
 ResumableSub_Sb_Ir_Al_Documento rsub = new ResumableSub_Sb_Ir_Al_Documento(null,_tido,_nudo);
 rsub.remoteResumableSub = anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSubForFilter();
@@ -991,7 +991,7 @@ RemoteObject _para = RemoteObject.createImmutable("");
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Ir_Al_Documento (frm_menu_post_venta) ","frm_menu_post_venta",18,frm_menu_post_venta.mostCurrent.activityBA,frm_menu_post_venta.mostCurrent,132);
+		Debug.PushSubsStack("Sb_Ir_Al_Documento (frm_menu_post_venta) ","frm_menu_post_venta",19,frm_menu_post_venta.mostCurrent.activityBA,frm_menu_post_venta.mostCurrent,132);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -1169,7 +1169,7 @@ finally {
 }
 public static RemoteObject  _sb_ir_al_documento2(RemoteObject _idmaeedo) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Ir_Al_Documento2 (frm_menu_post_venta) ","frm_menu_post_venta",18,frm_menu_post_venta.mostCurrent.activityBA,frm_menu_post_venta.mostCurrent,178);
+		Debug.PushSubsStack("Sb_Ir_Al_Documento2 (frm_menu_post_venta) ","frm_menu_post_venta",19,frm_menu_post_venta.mostCurrent.activityBA,frm_menu_post_venta.mostCurrent,178);
 if (RapidSub.canDelegate("sb_ir_al_documento2")) { return BaKapp.Movil.Tag.frm_menu_post_venta.remoteMe.runUserSub(false, "frm_menu_post_venta","sb_ir_al_documento2", _idmaeedo);}
 ResumableSub_Sb_Ir_Al_Documento2 rsub = new ResumableSub_Sb_Ir_Al_Documento2(null,_idmaeedo);
 rsub.remoteResumableSub = anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSubForFilter();
@@ -1205,7 +1205,7 @@ RemoteObject _para = RemoteObject.createImmutable("");
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Ir_Al_Documento2 (frm_menu_post_venta) ","frm_menu_post_venta",18,frm_menu_post_venta.mostCurrent.activityBA,frm_menu_post_venta.mostCurrent,178);
+		Debug.PushSubsStack("Sb_Ir_Al_Documento2 (frm_menu_post_venta) ","frm_menu_post_venta",19,frm_menu_post_venta.mostCurrent.activityBA,frm_menu_post_venta.mostCurrent,178);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -1388,7 +1388,7 @@ finally {
 }
 public static void  _sb_ver_documento(RemoteObject _idmaeedo,RemoteObject _koen,RemoteObject _suen) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Ver_Documento (frm_menu_post_venta) ","frm_menu_post_venta",18,frm_menu_post_venta.mostCurrent.activityBA,frm_menu_post_venta.mostCurrent,320);
+		Debug.PushSubsStack("Sb_Ver_Documento (frm_menu_post_venta) ","frm_menu_post_venta",19,frm_menu_post_venta.mostCurrent.activityBA,frm_menu_post_venta.mostCurrent,320);
 if (RapidSub.canDelegate("sb_ver_documento")) { BaKapp.Movil.Tag.frm_menu_post_venta.remoteMe.runUserSub(false, "frm_menu_post_venta","sb_ver_documento", _idmaeedo, _koen, _suen); return;}
 ResumableSub_Sb_Ver_Documento rsub = new ResumableSub_Sb_Ver_Documento(null,_idmaeedo,_koen,_suen);
 rsub.resume(null, null);
@@ -1418,7 +1418,7 @@ RemoteObject _id_docenc = RemoteObject.createImmutable(0);
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Ver_Documento (frm_menu_post_venta) ","frm_menu_post_venta",18,frm_menu_post_venta.mostCurrent.activityBA,frm_menu_post_venta.mostCurrent,320);
+		Debug.PushSubsStack("Sb_Ver_Documento (frm_menu_post_venta) ","frm_menu_post_venta",19,frm_menu_post_venta.mostCurrent.activityBA,frm_menu_post_venta.mostCurrent,320);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {

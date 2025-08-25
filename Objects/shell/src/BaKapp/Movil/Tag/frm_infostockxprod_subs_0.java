@@ -8,7 +8,7 @@ public class frm_infostockxprod_subs_0 {
 
 public static RemoteObject  _activity_create(RemoteObject _firsttime) throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Create (frm_infostockxprod) ","frm_infostockxprod",17,frm_infostockxprod.mostCurrent.activityBA,frm_infostockxprod.mostCurrent,32);
+		Debug.PushSubsStack("Activity_Create (frm_infostockxprod) ","frm_infostockxprod",18,frm_infostockxprod.mostCurrent.activityBA,frm_infostockxprod.mostCurrent,32);
 if (RapidSub.canDelegate("activity_create")) { return BaKapp.Movil.Tag.frm_infostockxprod.remoteMe.runUserSub(false, "frm_infostockxprod","activity_create", _firsttime);}
 Debug.locals.put("FirstTime", _firsttime);
  BA.debugLineNum = 32;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
@@ -37,7 +37,7 @@ finally {
 		}}
 public static RemoteObject  _activity_pause(RemoteObject _userclosed) throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Pause (frm_infostockxprod) ","frm_infostockxprod",17,frm_infostockxprod.mostCurrent.activityBA,frm_infostockxprod.mostCurrent,49);
+		Debug.PushSubsStack("Activity_Pause (frm_infostockxprod) ","frm_infostockxprod",18,frm_infostockxprod.mostCurrent.activityBA,frm_infostockxprod.mostCurrent,49);
 if (RapidSub.canDelegate("activity_pause")) { return BaKapp.Movil.Tag.frm_infostockxprod.remoteMe.runUserSub(false, "frm_infostockxprod","activity_pause", _userclosed);}
 Debug.locals.put("UserClosed", _userclosed);
  BA.debugLineNum = 49;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
@@ -54,7 +54,7 @@ finally {
 		}}
 public static RemoteObject  _activity_resume() throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Resume (frm_infostockxprod) ","frm_infostockxprod",17,frm_infostockxprod.mostCurrent.activityBA,frm_infostockxprod.mostCurrent,43);
+		Debug.PushSubsStack("Activity_Resume (frm_infostockxprod) ","frm_infostockxprod",18,frm_infostockxprod.mostCurrent.activityBA,frm_infostockxprod.mostCurrent,43);
 if (RapidSub.canDelegate("activity_resume")) { return BaKapp.Movil.Tag.frm_infostockxprod.remoteMe.runUserSub(false, "frm_infostockxprod","activity_resume");}
  BA.debugLineNum = 43;BA.debugLine="Sub Activity_Resume";
 Debug.ShouldStop(1024);
@@ -101,7 +101,7 @@ return RemoteObject.createImmutable("");
 }
 public static void  _revisar_stock() throws Exception{
 try {
-		Debug.PushSubsStack("Revisar_Stock (frm_infostockxprod) ","frm_infostockxprod",17,frm_infostockxprod.mostCurrent.activityBA,frm_infostockxprod.mostCurrent,53);
+		Debug.PushSubsStack("Revisar_Stock (frm_infostockxprod) ","frm_infostockxprod",18,frm_infostockxprod.mostCurrent.activityBA,frm_infostockxprod.mostCurrent,53);
 if (RapidSub.canDelegate("revisar_stock")) { BaKapp.Movil.Tag.frm_infostockxprod.remoteMe.runUserSub(false, "frm_infostockxprod","revisar_stock"); return;}
 ResumableSub_Revisar_Stock rsub = new ResumableSub_Revisar_Stock(null);
 rsub.resume(null, null);
@@ -135,7 +135,7 @@ int groupLen21;
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Revisar_Stock (frm_infostockxprod) ","frm_infostockxprod",17,frm_infostockxprod.mostCurrent.activityBA,frm_infostockxprod.mostCurrent,53);
+		Debug.PushSubsStack("Revisar_Stock (frm_infostockxprod) ","frm_infostockxprod",18,frm_infostockxprod.mostCurrent.activityBA,frm_infostockxprod.mostCurrent,53);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -211,7 +211,7 @@ case 8:
 this.state = 9;
  BA.debugLineNum = 77;BA.debugLine="Log(\"Traer Stock x bodega\")";
 Debug.ShouldStop(4096);
-parent.mostCurrent.__c.runVoidMethod ("LogImpl","614811160",RemoteObject.createImmutable("Traer Stock x bodega"),0);
+parent.mostCurrent.__c.runVoidMethod ("LogImpl","218022424",RemoteObject.createImmutable("Traer Stock x bodega"),0);
  BA.debugLineNum = 78;BA.debugLine="Dim TblStockXbodega As List = Funciones.Fx_Data";
 Debug.ShouldStop(8192);
 _tblstockxbodega = RemoteObject.createNew ("anywheresoftware.b4a.objects.collections.List");
@@ -339,7 +339,7 @@ public static void  _jobdone(RemoteObject _js) throws Exception{
 }
 public static void  _xclv_stokxbodega_itemlongclick(RemoteObject _index,RemoteObject _value) throws Exception{
 try {
-		Debug.PushSubsStack("Xclv_StokXbodega_ItemLongClick (frm_infostockxprod) ","frm_infostockxprod",17,frm_infostockxprod.mostCurrent.activityBA,frm_infostockxprod.mostCurrent,120);
+		Debug.PushSubsStack("Xclv_StokXbodega_ItemLongClick (frm_infostockxprod) ","frm_infostockxprod",18,frm_infostockxprod.mostCurrent.activityBA,frm_infostockxprod.mostCurrent,120);
 if (RapidSub.canDelegate("xclv_stokxbodega_itemlongclick")) { BaKapp.Movil.Tag.frm_infostockxprod.remoteMe.runUserSub(false, "frm_infostockxprod","xclv_stokxbodega_itemlongclick", _index, _value); return;}
 ResumableSub_Xclv_StokXbodega_ItemLongClick rsub = new ResumableSub_Xclv_StokXbodega_ItemLongClick(null,_index,_value);
 rsub.resume(null, null);
@@ -371,7 +371,7 @@ RemoteObject _result = RemoteObject.createImmutable(0);
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Xclv_StokXbodega_ItemLongClick (frm_infostockxprod) ","frm_infostockxprod",17,frm_infostockxprod.mostCurrent.activityBA,frm_infostockxprod.mostCurrent,120);
+		Debug.PushSubsStack("Xclv_StokXbodega_ItemLongClick (frm_infostockxprod) ","frm_infostockxprod",18,frm_infostockxprod.mostCurrent.activityBA,frm_infostockxprod.mostCurrent,120);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {

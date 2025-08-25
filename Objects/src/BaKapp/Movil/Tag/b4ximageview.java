@@ -47,6 +47,7 @@ public BaKapp.Movil.Tag.main _main = null;
 public BaKapp.Movil.Tag.buscar_entidad _buscar_entidad = null;
 public BaKapp.Movil.Tag.buscar_productos _buscar_productos = null;
 public BaKapp.Movil.Tag.frm_impresion _frm_impresion = null;
+public BaKapp.Movil.Tag.funciones _funciones = null;
 public BaKapp.Movil.Tag.conf_local _conf_local = null;
 public BaKapp.Movil.Tag.dbutils _dbutils = null;
 public BaKapp.Movil.Tag.frm_buscar_documento _frm_buscar_documento = null;
@@ -59,10 +60,29 @@ public BaKapp.Movil.Tag.frm_menu_principal _frm_menu_principal = null;
 public BaKapp.Movil.Tag.frm_post_01_descuentos _frm_post_01_descuentos = null;
 public BaKapp.Movil.Tag.frm_post_01_formulario _frm_post_01_formulario = null;
 public BaKapp.Movil.Tag.frm_post_01_producto _frm_post_01_producto = null;
-public BaKapp.Movil.Tag.funciones _funciones = null;
 public BaKapp.Movil.Tag.variables _variables = null;
 public BaKapp.Movil.Tag.httputils2service _httputils2service = null;
 public BaKapp.Movil.Tag.xuiviewsutils _xuiviewsutils = null;
+public String  _setbitmap(BaKapp.Movil.Tag.b4ximageview __ref,anywheresoftware.b4a.objects.B4XViewWrapper.B4XBitmapWrapper _bmp) throws Exception{
+__ref = this;
+RDebugUtils.currentModule="b4ximageview";
+if (Debug.shouldDelegate(ba, "setbitmap", true))
+	 {return ((String) Debug.delegate(ba, "setbitmap", new Object[] {_bmp}));}
+RDebugUtils.currentLine=38469632;
+ //BA.debugLineNum = 38469632;BA.debugLine="Public Sub setBitmap(Bmp As B4XBitmap)";
+RDebugUtils.currentLine=38469633;
+ //BA.debugLineNum = 38469633;BA.debugLine="mBitmap = Bmp";
+__ref._mbitmap /*anywheresoftware.b4a.objects.B4XViewWrapper.B4XBitmapWrapper*/  = _bmp;
+RDebugUtils.currentLine=38469634;
+ //BA.debugLineNum = 38469634;BA.debugLine="XUIViewsUtils.SetBitmapAndFill(iv, Bmp)";
+_xuiviewsutils._setbitmapandfill /*String*/ (ba,__ref._iv /*anywheresoftware.b4a.objects.B4XViewWrapper*/ ,_bmp);
+RDebugUtils.currentLine=38469635;
+ //BA.debugLineNum = 38469635;BA.debugLine="Update";
+__ref._update /*String*/ (null);
+RDebugUtils.currentLine=38469636;
+ //BA.debugLineNum = 38469636;BA.debugLine="End Sub";
+return "";
+}
 public String  _base_resize(BaKapp.Movil.Tag.b4ximageview __ref,double _width,double _height) throws Exception{
 __ref = this;
 RDebugUtils.currentModule="b4ximageview";
@@ -366,26 +386,6 @@ RDebugUtils.currentLine=38338562;
 __ref._setbitmap /*String*/ (null,(anywheresoftware.b4a.objects.B4XViewWrapper.B4XBitmapWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.B4XViewWrapper.B4XBitmapWrapper(), (android.graphics.Bitmap)(__c.LoadBitmapSample(_dir,_filename,__ref._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .getWidth(),__ref._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .getHeight()).getObject())));
 RDebugUtils.currentLine=38338566;
  //BA.debugLineNum = 38338566;BA.debugLine="End Sub";
-return "";
-}
-public String  _setbitmap(BaKapp.Movil.Tag.b4ximageview __ref,anywheresoftware.b4a.objects.B4XViewWrapper.B4XBitmapWrapper _bmp) throws Exception{
-__ref = this;
-RDebugUtils.currentModule="b4ximageview";
-if (Debug.shouldDelegate(ba, "setbitmap", true))
-	 {return ((String) Debug.delegate(ba, "setbitmap", new Object[] {_bmp}));}
-RDebugUtils.currentLine=38469632;
- //BA.debugLineNum = 38469632;BA.debugLine="Public Sub setBitmap(Bmp As B4XBitmap)";
-RDebugUtils.currentLine=38469633;
- //BA.debugLineNum = 38469633;BA.debugLine="mBitmap = Bmp";
-__ref._mbitmap /*anywheresoftware.b4a.objects.B4XViewWrapper.B4XBitmapWrapper*/  = _bmp;
-RDebugUtils.currentLine=38469634;
- //BA.debugLineNum = 38469634;BA.debugLine="XUIViewsUtils.SetBitmapAndFill(iv, Bmp)";
-_xuiviewsutils._setbitmapandfill /*String*/ (ba,__ref._iv /*anywheresoftware.b4a.objects.B4XViewWrapper*/ ,_bmp);
-RDebugUtils.currentLine=38469635;
- //BA.debugLineNum = 38469635;BA.debugLine="Update";
-__ref._update /*String*/ (null);
-RDebugUtils.currentLine=38469636;
- //BA.debugLineNum = 38469636;BA.debugLine="End Sub";
 return "";
 }
 public String  _setcornersradius(BaKapp.Movil.Tag.b4ximageview __ref,int _i) throws Exception{

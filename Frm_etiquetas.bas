@@ -62,6 +62,9 @@ Sub Globals
 	Private Lbl_puerto As Label
 	Private Btn_editarPuerto As Button
 	
+	
+	Private LBL_NOM As Label
+	Private IMGVIEW As B4XImageView
 End Sub
 
 Sub Activity_Create(FirstTime As Boolean)
@@ -197,6 +200,39 @@ Sub CrearDatos()
 	
 	
 End Sub
+'Extrae ancho y largo de un ZPL y los devuelve en pulgadas.
+' zpl - Cadena con el código ZPL completo.
+' dpi - Resolución de la impresora (ej: 203).
+'Returns: Un mapa con claves "Width" y "Length" en pulgadas.
+Public Sub GetLabelSizeInches(zpl As String, dpi As Int) As Map
+	Dim res As Map
+	res.Initialize
+    
+	Dim widthDots As Int = 0
+	Dim lengthDots As Int = 0
+    
+	'Buscar ^PW (Print Width)
+	Dim m As Matcher = Regex.Matcher("\^PW(\d+)", zpl)
+	If m.Find Then
+		widthDots = m.Group(1)
+	End If
+    
+	'Buscar ^LL (Label Length)
+	Dim m2 As Matcher = Regex.Matcher("\^LL(\d+)", zpl)
+	If m2.Find Then
+		lengthDots = m2.Group(1)
+	End If
+    
+	'Convertir a pulgadas
+	Dim widthInches As Double = widthDots / dpi
+	Dim lengthInches As Double = lengthDots / dpi
+    
+	res.Put("Width", widthInches)
+	res.Put("Length", lengthInches)
+    
+	Return res
+End Sub
+
 Sub CargarLista
 	ProgressDialogShow2("Cargando etiquetas",False)
 	clv.Clear
@@ -236,22 +272,16 @@ Sub CargarLista
 			job.Initialize("", Me)
 			
 			
-			Dim Ancho, Alto As Float
+		
 
-			Dim m As Matcher = Regex.Matcher("(\d+)[xX](\d+)", ET.NombreEtiqueta)
-			If m.Find Then
-				Ancho = m.Group(1)
-				Alto = m.Group(2)
-				Ancho = Ancho / 2.54
-				Alto = Alto / 2.54
-				Ancho = NumberFormat2(Ancho, 1, 2, 2, False)
-				Alto = NumberFormat2(Alto, 1, 2, 2, False)
-				Log("Ancho: " & Ancho)
-				Log("Alto: " & Alto)
-				job.PostString($"https://api.labelary.com/v1/printers/8dpmm/labels/${Alto}x${Ancho}/0/"$, ET.FUNCION)
-			Else
-				job.PostString($"https://api.labelary.com/v1/printers/8dpmm/labels/2x5/0/"$, ET.FUNCION)
-			End If
+			Dim size As Map = GetLabelSizeInches(ET.FUNCION, 203) 'ZPL está en ET.FUNCION
+
+			Dim Ancho As String = size.Get("Width")
+			Dim Alto As String = size.Get("Length")
+
+			Log("Ancho: " & Ancho & " in")
+			Log("Alto: " & Alto & " in")
+			job.PostString($"https://api.labelary.com/v1/printers/8dpmm/labels/${Ancho}x${Alto}/0/"$, ET.FUNCION)
 			
 			
 			job.GetRequest.SetHeader("Accept", "image/png")
@@ -287,25 +317,19 @@ Sub CargarLista
 		End If
 		Return
 	End If
-
 	For Each Etiqueta As Map In ListaPersonas
 		Dim p As Panel = xui.CreatePanel("")
 		p.SetLayoutAnimated(0, 0, 0, clv.AsView.Width, 250dip)
 		p.LoadLayout("item_nombre_imagen")
 
-		' Asignamos los controles desde el panel
-		Dim lbl As Label = p.GetView(0) ' primer control del layout
-		Dim img As ImageView = p.GetView(1) ' segundo control
-		
-		lbl.Text = Etiqueta.Get("tipo")
-		img.Bitmap = Etiqueta.Get("imagen")
+		LBL_NOM.Text = Etiqueta.Get("tipo")
+		IMGVIEW.Bitmap = Etiqueta.Get("imagen")
 
 		clv.Add(p, Etiqueta.Get("tipo"))
-		
 	Next
 	ProgressDialogHide
 End Sub
-
+'KOPRAL'
 
 Private Sub Sb_TraerEtiquetas(Me_ As Object) As HttpJob
 	

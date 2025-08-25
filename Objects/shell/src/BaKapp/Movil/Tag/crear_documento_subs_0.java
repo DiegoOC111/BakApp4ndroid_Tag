@@ -46,7 +46,7 @@ return RemoteObject.createImmutable("");
 }
 public static RemoteObject  _initialize(RemoteObject __ref,RemoteObject _ba) throws Exception{
 try {
-		Debug.PushSubsStack("Initialize (crear_documento) ","crear_documento",11,__ref.getField(false, "ba"),__ref,29);
+		Debug.PushSubsStack("Initialize (crear_documento) ","crear_documento",12,__ref.getField(false, "ba"),__ref,29);
 if (RapidSub.canDelegate("initialize")) { return __ref.runUserSub(false, "crear_documento","initialize", __ref, _ba);}
 __ref.runVoidMethodAndSync("innerInitializeHelper", _ba);
 Debug.locals.put("ba", _ba);
@@ -67,7 +67,7 @@ finally {
 		}}
 public static RemoteObject  _sb_actualizar_datos_de_la_entidad(RemoteObject __ref,RemoteObject _rowentidad,RemoteObject _revisar_permiso_lista_precio,RemoteObject _aplicar_venciminetos) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Actualizar_Datos_De_La_Entidad (crear_documento) ","crear_documento",11,__ref.getField(false, "ba"),__ref,231);
+		Debug.PushSubsStack("Sb_Actualizar_Datos_De_La_Entidad (crear_documento) ","crear_documento",12,__ref.getField(false, "ba"),__ref,231);
 if (RapidSub.canDelegate("sb_actualizar_datos_de_la_entidad")) { return __ref.runUserSub(false, "crear_documento","sb_actualizar_datos_de_la_entidad", __ref, _rowentidad, _revisar_permiso_lista_precio, _aplicar_venciminetos);}
 RemoteObject _fechaemision = RemoteObject.createImmutable(0L);
 RemoteObject _fecha_1er_vencimiento = RemoteObject.createImmutable(0L);
@@ -413,7 +413,7 @@ finally {
 		}}
 public static RemoteObject  _sb_incorporar_productos(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Incorporar_Productos (crear_documento) ","crear_documento",11,__ref.getField(false, "ba"),__ref,1130);
+		Debug.PushSubsStack("Sb_Incorporar_Productos (crear_documento) ","crear_documento",12,__ref.getField(false, "ba"),__ref,1130);
 if (RapidSub.canDelegate("sb_incorporar_productos")) { return __ref.runUserSub(false, "crear_documento","sb_incorporar_productos", __ref);}
 ResumableSub_Sb_Incorporar_Productos rsub = new ResumableSub_Sb_Incorporar_Productos(null,__ref);
 rsub.remoteResumableSub = anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSubForFilter();
@@ -482,7 +482,7 @@ int groupLen16;
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Incorporar_Productos (crear_documento) ","crear_documento",11,__ref.getField(false, "ba"),__ref,1130);
+		Debug.PushSubsStack("Sb_Incorporar_Productos (crear_documento) ","crear_documento",12,__ref.getField(false, "ba"),__ref,1130);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -943,7 +943,7 @@ case 34:
 this.state = 35;
  BA.debugLineNum = 1277;BA.debugLine="Log(Codigo & \"-\" & Descripcion)";
 Debug.ShouldStop(268435456);
-parent.__c.runVoidMethod ("LogImpl","68650899",RemoteObject.concat(_codigo,RemoteObject.createImmutable("-"),_descripcion),0);
+parent.__c.runVoidMethod ("LogImpl","211862163",RemoteObject.concat(_codigo,RemoteObject.createImmutable("-"),_descripcion),0);
  if (true) break;
 
 case 35:
@@ -1129,7 +1129,7 @@ Debug.ShouldStop(67108864);
 parent._dbutils.runVoidMethod ("_updaterecord2" /*RemoteObject*/ ,__ref.runMethod(false,"getActivityBA"),(Object)(parent._variables._vsql /*RemoteObject*/ ),(Object)(BA.ObjectToString("Detalle_Doc")),(Object)(_new_row),(Object)(_fila_id));
  BA.debugLineNum = 1341;BA.debugLine="Log(Codigo & \"-\" & Descripcion)";
 Debug.ShouldStop(268435456);
-parent.__c.runVoidMethod ("LogImpl","68650963",RemoteObject.concat(_codigo,RemoteObject.createImmutable("-"),_descripcion),0);
+parent.__c.runVoidMethod ("LogImpl","211862227",RemoteObject.concat(_codigo,RemoteObject.createImmutable("-"),_descripcion),0);
  if (true) break;
 
 case 47:
@@ -1186,7 +1186,7 @@ public static void  _complete(RemoteObject __ref,RemoteObject _rowproducto) thro
 }
 public static RemoteObject  _sb_insertar_descuentos_en_escala(RemoteObject __ref,RemoteObject _fila,RemoteObject _fila_dscto,RemoteObject _tbldescuentos,RemoteObject _precio) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Insertar_Descuentos_En_Escala (crear_documento) ","crear_documento",11,__ref.getField(false, "ba"),__ref,1539);
+		Debug.PushSubsStack("Sb_Insertar_Descuentos_En_Escala (crear_documento) ","crear_documento",12,__ref.getField(false, "ba"),__ref,1539);
 if (RapidSub.canDelegate("sb_insertar_descuentos_en_escala")) { return __ref.runUserSub(false, "crear_documento","sb_insertar_descuentos_en_escala", __ref, _fila, _fila_dscto, _tbldescuentos, _precio);}
 RemoteObject _id_docdet = RemoteObject.createImmutable(0);
 RemoteObject _nrodscto = RemoteObject.createImmutable(0);
@@ -1376,7 +1376,7 @@ finally {
 		}}
 public static RemoteObject  _sb_nuevo_documento(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Nuevo_Documento (crear_documento) ","crear_documento",11,__ref.getField(false, "ba"),__ref,34);
+		Debug.PushSubsStack("Sb_Nuevo_Documento (crear_documento) ","crear_documento",12,__ref.getField(false, "ba"),__ref,34);
 if (RapidSub.canDelegate("sb_nuevo_documento")) { return __ref.runUserSub(false, "crear_documento","sb_nuevo_documento", __ref);}
 ResumableSub_Sb_Nuevo_Documento rsub = new ResumableSub_Sb_Nuevo_Documento(null,__ref);
 rsub.remoteResumableSub = anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSubForFilter();
@@ -1425,7 +1425,7 @@ RemoteObject _fldesp = RemoteObject.declareNull("anywheresoftware.b4a.objects.co
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Nuevo_Documento (crear_documento) ","crear_documento",11,__ref.getField(false, "ba"),__ref,34);
+		Debug.PushSubsStack("Sb_Nuevo_Documento (crear_documento) ","crear_documento",12,__ref.getField(false, "ba"),__ref,34);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -1537,7 +1537,7 @@ this.state = 5;
 ;
  BA.debugLineNum = 88;BA.debugLine="Log(\"Documento cargado... Id_DocEnc = \" & Id_DocE";
 Debug.ShouldStop(8388608);
-parent.__c.runVoidMethod ("LogImpl","68388662",RemoteObject.concat(RemoteObject.createImmutable("Documento cargado... Id_DocEnc = "),__ref.getField(true,"_id_docenc" /*RemoteObject*/ )),0);
+parent.__c.runVoidMethod ("LogImpl","211599926",RemoteObject.concat(RemoteObject.createImmutable("Documento cargado... Id_DocEnc = "),__ref.getField(true,"_id_docenc" /*RemoteObject*/ )),0);
  BA.debugLineNum = 91;BA.debugLine="Dim FechaEmision As Long = DateTime.Now";
 Debug.ShouldStop(67108864);
 _fechaemision = parent.__c.getField(false,"DateTime").runMethod(true,"getNow");Debug.locals.put("FechaEmision", _fechaemision);Debug.locals.put("FechaEmision", _fechaemision);
@@ -1935,7 +1935,7 @@ finally {
 }
 public static RemoteObject  _sb_procesar_datos(RemoteObject __ref,RemoteObject _cabeza,RemoteObject _fila) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Procesar_Datos (crear_documento) ","crear_documento",11,__ref.getField(false, "ba"),__ref,428);
+		Debug.PushSubsStack("Sb_Procesar_Datos (crear_documento) ","crear_documento",12,__ref.getField(false, "ba"),__ref,428);
 if (RapidSub.canDelegate("sb_procesar_datos")) { return __ref.runUserSub(false, "crear_documento","sb_procesar_datos", __ref, _cabeza, _fila);}
 RemoteObject _untrans = RemoteObject.createImmutable(0);
 RemoteObject _poriva = RemoteObject.createImmutable(0);
@@ -2959,7 +2959,7 @@ finally {
 		}}
 public static RemoteObject  _sb_traer_concepto(RemoteObject __ref,RemoteObject _concepto,RemoteObject _empresa,RemoteObject _sucursal,RemoteObject _bodega,RemoteObject _descuentoporc) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Traer_Concepto (crear_documento) ","crear_documento",11,__ref.getField(false, "ba"),__ref,1461);
+		Debug.PushSubsStack("Sb_Traer_Concepto (crear_documento) ","crear_documento",12,__ref.getField(false, "ba"),__ref,1461);
 if (RapidSub.canDelegate("sb_traer_concepto")) { return __ref.runUserSub(false, "crear_documento","sb_traer_concepto", __ref, _concepto, _empresa, _sucursal, _bodega, _descuentoporc);}
 ResumableSub_Sb_Traer_Concepto rsub = new ResumableSub_Sb_Traer_Concepto(null,__ref,_concepto,_empresa,_sucursal,_bodega,_descuentoporc);
 rsub.remoteResumableSub = anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSubForFilter();
@@ -3001,7 +3001,7 @@ RemoteObject _id_docdet2 = RemoteObject.createImmutable(0);
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Traer_Concepto (crear_documento) ","crear_documento",11,__ref.getField(false, "ba"),__ref,1461);
+		Debug.PushSubsStack("Sb_Traer_Concepto (crear_documento) ","crear_documento",12,__ref.getField(false, "ba"),__ref,1461);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -3120,7 +3120,7 @@ case 9:
 this.state = 10;
  BA.debugLineNum = 1502;BA.debugLine="Log(Js.ErrorMessage)";
 Debug.ShouldStop(536870912);
-parent.__c.runVoidMethod ("LogImpl","68847401",_js.getField(true,"_errormessage" /*RemoteObject*/ ),0);
+parent.__c.runVoidMethod ("LogImpl","212058665",_js.getField(true,"_errormessage" /*RemoteObject*/ ),0);
  BA.debugLineNum = 1503;BA.debugLine="ToastMessageShow(\"CONCEPTO NO ENCONTRADO\", False";
 Debug.ShouldStop(1073741824);
 parent.__c.runVoidMethod ("ToastMessageShow",(Object)(BA.ObjectToCharSequence("CONCEPTO NO ENCONTRADO")),(Object)(parent.__c.getField(true,"False")));
@@ -3150,7 +3150,7 @@ finally {
 }
 public static RemoteObject  _sb_traer_descuentos(RemoteObject __ref,RemoteObject _nulido) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Traer_Descuentos (crear_documento) ","crear_documento",11,__ref.getField(false, "ba"),__ref,1510);
+		Debug.PushSubsStack("Sb_Traer_Descuentos (crear_documento) ","crear_documento",12,__ref.getField(false, "ba"),__ref,1510);
 if (RapidSub.canDelegate("sb_traer_descuentos")) { return __ref.runUserSub(false, "crear_documento","sb_traer_descuentos", __ref, _nulido);}
 ResumableSub_Sb_Traer_Descuentos rsub = new ResumableSub_Sb_Traer_Descuentos(null,__ref,_nulido);
 rsub.remoteResumableSub = anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSubForFilter();
@@ -3180,7 +3180,7 @@ RemoteObject _lista = RemoteObject.declareNull("anywheresoftware.b4a.objects.col
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Traer_Descuentos (crear_documento) ","crear_documento",11,__ref.getField(false, "ba"),__ref,1510);
+		Debug.PushSubsStack("Sb_Traer_Descuentos (crear_documento) ","crear_documento",12,__ref.getField(false, "ba"),__ref,1510);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -3280,7 +3280,7 @@ finally {
 }
 public static RemoteObject  _sb_traer_despacho_simple(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Traer_Despacho_Simple (crear_documento) ","crear_documento",11,__ref.getField(false, "ba"),__ref,1730);
+		Debug.PushSubsStack("Sb_Traer_Despacho_Simple (crear_documento) ","crear_documento",12,__ref.getField(false, "ba"),__ref,1730);
 if (RapidSub.canDelegate("sb_traer_despacho_simple")) { return __ref.runUserSub(false, "crear_documento","sb_traer_despacho_simple", __ref);}
 ResumableSub_Sb_Traer_Despacho_Simple rsub = new ResumableSub_Sb_Traer_Despacho_Simple(null,__ref);
 rsub.remoteResumableSub = anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSubForFilter();
@@ -3309,7 +3309,7 @@ RemoteObject _filas = RemoteObject.declareNull("anywheresoftware.b4a.objects.col
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Traer_Despacho_Simple (crear_documento) ","crear_documento",11,__ref.getField(false, "ba"),__ref,1730);
+		Debug.PushSubsStack("Sb_Traer_Despacho_Simple (crear_documento) ","crear_documento",12,__ref.getField(false, "ba"),__ref,1730);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -3396,7 +3396,7 @@ case 9:
 this.state = 10;
  BA.debugLineNum = 1753;BA.debugLine="Log(Js.ErrorMessage)";
 Debug.ShouldStop(16777216);
-parent.__c.runVoidMethod ("LogImpl","69175063",_js.getField(true,"_errormessage" /*RemoteObject*/ ),0);
+parent.__c.runVoidMethod ("LogImpl","212386327",_js.getField(true,"_errormessage" /*RemoteObject*/ ),0);
  if (true) break;
 
 case 10:
@@ -3423,7 +3423,7 @@ finally {
 }
 public static RemoteObject  _sb_traer_encabezado(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Traer_Encabezado (crear_documento) ","crear_documento",11,__ref.getField(false, "ba"),__ref,1670);
+		Debug.PushSubsStack("Sb_Traer_Encabezado (crear_documento) ","crear_documento",12,__ref.getField(false, "ba"),__ref,1670);
 if (RapidSub.canDelegate("sb_traer_encabezado")) { return __ref.runUserSub(false, "crear_documento","sb_traer_encabezado", __ref);}
 ResumableSub_Sb_Traer_Encabezado rsub = new ResumableSub_Sb_Traer_Encabezado(null,__ref);
 rsub.remoteResumableSub = anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSubForFilter();
@@ -3452,7 +3452,7 @@ RemoteObject _filas = RemoteObject.declareNull("anywheresoftware.b4a.objects.col
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Traer_Encabezado (crear_documento) ","crear_documento",11,__ref.getField(false, "ba"),__ref,1670);
+		Debug.PushSubsStack("Sb_Traer_Encabezado (crear_documento) ","crear_documento",12,__ref.getField(false, "ba"),__ref,1670);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -3539,7 +3539,7 @@ case 9:
 this.state = 10;
  BA.debugLineNum = 1693;BA.debugLine="Log(Js.ErrorMessage)";
 Debug.ShouldStop(268435456);
-parent.__c.runVoidMethod ("LogImpl","69043991",_js.getField(true,"_errormessage" /*RemoteObject*/ ),0);
+parent.__c.runVoidMethod ("LogImpl","212255255",_js.getField(true,"_errormessage" /*RemoteObject*/ ),0);
  if (true) break;
 
 case 10:
@@ -3566,7 +3566,7 @@ finally {
 }
 public static RemoteObject  _sb_traer_entidad(RemoteObject __ref,RemoteObject _koen,RemoteObject _suen) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Traer_Entidad (crear_documento) ","crear_documento",11,__ref.getField(false, "ba"),__ref,1100);
+		Debug.PushSubsStack("Sb_Traer_Entidad (crear_documento) ","crear_documento",12,__ref.getField(false, "ba"),__ref,1100);
 if (RapidSub.canDelegate("sb_traer_entidad")) { return __ref.runUserSub(false, "crear_documento","sb_traer_entidad", __ref, _koen, _suen);}
 ResumableSub_Sb_Traer_Entidad rsub = new ResumableSub_Sb_Traer_Entidad(null,__ref,_koen,_suen);
 rsub.remoteResumableSub = anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSubForFilter();
@@ -3599,7 +3599,7 @@ RemoteObject _filas = RemoteObject.declareNull("anywheresoftware.b4a.objects.col
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Traer_Entidad (crear_documento) ","crear_documento",11,__ref.getField(false, "ba"),__ref,1100);
+		Debug.PushSubsStack("Sb_Traer_Entidad (crear_documento) ","crear_documento",12,__ref.getField(false, "ba"),__ref,1100);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -3688,7 +3688,7 @@ case 9:
 this.state = 10;
  BA.debugLineNum = 1123;BA.debugLine="Log(Js.ErrorMessage)";
 Debug.ShouldStop(4);
-parent.__c.runVoidMethod ("LogImpl","68585239",_js.getField(true,"_errormessage" /*RemoteObject*/ ),0);
+parent.__c.runVoidMethod ("LogImpl","211796503",_js.getField(true,"_errormessage" /*RemoteObject*/ ),0);
  if (true) break;
 
 case 10:
@@ -3715,7 +3715,7 @@ finally {
 }
 public static RemoteObject  _sb_traer_observaciones(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Traer_Observaciones (crear_documento) ","crear_documento",11,__ref.getField(false, "ba"),__ref,1700);
+		Debug.PushSubsStack("Sb_Traer_Observaciones (crear_documento) ","crear_documento",12,__ref.getField(false, "ba"),__ref,1700);
 if (RapidSub.canDelegate("sb_traer_observaciones")) { return __ref.runUserSub(false, "crear_documento","sb_traer_observaciones", __ref);}
 ResumableSub_Sb_Traer_Observaciones rsub = new ResumableSub_Sb_Traer_Observaciones(null,__ref);
 rsub.remoteResumableSub = anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSubForFilter();
@@ -3744,7 +3744,7 @@ RemoteObject _filas = RemoteObject.declareNull("anywheresoftware.b4a.objects.col
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Traer_Observaciones (crear_documento) ","crear_documento",11,__ref.getField(false, "ba"),__ref,1700);
+		Debug.PushSubsStack("Sb_Traer_Observaciones (crear_documento) ","crear_documento",12,__ref.getField(false, "ba"),__ref,1700);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -3831,7 +3831,7 @@ case 9:
 this.state = 10;
  BA.debugLineNum = 1723;BA.debugLine="Log(Js.ErrorMessage)";
 Debug.ShouldStop(67108864);
-parent.__c.runVoidMethod ("LogImpl","69109527",_js.getField(true,"_errormessage" /*RemoteObject*/ ),0);
+parent.__c.runVoidMethod ("LogImpl","212320791",_js.getField(true,"_errormessage" /*RemoteObject*/ ),0);
  if (true) break;
 
 case 10:
@@ -3858,7 +3858,7 @@ finally {
 }
 public static RemoteObject  _sb_traer_producto(RemoteObject __ref,RemoteObject _codigo,RemoteObject _empresa,RemoteObject _sucursal,RemoteObject _bodega) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Traer_Producto (crear_documento) ","crear_documento",11,__ref.getField(false, "ba"),__ref,1393);
+		Debug.PushSubsStack("Sb_Traer_Producto (crear_documento) ","crear_documento",12,__ref.getField(false, "ba"),__ref,1393);
 if (RapidSub.canDelegate("sb_traer_producto")) { return __ref.runUserSub(false, "crear_documento","sb_traer_producto", __ref, _codigo, _empresa, _sucursal, _bodega);}
 ResumableSub_Sb_Traer_Producto rsub = new ResumableSub_Sb_Traer_Producto(null,__ref,_codigo,_empresa,_sucursal,_bodega);
 rsub.remoteResumableSub = anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSubForFilter();
@@ -3899,7 +3899,7 @@ RemoteObject _id_docdet = RemoteObject.createImmutable(0);
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Traer_Producto (crear_documento) ","crear_documento",11,__ref.getField(false, "ba"),__ref,1393);
+		Debug.PushSubsStack("Sb_Traer_Producto (crear_documento) ","crear_documento",12,__ref.getField(false, "ba"),__ref,1393);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -4061,7 +4061,7 @@ finally {
 }
 public static RemoteObject  _sb_traer_producto2(RemoteObject __ref,RemoteObject _codigo,RemoteObject _empresa,RemoteObject _sucursal,RemoteObject _bodega) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Traer_Producto2 (crear_documento) ","crear_documento",11,__ref.getField(false, "ba"),__ref,1357);
+		Debug.PushSubsStack("Sb_Traer_Producto2 (crear_documento) ","crear_documento",12,__ref.getField(false, "ba"),__ref,1357);
 if (RapidSub.canDelegate("sb_traer_producto2")) { return __ref.runUserSub(false, "crear_documento","sb_traer_producto2", __ref, _codigo, _empresa, _sucursal, _bodega);}
 ResumableSub_Sb_Traer_Producto2 rsub = new ResumableSub_Sb_Traer_Producto2(null,__ref,_codigo,_empresa,_sucursal,_bodega);
 rsub.remoteResumableSub = anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSubForFilter();
@@ -4100,7 +4100,7 @@ RemoteObject _errorstr = RemoteObject.createImmutable("");
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Traer_Producto2 (crear_documento) ","crear_documento",11,__ref.getField(false, "ba"),__ref,1357);
+		Debug.PushSubsStack("Sb_Traer_Producto2 (crear_documento) ","crear_documento",12,__ref.getField(false, "ba"),__ref,1357);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {

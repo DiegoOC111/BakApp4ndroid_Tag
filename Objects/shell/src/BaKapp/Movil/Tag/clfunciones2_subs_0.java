@@ -8,7 +8,7 @@ public class clfunciones2_subs_0 {
 
 public static RemoteObject  _base_resize(RemoteObject __ref,RemoteObject _width,RemoteObject _height) throws Exception{
 try {
-		Debug.PushSubsStack("Base_Resize (clfunciones2) ","clfunciones2",8,__ref.getField(false, "ba"),__ref,27);
+		Debug.PushSubsStack("Base_Resize (clfunciones2) ","clfunciones2",10,__ref.getField(false, "ba"),__ref,27);
 if (RapidSub.canDelegate("base_resize")) { return __ref.runUserSub(false, "clfunciones2","base_resize", __ref, _width, _height);}
 Debug.locals.put("Width", _width);
 Debug.locals.put("Height", _height);
@@ -45,7 +45,7 @@ return RemoteObject.createImmutable("");
 }
 public static RemoteObject  _designercreateview(RemoteObject __ref,RemoteObject _base,RemoteObject _lbl,RemoteObject _props) throws Exception{
 try {
-		Debug.PushSubsStack("DesignerCreateView (clfunciones2) ","clfunciones2",8,__ref.getField(false, "ba"),__ref,20);
+		Debug.PushSubsStack("DesignerCreateView (clfunciones2) ","clfunciones2",10,__ref.getField(false, "ba"),__ref,20);
 if (RapidSub.canDelegate("designercreateview")) { return __ref.runUserSub(false, "clfunciones2","designercreateview", __ref, _base, _lbl, _props);}
 Debug.locals.put("Base", _base);
 Debug.locals.put("Lbl", _lbl);
@@ -73,7 +73,7 @@ finally {
 		}}
 public static RemoteObject  _fx_actualizarcorreoentidad(RemoteObject __ref,RemoteObject _koen,RemoteObject _suen,RemoteObject _para,RemoteObject _campoemail) throws Exception{
 try {
-		Debug.PushSubsStack("Fx_ActualizarCorreoEntidad (clfunciones2) ","clfunciones2",8,__ref.getField(false, "ba"),__ref,151);
+		Debug.PushSubsStack("Fx_ActualizarCorreoEntidad (clfunciones2) ","clfunciones2",10,__ref.getField(false, "ba"),__ref,151);
 if (RapidSub.canDelegate("fx_actualizarcorreoentidad")) { return __ref.runUserSub(false, "clfunciones2","fx_actualizarcorreoentidad", __ref, _koen, _suen, _para, _campoemail);}
 ResumableSub_Fx_ActualizarCorreoEntidad rsub = new ResumableSub_Fx_ActualizarCorreoEntidad(null,__ref,_koen,_suen,_para,_campoemail);
 rsub.remoteResumableSub = anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSubForFilter();
@@ -108,7 +108,7 @@ RemoteObject _vjson = RemoteObject.createImmutable("");
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Fx_ActualizarCorreoEntidad (clfunciones2) ","clfunciones2",8,__ref.getField(false, "ba"),__ref,151);
+		Debug.PushSubsStack("Fx_ActualizarCorreoEntidad (clfunciones2) ","clfunciones2",10,__ref.getField(false, "ba"),__ref,151);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -209,7 +209,7 @@ public static void  _jobdone(RemoteObject __ref,RemoteObject _js) throws Excepti
 }
 public static RemoteObject  _fx_enviar_correo_bakapp1(RemoteObject __ref,RemoteObject _idmaeedo,RemoteObject _koen,RemoteObject _suen,RemoteObject _para,RemoteObject _campoemail,RemoteObject _editarmaeen) throws Exception{
 try {
-		Debug.PushSubsStack("Fx_Enviar_Correo_Bakapp1 (clfunciones2) ","clfunciones2",8,__ref.getField(false, "ba"),__ref,31);
+		Debug.PushSubsStack("Fx_Enviar_Correo_Bakapp1 (clfunciones2) ","clfunciones2",10,__ref.getField(false, "ba"),__ref,31);
 if (RapidSub.canDelegate("fx_enviar_correo_bakapp1")) { return __ref.runUserSub(false, "clfunciones2","fx_enviar_correo_bakapp1", __ref, _idmaeedo, _koen, _suen, _para, _campoemail, _editarmaeen);}
 ResumableSub_Fx_Enviar_Correo_Bakapp1 rsub = new ResumableSub_Fx_Enviar_Correo_Bakapp1(null,__ref,_idmaeedo,_koen,_suen,_para,_campoemail,_editarmaeen);
 rsub.remoteResumableSub = anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSubForFilter();
@@ -256,7 +256,7 @@ RemoteObject _respuesta = RemoteObject.declareNull("anywheresoftware.b4a.objects
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Fx_Enviar_Correo_Bakapp1 (clfunciones2) ","clfunciones2",8,__ref.getField(false, "ba"),__ref,31);
+		Debug.PushSubsStack("Fx_Enviar_Correo_Bakapp1 (clfunciones2) ","clfunciones2",10,__ref.getField(false, "ba"),__ref,31);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -475,7 +475,7 @@ public static void  _complete(RemoteObject __ref,RemoteObject _resultado) throws
 }
 public static RemoteObject  _fx_formato_modalidad(RemoteObject __ref,RemoteObject _empresa,RemoteObject _modalidad,RemoteObject _tido) throws Exception{
 try {
-		Debug.PushSubsStack("Fx_Formato_Modalidad (clfunciones2) ","clfunciones2",8,__ref.getField(false, "ba"),__ref,207);
+		Debug.PushSubsStack("Fx_Formato_Modalidad (clfunciones2) ","clfunciones2",10,__ref.getField(false, "ba"),__ref,207);
 if (RapidSub.canDelegate("fx_formato_modalidad")) { return __ref.runUserSub(false, "clfunciones2","fx_formato_modalidad", __ref, _empresa, _modalidad, _tido);}
 ResumableSub_Fx_Formato_Modalidad rsub = new ResumableSub_Fx_Formato_Modalidad(null,__ref,_empresa,_modalidad,_tido);
 rsub.remoteResumableSub = anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSubForFilter();
@@ -509,7 +509,7 @@ RemoteObject _vjson = RemoteObject.createImmutable("");
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Fx_Formato_Modalidad (clfunciones2) ","clfunciones2",8,__ref.getField(false, "ba"),__ref,207);
+		Debug.PushSubsStack("Fx_Formato_Modalidad (clfunciones2) ","clfunciones2",10,__ref.getField(false, "ba"),__ref,207);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -606,7 +606,7 @@ finally {
 }
 public static RemoteObject  _fx_imprimir_bakapp(RemoteObject __ref,RemoteObject _idmaeedo) throws Exception{
 try {
-		Debug.PushSubsStack("Fx_Imprimir_Bakapp (clfunciones2) ","clfunciones2",8,__ref.getField(false, "ba"),__ref,173);
+		Debug.PushSubsStack("Fx_Imprimir_Bakapp (clfunciones2) ","clfunciones2",10,__ref.getField(false, "ba"),__ref,173);
 if (RapidSub.canDelegate("fx_imprimir_bakapp")) { return __ref.runUserSub(false, "clfunciones2","fx_imprimir_bakapp", __ref, _idmaeedo);}
 ResumableSub_Fx_Imprimir_Bakapp rsub = new ResumableSub_Fx_Imprimir_Bakapp(null,__ref,_idmaeedo);
 rsub.remoteResumableSub = anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSubForFilter();
@@ -640,7 +640,7 @@ RemoteObject _respuesta = RemoteObject.declareNull("anywheresoftware.b4a.objects
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Fx_Imprimir_Bakapp (clfunciones2) ","clfunciones2",8,__ref.getField(false, "ba"),__ref,173);
+		Debug.PushSubsStack("Fx_Imprimir_Bakapp (clfunciones2) ","clfunciones2",10,__ref.getField(false, "ba"),__ref,173);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -781,7 +781,7 @@ finally {
 }
 public static RemoteObject  _fx_revisarformato(RemoteObject __ref,RemoteObject _tido) throws Exception{
 try {
-		Debug.PushSubsStack("Fx_RevisarFormato (clfunciones2) ","clfunciones2",8,__ref.getField(false, "ba"),__ref,252);
+		Debug.PushSubsStack("Fx_RevisarFormato (clfunciones2) ","clfunciones2",10,__ref.getField(false, "ba"),__ref,252);
 if (RapidSub.canDelegate("fx_revisarformato")) { return __ref.runUserSub(false, "clfunciones2","fx_revisarformato", __ref, _tido);}
 ResumableSub_Fx_RevisarFormato rsub = new ResumableSub_Fx_RevisarFormato(null,__ref,_tido);
 rsub.remoteResumableSub = anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSubForFilter();
@@ -818,7 +818,7 @@ RemoteObject _msg = RemoteObject.createImmutable("");
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Fx_RevisarFormato (clfunciones2) ","clfunciones2",8,__ref.getField(false, "ba"),__ref,252);
+		Debug.PushSubsStack("Fx_RevisarFormato (clfunciones2) ","clfunciones2",10,__ref.getField(false, "ba"),__ref,252);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -1072,7 +1072,7 @@ public static void  _msgbox_result(RemoteObject __ref,RemoteObject _result) thro
 }
 public static RemoteObject  _initialize(RemoteObject __ref,RemoteObject _ba,RemoteObject _callback,RemoteObject _eventname) throws Exception{
 try {
-		Debug.PushSubsStack("Initialize (clfunciones2) ","clfunciones2",8,__ref.getField(false, "ba"),__ref,14);
+		Debug.PushSubsStack("Initialize (clfunciones2) ","clfunciones2",10,__ref.getField(false, "ba"),__ref,14);
 if (RapidSub.canDelegate("initialize")) { return __ref.runUserSub(false, "clfunciones2","initialize", __ref, _ba, _callback, _eventname);}
 __ref.runVoidMethodAndSync("innerInitializeHelper", _ba);
 Debug.locals.put("ba", _ba);
@@ -1098,7 +1098,7 @@ finally {
 		}}
 public static RemoteObject  _sb_ingresar_correo_validar(RemoteObject __ref,RemoteObject _koen,RemoteObject _suen,RemoteObject _para,RemoteObject _campoemail,RemoteObject _editarmaeen) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Ingresar_Correo_Validar (clfunciones2) ","clfunciones2",8,__ref.getField(false, "ba"),__ref,86);
+		Debug.PushSubsStack("Sb_Ingresar_Correo_Validar (clfunciones2) ","clfunciones2",10,__ref.getField(false, "ba"),__ref,86);
 if (RapidSub.canDelegate("sb_ingresar_correo_validar")) { return __ref.runUserSub(false, "clfunciones2","sb_ingresar_correo_validar", __ref, _koen, _suen, _para, _campoemail, _editarmaeen);}
 ResumableSub_Sb_Ingresar_Correo_Validar rsub = new ResumableSub_Sb_Ingresar_Correo_Validar(null,__ref,_koen,_suen,_para,_campoemail,_editarmaeen);
 rsub.remoteResumableSub = anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSubForFilter();
@@ -1140,7 +1140,7 @@ RemoteObject _res = RemoteObject.createImmutable(false);
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Ingresar_Correo_Validar (clfunciones2) ","clfunciones2",8,__ref.getField(false, "ba"),__ref,86);
+		Debug.PushSubsStack("Sb_Ingresar_Correo_Validar (clfunciones2) ","clfunciones2",10,__ref.getField(false, "ba"),__ref,86);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -1242,7 +1242,7 @@ this.state = 9;
 this.catchState = 0;
  BA.debugLineNum = 108;BA.debugLine="Log(LastException)";
 Debug.ShouldStop(2048);
-parent.__c.runVoidMethod ("LogImpl","66553622",BA.ObjectToString(parent.__c.runMethod(false,"LastException",__ref.getField(false, "ba"))),0);
+parent.__c.runVoidMethod ("LogImpl","210682390",BA.ObjectToString(parent.__c.runMethod(false,"LastException",__ref.getField(false, "ba"))),0);
  BA.debugLineNum = 109;BA.debugLine="bmp1 = LoadBitmap(File.DirAssets, \"symbol-cance";
 Debug.ShouldStop(4096);
 _bmp1 = parent.__c.runMethod(false,"LoadBitmap",(Object)(parent.__c.getField(false,"File").runMethod(true,"getDirAssets")),(Object)(RemoteObject.createImmutable("symbol-cancel.png")));Debug.locals.put("bmp1", _bmp1);
@@ -1455,7 +1455,7 @@ finally {
 }
 public static RemoteObject  _sb_revisarformatos(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_RevisarFormatos (clfunciones2) ","clfunciones2",8,__ref.getField(false, "ba"),__ref,226);
+		Debug.PushSubsStack("Sb_RevisarFormatos (clfunciones2) ","clfunciones2",10,__ref.getField(false, "ba"),__ref,226);
 if (RapidSub.canDelegate("sb_revisarformatos")) { return __ref.runUserSub(false, "clfunciones2","sb_revisarformatos", __ref);}
 ResumableSub_Sb_RevisarFormatos rsub = new ResumableSub_Sb_RevisarFormatos(null,__ref);
 rsub.remoteResumableSub = anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSubForFilter();
@@ -1481,7 +1481,7 @@ RemoteObject _resultado = RemoteObject.createImmutable(false);
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_RevisarFormatos (clfunciones2) ","clfunciones2",8,__ref.getField(false, "ba"),__ref,226);
+		Debug.PushSubsStack("Sb_RevisarFormatos (clfunciones2) ","clfunciones2",10,__ref.getField(false, "ba"),__ref,226);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {

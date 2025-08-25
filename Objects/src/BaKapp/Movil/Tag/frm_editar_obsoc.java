@@ -358,6 +358,7 @@ public BaKapp.Movil.Tag.main _main = null;
 public BaKapp.Movil.Tag.buscar_entidad _buscar_entidad = null;
 public BaKapp.Movil.Tag.buscar_productos _buscar_productos = null;
 public BaKapp.Movil.Tag.frm_impresion _frm_impresion = null;
+public BaKapp.Movil.Tag.funciones _funciones = null;
 public BaKapp.Movil.Tag.conf_local _conf_local = null;
 public BaKapp.Movil.Tag.dbutils _dbutils = null;
 public BaKapp.Movil.Tag.frm_buscar_documento _frm_buscar_documento = null;
@@ -369,7 +370,6 @@ public BaKapp.Movil.Tag.frm_menu_principal _frm_menu_principal = null;
 public BaKapp.Movil.Tag.frm_post_01_descuentos _frm_post_01_descuentos = null;
 public BaKapp.Movil.Tag.frm_post_01_formulario _frm_post_01_formulario = null;
 public BaKapp.Movil.Tag.frm_post_01_producto _frm_post_01_producto = null;
-public BaKapp.Movil.Tag.funciones _funciones = null;
 public BaKapp.Movil.Tag.variables _variables = null;
 public BaKapp.Movil.Tag.httputils2service _httputils2service = null;
 public BaKapp.Movil.Tag.xuiviewsutils _xuiviewsutils = null;
@@ -377,60 +377,60 @@ public static String  _activity_create(boolean _firsttime) throws Exception{
 RDebugUtils.currentModule="frm_editar_obsoc";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_create", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "activity_create", new Object[] {_firsttime}));}
-RDebugUtils.currentLine=12386304;
- //BA.debugLineNum = 12386304;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
-RDebugUtils.currentLine=12386308;
- //BA.debugLineNum = 12386308;BA.debugLine="Activity.LoadLayout(\"Op_Edita_Observaciones\")";
+RDebugUtils.currentLine=15597568;
+ //BA.debugLineNum = 15597568;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
+RDebugUtils.currentLine=15597572;
+ //BA.debugLineNum = 15597572;BA.debugLine="Activity.LoadLayout(\"Op_Edita_Observaciones\")";
 mostCurrent._activity.LoadLayout("Op_Edita_Observaciones",mostCurrent.activityBA);
-RDebugUtils.currentLine=12386310;
- //BA.debugLineNum = 12386310;BA.debugLine="Txt_Observaciones.Text = Observaciones";
+RDebugUtils.currentLine=15597574;
+ //BA.debugLineNum = 15597574;BA.debugLine="Txt_Observaciones.Text = Observaciones";
 mostCurrent._txt_observaciones.setText(BA.ObjectToCharSequence(_observaciones));
-RDebugUtils.currentLine=12386311;
- //BA.debugLineNum = 12386311;BA.debugLine="Txt_Orden_compra.Text = Orden_compra";
+RDebugUtils.currentLine=15597575;
+ //BA.debugLineNum = 15597575;BA.debugLine="Txt_Orden_compra.Text = Orden_compra";
 mostCurrent._txt_orden_compra.setText(BA.ObjectToCharSequence(_orden_compra));
-RDebugUtils.currentLine=12386313;
- //BA.debugLineNum = 12386313;BA.debugLine="End Sub";
+RDebugUtils.currentLine=15597577;
+ //BA.debugLineNum = 15597577;BA.debugLine="End Sub";
 return "";
 }
 public static boolean  _activity_keypress(int _keycode) throws Exception{
 RDebugUtils.currentModule="frm_editar_obsoc";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_keypress", false))
 	 {return ((Boolean) Debug.delegate(mostCurrent.activityBA, "activity_keypress", new Object[] {_keycode}));}
-RDebugUtils.currentLine=12648448;
- //BA.debugLineNum = 12648448;BA.debugLine="Sub Activity_KeyPress (KeyCode As Int) As Boolean";
-RDebugUtils.currentLine=12648450;
- //BA.debugLineNum = 12648450;BA.debugLine="If KeyCode = KeyCodes.KEYCODE_BACK Then";
+RDebugUtils.currentLine=15859712;
+ //BA.debugLineNum = 15859712;BA.debugLine="Sub Activity_KeyPress (KeyCode As Int) As Boolean";
+RDebugUtils.currentLine=15859714;
+ //BA.debugLineNum = 15859714;BA.debugLine="If KeyCode = KeyCodes.KEYCODE_BACK Then";
 if (_keycode==anywheresoftware.b4a.keywords.Common.KeyCodes.KEYCODE_BACK) { 
-RDebugUtils.currentLine=12648451;
- //BA.debugLineNum = 12648451;BA.debugLine="Return True";
+RDebugUtils.currentLine=15859715;
+ //BA.debugLineNum = 15859715;BA.debugLine="Return True";
 if (true) return anywheresoftware.b4a.keywords.Common.True;
  };
-RDebugUtils.currentLine=12648454;
- //BA.debugLineNum = 12648454;BA.debugLine="End Sub";
+RDebugUtils.currentLine=15859718;
+ //BA.debugLineNum = 15859718;BA.debugLine="End Sub";
 return false;
 }
 public static String  _activity_pause(boolean _userclosed) throws Exception{
 RDebugUtils.currentModule="frm_editar_obsoc";
-RDebugUtils.currentLine=12517376;
- //BA.debugLineNum = 12517376;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
-RDebugUtils.currentLine=12517378;
- //BA.debugLineNum = 12517378;BA.debugLine="End Sub";
+RDebugUtils.currentLine=15728640;
+ //BA.debugLineNum = 15728640;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
+RDebugUtils.currentLine=15728642;
+ //BA.debugLineNum = 15728642;BA.debugLine="End Sub";
 return "";
 }
 public static String  _activity_resume() throws Exception{
 RDebugUtils.currentModule="frm_editar_obsoc";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_resume", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "activity_resume", null));}
-RDebugUtils.currentLine=12451840;
- //BA.debugLineNum = 12451840;BA.debugLine="Sub Activity_Resume";
-RDebugUtils.currentLine=12451841;
- //BA.debugLineNum = 12451841;BA.debugLine="Txt_Observaciones.Text = Observaciones";
+RDebugUtils.currentLine=15663104;
+ //BA.debugLineNum = 15663104;BA.debugLine="Sub Activity_Resume";
+RDebugUtils.currentLine=15663105;
+ //BA.debugLineNum = 15663105;BA.debugLine="Txt_Observaciones.Text = Observaciones";
 mostCurrent._txt_observaciones.setText(BA.ObjectToCharSequence(_observaciones));
-RDebugUtils.currentLine=12451842;
- //BA.debugLineNum = 12451842;BA.debugLine="Txt_Orden_compra.Text = Orden_compra";
+RDebugUtils.currentLine=15663106;
+ //BA.debugLineNum = 15663106;BA.debugLine="Txt_Orden_compra.Text = Orden_compra";
 mostCurrent._txt_orden_compra.setText(BA.ObjectToCharSequence(_orden_compra));
-RDebugUtils.currentLine=12451843;
- //BA.debugLineNum = 12451843;BA.debugLine="End Sub";
+RDebugUtils.currentLine=15663107;
+ //BA.debugLineNum = 15663107;BA.debugLine="End Sub";
 return "";
 }
 public static void  _btn_cerrar_click() throws Exception{
@@ -460,17 +460,17 @@ return;
 case 0:
 //C
 this.state = 1;
-RDebugUtils.currentLine=12713986;
- //BA.debugLineNum = 12713986;BA.debugLine="Dim XUI As XUI";
+RDebugUtils.currentLine=15925250;
+ //BA.debugLineNum = 15925250;BA.debugLine="Dim XUI As XUI";
 _xui = new anywheresoftware.b4a.objects.B4XViewWrapper.XUI();
-RDebugUtils.currentLine=12713988;
- //BA.debugLineNum = 12713988;BA.debugLine="bmp1 = LoadBitmap(File.DirAssets, \"question.png\")";
+RDebugUtils.currentLine=15925252;
+ //BA.debugLineNum = 15925252;BA.debugLine="bmp1 = LoadBitmap(File.DirAssets, \"question.png\")";
 parent.mostCurrent._bmp1 = anywheresoftware.b4a.keywords.Common.LoadBitmap(anywheresoftware.b4a.keywords.Common.File.getDirAssets(),"question.png");
-RDebugUtils.currentLine=12713990;
- //BA.debugLineNum = 12713990;BA.debugLine="Msgbox2Async(\"¿Confirma cerrar sin grabar?\",\"C E";
+RDebugUtils.currentLine=15925254;
+ //BA.debugLineNum = 15925254;BA.debugLine="Msgbox2Async(\"¿Confirma cerrar sin grabar?\",\"C E";
 anywheresoftware.b4a.keywords.Common.Msgbox2Async(BA.ObjectToCharSequence("¿Confirma cerrar sin grabar?"),BA.ObjectToCharSequence("C E R R A R"),"Si","","No",parent.mostCurrent._bmp1,processBA,anywheresoftware.b4a.keywords.Common.False);
-RDebugUtils.currentLine=12713991;
- //BA.debugLineNum = 12713991;BA.debugLine="Wait For Msgbox_Result (Result As Int)";
+RDebugUtils.currentLine=15925255;
+ //BA.debugLineNum = 15925255;BA.debugLine="Wait For Msgbox_Result (Result As Int)";
 anywheresoftware.b4a.keywords.Common.WaitFor("msgbox_result", processBA, new anywheresoftware.b4a.shell.DebugResumableSub.DelegatableResumableSub(this, "frm_editar_obsoc", "btn_cerrar_click"), null);
 this.state = 5;
 return;
@@ -479,8 +479,8 @@ case 5:
 this.state = 1;
 _result = (Integer) result[0];
 ;
-RDebugUtils.currentLine=12713993;
- //BA.debugLineNum = 12713993;BA.debugLine="If Result = XUI.DialogResponse_Positive Then";
+RDebugUtils.currentLine=15925257;
+ //BA.debugLineNum = 15925257;BA.debugLine="If Result = XUI.DialogResponse_Positive Then";
 if (true) break;
 
 case 1:
@@ -493,8 +493,8 @@ this.state = 3;
 case 3:
 //C
 this.state = 4;
-RDebugUtils.currentLine=12713994;
- //BA.debugLineNum = 12713994;BA.debugLine="Activity.Finish";
+RDebugUtils.currentLine=15925258;
+ //BA.debugLineNum = 15925258;BA.debugLine="Activity.Finish";
 parent.mostCurrent._activity.Finish();
  if (true) break;
 
@@ -502,8 +502,8 @@ case 4:
 //C
 this.state = -1;
 ;
-RDebugUtils.currentLine=12713997;
- //BA.debugLineNum = 12713997;BA.debugLine="End Sub";
+RDebugUtils.currentLine=15925261;
+ //BA.debugLineNum = 15925261;BA.debugLine="End Sub";
 if (true) break;
 
             }
@@ -540,11 +540,11 @@ return;
 case 0:
 //C
 this.state = 1;
-RDebugUtils.currentLine=12582914;
- //BA.debugLineNum = 12582914;BA.debugLine="Dim Js As HttpJob = Funciones.Fx_HttJob_Ws_Sb_Act";
+RDebugUtils.currentLine=15794178;
+ //BA.debugLineNum = 15794178;BA.debugLine="Dim Js As HttpJob = Funciones.Fx_HttJob_Ws_Sb_Act";
 _js = parent.mostCurrent._funciones._fx_httjob_ws_sb_actualizar_observaciones_documento /*BaKapp.Movil.Tag.httpjob*/ (mostCurrent.activityBA,frm_editar_obsoc.getObject(),parent._idmaeedo,parent.mostCurrent._txt_observaciones.getText().trim(),parent.mostCurrent._txt_orden_compra.getText().trim());
-RDebugUtils.currentLine=12582915;
- //BA.debugLineNum = 12582915;BA.debugLine="Wait For (Js) JobDone(Js As HttpJob)";
+RDebugUtils.currentLine=15794179;
+ //BA.debugLineNum = 15794179;BA.debugLine="Wait For (Js) JobDone(Js As HttpJob)";
 anywheresoftware.b4a.keywords.Common.WaitFor("jobdone", processBA, new anywheresoftware.b4a.shell.DebugResumableSub.DelegatableResumableSub(this, "frm_editar_obsoc", "btn_grabar_click"), (Object)(_js));
 this.state = 17;
 return;
@@ -553,8 +553,8 @@ case 17:
 this.state = 1;
 _js = (BaKapp.Movil.Tag.httpjob) result[0];
 ;
-RDebugUtils.currentLine=12582917;
- //BA.debugLineNum = 12582917;BA.debugLine="If Js.Success Then";
+RDebugUtils.currentLine=15794181;
+ //BA.debugLineNum = 15794181;BA.debugLine="If Js.Success Then";
 if (true) break;
 
 case 1:
@@ -567,11 +567,11 @@ this.state = 3;
 case 3:
 //C
 this.state = 4;
-RDebugUtils.currentLine=12582919;
- //BA.debugLineNum = 12582919;BA.debugLine="Dim vJson As String = Js.GetString";
+RDebugUtils.currentLine=15794183;
+ //BA.debugLineNum = 15794183;BA.debugLine="Dim vJson As String = Js.GetString";
 _vjson = _js._getstring /*String*/ (null);
-RDebugUtils.currentLine=12582921;
- //BA.debugLineNum = 12582921;BA.debugLine="If  vJson <> $\"{\"Table\":[]}\"$ Then";
+RDebugUtils.currentLine=15794185;
+ //BA.debugLineNum = 15794185;BA.debugLine="If  vJson <> $\"{\"Table\":[]}\"$ Then";
 if (true) break;
 
 case 4:
@@ -586,15 +586,15 @@ this.state = 14;
 case 6:
 //C
 this.state = 7;
-RDebugUtils.currentLine=12582923;
- //BA.debugLineNum = 12582923;BA.debugLine="Dim Respuesta As Map = Funciones.Fx_DataRow(Js.";
+RDebugUtils.currentLine=15794187;
+ //BA.debugLineNum = 15794187;BA.debugLine="Dim Respuesta As Map = Funciones.Fx_DataRow(Js.";
 _respuesta = new anywheresoftware.b4a.objects.collections.Map();
 _respuesta = parent.mostCurrent._funciones._fx_datarow /*anywheresoftware.b4a.objects.collections.Map*/ (mostCurrent.activityBA,_js._getstring /*String*/ (null));
-RDebugUtils.currentLine=12582925;
- //BA.debugLineNum = 12582925;BA.debugLine="Dim Actualizado As String = Respuesta.Get(\"Actu";
+RDebugUtils.currentLine=15794189;
+ //BA.debugLineNum = 15794189;BA.debugLine="Dim Actualizado As String = Respuesta.Get(\"Actu";
 _actualizado = BA.ObjectToString(_respuesta.Get((Object)("Actualizado")));
-RDebugUtils.currentLine=12582927;
- //BA.debugLineNum = 12582927;BA.debugLine="If Actualizado Then";
+RDebugUtils.currentLine=15794191;
+ //BA.debugLineNum = 15794191;BA.debugLine="If Actualizado Then";
 if (true) break;
 
 case 7:
@@ -609,14 +609,14 @@ this.state = 11;
 case 9:
 //C
 this.state = 12;
-RDebugUtils.currentLine=12582929;
- //BA.debugLineNum = 12582929;BA.debugLine="bmp1 = LoadBitmap(File.DirAssets, \"ok_button.p";
+RDebugUtils.currentLine=15794193;
+ //BA.debugLineNum = 15794193;BA.debugLine="bmp1 = LoadBitmap(File.DirAssets, \"ok_button.p";
 parent.mostCurrent._bmp1 = anywheresoftware.b4a.keywords.Common.LoadBitmap(anywheresoftware.b4a.keywords.Common.File.getDirAssets(),"ok_button.png");
-RDebugUtils.currentLine=12582930;
- //BA.debugLineNum = 12582930;BA.debugLine="Msgbox2Async(\"Datos actualizados correctamente";
+RDebugUtils.currentLine=15794194;
+ //BA.debugLineNum = 15794194;BA.debugLine="Msgbox2Async(\"Datos actualizados correctamente";
 anywheresoftware.b4a.keywords.Common.Msgbox2Async(BA.ObjectToCharSequence("Datos actualizados correctamente"),BA.ObjectToCharSequence("Actualizar"),"Ok","","",parent.mostCurrent._bmp1,processBA,anywheresoftware.b4a.keywords.Common.False);
-RDebugUtils.currentLine=12582931;
- //BA.debugLineNum = 12582931;BA.debugLine="Wait For Msgbox_Result (Result As Int)";
+RDebugUtils.currentLine=15794195;
+ //BA.debugLineNum = 15794195;BA.debugLine="Wait For Msgbox_Result (Result As Int)";
 anywheresoftware.b4a.keywords.Common.WaitFor("msgbox_result", processBA, new anywheresoftware.b4a.shell.DebugResumableSub.DelegatableResumableSub(this, "frm_editar_obsoc", "btn_grabar_click"), null);
 this.state = 18;
 return;
@@ -625,28 +625,28 @@ case 18:
 this.state = 12;
 _result = (Integer) result[0];
 ;
-RDebugUtils.currentLine=12582933;
- //BA.debugLineNum = 12582933;BA.debugLine="Frm_Buscar_Documento.Observaciones = Txt_Obser";
+RDebugUtils.currentLine=15794197;
+ //BA.debugLineNum = 15794197;BA.debugLine="Frm_Buscar_Documento.Observaciones = Txt_Obser";
 parent.mostCurrent._frm_buscar_documento._observaciones /*String*/  = parent.mostCurrent._txt_observaciones.getText();
-RDebugUtils.currentLine=12582934;
- //BA.debugLineNum = 12582934;BA.debugLine="Frm_Buscar_Documento.OCC = Txt_Orden_compra.Te";
+RDebugUtils.currentLine=15794198;
+ //BA.debugLineNum = 15794198;BA.debugLine="Frm_Buscar_Documento.OCC = Txt_Orden_compra.Te";
 parent.mostCurrent._frm_buscar_documento._occ /*String*/  = parent.mostCurrent._txt_orden_compra.getText();
-RDebugUtils.currentLine=12582936;
- //BA.debugLineNum = 12582936;BA.debugLine="Activity.Finish";
+RDebugUtils.currentLine=15794200;
+ //BA.debugLineNum = 15794200;BA.debugLine="Activity.Finish";
 parent.mostCurrent._activity.Finish();
  if (true) break;
 
 case 11:
 //C
 this.state = 12;
-RDebugUtils.currentLine=12582940;
- //BA.debugLineNum = 12582940;BA.debugLine="bmp1 = LoadBitmap(File.DirAssets, \"symbol-canc";
+RDebugUtils.currentLine=15794204;
+ //BA.debugLineNum = 15794204;BA.debugLine="bmp1 = LoadBitmap(File.DirAssets, \"symbol-canc";
 parent.mostCurrent._bmp1 = anywheresoftware.b4a.keywords.Common.LoadBitmap(anywheresoftware.b4a.keywords.Common.File.getDirAssets(),"symbol-cancel.png");
-RDebugUtils.currentLine=12582941;
- //BA.debugLineNum = 12582941;BA.debugLine="Msgbox2Async(\"Error!\",LastException, \"Ok\", \"\",";
+RDebugUtils.currentLine=15794205;
+ //BA.debugLineNum = 15794205;BA.debugLine="Msgbox2Async(\"Error!\",LastException, \"Ok\", \"\",";
 anywheresoftware.b4a.keywords.Common.Msgbox2Async(BA.ObjectToCharSequence("Error!"),BA.ObjectToCharSequence(anywheresoftware.b4a.keywords.Common.LastException(mostCurrent.activityBA).getObject()),"Ok","","",parent.mostCurrent._bmp1,processBA,anywheresoftware.b4a.keywords.Common.False);
-RDebugUtils.currentLine=12582942;
- //BA.debugLineNum = 12582942;BA.debugLine="Wait For Msgbox_Result (Result As Int)";
+RDebugUtils.currentLine=15794206;
+ //BA.debugLineNum = 15794206;BA.debugLine="Wait For Msgbox_Result (Result As Int)";
 anywheresoftware.b4a.keywords.Common.WaitFor("msgbox_result", processBA, new anywheresoftware.b4a.shell.DebugResumableSub.DelegatableResumableSub(this, "frm_editar_obsoc", "btn_grabar_click"), null);
 this.state = 19;
 return;
@@ -666,14 +666,14 @@ this.state = 15;
 case 14:
 //C
 this.state = 15;
-RDebugUtils.currentLine=12582948;
- //BA.debugLineNum = 12582948;BA.debugLine="bmp1 = LoadBitmap(File.DirAssets, \"symbol-cance";
+RDebugUtils.currentLine=15794212;
+ //BA.debugLineNum = 15794212;BA.debugLine="bmp1 = LoadBitmap(File.DirAssets, \"symbol-cance";
 parent.mostCurrent._bmp1 = anywheresoftware.b4a.keywords.Common.LoadBitmap(anywheresoftware.b4a.keywords.Common.File.getDirAssets(),"symbol-cancel.png");
-RDebugUtils.currentLine=12582949;
- //BA.debugLineNum = 12582949;BA.debugLine="Msgbox2Async(\"Error!\",LastException, \"Ok\", \"\",";
+RDebugUtils.currentLine=15794213;
+ //BA.debugLineNum = 15794213;BA.debugLine="Msgbox2Async(\"Error!\",LastException, \"Ok\", \"\",";
 anywheresoftware.b4a.keywords.Common.Msgbox2Async(BA.ObjectToCharSequence("Error!"),BA.ObjectToCharSequence(anywheresoftware.b4a.keywords.Common.LastException(mostCurrent.activityBA).getObject()),"Ok","","",parent.mostCurrent._bmp1,processBA,anywheresoftware.b4a.keywords.Common.False);
-RDebugUtils.currentLine=12582950;
- //BA.debugLineNum = 12582950;BA.debugLine="Wait For Msgbox_Result (Result As Int)";
+RDebugUtils.currentLine=15794214;
+ //BA.debugLineNum = 15794214;BA.debugLine="Wait For Msgbox_Result (Result As Int)";
 anywheresoftware.b4a.keywords.Common.WaitFor("msgbox_result", processBA, new anywheresoftware.b4a.shell.DebugResumableSub.DelegatableResumableSub(this, "frm_editar_obsoc", "btn_grabar_click"), null);
 this.state = 20;
 return;
@@ -694,8 +694,8 @@ case 16:
 //C
 this.state = -1;
 ;
-RDebugUtils.currentLine=12582956;
- //BA.debugLineNum = 12582956;BA.debugLine="End Sub";
+RDebugUtils.currentLine=15794220;
+ //BA.debugLineNum = 15794220;BA.debugLine="End Sub";
 if (true) break;
 
             }

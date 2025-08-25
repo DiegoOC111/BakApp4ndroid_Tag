@@ -286,7 +286,7 @@ case 6:
 this.state = 7;
  BA.debugLineNum = 110;BA.debugLine="Log(vJson)";
 Debug.ShouldStop(8192);
-parent.mostCurrent.__c.runVoidMethod ("LogImpl","61376296",_vjson,0);
+parent.mostCurrent.__c.runVoidMethod ("LogImpl","21376296",_vjson,0);
  BA.debugLineNum = 111;BA.debugLine="Dim parser As JSONParser";
 Debug.ShouldStop(16384);
 _parser = RemoteObject.createNew ("anywheresoftware.b4a.objects.collections.JSONParser");Debug.locals.put("parser", _parser);
@@ -431,7 +431,7 @@ Debug.ShouldStop(8388608);
 parent.mostCurrent._xclvdetalle.runVoidMethod ("_add",(Object)(_p),(Object)((RemoteObject.createImmutable(""))));
  BA.debugLineNum = 154;BA.debugLine="Log(Koen & Suen & Nokoen)";
 Debug.ShouldStop(33554432);
-parent.mostCurrent.__c.runVoidMethod ("LogImpl","61376340",RemoteObject.concat(_koen,_suen,_nokoen),0);
+parent.mostCurrent.__c.runVoidMethod ("LogImpl","21376340",RemoteObject.concat(_koen,_suen,_nokoen),0);
  if (true) break;
 if (true) break;
 
@@ -625,7 +625,7 @@ Debug.ShouldStop(536870912);
 parent._fila = RemoteObject.declareNull("anywheresoftware.b4a.AbsObjectWrapper").runMethod(false, "ConvertToWrapper", RemoteObject.createNew("anywheresoftware.b4a.objects.collections.Map"), _filas.runMethod(false,"Get",(Object)(BA.numberCast(int.class, 0))));
  BA.debugLineNum = 192;BA.debugLine="Log(LblKoen.Text)";
 Debug.ShouldStop(-2147483648);
-parent.mostCurrent.__c.runVoidMethod ("LogImpl","61441813",_lblkoen.runMethod(true,"getText"),0);
+parent.mostCurrent.__c.runVoidMethod ("LogImpl","21441813",_lblkoen.runMethod(true,"getText"),0);
  BA.debugLineNum = 193;BA.debugLine="Dim Nokoen As String = Fila.Get(\"NOKOEN\")";
 Debug.ShouldStop(1);
 _nokoen = BA.ObjectToString(parent._fila.runMethod(false,"Get",(Object)((RemoteObject.createImmutable("NOKOEN")))));Debug.locals.put("Nokoen", _nokoen);Debug.locals.put("Nokoen", _nokoen);
@@ -704,7 +704,7 @@ case 15:
 this.state = 16;
  BA.debugLineNum = 217;BA.debugLine="Log(Js.ErrorMessage)";
 Debug.ShouldStop(16777216);
-parent.mostCurrent.__c.runVoidMethod ("LogImpl","61441838",_js.getField(true,"_errormessage" /*RemoteObject*/ ),0);
+parent.mostCurrent.__c.runVoidMethod ("LogImpl","21441838",_js.getField(true,"_errormessage" /*RemoteObject*/ ),0);
  if (true) break;
 
 case 16:

@@ -8,7 +8,7 @@ public class frm_documentos_generados_subs_0 {
 
 public static RemoteObject  _activity_create(RemoteObject _firsttime) throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Create (frm_documentos_generados) ","frm_documentos_generados",14,frm_documentos_generados.mostCurrent.activityBA,frm_documentos_generados.mostCurrent,55);
+		Debug.PushSubsStack("Activity_Create (frm_documentos_generados) ","frm_documentos_generados",15,frm_documentos_generados.mostCurrent.activityBA,frm_documentos_generados.mostCurrent,55);
 if (RapidSub.canDelegate("activity_create")) { return BaKapp.Movil.Tag.frm_documentos_generados.remoteMe.runUserSub(false, "frm_documentos_generados","activity_create", _firsttime);}
 RemoteObject _items = RemoteObject.declareNull("anywheresoftware.b4a.objects.collections.List");
 Debug.locals.put("FirstTime", _firsttime);
@@ -113,7 +113,7 @@ finally {
 		}}
 public static RemoteObject  _activity_pause(RemoteObject _userclosed) throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Pause (frm_documentos_generados) ","frm_documentos_generados",14,frm_documentos_generados.mostCurrent.activityBA,frm_documentos_generados.mostCurrent,104);
+		Debug.PushSubsStack("Activity_Pause (frm_documentos_generados) ","frm_documentos_generados",15,frm_documentos_generados.mostCurrent.activityBA,frm_documentos_generados.mostCurrent,104);
 if (RapidSub.canDelegate("activity_pause")) { return BaKapp.Movil.Tag.frm_documentos_generados.remoteMe.runUserSub(false, "frm_documentos_generados","activity_pause", _userclosed);}
 Debug.locals.put("UserClosed", _userclosed);
  BA.debugLineNum = 104;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
@@ -130,7 +130,7 @@ finally {
 		}}
 public static RemoteObject  _activity_resume() throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Resume (frm_documentos_generados) ","frm_documentos_generados",14,frm_documentos_generados.mostCurrent.activityBA,frm_documentos_generados.mostCurrent,100);
+		Debug.PushSubsStack("Activity_Resume (frm_documentos_generados) ","frm_documentos_generados",15,frm_documentos_generados.mostCurrent.activityBA,frm_documentos_generados.mostCurrent,100);
 if (RapidSub.canDelegate("activity_resume")) { return BaKapp.Movil.Tag.frm_documentos_generados.remoteMe.runUserSub(false, "frm_documentos_generados","activity_resume");}
  BA.debugLineNum = 100;BA.debugLine="Sub Activity_Resume";
 Debug.ShouldStop(8);
@@ -146,7 +146,7 @@ finally {
 		}}
 public static void  _btn_actualizar_click() throws Exception{
 try {
-		Debug.PushSubsStack("Btn_Actualizar_Click (frm_documentos_generados) ","frm_documentos_generados",14,frm_documentos_generados.mostCurrent.activityBA,frm_documentos_generados.mostCurrent,148);
+		Debug.PushSubsStack("Btn_Actualizar_Click (frm_documentos_generados) ","frm_documentos_generados",15,frm_documentos_generados.mostCurrent.activityBA,frm_documentos_generados.mostCurrent,148);
 if (RapidSub.canDelegate("btn_actualizar_click")) { BaKapp.Movil.Tag.frm_documentos_generados.remoteMe.runUserSub(false, "frm_documentos_generados","btn_actualizar_click"); return;}
 ResumableSub_Btn_Actualizar_Click rsub = new ResumableSub_Btn_Actualizar_Click(null);
 rsub.resume(null, null);
@@ -199,7 +199,7 @@ int groupLen32;
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Btn_Actualizar_Click (frm_documentos_generados) ","frm_documentos_generados",14,frm_documentos_generados.mostCurrent.activityBA,frm_documentos_generados.mostCurrent,148);
+		Debug.PushSubsStack("Btn_Actualizar_Click (frm_documentos_generados) ","frm_documentos_generados",15,frm_documentos_generados.mostCurrent.activityBA,frm_documentos_generados.mostCurrent,148);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -371,7 +371,7 @@ case 22:
 this.state = 23;
  BA.debugLineNum = 199;BA.debugLine="Log(vJson)";
 Debug.ShouldStop(64);
-parent.mostCurrent.__c.runVoidMethod ("LogImpl","611993139",_vjson,0);
+parent.mostCurrent.__c.runVoidMethod ("LogImpl","215204403",_vjson,0);
  BA.debugLineNum = 200;BA.debugLine="Dim parser As JSONParser";
 Debug.ShouldStop(128);
 _parser = RemoteObject.createNew ("anywheresoftware.b4a.objects.collections.JSONParser");Debug.locals.put("parser", _parser);
@@ -578,7 +578,7 @@ Debug.ShouldStop(268435456);
 parent.mostCurrent._xclvdetalle.runVoidMethod ("_add",(Object)(_p),(Object)((RemoteObject.createImmutable(""))));
  BA.debugLineNum = 255;BA.debugLine="Log(Lbl_Idmaeedo.Text)";
 Debug.ShouldStop(1073741824);
-parent.mostCurrent.__c.runVoidMethod ("LogImpl","611993195",parent.mostCurrent._lbl_idmaeedo.runMethod(true,"getText"),0);
+parent.mostCurrent.__c.runVoidMethod ("LogImpl","215204459",parent.mostCurrent._lbl_idmaeedo.runMethod(true,"getText"),0);
  if (true) break;
 if (true) break;
 
@@ -631,7 +631,7 @@ public static void  _jobdone(RemoteObject _js) throws Exception{
 }
 public static void  _btn_fecha_desde_click() throws Exception{
 try {
-		Debug.PushSubsStack("Btn_Fecha_Desde_Click (frm_documentos_generados) ","frm_documentos_generados",14,frm_documentos_generados.mostCurrent.activityBA,frm_documentos_generados.mostCurrent,282);
+		Debug.PushSubsStack("Btn_Fecha_Desde_Click (frm_documentos_generados) ","frm_documentos_generados",15,frm_documentos_generados.mostCurrent.activityBA,frm_documentos_generados.mostCurrent,282);
 if (RapidSub.canDelegate("btn_fecha_desde_click")) { BaKapp.Movil.Tag.frm_documentos_generados.remoteMe.runUserSub(false, "frm_documentos_generados","btn_fecha_desde_click"); return;}
 ResumableSub_Btn_Fecha_Desde_Click rsub = new ResumableSub_Btn_Fecha_Desde_Click(null);
 rsub.resume(null, null);
@@ -653,7 +653,7 @@ RemoteObject _result = RemoteObject.createImmutable(0);
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Btn_Fecha_Desde_Click (frm_documentos_generados) ","frm_documentos_generados",14,frm_documentos_generados.mostCurrent.activityBA,frm_documentos_generados.mostCurrent,282);
+		Debug.PushSubsStack("Btn_Fecha_Desde_Click (frm_documentos_generados) ","frm_documentos_generados",15,frm_documentos_generados.mostCurrent.activityBA,frm_documentos_generados.mostCurrent,282);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -715,7 +715,7 @@ public static void  _complete(RemoteObject _result) throws Exception{
 }
 public static void  _btn_fecha_hasta_click() throws Exception{
 try {
-		Debug.PushSubsStack("Btn_Fecha_Hasta_Click (frm_documentos_generados) ","frm_documentos_generados",14,frm_documentos_generados.mostCurrent.activityBA,frm_documentos_generados.mostCurrent,289);
+		Debug.PushSubsStack("Btn_Fecha_Hasta_Click (frm_documentos_generados) ","frm_documentos_generados",15,frm_documentos_generados.mostCurrent.activityBA,frm_documentos_generados.mostCurrent,289);
 if (RapidSub.canDelegate("btn_fecha_hasta_click")) { BaKapp.Movil.Tag.frm_documentos_generados.remoteMe.runUserSub(false, "frm_documentos_generados","btn_fecha_hasta_click"); return;}
 ResumableSub_Btn_Fecha_Hasta_Click rsub = new ResumableSub_Btn_Fecha_Hasta_Click(null);
 rsub.resume(null, null);
@@ -737,7 +737,7 @@ RemoteObject _result = RemoteObject.createImmutable(0);
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Btn_Fecha_Hasta_Click (frm_documentos_generados) ","frm_documentos_generados",14,frm_documentos_generados.mostCurrent.activityBA,frm_documentos_generados.mostCurrent,289);
+		Debug.PushSubsStack("Btn_Fecha_Hasta_Click (frm_documentos_generados) ","frm_documentos_generados",15,frm_documentos_generados.mostCurrent.activityBA,frm_documentos_generados.mostCurrent,289);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -797,7 +797,7 @@ finally {
 }
 public static RemoteObject  _btn_volver_click() throws Exception{
 try {
-		Debug.PushSubsStack("Btn_Volver_Click (frm_documentos_generados) ","frm_documentos_generados",14,frm_documentos_generados.mostCurrent.activityBA,frm_documentos_generados.mostCurrent,273);
+		Debug.PushSubsStack("Btn_Volver_Click (frm_documentos_generados) ","frm_documentos_generados",15,frm_documentos_generados.mostCurrent.activityBA,frm_documentos_generados.mostCurrent,273);
 if (RapidSub.canDelegate("btn_volver_click")) { return BaKapp.Movil.Tag.frm_documentos_generados.remoteMe.runUserSub(false, "frm_documentos_generados","btn_volver_click");}
  BA.debugLineNum = 273;BA.debugLine="Private Sub Btn_Volver_Click";
 Debug.ShouldStop(65536);
@@ -896,7 +896,7 @@ return RemoteObject.createImmutable("");
 }
 public static void  _xclvdetalle_itemlongclick(RemoteObject _index,RemoteObject _value) throws Exception{
 try {
-		Debug.PushSubsStack("XclvDetalle_ItemLongClick (frm_documentos_generados) ","frm_documentos_generados",14,frm_documentos_generados.mostCurrent.activityBA,frm_documentos_generados.mostCurrent,108);
+		Debug.PushSubsStack("XclvDetalle_ItemLongClick (frm_documentos_generados) ","frm_documentos_generados",15,frm_documentos_generados.mostCurrent.activityBA,frm_documentos_generados.mostCurrent,108);
 if (RapidSub.canDelegate("xclvdetalle_itemlongclick")) { BaKapp.Movil.Tag.frm_documentos_generados.remoteMe.runUserSub(false, "frm_documentos_generados","xclvdetalle_itemlongclick", _index, _value); return;}
 ResumableSub_XclvDetalle_ItemLongClick rsub = new ResumableSub_XclvDetalle_ItemLongClick(null,_index,_value);
 rsub.resume(null, null);
@@ -930,7 +930,7 @@ RemoteObject _result = RemoteObject.createImmutable(0);
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("XclvDetalle_ItemLongClick (frm_documentos_generados) ","frm_documentos_generados",14,frm_documentos_generados.mostCurrent.activityBA,frm_documentos_generados.mostCurrent,108);
+		Debug.PushSubsStack("XclvDetalle_ItemLongClick (frm_documentos_generados) ","frm_documentos_generados",15,frm_documentos_generados.mostCurrent.activityBA,frm_documentos_generados.mostCurrent,108);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {

@@ -364,6 +364,7 @@ public b4a.example.dateutils _dateutils = null;
 public BaKapp.Movil.Tag.main _main = null;
 public BaKapp.Movil.Tag.buscar_productos _buscar_productos = null;
 public BaKapp.Movil.Tag.frm_impresion _frm_impresion = null;
+public BaKapp.Movil.Tag.funciones _funciones = null;
 public BaKapp.Movil.Tag.conf_local _conf_local = null;
 public BaKapp.Movil.Tag.dbutils _dbutils = null;
 public BaKapp.Movil.Tag.frm_buscar_documento _frm_buscar_documento = null;
@@ -376,7 +377,6 @@ public BaKapp.Movil.Tag.frm_menu_principal _frm_menu_principal = null;
 public BaKapp.Movil.Tag.frm_post_01_descuentos _frm_post_01_descuentos = null;
 public BaKapp.Movil.Tag.frm_post_01_formulario _frm_post_01_formulario = null;
 public BaKapp.Movil.Tag.frm_post_01_producto _frm_post_01_producto = null;
-public BaKapp.Movil.Tag.funciones _funciones = null;
 public BaKapp.Movil.Tag.variables _variables = null;
 public BaKapp.Movil.Tag.httputils2service _httputils2service = null;
 public BaKapp.Movil.Tag.xuiviewsutils _xuiviewsutils = null;
@@ -576,7 +576,7 @@ case 6:
 this.state = 7;
 RDebugUtils.currentLine=1376296;
  //BA.debugLineNum = 1376296;BA.debugLine="Log(vJson)";
-anywheresoftware.b4a.keywords.Common.LogImpl("61376296",_vjson,0);
+anywheresoftware.b4a.keywords.Common.LogImpl("21376296",_vjson,0);
 RDebugUtils.currentLine=1376297;
  //BA.debugLineNum = 1376297;BA.debugLine="Dim parser As JSONParser";
 _parser = new anywheresoftware.b4a.objects.collections.JSONParser();
@@ -721,7 +721,7 @@ RDebugUtils.currentLine=1376338;
 parent.mostCurrent._xclvdetalle._add(_p,(Object)(""));
 RDebugUtils.currentLine=1376340;
  //BA.debugLineNum = 1376340;BA.debugLine="Log(Koen & Suen & Nokoen)";
-anywheresoftware.b4a.keywords.Common.LogImpl("61376340",_koen+_suen+_nokoen,0);
+anywheresoftware.b4a.keywords.Common.LogImpl("21376340",_koen+_suen+_nokoen,0);
  if (true) break;
 if (true) break;
 
@@ -890,7 +890,7 @@ RDebugUtils.currentLine=1441811;
 parent._fila = (anywheresoftware.b4a.objects.collections.Map) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.collections.Map(), (java.util.Map)(_filas.Get((int) (0))));
 RDebugUtils.currentLine=1441813;
  //BA.debugLineNum = 1441813;BA.debugLine="Log(LblKoen.Text)";
-anywheresoftware.b4a.keywords.Common.LogImpl("61441813",_lblkoen.getText(),0);
+anywheresoftware.b4a.keywords.Common.LogImpl("21441813",_lblkoen.getText(),0);
 RDebugUtils.currentLine=1441814;
  //BA.debugLineNum = 1441814;BA.debugLine="Dim Nokoen As String = Fila.Get(\"NOKOEN\")";
 _nokoen = BA.ObjectToString(parent._fila.Get((Object)("NOKOEN")));
@@ -969,7 +969,7 @@ case 15:
 this.state = 16;
 RDebugUtils.currentLine=1441838;
  //BA.debugLineNum = 1441838;BA.debugLine="Log(Js.ErrorMessage)";
-anywheresoftware.b4a.keywords.Common.LogImpl("61441838",_js._errormessage /*String*/ ,0);
+anywheresoftware.b4a.keywords.Common.LogImpl("21441838",_js._errormessage /*String*/ ,0);
  if (true) break;
 
 case 16:

@@ -8,7 +8,7 @@ public class funciones_subs_0 {
 
 public static RemoteObject  _cbool(RemoteObject _ba,RemoteObject _inint) throws Exception{
 try {
-		Debug.PushSubsStack("Cbool (funciones) ","funciones",23,_ba,funciones.mostCurrent,48);
+		Debug.PushSubsStack("Cbool (funciones) ","funciones",5,_ba,funciones.mostCurrent,48);
 if (RapidSub.canDelegate("cbool")) { return BaKapp.Movil.Tag.funciones.remoteMe.runUserSub(false, "funciones","cbool", _ba, _inint);}
 ;
 Debug.locals.put("inInt", _inint);
@@ -33,7 +33,7 @@ finally {
 		}}
 public static RemoteObject  _cdouble(RemoteObject _ba,RemoteObject _ins) throws Exception{
 try {
-		Debug.PushSubsStack("CDouble (funciones) ","funciones",23,_ba,funciones.mostCurrent,53);
+		Debug.PushSubsStack("CDouble (funciones) ","funciones",5,_ba,funciones.mostCurrent,53);
 if (RapidSub.canDelegate("cdouble")) { return BaKapp.Movil.Tag.funciones.remoteMe.runUserSub(false, "funciones","cdouble", _ba, _ins);}
 ;
 Debug.locals.put("InS", _ins);
@@ -54,7 +54,7 @@ finally {
 		}}
 public static RemoteObject  _fecha_formato(RemoteObject _ba,RemoteObject _fecha,RemoteObject _separador) throws Exception{
 try {
-		Debug.PushSubsStack("Fecha_Formato (funciones) ","funciones",23,_ba,funciones.mostCurrent,913);
+		Debug.PushSubsStack("Fecha_Formato (funciones) ","funciones",5,_ba,funciones.mostCurrent,913);
 if (RapidSub.canDelegate("fecha_formato")) { return BaKapp.Movil.Tag.funciones.remoteMe.runUserSub(false, "funciones","fecha_formato", _ba, _fecha, _separador);}
 RemoteObject _vyear = RemoteObject.createImmutable("");
 RemoteObject _vmonth = RemoteObject.createImmutable("");
@@ -99,7 +99,7 @@ finally {
 		}}
 public static RemoteObject  _fx_cadena_a_buscar_sql(RemoteObject _ba,RemoteObject _vcadena,RemoteObject _vcampo,RemoteObject _vand_or) throws Exception{
 try {
-		Debug.PushSubsStack("Fx_Cadena_a_buscar_SQL (funciones) ","funciones",23,_ba,funciones.mostCurrent,799);
+		Debug.PushSubsStack("Fx_Cadena_a_buscar_SQL (funciones) ","funciones",5,_ba,funciones.mostCurrent,799);
 if (RapidSub.canDelegate("fx_cadena_a_buscar_sql")) { return BaKapp.Movil.Tag.funciones.remoteMe.runUserSub(false, "funciones","fx_cadena_a_buscar_sql", _ba, _vcadena, _vcampo, _vand_or);}
 RemoteObject _linea1 = RemoteObject.createImmutable("");
 RemoteObject _linea2 = RemoteObject.createImmutable("");
@@ -165,7 +165,7 @@ finally {
 		}}
 public static RemoteObject  _fx_datarow(RemoteObject _ba,RemoteObject _vgetstring_json) throws Exception{
 try {
-		Debug.PushSubsStack("Fx_DataRow (funciones) ","funciones",23,_ba,funciones.mostCurrent,74);
+		Debug.PushSubsStack("Fx_DataRow (funciones) ","funciones",5,_ba,funciones.mostCurrent,74);
 if (RapidSub.canDelegate("fx_datarow")) { return BaKapp.Movil.Tag.funciones.remoteMe.runUserSub(false, "funciones","fx_datarow", _ba, _vgetstring_json);}
 RemoteObject _table = RemoteObject.declareNull("anywheresoftware.b4a.objects.collections.List");
 RemoteObject _row = RemoteObject.declareNull("anywheresoftware.b4a.objects.collections.Map");
@@ -196,7 +196,7 @@ finally {
 		}}
 public static RemoteObject  _fx_dataset(RemoteObject _ba,RemoteObject _vgetstring_json) throws Exception{
 try {
-		Debug.PushSubsStack("Fx_DataSet (funciones) ","funciones",23,_ba,funciones.mostCurrent,57);
+		Debug.PushSubsStack("Fx_DataSet (funciones) ","funciones",5,_ba,funciones.mostCurrent,57);
 if (RapidSub.canDelegate("fx_dataset")) { return BaKapp.Movil.Tag.funciones.remoteMe.runUserSub(false, "funciones","fx_dataset", _ba, _vgetstring_json);}
 RemoteObject _parser = RemoteObject.declareNull("anywheresoftware.b4a.objects.collections.JSONParser");
 RemoteObject _ds = RemoteObject.declareNull("anywheresoftware.b4a.objects.collections.Map");
@@ -229,7 +229,7 @@ finally {
 		}}
 public static RemoteObject  _fx_datatable(RemoteObject _ba,RemoteObject _vgetstring_json) throws Exception{
 try {
-		Debug.PushSubsStack("Fx_DataTable (funciones) ","funciones",23,_ba,funciones.mostCurrent,66);
+		Debug.PushSubsStack("Fx_DataTable (funciones) ","funciones",5,_ba,funciones.mostCurrent,66);
 if (RapidSub.canDelegate("fx_datatable")) { return BaKapp.Movil.Tag.funciones.remoteMe.runUserSub(false, "funciones","fx_datatable", _ba, _vgetstring_json);}
 RemoteObject _ds = RemoteObject.declareNull("anywheresoftware.b4a.objects.collections.Map");
 RemoteObject _table = RemoteObject.declareNull("anywheresoftware.b4a.objects.collections.List");
@@ -260,7 +260,7 @@ finally {
 		}}
 public static RemoteObject  _fx_httjob_ws_sb_actualizar_observaciones_documento(RemoteObject _ba,RemoteObject _me_,RemoteObject _idmaeedo,RemoteObject _obdo,RemoteObject _ocdo) throws Exception{
 try {
-		Debug.PushSubsStack("Fx_HttJob_Ws_Sb_Actualizar_Observaciones_Documento (funciones) ","funciones",23,_ba,funciones.mostCurrent,644);
+		Debug.PushSubsStack("Fx_HttJob_Ws_Sb_Actualizar_Observaciones_Documento (funciones) ","funciones",5,_ba,funciones.mostCurrent,644);
 if (RapidSub.canDelegate("fx_httjob_ws_sb_actualizar_observaciones_documento")) { return BaKapp.Movil.Tag.funciones.remoteMe.runUserSub(false, "funciones","fx_httjob_ws_sb_actualizar_observaciones_documento", _ba, _me_, _idmaeedo, _obdo, _ocdo);}
 RemoteObject _vxml = RemoteObject.createImmutable("");
 RemoteObject _poststring = RemoteObject.createImmutable("");
@@ -308,7 +308,7 @@ finally {
 		}}
 public static RemoteObject  _fx_httjob_ws_sb_creadocumentojsonbakapp(RemoteObject _ba,RemoteObject _me_,RemoteObject _encabezadojs,RemoteObject _destallejs,RemoteObject _descuentosjs,RemoteObject _observacionesjs) throws Exception{
 try {
-		Debug.PushSubsStack("Fx_HttJob_Ws_Sb_CreaDocumentoJsonBakapp (funciones) ","funciones",23,_ba,funciones.mostCurrent,355);
+		Debug.PushSubsStack("Fx_HttJob_Ws_Sb_CreaDocumentoJsonBakapp (funciones) ","funciones",5,_ba,funciones.mostCurrent,355);
 if (RapidSub.canDelegate("fx_httjob_ws_sb_creadocumentojsonbakapp")) { return BaKapp.Movil.Tag.funciones.remoteMe.runUserSub(false, "funciones","fx_httjob_ws_sb_creadocumentojsonbakapp", _ba, _me_, _encabezadojs, _destallejs, _descuentosjs, _observacionesjs);}
 RemoteObject _id = RemoteObject.createImmutable(0);
 RemoteObject _vxml = RemoteObject.createImmutable("");
@@ -361,7 +361,7 @@ finally {
 		}}
 public static RemoteObject  _fx_httjob_ws_sb_creadocumentojsonbakapp2(RemoteObject _ba,RemoteObject _me_,RemoteObject _encabezadojs,RemoteObject _destallejs,RemoteObject _descuentosjs,RemoteObject _observacionesjs,RemoteObject _despachosimplejs) throws Exception{
 try {
-		Debug.PushSubsStack("Fx_HttJob_Ws_Sb_CreaDocumentoJsonBakapp2 (funciones) ","funciones",23,_ba,funciones.mostCurrent,383);
+		Debug.PushSubsStack("Fx_HttJob_Ws_Sb_CreaDocumentoJsonBakapp2 (funciones) ","funciones",5,_ba,funciones.mostCurrent,383);
 if (RapidSub.canDelegate("fx_httjob_ws_sb_creadocumentojsonbakapp2")) { return BaKapp.Movil.Tag.funciones.remoteMe.runUserSub(false, "funciones","fx_httjob_ws_sb_creadocumentojsonbakapp2", _ba, _me_, _encabezadojs, _destallejs, _descuentosjs, _observacionesjs, _despachosimplejs);}
 RemoteObject _id = RemoteObject.createImmutable(0);
 RemoteObject _vxml = RemoteObject.createImmutable("");
@@ -415,7 +415,7 @@ finally {
 		}}
 public static RemoteObject  _fx_httjob_ws_sb_editardocumentojsonbakapp(RemoteObject _ba,RemoteObject _me_,RemoteObject _oldidmaeedo,RemoteObject _cod_func_eliminador,RemoteObject _encabezadojs,RemoteObject _destallejs,RemoteObject _descuentosjs,RemoteObject _observacionesjs,RemoteObject _cambiar_nrodocumento) throws Exception{
 try {
-		Debug.PushSubsStack("Fx_HttJob_Ws_Sb_EditarDocumentoJsonBakapp (funciones) ","funciones",23,_ba,funciones.mostCurrent,412);
+		Debug.PushSubsStack("Fx_HttJob_Ws_Sb_EditarDocumentoJsonBakapp (funciones) ","funciones",5,_ba,funciones.mostCurrent,412);
 if (RapidSub.canDelegate("fx_httjob_ws_sb_editardocumentojsonbakapp")) { return BaKapp.Movil.Tag.funciones.remoteMe.runUserSub(false, "funciones","fx_httjob_ws_sb_editardocumentojsonbakapp", _ba, _me_, _oldidmaeedo, _cod_func_eliminador, _encabezadojs, _destallejs, _descuentosjs, _observacionesjs, _cambiar_nrodocumento);}
 RemoteObject _vxml = RemoteObject.createImmutable("");
 RemoteObject _poststring = RemoteObject.createImmutable("");
@@ -467,7 +467,7 @@ finally {
 		}}
 public static RemoteObject  _fx_httjob_ws_sb_editardocumentojsonbakapp2(RemoteObject _ba,RemoteObject _me_,RemoteObject _oldidmaeedo,RemoteObject _cod_func_eliminador,RemoteObject _encabezadojs,RemoteObject _destallejs,RemoteObject _descuentosjs,RemoteObject _observacionesjs,RemoteObject _despafaciljs,RemoteObject _cambiar_nrodocumento) throws Exception{
 try {
-		Debug.PushSubsStack("Fx_HttJob_Ws_Sb_EditarDocumentoJsonBakapp2 (funciones) ","funciones",23,_ba,funciones.mostCurrent,449);
+		Debug.PushSubsStack("Fx_HttJob_Ws_Sb_EditarDocumentoJsonBakapp2 (funciones) ","funciones",5,_ba,funciones.mostCurrent,449);
 if (RapidSub.canDelegate("fx_httjob_ws_sb_editardocumentojsonbakapp2")) { return BaKapp.Movil.Tag.funciones.remoteMe.runUserSub(false, "funciones","fx_httjob_ws_sb_editardocumentojsonbakapp2", _ba, _me_, _oldidmaeedo, _cod_func_eliminador, _encabezadojs, _destallejs, _descuentosjs, _observacionesjs, _despafaciljs, _cambiar_nrodocumento);}
 RemoteObject _id = RemoteObject.createImmutable(0);
 RemoteObject _vxml = RemoteObject.createImmutable("");
@@ -524,7 +524,7 @@ finally {
 		}}
 public static RemoteObject  _fx_httjob_ws_sb_enviarcorreobakapp(RemoteObject _ba,RemoteObject _me_,RemoteObject _empresa,RemoteObject _modalidad,RemoteObject _codfuncionario,RemoteObject _idmaeedo,RemoteObject _para,RemoteObject _cc) throws Exception{
 try {
-		Debug.PushSubsStack("Fx_HttJob_Ws_Sb_EnviarCorreoBakapp (funciones) ","funciones",23,_ba,funciones.mostCurrent,566);
+		Debug.PushSubsStack("Fx_HttJob_Ws_Sb_EnviarCorreoBakapp (funciones) ","funciones",5,_ba,funciones.mostCurrent,566);
 if (RapidSub.canDelegate("fx_httjob_ws_sb_enviarcorreobakapp")) { return BaKapp.Movil.Tag.funciones.remoteMe.runUserSub(false, "funciones","fx_httjob_ws_sb_enviarcorreobakapp", _ba, _me_, _empresa, _modalidad, _codfuncionario, _idmaeedo, _para, _cc);}
 RemoteObject _vxml = RemoteObject.createImmutable("");
 RemoteObject _poststring = RemoteObject.createImmutable("");
@@ -575,7 +575,7 @@ finally {
 		}}
 public static RemoteObject  _fx_httjob_ws_sb_enviarimprimirbakapp(RemoteObject _ba,RemoteObject _me_,RemoteObject _empresa,RemoteObject _modalidad,RemoteObject _codfuncionario,RemoteObject _idmaeedo) throws Exception{
 try {
-		Debug.PushSubsStack("Fx_HttJob_Ws_Sb_EnviarImprimirBakapp (funciones) ","funciones",23,_ba,funciones.mostCurrent,539);
+		Debug.PushSubsStack("Fx_HttJob_Ws_Sb_EnviarImprimirBakapp (funciones) ","funciones",5,_ba,funciones.mostCurrent,539);
 if (RapidSub.canDelegate("fx_httjob_ws_sb_enviarimprimirbakapp")) { return BaKapp.Movil.Tag.funciones.remoteMe.runUserSub(false, "funciones","fx_httjob_ws_sb_enviarimprimirbakapp", _ba, _me_, _empresa, _modalidad, _codfuncionario, _idmaeedo);}
 RemoteObject _vxml = RemoteObject.createImmutable("");
 RemoteObject _poststring = RemoteObject.createImmutable("");
@@ -624,7 +624,7 @@ finally {
 		}}
 public static RemoteObject  _fx_httjob_ws_sb_formatomodalidad(RemoteObject _ba,RemoteObject _empresa,RemoteObject _modalidad,RemoteObject _tido,RemoteObject _me_) throws Exception{
 try {
-		Debug.PushSubsStack("Fx_HttJob_Ws_Sb_FormatoModalidad (funciones) ","funciones",23,_ba,funciones.mostCurrent,693);
+		Debug.PushSubsStack("Fx_HttJob_Ws_Sb_FormatoModalidad (funciones) ","funciones",5,_ba,funciones.mostCurrent,693);
 if (RapidSub.canDelegate("fx_httjob_ws_sb_formatomodalidad")) { return BaKapp.Movil.Tag.funciones.remoteMe.runUserSub(false, "funciones","fx_httjob_ws_sb_formatomodalidad", _ba, _empresa, _modalidad, _tido, _me_);}
 RemoteObject _vxml = RemoteObject.createImmutable("");
 RemoteObject _poststring = RemoteObject.createImmutable("");
@@ -672,7 +672,7 @@ finally {
 		}}
 public static RemoteObject  _fx_httjob_ws_sb_getdataset_json(RemoteObject _ba,RemoteObject _consulta_sql,RemoteObject _me_) throws Exception{
 try {
-		Debug.PushSubsStack("Fx_HttJob_Ws_Sb_GetDataSet_Json (funciones) ","funciones",23,_ba,funciones.mostCurrent,80);
+		Debug.PushSubsStack("Fx_HttJob_Ws_Sb_GetDataSet_Json (funciones) ","funciones",5,_ba,funciones.mostCurrent,80);
 if (RapidSub.canDelegate("fx_httjob_ws_sb_getdataset_json")) { return BaKapp.Movil.Tag.funciones.remoteMe.runUserSub(false, "funciones","fx_httjob_ws_sb_getdataset_json", _ba, _consulta_sql, _me_);}
 RemoteObject _vxml = RemoteObject.createImmutable("");
 RemoteObject _poststring = RemoteObject.createImmutable("");
@@ -718,7 +718,7 @@ finally {
 		}}
 public static RemoteObject  _fx_httjob_ws_sb_getdataset_sb_json_impbk(RemoteObject _ba,RemoteObject _me_,RemoteObject _json,RemoteObject _nombretabla) throws Exception{
 try {
-		Debug.PushSubsStack("Fx_HttJob_Ws_Sb_GetDataSet_Sb_Json_ImpBk (funciones) ","funciones",23,_ba,funciones.mostCurrent,311);
+		Debug.PushSubsStack("Fx_HttJob_Ws_Sb_GetDataSet_Sb_Json_ImpBk (funciones) ","funciones",5,_ba,funciones.mostCurrent,311);
 if (RapidSub.canDelegate("fx_httjob_ws_sb_getdataset_sb_json_impbk")) { return BaKapp.Movil.Tag.funciones.remoteMe.runUserSub(false, "funciones","fx_httjob_ws_sb_getdataset_sb_json_impbk", _ba, _me_, _json, _nombretabla);}
 RemoteObject _vxml = RemoteObject.createImmutable("");
 RemoteObject _poststring = RemoteObject.createImmutable("");
@@ -765,7 +765,7 @@ finally {
 		}}
 public static RemoteObject  _fx_httjob_ws_sb_getmodalidad_gral(RemoteObject _ba,RemoteObject _me_) throws Exception{
 try {
-		Debug.PushSubsStack("Fx_HttJob_Ws_Sb_GetModalidad_Gral (funciones) ","funciones",23,_ba,funciones.mostCurrent,171);
+		Debug.PushSubsStack("Fx_HttJob_Ws_Sb_GetModalidad_Gral (funciones) ","funciones",5,_ba,funciones.mostCurrent,171);
 if (RapidSub.canDelegate("fx_httjob_ws_sb_getmodalidad_gral")) { return BaKapp.Movil.Tag.funciones.remoteMe.runUserSub(false, "funciones","fx_httjob_ws_sb_getmodalidad_gral", _ba, _me_);}
 RemoteObject _vxml = RemoteObject.createImmutable("");
 RemoteObject _poststring = RemoteObject.createImmutable("");
@@ -810,7 +810,7 @@ finally {
 		}}
 public static RemoteObject  _fx_httjob_ws_sb_revcarpetatmp(RemoteObject _ba,RemoteObject _me_) throws Exception{
 try {
-		Debug.PushSubsStack("Fx_HttJob_Ws_Sb_RevCarpetaTmp (funciones) ","funciones",23,_ba,funciones.mostCurrent,334);
+		Debug.PushSubsStack("Fx_HttJob_Ws_Sb_RevCarpetaTmp (funciones) ","funciones",5,_ba,funciones.mostCurrent,334);
 if (RapidSub.canDelegate("fx_httjob_ws_sb_revcarpetatmp")) { return BaKapp.Movil.Tag.funciones.remoteMe.runUserSub(false, "funciones","fx_httjob_ws_sb_revcarpetatmp", _ba, _me_);}
 RemoteObject _vxml = RemoteObject.createImmutable("");
 RemoteObject _poststring = RemoteObject.createImmutable("");
@@ -855,7 +855,7 @@ finally {
 		}}
 public static RemoteObject  _fx_httjob_ws_sb_revisar_stock_fila(RemoteObject _ba,RemoteObject _me_,RemoteObject _tido,RemoteObject _empresa,RemoteObject _sucursal,RemoteObject _bodega,RemoteObject _codigo,RemoteObject _cantidad,RemoteObject _untrans,RemoteObject _tidopa) throws Exception{
 try {
-		Debug.PushSubsStack("Fx_HttJob_Ws_Sb_Revisar_Stock_Fila (funciones) ","funciones",23,_ba,funciones.mostCurrent,218);
+		Debug.PushSubsStack("Fx_HttJob_Ws_Sb_Revisar_Stock_Fila (funciones) ","funciones",5,_ba,funciones.mostCurrent,218);
 if (RapidSub.canDelegate("fx_httjob_ws_sb_revisar_stock_fila")) { return BaKapp.Movil.Tag.funciones.remoteMe.runUserSub(false, "funciones","fx_httjob_ws_sb_revisar_stock_fila", _ba, _me_, _tido, _empresa, _sucursal, _bodega, _codigo, _cantidad, _untrans, _tidopa);}
 RemoteObject _vxml = RemoteObject.createImmutable("");
 RemoteObject _poststring = RemoteObject.createImmutable("");
@@ -908,7 +908,7 @@ finally {
 		}}
 public static RemoteObject  _fx_httjob_ws_sb_revisardocvslistaprecio(RemoteObject _ba,RemoteObject _me_,RemoteObject _idmaeedo,RemoteObject _vnta_dias_venci_coti) throws Exception{
 try {
-		Debug.PushSubsStack("Fx_HttJob_Ws_Sb_RevisarDocVsListaPrecio (funciones) ","funciones",23,_ba,funciones.mostCurrent,669);
+		Debug.PushSubsStack("Fx_HttJob_Ws_Sb_RevisarDocVsListaPrecio (funciones) ","funciones",5,_ba,funciones.mostCurrent,669);
 if (RapidSub.canDelegate("fx_httjob_ws_sb_revisardocvslistaprecio")) { return BaKapp.Movil.Tag.funciones.remoteMe.runUserSub(false, "funciones","fx_httjob_ws_sb_revisardocvslistaprecio", _ba, _me_, _idmaeedo, _vnta_dias_venci_coti);}
 RemoteObject _vxml = RemoteObject.createImmutable("");
 RemoteObject _poststring = RemoteObject.createImmutable("");
@@ -955,7 +955,7 @@ finally {
 		}}
 public static RemoteObject  _fx_httjob_ws_sb_traer_concepto_json(RemoteObject _ba,RemoteObject _me_,RemoteObject _concepto,RemoteObject _empresa,RemoteObject _sucursal,RemoteObject _bodega,RemoteObject _lista,RemoteObject _koen) throws Exception{
 try {
-		Debug.PushSubsStack("Fx_HttJob_Ws_Sb_Traer_Concepto_Json (funciones) ","funciones",23,_ba,funciones.mostCurrent,137);
+		Debug.PushSubsStack("Fx_HttJob_Ws_Sb_Traer_Concepto_Json (funciones) ","funciones",5,_ba,funciones.mostCurrent,137);
 if (RapidSub.canDelegate("fx_httjob_ws_sb_traer_concepto_json")) { return BaKapp.Movil.Tag.funciones.remoteMe.runUserSub(false, "funciones","fx_httjob_ws_sb_traer_concepto_json", _ba, _me_, _concepto, _empresa, _sucursal, _bodega, _lista, _koen);}
 RemoteObject _vxml = RemoteObject.createImmutable("");
 RemoteObject _poststring = RemoteObject.createImmutable("");
@@ -1006,7 +1006,7 @@ finally {
 		}}
 public static RemoteObject  _fx_httjob_ws_sb_traer_descuento_global_x_cliente(RemoteObject _ba,RemoteObject _me_,RemoteObject _koen,RemoteObject _suen) throws Exception{
 try {
-		Debug.PushSubsStack("Fx_HttJob_Ws_Sb_Traer_Descuento_Global_X_Cliente (funciones) ","funciones",23,_ba,funciones.mostCurrent,515);
+		Debug.PushSubsStack("Fx_HttJob_Ws_Sb_Traer_Descuento_Global_X_Cliente (funciones) ","funciones",5,_ba,funciones.mostCurrent,515);
 if (RapidSub.canDelegate("fx_httjob_ws_sb_traer_descuento_global_x_cliente")) { return BaKapp.Movil.Tag.funciones.remoteMe.runUserSub(false, "funciones","fx_httjob_ws_sb_traer_descuento_global_x_cliente", _ba, _me_, _koen, _suen);}
 RemoteObject _vxml = RemoteObject.createImmutable("");
 RemoteObject _poststring = RemoteObject.createImmutable("");
@@ -1053,7 +1053,7 @@ finally {
 		}}
 public static RemoteObject  _fx_httjob_ws_sb_traer_descuentos_seteados_desde_lista(RemoteObject _ba,RemoteObject _me_,RemoteObject _empresa,RemoteObject _sucursal,RemoteObject _codigo,RemoteObject _codlista,RemoteObject _prct,RemoteObject _tict,RemoteObject _poriva,RemoteObject _porila,RemoteObject _koen,RemoteObject _chkvaloresneto) throws Exception{
 try {
-		Debug.PushSubsStack("Fx_HttJob_Ws_Sb_Traer_Descuentos_Seteados_Desde_Lista (funciones) ","funciones",23,_ba,funciones.mostCurrent,256);
+		Debug.PushSubsStack("Fx_HttJob_Ws_Sb_Traer_Descuentos_Seteados_Desde_Lista (funciones) ","funciones",5,_ba,funciones.mostCurrent,256);
 if (RapidSub.canDelegate("fx_httjob_ws_sb_traer_descuentos_seteados_desde_lista")) { return BaKapp.Movil.Tag.funciones.remoteMe.runUserSub(false, "funciones","fx_httjob_ws_sb_traer_descuentos_seteados_desde_lista", _ba, _me_, _empresa, _sucursal, _codigo, _codlista, _prct, _tict, _poriva, _porila, _koen, _chkvaloresneto);}
 RemoteObject _vprct = RemoteObject.createImmutable("");
 RemoteObject _vchkvaloresneto = RemoteObject.createImmutable("");
@@ -1136,7 +1136,7 @@ finally {
 		}}
 public static RemoteObject  _fx_httjob_ws_sb_traer_documento(RemoteObject _ba,RemoteObject _me_,RemoteObject _tido,RemoteObject _nudo) throws Exception{
 try {
-		Debug.PushSubsStack("Fx_HttJob_Ws_Sb_Traer_Documento (funciones) ","funciones",23,_ba,funciones.mostCurrent,595);
+		Debug.PushSubsStack("Fx_HttJob_Ws_Sb_Traer_Documento (funciones) ","funciones",5,_ba,funciones.mostCurrent,595);
 if (RapidSub.canDelegate("fx_httjob_ws_sb_traer_documento")) { return BaKapp.Movil.Tag.funciones.remoteMe.runUserSub(false, "funciones","fx_httjob_ws_sb_traer_documento", _ba, _me_, _tido, _nudo);}
 RemoteObject _vxml = RemoteObject.createImmutable("");
 RemoteObject _poststring = RemoteObject.createImmutable("");
@@ -1183,7 +1183,7 @@ finally {
 		}}
 public static RemoteObject  _fx_httjob_ws_sb_traer_documento2(RemoteObject _ba,RemoteObject _me_,RemoteObject _idmaeedo) throws Exception{
 try {
-		Debug.PushSubsStack("Fx_HttJob_Ws_Sb_Traer_Documento2 (funciones) ","funciones",23,_ba,funciones.mostCurrent,620);
+		Debug.PushSubsStack("Fx_HttJob_Ws_Sb_Traer_Documento2 (funciones) ","funciones",5,_ba,funciones.mostCurrent,620);
 if (RapidSub.canDelegate("fx_httjob_ws_sb_traer_documento2")) { return BaKapp.Movil.Tag.funciones.remoteMe.runUserSub(false, "funciones","fx_httjob_ws_sb_traer_documento2", _ba, _me_, _idmaeedo);}
 RemoteObject _vxml = RemoteObject.createImmutable("");
 RemoteObject _poststring = RemoteObject.createImmutable("");
@@ -1229,7 +1229,7 @@ finally {
 		}}
 public static RemoteObject  _fx_httjob_ws_sb_traer_entidad_json(RemoteObject _ba,RemoteObject _me_,RemoteObject _koen,RemoteObject _suen) throws Exception{
 try {
-		Debug.PushSubsStack("Fx_HttJob_Ws_Sb_Traer_Entidad_Json (funciones) ","funciones",23,_ba,funciones.mostCurrent,193);
+		Debug.PushSubsStack("Fx_HttJob_Ws_Sb_Traer_Entidad_Json (funciones) ","funciones",5,_ba,funciones.mostCurrent,193);
 if (RapidSub.canDelegate("fx_httjob_ws_sb_traer_entidad_json")) { return BaKapp.Movil.Tag.funciones.remoteMe.runUserSub(false, "funciones","fx_httjob_ws_sb_traer_entidad_json", _ba, _me_, _koen, _suen);}
 RemoteObject _vxml = RemoteObject.createImmutable("");
 RemoteObject _poststring = RemoteObject.createImmutable("");
@@ -1276,7 +1276,7 @@ finally {
 		}}
 public static RemoteObject  _fx_httjob_ws_sb_traer_productos_json(RemoteObject _ba,RemoteObject _me_,RemoteObject _codigo,RemoteObject _empresa,RemoteObject _sucursal,RemoteObject _bodega,RemoteObject _lista,RemoteObject _untrans,RemoteObject _koen) throws Exception{
 try {
-		Debug.PushSubsStack("Fx_HttJob_Ws_Sb_Traer_Productos_Json (funciones) ","funciones",23,_ba,funciones.mostCurrent,102);
+		Debug.PushSubsStack("Fx_HttJob_Ws_Sb_Traer_Productos_Json (funciones) ","funciones",5,_ba,funciones.mostCurrent,102);
 if (RapidSub.canDelegate("fx_httjob_ws_sb_traer_productos_json")) { return BaKapp.Movil.Tag.funciones.remoteMe.runUserSub(false, "funciones","fx_httjob_ws_sb_traer_productos_json", _ba, _me_, _codigo, _empresa, _sucursal, _bodega, _lista, _untrans, _koen);}
 RemoteObject _vxml = RemoteObject.createImmutable("");
 RemoteObject _poststring = RemoteObject.createImmutable("");
@@ -1328,7 +1328,7 @@ finally {
 		}}
 public static RemoteObject  _fx_httjob_ws_sb_usar_clave_docdespsimple_poswii(RemoteObject _ba,RemoteObject _me_,RemoteObject _clave,RemoteObject _koen,RemoteObject _eliminar) throws Exception{
 try {
-		Debug.PushSubsStack("Fx_HttJob_Ws_Sb_Usar_Clave_DocDespSimple_Poswii (funciones) ","funciones",23,_ba,funciones.mostCurrent,717);
+		Debug.PushSubsStack("Fx_HttJob_Ws_Sb_Usar_Clave_DocDespSimple_Poswii (funciones) ","funciones",5,_ba,funciones.mostCurrent,717);
 if (RapidSub.canDelegate("fx_httjob_ws_sb_usar_clave_docdespsimple_poswii")) { return BaKapp.Movil.Tag.funciones.remoteMe.runUserSub(false, "funciones","fx_httjob_ws_sb_usar_clave_docdespsimple_poswii", _ba, _me_, _clave, _koen, _eliminar);}
 RemoteObject _vxml = RemoteObject.createImmutable("");
 RemoteObject _poststring = RemoteObject.createImmutable("");
@@ -1376,7 +1376,7 @@ finally {
 		}}
 public static RemoteObject  _fx_httjob_ws_sb_usar_dscto_poswii(RemoteObject _ba,RemoteObject _me_,RemoteObject _clave,RemoteObject _kofu,RemoteObject _eliminar) throws Exception{
 try {
-		Debug.PushSubsStack("Fx_HttJob_Ws_Sb_Usar_Dscto_Poswii (funciones) ","funciones",23,_ba,funciones.mostCurrent,491);
+		Debug.PushSubsStack("Fx_HttJob_Ws_Sb_Usar_Dscto_Poswii (funciones) ","funciones",5,_ba,funciones.mostCurrent,491);
 if (RapidSub.canDelegate("fx_httjob_ws_sb_usar_dscto_poswii")) { return BaKapp.Movil.Tag.funciones.remoteMe.runUserSub(false, "funciones","fx_httjob_ws_sb_usar_dscto_poswii", _ba, _me_, _clave, _kofu, _eliminar);}
 RemoteObject _vxml = RemoteObject.createImmutable("");
 RemoteObject _poststring = RemoteObject.createImmutable("");
@@ -1424,7 +1424,7 @@ finally {
 		}}
 public static RemoteObject  _fx_isemail(RemoteObject _ba,RemoteObject _emailaddress) throws Exception{
 try {
-		Debug.PushSubsStack("Fx_IsEmail (funciones) ","funciones",23,_ba,funciones.mostCurrent,929);
+		Debug.PushSubsStack("Fx_IsEmail (funciones) ","funciones",5,_ba,funciones.mostCurrent,929);
 if (RapidSub.canDelegate("fx_isemail")) { return BaKapp.Movil.Tag.funciones.remoteMe.runUserSub(false, "funciones","fx_isemail", _ba, _emailaddress);}
 RemoteObject _matchemail = RemoteObject.declareNull("anywheresoftware.b4a.keywords.Regex.MatcherWrapper");
 ;
@@ -1440,14 +1440,14 @@ Debug.ShouldStop(4);
 if (RemoteObject.solveBoolean("=",_matchemail.runMethod(true,"Find"),funciones.mostCurrent.__c.getField(true,"True"))) { 
  BA.debugLineNum = 932;BA.debugLine="Log(MatchEmail.Match)";
 Debug.ShouldStop(8);
-funciones.mostCurrent.__c.runVoidMethod ("LogImpl","625034755",_matchemail.runMethod(true,"getMatch"),0);
+funciones.mostCurrent.__c.runVoidMethod ("LogImpl","28716291",_matchemail.runMethod(true,"getMatch"),0);
  BA.debugLineNum = 933;BA.debugLine="Return True";
 Debug.ShouldStop(16);
 if (true) return funciones.mostCurrent.__c.getField(true,"True");
  }else {
  BA.debugLineNum = 935;BA.debugLine="Log(\"Oops, Por favor vuelve a comprobar tu direc";
 Debug.ShouldStop(64);
-funciones.mostCurrent.__c.runVoidMethod ("LogImpl","625034758",RemoteObject.createImmutable("Oops, Por favor vuelve a comprobar tu dirección de email"),0);
+funciones.mostCurrent.__c.runVoidMethod ("LogImpl","28716294",RemoteObject.createImmutable("Oops, Por favor vuelve a comprobar tu dirección de email"),0);
  BA.debugLineNum = 936;BA.debugLine="Return False";
 Debug.ShouldStop(128);
 if (true) return funciones.mostCurrent.__c.getField(true,"False");
@@ -1464,7 +1464,7 @@ finally {
 		}}
 public static RemoteObject  _fx_nulopornro(RemoteObject _ba,RemoteObject _value,RemoteObject _valorxdefecto) throws Exception{
 try {
-		Debug.PushSubsStack("Fx_NuloPorNro (funciones) ","funciones",23,_ba,funciones.mostCurrent,851);
+		Debug.PushSubsStack("Fx_NuloPorNro (funciones) ","funciones",5,_ba,funciones.mostCurrent,851);
 if (RapidSub.canDelegate("fx_nulopornro")) { return BaKapp.Movil.Tag.funciones.remoteMe.runUserSub(false, "funciones","fx_nulopornro", _ba, _value, _valorxdefecto);}
 ;
 Debug.locals.put("value", _value);
@@ -1493,7 +1493,7 @@ finally {
 		}}
 public static RemoteObject  _fx_nuloporstr(RemoteObject _ba,RemoteObject _value,RemoteObject _valorxdefecto) throws Exception{
 try {
-		Debug.PushSubsStack("Fx_NuloPorStr (funciones) ","funciones",23,_ba,funciones.mostCurrent,861);
+		Debug.PushSubsStack("Fx_NuloPorStr (funciones) ","funciones",5,_ba,funciones.mostCurrent,861);
 if (RapidSub.canDelegate("fx_nuloporstr")) { return BaKapp.Movil.Tag.funciones.remoteMe.runUserSub(false, "funciones","fx_nuloporstr", _ba, _value, _valorxdefecto);}
 ;
 Debug.locals.put("value", _value);
@@ -1522,7 +1522,7 @@ finally {
 		}}
 public static RemoteObject  _fx_solo_enteros(RemoteObject _ba,RemoteObject _cantidad,RemoteObject _divisible) throws Exception{
 try {
-		Debug.PushSubsStack("Fx_Solo_Enteros (funciones) ","funciones",23,_ba,funciones.mostCurrent,823);
+		Debug.PushSubsStack("Fx_Solo_Enteros (funciones) ","funciones",5,_ba,funciones.mostCurrent,823);
 if (RapidSub.canDelegate("fx_solo_enteros")) { return BaKapp.Movil.Tag.funciones.remoteMe.runUserSub(false, "funciones","fx_solo_enteros", _ba, _cantidad, _divisible);}
 RemoteObject _cant_tiene_decimales = RemoteObject.createImmutable(false);
 ;
@@ -1578,7 +1578,7 @@ finally {
 		}}
 public static RemoteObject  _fx_traeclaverd(RemoteObject _ba,RemoteObject _vclave) throws Exception{
 try {
-		Debug.PushSubsStack("Fx_TraeClaveRD (funciones) ","funciones",23,_ba,funciones.mostCurrent,741);
+		Debug.PushSubsStack("Fx_TraeClaveRD (funciones) ","funciones",5,_ba,funciones.mostCurrent,741);
 if (RapidSub.canDelegate("fx_traeclaverd")) { return BaKapp.Movil.Tag.funciones.remoteMe.runUserSub(false, "funciones","fx_traeclaverd", _ba, _vclave);}
 RemoteObject _valorascii = RemoteObject.createImmutable(0);
 RemoteObject _passencriptado = RemoteObject.createImmutable("");
@@ -1676,7 +1676,7 @@ finally {
 		}}
 public static RemoteObject  _fx_traer_iddispositivo(RemoteObject _ba) throws Exception{
 try {
-		Debug.PushSubsStack("Fx_Traer_IdDispositivo (funciones) ","funciones",23,_ba,funciones.mostCurrent,774);
+		Debug.PushSubsStack("Fx_Traer_IdDispositivo (funciones) ","funciones",5,_ba,funciones.mostCurrent,774);
 if (RapidSub.canDelegate("fx_traer_iddispositivo")) { return BaKapp.Movil.Tag.funciones.remoteMe.runUserSub(false, "funciones","fx_traer_iddispositivo", _ba);}
 RemoteObject _p = RemoteObject.declareNull("anywheresoftware.b4a.phone.Phone");
 RemoteObject _id = RemoteObject.createImmutable("");
@@ -1730,7 +1730,7 @@ finally {
 		}}
 public static RemoteObject  _isnull(RemoteObject _ba,RemoteObject _o) throws Exception{
 try {
-		Debug.PushSubsStack("IsNull (funciones) ","funciones",23,_ba,funciones.mostCurrent,871);
+		Debug.PushSubsStack("IsNull (funciones) ","funciones",5,_ba,funciones.mostCurrent,871);
 if (RapidSub.canDelegate("isnull")) { return BaKapp.Movil.Tag.funciones.remoteMe.runUserSub(false, "funciones","isnull", _ba, _o);}
 ;
 Debug.locals.put("O", _o);
@@ -1751,7 +1751,7 @@ finally {
 		}}
 public static RemoteObject  _left(RemoteObject _ba,RemoteObject _text,RemoteObject _length) throws Exception{
 try {
-		Debug.PushSubsStack("Left (funciones) ","funciones",23,_ba,funciones.mostCurrent,8);
+		Debug.PushSubsStack("Left (funciones) ","funciones",5,_ba,funciones.mostCurrent,8);
 if (RapidSub.canDelegate("left")) { return BaKapp.Movil.Tag.funciones.remoteMe.runUserSub(false, "funciones","left", _ba, _text, _length);}
 ;
 Debug.locals.put("Text", _text);
@@ -1777,7 +1777,7 @@ finally {
 		}}
 public static RemoteObject  _ltrim(RemoteObject _ba,RemoteObject _s) throws Exception{
 try {
-		Debug.PushSubsStack("LTrim (funciones) ","funciones",23,_ba,funciones.mostCurrent,24);
+		Debug.PushSubsStack("LTrim (funciones) ","funciones",5,_ba,funciones.mostCurrent,24);
 if (RapidSub.canDelegate("ltrim")) { return BaKapp.Movil.Tag.funciones.remoteMe.runUserSub(false, "funciones","ltrim", _ba, _s);}
 RemoteObject _m = RemoteObject.declareNull("anywheresoftware.b4a.keywords.Regex.MatcherWrapper");
 ;
@@ -1811,7 +1811,7 @@ finally {
 		}}
 public static RemoteObject  _mid(RemoteObject _ba,RemoteObject _text,RemoteObject _start,RemoteObject _length) throws Exception{
 try {
-		Debug.PushSubsStack("Mid (funciones) ","funciones",23,_ba,funciones.mostCurrent,18);
+		Debug.PushSubsStack("Mid (funciones) ","funciones",5,_ba,funciones.mostCurrent,18);
 if (RapidSub.canDelegate("mid")) { return BaKapp.Movil.Tag.funciones.remoteMe.runUserSub(false, "funciones","mid", _ba, _text, _start, _length);}
 ;
 Debug.locals.put("Text", _text);
@@ -1839,7 +1839,7 @@ return RemoteObject.createImmutable("");
 }
 public static RemoteObject  _rellenar_derecha(RemoteObject _ba,RemoteObject _cadena,RemoteObject _cantcaracteres,RemoteObject _relleno) throws Exception{
 try {
-		Debug.PushSubsStack("Rellenar_Derecha (funciones) ","funciones",23,_ba,funciones.mostCurrent,875);
+		Debug.PushSubsStack("Rellenar_Derecha (funciones) ","funciones",5,_ba,funciones.mostCurrent,875);
 if (RapidSub.canDelegate("rellenar_derecha")) { return BaKapp.Movil.Tag.funciones.remoteMe.runUserSub(false, "funciones","rellenar_derecha", _ba, _cadena, _cantcaracteres, _relleno);}
 RemoteObject _i = RemoteObject.createImmutable(0);
 RemoteObject _nro = RemoteObject.createImmutable("");
@@ -1895,7 +1895,7 @@ finally {
 		}}
 public static RemoteObject  _rellenar_izquierda(RemoteObject _ba,RemoteObject _cadena,RemoteObject _cantcaracteres,RemoteObject _relleno) throws Exception{
 try {
-		Debug.PushSubsStack("Rellenar_Izquierda (funciones) ","funciones",23,_ba,funciones.mostCurrent,893);
+		Debug.PushSubsStack("Rellenar_Izquierda (funciones) ","funciones",5,_ba,funciones.mostCurrent,893);
 if (RapidSub.canDelegate("rellenar_izquierda")) { return BaKapp.Movil.Tag.funciones.remoteMe.runUserSub(false, "funciones","rellenar_izquierda", _ba, _cadena, _cantcaracteres, _relleno);}
 RemoteObject _i = RemoteObject.createImmutable(0);
 RemoteObject _nro = RemoteObject.createImmutable("");
@@ -1951,7 +1951,7 @@ finally {
 		}}
 public static RemoteObject  _right(RemoteObject _ba,RemoteObject _text,RemoteObject _length) throws Exception{
 try {
-		Debug.PushSubsStack("Right (funciones) ","funciones",23,_ba,funciones.mostCurrent,13);
+		Debug.PushSubsStack("Right (funciones) ","funciones",5,_ba,funciones.mostCurrent,13);
 if (RapidSub.canDelegate("right")) { return BaKapp.Movil.Tag.funciones.remoteMe.runUserSub(false, "funciones","right", _ba, _text, _length);}
 ;
 Debug.locals.put("Text", _text);
@@ -1977,7 +1977,7 @@ finally {
 		}}
 public static RemoteObject  _rtrim(RemoteObject _ba,RemoteObject _s) throws Exception{
 try {
-		Debug.PushSubsStack("RTrim (funciones) ","funciones",23,_ba,funciones.mostCurrent,35);
+		Debug.PushSubsStack("RTrim (funciones) ","funciones",5,_ba,funciones.mostCurrent,35);
 if (RapidSub.canDelegate("rtrim")) { return BaKapp.Movil.Tag.funciones.remoteMe.runUserSub(false, "funciones","rtrim", _ba, _s);}
 RemoteObject _m = RemoteObject.declareNull("anywheresoftware.b4a.keywords.Regex.MatcherWrapper");
 ;
@@ -2011,7 +2011,7 @@ finally {
 		}}
 public static RemoteObject  _rutdigito(RemoteObject _ba,RemoteObject _numero) throws Exception{
 try {
-		Debug.PushSubsStack("RutDigito (funciones) ","funciones",23,_ba,funciones.mostCurrent,940);
+		Debug.PushSubsStack("RutDigito (funciones) ","funciones",5,_ba,funciones.mostCurrent,940);
 if (RapidSub.canDelegate("rutdigito")) { return BaKapp.Movil.Tag.funciones.remoteMe.runUserSub(false, "funciones","rutdigito", _ba, _numero);}
 RemoteObject _cuenta = RemoteObject.createImmutable(0);
 RemoteObject _suma = RemoteObject.createImmutable(0);
@@ -2100,7 +2100,7 @@ finally {
 		}}
 public static RemoteObject  _sb_borrar_todos_registros_de_tabla(RemoteObject _ba,RemoteObject _tabla,RemoteObject _campo) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Borrar_Todos_Registros_De_Tabla (funciones) ","funciones",23,_ba,funciones.mostCurrent,968);
+		Debug.PushSubsStack("Sb_Borrar_Todos_Registros_De_Tabla (funciones) ","funciones",5,_ba,funciones.mostCurrent,968);
 if (RapidSub.canDelegate("sb_borrar_todos_registros_de_tabla")) { return BaKapp.Movil.Tag.funciones.remoteMe.runUserSub(false, "funciones","sb_borrar_todos_registros_de_tabla", _ba, _tabla, _campo);}
 RemoteObject _consulta_sql = RemoteObject.createImmutable("");
 RemoteObject _table = RemoteObject.declareNull("anywheresoftware.b4a.objects.collections.List");
@@ -2168,7 +2168,7 @@ finally {
 		}}
 public static RemoteObject  _sb_borrartodoslosregistrosdelabasededatos(RemoteObject _ba) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_BorrarTodosLosRegistrosDeLaBaseDeDatos (funciones) ","funciones",23,_ba,funciones.mostCurrent,990);
+		Debug.PushSubsStack("Sb_BorrarTodosLosRegistrosDeLaBaseDeDatos (funciones) ","funciones",5,_ba,funciones.mostCurrent,990);
 if (RapidSub.canDelegate("sb_borrartodoslosregistrosdelabasededatos")) { return BaKapp.Movil.Tag.funciones.remoteMe.runUserSub(false, "funciones","sb_borrartodoslosregistrosdelabasededatos", _ba);}
 RemoteObject _consulta_sql = RemoteObject.createImmutable("");
 ;
@@ -2225,7 +2225,7 @@ finally {
 		}}
 public static RemoteObject  _split(RemoteObject _ba,RemoteObject _text,RemoteObject _delimiter) throws Exception{
 try {
-		Debug.PushSubsStack("Split (funciones) ","funciones",23,_ba,funciones.mostCurrent,44);
+		Debug.PushSubsStack("Split (funciones) ","funciones",5,_ba,funciones.mostCurrent,44);
 if (RapidSub.canDelegate("split")) { return BaKapp.Movil.Tag.funciones.remoteMe.runUserSub(false, "funciones","split", _ba, _text, _delimiter);}
 ;
 Debug.locals.put("Text", _text);

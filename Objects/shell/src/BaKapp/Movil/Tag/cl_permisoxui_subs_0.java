@@ -8,7 +8,7 @@ public class cl_permisoxui_subs_0 {
 
 public static RemoteObject  _base_resize(RemoteObject __ref,RemoteObject _width,RemoteObject _height) throws Exception{
 try {
-		Debug.PushSubsStack("Base_Resize (cl_permisoxui) ","cl_permisoxui",5,__ref.getField(false, "ba"),__ref,35);
+		Debug.PushSubsStack("Base_Resize (cl_permisoxui) ","cl_permisoxui",7,__ref.getField(false, "ba"),__ref,35);
 if (RapidSub.canDelegate("base_resize")) { return __ref.runUserSub(false, "cl_permisoxui","base_resize", __ref, _width, _height);}
 Debug.locals.put("Width", _width);
 Debug.locals.put("Height", _height);
@@ -61,7 +61,7 @@ return RemoteObject.createImmutable("");
 }
 public static RemoteObject  _designercreateview(RemoteObject __ref,RemoteObject _base,RemoteObject _lbl,RemoteObject _props) throws Exception{
 try {
-		Debug.PushSubsStack("DesignerCreateView (cl_permisoxui) ","cl_permisoxui",5,__ref.getField(false, "ba"),__ref,28);
+		Debug.PushSubsStack("DesignerCreateView (cl_permisoxui) ","cl_permisoxui",7,__ref.getField(false, "ba"),__ref,28);
 if (RapidSub.canDelegate("designercreateview")) { return __ref.runUserSub(false, "cl_permisoxui","designercreateview", __ref, _base, _lbl, _props);}
 Debug.locals.put("Base", _base);
 Debug.locals.put("Lbl", _lbl);
@@ -89,7 +89,7 @@ finally {
 		}}
 public static RemoteObject  _fx_rowtraerusuario(RemoteObject __ref,RemoteObject _kofu) throws Exception{
 try {
-		Debug.PushSubsStack("Fx_RowTraerUsuario (cl_permisoxui) ","cl_permisoxui",5,__ref.getField(false, "ba"),__ref,128);
+		Debug.PushSubsStack("Fx_RowTraerUsuario (cl_permisoxui) ","cl_permisoxui",7,__ref.getField(false, "ba"),__ref,128);
 if (RapidSub.canDelegate("fx_rowtraerusuario")) { return __ref.runUserSub(false, "cl_permisoxui","fx_rowtraerusuario", __ref, _kofu);}
 ResumableSub_Fx_RowTraerUsuario rsub = new ResumableSub_Fx_RowTraerUsuario(null,__ref,_kofu);
 rsub.remoteResumableSub = anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSubForFilter();
@@ -119,7 +119,7 @@ RemoteObject _vjson = RemoteObject.createImmutable("");
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Fx_RowTraerUsuario (cl_permisoxui) ","cl_permisoxui",5,__ref.getField(false, "ba"),__ref,128);
+		Debug.PushSubsStack("Fx_RowTraerUsuario (cl_permisoxui) ","cl_permisoxui",7,__ref.getField(false, "ba"),__ref,128);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -233,7 +233,7 @@ public static void  _jobdone(RemoteObject __ref,RemoteObject _js) throws Excepti
 }
 public static RemoteObject  _fx_validarpermisousuario(RemoteObject __ref,RemoteObject _codpermiso) throws Exception{
 try {
-		Debug.PushSubsStack("Fx_ValidarPermisoUsuario (cl_permisoxui) ","cl_permisoxui",5,__ref.getField(false, "ba"),__ref,54);
+		Debug.PushSubsStack("Fx_ValidarPermisoUsuario (cl_permisoxui) ","cl_permisoxui",7,__ref.getField(false, "ba"),__ref,54);
 if (RapidSub.canDelegate("fx_validarpermisousuario")) { return __ref.runUserSub(false, "cl_permisoxui","fx_validarpermisousuario", __ref, _codpermiso);}
 ResumableSub_Fx_ValidarPermisoUsuario rsub = new ResumableSub_Fx_ValidarPermisoUsuario(null,__ref,_codpermiso);
 rsub.remoteResumableSub = anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSubForFilter();
@@ -269,7 +269,7 @@ RemoteObject _rst = RemoteObject.createImmutable(false);
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Fx_ValidarPermisoUsuario (cl_permisoxui) ","cl_permisoxui",5,__ref.getField(false, "ba"),__ref,54);
+		Debug.PushSubsStack("Fx_ValidarPermisoUsuario (cl_permisoxui) ","cl_permisoxui",7,__ref.getField(false, "ba"),__ref,54);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -571,7 +571,7 @@ public static void  _msgbox_result(RemoteObject __ref,RemoteObject _result) thro
 }
 public static RemoteObject  _initialize(RemoteObject __ref,RemoteObject _ba,RemoteObject _callback,RemoteObject _eventname) throws Exception{
 try {
-		Debug.PushSubsStack("Initialize (cl_permisoxui) ","cl_permisoxui",5,__ref.getField(false, "ba"),__ref,22);
+		Debug.PushSubsStack("Initialize (cl_permisoxui) ","cl_permisoxui",7,__ref.getField(false, "ba"),__ref,22);
 if (RapidSub.canDelegate("initialize")) { return __ref.runUserSub(false, "cl_permisoxui","initialize", __ref, _ba, _callback, _eventname);}
 __ref.runVoidMethodAndSync("innerInitializeHelper", _ba);
 Debug.locals.put("ba", _ba);
@@ -597,7 +597,7 @@ finally {
 		}}
 public static RemoteObject  _sb_revisarpermisousuario(RemoteObject __ref,RemoteObject _codpermiso,RemoteObject _vclave) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_RevisarPermisoUsuario (cl_permisoxui) ","cl_permisoxui",5,__ref.getField(false, "ba"),__ref,153);
+		Debug.PushSubsStack("Sb_RevisarPermisoUsuario (cl_permisoxui) ","cl_permisoxui",7,__ref.getField(false, "ba"),__ref,153);
 if (RapidSub.canDelegate("sb_revisarpermisousuario")) { return __ref.runUserSub(false, "cl_permisoxui","sb_revisarpermisousuario", __ref, _codpermiso, _vclave);}
 ResumableSub_Sb_RevisarPermisoUsuario rsub = new ResumableSub_Sb_RevisarPermisoUsuario(null,__ref,_codpermiso,_vclave);
 rsub.remoteResumableSub = anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSubForFilter();
@@ -630,7 +630,7 @@ RemoteObject _result2 = RemoteObject.createImmutable(false);
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_RevisarPermisoUsuario (cl_permisoxui) ","cl_permisoxui",5,__ref.getField(false, "ba"),__ref,153);
+		Debug.PushSubsStack("Sb_RevisarPermisoUsuario (cl_permisoxui) ","cl_permisoxui",7,__ref.getField(false, "ba"),__ref,153);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -682,7 +682,7 @@ Debug.ShouldStop(8);
 parent._consulta_sql = RemoteObject.concat(RemoteObject.createImmutable("Select Top 1 * From TABFU Where PWFU = '"),_vclave,RemoteObject.createImmutable("'"));__ref.setField("_consulta_sql",parent._consulta_sql);
  BA.debugLineNum = 165;BA.debugLine="Log(vClave)";
 Debug.ShouldStop(16);
-parent.__c.runVoidMethod ("LogImpl","65505036",_vclave,0);
+parent.__c.runVoidMethod ("LogImpl","29633804",_vclave,0);
  BA.debugLineNum = 167;BA.debugLine="ProgressDialogShow(\"Revisando permiso\")";
 Debug.ShouldStop(64);
 parent.__c.runVoidMethod ("ProgressDialogShow",__ref.getField(false, "ba"),(Object)(BA.ObjectToCharSequence(RemoteObject.createImmutable("Revisando permiso"))));
@@ -822,7 +822,7 @@ finally {
 }
 public static RemoteObject  _sb_traer_nombre_permiso(RemoteObject __ref,RemoteObject _codpermiso) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Traer_Nombre_Permiso (cl_permisoxui) ","cl_permisoxui",5,__ref.getField(false, "ba"),__ref,236);
+		Debug.PushSubsStack("Sb_Traer_Nombre_Permiso (cl_permisoxui) ","cl_permisoxui",7,__ref.getField(false, "ba"),__ref,236);
 if (RapidSub.canDelegate("sb_traer_nombre_permiso")) { return __ref.runUserSub(false, "cl_permisoxui","sb_traer_nombre_permiso", __ref, _codpermiso);}
 ResumableSub_Sb_Traer_Nombre_Permiso rsub = new ResumableSub_Sb_Traer_Nombre_Permiso(null,__ref,_codpermiso);
 rsub.remoteResumableSub = anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSubForFilter();
@@ -852,7 +852,7 @@ RemoteObject _vjson = RemoteObject.createImmutable("");
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Traer_Nombre_Permiso (cl_permisoxui) ","cl_permisoxui",5,__ref.getField(false, "ba"),__ref,236);
+		Debug.PushSubsStack("Sb_Traer_Nombre_Permiso (cl_permisoxui) ","cl_permisoxui",7,__ref.getField(false, "ba"),__ref,236);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -966,7 +966,7 @@ finally {
 }
 public static RemoteObject  _sb_validarpermisousuario(RemoteObject __ref,RemoteObject _codpermiso) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_ValidarPermisoUsuario (cl_permisoxui) ","cl_permisoxui",5,__ref.getField(false, "ba"),__ref,39);
+		Debug.PushSubsStack("Sb_ValidarPermisoUsuario (cl_permisoxui) ","cl_permisoxui",7,__ref.getField(false, "ba"),__ref,39);
 if (RapidSub.canDelegate("sb_validarpermisousuario")) { return __ref.runUserSub(false, "cl_permisoxui","sb_validarpermisousuario", __ref, _codpermiso);}
 ResumableSub_Sb_ValidarPermisoUsuario rsub = new ResumableSub_Sb_ValidarPermisoUsuario(null,__ref,_codpermiso);
 rsub.remoteResumableSub = anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSubForFilter();
@@ -994,7 +994,7 @@ RemoteObject _rst = RemoteObject.createImmutable(false);
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_ValidarPermisoUsuario (cl_permisoxui) ","cl_permisoxui",5,__ref.getField(false, "ba"),__ref,39);
+		Debug.PushSubsStack("Sb_ValidarPermisoUsuario (cl_permisoxui) ","cl_permisoxui",7,__ref.getField(false, "ba"),__ref,39);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -1084,7 +1084,7 @@ finally {
 }
 public static RemoteObject  _tienepermiso(RemoteObject __ref,RemoteObject _codpermiso,RemoteObject _codusuario) throws Exception{
 try {
-		Debug.PushSubsStack("TienePermiso (cl_permisoxui) ","cl_permisoxui",5,__ref.getField(false, "ba"),__ref,200);
+		Debug.PushSubsStack("TienePermiso (cl_permisoxui) ","cl_permisoxui",7,__ref.getField(false, "ba"),__ref,200);
 if (RapidSub.canDelegate("tienepermiso")) { return __ref.runUserSub(false, "cl_permisoxui","tienepermiso", __ref, _codpermiso, _codusuario);}
 ResumableSub_TienePermiso rsub = new ResumableSub_TienePermiso(null,__ref,_codpermiso,_codusuario);
 rsub.remoteResumableSub = anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSubForFilter();
@@ -1117,7 +1117,7 @@ RemoteObject _nokofu = RemoteObject.createImmutable("");
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("TienePermiso (cl_permisoxui) ","cl_permisoxui",5,__ref.getField(false, "ba"),__ref,200);
+		Debug.PushSubsStack("TienePermiso (cl_permisoxui) ","cl_permisoxui",7,__ref.getField(false, "ba"),__ref,200);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {

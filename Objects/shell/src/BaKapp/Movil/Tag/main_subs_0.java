@@ -154,7 +154,7 @@ _result = (RemoteObject) result.getArrayElement(true,RemoteObject.createImmutabl
 ;
  BA.debugLineNum = 117;BA.debugLine="Log(\"No existe el archivo ConexionWebService.txt";
 Debug.ShouldStop(1048576);
-parent.mostCurrent.__c.runVoidMethod ("LogImpl","6131136",RemoteObject.createImmutable("No existe el archivo ConexionWebService.txt"),0);
+parent.mostCurrent.__c.runVoidMethod ("LogImpl","2131136",RemoteObject.createImmutable("No existe el archivo ConexionWebService.txt"),0);
  if (true) break;
 
 case 9:
@@ -209,7 +209,7 @@ Debug.locals.put("line", _line);
 ;
  BA.debugLineNum = 125;BA.debugLine="Log(Variables.Global_Ip_WebService)";
 Debug.ShouldStop(268435456);
-parent.mostCurrent.__c.runVoidMethod ("LogImpl","6131144",parent.mostCurrent._variables._global_ip_webservice /*RemoteObject*/ ,0);
+parent.mostCurrent.__c.runVoidMethod ("LogImpl","2131144",parent.mostCurrent._variables._global_ip_webservice /*RemoteObject*/ ,0);
  if (true) break;
 
 case 14:
@@ -871,6 +871,7 @@ public static void initializeProcessGlobals() {
 buscar_entidad_subs_0._process_globals();
 buscar_productos_subs_0._process_globals();
 frm_impresion_subs_0._process_globals();
+funciones_subs_0._process_globals();
 conf_local_subs_0._process_globals();
 dbutils_subs_0._process_globals();
 frm_buscar_documento_subs_0._process_globals();
@@ -883,7 +884,6 @@ frm_menu_principal_subs_0._process_globals();
 frm_post_01_descuentos_subs_0._process_globals();
 frm_post_01_formulario_subs_0._process_globals();
 frm_post_01_producto_subs_0._process_globals();
-funciones_subs_0._process_globals();
 variables_subs_0._process_globals();
 httputils2service_subs_0._process_globals();
 xuiviewsutils_subs_0._process_globals();
@@ -891,12 +891,13 @@ main.myClass = BA.getDeviceClass ("BaKapp.Movil.Tag.main");
 buscar_entidad.myClass = BA.getDeviceClass ("BaKapp.Movil.Tag.buscar_entidad");
 buscar_productos.myClass = BA.getDeviceClass ("BaKapp.Movil.Tag.buscar_productos");
 frm_impresion.myClass = BA.getDeviceClass ("BaKapp.Movil.Tag.frm_impresion");
+conectar_conf.myClass = BA.getDeviceClass ("BaKapp.Movil.Tag.conectar_conf");
+funciones.myClass = BA.getDeviceClass ("BaKapp.Movil.Tag.funciones");
 cl_conf_local.myClass = BA.getDeviceClass ("BaKapp.Movil.Tag.cl_conf_local");
 cl_permisoxui.myClass = BA.getDeviceClass ("BaKapp.Movil.Tag.cl_permisoxui");
 cl_stxbodxprod.myClass = BA.getDeviceClass ("BaKapp.Movil.Tag.cl_stxbodxprod");
 clfunciones.myClass = BA.getDeviceClass ("BaKapp.Movil.Tag.clfunciones");
 clfunciones2.myClass = BA.getDeviceClass ("BaKapp.Movil.Tag.clfunciones2");
-conectar_conf.myClass = BA.getDeviceClass ("BaKapp.Movil.Tag.conectar_conf");
 conf_local.myClass = BA.getDeviceClass ("BaKapp.Movil.Tag.conf_local");
 crear_documento.myClass = BA.getDeviceClass ("BaKapp.Movil.Tag.crear_documento");
 dbutils.myClass = BA.getDeviceClass ("BaKapp.Movil.Tag.dbutils");
@@ -910,7 +911,6 @@ frm_menu_principal.myClass = BA.getDeviceClass ("BaKapp.Movil.Tag.frm_menu_princ
 frm_post_01_descuentos.myClass = BA.getDeviceClass ("BaKapp.Movil.Tag.frm_post_01_descuentos");
 frm_post_01_formulario.myClass = BA.getDeviceClass ("BaKapp.Movil.Tag.frm_post_01_formulario");
 frm_post_01_producto.myClass = BA.getDeviceClass ("BaKapp.Movil.Tag.frm_post_01_producto");
-funciones.myClass = BA.getDeviceClass ("BaKapp.Movil.Tag.funciones");
 mensajes.myClass = BA.getDeviceClass ("BaKapp.Movil.Tag.mensajes");
 producto.myClass = BA.getDeviceClass ("BaKapp.Movil.Tag.producto");
 tidonudo.myClass = BA.getDeviceClass ("BaKapp.Movil.Tag.tidonudo");
@@ -1244,7 +1244,7 @@ Debug.ShouldStop(64);
 parent.mostCurrent._consulta_sql = RemoteObject.concat(RemoteObject.createImmutable("Select Top 1 * From TABFU Where PWFU = '"),_vclave,RemoteObject.createImmutable("'"));
  BA.debugLineNum = 232;BA.debugLine="Log(vClave)";
 Debug.ShouldStop(128);
-parent.mostCurrent.__c.runVoidMethod ("LogImpl","6458760",_vclave,0);
+parent.mostCurrent.__c.runVoidMethod ("LogImpl","2458760",_vclave,0);
  BA.debugLineNum = 234;BA.debugLine="Dim Js As HttpJob = Funciones.Fx_HttJob_Ws_Sb_Get";
 Debug.ShouldStop(512);
 _js = parent.mostCurrent._funciones.runMethod(false,"_fx_httjob_ws_sb_getdataset_json" /*RemoteObject*/ ,main.mostCurrent.activityBA,(Object)(parent.mostCurrent._consulta_sql),(Object)(main.getObject()));Debug.locals.put("Js", _js);Debug.locals.put("Js", _js);
@@ -1452,7 +1452,7 @@ case 29:
 this.state = 30;
  BA.debugLineNum = 291;BA.debugLine="Log(Js.ErrorMessage)";
 Debug.ShouldStop(4);
-parent.mostCurrent.__c.runVoidMethod ("LogImpl","6458819",_js.getField(true,"_errormessage" /*RemoteObject*/ ),0);
+parent.mostCurrent.__c.runVoidMethod ("LogImpl","2458819",_js.getField(true,"_errormessage" /*RemoteObject*/ ),0);
  if (true) break;
 
 case 30:
@@ -1493,7 +1493,7 @@ this.state = 38;
 ;
  BA.debugLineNum = 306;BA.debugLine="Log(Variables.Global_BaseBk)";
 Debug.ShouldStop(131072);
-parent.mostCurrent.__c.runVoidMethod ("LogImpl","6458834",parent.mostCurrent._variables._global_basebk /*RemoteObject*/ ,0);
+parent.mostCurrent.__c.runVoidMethod ("LogImpl","2458834",parent.mostCurrent._variables._global_basebk /*RemoteObject*/ ,0);
  if (true) break;
 
 case 37:
@@ -1501,7 +1501,7 @@ case 37:
 this.state = 38;
  BA.debugLineNum = 311;BA.debugLine="Log(Js.ErrorMessage)";
 Debug.ShouldStop(4194304);
-parent.mostCurrent.__c.runVoidMethod ("LogImpl","6458839",_js.getField(true,"_errormessage" /*RemoteObject*/ ),0);
+parent.mostCurrent.__c.runVoidMethod ("LogImpl","2458839",_js.getField(true,"_errormessage" /*RemoteObject*/ ),0);
  if (true) break;
 
 case 38:

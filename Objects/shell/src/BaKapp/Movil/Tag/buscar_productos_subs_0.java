@@ -261,7 +261,7 @@ Debug.ShouldStop(512);
 _codigo = BA.ObjectToString(parent._fila.runMethod(false,"Get",(Object)((RemoteObject.createImmutable("Codigo")))));Debug.locals.put("Codigo", _codigo);Debug.locals.put("Codigo", _codigo);
  BA.debugLineNum = 267;BA.debugLine="Log(Codigo)";
 Debug.ShouldStop(1024);
-parent.mostCurrent.__c.runVoidMethod ("LogImpl","62097181",_codigo,0);
+parent.mostCurrent.__c.runVoidMethod ("LogImpl","22097181",_codigo,0);
  BA.debugLineNum = 268;BA.debugLine="Dim Descripcion As String = Fila.Get(\"Descripci";
 Debug.ShouldStop(2048);
 _descripcion = BA.ObjectToString(parent._fila.runMethod(false,"Get",(Object)((RemoteObject.createImmutable("Descripcion")))));Debug.locals.put("Descripcion", _descripcion);Debug.locals.put("Descripcion", _descripcion);
@@ -387,7 +387,7 @@ case 19:
 this.state = 20;
  BA.debugLineNum = 321;BA.debugLine="Log(Js.ErrorMessage)";
 Debug.ShouldStop(1);
-parent.mostCurrent.__c.runVoidMethod ("LogImpl","62097235",_js.getField(true,"_errormessage" /*RemoteObject*/ ),0);
+parent.mostCurrent.__c.runVoidMethod ("LogImpl","22097235",_js.getField(true,"_errormessage" /*RemoteObject*/ ),0);
  if (true) break;
 
 case 20:
@@ -568,7 +568,7 @@ Debug.ShouldStop(64);
 _codigo = BA.ObjectToString(parent._fila.runMethod(false,"Get",(Object)((RemoteObject.createImmutable("Codigo")))));Debug.locals.put("Codigo", _codigo);Debug.locals.put("Codigo", _codigo);
  BA.debugLineNum = 200;BA.debugLine="Log(Codigo)";
 Debug.ShouldStop(128);
-parent.mostCurrent.__c.runVoidMethod ("LogImpl","61966101",_codigo,0);
+parent.mostCurrent.__c.runVoidMethod ("LogImpl","21966101",_codigo,0);
  BA.debugLineNum = 201;BA.debugLine="Dim Descripcion As String = Fila.Get(\"Descripci";
 Debug.ShouldStop(256);
 _descripcion = BA.ObjectToString(parent._fila.runMethod(false,"Get",(Object)((RemoteObject.createImmutable("Descripcion")))));Debug.locals.put("Descripcion", _descripcion);Debug.locals.put("Descripcion", _descripcion);
@@ -646,7 +646,7 @@ case 15:
 this.state = 16;
  BA.debugLineNum = 229;BA.debugLine="Log(Js.ErrorMessage)";
 Debug.ShouldStop(16);
-parent.mostCurrent.__c.runVoidMethod ("LogImpl","61966130",_js.getField(true,"_errormessage" /*RemoteObject*/ ),0);
+parent.mostCurrent.__c.runVoidMethod ("LogImpl","21966130",_js.getField(true,"_errormessage" /*RemoteObject*/ ),0);
  if (true) break;
 
 case 16:
@@ -827,7 +827,7 @@ case 10:
 this.state = 11;
  BA.debugLineNum = 125;BA.debugLine="Log(vJson)";
 Debug.ShouldStop(268435456);
-parent.mostCurrent.__c.runVoidMethod ("LogImpl","61835053",_vjson,0);
+parent.mostCurrent.__c.runVoidMethod ("LogImpl","21835053",_vjson,0);
  BA.debugLineNum = 126;BA.debugLine="Dim parser As JSONParser";
 Debug.ShouldStop(536870912);
 _parser = RemoteObject.createNew ("anywheresoftware.b4a.objects.collections.JSONParser");Debug.locals.put("parser", _parser);
@@ -925,7 +925,7 @@ this.state = 17;
 ;
  BA.debugLineNum = 160;BA.debugLine="Log(CODIGO & \" - \" & DESCRIPCION)";
 Debug.ShouldStop(-2147483648);
-parent.mostCurrent.__c.runVoidMethod ("LogImpl","61835088",RemoteObject.concat(_codigo,RemoteObject.createImmutable(" - "),_descripcion),0);
+parent.mostCurrent.__c.runVoidMethod ("LogImpl","21835088",RemoteObject.concat(_codigo,RemoteObject.createImmutable(" - "),_descripcion),0);
  if (true) break;
 
 case 16:
