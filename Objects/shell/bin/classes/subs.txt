@@ -1,12 +1,12 @@
 BaKapp.Movil.Tag
 0
 38
+conectar_conf
 cl_conf_local
 cl_permisoxui
 cl_stxbodxprod
 clfunciones
 clfunciones2
-conectar_conf
 crear_documento
 mensajes
 producto
@@ -220,6 +220,10 @@ dbutils,updaterecord2,0,0,560,589
 
 
 ,escapefield
+dbutils,executememorytable,0,0,182,201
+
+
+
 dbutils,updaterecord,0,0,553,556
 
 
@@ -256,10 +260,6 @@ dbutils,executelist,0,0,334,342
 
 
 ,executememorytable
-dbutils,executememorytable,0,0,182,201
-
-
-
 dbutils,executelist2,0,0,328,331
 
 
@@ -328,22 +328,6 @@ funciones,fx_httjob_ws_sb_traer_productos_json,0,0,102,135
 variables,global_ip_webservice
 
 httpjob,initialize,httpjob,poststring,httpjob,getrequest,httpjob,postbytes,httpjob,addscheme
-funciones,fx_httjob_ws_sb_enviarcorreobakapp,0,0,566,593
-variables,global_basebk,variables,global_ip_webservice
-
-httpjob,initialize,httpjob,poststring,httpjob,getrequest,httpjob,postbytes,httpjob,addscheme
-funciones,fx_httjob_ws_sb_formatomodalidad,0,0,693,715
-variables,global_ip_webservice
-
-httpjob,initialize,httpjob,poststring,httpjob,getrequest,httpjob,postbytes,httpjob,addscheme
-funciones,fx_httjob_ws_sb_enviarimprimirbakapp,0,0,539,564
-variables,global_basebk,variables,global_ip_webservice
-
-httpjob,initialize,httpjob,poststring,httpjob,getrequest,httpjob,postbytes,httpjob,addscheme
-funciones,fx_isemail,0,0,929,938
-
-
-
 funciones,ltrim,0,0,24,31
 
 
@@ -352,23 +336,83 @@ funciones,fx_httjob_ws_sb_revcarpetatmp,0,0,334,353
 variables,global_ip_webservice
 
 httpjob,initialize,httpjob,poststring,httpjob,getrequest,httpjob,postbytes,httpjob,addscheme
-funciones,fx_solo_enteros,0,0,823,849
+funciones,cbool,0,0,48,51
 
 
 
-funciones,fx_httjob_ws_sb_traer_concepto_json,0,0,137,169
-variables,global_ip_webservice
+funciones,cdouble,0,0,53,55
 
-httpjob,initialize,httpjob,poststring,httpjob,getrequest,httpjob,postbytes,httpjob,addscheme
+
+
+funciones,fecha_formato,0,0,913,927
+
+
+,rellenar_izquierda
 funciones,rellenar_izquierda,0,0,893,909
 
 
 
+funciones,fx_dataset,0,0,57,64
+
+
+
+funciones,fx_httjob_ws_sb_actualizar_observaciones_documento,0,0,644,667
+variables,global_ip_webservice
+
+httpjob,initialize,httpjob,poststring,httpjob,getrequest,httpjob,postbytes,httpjob,addscheme
+funciones,fx_httjob_ws_sb_creadocumentojsonbakapp,0,0,355,381
+variables,global_row_estacionbk,variables,global_ip_webservice
+
+httpjob,initialize,httpjob,poststring,httpjob,getrequest,httpjob,postbytes,httpjob,addscheme
+funciones,fx_httjob_ws_sb_creadocumentojsonbakapp2,0,0,383,410
+variables,global_row_estacionbk,variables,global_ip_webservice
+
+httpjob,initialize,httpjob,poststring,httpjob,getrequest,httpjob,postbytes,httpjob,addscheme
+funciones,fx_httjob_ws_sb_editardocumentojsonbakapp,0,0,412,447
+variables,global_basebk,variables,global_ip_webservice
+
+httpjob,initialize,httpjob,poststring,httpjob,getrequest,httpjob,postbytes,httpjob,addscheme
+funciones,fx_httjob_ws_sb_editardocumentojsonbakapp2,0,0,449,489
+variables,global_row_estacionbk,variables,global_basebk,variables,global_ip_webservice
+
+httpjob,initialize,httpjob,poststring,httpjob,getrequest,httpjob,postbytes,httpjob,addscheme
+funciones,fx_httjob_ws_sb_enviarcorreobakapp,0,0,566,593
+variables,global_basebk,variables,global_ip_webservice
+
+httpjob,initialize,httpjob,poststring,httpjob,getrequest,httpjob,postbytes,httpjob,addscheme
+funciones,fx_httjob_ws_sb_enviarimprimirbakapp,0,0,539,564
+variables,global_basebk,variables,global_ip_webservice
+
+httpjob,initialize,httpjob,poststring,httpjob,getrequest,httpjob,postbytes,httpjob,addscheme
+funciones,fx_httjob_ws_sb_formatomodalidad,0,0,693,715
+variables,global_ip_webservice
+
+httpjob,initialize,httpjob,poststring,httpjob,getrequest,httpjob,postbytes,httpjob,addscheme
+funciones,fx_httjob_ws_sb_getdataset_sb_json_impbk,0,0,311,332
+variables,global_ip_webservice
+
+httpjob,initialize,httpjob,poststring,httpjob,getrequest,httpjob,postbytes,httpjob,addscheme
+funciones,fx_httjob_ws_sb_getmodalidad_gral,0,0,171,191
+variables,global_basebk,variables,global_ip_webservice
+
+httpjob,initialize,httpjob,poststring,httpjob,getrequest,httpjob,postbytes,httpjob,addscheme
+funciones,fx_httjob_ws_sb_revisar_stock_fila,0,0,218,254
+variables,global_ip_webservice
+
+httpjob,initialize,httpjob,poststring,httpjob,getrequest,httpjob,postbytes,httpjob,addscheme
 funciones,fx_httjob_ws_sb_revisardocvslistaprecio,0,0,669,691
 variables,global_ip_webservice
 
 httpjob,initialize,httpjob,poststring,httpjob,getrequest,httpjob,postbytes,httpjob,addscheme
-funciones,fx_httjob_ws_sb_actualizar_observaciones_documento,0,0,644,667
+funciones,fx_httjob_ws_sb_traer_concepto_json,0,0,137,169
+variables,global_ip_webservice
+
+httpjob,initialize,httpjob,poststring,httpjob,getrequest,httpjob,postbytes,httpjob,addscheme
+funciones,fx_httjob_ws_sb_traer_descuento_global_x_cliente,0,0,515,537
+variables,global_basebk,variables,global_ip_webservice
+
+httpjob,initialize,httpjob,poststring,httpjob,getrequest,httpjob,postbytes,httpjob,addscheme
+funciones,fx_httjob_ws_sb_traer_descuentos_seteados_desde_lista,0,0,256,309
 variables,global_ip_webservice
 
 httpjob,initialize,httpjob,poststring,httpjob,getrequest,httpjob,postbytes,httpjob,addscheme
@@ -380,18 +424,6 @@ funciones,fx_httjob_ws_sb_traer_documento2,0,0,620,642
 variables,global_basebk,variables,global_ip_webservice
 
 httpjob,initialize,httpjob,poststring,httpjob,getrequest,httpjob,postbytes,httpjob,addscheme
-funciones,sb_borrartodoslosregistrosdelabasededatos,0,0,990,1012
-variables,vsql
-
-
-funciones,fx_nulopornro,0,0,851,859
-
-
-,isnull
-funciones,sb_borrar_todos_registros_de_tabla,0,0,968,988
-variables,vsql
-
-dbutils,executememorytable
 funciones,fx_httjob_ws_sb_usar_clave_docdespsimple_poswii,0,0,717,739
 variables,global_ip_webservice
 
@@ -400,62 +432,14 @@ funciones,fx_httjob_ws_sb_usar_dscto_poswii,0,0,491,513
 variables,global_ip_webservice
 
 httpjob,initialize,httpjob,poststring,httpjob,getrequest,httpjob,postbytes,httpjob,addscheme
-funciones,cbool,0,0,48,51
+funciones,fx_isemail,0,0,929,938
 
 
 
-funciones,fx_httjob_ws_sb_traer_descuento_global_x_cliente,0,0,515,537
-variables,global_basebk,variables,global_ip_webservice
-
-httpjob,initialize,httpjob,poststring,httpjob,getrequest,httpjob,postbytes,httpjob,addscheme
-funciones,fx_httjob_ws_sb_editardocumentojsonbakapp2,0,0,449,489
-variables,global_row_estacionbk,variables,global_basebk,variables,global_ip_webservice
-
-httpjob,initialize,httpjob,poststring,httpjob,getrequest,httpjob,postbytes,httpjob,addscheme
-funciones,fx_httjob_ws_sb_getdataset_sb_json_impbk,0,0,311,332
-variables,global_ip_webservice
-
-httpjob,initialize,httpjob,poststring,httpjob,getrequest,httpjob,postbytes,httpjob,addscheme
-funciones,fx_httjob_ws_sb_creadocumentojsonbakapp2,0,0,383,410
-variables,global_row_estacionbk,variables,global_ip_webservice
-
-httpjob,initialize,httpjob,poststring,httpjob,getrequest,httpjob,postbytes,httpjob,addscheme
-funciones,fx_httjob_ws_sb_revisar_stock_fila,0,0,218,254
-variables,global_ip_webservice
-
-httpjob,initialize,httpjob,poststring,httpjob,getrequest,httpjob,postbytes,httpjob,addscheme
-funciones,fx_httjob_ws_sb_traer_descuentos_seteados_desde_lista,0,0,256,309
-variables,global_ip_webservice
-
-httpjob,initialize,httpjob,poststring,httpjob,getrequest,httpjob,postbytes,httpjob,addscheme
-funciones,cdouble,0,0,53,55
+funciones,fx_nulopornro,0,0,851,859
 
 
-
-funciones,rellenar_derecha,0,0,875,891
-
-
-
-funciones,fecha_formato,0,0,913,927
-
-
-,rellenar_izquierda
-funciones,fx_dataset,0,0,57,64
-
-
-
-funciones,fx_httjob_ws_sb_creadocumentojsonbakapp,0,0,355,381
-variables,global_row_estacionbk,variables,global_ip_webservice
-
-httpjob,initialize,httpjob,poststring,httpjob,getrequest,httpjob,postbytes,httpjob,addscheme
-funciones,fx_httjob_ws_sb_editardocumentojsonbakapp,0,0,412,447
-variables,global_basebk,variables,global_ip_webservice
-
-httpjob,initialize,httpjob,poststring,httpjob,getrequest,httpjob,postbytes,httpjob,addscheme
-funciones,fx_httjob_ws_sb_getmodalidad_gral,0,0,171,191
-variables,global_basebk,variables,global_ip_webservice
-
-httpjob,initialize,httpjob,poststring,httpjob,getrequest,httpjob,postbytes,httpjob,addscheme
+,isnull
 funciones,isnull,0,0,871,873
 
 
@@ -464,11 +448,19 @@ funciones,fx_nuloporstr,0,0,861,869
 
 
 ,isnull
+funciones,fx_solo_enteros,0,0,823,849
+
+
+
 funciones,left,0,0,8,11
 
 
 
 funciones,process_globals,0,1,3,6
+
+
+
+funciones,rellenar_derecha,0,0,875,891
 
 
 
@@ -478,6 +470,14 @@ funciones,right,0,0,13,16
 
 funciones,rtrim,0,0,35,42
 
+
+
+funciones,sb_borrar_todos_registros_de_tabla,0,0,968,988
+variables,vsql
+
+dbutils,executememorytable
+funciones,sb_borrartodoslosregistrosdelabasededatos,0,0,990,1012
+variables,vsql
 
 
 funciones,split,0,0,44,46
@@ -528,7 +528,7 @@ conectar_conf,fx_traer_usuario_por_defecto,0,0,75,104
 variables,global_row_usuario_activo,variables,global_ip_webservice,httputils2service,tempfolder
 variables,global_row_usuario_activo
 funciones,fx_httjob_ws_sb_getdataset_json,httpjob,getstring,funciones,fx_datarow,httpjob,initialize,httpjob,poststring,httpjob,getrequest,httpjob,postbytes,httpjob,addscheme,httpjob,getstring2,funciones,fx_dataset
-conectar_conf,sb_cargar_modedas,0,1,329,397
+conectar_conf,sb_cargar_modedas,0,0,329,397
 variables,global_row_moneda,variables,global_row_dolar,variables,global_ip_webservice,httputils2service,tempfolder
 variables,global_row_moneda,variables,global_row_dolar
 funciones,fx_httjob_ws_sb_getdataset_json,httpjob,getstring,funciones,fx_datarow,httpjob,initialize,httpjob,poststring,httpjob,getrequest,httpjob,postbytes,httpjob,addscheme,httpjob,getstring2,funciones,fx_dataset
@@ -972,143 +972,139 @@ mensajes,class_globals,0,0,1,18
 
 
 
-frm_impresion,activity_create,1,0,69,185
+frm_impresion,activity_create,1,0,67,187
 ,btn_buscar,,btn_buscarprod,,btn_cerrarbuscador,,btn_imprimir,,btn_limpiar,,btn_volver,,combo_impresion,,combo_tipobusqueda,,imageview1,,lbl_codigo,,lbl_desc,,lbl_precio,,listview1,,panel_buscador,,panelinfo,,panelvista,,spinner_cant,,txt_codigo,,dataprice,,datalist,,cantidad,,selectedstring,,etiquetas,frm_etiquetas,etiquetas,frm_etiquetas,default,,tip,,datos,,printerip,,stringprecio1,,printerport
 ,btn_buscar,,btn_buscarprod,,btn_cerrarbuscador,,btn_imprimir,,btn_limpiar,,btn_volver,,combo_impresion,,combo_tipobusqueda,,imageview1,,lbl_codigo,,lbl_desc,,lbl_precio,,listview1,,panel_buscador,,panelinfo,,panelvista,,spinner_cant,,txt_codigo,,cantidad,,selectedstring,,etiquetas,,tip,,datos,,printerip,,stringprecio1,,printerport
 b4xcombobox,setitems,,leerdatos,b4xcombobox,getsize,b4xcombobox,getitem,b4xcombobox,setselectedindex,,btn_buscar_click
-frm_impresion,leerdatos,0,0,207,223
+frm_impresion,leerdatos,0,0,212,228
 ,datos,,printerip,,stringprecio1,,printerport
 ,datos,,printerip,,stringprecio1,,printerport
 
-frm_impresion,btn_buscar_click,1,0,383,389
+frm_impresion,btn_buscar_click,1,0,396,402
 ,panel_buscador,,btn_buscar,,txt_codigo,,listview1
 
 
-frm_impresion,activity_keypress,0,0,224,250
+frm_impresion,activity_keypress,0,0,229,255
 ,ime1,,yabusco,,panel_buscador,,btn_buscar,,panelinfo,,panelvista
 
 ,btn_volver_click
-frm_impresion,btn_volver_click,0,0,988,998
+frm_impresion,btn_volver_click,0,0,1025,1035
 
 
 
-frm_impresion,activity_pause,0,0,279,281
+frm_impresion,activity_pause,0,0,285,287
 
 
 
-frm_impresion,activity_resume,0,0,275,277
+frm_impresion,activity_resume,0,0,281,283
 
 
 
-frm_impresion,addlinebreak,0,0,680,686
+frm_impresion,addlinebreak,0,0,716,722
 
 
 
-frm_impresion,b4xcombobox1_selectedindexchanged,0,0,494,496
+frm_impresion,b4xcombobox1_selectedindexchanged,0,0,520,522
 ,selectedstring,,b4xcombobox1
 ,selectedstring
 b4xcombobox,getitem
-frm_impresion,bsc,0,0,508,534
-variables,global_ip_webservice
+frm_impresion,bsc,0,1,534,564
+,selectedstring,,txt_codigo,variables,global_ip_webservice
 
 httpjob,initialize,httpjob,poststring,httpjob,getrequest,httpjob,postbytes,httpjob,addscheme
-frm_impresion,btn_buscarprod_click,0,0,391,400
+frm_impresion,btn_buscarprod_click,0,0,404,413
 ,txt_codigo,,ime1,,selectedstring,,datalist,,listview1,variables,gl_empresa,variables,gl_sucursal,variables,gl_bodega,variables,global_ip_webservice,httputils2service,tempfolder
 
-,buscar_x_comentario,funciones,fx_cadena_a_buscar_sql,funciones,fx_httjob_ws_sb_getdataset_json,httpjob,getstring,,parsejson,funciones,ltrim,funciones,mid,httpjob,initialize,httpjob,poststring,httpjob,getrequest,httpjob,postbytes,httpjob,addscheme,httpjob,getstring2
-frm_impresion,buscar_x_comentario,0,0,535,625
+,buscar_x_comentario,funciones,fx_cadena_a_buscar_sql,funciones,fx_httjob_ws_sb_getdataset_json,httpjob,getstring,,parse_products_json,funciones,ltrim,funciones,mid,httpjob,initialize,httpjob,poststring,httpjob,getrequest,httpjob,postbytes,httpjob,addscheme,httpjob,getstring2
+frm_impresion,buscar_x_comentario,0,0,565,661
 ,datalist,,listview1,variables,gl_empresa,variables,gl_sucursal,variables,gl_bodega,,selectedstring,variables,global_ip_webservice,httputils2service,tempfolder
 
-funciones,fx_cadena_a_buscar_sql,funciones,fx_httjob_ws_sb_getdataset_json,httpjob,getstring,,parsejson,funciones,ltrim,funciones,mid,httpjob,initialize,httpjob,poststring,httpjob,getrequest,httpjob,postbytes,httpjob,addscheme,httpjob,getstring2
-frm_impresion,btn_calibrar_click,0,0,1006,1019
+funciones,fx_cadena_a_buscar_sql,funciones,fx_httjob_ws_sb_getdataset_json,httpjob,getstring,,parse_products_json,funciones,ltrim,funciones,mid,httpjob,initialize,httpjob,poststring,httpjob,getrequest,httpjob,postbytes,httpjob,addscheme,httpjob,getstring2
+frm_impresion,btn_calibrar_click,0,0,1043,1056
 ,connectedprinter,,printerip,,printerport,,astreams
 
 ,enviarcalibrar
-frm_impresion,enviarcalibrar,0,0,826,882
+frm_impresion,enviarcalibrar,0,0,863,919
 ,connectedprinter,,printerip,,printerport,,astreams
 
 
-frm_impresion,btn_cerrarbuscador_click,0,0,498,505
+frm_impresion,btn_cerrarbuscador_click,0,0,524,531
 ,yabusco,,btn_buscar,,panel_buscador
 
 
-frm_impresion,btn_cerrarview_click,0,0,1046,1051
+frm_impresion,btn_cerrarview_click,0,0,1083,1088
 ,panelvista,,panelinfo,,btn_buscar
 
 
-frm_impresion,btn_imprimir_click,0,0,677,679
+frm_impresion,btn_imprimir_click,0,0,713,715
 ,etiqueta_zpl,,connectedprinter,,printerip,,printerport,,astreams,,cantidad
 
 ,enviaretiqueta
-frm_impresion,enviaretiqueta,0,0,886,949
+frm_impresion,enviaretiqueta,0,0,923,986
 ,connectedprinter,,printerip,,printerport,,astreams,,cantidad
 
 
-frm_impresion,btn_limpiar_click,1,0,1101,1103
+frm_impresion,btn_limpiar_click,1,0,1180,1182
 ,txt_codigo
 
 
-frm_impresion,btn_mas_click,0,0,1059,1063
+frm_impresion,btn_mas_click,0,0,1096,1100
 ,ancho,,alto,,panelinfo,,etiqueta_zpl,,imageview1,,panelvista,,btn_buscar,httputils2service,tempfolder
 ,ancho,,alto
 ,btn_ver_click,httpjob,initialize,httpjob,poststring,httpjob,getrequest,httpjob,getbitmap,httpjob,release,httpjob,postbytes,httpjob,addscheme
-frm_impresion,btn_ver_click,0,0,1022,1044
+frm_impresion,btn_ver_click,0,0,1059,1081
 ,panelinfo,,etiqueta_zpl,,ancho,,alto,,imageview1,,panelvista,,btn_buscar,httputils2service,tempfolder
 
 httpjob,initialize,httpjob,poststring,httpjob,getrequest,httpjob,getbitmap,httpjob,release,httpjob,postbytes,httpjob,addscheme
-frm_impresion,btn_menos_click,0,0,1053,1057
+frm_impresion,btn_menos_click,0,0,1090,1094
 ,ancho,,alto,,panelinfo,,etiqueta_zpl,,imageview1,,panelvista,,btn_buscar,httputils2service,tempfolder
 ,ancho,,alto
 ,btn_ver_click,httpjob,initialize,httpjob,poststring,httpjob,getrequest,httpjob,getbitmap,httpjob,release,httpjob,postbytes,httpjob,addscheme
-frm_impresion,parsejson,0,0,284,311
+frm_impresion,parse_products_json,0,0,293,320
 ,datalist,,listview1
 
 
-frm_impresion,combo_impresion_selectedindexchanged,0,0,952,982
-,tip,,combo_impresion,,objselec,,etiqueta_zpl,,stringprecio1,variables,gl_empresa,variables,gl_sucursal,variables,gl_bodega,variables,global_ip_webservice,httputils2service,tempfolder
+frm_impresion,combo_impresion_selectedindexchanged,0,0,989,1019
+,tip,,combo_impresion,,objselec,,etiqueta_zpl,,selectedstring,,txt_codigo,,stringprecio1,variables,gl_empresa,variables,gl_sucursal,variables,gl_bodega,variables,global_ip_webservice,httputils2service,tempfolder
 ,tip,,etiqueta_zpl
 b4xcombobox,getitem,,sb_imprimiretiquetazpl_01,httpjob,getstring,httpjob,release,httpjob,initialize,httpjob,poststring,httpjob,getrequest,httpjob,postbytes,httpjob,addscheme,httpjob,getstring2
-frm_impresion,sb_imprimiretiquetazpl_01,0,0,1065,1092
-,tip,,stringprecio1,variables,gl_empresa,variables,gl_sucursal,variables,gl_bodega,variables,global_ip_webservice
+frm_impresion,sb_imprimiretiquetazpl_01,0,1,1102,1141
+,selectedstring,,objselec,,txt_codigo,,tip,,stringprecio1,variables,gl_empresa,variables,gl_sucursal,variables,gl_bodega,variables,global_ip_webservice
 
 httpjob,initialize,httpjob,poststring,httpjob,getrequest,httpjob,postbytes,httpjob,addscheme
-frm_impresion,combo_tipobusqueda_selectedindexchanged,0,0,984,986
+frm_impresion,combo_tipobusqueda_selectedindexchanged,0,0,1021,1023
 ,selectedstring,,combo_tipobusqueda
 ,selectedstring
 b4xcombobox,getitem
-frm_impresion,crearzplbodega,0,0,738,763
+frm_impresion,crearzplventa,0,0,724,773
 
 
 
-frm_impresion,crearzplventa,0,0,688,737
-
-
-
-frm_impresion,enviaretiquetazpl,0,0,765,825
+frm_impresion,enviaretiquetazpl,0,0,802,862
 ,connectedprinter,,printerip,,printerport,,astreams
 
 
-frm_impresion,formatearmiles,0,0,473,492
+frm_impresion,formatearmiles,0,0,499,518
 
 
 
-frm_impresion,globals,0,1,23,67
+frm_impresion,globals,0,1,23,65
 ,ancho,,alto,,yabusco,,printerport
 ,ancho,,alto,,yabusco,,printerport
 
-frm_impresion,listview1_itemclick,0,0,402,471
-,datalist,variables,gl_empresa,variables,gl_sucursal,variables,gl_bodega,,stringprecio1,,btn_buscar,,panelinfo,,panel_buscador,,lbl_codigo,,objselec,,lbl_desc,,lbl_precio,,yabusco,,etiqueta_zpl,variables,global_ip_webservice,httputils2service,tempfolder,,tip
+frm_impresion,listview1_itemclick,0,0,415,497
+,datalist,variables,gl_empresa,variables,gl_sucursal,variables,gl_bodega,,stringprecio1,,btn_buscar,,panelinfo,,panel_buscador,,lbl_codigo,,objselec,,lbl_desc,,lbl_precio,,yabusco,,etiqueta_zpl,,selectedstring,,txt_codigo,variables,global_ip_webservice,httputils2service,tempfolder,,tip
 ,yabusco,,etiqueta_zpl,,objselec
-,bsc,httpjob,getstring,,parseotherjson,,sb_imprimiretiquetazpl_01,httpjob,release,httpjob,initialize,httpjob,poststring,httpjob,getrequest,httpjob,postbytes,httpjob,addscheme,httpjob,getstring2
-frm_impresion,parseotherjson,0,0,313,346
+,bsc,httpjob,getstring,,parse_product_json,,sb_imprimiretiquetazpl_01,httpjob,release,httpjob,initialize,httpjob,poststring,httpjob,getrequest,httpjob,postbytes,httpjob,addscheme,httpjob,getstring2
+frm_impresion,parse_product_json,0,0,324,359
 ,objselec
 ,objselec
 
-frm_impresion,parseetiquetas,0,0,186,206
+frm_impresion,parseetiquetas,0,0,188,208
 
 
 
-frm_impresion,parseotherpricejson,0,0,347,380
+frm_impresion,parseotherpricejson,0,0,360,393
 
 
 
@@ -1116,26 +1112,30 @@ frm_impresion,process_globals,0,1,6,21
 
 
 
-frm_impresion,sb_buscarlistaprecios,0,0,627,645
+frm_impresion,sb_buscarlistaprecios,0,0,663,681
 variables,global_ip_webservice
 
 httpjob,initialize,httpjob,poststring,httpjob,getrequest,httpjob,postbytes,httpjob,addscheme
-frm_impresion,sb_inv_traerproductoinventarioticket,0,0,646,672
+frm_impresion,sb_imprimiretiquetazpl_02,0,0,1142,1170
+,selectedstring,,tip,,stringprecio1,variables,gl_empresa,variables,gl_sucursal,variables,gl_bodega,,objselec,variables,global_ip_webservice
+
+httpjob,initialize,httpjob,poststring,httpjob,getrequest,httpjob,postbytes,httpjob,addscheme
+frm_impresion,sb_inv_traerproductoinventarioticket,0,0,682,708
 variables,global_ip_webservice
 
 httpjob,initialize,httpjob,poststring,httpjob,getrequest,httpjob,postbytes,httpjob,addscheme
-frm_impresion,sb_traeretiquetas,0,0,252,271
+frm_impresion,sb_traeretiquetas,0,0,258,277
 variables,global_ip_webservice
 
 httpjob,initialize,httpjob,poststring,httpjob,getrequest,httpjob,postbytes,httpjob,addscheme
-frm_impresion,spinner_cant_itemclick,0,0,1096,1099
+frm_impresion,spinner_cant_itemclick,0,0,1175,1178
 ,cantidad
 ,cantidad
 
-frm_impresion,txt_codigo_enterpressed,0,0,673,675
+frm_impresion,txt_codigo_enterpressed,0,0,709,711
 ,txt_codigo,,ime1,,selectedstring,,datalist,,listview1,variables,gl_empresa,variables,gl_sucursal,variables,gl_bodega,variables,global_ip_webservice,httputils2service,tempfolder
 
-,btn_buscarprod_click,,buscar_x_comentario,funciones,fx_cadena_a_buscar_sql,funciones,fx_httjob_ws_sb_getdataset_json,httpjob,getstring,,parsejson,funciones,ltrim,funciones,mid,httpjob,initialize,httpjob,poststring,httpjob,getrequest,httpjob,postbytes,httpjob,addscheme,httpjob,getstring2
+,btn_buscarprod_click,,buscar_x_comentario,funciones,fx_cadena_a_buscar_sql,funciones,fx_httjob_ws_sb_getdataset_json,httpjob,getstring,,parse_products_json,funciones,ltrim,funciones,mid,httpjob,initialize,httpjob,poststring,httpjob,getrequest,httpjob,postbytes,httpjob,addscheme,httpjob,getstring2
 b4xcombobox,setitems,0,0,59,73
 
 
@@ -1188,6 +1188,22 @@ b4xcombobox,initialize,0,0,24,29
 
 
 
+clfunciones,initialize,0,0,6,8
+
+
+
+clfunciones,sb_existetabla,0,0,35,67
+variables,global_ip_webservice,httputils2service,tempfolder
+
+funciones,fx_httjob_ws_sb_getdataset_json,httpjob,getstring,httpjob,initialize,httpjob,poststring,httpjob,getrequest,httpjob,postbytes,httpjob,addscheme,httpjob,getstring2
+clfunciones,class_globals,0,0,1,3
+
+
+
+clfunciones,tienepermiso,0,0,10,33
+variables,global_basebk,variables,global_ip_webservice,httputils2service,tempfolder
+
+funciones,fx_httjob_ws_sb_getdataset_json,httpjob,getstring,httpjob,initialize,httpjob,poststring,httpjob,getrequest,httpjob,postbytes,httpjob,addscheme,httpjob,getstring2
 cl_conf_local,class_globals,0,0,1,5
 
 
@@ -1256,22 +1272,6 @@ cl_stxbodxprod,initialize,0,0,12,15
 
 
 
-clfunciones,class_globals,0,0,1,3
-
-
-
-clfunciones,initialize,0,0,6,8
-
-
-
-clfunciones,sb_existetabla,0,0,35,67
-variables,global_ip_webservice,httputils2service,tempfolder
-
-funciones,fx_httjob_ws_sb_getdataset_json,httpjob,getstring,httpjob,initialize,httpjob,poststring,httpjob,getrequest,httpjob,postbytes,httpjob,addscheme,httpjob,getstring2
-clfunciones,tienepermiso,0,0,10,33
-variables,global_basebk,variables,global_ip_webservice,httputils2service,tempfolder
-
-funciones,fx_httjob_ws_sb_getdataset_json,httpjob,getstring,httpjob,initialize,httpjob,poststring,httpjob,getrequest,httpjob,postbytes,httpjob,addscheme,httpjob,getstring2
 clfunciones2,base_resize,0,0,27,29
 
 
@@ -1592,103 +1592,107 @@ frm_editar_obsoc,process_globals,0,1,6,15
 
 
 
-frm_etiquetas,activity_create,1,0,61,113
-,btn_cerrar,,btn_conf,,btn_ed_id,,btn_ed_nombre,,btn_ed_precio,,btn_editarpuerto,,btn_etq1,,btn_guardar,,btn_probar_conexion,,btn_volver,,clv,,general,,label5,,lbl_imprimir,,lbl_ip,,lbl_nombre,,lbl_precio_act,,lbl_puerto,,panel_conf,,changes,,dataprice,,stringlistprice,,selectedprice,,stringprecio,variables,global_ip_webservice,httputils2service,tempfolder,,datos,,colorenabled,,isenabled,,etiquetas,,xui
-,btn_cerrar,,btn_conf,,btn_ed_id,,btn_ed_nombre,,btn_ed_precio,,btn_editarpuerto,,btn_etq1,,btn_guardar,,btn_probar_conexion,,btn_volver,,clv,,general,,label5,,lbl_imprimir,,lbl_ip,,lbl_nombre,,lbl_precio_act,,lbl_puerto,,panel_conf,,changes,,dataprice,,selectedprice,,stringprecio,,datos,,isenabled,,etiquetas
-,sb_buscarlistaprecios,httpjob,getstring,,parseotherpricejson,,leerdatos,,cargarlista,httpjob,initialize,httpjob,poststring,httpjob,getrequest,httpjob,postbytes,httpjob,addscheme,httpjob,getstring2,,btn_conf_click,,sb_traeretiquetas,,parseetiquetas,httpjob,getbitmap,httpjob,release
-frm_etiquetas,sb_buscarlistaprecios,0,0,151,169
+frm_etiquetas,activity_create,1,0,64,116
+,btn_cerrar,,btn_conf,,btn_ed_id,,btn_ed_nombre,,btn_ed_precio,,btn_editarpuerto,,btn_etq1,,btn_guardar,,btn_probar_conexion,,btn_volver,,clv,,general,,label5,,lbl_imprimir,,lbl_ip,,lbl_nombre,,lbl_precio_act,,lbl_puerto,,panel_conf,,changes,,dataprice,,stringlistprice,,selectedprice,,stringprecio,variables,global_ip_webservice,httputils2service,tempfolder,,datos,,colorenabled,,isenabled,,etiquetas,,xui,,imgview,,lbl_nom
+,btn_cerrar,,btn_conf,,btn_ed_id,,btn_ed_nombre,,btn_ed_precio,,btn_editarpuerto,,btn_etq1,,btn_guardar,,btn_probar_conexion,,btn_volver,,clv,,general,,label5,,lbl_imprimir,,lbl_ip,,lbl_nombre,,lbl_precio_act,,lbl_puerto,,panel_conf,,changes,,dataprice,,selectedprice,,stringprecio,,datos,,isenabled,,etiquetas,,imgview,,lbl_nom
+,sb_buscarlistaprecios,httpjob,getstring,,parseotherpricejson,,leerdatos,,cargarlista,httpjob,initialize,httpjob,poststring,httpjob,getrequest,httpjob,postbytes,httpjob,addscheme,httpjob,getstring2,,btn_conf_click,,sb_traeretiquetas,,parseetiquetas,,getlabelsizeinches,httpjob,getbitmap,httpjob,release,b4ximageview,setbitmap,xuiviewsutils,setbitmapandfill,b4ximageview,update,b4ximageview,updateclip
+frm_etiquetas,sb_buscarlistaprecios,0,0,154,172
 variables,global_ip_webservice
 
 httpjob,initialize,httpjob,poststring,httpjob,getrequest,httpjob,postbytes,httpjob,addscheme
-frm_etiquetas,parseotherpricejson,0,0,116,149
+frm_etiquetas,parseotherpricejson,0,0,119,152
 
 
 
-frm_etiquetas,leerdatos,0,0,346,377
+frm_etiquetas,leerdatos,0,0,370,401
 ,datos,,lbl_ip,,lbl_nombre,,lbl_precio_act,,dataprice,,selectedprice,,stringprecio,,lbl_puerto,,btn_etq1,,lbl_imprimir,,btn_cerrar,,general,,btn_guardar,,colorenabled,,isenabled,,panel_conf
 ,datos,,selectedprice,,stringprecio,,isenabled
 ,btn_conf_click
-frm_etiquetas,cargarlista,1,0,194,301
-,clv,,btn_etq1,,etiquetas,,xui,variables,global_ip_webservice,httputils2service,tempfolder
-,etiquetas
-,sb_traeretiquetas,httpjob,getstring,,parseetiquetas,httpjob,initialize,httpjob,poststring,httpjob,getrequest,httpjob,getbitmap,httpjob,release,httpjob,postbytes,httpjob,addscheme,httpjob,getstring2
-frm_etiquetas,activity_pause,0,0,378,380
+frm_etiquetas,cargarlista,1,0,230,325
+,clv,,btn_etq1,,etiquetas,,xui,,imgview,,lbl_nom,variables,global_ip_webservice,httputils2service,tempfolder
+,etiquetas,,imgview,,lbl_nom
+,sb_traeretiquetas,httpjob,getstring,,parseetiquetas,httpjob,initialize,,getlabelsizeinches,httpjob,poststring,httpjob,getrequest,httpjob,getbitmap,httpjob,release,b4ximageview,setbitmap,httpjob,postbytes,httpjob,addscheme,httpjob,getstring2,xuiviewsutils,setbitmapandfill,b4ximageview,update,b4ximageview,updateclip
+frm_etiquetas,activity_pause,0,0,402,404
 
 
 
-frm_etiquetas,activity_resume,0,0,170,172
+frm_etiquetas,activity_resume,0,0,173,175
 
 
 
-frm_etiquetas,btn_cerrar_click,0,0,442,445
+frm_etiquetas,btn_cerrar_click,0,0,466,469
 ,general,,panel_conf
 
 
-frm_etiquetas,btn_conf_click,0,0,435,440
+frm_etiquetas,btn_conf_click,0,0,459,464
 ,general,,btn_guardar,,colorenabled,,isenabled,,panel_conf
 ,isenabled
 
-frm_etiquetas,btn_ed_id_click,1,0,456,480
+frm_etiquetas,btn_ed_id_click,1,0,480,504
 ,changes,,lbl_ip,xuiviewsutils,xui
 ,changes
 b4xinputtemplate,initialize,b4xdialog,initialize,b4xdialog,showtemplate,b4xinputtemplate,setborder,b4xcolortemplate,getpanel,b4xdatetemplate,getpanel,b4xinputtemplate,getpanel,b4xlisttemplate,getpanel,b4xlongtexttemplate,getpanel,b4xprogressdialog,getpanel,b4xsearchtemplate,getpanel,b4xsignaturetemplate,getpanel,b4xtimedtemplate,getpanel,b4xcolortemplate,show,b4xdatetemplate,show,b4xinputtemplate,show,b4xlisttemplate,show,b4xlongtexttemplate,show,b4xprogressdialog,show,b4xsearchtemplate,show,b4xsignaturetemplate,show,b4xtimedtemplate,show,b4xdialog,showcustom,b4xcolortemplate,dialogclosed,b4xdatetemplate,dialogclosed,b4xinputtemplate,dialogclosed,b4xlisttemplate,dialogclosed,b4xlongtexttemplate,dialogclosed,b4xprogressdialog,dialogclosed,b4xsearchtemplate,dialogclosed,b4xsignaturetemplate,dialogclosed,b4xtimedtemplate,dialogclosed,b4xcolortemplate,getselectedhsvcolor,b4xcolortemplate,updatebarcolor,b4xcolortemplate,getselectedcolor,b4xdatetemplate,drawdays,b4xdatetemplate,setyearsbuttonstate,b4xdatetemplate,drawbox,b4xinputtemplate,validate,b4xinputtemplate,isvalid,b4xdialog,setbuttonstate,b4xdialog,getbutton,b4xlisttemplate,selectitem,xuiviewsutils,addstubtoclvifneeded,b4xloadingindicator,show,b4xloadingindicator,mainloop,b4xloadingindicator,draw_arc1,b4xloadingindicator,draw_arc2,b4xloadingindicator,draw_fivelines1,b4xloadingindicator,draw_pacman,b4xloadingindicator,draw_singlecircle,b4xloadingindicator,draw_threecircles1,b4xloadingindicator,draw_threecircles2,b4xloadingindicator,setstyle,b4xloadingindicator,setalpha,b4xsearchtemplate,update,b4xfloattextfield,settext,b4xfloattextfield,gettextfield,b4xsearchtemplate,additemstolist,b4xfloattextfield,tf_textchanged,b4xfloattextfield,updatelabel,anotherprogressbar,setvaluenoanimation,anotherprogressbar,setvalue,b4xdialog,close,b4xdialog,getvisible,b4xdialog,updateblur,b4xdialog,createbutton,xuiviewsutils,settextorcsbuildertolabel,b4xdialog,blur,b4xdialog,setavg,b4xcolortemplate,setselectedhsvcolor,b4xcolortemplate,huebarselectedchanged,b4xcolortemplate,alphabarselectedchange,b4xcolortemplate,update,b4xcolortemplate,drawcolors,b4xcolortemplate,handleselectedcolorchanged,b4xdatetemplate,setdate,b4xdatetemplate,selectday,b4xloadingindicator,hide
-frm_etiquetas,btn_ed_nombre_click,1,0,482,505
+frm_etiquetas,btn_ed_nombre_click,1,0,506,529
 ,changes,,lbl_nombre,xuiviewsutils,xui
 ,changes
 b4xinputtemplate,initialize,b4xdialog,initialize,b4xdialog,showtemplate,b4xinputtemplate,setborder,b4xcolortemplate,getpanel,b4xdatetemplate,getpanel,b4xinputtemplate,getpanel,b4xlisttemplate,getpanel,b4xlongtexttemplate,getpanel,b4xprogressdialog,getpanel,b4xsearchtemplate,getpanel,b4xsignaturetemplate,getpanel,b4xtimedtemplate,getpanel,b4xcolortemplate,show,b4xdatetemplate,show,b4xinputtemplate,show,b4xlisttemplate,show,b4xlongtexttemplate,show,b4xprogressdialog,show,b4xsearchtemplate,show,b4xsignaturetemplate,show,b4xtimedtemplate,show,b4xdialog,showcustom,b4xcolortemplate,dialogclosed,b4xdatetemplate,dialogclosed,b4xinputtemplate,dialogclosed,b4xlisttemplate,dialogclosed,b4xlongtexttemplate,dialogclosed,b4xprogressdialog,dialogclosed,b4xsearchtemplate,dialogclosed,b4xsignaturetemplate,dialogclosed,b4xtimedtemplate,dialogclosed,b4xcolortemplate,getselectedhsvcolor,b4xcolortemplate,updatebarcolor,b4xcolortemplate,getselectedcolor,b4xdatetemplate,drawdays,b4xdatetemplate,setyearsbuttonstate,b4xdatetemplate,drawbox,b4xinputtemplate,validate,b4xinputtemplate,isvalid,b4xdialog,setbuttonstate,b4xdialog,getbutton,b4xlisttemplate,selectitem,xuiviewsutils,addstubtoclvifneeded,b4xloadingindicator,show,b4xloadingindicator,mainloop,b4xloadingindicator,draw_arc1,b4xloadingindicator,draw_arc2,b4xloadingindicator,draw_fivelines1,b4xloadingindicator,draw_pacman,b4xloadingindicator,draw_singlecircle,b4xloadingindicator,draw_threecircles1,b4xloadingindicator,draw_threecircles2,b4xloadingindicator,setstyle,b4xloadingindicator,setalpha,b4xsearchtemplate,update,b4xfloattextfield,settext,b4xfloattextfield,gettextfield,b4xsearchtemplate,additemstolist,b4xfloattextfield,tf_textchanged,b4xfloattextfield,updatelabel,anotherprogressbar,setvaluenoanimation,anotherprogressbar,setvalue,b4xdialog,close,b4xdialog,getvisible,b4xdialog,updateblur,b4xdialog,createbutton,xuiviewsutils,settextorcsbuildertolabel,b4xdialog,blur,b4xdialog,setavg,b4xcolortemplate,setselectedhsvcolor,b4xcolortemplate,huebarselectedchanged,b4xcolortemplate,alphabarselectedchange,b4xcolortemplate,update,b4xcolortemplate,drawcolors,b4xcolortemplate,handleselectedcolorchanged,b4xdatetemplate,setdate,b4xdatetemplate,selectday,b4xloadingindicator,hide
-frm_etiquetas,btn_ed_precio_click,0,0,600,612
+frm_etiquetas,btn_ed_precio_click,0,0,624,636
 ,stringlistprice,,selectedprice,,dataprice,,stringprecio,,lbl_precio_act,,changes
 ,selectedprice,,stringprecio,,changes
 
-frm_etiquetas,btn_editarpuerto_click,1,0,619,653
+frm_etiquetas,btn_editarpuerto_click,1,0,643,677
 ,lbl_puerto,,changes,xuiviewsutils,xui
 ,changes
 b4xinputtemplate,initialize,b4xdialog,initialize,b4xinputtemplate,configurefornumbers,b4xdialog,showtemplate,b4xinputtemplate,setborder,b4xcolortemplate,getpanel,b4xdatetemplate,getpanel,b4xinputtemplate,getpanel,b4xlisttemplate,getpanel,b4xlongtexttemplate,getpanel,b4xprogressdialog,getpanel,b4xsearchtemplate,getpanel,b4xsignaturetemplate,getpanel,b4xtimedtemplate,getpanel,b4xcolortemplate,show,b4xdatetemplate,show,b4xinputtemplate,show,b4xlisttemplate,show,b4xlongtexttemplate,show,b4xprogressdialog,show,b4xsearchtemplate,show,b4xsignaturetemplate,show,b4xtimedtemplate,show,b4xdialog,showcustom,b4xcolortemplate,dialogclosed,b4xdatetemplate,dialogclosed,b4xinputtemplate,dialogclosed,b4xlisttemplate,dialogclosed,b4xlongtexttemplate,dialogclosed,b4xprogressdialog,dialogclosed,b4xsearchtemplate,dialogclosed,b4xsignaturetemplate,dialogclosed,b4xtimedtemplate,dialogclosed,b4xcolortemplate,getselectedhsvcolor,b4xcolortemplate,updatebarcolor,b4xcolortemplate,getselectedcolor,b4xdatetemplate,drawdays,b4xdatetemplate,setyearsbuttonstate,b4xdatetemplate,drawbox,b4xinputtemplate,validate,b4xinputtemplate,isvalid,b4xdialog,setbuttonstate,b4xdialog,getbutton,b4xlisttemplate,selectitem,xuiviewsutils,addstubtoclvifneeded,b4xloadingindicator,show,b4xloadingindicator,mainloop,b4xloadingindicator,draw_arc1,b4xloadingindicator,draw_arc2,b4xloadingindicator,draw_fivelines1,b4xloadingindicator,draw_pacman,b4xloadingindicator,draw_singlecircle,b4xloadingindicator,draw_threecircles1,b4xloadingindicator,draw_threecircles2,b4xloadingindicator,setstyle,b4xloadingindicator,setalpha,b4xsearchtemplate,update,b4xfloattextfield,settext,b4xfloattextfield,gettextfield,b4xsearchtemplate,additemstolist,b4xfloattextfield,tf_textchanged,b4xfloattextfield,updatelabel,anotherprogressbar,setvaluenoanimation,anotherprogressbar,setvalue,b4xdialog,close,b4xdialog,getvisible,b4xdialog,updateblur,b4xdialog,createbutton,xuiviewsutils,settextorcsbuildertolabel,b4xdialog,blur,b4xdialog,setavg,b4xcolortemplate,setselectedhsvcolor,b4xcolortemplate,huebarselectedchanged,b4xcolortemplate,alphabarselectedchange,b4xcolortemplate,update,b4xcolortemplate,drawcolors,b4xcolortemplate,handleselectedcolorchanged,b4xdatetemplate,setdate,b4xdatetemplate,selectday,b4xloadingindicator,hide
-frm_etiquetas,btn_etq1_click,0,0,447,450
+frm_etiquetas,btn_etq1_click,0,0,471,474
 
 
 
-frm_etiquetas,btn_etq2_click,0,0,452,454
+frm_etiquetas,btn_etq2_click,0,0,476,478
 
 
 
-frm_etiquetas,btn_guardar_click,0,0,542,598
+frm_etiquetas,btn_guardar_click,0,0,566,622
 ,isenabled,,xui,,lbl_puerto,,lbl_ip,,lbl_nombre,,btn_etq1,,lbl_imprimir,,btn_cerrar,,changes,,btn_guardar,,colorenabled,,datos,,selectedprice,,dataprice,,stringprecio,,general,,panel_conf
 ,isenabled,,changes,,datos,,stringprecio
 ,btn_probar_conexion_click,,creardatos,,btn_cerrar_click,,ping
-frm_etiquetas,btn_probar_conexion_click,0,0,507,536
+frm_etiquetas,btn_probar_conexion_click,0,0,531,560
 ,lbl_ip,,isenabled,,changes,,btn_guardar,,colorenabled
 ,isenabled,,changes
 ,ping
-frm_etiquetas,creardatos,0,0,173,193
+frm_etiquetas,creardatos,0,0,176,196
 ,datos,,lbl_ip,,lbl_nombre,,selectedprice,,lbl_puerto,,dataprice,,stringprecio
 ,datos,,stringprecio
 
-frm_etiquetas,ping,0,0,420,428
+frm_etiquetas,ping,0,0,444,452
 
 
 
-frm_etiquetas,btn_volver_click,0,0,614,617
+frm_etiquetas,btn_volver_click,0,0,638,641
 
 
 
-frm_etiquetas,sb_traeretiquetas,0,0,304,323
+frm_etiquetas,sb_traeretiquetas,0,0,328,347
 variables,global_ip_webservice
 
 httpjob,initialize,httpjob,poststring,httpjob,getrequest,httpjob,postbytes,httpjob,addscheme
-frm_etiquetas,parseetiquetas,0,0,325,345
+frm_etiquetas,parseetiquetas,0,0,349,369
 
 
 
-frm_etiquetas,clv_itemclick,0,0,656,669
+frm_etiquetas,getlabelsizeinches,0,0,201,228
+
+
+
+frm_etiquetas,clv_itemclick,0,0,680,693
 ,default
 ,default
 ,btn_etq1_click
-frm_etiquetas,esperarconfirmacion,0,0,537,540
+frm_etiquetas,esperarconfirmacion,0,0,561,564
 
 
 
-frm_etiquetas,globals,0,1,18,59
+frm_etiquetas,globals,0,1,18,62
 ,colorenabled,,colordisabled
 ,colorenabled,,colordisabled
 
@@ -1696,6 +1700,70 @@ frm_etiquetas,process_globals,0,1,6,16
 
 
 
+b4ximageview,setbitmap,0,0,124,128
+
+
+xuiviewsutils,setbitmapandfill,,update,,updateclip
+b4ximageview,base_resize,0,0,40,42
+
+
+,update,,updateclip
+b4ximageview,update,0,0,77,107
+
+
+,updateclip
+b4ximageview,class_globals,0,0,5,17
+
+
+
+b4ximageview,clear,0,0,119,122
+
+
+
+b4ximageview,designercreateview,0,0,25,38
+
+
+,update,,updateclip
+b4ximageview,getbitmap,0,0,130,132
+
+
+
+b4ximageview,getcornersradius,0,0,56,58
+
+
+
+b4ximageview,getresizemode,0,0,67,69
+
+
+
+b4ximageview,getroundedimage,0,0,45,47
+
+
+
+b4ximageview,initialize,0,0,19,22
+
+
+
+b4ximageview,load,0,0,110,116
+
+
+,setbitmap,xuiviewsutils,setbitmapandfill,,update,,updateclip
+b4ximageview,setcornersradius,0,0,60,63
+
+
+,updateclip
+b4ximageview,updateclip,0,0,135,164
+
+
+
+b4ximageview,setresizemode,0,0,71,75
+
+
+,update,,updateclip
+b4ximageview,setroundedimage,0,0,49,53
+
+
+,updateclip
 frm_infostockxprod,activity_create,1,0,32,41
 ,lbl_codigo,,lbl_descripcion,,xclv_stokxbodega,,msj,,codigo,,descripcion
 ,lbl_codigo,,lbl_descripcion,,xclv_stokxbodega
@@ -2712,70 +2780,6 @@ b4xtimedtemplate,initialize,0,0,10,14
 
 
 
-b4ximageview,base_resize,0,0,40,42
-
-
-,update,,updateclip
-b4ximageview,update,0,0,77,107
-
-
-,updateclip
-b4ximageview,class_globals,0,0,5,17
-
-
-
-b4ximageview,clear,0,0,119,122
-
-
-
-b4ximageview,designercreateview,0,0,25,38
-
-
-,update,,updateclip
-b4ximageview,getbitmap,0,0,130,132
-
-
-
-b4ximageview,getcornersradius,0,0,56,58
-
-
-
-b4ximageview,getresizemode,0,0,67,69
-
-
-
-b4ximageview,getroundedimage,0,0,45,47
-
-
-
-b4ximageview,initialize,0,0,19,22
-
-
-
-b4ximageview,load,0,0,110,116
-
-
-,setbitmap,xuiviewsutils,setbitmapandfill,,update,,updateclip
-b4ximageview,setbitmap,0,0,124,128
-
-
-xuiviewsutils,setbitmapandfill,,update,,updateclip
-b4ximageview,setcornersradius,0,0,60,63
-
-
-,updateclip
-b4ximageview,updateclip,0,0,135,164
-
-
-
-b4ximageview,setresizemode,0,0,71,75
-
-
-,update,,updateclip
-b4ximageview,setroundedimage,0,0,49,53
-
-
-,updateclip
 b4xplusminus,base_resize,0,0,83,99
 
 

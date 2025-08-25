@@ -5,7 +5,7 @@ Type=Activity
 Version=13.1
 @EndOfDesignText@
 #Region  Activity Attributes 
-#FullScreen: True
+	#FullScreen: True
 	#IncludeTitle: False
 #End Region
 
@@ -21,14 +21,12 @@ Sub Process_Globals
 	Dim DataList As List
 	Dim DataPrice As List
 	Type OtherPriceData (TILT As String, KOLT As String, MELT As String, MOLT As String, TIMOLT As String, NOKOLT As String, FEVI As String, OPERA As String, ECUDEF01UD As String, ECUDEF02UD As String)
-	Type OtherData(Principal As String, Rapido As String, Tecnico As String, Rtu As Double, Ud1 As String, Ud2 As String, Descripcion As String, StFisicoUd1 As Double, StFisicoUd2 As Double, SuperFamilia As String, NombreSuper As String, Familia As String, NombreFamilia As String, SubFamilia As String, NombreSub As String, MRPR As String, MARCA As String, PrecioListaUd1 As Double, PrecioListaUd2 As Double)
+	Type OtherData(Principal As String,Alternativo As String, Rapido As String, Tecnico As String, Rtu As Double, Ud1 As String, Ud2 As String, Descripcion As String, StFisicoUd1 As Double, StFisicoUd2 As Double, SuperFamilia As String, NombreSuper As String, Familia As String, NombreFamilia As String, SubFamilia As String, NombreSub As String, MRPR As String, MARCA As String, PrecioListaUd1 As Double, PrecioListaUd2 As Double)
 	Dim ObjSelec As OtherData
 	Type Etiqueta (NombreEtiqueta As String, FUNCION As String)
 End Sub
 
 Sub Globals
-	'These global variables will be redeclared each time the activity is created.
-	'These variables can only be accessed from this module.
 	Private tip As String
 	Private Ancho As Float = 2
 	Dim IME1 As IME
@@ -82,7 +80,11 @@ Sub Activity_Create(FirstTime As Boolean)
 	stringList.Add("Principal")
 	
 	stringList.Add("Tecnico")
+
 	stringList.Add("Rapido")
+	
+	stringList.Add("Alternativo")
+	
 	stringList.Add("Descripcion")
 	
 	Dim stringList2 As List
@@ -210,6 +212,9 @@ Sub ParseEtiquetas(Json As String ) As List
 
 	Return result
 End Sub
+'Lee los datos de la impresora y relacionados.
+'Extrae : IP, KOLT, PUERTO
+'Almacena en : PrinterIP, stringPrecio1, PrinterPort
 Sub LeerDatos()
 	If File.Exists(File.DirInternal, "impresora.map") Then
 		datos = File.ReadMap(File.DirInternal, "impresora.map")
@@ -254,7 +259,8 @@ Sub Activity_KeyPress (KeyCode As Int) As Boolean
 	' Devuelve False para que se maneje normalmente
 	Return False
 End Sub
-	
+
+'Trae la lista de etiquetas del tipo (Movil) almacenada en la base de datos por medio de una consulta al WebService 	
 Private Sub Sb_TraerEtiquetas(Me_ As Object) As HttpJob
 	
 	Dim vXml As String = $"<?xml version="1.0" encoding="utf-8"?>
@@ -287,7 +293,10 @@ Sub Activity_Pause (UserClosed As Boolean)
 End Sub
 
 
-Sub ParseJSON(json As String)
+
+'Deserializa Texto JSON que contiene la informacion de varios productos, los almacena en  DataList.
+'json - Texto JSON que contiene una tabla con productos. 
+Sub Parse_Products_JSON(json As String)
 	Dim parser As JSONParser
 	parser.Initialize(json)
 	Dim root As Map = parser.NextObject
@@ -316,7 +325,9 @@ Sub ParseJSON(json As String)
 	Next
 End Sub
 
-Sub ParseOtherJSON(json As String)
+'Deserializa Texto JSON que contiene la informacion completa de varios productos, los almacena en  DataList.
+'json - Texto JSON que contiene una tabla con la informacion de un producto. 
+Sub Parse_Product_Json(json As String)
 	Dim parser As JSONParser
 	parser.Initialize(json)
 	Dim root As Map = parser.NextObject
@@ -326,6 +337,8 @@ Sub ParseOtherJSON(json As String)
 		Dim data As OtherData
 		data.Initialize
 		data.Principal = entry.Get("Principal")
+		data.Alternativo = entry.Get("KOPRAL")
+		
 		data.Rapido = entry.Get("Rapido")
 		data.Tecnico = entry.Get("Tecnico")
 		data.Rtu = entry.Get("Rtu")
@@ -429,7 +442,7 @@ Private Sub ListView1_ItemClick (Position As Int, Value As Object)
 			Return
 				
 		End If
-		ParseOtherJSON(Js.GetString)
+		Parse_Product_Json(Js.GetString)
 	End If
 	Btn_Buscar.Visible= True
 	Panelinfo.Visible = True
@@ -438,7 +451,20 @@ Private Sub ListView1_ItemClick (Position As Int, Value As Object)
 	Lbl_Desc.Text = ObjSelec.Descripcion
 	Lbl_precio.Text = stringPrecio1
 	
+'	If Variables.Gl_Empresa = "02" Then 
+'		If selectedString = "Alternativo" Then 
+'			Dim Js2 As HttpJob = Sb_ImprimirEtiquetaZPL_02(Me, ObjSelec.Alternativo, "Alternativo")
+'			
+'			Else
+'			Dim Js2 As HttpJob = Sb_ImprimirEtiquetaZPL_02(Me, ObjSelec.Principal, "Principal" )
+'				
+'		End If
+'	Else
+'		Dim Js2 As HttpJob = Sb_ImprimirEtiquetaZPL_01(Me, ObjSelec.Principal)
+'			
+'	End If
 	Dim Js2 As HttpJob = Sb_ImprimirEtiquetaZPL_01(Me, ObjSelec.Principal)
+	
 	Wait For (Js2) JobDone(Js2 As HttpJob)
 	
 	If Js2.Success Then
@@ -512,7 +538,10 @@ End Sub
 
 
 Private Sub Bsc(Tipo As String, Codigo As String, Me_ As Object, Empresa As String,Sucursal As String, Bodega As String,Lista As String) As HttpJob
-	
+	Dim alter As String =""
+	If selectedString = "Alternativo" Then 
+		alter = Txt_codigo.Text
+	End If
 	Dim vXml As String = $"<?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
   <soap:Body>
@@ -523,6 +552,7 @@ Private Sub Bsc(Tipo As String, Codigo As String, Me_ As Object, Empresa As Stri
       <_Tipo>${Tipo}</_Tipo>
       <_Codigo>${Codigo}</_Codigo>
 	   <_Lista>${Lista}</_Lista>
+	   <_Kopral>${alter}</_Kopral>
     </Sb_Inv_TraerProductoInventarioTicket>
   </soap:Body>
 </soap:Envelope>
@@ -574,8 +604,14 @@ Private Sub Buscar_x_Comentario(Tipo As String, VDescripcion As String, Me_ As O
 	Else if selectedString = "Descripcion" Then
 		
 		Consul = "WHERE Mp.NOKOPR  Like '%" & vCadena & "%'"
+	Else if selectedString = "Alternativo" Then
+		
+		Consul = "WHERE ((ta.KOPRAL = '"& VDescripcion  &"' ) and (ta.KOEN = '')) "
+		tabcodal = "left join TABCODAL ta on Mp.KOPR = ta.KOPR"
+		
 		
 	End If
+	
 
 					   
 	Consulta_Sql = "SELECT distinct TOP (25) Mp.KOPR AS CODIGO,Mp.KOPRTE As CODTECNICO, NOKOPR AS DESCRIPCION,MRPR,Isnull(Ms.STFI1,0) As STFI1, KOPRRA as RAPIDO," & CRLF & _
@@ -610,7 +646,7 @@ Order by Mp.KOPR"$
 		
 		If  vJson <> $"{"Table":[]}"$ Then
 			
-			ParseJSON(vJson)
+			Parse_Products_JSON(vJson)
 			
 '			Log(Codigo & " - " & DESCRIPCION)
 '			
@@ -741,32 +777,33 @@ Sub CrearZPLVenta(Cod As String, Desc As String, Dinero As String, Fech As Strin
 	
 	Return CPCL
 End Sub
-Sub CrearZPLBodega(Cod As String, Desc As String, Fech As String, Titulo As String) As String
-	Dim CPCL As String
-	CPCL = $"^XA~TA000~JSN^LT0^MNW^MTD^PON^PMN^LH0,0^JMA^PR3,3~SD10^JUS^LRN^CI0^XZ
-^XA
-^MMT
-^PW432
-^LL0240
-^LS0
-^BY2,3,48^FT51,100^BCN,,Y,N
-^FD>:<Codigo>^FS
-^FT18,29^A0N,18,43^FH\^FD<Titulo>^FS
-^FT18,151^A0N,14,14^FH\^FD<Desc1>^FS
-^FT18,172^A0N,14,14^FH\^FD<Desc2>^FS
-^FT141,219^A0N,18,33^FH\^FD<Fecha>^FS
-^PQ1,0,1,Y^XZ
-"$
-
-	CPCL = CPCL.Replace("<Codigo>", Cod)
-	CPCL = CPCL.Replace("<Titulo>", Titulo)
-	CPCL = CPCL.Replace("<Fecha>", Fech)
-	CPCL = CPCL.Replace("<Desc1>", Desc)
-	CPCL = CPCL.Replace("ñ","n")
-	CPCL = CPCL.Replace("Ñ","N")
-	' Retornar el CPCL generado
-	Return CPCL
-End Sub
+'
+'Sub CrearZPLBodega(Cod As String, Desc As String, Fech As String, Titulo As String) As String
+'	Dim CPCL As String
+'	CPCL = $"^XA~TA000~JSN^LT0^MNW^MTD^PON^PMN^LH0,0^JMA^PR3,3~SD10^JUS^LRN^CI0^XZ
+'^XA
+'^MMT
+'^PW432
+'^LL0240
+'^LS0
+'^BY2,3,48^FT51,100^BCN,,Y,N
+'^FD>:<Codigo>^FS
+'^FT18,29^A0N,18,43^FH\^FD<Titulo>^FS
+'^FT18,151^A0N,14,14^FH\^FD<Desc1>^FS
+'^FT18,172^A0N,14,14^FH\^FD<Desc2>^FS
+'^FT141,219^A0N,18,33^FH\^FD<Fecha>^FS
+'^PQ1,0,1,Y^XZ
+'"$
+'
+'	CPCL = CPCL.Replace("<Codigo>", Cod)
+'	CPCL = CPCL.Replace("<Titulo>", Titulo)
+'	CPCL = CPCL.Replace("<Fecha>", Fech)
+'	CPCL = CPCL.Replace("<Desc1>", Desc)
+'	CPCL = CPCL.Replace("ñ","n")
+'	CPCL = CPCL.Replace("Ñ","N")
+'	Retornar el CPCL generado
+'	Return CPCL
+'End Sub
 
 Sub EnviarEtiquetaZPL(ZPL As String)
 	Dim bmp1 As Bitmap
@@ -1069,7 +1106,17 @@ Private Sub Btn_mas_Click
 End Sub
 
 Public Sub Sb_ImprimirEtiquetaZPL_01(Me_ As Object,   Codigo As String) As HttpJob
+	Dim isALt As Boolean  = (selectedString = "Alternativo")
+	If isALt Then 
+		ObjSelec.Alternativo = Txt_codigo.Text
+	End If
+	Dim alt As String 
+	If ObjSelec.Alternativo = Null Then
+		alt = ""
 
+		Else 
+		alt = Txt_codigo.Text
+	End If
 	Dim vXml As String = $"<?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
   <soap:Body>
@@ -1080,7 +1127,9 @@ Public Sub Sb_ImprimirEtiquetaZPL_01(Me_ As Object,   Codigo As String) As HttpJ
       <_Empresa>${Variables.Gl_Empresa}</_Empresa>
       <_Sucursal>${Variables.Gl_Sucursal}</_Sucursal>
       <_Bodega>${Variables.Gl_Bodega}</_Bodega>
-      <_CodAlternativo></_CodAlternativo>
+	  
+      <_CodAlternativo>${alt}</_CodAlternativo>
+	  <_KopralLeido>${isALt}</_KopralLeido>
     </Sb_ImprimirEtiquetaZPL_01>
   </soap:Body>
 </soap:Envelope>"$
@@ -1096,6 +1145,36 @@ Public Sub Sb_ImprimirEtiquetaZPL_01(Me_ As Object,   Codigo As String) As HttpJ
 	Return Js
 
 End Sub
+Public Sub Sb_ImprimirEtiquetaZPL_02(Me_ As Object,   Codigo As String, TipoCodigo As String) As HttpJob
+	Dim isALt As Boolean  = (selectedString = "Alternativo")
+	Dim vXml As String = $"<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <Sb_ImprimirEtiquetaZPL_02 xmlns="http://BakApp">
+      <_NombreEtiqueta>${tip}</_NombreEtiqueta>
+      <_Codigo>${Codigo}</_Codigo>
+      <_CodLista>${stringPrecio1}</_CodLista>
+      <_Empresa>${Variables.Gl_Empresa}</_Empresa>
+      <_Sucursal>${Variables.Gl_Sucursal}</_Sucursal>
+      <_Bodega>${Variables.Gl_Bodega}</_Bodega>
+      <_CodAlternativo>${ObjSelec.Alternativo}</_CodAlternativo>
+      <_KopralLeido>${isALt}</_KopralLeido>
+    </Sb_ImprimirEtiquetaZPL_02>
+  </soap:Body>
+</soap:Envelope>"$
+
+	Dim PostString As String = "http://" & Variables.Global_Ip_WebService & "/Ws_BakApp.asmx"
+	Dim Js As HttpJob
+
+	Js.Initialize("", Me_)
+	Js.PostString(PostString, vXml)
+	Js.GetRequest.SetContentType("text/xml; charset=utf-8")
+	Js.GetRequest.SetHeader("SOAPAction", "http://BakApp/Sb_ImprimirEtiquetaZPL_01")
+
+	Return Js
+
+End Sub
+
 
 
 

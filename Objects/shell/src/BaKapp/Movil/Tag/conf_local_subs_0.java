@@ -8,7 +8,7 @@ public class conf_local_subs_0 {
 
 public static RemoteObject  _activity_create(RemoteObject _firsttime) throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Create (conf_local) ","conf_local",10,conf_local.mostCurrent.activityBA,conf_local.mostCurrent,21);
+		Debug.PushSubsStack("Activity_Create (conf_local) ","conf_local",11,conf_local.mostCurrent.activityBA,conf_local.mostCurrent,21);
 if (RapidSub.canDelegate("activity_create")) { return BaKapp.Movil.Tag.conf_local.remoteMe.runUserSub(false, "conf_local","activity_create", _firsttime);}
 Debug.locals.put("FirstTime", _firsttime);
  BA.debugLineNum = 21;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
@@ -31,7 +31,7 @@ finally {
 		}}
 public static RemoteObject  _activity_pause(RemoteObject _userclosed) throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Pause (conf_local) ","conf_local",10,conf_local.mostCurrent.activityBA,conf_local.mostCurrent,34);
+		Debug.PushSubsStack("Activity_Pause (conf_local) ","conf_local",11,conf_local.mostCurrent.activityBA,conf_local.mostCurrent,34);
 if (RapidSub.canDelegate("activity_pause")) { return BaKapp.Movil.Tag.conf_local.remoteMe.runUserSub(false, "conf_local","activity_pause", _userclosed);}
 Debug.locals.put("UserClosed", _userclosed);
  BA.debugLineNum = 34;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
@@ -48,7 +48,7 @@ finally {
 		}}
 public static RemoteObject  _activity_resume() throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Resume (conf_local) ","conf_local",10,conf_local.mostCurrent.activityBA,conf_local.mostCurrent,30);
+		Debug.PushSubsStack("Activity_Resume (conf_local) ","conf_local",11,conf_local.mostCurrent.activityBA,conf_local.mostCurrent,30);
 if (RapidSub.canDelegate("activity_resume")) { return BaKapp.Movil.Tag.conf_local.remoteMe.runUserSub(false, "conf_local","activity_resume");}
  BA.debugLineNum = 30;BA.debugLine="Sub Activity_Resume";
 Debug.ShouldStop(536870912);
@@ -64,7 +64,7 @@ finally {
 		}}
 public static void  _btn_grabar_click() throws Exception{
 try {
-		Debug.PushSubsStack("Btn_Grabar_Click (conf_local) ","conf_local",10,conf_local.mostCurrent.activityBA,conf_local.mostCurrent,39);
+		Debug.PushSubsStack("Btn_Grabar_Click (conf_local) ","conf_local",11,conf_local.mostCurrent.activityBA,conf_local.mostCurrent,39);
 if (RapidSub.canDelegate("btn_grabar_click")) { BaKapp.Movil.Tag.conf_local.remoteMe.runUserSub(false, "conf_local","btn_grabar_click"); return;}
 ResumableSub_Btn_Grabar_Click rsub = new ResumableSub_Btn_Grabar_Click(null);
 rsub.resume(null, null);
@@ -88,7 +88,7 @@ RemoteObject _result = RemoteObject.createImmutable(0);
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Btn_Grabar_Click (conf_local) ","conf_local",10,conf_local.mostCurrent.activityBA,conf_local.mostCurrent,39);
+		Debug.PushSubsStack("Btn_Grabar_Click (conf_local) ","conf_local",11,conf_local.mostCurrent.activityBA,conf_local.mostCurrent,39);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {

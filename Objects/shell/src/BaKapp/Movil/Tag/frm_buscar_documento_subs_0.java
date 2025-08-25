@@ -8,7 +8,7 @@ public class frm_buscar_documento_subs_0 {
 
 public static RemoteObject  _activity_create(RemoteObject _firsttime) throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Create (frm_buscar_documento) ","frm_buscar_documento",13,frm_buscar_documento.mostCurrent.activityBA,frm_buscar_documento.mostCurrent,40);
+		Debug.PushSubsStack("Activity_Create (frm_buscar_documento) ","frm_buscar_documento",14,frm_buscar_documento.mostCurrent.activityBA,frm_buscar_documento.mostCurrent,40);
 if (RapidSub.canDelegate("activity_create")) { return BaKapp.Movil.Tag.frm_buscar_documento.remoteMe.runUserSub(false, "frm_buscar_documento","activity_create", _firsttime);}
 Debug.locals.put("FirstTime", _firsttime);
  BA.debugLineNum = 40;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
@@ -67,7 +67,7 @@ finally {
 		}}
 public static RemoteObject  _activity_keypress(RemoteObject _keycode) throws Exception{
 try {
-		Debug.PushSubsStack("Activity_KeyPress (frm_buscar_documento) ","frm_buscar_documento",13,frm_buscar_documento.mostCurrent.activityBA,frm_buscar_documento.mostCurrent,499);
+		Debug.PushSubsStack("Activity_KeyPress (frm_buscar_documento) ","frm_buscar_documento",14,frm_buscar_documento.mostCurrent.activityBA,frm_buscar_documento.mostCurrent,499);
 if (RapidSub.canDelegate("activity_keypress")) { return BaKapp.Movil.Tag.frm_buscar_documento.remoteMe.runUserSub(false, "frm_buscar_documento","activity_keypress", _keycode);}
 Debug.locals.put("KeyCode", _keycode);
  BA.debugLineNum = 499;BA.debugLine="Sub Activity_KeyPress (KeyCode As Int) As Boolean";
@@ -91,7 +91,7 @@ finally {
 		}}
 public static RemoteObject  _activity_pause(RemoteObject _userclosed) throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Pause (frm_buscar_documento) ","frm_buscar_documento",13,frm_buscar_documento.mostCurrent.activityBA,frm_buscar_documento.mostCurrent,71);
+		Debug.PushSubsStack("Activity_Pause (frm_buscar_documento) ","frm_buscar_documento",14,frm_buscar_documento.mostCurrent.activityBA,frm_buscar_documento.mostCurrent,71);
 if (RapidSub.canDelegate("activity_pause")) { return BaKapp.Movil.Tag.frm_buscar_documento.remoteMe.runUserSub(false, "frm_buscar_documento","activity_pause", _userclosed);}
 Debug.locals.put("UserClosed", _userclosed);
  BA.debugLineNum = 71;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
@@ -108,7 +108,7 @@ finally {
 		}}
 public static RemoteObject  _activity_resume() throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Resume (frm_buscar_documento) ","frm_buscar_documento",13,frm_buscar_documento.mostCurrent.activityBA,frm_buscar_documento.mostCurrent,67);
+		Debug.PushSubsStack("Activity_Resume (frm_buscar_documento) ","frm_buscar_documento",14,frm_buscar_documento.mostCurrent.activityBA,frm_buscar_documento.mostCurrent,67);
 if (RapidSub.canDelegate("activity_resume")) { return BaKapp.Movil.Tag.frm_buscar_documento.remoteMe.runUserSub(false, "frm_buscar_documento","activity_resume");}
  BA.debugLineNum = 67;BA.debugLine="Sub Activity_Resume";
 Debug.ShouldStop(4);
@@ -124,7 +124,7 @@ finally {
 		}}
 public static void  _btn_cerrar_click() throws Exception{
 try {
-		Debug.PushSubsStack("Btn_Cerrar_Click (frm_buscar_documento) ","frm_buscar_documento",13,frm_buscar_documento.mostCurrent.activityBA,frm_buscar_documento.mostCurrent,483);
+		Debug.PushSubsStack("Btn_Cerrar_Click (frm_buscar_documento) ","frm_buscar_documento",14,frm_buscar_documento.mostCurrent.activityBA,frm_buscar_documento.mostCurrent,483);
 if (RapidSub.canDelegate("btn_cerrar_click")) { BaKapp.Movil.Tag.frm_buscar_documento.remoteMe.runUserSub(false, "frm_buscar_documento","btn_cerrar_click"); return;}
 ResumableSub_Btn_Cerrar_Click rsub = new ResumableSub_Btn_Cerrar_Click(null);
 rsub.resume(null, null);
@@ -147,7 +147,7 @@ RemoteObject _result = RemoteObject.createImmutable(0);
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Btn_Cerrar_Click (frm_buscar_documento) ","frm_buscar_documento",13,frm_buscar_documento.mostCurrent.activityBA,frm_buscar_documento.mostCurrent,483);
+		Debug.PushSubsStack("Btn_Cerrar_Click (frm_buscar_documento) ","frm_buscar_documento",14,frm_buscar_documento.mostCurrent.activityBA,frm_buscar_documento.mostCurrent,483);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -221,7 +221,7 @@ public static void  _msgbox_result(RemoteObject _result) throws Exception{
 }
 public static void  _btn_editar_documento_click() throws Exception{
 try {
-		Debug.PushSubsStack("Btn_Editar_Documento_Click (frm_buscar_documento) ","frm_buscar_documento",13,frm_buscar_documento.mostCurrent.activityBA,frm_buscar_documento.mostCurrent,119);
+		Debug.PushSubsStack("Btn_Editar_Documento_Click (frm_buscar_documento) ","frm_buscar_documento",14,frm_buscar_documento.mostCurrent.activityBA,frm_buscar_documento.mostCurrent,119);
 if (RapidSub.canDelegate("btn_editar_documento_click")) { BaKapp.Movil.Tag.frm_buscar_documento.remoteMe.runUserSub(false, "frm_buscar_documento","btn_editar_documento_click"); return;}
 ResumableSub_Btn_Editar_Documento_Click rsub = new ResumableSub_Btn_Editar_Documento_Click(null);
 rsub.resume(null, null);
@@ -260,7 +260,7 @@ RemoteObject _id_docenc = RemoteObject.createImmutable(0);
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Btn_Editar_Documento_Click (frm_buscar_documento) ","frm_buscar_documento",13,frm_buscar_documento.mostCurrent.activityBA,frm_buscar_documento.mostCurrent,119);
+		Debug.PushSubsStack("Btn_Editar_Documento_Click (frm_buscar_documento) ","frm_buscar_documento",14,frm_buscar_documento.mostCurrent.activityBA,frm_buscar_documento.mostCurrent,119);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -838,7 +838,7 @@ public static void  _complete(RemoteObject _rs) throws Exception{
 }
 public static void  _btn_enviar_correo_click() throws Exception{
 try {
-		Debug.PushSubsStack("Btn_Enviar_Correo_Click (frm_buscar_documento) ","frm_buscar_documento",13,frm_buscar_documento.mostCurrent.activityBA,frm_buscar_documento.mostCurrent,314);
+		Debug.PushSubsStack("Btn_Enviar_Correo_Click (frm_buscar_documento) ","frm_buscar_documento",14,frm_buscar_documento.mostCurrent.activityBA,frm_buscar_documento.mostCurrent,314);
 if (RapidSub.canDelegate("btn_enviar_correo_click")) { BaKapp.Movil.Tag.frm_buscar_documento.remoteMe.runUserSub(false, "frm_buscar_documento","btn_enviar_correo_click"); return;}
 ResumableSub_Btn_Enviar_Correo_Click rsub = new ResumableSub_Btn_Enviar_Correo_Click(null);
 rsub.resume(null, null);
@@ -862,7 +862,7 @@ RemoteObject _resultado = RemoteObject.createImmutable("");
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Btn_Enviar_Correo_Click (frm_buscar_documento) ","frm_buscar_documento",13,frm_buscar_documento.mostCurrent.activityBA,frm_buscar_documento.mostCurrent,314);
+		Debug.PushSubsStack("Btn_Enviar_Correo_Click (frm_buscar_documento) ","frm_buscar_documento",14,frm_buscar_documento.mostCurrent.activityBA,frm_buscar_documento.mostCurrent,314);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -1023,7 +1023,7 @@ finally {
 }
 public static void  _btn_enviar_correo_imprimir_click() throws Exception{
 try {
-		Debug.PushSubsStack("Btn_Enviar_Correo_Imprimir_Click (frm_buscar_documento) ","frm_buscar_documento",13,frm_buscar_documento.mostCurrent.activityBA,frm_buscar_documento.mostCurrent,349);
+		Debug.PushSubsStack("Btn_Enviar_Correo_Imprimir_Click (frm_buscar_documento) ","frm_buscar_documento",14,frm_buscar_documento.mostCurrent.activityBA,frm_buscar_documento.mostCurrent,349);
 if (RapidSub.canDelegate("btn_enviar_correo_imprimir_click")) { BaKapp.Movil.Tag.frm_buscar_documento.remoteMe.runUserSub(false, "frm_buscar_documento","btn_enviar_correo_imprimir_click"); return;}
 ResumableSub_Btn_Enviar_Correo_Imprimir_Click rsub = new ResumableSub_Btn_Enviar_Correo_Imprimir_Click(null);
 rsub.resume(null, null);
@@ -1047,7 +1047,7 @@ RemoteObject _resultado = RemoteObject.createImmutable("");
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Btn_Enviar_Correo_Imprimir_Click (frm_buscar_documento) ","frm_buscar_documento",13,frm_buscar_documento.mostCurrent.activityBA,frm_buscar_documento.mostCurrent,349);
+		Debug.PushSubsStack("Btn_Enviar_Correo_Imprimir_Click (frm_buscar_documento) ","frm_buscar_documento",14,frm_buscar_documento.mostCurrent.activityBA,frm_buscar_documento.mostCurrent,349);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -1260,7 +1260,7 @@ finally {
 }
 public static void  _btn_imprimir_click() throws Exception{
 try {
-		Debug.PushSubsStack("Btn_Imprimir_Click (frm_buscar_documento) ","frm_buscar_documento",13,frm_buscar_documento.mostCurrent.activityBA,frm_buscar_documento.mostCurrent,285);
+		Debug.PushSubsStack("Btn_Imprimir_Click (frm_buscar_documento) ","frm_buscar_documento",14,frm_buscar_documento.mostCurrent.activityBA,frm_buscar_documento.mostCurrent,285);
 if (RapidSub.canDelegate("btn_imprimir_click")) { BaKapp.Movil.Tag.frm_buscar_documento.remoteMe.runUserSub(false, "frm_buscar_documento","btn_imprimir_click"); return;}
 ResumableSub_Btn_Imprimir_Click rsub = new ResumableSub_Btn_Imprimir_Click(null);
 rsub.resume(null, null);
@@ -1284,7 +1284,7 @@ RemoteObject _resultado = RemoteObject.createImmutable("");
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Btn_Imprimir_Click (frm_buscar_documento) ","frm_buscar_documento",13,frm_buscar_documento.mostCurrent.activityBA,frm_buscar_documento.mostCurrent,285);
+		Debug.PushSubsStack("Btn_Imprimir_Click (frm_buscar_documento) ","frm_buscar_documento",14,frm_buscar_documento.mostCurrent.activityBA,frm_buscar_documento.mostCurrent,285);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -1405,7 +1405,7 @@ finally {
 }
 public static void  _btn_transformar_nvv_click() throws Exception{
 try {
-		Debug.PushSubsStack("Btn_Transformar_NVV_Click (frm_buscar_documento) ","frm_buscar_documento",13,frm_buscar_documento.mostCurrent.activityBA,frm_buscar_documento.mostCurrent,76);
+		Debug.PushSubsStack("Btn_Transformar_NVV_Click (frm_buscar_documento) ","frm_buscar_documento",14,frm_buscar_documento.mostCurrent.activityBA,frm_buscar_documento.mostCurrent,76);
 if (RapidSub.canDelegate("btn_transformar_nvv_click")) { BaKapp.Movil.Tag.frm_buscar_documento.remoteMe.runUserSub(false, "frm_buscar_documento","btn_transformar_nvv_click"); return;}
 ResumableSub_Btn_Transformar_NVV_Click rsub = new ResumableSub_Btn_Transformar_NVV_Click(null);
 rsub.resume(null, null);
@@ -1430,7 +1430,7 @@ RemoteObject _id_docenc = RemoteObject.createImmutable(0);
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Btn_Transformar_NVV_Click (frm_buscar_documento) ","frm_buscar_documento",13,frm_buscar_documento.mostCurrent.activityBA,frm_buscar_documento.mostCurrent,76);
+		Debug.PushSubsStack("Btn_Transformar_NVV_Click (frm_buscar_documento) ","frm_buscar_documento",14,frm_buscar_documento.mostCurrent.activityBA,frm_buscar_documento.mostCurrent,76);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -1652,7 +1652,7 @@ return RemoteObject.createImmutable("");
 }
 public static RemoteObject  _sb_revisardifprecios() throws Exception{
 try {
-		Debug.PushSubsStack("Sb_RevisarDifPrecios (frm_buscar_documento) ","frm_buscar_documento",13,frm_buscar_documento.mostCurrent.activityBA,frm_buscar_documento.mostCurrent,508);
+		Debug.PushSubsStack("Sb_RevisarDifPrecios (frm_buscar_documento) ","frm_buscar_documento",14,frm_buscar_documento.mostCurrent.activityBA,frm_buscar_documento.mostCurrent,508);
 if (RapidSub.canDelegate("sb_revisardifprecios")) { return BaKapp.Movil.Tag.frm_buscar_documento.remoteMe.runUserSub(false, "frm_buscar_documento","sb_revisardifprecios");}
 ResumableSub_Sb_RevisarDifPrecios rsub = new ResumableSub_Sb_RevisarDifPrecios(null);
 rsub.remoteResumableSub = anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSubForFilter();
@@ -1680,7 +1680,7 @@ RemoteObject _filas = RemoteObject.declareNull("anywheresoftware.b4a.objects.col
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_RevisarDifPrecios (frm_buscar_documento) ","frm_buscar_documento",13,frm_buscar_documento.mostCurrent.activityBA,frm_buscar_documento.mostCurrent,508);
+		Debug.PushSubsStack("Sb_RevisarDifPrecios (frm_buscar_documento) ","frm_buscar_documento",14,frm_buscar_documento.mostCurrent.activityBA,frm_buscar_documento.mostCurrent,508);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -1766,7 +1766,7 @@ case 9:
 this.state = 10;
  BA.debugLineNum = 531;BA.debugLine="Log(Js.ErrorMessage)";
 Debug.ShouldStop(262144);
-parent.mostCurrent.__c.runVoidMethod ("LogImpl","611534359",_js.getField(true,"_errormessage" /*RemoteObject*/ ),0);
+parent.mostCurrent.__c.runVoidMethod ("LogImpl","214745623",_js.getField(true,"_errormessage" /*RemoteObject*/ ),0);
  if (true) break;
 
 case 10:
@@ -1795,7 +1795,7 @@ public static void  _jobdone(RemoteObject _js) throws Exception{
 }
 public static RemoteObject  _sb_sepuedeeditardocumento() throws Exception{
 try {
-		Debug.PushSubsStack("Sb_SePuedeEditarDocumento (frm_buscar_documento) ","frm_buscar_documento",13,frm_buscar_documento.mostCurrent.activityBA,frm_buscar_documento.mostCurrent,255);
+		Debug.PushSubsStack("Sb_SePuedeEditarDocumento (frm_buscar_documento) ","frm_buscar_documento",14,frm_buscar_documento.mostCurrent.activityBA,frm_buscar_documento.mostCurrent,255);
 if (RapidSub.canDelegate("sb_sepuedeeditardocumento")) { return BaKapp.Movil.Tag.frm_buscar_documento.remoteMe.runUserSub(false, "frm_buscar_documento","sb_sepuedeeditardocumento");}
 ResumableSub_Sb_SePuedeEditarDocumento rsub = new ResumableSub_Sb_SePuedeEditarDocumento(null);
 rsub.remoteResumableSub = anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSubForFilter();
@@ -1823,7 +1823,7 @@ RemoteObject _regitros_sutentatorios = RemoteObject.createImmutable(0);
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_SePuedeEditarDocumento (frm_buscar_documento) ","frm_buscar_documento",13,frm_buscar_documento.mostCurrent.activityBA,frm_buscar_documento.mostCurrent,255);
+		Debug.PushSubsStack("Sb_SePuedeEditarDocumento (frm_buscar_documento) ","frm_buscar_documento",14,frm_buscar_documento.mostCurrent.activityBA,frm_buscar_documento.mostCurrent,255);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {

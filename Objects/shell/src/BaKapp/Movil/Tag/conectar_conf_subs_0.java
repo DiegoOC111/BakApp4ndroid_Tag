@@ -21,7 +21,7 @@ return RemoteObject.createImmutable("");
 }
 public static RemoteObject  _fx_cargar_configuracion_estacion(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("Fx_Cargar_Configuracion_Estacion (conectar_conf) ","conectar_conf",9,__ref.getField(false, "ba"),__ref,46);
+		Debug.PushSubsStack("Fx_Cargar_Configuracion_Estacion (conectar_conf) ","conectar_conf",4,__ref.getField(false, "ba"),__ref,46);
 if (RapidSub.canDelegate("fx_cargar_configuracion_estacion")) { return __ref.runUserSub(false, "conectar_conf","fx_cargar_configuracion_estacion", __ref);}
 ResumableSub_Fx_Cargar_Configuracion_Estacion rsub = new ResumableSub_Fx_Cargar_Configuracion_Estacion(null,__ref);
 rsub.remoteResumableSub = anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSubForFilter();
@@ -49,7 +49,7 @@ RemoteObject _vjson = RemoteObject.createImmutable("");
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Fx_Cargar_Configuracion_Estacion (conectar_conf) ","conectar_conf",9,__ref.getField(false, "ba"),__ref,46);
+		Debug.PushSubsStack("Fx_Cargar_Configuracion_Estacion (conectar_conf) ","conectar_conf",4,__ref.getField(false, "ba"),__ref,46);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -113,13 +113,13 @@ case 6:
 this.state = 7;
  BA.debugLineNum = 62;BA.debugLine="Log(\"2.- Una vez que ya tenemos el nombre carga";
 Debug.ShouldStop(536870912);
-parent.__c.runVoidMethod ("LogImpl","67143440",RemoteObject.createImmutable("2.- Una vez que ya tenemos el nombre cargamos la configuración de la estación en la tabla Zw_EstacionesBkp"),0);
+parent.__c.runVoidMethod ("LogImpl","25046288",RemoteObject.createImmutable("2.- Una vez que ya tenemos el nombre cargamos la configuración de la estación en la tabla Zw_EstacionesBkp"),0);
  BA.debugLineNum = 63;BA.debugLine="Variables.Global_Row_EstacionBk = Funciones.Fx_";
 Debug.ShouldStop(1073741824);
 parent._variables._global_row_estacionbk /*RemoteObject*/  = parent._funciones.runMethod(false,"_fx_datarow" /*RemoteObject*/ ,__ref.runMethod(false,"getActivityBA"),(Object)(_js.runClassMethod (BaKapp.Movil.Tag.httpjob.class, "_getstring" /*RemoteObject*/ )));
  BA.debugLineNum = 64;BA.debugLine="Log(\"Configuracion_Estacion_Cargada\")";
 Debug.ShouldStop(-2147483648);
-parent.__c.runVoidMethod ("LogImpl","67143442",RemoteObject.createImmutable("Configuracion_Estacion_Cargada"),0);
+parent.__c.runVoidMethod ("LogImpl","25046290",RemoteObject.createImmutable("Configuracion_Estacion_Cargada"),0);
  BA.debugLineNum = 65;BA.debugLine="Resultado = 1";
 Debug.ShouldStop(1);
 _resultado = BA.numberCast(int.class, 1);Debug.locals.put("Resultado", _resultado);
@@ -157,7 +157,7 @@ public static void  _jobdone(RemoteObject __ref,RemoteObject _js) throws Excepti
 }
 public static RemoteObject  _fx_cargar_configuracion_estacion_y_general(RemoteObject __ref,RemoteObject _empresa,RemoteObject _modalidad) throws Exception{
 try {
-		Debug.PushSubsStack("Fx_Cargar_Configuracion_Estacion_Y_General (conectar_conf) ","conectar_conf",9,__ref.getField(false, "ba"),__ref,138);
+		Debug.PushSubsStack("Fx_Cargar_Configuracion_Estacion_Y_General (conectar_conf) ","conectar_conf",4,__ref.getField(false, "ba"),__ref,138);
 if (RapidSub.canDelegate("fx_cargar_configuracion_estacion_y_general")) { return __ref.runUserSub(false, "conectar_conf","fx_cargar_configuracion_estacion_y_general", __ref, _empresa, _modalidad);}
 ResumableSub_Fx_Cargar_Configuracion_Estacion_Y_General rsub = new ResumableSub_Fx_Cargar_Configuracion_Estacion_Y_General(null,__ref,_empresa,_modalidad);
 rsub.remoteResumableSub = anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSubForFilter();
@@ -189,7 +189,7 @@ RemoteObject _vjson = RemoteObject.createImmutable("");
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Fx_Cargar_Configuracion_Estacion_Y_General (conectar_conf) ","conectar_conf",9,__ref.getField(false, "ba"),__ref,138);
+		Debug.PushSubsStack("Fx_Cargar_Configuracion_Estacion_Y_General (conectar_conf) ","conectar_conf",4,__ref.getField(false, "ba"),__ref,138);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -259,7 +259,7 @@ case 6:
 this.state = 7;
  BA.debugLineNum = 157;BA.debugLine="Log(\"6.- Cargamos la configuración por Estación";
 Debug.ShouldStop(268435456);
-parent.__c.runVoidMethod ("LogImpl","67340051",RemoteObject.createImmutable("6.- Cargamos la configuración por Estación CONFIEST"),0);
+parent.__c.runVoidMethod ("LogImpl","25242899",RemoteObject.createImmutable("6.- Cargamos la configuración por Estación CONFIEST"),0);
  BA.debugLineNum = 159;BA.debugLine="Variables.Global_Row_Configuracion_Estacion = F";
 Debug.ShouldStop(1073741824);
 parent._variables._global_row_configuracion_estacion /*RemoteObject*/  = parent._funciones.runMethod(false,"_fx_datarow" /*RemoteObject*/ ,__ref.runMethod(false,"getActivityBA"),(Object)(_js.runClassMethod (BaKapp.Movil.Tag.httpjob.class, "_getstring" /*RemoteObject*/ )));
@@ -340,10 +340,10 @@ case 12:
 this.state = 15;
  BA.debugLineNum = 195;BA.debugLine="Log(\"7.- Cargamos la configuración General\")";
 Debug.ShouldStop(4);
-parent.__c.runVoidMethod ("LogImpl","67340089",RemoteObject.createImmutable("7.- Cargamos la configuración General"),0);
+parent.__c.runVoidMethod ("LogImpl","25242937",RemoteObject.createImmutable("7.- Cargamos la configuración General"),0);
  BA.debugLineNum = 196;BA.debugLine="Log(\"Fecha servidor: \" & Variables.Gl_Fecha_S";
 Debug.ShouldStop(8);
-parent.__c.runVoidMethod ("LogImpl","67340090",RemoteObject.concat(RemoteObject.createImmutable("Fecha servidor: "),parent._variables._gl_fecha_servidor /*RemoteObject*/ ),0);
+parent.__c.runVoidMethod ("LogImpl","25242938",RemoteObject.concat(RemoteObject.createImmutable("Fecha servidor: "),parent._variables._gl_fecha_servidor /*RemoteObject*/ ),0);
  BA.debugLineNum = 198;BA.debugLine="Variables.Global_Row_Configuracion_General =";
 Debug.ShouldStop(32);
 parent._variables._global_row_configuracion_general /*RemoteObject*/  = parent._funciones.runMethod(false,"_fx_datarow" /*RemoteObject*/ ,__ref.runMethod(false,"getActivityBA"),(Object)(_js.runClassMethod (BaKapp.Movil.Tag.httpjob.class, "_getstring" /*RemoteObject*/ )));
@@ -371,10 +371,10 @@ case 17:
 this.state = 18;
  BA.debugLineNum = 206;BA.debugLine="Log(\"Error al cargar Configuracion General\")";
 Debug.ShouldStop(8192);
-parent.__c.runVoidMethod ("LogImpl","67340100",RemoteObject.createImmutable("Error al cargar Configuracion General"),0);
+parent.__c.runVoidMethod ("LogImpl","25242948",RemoteObject.createImmutable("Error al cargar Configuracion General"),0);
  BA.debugLineNum = 207;BA.debugLine="Log(Js.ErrorMessage)";
 Debug.ShouldStop(16384);
-parent.__c.runVoidMethod ("LogImpl","67340101",_js.getField(true,"_errormessage" /*RemoteObject*/ ),0);
+parent.__c.runVoidMethod ("LogImpl","25242949",_js.getField(true,"_errormessage" /*RemoteObject*/ ),0);
  if (true) break;
 
 case 18:
@@ -402,7 +402,7 @@ case 23:
 this.state = 24;
  BA.debugLineNum = 215;BA.debugLine="Log(Js.ErrorMessage)";
 Debug.ShouldStop(4194304);
-parent.__c.runVoidMethod ("LogImpl","67340109",_js.getField(true,"_errormessage" /*RemoteObject*/ ),0);
+parent.__c.runVoidMethod ("LogImpl","25242957",_js.getField(true,"_errormessage" /*RemoteObject*/ ),0);
  if (true) break;
 
 case 24:
@@ -429,7 +429,7 @@ finally {
 }
 public static RemoteObject  _fx_cargar_listas_precios_por_usuario(RemoteObject __ref,RemoteObject _usuario_x_defecto) throws Exception{
 try {
-		Debug.PushSubsStack("Fx_Cargar_Listas_Precios_Por_Usuario (conectar_conf) ","conectar_conf",9,__ref.getField(false, "ba"),__ref,106);
+		Debug.PushSubsStack("Fx_Cargar_Listas_Precios_Por_Usuario (conectar_conf) ","conectar_conf",4,__ref.getField(false, "ba"),__ref,106);
 if (RapidSub.canDelegate("fx_cargar_listas_precios_por_usuario")) { return __ref.runUserSub(false, "conectar_conf","fx_cargar_listas_precios_por_usuario", __ref, _usuario_x_defecto);}
 ResumableSub_Fx_Cargar_Listas_Precios_Por_Usuario rsub = new ResumableSub_Fx_Cargar_Listas_Precios_Por_Usuario(null,__ref,_usuario_x_defecto);
 rsub.remoteResumableSub = anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSubForFilter();
@@ -459,7 +459,7 @@ RemoteObject _vjson = RemoteObject.createImmutable("");
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Fx_Cargar_Listas_Precios_Por_Usuario (conectar_conf) ","conectar_conf",9,__ref.getField(false, "ba"),__ref,106);
+		Debug.PushSubsStack("Fx_Cargar_Listas_Precios_Por_Usuario (conectar_conf) ","conectar_conf",4,__ref.getField(false, "ba"),__ref,106);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -524,7 +524,7 @@ case 6:
 this.state = 7;
  BA.debugLineNum = 125;BA.debugLine="Log(\"5.- Traemos la lista de precios asociadas";
 Debug.ShouldStop(268435456);
-parent.__c.runVoidMethod ("LogImpl","67274515",RemoteObject.createImmutable("5.- Traemos la lista de precios asociadas al usuario, con las que puede trabajar"),0);
+parent.__c.runVoidMethod ("LogImpl","25177363",RemoteObject.createImmutable("5.- Traemos la lista de precios asociadas al usuario, con las que puede trabajar"),0);
  BA.debugLineNum = 126;BA.debugLine="Variables.Global_Listas_Precios_Usuario = Funci";
 Debug.ShouldStop(536870912);
 parent._variables._global_listas_precios_usuario /*RemoteObject*/  = parent._funciones.runMethod(false,"_fx_datatable" /*RemoteObject*/ ,__ref.runMethod(false,"getActivityBA"),(Object)(_vjson));
@@ -563,7 +563,7 @@ finally {
 }
 public static RemoteObject  _fx_cargar_sis_despachosimple_docdestino(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("Fx_Cargar_Sis_DespachoSimple_DocDestino (conectar_conf) ","conectar_conf",9,__ref.getField(false, "ba"),__ref,428);
+		Debug.PushSubsStack("Fx_Cargar_Sis_DespachoSimple_DocDestino (conectar_conf) ","conectar_conf",4,__ref.getField(false, "ba"),__ref,428);
 if (RapidSub.canDelegate("fx_cargar_sis_despachosimple_docdestino")) { return __ref.runUserSub(false, "conectar_conf","fx_cargar_sis_despachosimple_docdestino", __ref);}
 ResumableSub_Fx_Cargar_Sis_DespachoSimple_DocDestino rsub = new ResumableSub_Fx_Cargar_Sis_DespachoSimple_DocDestino(null,__ref);
 rsub.remoteResumableSub = anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSubForFilter();
@@ -591,7 +591,7 @@ RemoteObject _vjson = RemoteObject.createImmutable("");
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Fx_Cargar_Sis_DespachoSimple_DocDestino (conectar_conf) ","conectar_conf",9,__ref.getField(false, "ba"),__ref,428);
+		Debug.PushSubsStack("Fx_Cargar_Sis_DespachoSimple_DocDestino (conectar_conf) ","conectar_conf",4,__ref.getField(false, "ba"),__ref,428);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -655,7 +655,7 @@ case 6:
 this.state = 7;
  BA.debugLineNum = 444;BA.debugLine="Log(\"Traemos la lista de tipos de documentos pa";
 Debug.ShouldStop(134217728);
-parent.__c.runVoidMethod ("LogImpl","67602192",RemoteObject.createImmutable("Traemos la lista de tipos de documentos para despacho simple"),0);
+parent.__c.runVoidMethod ("LogImpl","25505040",RemoteObject.createImmutable("Traemos la lista de tipos de documentos para despacho simple"),0);
  BA.debugLineNum = 445;BA.debugLine="Variables.Global_Sis_DespachoSimple_DocDestino";
 Debug.ShouldStop(268435456);
 parent._variables._global_sis_despachosimple_docdestino /*RemoteObject*/  = parent._funciones.runMethod(false,"_fx_datatable" /*RemoteObject*/ ,__ref.runMethod(false,"getActivityBA"),(Object)(_vjson));
@@ -694,7 +694,7 @@ finally {
 }
 public static RemoteObject  _fx_cargar_sis_despachosimple_tipo(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("Fx_Cargar_Sis_DespachoSimple_Tipo (conectar_conf) ","conectar_conf",9,__ref.getField(false, "ba"),__ref,456);
+		Debug.PushSubsStack("Fx_Cargar_Sis_DespachoSimple_Tipo (conectar_conf) ","conectar_conf",4,__ref.getField(false, "ba"),__ref,456);
 if (RapidSub.canDelegate("fx_cargar_sis_despachosimple_tipo")) { return __ref.runUserSub(false, "conectar_conf","fx_cargar_sis_despachosimple_tipo", __ref);}
 ResumableSub_Fx_Cargar_Sis_DespachoSimple_Tipo rsub = new ResumableSub_Fx_Cargar_Sis_DespachoSimple_Tipo(null,__ref);
 rsub.remoteResumableSub = anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSubForFilter();
@@ -722,7 +722,7 @@ RemoteObject _vjson = RemoteObject.createImmutable("");
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Fx_Cargar_Sis_DespachoSimple_Tipo (conectar_conf) ","conectar_conf",9,__ref.getField(false, "ba"),__ref,456);
+		Debug.PushSubsStack("Fx_Cargar_Sis_DespachoSimple_Tipo (conectar_conf) ","conectar_conf",4,__ref.getField(false, "ba"),__ref,456);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -786,7 +786,7 @@ case 6:
 this.state = 7;
  BA.debugLineNum = 472;BA.debugLine="Log(\"Traemos la lista de tipos de despacho o re";
 Debug.ShouldStop(8388608);
-parent.__c.runVoidMethod ("LogImpl","67667728",RemoteObject.createImmutable("Traemos la lista de tipos de despacho o retiro"),0);
+parent.__c.runVoidMethod ("LogImpl","25570576",RemoteObject.createImmutable("Traemos la lista de tipos de despacho o retiro"),0);
  BA.debugLineNum = 473;BA.debugLine="Variables.Global_Sis_DespachoSimple_Tipo = Func";
 Debug.ShouldStop(16777216);
 parent._variables._global_sis_despachosimple_tipo /*RemoteObject*/  = parent._funciones.runMethod(false,"_fx_datatable" /*RemoteObject*/ ,__ref.runMethod(false,"getActivityBA"),(Object)(_vjson));
@@ -825,7 +825,7 @@ finally {
 }
 public static RemoteObject  _fx_cargar_sis_despachosimple_tipopago(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("Fx_Cargar_Sis_DespachoSimple_TipoPago (conectar_conf) ","conectar_conf",9,__ref.getField(false, "ba"),__ref,484);
+		Debug.PushSubsStack("Fx_Cargar_Sis_DespachoSimple_TipoPago (conectar_conf) ","conectar_conf",4,__ref.getField(false, "ba"),__ref,484);
 if (RapidSub.canDelegate("fx_cargar_sis_despachosimple_tipopago")) { return __ref.runUserSub(false, "conectar_conf","fx_cargar_sis_despachosimple_tipopago", __ref);}
 ResumableSub_Fx_Cargar_Sis_DespachoSimple_TipoPago rsub = new ResumableSub_Fx_Cargar_Sis_DespachoSimple_TipoPago(null,__ref);
 rsub.remoteResumableSub = anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSubForFilter();
@@ -853,7 +853,7 @@ RemoteObject _vjson = RemoteObject.createImmutable("");
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Fx_Cargar_Sis_DespachoSimple_TipoPago (conectar_conf) ","conectar_conf",9,__ref.getField(false, "ba"),__ref,484);
+		Debug.PushSubsStack("Fx_Cargar_Sis_DespachoSimple_TipoPago (conectar_conf) ","conectar_conf",4,__ref.getField(false, "ba"),__ref,484);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -917,7 +917,7 @@ case 6:
 this.state = 7;
  BA.debugLineNum = 500;BA.debugLine="Log(\"Traemos la lista de tipos de pago\")";
 Debug.ShouldStop(524288);
-parent.__c.runVoidMethod ("LogImpl","67733264",RemoteObject.createImmutable("Traemos la lista de tipos de pago"),0);
+parent.__c.runVoidMethod ("LogImpl","25636112",RemoteObject.createImmutable("Traemos la lista de tipos de pago"),0);
  BA.debugLineNum = 501;BA.debugLine="Variables.Global_Sis_DespachoSimple_TipoPago =";
 Debug.ShouldStop(1048576);
 parent._variables._global_sis_despachosimple_tipopago /*RemoteObject*/  = parent._funciones.runMethod(false,"_fx_datatable" /*RemoteObject*/ ,__ref.runMethod(false,"getActivityBA"),(Object)(_vjson));
@@ -956,7 +956,7 @@ finally {
 }
 public static RemoteObject  _fx_traer_nombre_base_de_datos(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("Fx_Traer_Nombre_Base_De_Datos (conectar_conf) ","conectar_conf",9,__ref.getField(false, "ba"),__ref,16);
+		Debug.PushSubsStack("Fx_Traer_Nombre_Base_De_Datos (conectar_conf) ","conectar_conf",4,__ref.getField(false, "ba"),__ref,16);
 if (RapidSub.canDelegate("fx_traer_nombre_base_de_datos")) { return __ref.runUserSub(false, "conectar_conf","fx_traer_nombre_base_de_datos", __ref);}
 ResumableSub_Fx_Traer_Nombre_Base_De_Datos rsub = new ResumableSub_Fx_Traer_Nombre_Base_De_Datos(null,__ref);
 rsub.remoteResumableSub = anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSubForFilter();
@@ -985,7 +985,7 @@ RemoteObject _fila = RemoteObject.declareNull("anywheresoftware.b4a.objects.coll
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Fx_Traer_Nombre_Base_De_Datos (conectar_conf) ","conectar_conf",9,__ref.getField(false, "ba"),__ref,16);
+		Debug.PushSubsStack("Fx_Traer_Nombre_Base_De_Datos (conectar_conf) ","conectar_conf",4,__ref.getField(false, "ba"),__ref,16);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -1049,7 +1049,7 @@ case 6:
 this.state = 7;
  BA.debugLineNum = 33;BA.debugLine="Log(\"1.- Obtenemos primero el nombre de la base";
 Debug.ShouldStop(1);
-parent.__c.runVoidMethod ("LogImpl","67077905",RemoteObject.createImmutable("1.- Obtenemos primero el nombre de la base de datos de Bakapp"),0);
+parent.__c.runVoidMethod ("LogImpl","24980753",RemoteObject.createImmutable("1.- Obtenemos primero el nombre de la base de datos de Bakapp"),0);
  BA.debugLineNum = 34;BA.debugLine="Dim Fila As Map = Funciones.Fx_DataRow(Js.GetSt";
 Debug.ShouldStop(2);
 _fila = RemoteObject.createNew ("anywheresoftware.b4a.objects.collections.Map");
@@ -1059,7 +1059,7 @@ Debug.ShouldStop(4);
 parent._variables._global_basebk /*RemoteObject*/  = BA.ObjectToString(_fila.runMethod(false,"Get",(Object)((RemoteObject.createImmutable("Global_BaseBk")))));
  BA.debugLineNum = 36;BA.debugLine="Log(\"DB BakApp: \" & Variables.Global_BaseBk)";
 Debug.ShouldStop(8);
-parent.__c.runVoidMethod ("LogImpl","67077908",RemoteObject.concat(RemoteObject.createImmutable("DB BakApp: "),parent._variables._global_basebk /*RemoteObject*/ ),0);
+parent.__c.runVoidMethod ("LogImpl","24980756",RemoteObject.concat(RemoteObject.createImmutable("DB BakApp: "),parent._variables._global_basebk /*RemoteObject*/ ),0);
  BA.debugLineNum = 37;BA.debugLine="Resultado = 1";
 Debug.ShouldStop(16);
 _resultado = BA.numberCast(int.class, 1);Debug.locals.put("Resultado", _resultado);
@@ -1095,7 +1095,7 @@ finally {
 }
 public static RemoteObject  _fx_traer_usuario_por_defecto(RemoteObject __ref,RemoteObject _usuario_x_defecto) throws Exception{
 try {
-		Debug.PushSubsStack("Fx_Traer_Usuario_Por_Defecto (conectar_conf) ","conectar_conf",9,__ref.getField(false, "ba"),__ref,75);
+		Debug.PushSubsStack("Fx_Traer_Usuario_Por_Defecto (conectar_conf) ","conectar_conf",4,__ref.getField(false, "ba"),__ref,75);
 if (RapidSub.canDelegate("fx_traer_usuario_por_defecto")) { return __ref.runUserSub(false, "conectar_conf","fx_traer_usuario_por_defecto", __ref, _usuario_x_defecto);}
 ResumableSub_Fx_Traer_Usuario_Por_Defecto rsub = new ResumableSub_Fx_Traer_Usuario_Por_Defecto(null,__ref,_usuario_x_defecto);
 rsub.remoteResumableSub = anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSubForFilter();
@@ -1125,7 +1125,7 @@ RemoteObject _vjson = RemoteObject.createImmutable("");
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Fx_Traer_Usuario_Por_Defecto (conectar_conf) ","conectar_conf",9,__ref.getField(false, "ba"),__ref,75);
+		Debug.PushSubsStack("Fx_Traer_Usuario_Por_Defecto (conectar_conf) ","conectar_conf",4,__ref.getField(false, "ba"),__ref,75);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -1190,7 +1190,7 @@ case 6:
 this.state = 7;
  BA.debugLineNum = 93;BA.debugLine="Log(\"4.- Cargamos al usuario por defecto y lo t";
 Debug.ShouldStop(268435456);
-parent.__c.runVoidMethod ("LogImpl","67208978",RemoteObject.createImmutable("4.- Cargamos al usuario por defecto y lo traemos"),0);
+parent.__c.runVoidMethod ("LogImpl","25111826",RemoteObject.createImmutable("4.- Cargamos al usuario por defecto y lo traemos"),0);
  BA.debugLineNum = 94;BA.debugLine="Variables.Global_Row_Usuario_Activo = Funciones";
 Debug.ShouldStop(536870912);
 parent._variables._global_row_usuario_activo /*RemoteObject*/  = parent._funciones.runMethod(false,"_fx_datarow" /*RemoteObject*/ ,__ref.runMethod(false,"getActivityBA"),(Object)(_js.runClassMethod (BaKapp.Movil.Tag.httpjob.class, "_getstring" /*RemoteObject*/ )));
@@ -1229,7 +1229,7 @@ finally {
 }
 public static RemoteObject  _initialize(RemoteObject __ref,RemoteObject _ba) throws Exception{
 try {
-		Debug.PushSubsStack("Initialize (conectar_conf) ","conectar_conf",9,__ref.getField(false, "ba"),__ref,9);
+		Debug.PushSubsStack("Initialize (conectar_conf) ","conectar_conf",4,__ref.getField(false, "ba"),__ref,9);
 if (RapidSub.canDelegate("initialize")) { return __ref.runUserSub(false, "conectar_conf","initialize", __ref, _ba);}
 __ref.runVoidMethodAndSync("innerInitializeHelper", _ba);
 Debug.locals.put("ba", _ba);
@@ -1247,7 +1247,7 @@ finally {
 		}}
 public static RemoteObject  _sb_cargar_datos_de_configuracion(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Cargar_Datos_De_Configuracion (conectar_conf) ","conectar_conf",9,__ref.getField(false, "ba"),__ref,222);
+		Debug.PushSubsStack("Sb_Cargar_Datos_De_Configuracion (conectar_conf) ","conectar_conf",4,__ref.getField(false, "ba"),__ref,222);
 if (RapidSub.canDelegate("sb_cargar_datos_de_configuracion")) { return __ref.runUserSub(false, "conectar_conf","sb_cargar_datos_de_configuracion", __ref);}
 ResumableSub_Sb_Cargar_Datos_De_Configuracion rsub = new ResumableSub_Sb_Cargar_Datos_De_Configuracion(null,__ref);
 rsub.remoteResumableSub = anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSubForFilter();
@@ -1279,7 +1279,7 @@ RemoteObject _clfx = RemoteObject.declareNull("BaKapp.Movil.Tag.clfunciones");
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Cargar_Datos_De_Configuracion (conectar_conf) ","conectar_conf",9,__ref.getField(false, "ba"),__ref,222);
+		Debug.PushSubsStack("Sb_Cargar_Datos_De_Configuracion (conectar_conf) ","conectar_conf",4,__ref.getField(false, "ba"),__ref,222);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -1383,7 +1383,7 @@ this.state = 9;
 ;
  BA.debugLineNum = 246;BA.debugLine="Log(\"3.- Iniciamos la sesion\")";
 Debug.ShouldStop(2097152);
-parent.__c.runVoidMethod ("LogImpl","67405592",RemoteObject.createImmutable("3.- Iniciamos la sesion"),0);
+parent.__c.runVoidMethod ("LogImpl","25308440",RemoteObject.createImmutable("3.- Iniciamos la sesion"),0);
  BA.debugLineNum = 248;BA.debugLine="Variables.Global_Sesion_Star = True";
 Debug.ShouldStop(8388608);
 parent._variables._global_sesion_star /*RemoteObject*/  = parent.__c.getField(true,"True");
@@ -1737,7 +1737,7 @@ public static void  _msgbox_result(RemoteObject __ref,RemoteObject _result) thro
 }
 public static RemoteObject  _sb_cargar_modedas(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Cargar_Modedas (conectar_conf) ","conectar_conf",9,__ref.getField(false, "ba"),__ref,329);
+		Debug.PushSubsStack("Sb_Cargar_Modedas (conectar_conf) ","conectar_conf",4,__ref.getField(false, "ba"),__ref,329);
 if (RapidSub.canDelegate("sb_cargar_modedas")) { return __ref.runUserSub(false, "conectar_conf","sb_cargar_modedas", __ref);}
 ResumableSub_Sb_Cargar_Modedas rsub = new ResumableSub_Sb_Cargar_Modedas(null,__ref);
 rsub.remoteResumableSub = anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSubForFilter();
@@ -1765,7 +1765,7 @@ RemoteObject _result = RemoteObject.createImmutable(0);
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Cargar_Modedas (conectar_conf) ","conectar_conf",9,__ref.getField(false, "ba"),__ref,329);
+		Debug.PushSubsStack("Sb_Cargar_Modedas (conectar_conf) ","conectar_conf",4,__ref.getField(false, "ba"),__ref,329);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -1920,7 +1920,7 @@ _result = (RemoteObject) result.getArrayElement(true,RemoteObject.createImmutabl
 ;
  BA.debugLineNum = 375;BA.debugLine="Log(Js.ErrorMessage)";
 Debug.ShouldStop(4194304);
-parent.__c.runVoidMethod ("LogImpl","67471150",_js.getField(true,"_errormessage" /*RemoteObject*/ ),0);
+parent.__c.runVoidMethod ("LogImpl","25373998",_js.getField(true,"_errormessage" /*RemoteObject*/ ),0);
  if (true) break;
 
 case 16:
@@ -1959,7 +1959,7 @@ _result = (RemoteObject) result.getArrayElement(true,RemoteObject.createImmutabl
 ;
  BA.debugLineNum = 391;BA.debugLine="Log(Js.ErrorMessage)";
 Debug.ShouldStop(64);
-parent.__c.runVoidMethod ("LogImpl","67471166",_js.getField(true,"_errormessage" /*RemoteObject*/ ),0);
+parent.__c.runVoidMethod ("LogImpl","25374014",_js.getField(true,"_errormessage" /*RemoteObject*/ ),0);
  if (true) break;
 
 case 20:
@@ -1986,7 +1986,7 @@ finally {
 }
 public static void  _sb_probar_conexion(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Probar_Conexion (conectar_conf) ","conectar_conf",9,__ref.getField(false, "ba"),__ref,512);
+		Debug.PushSubsStack("Sb_Probar_Conexion (conectar_conf) ","conectar_conf",4,__ref.getField(false, "ba"),__ref,512);
 if (RapidSub.canDelegate("sb_probar_conexion")) { __ref.runUserSub(false, "conectar_conf","sb_probar_conexion", __ref); return;}
 ResumableSub_Sb_Probar_Conexion rsub = new ResumableSub_Sb_Probar_Conexion(null,__ref);
 rsub.resume(null, null);
@@ -2011,7 +2011,7 @@ RemoteObject _vjson = RemoteObject.createImmutable("");
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Probar_Conexion (conectar_conf) ","conectar_conf",9,__ref.getField(false, "ba"),__ref,512);
+		Debug.PushSubsStack("Sb_Probar_Conexion (conectar_conf) ","conectar_conf",4,__ref.getField(false, "ba"),__ref,512);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -2114,7 +2114,7 @@ finally {
 }
 public static RemoteObject  _sb_revisar_carptea_tmp_servidor(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Revisar_Carptea_Tmp_Servidor (conectar_conf) ","conectar_conf",9,__ref.getField(false, "ba"),__ref,399);
+		Debug.PushSubsStack("Sb_Revisar_Carptea_Tmp_Servidor (conectar_conf) ","conectar_conf",4,__ref.getField(false, "ba"),__ref,399);
 if (RapidSub.canDelegate("sb_revisar_carptea_tmp_servidor")) { return __ref.runUserSub(false, "conectar_conf","sb_revisar_carptea_tmp_servidor", __ref);}
 ResumableSub_Sb_Revisar_Carptea_Tmp_Servidor rsub = new ResumableSub_Sb_Revisar_Carptea_Tmp_Servidor(null,__ref);
 rsub.remoteResumableSub = anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSubForFilter();
@@ -2144,7 +2144,7 @@ RemoteObject _fila = RemoteObject.declareNull("anywheresoftware.b4a.objects.coll
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Revisar_Carptea_Tmp_Servidor (conectar_conf) ","conectar_conf",9,__ref.getField(false, "ba"),__ref,399);
+		Debug.PushSubsStack("Sb_Revisar_Carptea_Tmp_Servidor (conectar_conf) ","conectar_conf",4,__ref.getField(false, "ba"),__ref,399);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {

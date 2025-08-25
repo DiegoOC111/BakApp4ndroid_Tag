@@ -8,7 +8,7 @@ public class frm_editar_obsoc_subs_0 {
 
 public static RemoteObject  _activity_create(RemoteObject _firsttime) throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Create (frm_editar_obsoc) ","frm_editar_obsoc",15,frm_editar_obsoc.mostCurrent.activityBA,frm_editar_obsoc.mostCurrent,29);
+		Debug.PushSubsStack("Activity_Create (frm_editar_obsoc) ","frm_editar_obsoc",16,frm_editar_obsoc.mostCurrent.activityBA,frm_editar_obsoc.mostCurrent,29);
 if (RapidSub.canDelegate("activity_create")) { return BaKapp.Movil.Tag.frm_editar_obsoc.remoteMe.runUserSub(false, "frm_editar_obsoc","activity_create", _firsttime);}
 Debug.locals.put("FirstTime", _firsttime);
  BA.debugLineNum = 29;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
@@ -34,7 +34,7 @@ finally {
 		}}
 public static RemoteObject  _activity_keypress(RemoteObject _keycode) throws Exception{
 try {
-		Debug.PushSubsStack("Activity_KeyPress (frm_editar_obsoc) ","frm_editar_obsoc",15,frm_editar_obsoc.mostCurrent.activityBA,frm_editar_obsoc.mostCurrent,96);
+		Debug.PushSubsStack("Activity_KeyPress (frm_editar_obsoc) ","frm_editar_obsoc",16,frm_editar_obsoc.mostCurrent.activityBA,frm_editar_obsoc.mostCurrent,96);
 if (RapidSub.canDelegate("activity_keypress")) { return BaKapp.Movil.Tag.frm_editar_obsoc.remoteMe.runUserSub(false, "frm_editar_obsoc","activity_keypress", _keycode);}
 Debug.locals.put("KeyCode", _keycode);
  BA.debugLineNum = 96;BA.debugLine="Sub Activity_KeyPress (KeyCode As Int) As Boolean";
@@ -58,7 +58,7 @@ finally {
 		}}
 public static RemoteObject  _activity_pause(RemoteObject _userclosed) throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Pause (frm_editar_obsoc) ","frm_editar_obsoc",15,frm_editar_obsoc.mostCurrent.activityBA,frm_editar_obsoc.mostCurrent,45);
+		Debug.PushSubsStack("Activity_Pause (frm_editar_obsoc) ","frm_editar_obsoc",16,frm_editar_obsoc.mostCurrent.activityBA,frm_editar_obsoc.mostCurrent,45);
 if (RapidSub.canDelegate("activity_pause")) { return BaKapp.Movil.Tag.frm_editar_obsoc.remoteMe.runUserSub(false, "frm_editar_obsoc","activity_pause", _userclosed);}
 Debug.locals.put("UserClosed", _userclosed);
  BA.debugLineNum = 45;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
@@ -75,7 +75,7 @@ finally {
 		}}
 public static RemoteObject  _activity_resume() throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Resume (frm_editar_obsoc) ","frm_editar_obsoc",15,frm_editar_obsoc.mostCurrent.activityBA,frm_editar_obsoc.mostCurrent,40);
+		Debug.PushSubsStack("Activity_Resume (frm_editar_obsoc) ","frm_editar_obsoc",16,frm_editar_obsoc.mostCurrent.activityBA,frm_editar_obsoc.mostCurrent,40);
 if (RapidSub.canDelegate("activity_resume")) { return BaKapp.Movil.Tag.frm_editar_obsoc.remoteMe.runUserSub(false, "frm_editar_obsoc","activity_resume");}
  BA.debugLineNum = 40;BA.debugLine="Sub Activity_Resume";
 Debug.ShouldStop(128);
@@ -97,7 +97,7 @@ finally {
 		}}
 public static void  _btn_cerrar_click() throws Exception{
 try {
-		Debug.PushSubsStack("Btn_Cerrar_Click (frm_editar_obsoc) ","frm_editar_obsoc",15,frm_editar_obsoc.mostCurrent.activityBA,frm_editar_obsoc.mostCurrent,104);
+		Debug.PushSubsStack("Btn_Cerrar_Click (frm_editar_obsoc) ","frm_editar_obsoc",16,frm_editar_obsoc.mostCurrent.activityBA,frm_editar_obsoc.mostCurrent,104);
 if (RapidSub.canDelegate("btn_cerrar_click")) { BaKapp.Movil.Tag.frm_editar_obsoc.remoteMe.runUserSub(false, "frm_editar_obsoc","btn_cerrar_click"); return;}
 ResumableSub_Btn_Cerrar_Click rsub = new ResumableSub_Btn_Cerrar_Click(null);
 rsub.resume(null, null);
@@ -120,7 +120,7 @@ RemoteObject _result = RemoteObject.createImmutable(0);
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Btn_Cerrar_Click (frm_editar_obsoc) ","frm_editar_obsoc",15,frm_editar_obsoc.mostCurrent.activityBA,frm_editar_obsoc.mostCurrent,104);
+		Debug.PushSubsStack("Btn_Cerrar_Click (frm_editar_obsoc) ","frm_editar_obsoc",16,frm_editar_obsoc.mostCurrent.activityBA,frm_editar_obsoc.mostCurrent,104);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -191,7 +191,7 @@ public static void  _msgbox_result(RemoteObject _result) throws Exception{
 }
 public static void  _btn_grabar_click() throws Exception{
 try {
-		Debug.PushSubsStack("Btn_Grabar_Click (frm_editar_obsoc) ","frm_editar_obsoc",15,frm_editar_obsoc.mostCurrent.activityBA,frm_editar_obsoc.mostCurrent,50);
+		Debug.PushSubsStack("Btn_Grabar_Click (frm_editar_obsoc) ","frm_editar_obsoc",16,frm_editar_obsoc.mostCurrent.activityBA,frm_editar_obsoc.mostCurrent,50);
 if (RapidSub.canDelegate("btn_grabar_click")) { BaKapp.Movil.Tag.frm_editar_obsoc.remoteMe.runUserSub(false, "frm_editar_obsoc","btn_grabar_click"); return;}
 ResumableSub_Btn_Grabar_Click rsub = new ResumableSub_Btn_Grabar_Click(null);
 rsub.resume(null, null);
@@ -217,7 +217,7 @@ RemoteObject _result = RemoteObject.createImmutable(0);
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Btn_Grabar_Click (frm_editar_obsoc) ","frm_editar_obsoc",15,frm_editar_obsoc.mostCurrent.activityBA,frm_editar_obsoc.mostCurrent,50);
+		Debug.PushSubsStack("Btn_Grabar_Click (frm_editar_obsoc) ","frm_editar_obsoc",16,frm_editar_obsoc.mostCurrent.activityBA,frm_editar_obsoc.mostCurrent,50);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {

@@ -8,7 +8,7 @@ public class cl_stxbodxprod_subs_0 {
 
 public static RemoteObject  _base_resize(RemoteObject __ref,RemoteObject _width,RemoteObject _height) throws Exception{
 try {
-		Debug.PushSubsStack("Base_Resize (cl_stxbodxprod) ","cl_stxbodxprod",6,__ref.getField(false, "ba"),__ref,25);
+		Debug.PushSubsStack("Base_Resize (cl_stxbodxprod) ","cl_stxbodxprod",8,__ref.getField(false, "ba"),__ref,25);
 if (RapidSub.canDelegate("base_resize")) { return __ref.runUserSub(false, "cl_stxbodxprod","base_resize", __ref, _width, _height);}
 Debug.locals.put("Width", _width);
 Debug.locals.put("Height", _height);
@@ -41,7 +41,7 @@ return RemoteObject.createImmutable("");
 }
 public static RemoteObject  _designercreateview(RemoteObject __ref,RemoteObject _base,RemoteObject _lbl,RemoteObject _props) throws Exception{
 try {
-		Debug.PushSubsStack("DesignerCreateView (cl_stxbodxprod) ","cl_stxbodxprod",6,__ref.getField(false, "ba"),__ref,18);
+		Debug.PushSubsStack("DesignerCreateView (cl_stxbodxprod) ","cl_stxbodxprod",8,__ref.getField(false, "ba"),__ref,18);
 if (RapidSub.canDelegate("designercreateview")) { return __ref.runUserSub(false, "cl_stxbodxprod","designercreateview", __ref, _base, _lbl, _props);}
 Debug.locals.put("Base", _base);
 Debug.locals.put("Lbl", _lbl);
@@ -69,7 +69,7 @@ finally {
 		}}
 public static RemoteObject  _initialize(RemoteObject __ref,RemoteObject _ba,RemoteObject _callback,RemoteObject _eventname) throws Exception{
 try {
-		Debug.PushSubsStack("Initialize (cl_stxbodxprod) ","cl_stxbodxprod",6,__ref.getField(false, "ba"),__ref,12);
+		Debug.PushSubsStack("Initialize (cl_stxbodxprod) ","cl_stxbodxprod",8,__ref.getField(false, "ba"),__ref,12);
 if (RapidSub.canDelegate("initialize")) { return __ref.runUserSub(false, "cl_stxbodxprod","initialize", __ref, _ba, _callback, _eventname);}
 __ref.runVoidMethodAndSync("innerInitializeHelper", _ba);
 Debug.locals.put("ba", _ba);

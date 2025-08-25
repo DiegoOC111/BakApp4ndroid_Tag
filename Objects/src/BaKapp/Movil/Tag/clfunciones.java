@@ -36,6 +36,7 @@ public BaKapp.Movil.Tag.main _main = null;
 public BaKapp.Movil.Tag.buscar_entidad _buscar_entidad = null;
 public BaKapp.Movil.Tag.buscar_productos _buscar_productos = null;
 public BaKapp.Movil.Tag.frm_impresion _frm_impresion = null;
+public BaKapp.Movil.Tag.funciones _funciones = null;
 public BaKapp.Movil.Tag.conf_local _conf_local = null;
 public BaKapp.Movil.Tag.dbutils _dbutils = null;
 public BaKapp.Movil.Tag.frm_buscar_documento _frm_buscar_documento = null;
@@ -48,29 +49,19 @@ public BaKapp.Movil.Tag.frm_menu_principal _frm_menu_principal = null;
 public BaKapp.Movil.Tag.frm_post_01_descuentos _frm_post_01_descuentos = null;
 public BaKapp.Movil.Tag.frm_post_01_formulario _frm_post_01_formulario = null;
 public BaKapp.Movil.Tag.frm_post_01_producto _frm_post_01_producto = null;
-public BaKapp.Movil.Tag.funciones _funciones = null;
 public BaKapp.Movil.Tag.variables _variables = null;
 public BaKapp.Movil.Tag.httputils2service _httputils2service = null;
 public BaKapp.Movil.Tag.xuiviewsutils _xuiviewsutils = null;
-public String  _class_globals(BaKapp.Movil.Tag.clfunciones __ref) throws Exception{
-__ref = this;
-RDebugUtils.currentModule="clfunciones";
-RDebugUtils.currentLine=5963776;
- //BA.debugLineNum = 5963776;BA.debugLine="Sub Class_Globals";
-RDebugUtils.currentLine=5963778;
- //BA.debugLineNum = 5963778;BA.debugLine="End Sub";
-return "";
-}
 public String  _initialize(BaKapp.Movil.Tag.clfunciones __ref,anywheresoftware.b4a.BA _ba) throws Exception{
 __ref = this;
 innerInitialize(_ba);
 RDebugUtils.currentModule="clfunciones";
 if (Debug.shouldDelegate(ba, "initialize", false))
 	 {return ((String) Debug.delegate(ba, "initialize", new Object[] {_ba}));}
-RDebugUtils.currentLine=6029312;
- //BA.debugLineNum = 6029312;BA.debugLine="Public Sub Initialize";
-RDebugUtils.currentLine=6029314;
- //BA.debugLineNum = 6029314;BA.debugLine="End Sub";
+RDebugUtils.currentLine=10158080;
+ //BA.debugLineNum = 10158080;BA.debugLine="Public Sub Initialize";
+RDebugUtils.currentLine=10158082;
+ //BA.debugLineNum = 10158082;BA.debugLine="End Sub";
 return "";
 }
 public anywheresoftware.b4a.keywords.Common.ResumableSubWrapper  _sb_existetabla(BaKapp.Movil.Tag.clfunciones __ref,String _tabla) throws Exception{
@@ -107,17 +98,17 @@ parent.__c.ReturnFromResumableSub(this,null);return;}
 case 0:
 //C
 this.state = 1;
-RDebugUtils.currentLine=6160388;
- //BA.debugLineNum = 6160388;BA.debugLine="Dim Consulta_Sql As String";
+RDebugUtils.currentLine=10289156;
+ //BA.debugLineNum = 10289156;BA.debugLine="Dim Consulta_Sql As String";
 _consulta_sql = "";
-RDebugUtils.currentLine=6160390;
- //BA.debugLineNum = 6160390;BA.debugLine="Consulta_Sql = \"Select Top 1 * From INFORMATION_S";
+RDebugUtils.currentLine=10289158;
+ //BA.debugLineNum = 10289158;BA.debugLine="Consulta_Sql = \"Select Top 1 * From INFORMATION_S";
 _consulta_sql = "Select Top 1 * From INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = '"+_tabla+"'";
-RDebugUtils.currentLine=6160392;
- //BA.debugLineNum = 6160392;BA.debugLine="Dim Js As HttpJob = Funciones.Fx_HttJob_Ws_Sb_Get";
+RDebugUtils.currentLine=10289160;
+ //BA.debugLineNum = 10289160;BA.debugLine="Dim Js As HttpJob = Funciones.Fx_HttJob_Ws_Sb_Get";
 _js = parent._funciones._fx_httjob_ws_sb_getdataset_json /*BaKapp.Movil.Tag.httpjob*/ (parent.getActivityBA(),_consulta_sql,parent);
-RDebugUtils.currentLine=6160393;
- //BA.debugLineNum = 6160393;BA.debugLine="Wait For (Js) JobDone(Js As HttpJob)";
+RDebugUtils.currentLine=10289161;
+ //BA.debugLineNum = 10289161;BA.debugLine="Wait For (Js) JobDone(Js As HttpJob)";
 parent.__c.WaitFor("jobdone", ba, new anywheresoftware.b4a.shell.DebugResumableSub.DelegatableResumableSub(this, "clfunciones", "sb_existetabla"), (Object)(_js));
 this.state = 15;
 return;
@@ -126,11 +117,11 @@ case 15:
 this.state = 1;
 _js = (BaKapp.Movil.Tag.httpjob) result[1];
 ;
-RDebugUtils.currentLine=6160394;
- //BA.debugLineNum = 6160394;BA.debugLine="Log(\"Revisando la existencia de Tabla \" & Tabla)";
-parent.__c.LogImpl("66160394","Revisando la existencia de Tabla "+_tabla,0);
-RDebugUtils.currentLine=6160396;
- //BA.debugLineNum = 6160396;BA.debugLine="If Js.Success Then";
+RDebugUtils.currentLine=10289162;
+ //BA.debugLineNum = 10289162;BA.debugLine="Log(\"Revisando la existencia de Tabla \" & Tabla)";
+parent.__c.LogImpl("210289162","Revisando la existencia de Tabla "+_tabla,0);
+RDebugUtils.currentLine=10289164;
+ //BA.debugLineNum = 10289164;BA.debugLine="If Js.Success Then";
 if (true) break;
 
 case 1:
@@ -143,11 +134,11 @@ this.state = 3;
 case 3:
 //C
 this.state = 4;
-RDebugUtils.currentLine=6160398;
- //BA.debugLineNum = 6160398;BA.debugLine="Dim vJson As String = Js.GetString";
+RDebugUtils.currentLine=10289166;
+ //BA.debugLineNum = 10289166;BA.debugLine="Dim vJson As String = Js.GetString";
 _vjson = _js._getstring /*String*/ (null);
-RDebugUtils.currentLine=6160400;
- //BA.debugLineNum = 6160400;BA.debugLine="If  vJson <> $\"{\"Table\":[]}\"$ Then";
+RDebugUtils.currentLine=10289168;
+ //BA.debugLineNum = 10289168;BA.debugLine="If  vJson <> $\"{\"Table\":[]}\"$ Then";
 if (true) break;
 
 case 4:
@@ -160,11 +151,11 @@ this.state = 6;
 case 6:
 //C
 this.state = 7;
-RDebugUtils.currentLine=6160402;
- //BA.debugLineNum = 6160402;BA.debugLine="Dim vJson As String = Js.GetString";
+RDebugUtils.currentLine=10289170;
+ //BA.debugLineNum = 10289170;BA.debugLine="Dim vJson As String = Js.GetString";
 _vjson = _js._getstring /*String*/ (null);
-RDebugUtils.currentLine=6160404;
- //BA.debugLineNum = 6160404;BA.debugLine="If  vJson <> $\"{\"Table\":[]}\"$ Then";
+RDebugUtils.currentLine=10289172;
+ //BA.debugLineNum = 10289172;BA.debugLine="If  vJson <> $\"{\"Table\":[]}\"$ Then";
 if (true) break;
 
 case 7:
@@ -179,8 +170,8 @@ this.state = 11;
 case 9:
 //C
 this.state = 12;
-RDebugUtils.currentLine=6160405;
- //BA.debugLineNum = 6160405;BA.debugLine="Return True";
+RDebugUtils.currentLine=10289173;
+ //BA.debugLineNum = 10289173;BA.debugLine="Return True";
 if (true) {
 parent.__c.ReturnFromResumableSub(this,(Object)(parent.__c.True));return;};
  if (true) break;
@@ -188,8 +179,8 @@ parent.__c.ReturnFromResumableSub(this,(Object)(parent.__c.True));return;};
 case 11:
 //C
 this.state = 12;
-RDebugUtils.currentLine=6160407;
- //BA.debugLineNum = 6160407;BA.debugLine="Return False";
+RDebugUtils.currentLine=10289175;
+ //BA.debugLineNum = 10289175;BA.debugLine="Return False";
 if (true) {
 parent.__c.ReturnFromResumableSub(this,(Object)(parent.__c.False));return;};
  if (true) break;
@@ -210,17 +201,26 @@ case 14:
 //C
 this.state = -1;
 ;
-RDebugUtils.currentLine=6160414;
- //BA.debugLineNum = 6160414;BA.debugLine="Return False";
+RDebugUtils.currentLine=10289182;
+ //BA.debugLineNum = 10289182;BA.debugLine="Return False";
 if (true) {
 parent.__c.ReturnFromResumableSub(this,(Object)(parent.__c.False));return;};
-RDebugUtils.currentLine=6160416;
- //BA.debugLineNum = 6160416;BA.debugLine="End Sub";
+RDebugUtils.currentLine=10289184;
+ //BA.debugLineNum = 10289184;BA.debugLine="End Sub";
 if (true) break;
 
             }
         }
     }
+}
+public String  _class_globals(BaKapp.Movil.Tag.clfunciones __ref) throws Exception{
+__ref = this;
+RDebugUtils.currentModule="clfunciones";
+RDebugUtils.currentLine=10092544;
+ //BA.debugLineNum = 10092544;BA.debugLine="Sub Class_Globals";
+RDebugUtils.currentLine=10092546;
+ //BA.debugLineNum = 10092546;BA.debugLine="End Sub";
+return "";
 }
 public anywheresoftware.b4a.keywords.Common.ResumableSubWrapper  _tienepermiso(BaKapp.Movil.Tag.clfunciones __ref,String _codpermiso,String _codusuario) throws Exception{
 RDebugUtils.currentModule="clfunciones";
@@ -258,17 +258,17 @@ parent.__c.ReturnFromResumableSub(this,null);return;}
 case 0:
 //C
 this.state = 1;
-RDebugUtils.currentLine=6094850;
- //BA.debugLineNum = 6094850;BA.debugLine="Dim Consulta_Sql As String";
+RDebugUtils.currentLine=10223618;
+ //BA.debugLineNum = 10223618;BA.debugLine="Dim Consulta_Sql As String";
 _consulta_sql = "";
-RDebugUtils.currentLine=6094852;
- //BA.debugLineNum = 6094852;BA.debugLine="Consulta_Sql = \"Select Top 1 * From \" & Variables";
+RDebugUtils.currentLine=10223620;
+ //BA.debugLineNum = 10223620;BA.debugLine="Consulta_Sql = \"Select Top 1 * From \" & Variables";
 _consulta_sql = "Select Top 1 * From "+parent._variables._global_basebk /*String*/ +"ZW_PermisosVsUsuarios Where CodUsuario = '"+_codusuario+"' And CodPermiso = '"+_codpermiso+"'";
-RDebugUtils.currentLine=6094854;
- //BA.debugLineNum = 6094854;BA.debugLine="Dim Js As HttpJob = Funciones.Fx_HttJob_Ws_Sb_Get";
+RDebugUtils.currentLine=10223622;
+ //BA.debugLineNum = 10223622;BA.debugLine="Dim Js As HttpJob = Funciones.Fx_HttJob_Ws_Sb_Get";
 _js = parent._funciones._fx_httjob_ws_sb_getdataset_json /*BaKapp.Movil.Tag.httpjob*/ (parent.getActivityBA(),_consulta_sql,parent);
-RDebugUtils.currentLine=6094855;
- //BA.debugLineNum = 6094855;BA.debugLine="Wait For (Js) JobDone(Js As HttpJob)";
+RDebugUtils.currentLine=10223623;
+ //BA.debugLineNum = 10223623;BA.debugLine="Wait For (Js) JobDone(Js As HttpJob)";
 parent.__c.WaitFor("jobdone", ba, new anywheresoftware.b4a.shell.DebugResumableSub.DelegatableResumableSub(this, "clfunciones", "tienepermiso"), (Object)(_js));
 this.state = 11;
 return;
@@ -277,8 +277,8 @@ case 11:
 this.state = 1;
 _js = (BaKapp.Movil.Tag.httpjob) result[1];
 ;
-RDebugUtils.currentLine=6094857;
- //BA.debugLineNum = 6094857;BA.debugLine="If Js.Success Then";
+RDebugUtils.currentLine=10223625;
+ //BA.debugLineNum = 10223625;BA.debugLine="If Js.Success Then";
 if (true) break;
 
 case 1:
@@ -291,11 +291,11 @@ this.state = 3;
 case 3:
 //C
 this.state = 4;
-RDebugUtils.currentLine=6094859;
- //BA.debugLineNum = 6094859;BA.debugLine="Dim vJson As String = Js.GetString";
+RDebugUtils.currentLine=10223627;
+ //BA.debugLineNum = 10223627;BA.debugLine="Dim vJson As String = Js.GetString";
 _vjson = _js._getstring /*String*/ (null);
-RDebugUtils.currentLine=6094861;
- //BA.debugLineNum = 6094861;BA.debugLine="If  vJson <> $\"{\"Table\":[]}\"$ Then";
+RDebugUtils.currentLine=10223629;
+ //BA.debugLineNum = 10223629;BA.debugLine="If  vJson <> $\"{\"Table\":[]}\"$ Then";
 if (true) break;
 
 case 4:
@@ -310,8 +310,8 @@ this.state = 8;
 case 6:
 //C
 this.state = 9;
-RDebugUtils.currentLine=6094862;
- //BA.debugLineNum = 6094862;BA.debugLine="Return True";
+RDebugUtils.currentLine=10223630;
+ //BA.debugLineNum = 10223630;BA.debugLine="Return True";
 if (true) {
 parent.__c.ReturnFromResumableSub(this,(Object)(parent.__c.True));return;};
  if (true) break;
@@ -319,8 +319,8 @@ parent.__c.ReturnFromResumableSub(this,(Object)(parent.__c.True));return;};
 case 8:
 //C
 this.state = 9;
-RDebugUtils.currentLine=6094864;
- //BA.debugLineNum = 6094864;BA.debugLine="Return False";
+RDebugUtils.currentLine=10223632;
+ //BA.debugLineNum = 10223632;BA.debugLine="Return False";
 if (true) {
 parent.__c.ReturnFromResumableSub(this,(Object)(parent.__c.False));return;};
  if (true) break;
@@ -335,12 +335,12 @@ case 10:
 //C
 this.state = -1;
 ;
-RDebugUtils.currentLine=6094869;
- //BA.debugLineNum = 6094869;BA.debugLine="Return False";
+RDebugUtils.currentLine=10223637;
+ //BA.debugLineNum = 10223637;BA.debugLine="Return False";
 if (true) {
 parent.__c.ReturnFromResumableSub(this,(Object)(parent.__c.False));return;};
-RDebugUtils.currentLine=6094871;
- //BA.debugLineNum = 6094871;BA.debugLine="End Sub";
+RDebugUtils.currentLine=10223639;
+ //BA.debugLineNum = 10223639;BA.debugLine="End Sub";
 if (true) break;
 
             }

@@ -8,7 +8,7 @@ public class frm_post_01_descuentos_subs_0 {
 
 public static RemoteObject  _activity_create(RemoteObject _firsttime) throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Create (frm_post_01_descuentos) ","frm_post_01_descuentos",20,frm_post_01_descuentos.mostCurrent.activityBA,frm_post_01_descuentos.mostCurrent,52);
+		Debug.PushSubsStack("Activity_Create (frm_post_01_descuentos) ","frm_post_01_descuentos",21,frm_post_01_descuentos.mostCurrent.activityBA,frm_post_01_descuentos.mostCurrent,52);
 if (RapidSub.canDelegate("activity_create")) { return BaKapp.Movil.Tag.frm_post_01_descuentos.remoteMe.runUserSub(false, "frm_post_01_descuentos","activity_create", _firsttime);}
 RemoteObject _codigo = RemoteObject.createImmutable("");
 RemoteObject _descripcion = RemoteObject.createImmutable("");
@@ -55,7 +55,7 @@ finally {
 		}}
 public static RemoteObject  _activity_pause(RemoteObject _userclosed) throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Pause (frm_post_01_descuentos) ","frm_post_01_descuentos",20,frm_post_01_descuentos.mostCurrent.activityBA,frm_post_01_descuentos.mostCurrent,84);
+		Debug.PushSubsStack("Activity_Pause (frm_post_01_descuentos) ","frm_post_01_descuentos",21,frm_post_01_descuentos.mostCurrent.activityBA,frm_post_01_descuentos.mostCurrent,84);
 if (RapidSub.canDelegate("activity_pause")) { return BaKapp.Movil.Tag.frm_post_01_descuentos.remoteMe.runUserSub(false, "frm_post_01_descuentos","activity_pause", _userclosed);}
 Debug.locals.put("UserClosed", _userclosed);
  BA.debugLineNum = 84;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
@@ -72,7 +72,7 @@ finally {
 		}}
 public static RemoteObject  _activity_resume() throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Resume (frm_post_01_descuentos) ","frm_post_01_descuentos",20,frm_post_01_descuentos.mostCurrent.activityBA,frm_post_01_descuentos.mostCurrent,80);
+		Debug.PushSubsStack("Activity_Resume (frm_post_01_descuentos) ","frm_post_01_descuentos",21,frm_post_01_descuentos.mostCurrent.activityBA,frm_post_01_descuentos.mostCurrent,80);
 if (RapidSub.canDelegate("activity_resume")) { return BaKapp.Movil.Tag.frm_post_01_descuentos.remoteMe.runUserSub(false, "frm_post_01_descuentos","activity_resume");}
  BA.debugLineNum = 80;BA.debugLine="Sub Activity_Resume";
 Debug.ShouldStop(32768);
@@ -88,7 +88,7 @@ finally {
 		}}
 public static void  _btn_agregar_descuento_click() throws Exception{
 try {
-		Debug.PushSubsStack("Btn_Agregar_Descuento_Click (frm_post_01_descuentos) ","frm_post_01_descuentos",20,frm_post_01_descuentos.mostCurrent.activityBA,frm_post_01_descuentos.mostCurrent,188);
+		Debug.PushSubsStack("Btn_Agregar_Descuento_Click (frm_post_01_descuentos) ","frm_post_01_descuentos",21,frm_post_01_descuentos.mostCurrent.activityBA,frm_post_01_descuentos.mostCurrent,188);
 if (RapidSub.canDelegate("btn_agregar_descuento_click")) { BaKapp.Movil.Tag.frm_post_01_descuentos.remoteMe.runUserSub(false, "frm_post_01_descuentos","btn_agregar_descuento_click"); return;}
 ResumableSub_Btn_Agregar_Descuento_Click rsub = new ResumableSub_Btn_Agregar_Descuento_Click(null);
 rsub.resume(null, null);
@@ -116,7 +116,7 @@ RemoteObject _decimales = RemoteObject.createImmutable(0);
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Btn_Agregar_Descuento_Click (frm_post_01_descuentos) ","frm_post_01_descuentos",20,frm_post_01_descuentos.mostCurrent.activityBA,frm_post_01_descuentos.mostCurrent,188);
+		Debug.PushSubsStack("Btn_Agregar_Descuento_Click (frm_post_01_descuentos) ","frm_post_01_descuentos",21,frm_post_01_descuentos.mostCurrent.activityBA,frm_post_01_descuentos.mostCurrent,188);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -344,7 +344,7 @@ public static void  _complete(RemoteObject _resultdscto) throws Exception{
 }
 public static RemoteObject  _btn_volver_click() throws Exception{
 try {
-		Debug.PushSubsStack("Btn_Volver_Click (frm_post_01_descuentos) ","frm_post_01_descuentos",20,frm_post_01_descuentos.mostCurrent.activityBA,frm_post_01_descuentos.mostCurrent,184);
+		Debug.PushSubsStack("Btn_Volver_Click (frm_post_01_descuentos) ","frm_post_01_descuentos",21,frm_post_01_descuentos.mostCurrent.activityBA,frm_post_01_descuentos.mostCurrent,184);
 if (RapidSub.canDelegate("btn_volver_click")) { return BaKapp.Movil.Tag.frm_post_01_descuentos.remoteMe.runUserSub(false, "frm_post_01_descuentos","btn_volver_click");}
  BA.debugLineNum = 184;BA.debugLine="Private Sub Btn_Volver_Click";
 Debug.ShouldStop(8388608);
@@ -425,7 +425,7 @@ return RemoteObject.createImmutable("");
 }
 public static RemoteObject  _sb_agregar_descuento() throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Agregar_Descuento (frm_post_01_descuentos) ","frm_post_01_descuentos",20,frm_post_01_descuentos.mostCurrent.activityBA,frm_post_01_descuentos.mostCurrent,246);
+		Debug.PushSubsStack("Sb_Agregar_Descuento (frm_post_01_descuentos) ","frm_post_01_descuentos",21,frm_post_01_descuentos.mostCurrent.activityBA,frm_post_01_descuentos.mostCurrent,246);
 if (RapidSub.canDelegate("sb_agregar_descuento")) { return BaKapp.Movil.Tag.frm_post_01_descuentos.remoteMe.runUserSub(false, "frm_post_01_descuentos","sb_agregar_descuento");}
 ResumableSub_Sb_Agregar_Descuento rsub = new ResumableSub_Sb_Agregar_Descuento(null);
 rsub.remoteResumableSub = anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSubForFilter();
@@ -454,7 +454,7 @@ RemoteObject _newdescuentoporc = RemoteObject.createImmutable(0);
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Agregar_Descuento (frm_post_01_descuentos) ","frm_post_01_descuentos",20,frm_post_01_descuentos.mostCurrent.activityBA,frm_post_01_descuentos.mostCurrent,246);
+		Debug.PushSubsStack("Sb_Agregar_Descuento (frm_post_01_descuentos) ","frm_post_01_descuentos",21,frm_post_01_descuentos.mostCurrent.activityBA,frm_post_01_descuentos.mostCurrent,246);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -725,7 +725,7 @@ this.state = 35;
 this.catchState = 0;
  BA.debugLineNum = 314;BA.debugLine="Log(LastException)";
 Debug.ShouldStop(33554432);
-parent.mostCurrent.__c.runVoidMethod ("LogImpl","617104964",BA.ObjectToString(parent.mostCurrent.__c.runMethod(false,"LastException",frm_post_01_descuentos.mostCurrent.activityBA)),0);
+parent.mostCurrent.__c.runVoidMethod ("LogImpl","220316228",BA.ObjectToString(parent.mostCurrent.__c.runMethod(false,"LastException",frm_post_01_descuentos.mostCurrent.activityBA)),0);
  BA.debugLineNum = 315;BA.debugLine="bmp1 = LoadBitmap(File.DirAssets, \"symbol-cance";
 Debug.ShouldStop(67108864);
 parent.mostCurrent._bmp1 = parent.mostCurrent.__c.runMethod(false,"LoadBitmap",(Object)(parent.mostCurrent.__c.getField(false,"File").runMethod(true,"getDirAssets")),(Object)(RemoteObject.createImmutable("symbol-cancel.png")));
@@ -796,7 +796,7 @@ public static void  _msgbox_result(RemoteObject _result) throws Exception{
 }
 public static RemoteObject  _sb_cargar_descuentos() throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Cargar_Descuentos (frm_post_01_descuentos) ","frm_post_01_descuentos",20,frm_post_01_descuentos.mostCurrent.activityBA,frm_post_01_descuentos.mostCurrent,88);
+		Debug.PushSubsStack("Sb_Cargar_Descuentos (frm_post_01_descuentos) ","frm_post_01_descuentos",21,frm_post_01_descuentos.mostCurrent.activityBA,frm_post_01_descuentos.mostCurrent,88);
 if (RapidSub.canDelegate("sb_cargar_descuentos")) { return BaKapp.Movil.Tag.frm_post_01_descuentos.remoteMe.runUserSub(false, "frm_post_01_descuentos","sb_cargar_descuentos");}
 RemoteObject _row = RemoteObject.createImmutable(0);
 RemoteObject _cursor1 = RemoteObject.declareNull("anywheresoftware.b4a.sql.SQL.CursorWrapper");
@@ -943,7 +943,7 @@ finally {
 		}}
 public static RemoteObject  _sb_sumar_totales() throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Sumar_Totales (frm_post_01_descuentos) ","frm_post_01_descuentos",20,frm_post_01_descuentos.mostCurrent.activityBA,frm_post_01_descuentos.mostCurrent,152);
+		Debug.PushSubsStack("Sb_Sumar_Totales (frm_post_01_descuentos) ","frm_post_01_descuentos",21,frm_post_01_descuentos.mostCurrent.activityBA,frm_post_01_descuentos.mostCurrent,152);
 if (RapidSub.canDelegate("sb_sumar_totales")) { return BaKapp.Movil.Tag.frm_post_01_descuentos.remoteMe.runUserSub(false, "frm_post_01_descuentos","sb_sumar_totales");}
 int _i = 0;
 RemoteObject _p = RemoteObject.declareNull("anywheresoftware.b4a.objects.B4XViewWrapper");
@@ -1017,7 +1017,7 @@ finally {
 		}}
 public static void  _xclvdescuentos_itemlongclick(RemoteObject _index,RemoteObject _value) throws Exception{
 try {
-		Debug.PushSubsStack("XclvDescuentos_ItemLongClick (frm_post_01_descuentos) ","frm_post_01_descuentos",20,frm_post_01_descuentos.mostCurrent.activityBA,frm_post_01_descuentos.mostCurrent,328);
+		Debug.PushSubsStack("XclvDescuentos_ItemLongClick (frm_post_01_descuentos) ","frm_post_01_descuentos",21,frm_post_01_descuentos.mostCurrent.activityBA,frm_post_01_descuentos.mostCurrent,328);
 if (RapidSub.canDelegate("xclvdescuentos_itemlongclick")) { BaKapp.Movil.Tag.frm_post_01_descuentos.remoteMe.runUserSub(false, "frm_post_01_descuentos","xclvdescuentos_itemlongclick", _index, _value); return;}
 ResumableSub_XclvDescuentos_ItemLongClick rsub = new ResumableSub_XclvDescuentos_ItemLongClick(null,_index,_value);
 rsub.resume(null, null);
@@ -1050,7 +1050,7 @@ RemoteObject _fila_dscto = RemoteObject.declareNull("anywheresoftware.b4a.object
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("XclvDescuentos_ItemLongClick (frm_post_01_descuentos) ","frm_post_01_descuentos",20,frm_post_01_descuentos.mostCurrent.activityBA,frm_post_01_descuentos.mostCurrent,328);
+		Debug.PushSubsStack("XclvDescuentos_ItemLongClick (frm_post_01_descuentos) ","frm_post_01_descuentos",21,frm_post_01_descuentos.mostCurrent.activityBA,frm_post_01_descuentos.mostCurrent,328);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {

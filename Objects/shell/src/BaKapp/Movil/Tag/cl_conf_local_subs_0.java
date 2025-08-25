@@ -15,7 +15,7 @@ return RemoteObject.createImmutable("");
 }
 public static RemoteObject  _initialize(RemoteObject __ref,RemoteObject _ba) throws Exception{
 try {
-		Debug.PushSubsStack("Initialize (cl_conf_local) ","cl_conf_local",4,__ref.getField(false, "ba"),__ref,8);
+		Debug.PushSubsStack("Initialize (cl_conf_local) ","cl_conf_local",6,__ref.getField(false, "ba"),__ref,8);
 if (RapidSub.canDelegate("initialize")) { return __ref.runUserSub(false, "cl_conf_local","initialize", __ref, _ba);}
 __ref.runVoidMethodAndSync("innerInitializeHelper", _ba);
 Debug.locals.put("ba", _ba);
@@ -33,7 +33,7 @@ finally {
 		}}
 public static RemoteObject  _sb_revisar_webservice(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Revisar_WebService (cl_conf_local) ","cl_conf_local",4,__ref.getField(false, "ba"),__ref,12);
+		Debug.PushSubsStack("Sb_Revisar_WebService (cl_conf_local) ","cl_conf_local",6,__ref.getField(false, "ba"),__ref,12);
 if (RapidSub.canDelegate("sb_revisar_webservice")) { return __ref.runUserSub(false, "cl_conf_local","sb_revisar_webservice", __ref);}
 ResumableSub_Sb_Revisar_WebService rsub = new ResumableSub_Sb_Revisar_WebService(null,__ref);
 rsub.remoteResumableSub = anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSubForFilter();
@@ -61,7 +61,7 @@ RemoteObject _fila = RemoteObject.declareNull("anywheresoftware.b4a.objects.coll
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Revisar_WebService (cl_conf_local) ","cl_conf_local",4,__ref.getField(false, "ba"),__ref,12);
+		Debug.PushSubsStack("Sb_Revisar_WebService (cl_conf_local) ","cl_conf_local",6,__ref.getField(false, "ba"),__ref,12);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -165,7 +165,7 @@ Debug.ShouldStop(4);
 parent._variables._global_ip_webservice /*RemoteObject*/  = BA.ObjectToString("...");
  BA.debugLineNum = 36;BA.debugLine="Log(LastException)";
 Debug.ShouldStop(8);
-parent.__c.runVoidMethod ("LogImpl","64980760",BA.ObjectToString(parent.__c.runMethod(false,"LastException",__ref.runMethod(false,"getActivityBA"))),0);
+parent.__c.runVoidMethod ("LogImpl","29109528",BA.ObjectToString(parent.__c.runMethod(false,"LastException",__ref.runMethod(false,"getActivityBA"))),0);
  if (true) break;
 if (true) break;
 

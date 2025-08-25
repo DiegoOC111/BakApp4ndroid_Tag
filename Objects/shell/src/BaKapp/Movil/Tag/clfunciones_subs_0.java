@@ -13,7 +13,7 @@ return RemoteObject.createImmutable("");
 }
 public static RemoteObject  _initialize(RemoteObject __ref,RemoteObject _ba) throws Exception{
 try {
-		Debug.PushSubsStack("Initialize (clfunciones) ","clfunciones",7,__ref.getField(false, "ba"),__ref,6);
+		Debug.PushSubsStack("Initialize (clfunciones) ","clfunciones",9,__ref.getField(false, "ba"),__ref,6);
 if (RapidSub.canDelegate("initialize")) { return __ref.runUserSub(false, "clfunciones","initialize", __ref, _ba);}
 __ref.runVoidMethodAndSync("innerInitializeHelper", _ba);
 Debug.locals.put("ba", _ba);
@@ -31,7 +31,7 @@ finally {
 		}}
 public static RemoteObject  _sb_existetabla(RemoteObject __ref,RemoteObject _tabla) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_ExisteTabla (clfunciones) ","clfunciones",7,__ref.getField(false, "ba"),__ref,35);
+		Debug.PushSubsStack("Sb_ExisteTabla (clfunciones) ","clfunciones",9,__ref.getField(false, "ba"),__ref,35);
 if (RapidSub.canDelegate("sb_existetabla")) { return __ref.runUserSub(false, "clfunciones","sb_existetabla", __ref, _tabla);}
 ResumableSub_Sb_ExisteTabla rsub = new ResumableSub_Sb_ExisteTabla(null,__ref,_tabla);
 rsub.remoteResumableSub = anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSubForFilter();
@@ -61,7 +61,7 @@ RemoteObject _vjson = RemoteObject.createImmutable("");
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_ExisteTabla (clfunciones) ","clfunciones",7,__ref.getField(false, "ba"),__ref,35);
+		Debug.PushSubsStack("Sb_ExisteTabla (clfunciones) ","clfunciones",9,__ref.getField(false, "ba"),__ref,35);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -95,7 +95,7 @@ _js = (RemoteObject) result.getArrayElement(false,RemoteObject.createImmutable(1
 ;
  BA.debugLineNum = 45;BA.debugLine="Log(\"Revisando la existencia de Tabla \" & Tabla)";
 Debug.ShouldStop(4096);
-parent.__c.runVoidMethod ("LogImpl","66160394",RemoteObject.concat(RemoteObject.createImmutable("Revisando la existencia de Tabla "),_tabla),0);
+parent.__c.runVoidMethod ("LogImpl","210289162",RemoteObject.concat(RemoteObject.createImmutable("Revisando la existencia de Tabla "),_tabla),0);
  BA.debugLineNum = 47;BA.debugLine="If Js.Success Then";
 Debug.ShouldStop(16384);
 if (true) break;
@@ -199,7 +199,7 @@ public static void  _jobdone(RemoteObject __ref,RemoteObject _js) throws Excepti
 }
 public static RemoteObject  _tienepermiso(RemoteObject __ref,RemoteObject _codpermiso,RemoteObject _codusuario) throws Exception{
 try {
-		Debug.PushSubsStack("TienePermiso (clfunciones) ","clfunciones",7,__ref.getField(false, "ba"),__ref,10);
+		Debug.PushSubsStack("TienePermiso (clfunciones) ","clfunciones",9,__ref.getField(false, "ba"),__ref,10);
 if (RapidSub.canDelegate("tienepermiso")) { return __ref.runUserSub(false, "clfunciones","tienepermiso", __ref, _codpermiso, _codusuario);}
 ResumableSub_TienePermiso rsub = new ResumableSub_TienePermiso(null,__ref,_codpermiso,_codusuario);
 rsub.remoteResumableSub = anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSubForFilter();
@@ -231,7 +231,7 @@ RemoteObject _vjson = RemoteObject.createImmutable("");
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("TienePermiso (clfunciones) ","clfunciones",7,__ref.getField(false, "ba"),__ref,10);
+		Debug.PushSubsStack("TienePermiso (clfunciones) ","clfunciones",9,__ref.getField(false, "ba"),__ref,10);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {

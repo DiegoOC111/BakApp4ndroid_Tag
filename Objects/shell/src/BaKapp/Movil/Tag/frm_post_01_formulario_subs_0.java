@@ -8,7 +8,7 @@ public class frm_post_01_formulario_subs_0 {
 
 public static RemoteObject  _activity_create(RemoteObject _firsttime) throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Create (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,136);
+		Debug.PushSubsStack("Activity_Create (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,136);
 if (RapidSub.canDelegate("activity_create")) { return BaKapp.Movil.Tag.frm_post_01_formulario.remoteMe.runUserSub(false, "frm_post_01_formulario","activity_create", _firsttime);}
 RemoteObject _items = RemoteObject.declareNull("anywheresoftware.b4a.objects.collections.List");
 RemoteObject _fila = RemoteObject.declareNull("anywheresoftware.b4a.objects.collections.Map");
@@ -243,7 +243,7 @@ finally {
 		}}
 public static RemoteObject  _activity_keypress(RemoteObject _keycode) throws Exception{
 try {
-		Debug.PushSubsStack("Activity_KeyPress (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,625);
+		Debug.PushSubsStack("Activity_KeyPress (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,625);
 if (RapidSub.canDelegate("activity_keypress")) { return BaKapp.Movil.Tag.frm_post_01_formulario.remoteMe.runUserSub(false, "frm_post_01_formulario","activity_keypress", _keycode);}
 RemoteObject _vsalir = RemoteObject.createImmutable(0);
 RemoteObject _cursor1 = RemoteObject.declareNull("anywheresoftware.b4a.sql.SQL.CursorWrapper");
@@ -321,7 +321,7 @@ finally {
 		}}
 public static RemoteObject  _activity_pause(RemoteObject _userclosed) throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Pause (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,621);
+		Debug.PushSubsStack("Activity_Pause (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,621);
 if (RapidSub.canDelegate("activity_pause")) { return BaKapp.Movil.Tag.frm_post_01_formulario.remoteMe.runUserSub(false, "frm_post_01_formulario","activity_pause", _userclosed);}
 Debug.locals.put("UserClosed", _userclosed);
  BA.debugLineNum = 621;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
@@ -338,7 +338,7 @@ finally {
 		}}
 public static void  _activity_resume() throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Resume (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,225);
+		Debug.PushSubsStack("Activity_Resume (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,225);
 if (RapidSub.canDelegate("activity_resume")) { BaKapp.Movil.Tag.frm_post_01_formulario.remoteMe.runUserSub(false, "frm_post_01_formulario","activity_resume"); return;}
 ResumableSub_Activity_Resume rsub = new ResumableSub_Activity_Resume(null);
 rsub.resume(null, null);
@@ -361,7 +361,7 @@ RemoteObject _listo = RemoteObject.createImmutable(false);
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Resume (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,225);
+		Debug.PushSubsStack("Activity_Resume (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,225);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -648,7 +648,7 @@ public static void  _complete(RemoteObject _res) throws Exception{
 }
 public static void  _btn_buscar_click() throws Exception{
 try {
-		Debug.PushSubsStack("Btn_Buscar_Click (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,1537);
+		Debug.PushSubsStack("Btn_Buscar_Click (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,1537);
 if (RapidSub.canDelegate("btn_buscar_click")) { BaKapp.Movil.Tag.frm_post_01_formulario.remoteMe.runUserSub(false, "frm_post_01_formulario","btn_buscar_click"); return;}
 ResumableSub_Btn_Buscar_Click rsub = new ResumableSub_Btn_Buscar_Click(null);
 rsub.resume(null, null);
@@ -671,7 +671,7 @@ RemoteObject _resultado = RemoteObject.createImmutable(false);
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Btn_Buscar_Click (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,1537);
+		Debug.PushSubsStack("Btn_Buscar_Click (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,1537);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -808,7 +808,7 @@ finally {
 }
 public static void  _btn_canbiar_cliente_click() throws Exception{
 try {
-		Debug.PushSubsStack("Btn_Canbiar_Cliente_Click (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,2228);
+		Debug.PushSubsStack("Btn_Canbiar_Cliente_Click (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,2228);
 if (RapidSub.canDelegate("btn_canbiar_cliente_click")) { BaKapp.Movil.Tag.frm_post_01_formulario.remoteMe.runUserSub(false, "frm_post_01_formulario","btn_canbiar_cliente_click"); return;}
 ResumableSub_Btn_Canbiar_Cliente_Click rsub = new ResumableSub_Btn_Canbiar_Cliente_Click(null);
 rsub.resume(null, null);
@@ -832,7 +832,7 @@ RemoteObject _result = RemoteObject.createImmutable(0);
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Btn_Canbiar_Cliente_Click (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,2228);
+		Debug.PushSubsStack("Btn_Canbiar_Cliente_Click (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,2228);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -938,7 +938,7 @@ public static void  _msgbox_result(RemoteObject _result) throws Exception{
 }
 public static void  _btn_coddocdestino_click() throws Exception{
 try {
-		Debug.PushSubsStack("Btn_CodDocDestino_Click (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,4264);
+		Debug.PushSubsStack("Btn_CodDocDestino_Click (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,4264);
 if (RapidSub.canDelegate("btn_coddocdestino_click")) { BaKapp.Movil.Tag.frm_post_01_formulario.remoteMe.runUserSub(false, "frm_post_01_formulario","btn_coddocdestino_click"); return;}
 ResumableSub_Btn_CodDocDestino_Click rsub = new ResumableSub_Btn_CodDocDestino_Click(null);
 rsub.resume(null, null);
@@ -970,7 +970,7 @@ int groupLen14;
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Btn_CodDocDestino_Click (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,4264);
+		Debug.PushSubsStack("Btn_CodDocDestino_Click (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,4264);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -1175,7 +1175,7 @@ finally {
 }
 public static void  _btn_dsctoglobal_click() throws Exception{
 try {
-		Debug.PushSubsStack("Btn_DsctoGlobal_Click (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,3264);
+		Debug.PushSubsStack("Btn_DsctoGlobal_Click (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,3264);
 if (RapidSub.canDelegate("btn_dsctoglobal_click")) { BaKapp.Movil.Tag.frm_post_01_formulario.remoteMe.runUserSub(false, "frm_post_01_formulario","btn_dsctoglobal_click"); return;}
 ResumableSub_Btn_DsctoGlobal_Click rsub = new ResumableSub_Btn_DsctoGlobal_Click(null);
 rsub.resume(null, null);
@@ -1212,7 +1212,7 @@ RemoteObject _id_docdet2 = RemoteObject.createImmutable(0);
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Btn_DsctoGlobal_Click (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,3264);
+		Debug.PushSubsStack("Btn_DsctoGlobal_Click (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,3264);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -1553,7 +1553,7 @@ case 31:
 this.state = 32;
  BA.debugLineNum = 3359;BA.debugLine="Log(Js.ErrorMessage)";
 Debug.ShouldStop(1073741824);
-parent.mostCurrent.__c.runVoidMethod ("LogImpl","619595359",_js.getField(true,"_errormessage" /*RemoteObject*/ ),0);
+parent.mostCurrent.__c.runVoidMethod ("LogImpl","222806623",_js.getField(true,"_errormessage" /*RemoteObject*/ ),0);
  BA.debugLineNum = 3360;BA.debugLine="ToastMessageShow(\"CONCEPTO NO ENCONTRADO\", False";
 Debug.ShouldStop(-2147483648);
 parent.mostCurrent.__c.runVoidMethod ("ToastMessageShow",(Object)(BA.ObjectToCharSequence("CONCEPTO NO ENCONTRADO")),(Object)(parent.mostCurrent.__c.getField(true,"False")));
@@ -1587,7 +1587,7 @@ public static void  _jobdone(RemoteObject _js) throws Exception{
 }
 public static RemoteObject  _btn_editar_click() throws Exception{
 try {
-		Debug.PushSubsStack("Btn_Editar_Click (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,667);
+		Debug.PushSubsStack("Btn_Editar_Click (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,667);
 if (RapidSub.canDelegate("btn_editar_click")) { return BaKapp.Movil.Tag.frm_post_01_formulario.remoteMe.runUserSub(false, "frm_post_01_formulario","btn_editar_click");}
 RemoteObject _btn = RemoteObject.declareNull("anywheresoftware.b4a.objects.ButtonWrapper");
  BA.debugLineNum = 667;BA.debugLine="Sub Btn_Editar_Click";
@@ -1633,7 +1633,7 @@ finally {
 		}}
 public static void  _btn_grabar_click() throws Exception{
 try {
-		Debug.PushSubsStack("Btn_Grabar_Click (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,2380);
+		Debug.PushSubsStack("Btn_Grabar_Click (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,2380);
 if (RapidSub.canDelegate("btn_grabar_click")) { BaKapp.Movil.Tag.frm_post_01_formulario.remoteMe.runUserSub(false, "frm_post_01_formulario","btn_grabar_click"); return;}
 ResumableSub_Btn_Grabar_Click rsub = new ResumableSub_Btn_Grabar_Click(null);
 rsub.resume(null, null);
@@ -1655,7 +1655,7 @@ RemoteObject _result = RemoteObject.createImmutable(false);
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Btn_Grabar_Click (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,2380);
+		Debug.PushSubsStack("Btn_Grabar_Click (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,2380);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -1735,7 +1735,7 @@ finally {
 }
 public static void  _btn_limpiar_click() throws Exception{
 try {
-		Debug.PushSubsStack("Btn_Limpiar_Click (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,1968);
+		Debug.PushSubsStack("Btn_Limpiar_Click (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,1968);
 if (RapidSub.canDelegate("btn_limpiar_click")) { BaKapp.Movil.Tag.frm_post_01_formulario.remoteMe.runUserSub(false, "frm_post_01_formulario","btn_limpiar_click"); return;}
 ResumableSub_Btn_Limpiar_Click rsub = new ResumableSub_Btn_Limpiar_Click(null);
 rsub.resume(null, null);
@@ -1758,7 +1758,7 @@ RemoteObject _result = RemoteObject.createImmutable(0);
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Btn_Limpiar_Click (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,1968);
+		Debug.PushSubsStack("Btn_Limpiar_Click (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,1968);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -1845,7 +1845,7 @@ finally {
 }
 public static RemoteObject  _btn_limpiar_codigo_click() throws Exception{
 try {
-		Debug.PushSubsStack("Btn_Limpiar_Codigo_Click (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,2375);
+		Debug.PushSubsStack("Btn_Limpiar_Codigo_Click (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,2375);
 if (RapidSub.canDelegate("btn_limpiar_codigo_click")) { return BaKapp.Movil.Tag.frm_post_01_formulario.remoteMe.runUserSub(false, "frm_post_01_formulario","btn_limpiar_codigo_click");}
  BA.debugLineNum = 2375;BA.debugLine="Private Sub Btn_Limpiar_Codigo_Click";
 Debug.ShouldStop(64);
@@ -1867,7 +1867,7 @@ finally {
 		}}
 public static void  _btn_limpiar_longclick() throws Exception{
 try {
-		Debug.PushSubsStack("Btn_Limpiar_LongClick (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,3619);
+		Debug.PushSubsStack("Btn_Limpiar_LongClick (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,3619);
 if (RapidSub.canDelegate("btn_limpiar_longclick")) { BaKapp.Movil.Tag.frm_post_01_formulario.remoteMe.runUserSub(false, "frm_post_01_formulario","btn_limpiar_longclick"); return;}
 ResumableSub_Btn_Limpiar_LongClick rsub = new ResumableSub_Btn_Limpiar_LongClick(null);
 rsub.resume(null, null);
@@ -1890,7 +1890,7 @@ RemoteObject _result = RemoteObject.createImmutable(0);
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Btn_Limpiar_LongClick (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,3619);
+		Debug.PushSubsStack("Btn_Limpiar_LongClick (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,3619);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -1946,7 +1946,7 @@ finally {
 }
 public static void  _btn_tipodespachosimple_click() throws Exception{
 try {
-		Debug.PushSubsStack("Btn_TipoDespachoSimple_Click (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,4152);
+		Debug.PushSubsStack("Btn_TipoDespachoSimple_Click (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,4152);
 if (RapidSub.canDelegate("btn_tipodespachosimple_click")) { BaKapp.Movil.Tag.frm_post_01_formulario.remoteMe.runUserSub(false, "frm_post_01_formulario","btn_tipodespachosimple_click"); return;}
 ResumableSub_Btn_TipoDespachoSimple_Click rsub = new ResumableSub_Btn_TipoDespachoSimple_Click(null);
 rsub.resume(null, null);
@@ -1986,7 +1986,7 @@ int limit23;
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Btn_TipoDespachoSimple_Click (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,4152);
+		Debug.PushSubsStack("Btn_TipoDespachoSimple_Click (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,4152);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -2329,7 +2329,7 @@ finally {
 }
 public static void  _btn_tipopagodesp_click() throws Exception{
 try {
-		Debug.PushSubsStack("Btn_TipoPagoDesp_Click (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,4230);
+		Debug.PushSubsStack("Btn_TipoPagoDesp_Click (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,4230);
 if (RapidSub.canDelegate("btn_tipopagodesp_click")) { BaKapp.Movil.Tag.frm_post_01_formulario.remoteMe.runUserSub(false, "frm_post_01_formulario","btn_tipopagodesp_click"); return;}
 ResumableSub_Btn_TipoPagoDesp_Click rsub = new ResumableSub_Btn_TipoPagoDesp_Click(null);
 rsub.resume(null, null);
@@ -2360,7 +2360,7 @@ int groupLen10;
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Btn_TipoPagoDesp_Click (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,4230);
+		Debug.PushSubsStack("Btn_TipoPagoDesp_Click (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,4230);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -2532,7 +2532,7 @@ finally {
 }
 public static RemoteObject  _fx_cambiar_docdespsimple_poswii() throws Exception{
 try {
-		Debug.PushSubsStack("Fx_Cambiar_DocDespSimple_Poswii (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,3549);
+		Debug.PushSubsStack("Fx_Cambiar_DocDespSimple_Poswii (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,3549);
 if (RapidSub.canDelegate("fx_cambiar_docdespsimple_poswii")) { return BaKapp.Movil.Tag.frm_post_01_formulario.remoteMe.runUserSub(false, "frm_post_01_formulario","fx_cambiar_docdespsimple_poswii");}
 ResumableSub_Fx_Cambiar_DocDespSimple_Poswii rsub = new ResumableSub_Fx_Cambiar_DocDespSimple_Poswii(null);
 rsub.remoteResumableSub = anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSubForFilter();
@@ -2566,7 +2566,7 @@ RemoteObject _fila = RemoteObject.declareNull("anywheresoftware.b4a.objects.coll
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Fx_Cambiar_DocDespSimple_Poswii (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,3549);
+		Debug.PushSubsStack("Fx_Cambiar_DocDespSimple_Poswii (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,3549);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -2853,7 +2853,7 @@ finally {
 }
 public static RemoteObject  _fx_existedescuentoglobal() throws Exception{
 try {
-		Debug.PushSubsStack("Fx_ExisteDescuentoGlobal (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,4083);
+		Debug.PushSubsStack("Fx_ExisteDescuentoGlobal (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,4083);
 if (RapidSub.canDelegate("fx_existedescuentoglobal")) { return BaKapp.Movil.Tag.frm_post_01_formulario.remoteMe.runUserSub(false, "frm_post_01_formulario","fx_existedescuentoglobal");}
 ResumableSub_Fx_ExisteDescuentoGlobal rsub = new ResumableSub_Fx_ExisteDescuentoGlobal(null);
 rsub.remoteResumableSub = anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSubForFilter();
@@ -2884,7 +2884,7 @@ int limit6;
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Fx_ExisteDescuentoGlobal (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,4083);
+		Debug.PushSubsStack("Fx_ExisteDescuentoGlobal (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,4083);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -3053,7 +3053,7 @@ finally {
 }
 public static RemoteObject  _fx_fx_validar_lineas_por_documento_vs_formato() throws Exception{
 try {
-		Debug.PushSubsStack("Fx_Fx_Validar_Lineas_Por_Documento_VS_Formato (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,1590);
+		Debug.PushSubsStack("Fx_Fx_Validar_Lineas_Por_Documento_VS_Formato (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,1590);
 if (RapidSub.canDelegate("fx_fx_validar_lineas_por_documento_vs_formato")) { return BaKapp.Movil.Tag.frm_post_01_formulario.remoteMe.runUserSub(false, "frm_post_01_formulario","fx_fx_validar_lineas_por_documento_vs_formato");}
 ResumableSub_Fx_Fx_Validar_Lineas_Por_Documento_VS_Formato rsub = new ResumableSub_Fx_Fx_Validar_Lineas_Por_Documento_VS_Formato(null);
 rsub.remoteResumableSub = anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSubForFilter();
@@ -3081,7 +3081,7 @@ RemoteObject _lineas = RemoteObject.createImmutable(0);
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Fx_Fx_Validar_Lineas_Por_Documento_VS_Formato (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,1590);
+		Debug.PushSubsStack("Fx_Fx_Validar_Lineas_Por_Documento_VS_Formato (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,1590);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -3253,7 +3253,7 @@ finally {
 }
 public static RemoteObject  _fx_insertar_dscto_global_permiso() throws Exception{
 try {
-		Debug.PushSubsStack("Fx_Insertar_Dscto_Global_Permiso (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,3471);
+		Debug.PushSubsStack("Fx_Insertar_Dscto_Global_Permiso (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,3471);
 if (RapidSub.canDelegate("fx_insertar_dscto_global_permiso")) { return BaKapp.Movil.Tag.frm_post_01_formulario.remoteMe.runUserSub(false, "frm_post_01_formulario","fx_insertar_dscto_global_permiso");}
 ResumableSub_Fx_Insertar_Dscto_Global_Permiso rsub = new ResumableSub_Fx_Insertar_Dscto_Global_Permiso(null);
 rsub.remoteResumableSub = anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSubForFilter();
@@ -3287,7 +3287,7 @@ RemoteObject _fila = RemoteObject.declareNull("anywheresoftware.b4a.objects.coll
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Fx_Insertar_Dscto_Global_Permiso (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,3471);
+		Debug.PushSubsStack("Fx_Insertar_Dscto_Global_Permiso (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,3471);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -3635,7 +3635,7 @@ finally {
 }
 public static RemoteObject  _fx_validar_descuentos_globales() throws Exception{
 try {
-		Debug.PushSubsStack("Fx_Validar_Descuentos_Globales (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,3720);
+		Debug.PushSubsStack("Fx_Validar_Descuentos_Globales (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,3720);
 if (RapidSub.canDelegate("fx_validar_descuentos_globales")) { return BaKapp.Movil.Tag.frm_post_01_formulario.remoteMe.runUserSub(false, "frm_post_01_formulario","fx_validar_descuentos_globales");}
 ResumableSub_Fx_Validar_Descuentos_Globales rsub = new ResumableSub_Fx_Validar_Descuentos_Globales(null);
 rsub.remoteResumableSub = anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSubForFilter();
@@ -3708,7 +3708,7 @@ RemoteObject _es_padre_oferta = RemoteObject.createImmutable(false);
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Fx_Validar_Descuentos_Globales (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,3720);
+		Debug.PushSubsStack("Fx_Validar_Descuentos_Globales (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,3720);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -4411,7 +4411,7 @@ finally {
 }
 public static RemoteObject  _generaarreglo(RemoteObject _tabla) throws Exception{
 try {
-		Debug.PushSubsStack("GeneraArreglo (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,3201);
+		Debug.PushSubsStack("GeneraArreglo (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,3201);
 if (RapidSub.canDelegate("generaarreglo")) { return BaKapp.Movil.Tag.frm_post_01_formulario.remoteMe.runUserSub(false, "frm_post_01_formulario","generaarreglo", _tabla);}
 RemoteObject _tbl = RemoteObject.declareNull("anywheresoftware.b4a.sql.SQL.CursorWrapper");
 RemoteObject _cantfilas = RemoteObject.createImmutable(0);
@@ -4522,7 +4522,7 @@ _hola = BA.ObjectToString("Aca");Debug.locals.put("hola", _hola);Debug.locals.pu
        catch (Exception e37) {
 			BA.rdebugUtils.runVoidMethod("setLastException",frm_post_01_formulario.processBA, e37.toString()); BA.debugLineNum = 3251;BA.debugLine="Log(LastException)";
 Debug.ShouldStop(262144);
-frm_post_01_formulario.mostCurrent.__c.runVoidMethod ("LogImpl","619529778",BA.ObjectToString(frm_post_01_formulario.mostCurrent.__c.runMethod(false,"LastException",frm_post_01_formulario.mostCurrent.activityBA)),0);
+frm_post_01_formulario.mostCurrent.__c.runVoidMethod ("LogImpl","222741042",BA.ObjectToString(frm_post_01_formulario.mostCurrent.__c.runMethod(false,"LastException",frm_post_01_formulario.mostCurrent.activityBA)),0);
  };
  }
 }Debug.locals.put("i", _i);
@@ -4695,7 +4695,7 @@ return RemoteObject.createImmutable("");
 }
 public static void  _label11_longclick() throws Exception{
 try {
-		Debug.PushSubsStack("Label11_LongClick (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,3696);
+		Debug.PushSubsStack("Label11_LongClick (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,3696);
 if (RapidSub.canDelegate("label11_longclick")) { BaKapp.Movil.Tag.frm_post_01_formulario.remoteMe.runUserSub(false, "frm_post_01_formulario","label11_longclick"); return;}
 ResumableSub_Label11_LongClick rsub = new ResumableSub_Label11_LongClick(null);
 rsub.resume(null, null);
@@ -4720,7 +4720,7 @@ RemoteObject _result = RemoteObject.createImmutable(0);
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Label11_LongClick (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,3696);
+		Debug.PushSubsStack("Label11_LongClick (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,3696);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -4807,7 +4807,7 @@ finally {
 }
 public static RemoteObject  _label12_longclick() throws Exception{
 try {
-		Debug.PushSubsStack("Label12_LongClick (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,3674);
+		Debug.PushSubsStack("Label12_LongClick (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,3674);
 if (RapidSub.canDelegate("label12_longclick")) { return BaKapp.Movil.Tag.frm_post_01_formulario.remoteMe.runUserSub(false, "frm_post_01_formulario","label12_longclick");}
 RemoteObject _xui = RemoteObject.declareNull("anywheresoftware.b4a.objects.B4XViewWrapper.XUI");
 RemoteObject _dialog = RemoteObject.declareNull("BaKapp.Movil.Tag.b4xdialog");
@@ -4856,7 +4856,7 @@ finally {
 		}}
 public static void  _lbl_lista_precios_longclick() throws Exception{
 try {
-		Debug.PushSubsStack("Lbl_Lista_Precios_LongClick (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,3631);
+		Debug.PushSubsStack("Lbl_Lista_Precios_LongClick (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,3631);
 if (RapidSub.canDelegate("lbl_lista_precios_longclick")) { BaKapp.Movil.Tag.frm_post_01_formulario.remoteMe.runUserSub(false, "frm_post_01_formulario","lbl_lista_precios_longclick"); return;}
 ResumableSub_Lbl_Lista_Precios_LongClick rsub = new ResumableSub_Lbl_Lista_Precios_LongClick(null);
 rsub.resume(null, null);
@@ -4883,7 +4883,7 @@ RemoteObject _kolt = RemoteObject.createImmutable("");
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Lbl_Lista_Precios_LongClick (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,3631);
+		Debug.PushSubsStack("Lbl_Lista_Precios_LongClick (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,3631);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -5106,7 +5106,7 @@ return RemoteObject.createImmutable("");
 }
 public static void  _sb_actualizar_datos_de_la_entidad(RemoteObject _rowentidad,RemoteObject _revisar_permiso_lista_precio,RemoteObject _aplicar_venciminetos,RemoteObject _actualizarlistaprecio) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Actualizar_Datos_De_La_Entidad (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,1990);
+		Debug.PushSubsStack("Sb_Actualizar_Datos_De_La_Entidad (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,1990);
 if (RapidSub.canDelegate("sb_actualizar_datos_de_la_entidad")) { BaKapp.Movil.Tag.frm_post_01_formulario.remoteMe.runUserSub(false, "frm_post_01_formulario","sb_actualizar_datos_de_la_entidad", _rowentidad, _revisar_permiso_lista_precio, _aplicar_venciminetos, _actualizarlistaprecio); return;}
 ResumableSub_Sb_Actualizar_Datos_De_La_Entidad rsub = new ResumableSub_Sb_Actualizar_Datos_De_La_Entidad(null,_rowentidad,_revisar_permiso_lista_precio,_aplicar_venciminetos,_actualizarlistaprecio);
 rsub.resume(null, null);
@@ -5167,7 +5167,7 @@ int limit100;
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Actualizar_Datos_De_La_Entidad (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,1990);
+		Debug.PushSubsStack("Sb_Actualizar_Datos_De_La_Entidad (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,1990);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -5874,7 +5874,7 @@ finally {
 }
 public static RemoteObject  _sb_buscar_dscto_x_cliente() throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Buscar_Dscto_X_Cliente (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,3368);
+		Debug.PushSubsStack("Sb_Buscar_Dscto_X_Cliente (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,3368);
 if (RapidSub.canDelegate("sb_buscar_dscto_x_cliente")) { return BaKapp.Movil.Tag.frm_post_01_formulario.remoteMe.runUserSub(false, "frm_post_01_formulario","sb_buscar_dscto_x_cliente");}
 ResumableSub_Sb_Buscar_Dscto_X_Cliente rsub = new ResumableSub_Sb_Buscar_Dscto_X_Cliente(null);
 rsub.remoteResumableSub = anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSubForFilter();
@@ -5911,7 +5911,7 @@ RemoteObject _newdescuentoporc = RemoteObject.createImmutable(0);
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Buscar_Dscto_X_Cliente (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,3368);
+		Debug.PushSubsStack("Sb_Buscar_Dscto_X_Cliente (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,3368);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -6192,7 +6192,7 @@ this.state = 31;
 this.catchState = 0;
  BA.debugLineNum = 3451;BA.debugLine="Log(LastException)";
 Debug.ShouldStop(67108864);
-parent.mostCurrent.__c.runVoidMethod ("LogImpl","619660883",BA.ObjectToString(parent.mostCurrent.__c.runMethod(false,"LastException",frm_post_01_formulario.mostCurrent.activityBA)),0);
+parent.mostCurrent.__c.runVoidMethod ("LogImpl","222872147",BA.ObjectToString(parent.mostCurrent.__c.runMethod(false,"LastException",frm_post_01_formulario.mostCurrent.activityBA)),0);
  BA.debugLineNum = 3452;BA.debugLine="bmp1 = LoadBitmap(File.DirAssets, \"symbol-ca";
 Debug.ShouldStop(134217728);
 parent.mostCurrent._bmp1 = parent.mostCurrent.__c.runMethod(false,"LoadBitmap",(Object)(parent.mostCurrent.__c.getField(false,"File").runMethod(true,"getDirAssets")),(Object)(RemoteObject.createImmutable("symbol-cancel.png")));
@@ -6279,7 +6279,7 @@ finally {
 }
 public static void  _sb_cargar_detalle(RemoteObject _cargar_activity) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Cargar_Detalle (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,522);
+		Debug.PushSubsStack("Sb_Cargar_Detalle (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,522);
 if (RapidSub.canDelegate("sb_cargar_detalle")) { BaKapp.Movil.Tag.frm_post_01_formulario.remoteMe.runUserSub(false, "frm_post_01_formulario","sb_cargar_detalle", _cargar_activity); return;}
 ResumableSub_Sb_Cargar_Detalle rsub = new ResumableSub_Sb_Cargar_Detalle(null,_cargar_activity);
 rsub.resume(null, null);
@@ -6323,7 +6323,7 @@ int limit19;
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Cargar_Detalle (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,522);
+		Debug.PushSubsStack("Sb_Cargar_Detalle (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,522);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -6647,7 +6647,7 @@ finally {
 }
 public static RemoteObject  _sb_cargar_documento(RemoteObject _nuevo_doc) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Cargar_Documento (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,300);
+		Debug.PushSubsStack("Sb_Cargar_Documento (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,300);
 if (RapidSub.canDelegate("sb_cargar_documento")) { return BaKapp.Movil.Tag.frm_post_01_formulario.remoteMe.runUserSub(false, "frm_post_01_formulario","sb_cargar_documento", _nuevo_doc);}
 ResumableSub_Sb_Cargar_Documento rsub = new ResumableSub_Sb_Cargar_Documento(null,_nuevo_doc);
 rsub.remoteResumableSub = anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSubForFilter();
@@ -6681,7 +6681,7 @@ int limit60;
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Cargar_Documento (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,300);
+		Debug.PushSubsStack("Sb_Cargar_Documento (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,300);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -6869,7 +6869,7 @@ this.state = 18;
 ;
  BA.debugLineNum = 369;BA.debugLine="Log(\"Documento cargado... Id_DocEnc = \" & Id_DocE";
 Debug.ShouldStop(65536);
-parent.mostCurrent.__c.runVoidMethod ("LogImpl","617563717",RemoteObject.concat(RemoteObject.createImmutable("Documento cargado... Id_DocEnc = "),parent._id_docenc),0);
+parent.mostCurrent.__c.runVoidMethod ("LogImpl","220774981",RemoteObject.concat(RemoteObject.createImmutable("Documento cargado... Id_DocEnc = "),parent._id_docenc),0);
  BA.debugLineNum = 371;BA.debugLine="Wait For (Sb_Cargar_Entidad(Editar_Documento)) Co";
 Debug.ShouldStop(262144);
 parent.mostCurrent.__c.runVoidMethod ("WaitFor","complete", frm_post_01_formulario.processBA, anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSub(this, "frm_post_01_formulario", "sb_cargar_documento"), _sb_cargar_entidad(parent._editar_documento));
@@ -7055,7 +7055,7 @@ this.state = 36;
 this.catchState = 0;
  BA.debugLineNum = 416;BA.debugLine="Log(LastException)";
 Debug.ShouldStop(-2147483648);
-parent.mostCurrent.__c.runVoidMethod ("LogImpl","617563764",BA.ObjectToString(parent.mostCurrent.__c.runMethod(false,"LastException",frm_post_01_formulario.mostCurrent.activityBA)),0);
+parent.mostCurrent.__c.runVoidMethod ("LogImpl","220775028",BA.ObjectToString(parent.mostCurrent.__c.runMethod(false,"LastException",frm_post_01_formulario.mostCurrent.activityBA)),0);
  if (true) break;
 if (true) break;
 
@@ -7110,7 +7110,7 @@ finally {
 }
 public static void  _sb_cargar_documento2() throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Cargar_Documento2 (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,430);
+		Debug.PushSubsStack("Sb_Cargar_Documento2 (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,430);
 if (RapidSub.canDelegate("sb_cargar_documento2")) { BaKapp.Movil.Tag.frm_post_01_formulario.remoteMe.runUserSub(false, "frm_post_01_formulario","sb_cargar_documento2"); return;}
 ResumableSub_Sb_Cargar_Documento2 rsub = new ResumableSub_Sb_Cargar_Documento2(null);
 rsub.resume(null, null);
@@ -7132,7 +7132,7 @@ RemoteObject _fin = RemoteObject.createImmutable(false);
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Cargar_Documento2 (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,430);
+		Debug.PushSubsStack("Sb_Cargar_Documento2 (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,430);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -7199,7 +7199,7 @@ Debug.ShouldStop(65536);
 parent.mostCurrent._txt_observacionesdesp.runMethodAndSync(true,"setText",BA.ObjectToCharSequence(parent._fila_despafacil.runMethod(false,"Get",(Object)((RemoteObject.createImmutable("ObservacionesDesp").runMethod(true,"toLowerCase"))))));
  BA.debugLineNum = 467;BA.debugLine="Log(\"Documento cargado... Id_DocEnc = \" & Id_DocE";
 Debug.ShouldStop(262144);
-parent.mostCurrent.__c.runVoidMethod ("LogImpl","617629221",RemoteObject.concat(RemoteObject.createImmutable("Documento cargado... Id_DocEnc = "),parent._id_docenc),0);
+parent.mostCurrent.__c.runVoidMethod ("LogImpl","220840485",RemoteObject.concat(RemoteObject.createImmutable("Documento cargado... Id_DocEnc = "),parent._id_docenc),0);
  BA.debugLineNum = 469;BA.debugLine="Wait For (Sb_Cargar_Entidad(False)) Complete (Fin";
 Debug.ShouldStop(1048576);
 parent.mostCurrent.__c.runVoidMethod ("WaitFor","complete", frm_post_01_formulario.processBA, anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSub(this, "frm_post_01_formulario", "sb_cargar_documento2"), _sb_cargar_entidad(parent.mostCurrent.__c.getField(true,"False")));
@@ -7244,7 +7244,7 @@ finally {
 }
 public static RemoteObject  _sb_cargar_entidad(RemoteObject _actualizardatos) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Cargar_Entidad (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,483);
+		Debug.PushSubsStack("Sb_Cargar_Entidad (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,483);
 if (RapidSub.canDelegate("sb_cargar_entidad")) { return BaKapp.Movil.Tag.frm_post_01_formulario.remoteMe.runUserSub(false, "frm_post_01_formulario","sb_cargar_entidad", _actualizardatos);}
 ResumableSub_Sb_Cargar_Entidad rsub = new ResumableSub_Sb_Cargar_Entidad(null,_actualizardatos);
 rsub.remoteResumableSub = anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSubForFilter();
@@ -7276,7 +7276,7 @@ RemoteObject _filas = RemoteObject.declareNull("anywheresoftware.b4a.objects.col
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Cargar_Entidad (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,483);
+		Debug.PushSubsStack("Sb_Cargar_Entidad (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,483);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -7380,7 +7380,7 @@ this.state = 13;
 ;
  BA.debugLineNum = 507;BA.debugLine="Log(\"Entidad cargada \" & Koen.Trim & \" - \" & No";
 Debug.ShouldStop(67108864);
-parent.mostCurrent.__c.runVoidMethod ("LogImpl","617694744",RemoteObject.concat(RemoteObject.createImmutable("Entidad cargada "),_koen.runMethod(true,"trim"),RemoteObject.createImmutable(" - "),_nokoen),0);
+parent.mostCurrent.__c.runVoidMethod ("LogImpl","220906008",RemoteObject.concat(RemoteObject.createImmutable("Entidad cargada "),_koen.runMethod(true,"trim"),RemoteObject.createImmutable(" - "),_nokoen),0);
  if (true) break;
 
 case 12:
@@ -7399,7 +7399,7 @@ case 15:
 this.state = 16;
  BA.debugLineNum = 514;BA.debugLine="Log(Js.ErrorMessage)";
 Debug.ShouldStop(2);
-parent.mostCurrent.__c.runVoidMethod ("LogImpl","617694751",_js.getField(true,"_errormessage" /*RemoteObject*/ ),0);
+parent.mostCurrent.__c.runVoidMethod ("LogImpl","220906015",_js.getField(true,"_errormessage" /*RemoteObject*/ ),0);
  if (true) break;
 
 case 16:
@@ -7426,7 +7426,7 @@ finally {
 }
 public static RemoteObject  _sb_cargar_idlist() throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Cargar_IDList (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,1630);
+		Debug.PushSubsStack("Sb_Cargar_IDList (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,1630);
 if (RapidSub.canDelegate("sb_cargar_idlist")) { return BaKapp.Movil.Tag.frm_post_01_formulario.remoteMe.runUserSub(false, "frm_post_01_formulario","sb_cargar_idlist");}
 RemoteObject _row = RemoteObject.createImmutable(0);
 RemoteObject _cursor1 = RemoteObject.declareNull("anywheresoftware.b4a.sql.SQL.CursorWrapper");
@@ -7494,7 +7494,7 @@ finally {
 		}}
 public static RemoteObject  _sb_editar_documento() throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Editar_Documento (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,2694);
+		Debug.PushSubsStack("Sb_Editar_Documento (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,2694);
 if (RapidSub.canDelegate("sb_editar_documento")) { return BaKapp.Movil.Tag.frm_post_01_formulario.remoteMe.runUserSub(false, "frm_post_01_formulario","sb_editar_documento");}
 ResumableSub_Sb_Editar_Documento rsub = new ResumableSub_Sb_Editar_Documento(null);
 rsub.remoteResumableSub = anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSubForFilter();
@@ -7561,7 +7561,7 @@ RemoteObject _resultado = RemoteObject.createImmutable("");
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Editar_Documento (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,2694);
+		Debug.PushSubsStack("Sb_Editar_Documento (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,2694);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -7979,7 +7979,7 @@ Debug.ShouldStop(65536);
 _para = BA.ObjectToString("");Debug.locals.put("Para", _para);
  BA.debugLineNum = 2834;BA.debugLine="Log(LastException)";
 Debug.ShouldStop(131072);
-parent.mostCurrent.__c.runVoidMethod ("LogImpl","619333260",BA.ObjectToString(parent.mostCurrent.__c.runMethod(false,"LastException",frm_post_01_formulario.mostCurrent.activityBA)),0);
+parent.mostCurrent.__c.runVoidMethod ("LogImpl","222544524",BA.ObjectToString(parent.mostCurrent.__c.runMethod(false,"LastException",frm_post_01_formulario.mostCurrent.activityBA)),0);
  if (true) break;
 if (true) break;
 
@@ -8331,7 +8331,7 @@ _resultado = (RemoteObject) result.getArrayElement(true,RemoteObject.createImmut
 ;
  BA.debugLineNum = 2950;BA.debugLine="Log(Resultado)";
 Debug.ShouldStop(32);
-parent.mostCurrent.__c.runVoidMethod ("LogImpl","619333376",_resultado,0);
+parent.mostCurrent.__c.runVoidMethod ("LogImpl","222544640",_resultado,0);
  BA.debugLineNum = 2951;BA.debugLine="If Resultado <> \"Ok\" Then";
 Debug.ShouldStop(64);
 if (true) break;
@@ -8529,7 +8529,7 @@ finally {
 }
 public static RemoteObject  _sb_editar_producto(RemoteObject _index,RemoteObject _value) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Editar_Producto (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,2361);
+		Debug.PushSubsStack("Sb_Editar_Producto (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,2361);
 if (RapidSub.canDelegate("sb_editar_producto")) { return BaKapp.Movil.Tag.frm_post_01_formulario.remoteMe.runUserSub(false, "frm_post_01_formulario","sb_editar_producto", _index, _value);}
 RemoteObject _xui = RemoteObject.declareNull("anywheresoftware.b4a.objects.B4XViewWrapper.XUI");
 RemoteObject _item = RemoteObject.declareNull("b4a.example3.customlistview._clvitem");
@@ -8574,7 +8574,7 @@ finally {
 		}}
 public static RemoteObject  _sb_grabar_standby() throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Grabar_StandBy (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,3049);
+		Debug.PushSubsStack("Sb_Grabar_StandBy (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,3049);
 if (RapidSub.canDelegate("sb_grabar_standby")) { return BaKapp.Movil.Tag.frm_post_01_formulario.remoteMe.runUserSub(false, "frm_post_01_formulario","sb_grabar_standby");}
 ResumableSub_Sb_Grabar_StandBy rsub = new ResumableSub_Sb_Grabar_StandBy(null);
 rsub.remoteResumableSub = anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSubForFilter();
@@ -8618,7 +8618,7 @@ RemoteObject _observacionesjs = RemoteObject.declareNull("anywheresoftware.b4a.o
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Grabar_StandBy (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,3049);
+		Debug.PushSubsStack("Sb_Grabar_StandBy (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,3049);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -8738,7 +8738,7 @@ Debug.ShouldStop(-2147483648);
 _json2 = _jsongenerator.runMethod(true,"ToString");Debug.locals.put("Json2", _json2);Debug.locals.put("Json2", _json2);
  BA.debugLineNum = 3106;BA.debugLine="Log(Json2)'(JSONGenerator.ToPrettyString(2))";
 Debug.ShouldStop(2);
-parent.mostCurrent.__c.runVoidMethod ("LogImpl","619464249",_json2,0);
+parent.mostCurrent.__c.runVoidMethod ("LogImpl","222675513",_json2,0);
  BA.debugLineNum = 3108;BA.debugLine="Dim Js As HttpJob = Funciones.Fx_HttJob_Ws_Sb_Get";
 Debug.ShouldStop(8);
 _js = parent.mostCurrent._funciones.runMethod(false,"_fx_httjob_ws_sb_getdataset_sb_json_impbk" /*RemoteObject*/ ,frm_post_01_formulario.mostCurrent.activityBA,(Object)(frm_post_01_formulario.getObject()),(Object)(_json),(Object)(RemoteObject.createImmutable("Encabezado")));Debug.locals.put("Js", _js);Debug.locals.put("Js", _js);
@@ -9049,7 +9049,7 @@ finally {
 }
 public static RemoteObject  _sb_grabara_nuevo_documento() throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Grabara_Nuevo_Documento (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,2394);
+		Debug.PushSubsStack("Sb_Grabara_Nuevo_Documento (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,2394);
 if (RapidSub.canDelegate("sb_grabara_nuevo_documento")) { return BaKapp.Movil.Tag.frm_post_01_formulario.remoteMe.runUserSub(false, "frm_post_01_formulario","sb_grabara_nuevo_documento");}
 ResumableSub_Sb_Grabara_Nuevo_Documento rsub = new ResumableSub_Sb_Grabara_Nuevo_Documento(null);
 rsub.remoteResumableSub = anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSubForFilter();
@@ -9113,7 +9113,7 @@ RemoteObject _resultado = RemoteObject.createImmutable("");
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Grabara_Nuevo_Documento (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,2394);
+		Debug.PushSubsStack("Sb_Grabara_Nuevo_Documento (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,2394);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -9626,7 +9626,7 @@ Debug.ShouldStop(4194304);
 _para = BA.ObjectToString("");Debug.locals.put("Para", _para);
  BA.debugLineNum = 2552;BA.debugLine="Log(LastException)";
 Debug.ShouldStop(8388608);
-parent.mostCurrent.__c.runVoidMethod ("LogImpl","619267742",BA.ObjectToString(parent.mostCurrent.__c.runMethod(false,"LastException",frm_post_01_formulario.mostCurrent.activityBA)),0);
+parent.mostCurrent.__c.runVoidMethod ("LogImpl","222479006",BA.ObjectToString(parent.mostCurrent.__c.runMethod(false,"LastException",frm_post_01_formulario.mostCurrent.activityBA)),0);
  if (true) break;
 if (true) break;
 
@@ -9926,7 +9926,7 @@ _resultado = (RemoteObject) result.getArrayElement(true,RemoteObject.createImmut
 ;
  BA.debugLineNum = 2646;BA.debugLine="Log(Resultado)";
 Debug.ShouldStop(2097152);
-parent.mostCurrent.__c.runVoidMethod ("LogImpl","619267836",_resultado,0);
+parent.mostCurrent.__c.runVoidMethod ("LogImpl","222479100",_resultado,0);
  BA.debugLineNum = 2647;BA.debugLine="If Resultado <> \"Ok\" Then";
 Debug.ShouldStop(4194304);
 if (true) break;
@@ -10112,7 +10112,7 @@ finally {
 }
 public static RemoteObject  _sb_grabarobservacionesdespachos() throws Exception{
 try {
-		Debug.PushSubsStack("Sb_GrabarObservacionesDespachos (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,4124);
+		Debug.PushSubsStack("Sb_GrabarObservacionesDespachos (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,4124);
 if (RapidSub.canDelegate("sb_grabarobservacionesdespachos")) { return BaKapp.Movil.Tag.frm_post_01_formulario.remoteMe.runUserSub(false, "frm_post_01_formulario","sb_grabarobservacionesdespachos");}
  BA.debugLineNum = 4124;BA.debugLine="Private Sub Sb_GrabarObservacionesDespachos";
 Debug.ShouldStop(134217728);
@@ -10181,7 +10181,7 @@ finally {
 		}}
 public static RemoteObject  _sb_ingresar_correo_validar(RemoteObject _para) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Ingresar_Correo_Validar (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,3000);
+		Debug.PushSubsStack("Sb_Ingresar_Correo_Validar (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,3000);
 if (RapidSub.canDelegate("sb_ingresar_correo_validar")) { return BaKapp.Movil.Tag.frm_post_01_formulario.remoteMe.runUserSub(false, "frm_post_01_formulario","sb_ingresar_correo_validar", _para);}
 ResumableSub_Sb_Ingresar_Correo_Validar rsub = new ResumableSub_Sb_Ingresar_Correo_Validar(null,_para);
 rsub.remoteResumableSub = anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSubForFilter();
@@ -10211,7 +10211,7 @@ RemoteObject _resultado = RemoteObject.createImmutable("");
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Ingresar_Correo_Validar (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,3000);
+		Debug.PushSubsStack("Sb_Ingresar_Correo_Validar (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,3000);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -10299,7 +10299,7 @@ this.state = 9;
 this.catchState = 0;
  BA.debugLineNum = 3019;BA.debugLine="Log(LastException)";
 Debug.ShouldStop(1024);
-parent.mostCurrent.__c.runVoidMethod ("LogImpl","619398675",BA.ObjectToString(parent.mostCurrent.__c.runMethod(false,"LastException",frm_post_01_formulario.mostCurrent.activityBA)),0);
+parent.mostCurrent.__c.runVoidMethod ("LogImpl","222609939",BA.ObjectToString(parent.mostCurrent.__c.runMethod(false,"LastException",frm_post_01_formulario.mostCurrent.activityBA)),0);
  BA.debugLineNum = 3020;BA.debugLine="bmp1 = LoadBitmap(File.DirAssets, \"symbol-cance";
 Debug.ShouldStop(2048);
 parent.mostCurrent._bmp1 = parent.mostCurrent.__c.runMethod(false,"LoadBitmap",(Object)(parent.mostCurrent.__c.getField(false,"File").runMethod(true,"getDirAssets")),(Object)(RemoteObject.createImmutable("symbol-cancel.png")));
@@ -10431,7 +10431,7 @@ finally {
 }
 public static RemoteObject  _sb_nuevo_documento() throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Nuevo_Documento (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,1758);
+		Debug.PushSubsStack("Sb_Nuevo_Documento (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,1758);
 if (RapidSub.canDelegate("sb_nuevo_documento")) { return BaKapp.Movil.Tag.frm_post_01_formulario.remoteMe.runUserSub(false, "frm_post_01_formulario","sb_nuevo_documento");}
 RemoteObject _fechaemision = RemoteObject.createImmutable(0L);
 RemoteObject _fecha_1er_vencimiento = RemoteObject.createImmutable(0L);
@@ -10586,7 +10586,7 @@ frm_post_01_formulario.mostCurrent._txt_observacionesdesp.runMethodAndSync(true,
  };
  BA.debugLineNum = 1846;BA.debugLine="Log(\"Documento cargado... Id_DocEnc = \" & Id_DocE";
 Debug.ShouldStop(2097152);
-frm_post_01_formulario.mostCurrent.__c.runVoidMethod ("LogImpl","618612312",RemoteObject.concat(RemoteObject.createImmutable("Documento cargado... Id_DocEnc = "),frm_post_01_formulario._id_docenc),0);
+frm_post_01_formulario.mostCurrent.__c.runVoidMethod ("LogImpl","221823576",RemoteObject.concat(RemoteObject.createImmutable("Documento cargado... Id_DocEnc = "),frm_post_01_formulario._id_docenc),0);
  BA.debugLineNum = 1848;BA.debugLine="DateTime.DateFormat = \"dd-MM-yyyy\"";
 Debug.ShouldStop(8388608);
 frm_post_01_formulario.mostCurrent.__c.getField(false,"DateTime").runMethod(true,"setDateFormat",BA.ObjectToString("dd-MM-yyyy"));
@@ -10835,7 +10835,7 @@ finally {
 		}}
 public static RemoteObject  _sb_procesar_fila(RemoteObject _cabeza,RemoteObject _id_docdet2) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Procesar_Fila (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,860);
+		Debug.PushSubsStack("Sb_Procesar_Fila (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,860);
 if (RapidSub.canDelegate("sb_procesar_fila")) { return BaKapp.Movil.Tag.frm_post_01_formulario.remoteMe.runUserSub(false, "frm_post_01_formulario","sb_procesar_fila", _cabeza, _id_docdet2);}
 RemoteObject _fila = RemoteObject.declareNull("anywheresoftware.b4a.objects.collections.Map");
 RemoteObject _fila_id = RemoteObject.declareNull("anywheresoftware.b4a.objects.collections.Map");
@@ -11765,7 +11765,7 @@ finally {
 		}}
 public static RemoteObject  _sb_productomodoconsulta() throws Exception{
 try {
-		Debug.PushSubsStack("Sb_ProductoModoConsulta (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,1568);
+		Debug.PushSubsStack("Sb_ProductoModoConsulta (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,1568);
 if (RapidSub.canDelegate("sb_productomodoconsulta")) { return BaKapp.Movil.Tag.frm_post_01_formulario.remoteMe.runUserSub(false, "frm_post_01_formulario","sb_productomodoconsulta");}
 ResumableSub_Sb_ProductoModoConsulta rsub = new ResumableSub_Sb_ProductoModoConsulta(null);
 rsub.remoteResumableSub = anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSubForFilter();
@@ -11789,7 +11789,7 @@ RemoteObject _result = RemoteObject.createImmutable(0);
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_ProductoModoConsulta (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,1568);
+		Debug.PushSubsStack("Sb_ProductoModoConsulta (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,1568);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -11890,7 +11890,7 @@ finally {
 }
 public static RemoteObject  _sb_recorrer_detalle_rev_stock() throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Recorrer_Detalle_Rev_Stock (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,3973);
+		Debug.PushSubsStack("Sb_Recorrer_Detalle_Rev_Stock (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,3973);
 if (RapidSub.canDelegate("sb_recorrer_detalle_rev_stock")) { return BaKapp.Movil.Tag.frm_post_01_formulario.remoteMe.runUserSub(false, "frm_post_01_formulario","sb_recorrer_detalle_rev_stock");}
 ResumableSub_Sb_Recorrer_Detalle_Rev_Stock rsub = new ResumableSub_Sb_Recorrer_Detalle_Rev_Stock(null);
 rsub.remoteResumableSub = anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSubForFilter();
@@ -11927,7 +11927,7 @@ RemoteObject _result = RemoteObject.createImmutable(false);
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Recorrer_Detalle_Rev_Stock (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,3973);
+		Debug.PushSubsStack("Sb_Recorrer_Detalle_Rev_Stock (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,3973);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -12111,7 +12111,7 @@ finally {
 }
 public static RemoteObject  _sb_revisar_stock_x_fila(RemoteObject _vid_docdet,RemoteObject _tido,RemoteObject _codigo,RemoteObject _empresa,RemoteObject _sucursal,RemoteObject _bodega,RemoteObject _cantidad,RemoteObject _untrans,RemoteObject _tidopa) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Revisar_Stock_X_Fila (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,4022);
+		Debug.PushSubsStack("Sb_Revisar_Stock_X_Fila (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,4022);
 if (RapidSub.canDelegate("sb_revisar_stock_x_fila")) { return BaKapp.Movil.Tag.frm_post_01_formulario.remoteMe.runUserSub(false, "frm_post_01_formulario","sb_revisar_stock_x_fila", _vid_docdet, _tido, _codigo, _empresa, _sucursal, _bodega, _cantidad, _untrans, _tidopa);}
 ResumableSub_Sb_Revisar_Stock_X_Fila rsub = new ResumableSub_Sb_Revisar_Stock_X_Fila(null,_vid_docdet,_tido,_codigo,_empresa,_sucursal,_bodega,_cantidad,_untrans,_tidopa);
 rsub.remoteResumableSub = anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSubForFilter();
@@ -12161,7 +12161,7 @@ RemoteObject _sf = RemoteObject.declareNull("Object");
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Revisar_Stock_X_Fila (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,4022);
+		Debug.PushSubsStack("Sb_Revisar_Stock_X_Fila (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,4022);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -12245,7 +12245,7 @@ Debug.ShouldStop(8192);
 _stock_fisico = BA.numberCast(double.class, _filastk.runMethod(false,"Get",(Object)((RemoteObject.createImmutable("Stock_Fisico")))));Debug.locals.put("Stock_Fisico", _stock_fisico);Debug.locals.put("Stock_Fisico", _stock_fisico);
  BA.debugLineNum = 4047;BA.debugLine="Log(\"Stock disponible: \" & Stock_Disponible & \"";
 Debug.ShouldStop(16384);
-parent.mostCurrent.__c.runVoidMethod ("LogImpl","620250649",RemoteObject.concat(RemoteObject.createImmutable("Stock disponible: "),_stock_disponible,RemoteObject.createImmutable(", Stock fisico: "),_stock_fisico),0);
+parent.mostCurrent.__c.runVoidMethod ("LogImpl","223461913",RemoteObject.concat(RemoteObject.createImmutable("Stock disponible: "),_stock_disponible,RemoteObject.createImmutable(", Stock fisico: "),_stock_fisico),0);
  BA.debugLineNum = 4049;BA.debugLine="Dim Stock_Suficiente As Boolean";
 Debug.ShouldStop(65536);
 _stock_suficiente = RemoteObject.createImmutable(false);Debug.locals.put("Stock_Suficiente", _stock_suficiente);
@@ -12357,7 +12357,7 @@ case 25:
 this.state = 26;
  BA.debugLineNum = 4076;BA.debugLine="Log(Js.ErrorMessage)";
 Debug.ShouldStop(2048);
-parent.mostCurrent.__c.runVoidMethod ("LogImpl","620250678",_js.getField(true,"_errormessage" /*RemoteObject*/ ),0);
+parent.mostCurrent.__c.runVoidMethod ("LogImpl","223461942",_js.getField(true,"_errormessage" /*RemoteObject*/ ),0);
  if (true) break;
 
 case 26:
@@ -12384,7 +12384,7 @@ finally {
 }
 public static void  _sb_sumar_totales() throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Sumar_Totales (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,1656);
+		Debug.PushSubsStack("Sb_Sumar_Totales (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,1656);
 if (RapidSub.canDelegate("sb_sumar_totales")) { BaKapp.Movil.Tag.frm_post_01_formulario.remoteMe.runUserSub(false, "frm_post_01_formulario","sb_sumar_totales"); return;}
 ResumableSub_Sb_Sumar_Totales rsub = new ResumableSub_Sb_Sumar_Totales(null);
 rsub.resume(null, null);
@@ -12420,7 +12420,7 @@ RemoteObject _itemstr = RemoteObject.createImmutable("");
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Sumar_Totales (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,1656);
+		Debug.PushSubsStack("Sb_Sumar_Totales (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,1656);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -12654,7 +12654,7 @@ finally {
 }
 public static RemoteObject  _sb_titulo() throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Titulo (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,285);
+		Debug.PushSubsStack("Sb_Titulo (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,285);
 if (RapidSub.canDelegate("sb_titulo")) { return BaKapp.Movil.Tag.frm_post_01_formulario.remoteMe.runUserSub(false, "frm_post_01_formulario","sb_titulo");}
 ResumableSub_Sb_Titulo rsub = new ResumableSub_Sb_Titulo(null);
 rsub.remoteResumableSub = anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSubForFilter();
@@ -12677,7 +12677,7 @@ BaKapp.Movil.Tag.frm_post_01_formulario parent;
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Titulo (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,285);
+		Debug.PushSubsStack("Sb_Titulo (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,285);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -12764,7 +12764,7 @@ finally {
 }
 public static RemoteObject  _sb_trae_secueven(RemoteObject _secueven) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Trae_Secueven (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,2193);
+		Debug.PushSubsStack("Sb_Trae_Secueven (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,2193);
 if (RapidSub.canDelegate("sb_trae_secueven")) { return BaKapp.Movil.Tag.frm_post_01_formulario.remoteMe.runUserSub(false, "frm_post_01_formulario","sb_trae_secueven", _secueven);}
 ResumableSub_Sb_Trae_Secueven rsub = new ResumableSub_Sb_Trae_Secueven(null,_secueven);
 rsub.remoteResumableSub = anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSubForFilter();
@@ -12792,7 +12792,7 @@ RemoteObject _notido = RemoteObject.createImmutable("");
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Trae_Secueven (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,2193);
+		Debug.PushSubsStack("Sb_Trae_Secueven (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,2193);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -12932,7 +12932,7 @@ finally {
 }
 public static void  _sb_traer_concepto(RemoteObject _concepto) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Traer_Concepto (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,798);
+		Debug.PushSubsStack("Sb_Traer_Concepto (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,798);
 if (RapidSub.canDelegate("sb_traer_concepto")) { BaKapp.Movil.Tag.frm_post_01_formulario.remoteMe.runUserSub(false, "frm_post_01_formulario","sb_traer_concepto", _concepto); return;}
 ResumableSub_Sb_Traer_Concepto rsub = new ResumableSub_Sb_Traer_Concepto(null,_concepto);
 rsub.resume(null, null);
@@ -12965,7 +12965,7 @@ RemoteObject _fila_id = RemoteObject.declareNull("anywheresoftware.b4a.objects.c
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_Traer_Concepto (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,798);
+		Debug.PushSubsStack("Sb_Traer_Concepto (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,798);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -13112,7 +13112,7 @@ case 9:
 this.state = 10;
  BA.debugLineNum = 850;BA.debugLine="Log(Js.ErrorMessage)";
 Debug.ShouldStop(131072);
-parent.mostCurrent.__c.runVoidMethod ("LogImpl","618087988",_js.getField(true,"_errormessage" /*RemoteObject*/ ),0);
+parent.mostCurrent.__c.runVoidMethod ("LogImpl","221299252",_js.getField(true,"_errormessage" /*RemoteObject*/ ),0);
  BA.debugLineNum = 851;BA.debugLine="ToastMessageShow(\"CONCEPTO NO ENCONTRADO\", False";
 Debug.ShouldStop(262144);
 parent.mostCurrent.__c.runVoidMethod ("ToastMessageShow",(Object)(BA.ObjectToCharSequence("CONCEPTO NO ENCONTRADO")),(Object)(parent.mostCurrent.__c.getField(true,"False")));
@@ -13144,7 +13144,7 @@ finally {
 }
 public static RemoteObject  _sb_visibleocultardespachosimple() throws Exception{
 try {
-		Debug.PushSubsStack("Sb_VisibleOcultarDespachoSimple (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,4304);
+		Debug.PushSubsStack("Sb_VisibleOcultarDespachoSimple (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,4304);
 if (RapidSub.canDelegate("sb_visibleocultardespachosimple")) { return BaKapp.Movil.Tag.frm_post_01_formulario.remoteMe.runUserSub(false, "frm_post_01_formulario","sb_visibleocultardespachosimple");}
 ResumableSub_Sb_VisibleOcultarDespachoSimple rsub = new ResumableSub_Sb_VisibleOcultarDespachoSimple(null);
 rsub.remoteResumableSub = anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSubForFilter();
@@ -13168,7 +13168,7 @@ RemoteObject _enbdesp = RemoteObject.createImmutable(false);
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Sb_VisibleOcultarDespachoSimple (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,4304);
+		Debug.PushSubsStack("Sb_VisibleOcultarDespachoSimple (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,4304);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -13283,7 +13283,7 @@ finally {
 }
 public static RemoteObject  _tab_post_tabchanged() throws Exception{
 try {
-		Debug.PushSubsStack("Tab_Post_TabChanged (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,1731);
+		Debug.PushSubsStack("Tab_Post_TabChanged (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,1731);
 if (RapidSub.canDelegate("tab_post_tabchanged")) { return BaKapp.Movil.Tag.frm_post_01_formulario.remoteMe.runUserSub(false, "frm_post_01_formulario","tab_post_tabchanged");}
  BA.debugLineNum = 1731;BA.debugLine="Sub Tab_Post_TabChanged";
 Debug.ShouldStop(4);
@@ -13335,7 +13335,7 @@ finally {
 		}}
 public static void  _txt_codigo_enterpressed() throws Exception{
 try {
-		Debug.PushSubsStack("Txt_Codigo_EnterPressed (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,689);
+		Debug.PushSubsStack("Txt_Codigo_EnterPressed (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,689);
 if (RapidSub.canDelegate("txt_codigo_enterpressed")) { BaKapp.Movil.Tag.frm_post_01_formulario.remoteMe.runUserSub(false, "frm_post_01_formulario","txt_codigo_enterpressed"); return;}
 ResumableSub_Txt_Codigo_EnterPressed rsub = new ResumableSub_Txt_Codigo_EnterPressed(null);
 rsub.resume(null, null);
@@ -13371,7 +13371,7 @@ RemoteObject _fila_id = RemoteObject.declareNull("anywheresoftware.b4a.objects.c
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Txt_Codigo_EnterPressed (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,689);
+		Debug.PushSubsStack("Txt_Codigo_EnterPressed (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,689);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -13685,7 +13685,7 @@ case 29:
 this.state = 30;
  BA.debugLineNum = 785;BA.debugLine="Log(Js.ErrorMessage)";
 Debug.ShouldStop(65536);
-parent.mostCurrent.__c.runVoidMethod ("LogImpl","618022496",_js.getField(true,"_errormessage" /*RemoteObject*/ ),0);
+parent.mostCurrent.__c.runVoidMethod ("LogImpl","221233760",_js.getField(true,"_errormessage" /*RemoteObject*/ ),0);
  BA.debugLineNum = 788;BA.debugLine="Buscar_productos.ProductoABuscar = Txt_Codigo.Te";
 Debug.ShouldStop(524288);
 parent.mostCurrent._buscar_productos._productoabuscar /*RemoteObject*/  = parent.mostCurrent._txt_codigo.runMethod(true,"getText").runMethod(true,"trim");
@@ -13717,7 +13717,7 @@ finally {
 }
 public static RemoteObject  _xclvdetalle_itemclick(RemoteObject _index,RemoteObject _value) throws Exception{
 try {
-		Debug.PushSubsStack("XclvDetalle_ItemClick (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,2357);
+		Debug.PushSubsStack("XclvDetalle_ItemClick (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,2357);
 if (RapidSub.canDelegate("xclvdetalle_itemclick")) { return BaKapp.Movil.Tag.frm_post_01_formulario.remoteMe.runUserSub(false, "frm_post_01_formulario","xclvdetalle_itemclick", _index, _value);}
 Debug.locals.put("Index", _index);
 Debug.locals.put("Value", _value);
@@ -13735,7 +13735,7 @@ finally {
 		}}
 public static void  _xclvdetalle_itemlongclick(RemoteObject _index,RemoteObject _value) throws Exception{
 try {
-		Debug.PushSubsStack("XclvDetalle_ItemLongClick (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,2257);
+		Debug.PushSubsStack("XclvDetalle_ItemLongClick (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,2257);
 if (RapidSub.canDelegate("xclvdetalle_itemlongclick")) { BaKapp.Movil.Tag.frm_post_01_formulario.remoteMe.runUserSub(false, "frm_post_01_formulario","xclvdetalle_itemlongclick", _index, _value); return;}
 ResumableSub_XclvDetalle_ItemLongClick rsub = new ResumableSub_XclvDetalle_ItemLongClick(null,_index,_value);
 rsub.resume(null, null);
@@ -13779,7 +13779,7 @@ int limit49;
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("XclvDetalle_ItemLongClick (frm_post_01_formulario) ","frm_post_01_formulario",21,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,2257);
+		Debug.PushSubsStack("XclvDetalle_ItemLongClick (frm_post_01_formulario) ","frm_post_01_formulario",22,frm_post_01_formulario.mostCurrent.activityBA,frm_post_01_formulario.mostCurrent,2257);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -14121,7 +14121,7 @@ this.state = 35;
 this.catchState = 0;
  BA.debugLineNum = 2340;BA.debugLine="Log(LastException)";
 Debug.ShouldStop(8);
-parent.mostCurrent.__c.runVoidMethod ("LogImpl","618939987",BA.ObjectToString(parent.mostCurrent.__c.runMethod(false,"LastException",frm_post_01_formulario.mostCurrent.activityBA)),0);
+parent.mostCurrent.__c.runVoidMethod ("LogImpl","222151251",BA.ObjectToString(parent.mostCurrent.__c.runMethod(false,"LastException",frm_post_01_formulario.mostCurrent.activityBA)),0);
  if (true) break;
 if (true) break;
 

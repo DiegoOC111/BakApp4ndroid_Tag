@@ -8,7 +8,7 @@ public class frm_menu_principal_subs_0 {
 
 public static RemoteObject  _activity_create(RemoteObject _firsttime) throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Create (frm_menu_principal) ","frm_menu_principal",19,frm_menu_principal.mostCurrent.activityBA,frm_menu_principal.mostCurrent,26);
+		Debug.PushSubsStack("Activity_Create (frm_menu_principal) ","frm_menu_principal",20,frm_menu_principal.mostCurrent.activityBA,frm_menu_principal.mostCurrent,26);
 if (RapidSub.canDelegate("activity_create")) { return BaKapp.Movil.Tag.frm_menu_principal.remoteMe.runUserSub(false, "frm_menu_principal","activity_create", _firsttime);}
 Debug.locals.put("FirstTime", _firsttime);
  BA.debugLineNum = 26;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
@@ -43,7 +43,7 @@ finally {
 		}}
 public static RemoteObject  _activity_pause(RemoteObject _userclosed) throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Pause (frm_menu_principal) ","frm_menu_principal",19,frm_menu_principal.mostCurrent.activityBA,frm_menu_principal.mostCurrent,45);
+		Debug.PushSubsStack("Activity_Pause (frm_menu_principal) ","frm_menu_principal",20,frm_menu_principal.mostCurrent.activityBA,frm_menu_principal.mostCurrent,45);
 if (RapidSub.canDelegate("activity_pause")) { return BaKapp.Movil.Tag.frm_menu_principal.remoteMe.runUserSub(false, "frm_menu_principal","activity_pause", _userclosed);}
 Debug.locals.put("UserClosed", _userclosed);
  BA.debugLineNum = 45;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
@@ -60,7 +60,7 @@ finally {
 		}}
 public static RemoteObject  _activity_resume() throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Resume (frm_menu_principal) ","frm_menu_principal",19,frm_menu_principal.mostCurrent.activityBA,frm_menu_principal.mostCurrent,41);
+		Debug.PushSubsStack("Activity_Resume (frm_menu_principal) ","frm_menu_principal",20,frm_menu_principal.mostCurrent.activityBA,frm_menu_principal.mostCurrent,41);
 if (RapidSub.canDelegate("activity_resume")) { return BaKapp.Movil.Tag.frm_menu_principal.remoteMe.runUserSub(false, "frm_menu_principal","activity_resume");}
  BA.debugLineNum = 41;BA.debugLine="Sub Activity_Resume";
 Debug.ShouldStop(256);
@@ -76,7 +76,7 @@ finally {
 		}}
 public static RemoteObject  _btn_etiqueta_click() throws Exception{
 try {
-		Debug.PushSubsStack("Btn_Etiqueta_Click (frm_menu_principal) ","frm_menu_principal",19,frm_menu_principal.mostCurrent.activityBA,frm_menu_principal.mostCurrent,128);
+		Debug.PushSubsStack("Btn_Etiqueta_Click (frm_menu_principal) ","frm_menu_principal",20,frm_menu_principal.mostCurrent.activityBA,frm_menu_principal.mostCurrent,128);
 if (RapidSub.canDelegate("btn_etiqueta_click")) { return BaKapp.Movil.Tag.frm_menu_principal.remoteMe.runUserSub(false, "frm_menu_principal","btn_etiqueta_click");}
  BA.debugLineNum = 128;BA.debugLine="Private Sub Btn_Etiqueta_Click";
 Debug.ShouldStop(-2147483648);
@@ -95,7 +95,7 @@ finally {
 		}}
 public static void  _btn_postventa_click() throws Exception{
 try {
-		Debug.PushSubsStack("Btn_PostVenta_Click (frm_menu_principal) ","frm_menu_principal",19,frm_menu_principal.mostCurrent.activityBA,frm_menu_principal.mostCurrent,49);
+		Debug.PushSubsStack("Btn_PostVenta_Click (frm_menu_principal) ","frm_menu_principal",20,frm_menu_principal.mostCurrent.activityBA,frm_menu_principal.mostCurrent,49);
 if (RapidSub.canDelegate("btn_postventa_click")) { BaKapp.Movil.Tag.frm_menu_principal.remoteMe.runUserSub(false, "frm_menu_principal","btn_postventa_click"); return;}
 ResumableSub_Btn_PostVenta_Click rsub = new ResumableSub_Btn_PostVenta_Click(null);
 rsub.resume(null, null);
@@ -119,7 +119,7 @@ RemoteObject _b4a_despachosimple = RemoteObject.createImmutable(false);
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Btn_PostVenta_Click (frm_menu_principal) ","frm_menu_principal",19,frm_menu_principal.mostCurrent.activityBA,frm_menu_principal.mostCurrent,49);
+		Debug.PushSubsStack("Btn_PostVenta_Click (frm_menu_principal) ","frm_menu_principal",20,frm_menu_principal.mostCurrent.activityBA,frm_menu_principal.mostCurrent,49);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -226,7 +226,7 @@ public static void  _complete(RemoteObject _resultado) throws Exception{
 }
 public static void  _crear_documentoconendxdefecto() throws Exception{
 try {
-		Debug.PushSubsStack("Crear_DocumentoConEndXDefecto (frm_menu_principal) ","frm_menu_principal",19,frm_menu_principal.mostCurrent.activityBA,frm_menu_principal.mostCurrent,70);
+		Debug.PushSubsStack("Crear_DocumentoConEndXDefecto (frm_menu_principal) ","frm_menu_principal",20,frm_menu_principal.mostCurrent.activityBA,frm_menu_principal.mostCurrent,70);
 if (RapidSub.canDelegate("crear_documentoconendxdefecto")) { BaKapp.Movil.Tag.frm_menu_principal.remoteMe.runUserSub(false, "frm_menu_principal","crear_documentoconendxdefecto"); return;}
 ResumableSub_Crear_DocumentoConEndXDefecto rsub = new ResumableSub_Crear_DocumentoConEndXDefecto(null);
 rsub.resume(null, null);
@@ -253,7 +253,7 @@ RemoteObject _result = RemoteObject.createImmutable(0);
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Crear_DocumentoConEndXDefecto (frm_menu_principal) ","frm_menu_principal",19,frm_menu_principal.mostCurrent.activityBA,frm_menu_principal.mostCurrent,70);
+		Debug.PushSubsStack("Crear_DocumentoConEndXDefecto (frm_menu_principal) ","frm_menu_principal",20,frm_menu_principal.mostCurrent.activityBA,frm_menu_principal.mostCurrent,70);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -321,7 +321,7 @@ Debug.ShouldStop(1048576);
 parent.mostCurrent._variables._global_row_entidad_x_defecto /*RemoteObject*/  = parent.mostCurrent._funciones.runMethod(false,"_fx_datarow" /*RemoteObject*/ ,frm_menu_principal.mostCurrent.activityBA,(Object)(_js.runClassMethod (BaKapp.Movil.Tag.httpjob.class, "_getstring" /*RemoteObject*/ )));
  BA.debugLineNum = 86;BA.debugLine="Log(\"8.- Cargamos la Entidad por defecto\")";
 Debug.ShouldStop(2097152);
-parent.mostCurrent.__c.runVoidMethod ("LogImpl","616252944",RemoteObject.createImmutable("8.- Cargamos la Entidad por defecto"),0);
+parent.mostCurrent.__c.runVoidMethod ("LogImpl","219464208",RemoteObject.createImmutable("8.- Cargamos la Entidad por defecto"),0);
  BA.debugLineNum = 88;BA.debugLine="StartActivity(Frm_Menu_Post_Venta)";
 Debug.ShouldStop(8388608);
 parent.mostCurrent.__c.runVoidMethod ("StartActivity",frm_menu_principal.processBA,(Object)((parent.mostCurrent._frm_menu_post_venta.getObject())));
@@ -400,7 +400,7 @@ return RemoteObject.createImmutable("");
 }
 public static void  _lbl_nombre_usuario_longclick() throws Exception{
 try {
-		Debug.PushSubsStack("Lbl_Nombre_Usuario_LongClick (frm_menu_principal) ","frm_menu_principal",19,frm_menu_principal.mostCurrent.activityBA,frm_menu_principal.mostCurrent,118);
+		Debug.PushSubsStack("Lbl_Nombre_Usuario_LongClick (frm_menu_principal) ","frm_menu_principal",20,frm_menu_principal.mostCurrent.activityBA,frm_menu_principal.mostCurrent,118);
 if (RapidSub.canDelegate("lbl_nombre_usuario_longclick")) { BaKapp.Movil.Tag.frm_menu_principal.remoteMe.runUserSub(false, "frm_menu_principal","lbl_nombre_usuario_longclick"); return;}
 ResumableSub_Lbl_Nombre_Usuario_LongClick rsub = new ResumableSub_Lbl_Nombre_Usuario_LongClick(null);
 rsub.resume(null, null);
@@ -423,7 +423,7 @@ RemoteObject _rst = RemoteObject.createImmutable(false);
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Lbl_Nombre_Usuario_LongClick (frm_menu_principal) ","frm_menu_principal",19,frm_menu_principal.mostCurrent.activityBA,frm_menu_principal.mostCurrent,118);
+		Debug.PushSubsStack("Lbl_Nombre_Usuario_LongClick (frm_menu_principal) ","frm_menu_principal",20,frm_menu_principal.mostCurrent.activityBA,frm_menu_principal.mostCurrent,118);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -469,7 +469,7 @@ finally {
 }
 public static void  _lbl_version_longclick() throws Exception{
 try {
-		Debug.PushSubsStack("Lbl_Version_LongClick (frm_menu_principal) ","frm_menu_principal",19,frm_menu_principal.mostCurrent.activityBA,frm_menu_principal.mostCurrent,106);
+		Debug.PushSubsStack("Lbl_Version_LongClick (frm_menu_principal) ","frm_menu_principal",20,frm_menu_principal.mostCurrent.activityBA,frm_menu_principal.mostCurrent,106);
 if (RapidSub.canDelegate("lbl_version_longclick")) { BaKapp.Movil.Tag.frm_menu_principal.remoteMe.runUserSub(false, "frm_menu_principal","lbl_version_longclick"); return;}
 ResumableSub_Lbl_Version_LongClick rsub = new ResumableSub_Lbl_Version_LongClick(null);
 rsub.resume(null, null);
@@ -491,7 +491,7 @@ RemoteObject _result = RemoteObject.createImmutable(0);
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Lbl_Version_LongClick (frm_menu_principal) ","frm_menu_principal",19,frm_menu_principal.mostCurrent.activityBA,frm_menu_principal.mostCurrent,106);
+		Debug.PushSubsStack("Lbl_Version_LongClick (frm_menu_principal) ","frm_menu_principal",20,frm_menu_principal.mostCurrent.activityBA,frm_menu_principal.mostCurrent,106);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {

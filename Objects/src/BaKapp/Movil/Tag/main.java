@@ -573,6 +573,7 @@ public b4a.example.dateutils _dateutils = null;
 public BaKapp.Movil.Tag.buscar_entidad _buscar_entidad = null;
 public BaKapp.Movil.Tag.buscar_productos _buscar_productos = null;
 public BaKapp.Movil.Tag.frm_impresion _frm_impresion = null;
+public BaKapp.Movil.Tag.funciones _funciones = null;
 public BaKapp.Movil.Tag.conf_local _conf_local = null;
 public BaKapp.Movil.Tag.dbutils _dbutils = null;
 public BaKapp.Movil.Tag.frm_buscar_documento _frm_buscar_documento = null;
@@ -585,7 +586,6 @@ public BaKapp.Movil.Tag.frm_menu_principal _frm_menu_principal = null;
 public BaKapp.Movil.Tag.frm_post_01_descuentos _frm_post_01_descuentos = null;
 public BaKapp.Movil.Tag.frm_post_01_formulario _frm_post_01_formulario = null;
 public BaKapp.Movil.Tag.frm_post_01_producto _frm_post_01_producto = null;
-public BaKapp.Movil.Tag.funciones _funciones = null;
 public BaKapp.Movil.Tag.variables _variables = null;
 public BaKapp.Movil.Tag.httputils2service _httputils2service = null;
 public BaKapp.Movil.Tag.xuiviewsutils _xuiviewsutils = null;
@@ -727,7 +727,7 @@ _result = (Integer) result[0];
 ;
 RDebugUtils.currentLine=131136;
  //BA.debugLineNum = 131136;BA.debugLine="Log(\"No existe el archivo ConexionWebService.txt";
-anywheresoftware.b4a.keywords.Common.LogImpl("6131136","No existe el archivo ConexionWebService.txt",0);
+anywheresoftware.b4a.keywords.Common.LogImpl("2131136","No existe el archivo ConexionWebService.txt",0);
  if (true) break;
 
 case 9:
@@ -779,7 +779,7 @@ this.state = 14;
 ;
 RDebugUtils.currentLine=131144;
  //BA.debugLineNum = 131144;BA.debugLine="Log(Variables.Global_Ip_WebService)";
-anywheresoftware.b4a.keywords.Common.LogImpl("6131144",parent.mostCurrent._variables._global_ip_webservice /*String*/ ,0);
+anywheresoftware.b4a.keywords.Common.LogImpl("2131144",parent.mostCurrent._variables._global_ip_webservice /*String*/ ,0);
  if (true) break;
 
 case 14:
@@ -1593,7 +1593,7 @@ RDebugUtils.currentLine=458759;
 parent.mostCurrent._consulta_sql = "Select Top 1 * From TABFU Where PWFU = '"+_vclave+"'";
 RDebugUtils.currentLine=458760;
  //BA.debugLineNum = 458760;BA.debugLine="Log(vClave)";
-anywheresoftware.b4a.keywords.Common.LogImpl("6458760",_vclave,0);
+anywheresoftware.b4a.keywords.Common.LogImpl("2458760",_vclave,0);
 RDebugUtils.currentLine=458762;
  //BA.debugLineNum = 458762;BA.debugLine="Dim Js As HttpJob = Funciones.Fx_HttJob_Ws_Sb_Get";
 _js = parent.mostCurrent._funciones._fx_httjob_ws_sb_getdataset_json /*BaKapp.Movil.Tag.httpjob*/ (mostCurrent.activityBA,parent.mostCurrent._consulta_sql,main.getObject());
@@ -1801,7 +1801,7 @@ case 29:
 this.state = 30;
 RDebugUtils.currentLine=458819;
  //BA.debugLineNum = 458819;BA.debugLine="Log(Js.ErrorMessage)";
-anywheresoftware.b4a.keywords.Common.LogImpl("6458819",_js._errormessage /*String*/ ,0);
+anywheresoftware.b4a.keywords.Common.LogImpl("2458819",_js._errormessage /*String*/ ,0);
  if (true) break;
 
 case 30:
@@ -1842,7 +1842,7 @@ this.state = 38;
 ;
 RDebugUtils.currentLine=458834;
  //BA.debugLineNum = 458834;BA.debugLine="Log(Variables.Global_BaseBk)";
-anywheresoftware.b4a.keywords.Common.LogImpl("6458834",parent.mostCurrent._variables._global_basebk /*String*/ ,0);
+anywheresoftware.b4a.keywords.Common.LogImpl("2458834",parent.mostCurrent._variables._global_basebk /*String*/ ,0);
  if (true) break;
 
 case 37:
@@ -1850,7 +1850,7 @@ case 37:
 this.state = 38;
 RDebugUtils.currentLine=458839;
  //BA.debugLineNum = 458839;BA.debugLine="Log(Js.ErrorMessage)";
-anywheresoftware.b4a.keywords.Common.LogImpl("6458839",_js._errormessage /*String*/ ,0);
+anywheresoftware.b4a.keywords.Common.LogImpl("2458839",_js._errormessage /*String*/ ,0);
  if (true) break;
 
 case 38:
