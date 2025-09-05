@@ -442,7 +442,14 @@ Private Sub ListView1_ItemClick (Position As Int, Value As Object)
 			Return
 				
 		End If
-		Parse_Product_Json(Js.GetString)
+		Try
+			Parse_Product_Json(Js.GetString)
+			
+		Catch
+			Msgbox("Error con el producto seleccionado","Error")
+			ProgressDialogHide
+			Return
+		End Try
 	End If
 	Btn_Buscar.Visible= True
 	Panelinfo.Visible = True
@@ -549,10 +556,9 @@ Private Sub Bsc(Tipo As String, Codigo As String, Me_ As Object, Empresa As Stri
       <_Empresa>${Empresa}</_Empresa>
       <_Sucursal>${Sucursal}</_Sucursal>
       <_Bodega>${Bodega}</_Bodega>
-      <_Tipo>${Tipo}</_Tipo>
+	      <_Tipo>${Tipo}</_Tipo>
       <_Codigo>${Codigo}</_Codigo>
 	   <_Lista>${Lista}</_Lista>
-	   <_Kopral>${alter}</_Kopral>
     </Sb_Inv_TraerProductoInventarioTicket>
   </soap:Body>
 </soap:Envelope>
@@ -1185,4 +1191,20 @@ End Sub
 
 Private Sub Btn_limpiar_Click
 	Txt_codigo.Text = ""
+End Sub
+
+Private Sub Btn_rotar_Click
+	ImageView1.Bitmap = RotateImage(ImageView1.Bitmap,180)
+End Sub
+Private Sub RotateImage(original As Bitmap, degree As Float) As Bitmap
+	Dim matrix As JavaObject
+	matrix.InitializeNewInstance("android.graphics.Matrix", Null)
+	matrix.RunMethod("postRotate", Array(degree))
+    
+	Dim bmp As JavaObject
+	bmp.InitializeStatic("android.graphics.Bitmap")
+    
+	Dim NewImage As Bitmap = bmp.RunMethod("createBitmap", Array(original, 0, 0, original.Width, original.Height, matrix, True))
+    
+	Return NewImage
 End Sub
