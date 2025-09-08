@@ -616,8 +616,8 @@ public static void  _jobdone(BaKapp.Movil.Tag.httpjob _js) throws Exception{
 public static void  _msgbox_result(int _result5) throws Exception{
 }
 public static String  _activity_pause(boolean _userclosed) throws Exception{
- //BA.debugLineNum = 402;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
- //BA.debugLineNum = 404;BA.debugLine="End Sub";
+ //BA.debugLineNum = 405;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
+ //BA.debugLineNum = 407;BA.debugLine="End Sub";
 return "";
 }
 public static String  _activity_resume() throws Exception{
@@ -626,25 +626,25 @@ public static String  _activity_resume() throws Exception{
 return "";
 }
 public static String  _btn_cerrar_click() throws Exception{
- //BA.debugLineNum = 466;BA.debugLine="Private Sub Btn_Cerrar_Click";
- //BA.debugLineNum = 467;BA.debugLine="General.Visible= True";
+ //BA.debugLineNum = 469;BA.debugLine="Private Sub Btn_Cerrar_Click";
+ //BA.debugLineNum = 470;BA.debugLine="General.Visible= True";
 mostCurrent._general.setVisible(anywheresoftware.b4a.keywords.Common.True);
- //BA.debugLineNum = 468;BA.debugLine="Panel_Conf.Visible = False";
+ //BA.debugLineNum = 471;BA.debugLine="Panel_Conf.Visible = False";
 mostCurrent._panel_conf.setVisible(anywheresoftware.b4a.keywords.Common.False);
- //BA.debugLineNum = 469;BA.debugLine="End Sub";
+ //BA.debugLineNum = 472;BA.debugLine="End Sub";
 return "";
 }
 public static String  _btn_conf_click() throws Exception{
- //BA.debugLineNum = 459;BA.debugLine="Private Sub Btn_Conf_Click";
- //BA.debugLineNum = 460;BA.debugLine="General.Visible= False";
+ //BA.debugLineNum = 462;BA.debugLine="Private Sub Btn_Conf_Click";
+ //BA.debugLineNum = 463;BA.debugLine="General.Visible= False";
 mostCurrent._general.setVisible(anywheresoftware.b4a.keywords.Common.False);
- //BA.debugLineNum = 461;BA.debugLine="Btn_Guardar.Color = ColorEnabled";
+ //BA.debugLineNum = 464;BA.debugLine="Btn_Guardar.Color = ColorEnabled";
 mostCurrent._btn_guardar.setColor(_colorenabled);
- //BA.debugLineNum = 462;BA.debugLine="IsEnabled = False";
+ //BA.debugLineNum = 465;BA.debugLine="IsEnabled = False";
 _isenabled = anywheresoftware.b4a.keywords.Common.False;
- //BA.debugLineNum = 463;BA.debugLine="Panel_Conf.Visible = True";
+ //BA.debugLineNum = 466;BA.debugLine="Panel_Conf.Visible = True";
 mostCurrent._panel_conf.setVisible(anywheresoftware.b4a.keywords.Common.True);
- //BA.debugLineNum = 464;BA.debugLine="End Sub";
+ //BA.debugLineNum = 467;BA.debugLine="End Sub";
 return "";
 }
 public static void  _btn_ed_id_click() throws Exception{
@@ -672,23 +672,23 @@ return;
 case 0:
 //C
 this.state = 1;
- //BA.debugLineNum = 481;BA.debugLine="Private InputTemplate As B4XInputTemplate";
+ //BA.debugLineNum = 484;BA.debugLine="Private InputTemplate As B4XInputTemplate";
 _inputtemplate = new BaKapp.Movil.Tag.b4xinputtemplate();
- //BA.debugLineNum = 482;BA.debugLine="Private Base As B4XView";
+ //BA.debugLineNum = 485;BA.debugLine="Private Base As B4XView";
 _base = new anywheresoftware.b4a.objects.B4XViewWrapper();
- //BA.debugLineNum = 483;BA.debugLine="Private dialog As B4XDialog";
+ //BA.debugLineNum = 486;BA.debugLine="Private dialog As B4XDialog";
 _dialog = new BaKapp.Movil.Tag.b4xdialog();
- //BA.debugLineNum = 487;BA.debugLine="InputTemplate.Initialize";
+ //BA.debugLineNum = 490;BA.debugLine="InputTemplate.Initialize";
 _inputtemplate._initialize /*String*/ (mostCurrent.activityBA);
- //BA.debugLineNum = 489;BA.debugLine="Base = Activity";
+ //BA.debugLineNum = 492;BA.debugLine="Base = Activity";
 _base = (anywheresoftware.b4a.objects.B4XViewWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.B4XViewWrapper(), (java.lang.Object)(parent.mostCurrent._activity.getObject()));
- //BA.debugLineNum = 490;BA.debugLine="dialog.Initialize (Base)";
+ //BA.debugLineNum = 493;BA.debugLine="dialog.Initialize (Base)";
 _dialog._initialize /*String*/ (mostCurrent.activityBA,_base);
- //BA.debugLineNum = 493;BA.debugLine="InputTemplate.lblTitle.Text = \"Ingrese la ip\"";
+ //BA.debugLineNum = 496;BA.debugLine="InputTemplate.lblTitle.Text = \"Ingrese la ip\"";
 _inputtemplate._lbltitle /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .setText(BA.ObjectToCharSequence("Ingrese la ip"));
- //BA.debugLineNum = 494;BA.debugLine="InputTemplate.Text = \"\"";
+ //BA.debugLineNum = 497;BA.debugLine="InputTemplate.Text = \"\"";
 _inputtemplate._text /*String*/  = "";
- //BA.debugLineNum = 497;BA.debugLine="Wait For (dialog.ShowTemplate(InputTemplate, \"OK\"";
+ //BA.debugLineNum = 500;BA.debugLine="Wait For (dialog.ShowTemplate(InputTemplate, \"OK\"";
 anywheresoftware.b4a.keywords.Common.WaitFor("complete", processBA, this, _dialog._showtemplate /*anywheresoftware.b4a.keywords.Common.ResumableSubWrapper*/ ((Object)(_inputtemplate),(Object)("OK"),(Object)(""),(Object)("CANCEL")));
 this.state = 5;
 return;
@@ -697,7 +697,7 @@ case 5:
 this.state = 1;
 _res = (Integer) result[0];
 ;
- //BA.debugLineNum = 498;BA.debugLine="If (Res = DialogResponse.CANCEL) Then";
+ //BA.debugLineNum = 501;BA.debugLine="If (Res = DialogResponse.CANCEL) Then";
 if (true) break;
 
 case 1:
@@ -710,7 +710,7 @@ this.state = 3;
 case 3:
 //C
 this.state = 4;
- //BA.debugLineNum = 499;BA.debugLine="Return";
+ //BA.debugLineNum = 502;BA.debugLine="Return";
 if (true) return ;
  if (true) break;
 
@@ -718,11 +718,11 @@ case 4:
 //C
 this.state = -1;
 ;
- //BA.debugLineNum = 501;BA.debugLine="Changes = True";
+ //BA.debugLineNum = 504;BA.debugLine="Changes = True";
 parent._changes = anywheresoftware.b4a.keywords.Common.True;
- //BA.debugLineNum = 502;BA.debugLine="Lbl_IP.Text = InputTemplate.Text";
+ //BA.debugLineNum = 505;BA.debugLine="Lbl_IP.Text = InputTemplate.Text";
 parent.mostCurrent._lbl_ip.setText(BA.ObjectToCharSequence(_inputtemplate._text /*String*/ ));
- //BA.debugLineNum = 504;BA.debugLine="End Sub";
+ //BA.debugLineNum = 507;BA.debugLine="End Sub";
 if (true) break;
 
             }
@@ -756,23 +756,23 @@ return;
 case 0:
 //C
 this.state = 1;
- //BA.debugLineNum = 507;BA.debugLine="Private InputTemplate As B4XInputTemplate";
+ //BA.debugLineNum = 510;BA.debugLine="Private InputTemplate As B4XInputTemplate";
 _inputtemplate = new BaKapp.Movil.Tag.b4xinputtemplate();
- //BA.debugLineNum = 508;BA.debugLine="Private Base As B4XView";
+ //BA.debugLineNum = 511;BA.debugLine="Private Base As B4XView";
 _base = new anywheresoftware.b4a.objects.B4XViewWrapper();
- //BA.debugLineNum = 509;BA.debugLine="Private dialog As B4XDialog";
+ //BA.debugLineNum = 512;BA.debugLine="Private dialog As B4XDialog";
 _dialog = new BaKapp.Movil.Tag.b4xdialog();
- //BA.debugLineNum = 513;BA.debugLine="InputTemplate.Initialize";
+ //BA.debugLineNum = 516;BA.debugLine="InputTemplate.Initialize";
 _inputtemplate._initialize /*String*/ (mostCurrent.activityBA);
- //BA.debugLineNum = 515;BA.debugLine="Base = Activity";
+ //BA.debugLineNum = 518;BA.debugLine="Base = Activity";
 _base = (anywheresoftware.b4a.objects.B4XViewWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.B4XViewWrapper(), (java.lang.Object)(parent.mostCurrent._activity.getObject()));
- //BA.debugLineNum = 516;BA.debugLine="dialog.Initialize (Base)";
+ //BA.debugLineNum = 519;BA.debugLine="dialog.Initialize (Base)";
 _dialog._initialize /*String*/ (mostCurrent.activityBA,_base);
- //BA.debugLineNum = 520;BA.debugLine="InputTemplate.lblTitle.Text = \"Ingrese el nombre\"";
+ //BA.debugLineNum = 523;BA.debugLine="InputTemplate.lblTitle.Text = \"Ingrese el nombre\"";
 _inputtemplate._lbltitle /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .setText(BA.ObjectToCharSequence("Ingrese el nombre"));
- //BA.debugLineNum = 521;BA.debugLine="InputTemplate.Text = \"\"";
+ //BA.debugLineNum = 524;BA.debugLine="InputTemplate.Text = \"\"";
 _inputtemplate._text /*String*/  = "";
- //BA.debugLineNum = 523;BA.debugLine="Wait For (dialog.ShowTemplate(InputTemplate, \"OK\"";
+ //BA.debugLineNum = 526;BA.debugLine="Wait For (dialog.ShowTemplate(InputTemplate, \"OK\"";
 anywheresoftware.b4a.keywords.Common.WaitFor("complete", processBA, this, _dialog._showtemplate /*anywheresoftware.b4a.keywords.Common.ResumableSubWrapper*/ ((Object)(_inputtemplate),(Object)("OK"),(Object)(""),(Object)("CANCEL")));
 this.state = 5;
 return;
@@ -781,7 +781,7 @@ case 5:
 this.state = 1;
 _res = (Integer) result[0];
 ;
- //BA.debugLineNum = 524;BA.debugLine="If (Res = DialogResponse.CANCEL) Then";
+ //BA.debugLineNum = 527;BA.debugLine="If (Res = DialogResponse.CANCEL) Then";
 if (true) break;
 
 case 1:
@@ -794,7 +794,7 @@ this.state = 3;
 case 3:
 //C
 this.state = 4;
- //BA.debugLineNum = 525;BA.debugLine="Return";
+ //BA.debugLineNum = 528;BA.debugLine="Return";
 if (true) return ;
  if (true) break;
 
@@ -802,11 +802,11 @@ case 4:
 //C
 this.state = -1;
 ;
- //BA.debugLineNum = 527;BA.debugLine="Changes = True";
+ //BA.debugLineNum = 530;BA.debugLine="Changes = True";
 parent._changes = anywheresoftware.b4a.keywords.Common.True;
- //BA.debugLineNum = 528;BA.debugLine="Lbl_Nombre.Text = InputTemplate.Text";
+ //BA.debugLineNum = 531;BA.debugLine="Lbl_Nombre.Text = InputTemplate.Text";
 parent.mostCurrent._lbl_nombre.setText(BA.ObjectToCharSequence(_inputtemplate._text /*String*/ ));
- //BA.debugLineNum = 529;BA.debugLine="End Sub";
+ //BA.debugLineNum = 532;BA.debugLine="End Sub";
 if (true) break;
 
             }
@@ -836,9 +836,9 @@ return;
 case 0:
 //C
 this.state = 1;
- //BA.debugLineNum = 626;BA.debugLine="InputListAsync(stringListPrice, \"Seleccione preci";
+ //BA.debugLineNum = 629;BA.debugLine="InputListAsync(stringListPrice, \"Seleccione preci";
 anywheresoftware.b4a.keywords.Common.InputListAsync(parent.mostCurrent._stringlistprice,BA.ObjectToCharSequence("Seleccione precio "),parent._selectedprice,processBA,anywheresoftware.b4a.keywords.Common.True);
- //BA.debugLineNum = 627;BA.debugLine="Wait For InputList_Result (Index As Int)";
+ //BA.debugLineNum = 630;BA.debugLine="Wait For InputList_Result (Index As Int)";
 anywheresoftware.b4a.keywords.Common.WaitFor("inputlist_result", processBA, this, null);
 this.state = 5;
 return;
@@ -847,7 +847,7 @@ case 5:
 this.state = 1;
 _index = (Integer) result[0];
 ;
- //BA.debugLineNum = 628;BA.debugLine="If Index <> DialogResponse.CANCEL Then";
+ //BA.debugLineNum = 631;BA.debugLine="If Index <> DialogResponse.CANCEL Then";
 if (true) break;
 
 case 1:
@@ -860,15 +860,15 @@ this.state = 3;
 case 3:
 //C
 this.state = 4;
- //BA.debugLineNum = 629;BA.debugLine="SelectedPrice = Index";
+ //BA.debugLineNum = 632;BA.debugLine="SelectedPrice = Index";
 parent._selectedprice = _index;
- //BA.debugLineNum = 630;BA.debugLine="Dim  aux As OtherPriceData = DataPrice.Get(Index";
+ //BA.debugLineNum = 633;BA.debugLine="Dim  aux As OtherPriceData = DataPrice.Get(Index";
 _aux = (BaKapp.Movil.Tag.frm_impresion._otherpricedata)(parent.mostCurrent._dataprice.Get(_index));
- //BA.debugLineNum = 631;BA.debugLine="stringPrecio = aux.KOLT&\"|\"&aux.NOKOLT";
+ //BA.debugLineNum = 634;BA.debugLine="stringPrecio = aux.KOLT&\"|\"&aux.NOKOLT";
 parent._stringprecio = _aux.KOLT /*String*/ +"|"+_aux.NOKOLT /*String*/ ;
- //BA.debugLineNum = 632;BA.debugLine="Lbl_precio_act.Text = stringPrecio";
+ //BA.debugLineNum = 635;BA.debugLine="Lbl_precio_act.Text = stringPrecio";
 parent.mostCurrent._lbl_precio_act.setText(BA.ObjectToCharSequence(parent._stringprecio));
- //BA.debugLineNum = 633;BA.debugLine="Changes = True";
+ //BA.debugLineNum = 636;BA.debugLine="Changes = True";
 parent._changes = anywheresoftware.b4a.keywords.Common.True;
  if (true) break;
 
@@ -876,7 +876,7 @@ case 4:
 //C
 this.state = -1;
 ;
- //BA.debugLineNum = 636;BA.debugLine="End Sub";
+ //BA.debugLineNum = 639;BA.debugLine="End Sub";
 if (true) break;
 
             }
@@ -910,21 +910,21 @@ return;
 case 0:
 //C
 this.state = 1;
- //BA.debugLineNum = 644;BA.debugLine="Private InputTemplate As B4XInputTemplate";
+ //BA.debugLineNum = 647;BA.debugLine="Private InputTemplate As B4XInputTemplate";
 _inputtemplate = new BaKapp.Movil.Tag.b4xinputtemplate();
- //BA.debugLineNum = 645;BA.debugLine="Private Base As B4XView";
+ //BA.debugLineNum = 648;BA.debugLine="Private Base As B4XView";
 _base = new anywheresoftware.b4a.objects.B4XViewWrapper();
- //BA.debugLineNum = 646;BA.debugLine="Private dialog As B4XDialog";
+ //BA.debugLineNum = 649;BA.debugLine="Private dialog As B4XDialog";
 _dialog = new BaKapp.Movil.Tag.b4xdialog();
- //BA.debugLineNum = 648;BA.debugLine="InputTemplate.Initialize";
+ //BA.debugLineNum = 651;BA.debugLine="InputTemplate.Initialize";
 _inputtemplate._initialize /*String*/ (mostCurrent.activityBA);
- //BA.debugLineNum = 649;BA.debugLine="Base = Activity";
+ //BA.debugLineNum = 652;BA.debugLine="Base = Activity";
 _base = (anywheresoftware.b4a.objects.B4XViewWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.B4XViewWrapper(), (java.lang.Object)(parent.mostCurrent._activity.getObject()));
- //BA.debugLineNum = 650;BA.debugLine="dialog.Initialize(Base)";
+ //BA.debugLineNum = 653;BA.debugLine="dialog.Initialize(Base)";
 _dialog._initialize /*String*/ (mostCurrent.activityBA,_base);
- //BA.debugLineNum = 652;BA.debugLine="InputTemplate.lblTitle.Text = \"Ingrese el puerto\"";
+ //BA.debugLineNum = 655;BA.debugLine="InputTemplate.lblTitle.Text = \"Ingrese el puerto\"";
 _inputtemplate._lbltitle /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .setText(BA.ObjectToCharSequence("Ingrese el puerto"));
- //BA.debugLineNum = 653;BA.debugLine="If (Lbl_puerto.Text <> Null) Then";
+ //BA.debugLineNum = 656;BA.debugLine="If (Lbl_puerto.Text <> Null) Then";
 if (true) break;
 
 case 1:
@@ -939,14 +939,14 @@ this.state = 5;
 case 3:
 //C
 this.state = 6;
- //BA.debugLineNum = 654;BA.debugLine="InputTemplate.Text = Lbl_puerto.Text";
+ //BA.debugLineNum = 657;BA.debugLine="InputTemplate.Text = Lbl_puerto.Text";
 _inputtemplate._text /*String*/  = parent.mostCurrent._lbl_puerto.getText();
  if (true) break;
 
 case 5:
 //C
 this.state = 6;
- //BA.debugLineNum = 656;BA.debugLine="InputTemplate.Text = \"\"";
+ //BA.debugLineNum = 659;BA.debugLine="InputTemplate.Text = \"\"";
 _inputtemplate._text /*String*/  = "";
  if (true) break;
 
@@ -954,9 +954,9 @@ case 6:
 //C
 this.state = 7;
 ;
- //BA.debugLineNum = 660;BA.debugLine="InputTemplate.ConfigureForNumbers(False,False)";
+ //BA.debugLineNum = 663;BA.debugLine="InputTemplate.ConfigureForNumbers(False,False)";
 _inputtemplate._configurefornumbers /*String*/ (anywheresoftware.b4a.keywords.Common.False,anywheresoftware.b4a.keywords.Common.False);
- //BA.debugLineNum = 662;BA.debugLine="Wait For (dialog.ShowTemplate(InputTemplate, \"Gua";
+ //BA.debugLineNum = 665;BA.debugLine="Wait For (dialog.ShowTemplate(InputTemplate, \"Gua";
 anywheresoftware.b4a.keywords.Common.WaitFor("complete", processBA, this, _dialog._showtemplate /*anywheresoftware.b4a.keywords.Common.ResumableSubWrapper*/ ((Object)(_inputtemplate),(Object)("Guardar"),(Object)("Por defecto"),(Object)("Cancel")));
 this.state = 17;
 return;
@@ -965,7 +965,7 @@ case 17:
 this.state = 7;
 _res = (Integer) result[0];
 ;
- //BA.debugLineNum = 663;BA.debugLine="If (Res = DialogResponse.CANCEL) Then";
+ //BA.debugLineNum = 666;BA.debugLine="If (Res = DialogResponse.CANCEL) Then";
 if (true) break;
 
 case 7:
@@ -978,11 +978,11 @@ this.state = 9;
 case 9:
 //C
 this.state = 10;
- //BA.debugLineNum = 664;BA.debugLine="Return";
+ //BA.debugLineNum = 667;BA.debugLine="Return";
 if (true) return ;
  if (true) break;
 ;
- //BA.debugLineNum = 666;BA.debugLine="If(Res = DialogResponse.NEGATIVE) Then";
+ //BA.debugLineNum = 669;BA.debugLine="If(Res = DialogResponse.NEGATIVE) Then";
 
 case 10:
 //if
@@ -994,13 +994,13 @@ this.state = 12;
 case 12:
 //C
 this.state = 13;
- //BA.debugLineNum = 667;BA.debugLine="Changes = True";
+ //BA.debugLineNum = 670;BA.debugLine="Changes = True";
 parent._changes = anywheresoftware.b4a.keywords.Common.True;
- //BA.debugLineNum = 668;BA.debugLine="Lbl_puerto.Text = 9100";
+ //BA.debugLineNum = 671;BA.debugLine="Lbl_puerto.Text = 9100";
 parent.mostCurrent._lbl_puerto.setText(BA.ObjectToCharSequence(9100));
  if (true) break;
 ;
- //BA.debugLineNum = 670;BA.debugLine="If(Res = DialogResponse.POSITIVE) Then";
+ //BA.debugLineNum = 673;BA.debugLine="If(Res = DialogResponse.POSITIVE) Then";
 
 case 13:
 //if
@@ -1012,9 +1012,9 @@ this.state = 15;
 case 15:
 //C
 this.state = 16;
- //BA.debugLineNum = 671;BA.debugLine="Changes = True";
+ //BA.debugLineNum = 674;BA.debugLine="Changes = True";
 parent._changes = anywheresoftware.b4a.keywords.Common.True;
- //BA.debugLineNum = 672;BA.debugLine="Lbl_puerto.Text = InputTemplate.Text";
+ //BA.debugLineNum = 675;BA.debugLine="Lbl_puerto.Text = InputTemplate.Text";
 parent.mostCurrent._lbl_puerto.setText(BA.ObjectToCharSequence(_inputtemplate._text /*String*/ ));
  if (true) break;
 
@@ -1022,7 +1022,7 @@ case 16:
 //C
 this.state = -1;
 ;
- //BA.debugLineNum = 677;BA.debugLine="End Sub";
+ //BA.debugLineNum = 680;BA.debugLine="End Sub";
 if (true) break;
 
             }
@@ -1030,17 +1030,17 @@ if (true) break;
     }
 }
 public static String  _btn_etq1_click() throws Exception{
- //BA.debugLineNum = 471;BA.debugLine="Private Sub Btn_Etq1_Click";
- //BA.debugLineNum = 472;BA.debugLine="StartActivity(Frm_impresion)";
+ //BA.debugLineNum = 474;BA.debugLine="Private Sub Btn_Etq1_Click";
+ //BA.debugLineNum = 475;BA.debugLine="StartActivity(Frm_impresion)";
 anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._frm_impresion.getObject()));
- //BA.debugLineNum = 474;BA.debugLine="End Sub";
+ //BA.debugLineNum = 477;BA.debugLine="End Sub";
 return "";
 }
 public static String  _btn_etq2_click() throws Exception{
- //BA.debugLineNum = 476;BA.debugLine="Private Sub Btn_Etq2_Click";
- //BA.debugLineNum = 477;BA.debugLine="StartActivity(Frm_impresion)";
+ //BA.debugLineNum = 479;BA.debugLine="Private Sub Btn_Etq2_Click";
+ //BA.debugLineNum = 480;BA.debugLine="StartActivity(Frm_impresion)";
 anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._frm_impresion.getObject()));
- //BA.debugLineNum = 478;BA.debugLine="End Sub";
+ //BA.debugLineNum = 481;BA.debugLine="End Sub";
 return "";
 }
 public static void  _btn_guardar_click() throws Exception{
@@ -1067,7 +1067,7 @@ return;
 case 0:
 //C
 this.state = 1;
- //BA.debugLineNum = 567;BA.debugLine="Wait For (Btn_Probar_Conexion_Click) Complete (Re";
+ //BA.debugLineNum = 570;BA.debugLine="Wait For (Btn_Probar_Conexion_Click) Complete (Re";
 anywheresoftware.b4a.keywords.Common.WaitFor("complete", processBA, this, _btn_probar_conexion_click());
 this.state = 27;
 return;
@@ -1076,7 +1076,7 @@ case 27:
 this.state = 1;
 _result1 = (Boolean) result[0];
 ;
- //BA.debugLineNum = 569;BA.debugLine="If IsEnabled Then";
+ //BA.debugLineNum = 572;BA.debugLine="If IsEnabled Then";
 if (true) break;
 
 case 1:
@@ -1089,13 +1089,13 @@ this.state = 3;
 case 3:
 //C
 this.state = 4;
- //BA.debugLineNum = 570;BA.debugLine="Dim bmp1 As Bitmap";
+ //BA.debugLineNum = 573;BA.debugLine="Dim bmp1 As Bitmap";
 _bmp1 = new anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper();
- //BA.debugLineNum = 571;BA.debugLine="bmp1 = LoadBitmap(File.DirAssets, \"save.png\")";
+ //BA.debugLineNum = 574;BA.debugLine="bmp1 = LoadBitmap(File.DirAssets, \"save.png\")";
 _bmp1 = anywheresoftware.b4a.keywords.Common.LoadBitmap(anywheresoftware.b4a.keywords.Common.File.getDirAssets(),"save.png");
- //BA.debugLineNum = 572;BA.debugLine="Msgbox2Async(\"¿Desea guardar la configuración ac";
+ //BA.debugLineNum = 575;BA.debugLine="Msgbox2Async(\"¿Desea guardar la configuración ac";
 anywheresoftware.b4a.keywords.Common.Msgbox2Async(BA.ObjectToCharSequence("¿Desea guardar la configuración actual?"),BA.ObjectToCharSequence("Configuración local"),"Si","No","",_bmp1,processBA,anywheresoftware.b4a.keywords.Common.False);
- //BA.debugLineNum = 573;BA.debugLine="Wait For Msgbox_Result (Result As Int)";
+ //BA.debugLineNum = 576;BA.debugLine="Wait For Msgbox_Result (Result As Int)";
 anywheresoftware.b4a.keywords.Common.WaitFor("msgbox_result", processBA, this, null);
 this.state = 28;
 return;
@@ -1104,7 +1104,7 @@ case 28:
 this.state = 4;
 _result = (Integer) result[0];
 ;
- //BA.debugLineNum = 574;BA.debugLine="If Result = xui.DialogResponse_Positive Then";
+ //BA.debugLineNum = 577;BA.debugLine="If Result = xui.DialogResponse_Positive Then";
 if (true) break;
 
 case 4:
@@ -1117,7 +1117,7 @@ this.state = 6;
 case 6:
 //C
 this.state = 7;
- //BA.debugLineNum = 575;BA.debugLine="If Lbl_puerto.Text <> \"---\" Then";
+ //BA.debugLineNum = 578;BA.debugLine="If Lbl_puerto.Text <> \"---\" Then";
 if (true) break;
 
 case 7:
@@ -1132,7 +1132,7 @@ this.state = 23;
 case 9:
 //C
 this.state = 10;
- //BA.debugLineNum = 577;BA.debugLine="If Lbl_IP.Text <> \"---\" Then";
+ //BA.debugLineNum = 580;BA.debugLine="If Lbl_IP.Text <> \"---\" Then";
 if (true) break;
 
 case 10:
@@ -1147,7 +1147,7 @@ this.state = 20;
 case 12:
 //C
 this.state = 13;
- //BA.debugLineNum = 578;BA.debugLine="If Lbl_Nombre.Text <> \"---\" Then";
+ //BA.debugLineNum = 581;BA.debugLine="If Lbl_Nombre.Text <> \"---\" Then";
 if (true) break;
 
 case 13:
@@ -1162,19 +1162,19 @@ this.state = 17;
 case 15:
 //C
 this.state = 18;
- //BA.debugLineNum = 580;BA.debugLine="CrearDatos";
+ //BA.debugLineNum = 583;BA.debugLine="CrearDatos";
 _creardatos();
- //BA.debugLineNum = 581;BA.debugLine="Btn_Etq1.Enabled = True";
+ //BA.debugLineNum = 584;BA.debugLine="Btn_Etq1.Enabled = True";
 parent.mostCurrent._btn_etq1.setEnabled(anywheresoftware.b4a.keywords.Common.True);
- //BA.debugLineNum = 582;BA.debugLine="Lbl_Imprimir.Visible = False";
+ //BA.debugLineNum = 585;BA.debugLine="Lbl_Imprimir.Visible = False";
 parent.mostCurrent._lbl_imprimir.setVisible(anywheresoftware.b4a.keywords.Common.False);
- //BA.debugLineNum = 583;BA.debugLine="Dim bmp1 As Bitmap";
+ //BA.debugLineNum = 586;BA.debugLine="Dim bmp1 As Bitmap";
 _bmp1 = new anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper();
- //BA.debugLineNum = 584;BA.debugLine="bmp1 = LoadBitmap(File.DirAssets, \"printer.p";
+ //BA.debugLineNum = 587;BA.debugLine="bmp1 = LoadBitmap(File.DirAssets, \"printer.p";
 _bmp1 = anywheresoftware.b4a.keywords.Common.LoadBitmap(anywheresoftware.b4a.keywords.Common.File.getDirAssets(),"printer.png");
- //BA.debugLineNum = 585;BA.debugLine="Msgbox2Async(\"Datos guardados correctamente\"";
+ //BA.debugLineNum = 588;BA.debugLine="Msgbox2Async(\"Datos guardados correctamente\"";
 anywheresoftware.b4a.keywords.Common.Msgbox2Async(BA.ObjectToCharSequence("Datos guardados correctamente"),BA.ObjectToCharSequence("Configuración Impresora"),"Continuar","","",_bmp1,processBA,anywheresoftware.b4a.keywords.Common.False);
- //BA.debugLineNum = 586;BA.debugLine="Wait For Msgbox_Result (Result As Int)";
+ //BA.debugLineNum = 589;BA.debugLine="Wait For Msgbox_Result (Result As Int)";
 anywheresoftware.b4a.keywords.Common.WaitFor("msgbox_result", processBA, this, null);
 this.state = 29;
 return;
@@ -1183,20 +1183,20 @@ case 29:
 this.state = 18;
 _result = (Integer) result[0];
 ;
- //BA.debugLineNum = 587;BA.debugLine="Btn_Cerrar_Click";
+ //BA.debugLineNum = 590;BA.debugLine="Btn_Cerrar_Click";
 _btn_cerrar_click();
  if (true) break;
 
 case 17:
 //C
 this.state = 18;
- //BA.debugLineNum = 589;BA.debugLine="Dim bmp1 As Bitmap";
+ //BA.debugLineNum = 592;BA.debugLine="Dim bmp1 As Bitmap";
 _bmp1 = new anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper();
- //BA.debugLineNum = 590;BA.debugLine="bmp1 = LoadBitmap(File.DirAssets, \"security-d";
+ //BA.debugLineNum = 593;BA.debugLine="bmp1 = LoadBitmap(File.DirAssets, \"security-d";
 _bmp1 = anywheresoftware.b4a.keywords.Common.LoadBitmap(anywheresoftware.b4a.keywords.Common.File.getDirAssets(),"security-danger.png");
- //BA.debugLineNum = 591;BA.debugLine="Msgbox2Async(\"No puede quedar un parametro en";
+ //BA.debugLineNum = 594;BA.debugLine="Msgbox2Async(\"No puede quedar un parametro en";
 anywheresoftware.b4a.keywords.Common.Msgbox2Async(BA.ObjectToCharSequence("No puede quedar un parametro en blanco, asigne un nombre"),BA.ObjectToCharSequence("Configuración Impresora"),"Continuar","","",_bmp1,processBA,anywheresoftware.b4a.keywords.Common.False);
- //BA.debugLineNum = 592;BA.debugLine="Wait For Msgbox_Result (Result As Int)";
+ //BA.debugLineNum = 595;BA.debugLine="Wait For Msgbox_Result (Result As Int)";
 anywheresoftware.b4a.keywords.Common.WaitFor("msgbox_result", processBA, this, null);
 this.state = 30;
 return;
@@ -1205,7 +1205,7 @@ case 30:
 this.state = 18;
 _result = (Integer) result[0];
 ;
- //BA.debugLineNum = 593;BA.debugLine="Return";
+ //BA.debugLineNum = 596;BA.debugLine="Return";
 if (true) return ;
  if (true) break;
 
@@ -1218,13 +1218,13 @@ this.state = 21;
 case 20:
 //C
 this.state = 21;
- //BA.debugLineNum = 596;BA.debugLine="Dim bmp1 As Bitmap";
+ //BA.debugLineNum = 599;BA.debugLine="Dim bmp1 As Bitmap";
 _bmp1 = new anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper();
- //BA.debugLineNum = 597;BA.debugLine="bmp1 = LoadBitmap(File.DirAssets, \"security-da";
+ //BA.debugLineNum = 600;BA.debugLine="bmp1 = LoadBitmap(File.DirAssets, \"security-da";
 _bmp1 = anywheresoftware.b4a.keywords.Common.LoadBitmap(anywheresoftware.b4a.keywords.Common.File.getDirAssets(),"security-danger.png");
- //BA.debugLineNum = 598;BA.debugLine="Msgbox2Async(\"No puede quedar un parametro en";
+ //BA.debugLineNum = 601;BA.debugLine="Msgbox2Async(\"No puede quedar un parametro en";
 anywheresoftware.b4a.keywords.Common.Msgbox2Async(BA.ObjectToCharSequence("No puede quedar un parametro en blanco, Asigne una ip"),BA.ObjectToCharSequence("Configuración Impresora "),"Continuar","","",_bmp1,processBA,anywheresoftware.b4a.keywords.Common.False);
- //BA.debugLineNum = 599;BA.debugLine="Wait For Msgbox_Result (Result As Int)";
+ //BA.debugLineNum = 602;BA.debugLine="Wait For Msgbox_Result (Result As Int)";
 anywheresoftware.b4a.keywords.Common.WaitFor("msgbox_result", processBA, this, null);
 this.state = 31;
 return;
@@ -1233,7 +1233,7 @@ case 31:
 this.state = 21;
 _result = (Integer) result[0];
 ;
- //BA.debugLineNum = 600;BA.debugLine="Return";
+ //BA.debugLineNum = 603;BA.debugLine="Return";
 if (true) return ;
  if (true) break;
 
@@ -1246,13 +1246,13 @@ this.state = 24;
 case 23:
 //C
 this.state = 24;
- //BA.debugLineNum = 603;BA.debugLine="Dim bmp1 As Bitmap";
+ //BA.debugLineNum = 606;BA.debugLine="Dim bmp1 As Bitmap";
 _bmp1 = new anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper();
- //BA.debugLineNum = 604;BA.debugLine="bmp1 = LoadBitmap(File.DirAssets, \"security-da";
+ //BA.debugLineNum = 607;BA.debugLine="bmp1 = LoadBitmap(File.DirAssets, \"security-da";
 _bmp1 = anywheresoftware.b4a.keywords.Common.LoadBitmap(anywheresoftware.b4a.keywords.Common.File.getDirAssets(),"security-danger.png");
- //BA.debugLineNum = 605;BA.debugLine="Msgbox2Async(\"No puede quedar un parametro en";
+ //BA.debugLineNum = 608;BA.debugLine="Msgbox2Async(\"No puede quedar un parametro en";
 anywheresoftware.b4a.keywords.Common.Msgbox2Async(BA.ObjectToCharSequence("No puede quedar un parametro en blanco, Asigne un puerto"),BA.ObjectToCharSequence("Configuración Impresora "),"Continuar","","",_bmp1,processBA,anywheresoftware.b4a.keywords.Common.False);
- //BA.debugLineNum = 606;BA.debugLine="Wait For Msgbox_Result (Result As Int)";
+ //BA.debugLineNum = 609;BA.debugLine="Wait For Msgbox_Result (Result As Int)";
 anywheresoftware.b4a.keywords.Common.WaitFor("msgbox_result", processBA, this, null);
 this.state = 32;
 return;
@@ -1261,7 +1261,7 @@ case 32:
 this.state = 24;
 _result = (Integer) result[0];
 ;
- //BA.debugLineNum = 607;BA.debugLine="Return";
+ //BA.debugLineNum = 610;BA.debugLine="Return";
 if (true) return ;
  if (true) break;
 
@@ -1275,11 +1275,11 @@ case 25:
 //C
 this.state = 26;
 ;
- //BA.debugLineNum = 612;BA.debugLine="Btn_Cerrar.Enabled = True";
+ //BA.debugLineNum = 615;BA.debugLine="Btn_Cerrar.Enabled = True";
 parent.mostCurrent._btn_cerrar.setEnabled(anywheresoftware.b4a.keywords.Common.True);
- //BA.debugLineNum = 613;BA.debugLine="Btn_Etq1.Enabled = True";
+ //BA.debugLineNum = 616;BA.debugLine="Btn_Etq1.Enabled = True";
 parent.mostCurrent._btn_etq1.setEnabled(anywheresoftware.b4a.keywords.Common.True);
- //BA.debugLineNum = 615;BA.debugLine="Return";
+ //BA.debugLineNum = 618;BA.debugLine="Return";
 if (true) return ;
  if (true) break;
 
@@ -1287,13 +1287,13 @@ case 26:
 //C
 this.state = -1;
 ;
- //BA.debugLineNum = 617;BA.debugLine="Dim bmp1 As Bitmap";
+ //BA.debugLineNum = 620;BA.debugLine="Dim bmp1 As Bitmap";
 _bmp1 = new anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper();
- //BA.debugLineNum = 618;BA.debugLine="bmp1 = LoadBitmap(File.DirAssets, \"security-dange";
+ //BA.debugLineNum = 621;BA.debugLine="bmp1 = LoadBitmap(File.DirAssets, \"security-dange";
 _bmp1 = anywheresoftware.b4a.keywords.Common.LoadBitmap(anywheresoftware.b4a.keywords.Common.File.getDirAssets(),"security-danger.png");
- //BA.debugLineNum = 619;BA.debugLine="Msgbox2Async(\"Antes de guardar una configuración";
+ //BA.debugLineNum = 622;BA.debugLine="Msgbox2Async(\"Antes de guardar una configuración";
 anywheresoftware.b4a.keywords.Common.Msgbox2Async(BA.ObjectToCharSequence("Antes de guardar una configuración se debe de probar conexión"),BA.ObjectToCharSequence("Configuración local"),"Continuar","","",_bmp1,processBA,anywheresoftware.b4a.keywords.Common.False);
- //BA.debugLineNum = 620;BA.debugLine="Wait For Msgbox_Result (Result As Int)";
+ //BA.debugLineNum = 623;BA.debugLine="Wait For Msgbox_Result (Result As Int)";
 anywheresoftware.b4a.keywords.Common.WaitFor("msgbox_result", processBA, this, null);
 this.state = 33;
 return;
@@ -1302,7 +1302,7 @@ case 33:
 this.state = -1;
 _result = (Integer) result[0];
 ;
- //BA.debugLineNum = 622;BA.debugLine="End Sub";
+ //BA.debugLineNum = 625;BA.debugLine="End Sub";
 if (true) break;
 
             }
@@ -1333,7 +1333,7 @@ anywheresoftware.b4a.keywords.Common.ReturnFromResumableSub(this,null);return;}
 case 0:
 //C
 this.state = 1;
- //BA.debugLineNum = 543;BA.debugLine="If Ping(Lbl_IP.Text) Then";
+ //BA.debugLineNum = 546;BA.debugLine="If Ping(Lbl_IP.Text) Then";
 if (true) break;
 
 case 1:
@@ -1346,13 +1346,13 @@ this.state = 3;
 case 3:
 //C
 this.state = 4;
- //BA.debugLineNum = 544;BA.debugLine="Dim bmp1 As Bitmap";
+ //BA.debugLineNum = 547;BA.debugLine="Dim bmp1 As Bitmap";
 _bmp1 = new anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper();
- //BA.debugLineNum = 545;BA.debugLine="bmp1 = LoadBitmap(File.DirAssets, \"printer.png\")";
+ //BA.debugLineNum = 548;BA.debugLine="bmp1 = LoadBitmap(File.DirAssets, \"printer.png\")";
 _bmp1 = anywheresoftware.b4a.keywords.Common.LoadBitmap(anywheresoftware.b4a.keywords.Common.File.getDirAssets(),"printer.png");
- //BA.debugLineNum = 546;BA.debugLine="Msgbox2Async(\"Conexión exitosa\" , \"Notificación\"";
+ //BA.debugLineNum = 549;BA.debugLine="Msgbox2Async(\"Conexión exitosa\" , \"Notificación\"";
 anywheresoftware.b4a.keywords.Common.Msgbox2Async(BA.ObjectToCharSequence("Conexión exitosa"),BA.ObjectToCharSequence("Notificación"),"Aceptar","Cancelar","",_bmp1,processBA,anywheresoftware.b4a.keywords.Common.False);
- //BA.debugLineNum = 547;BA.debugLine="Wait For Msgbox_Result (Result As Int)";
+ //BA.debugLineNum = 550;BA.debugLine="Wait For Msgbox_Result (Result As Int)";
 anywheresoftware.b4a.keywords.Common.WaitFor("msgbox_result", processBA, this, null);
 this.state = 5;
 return;
@@ -1361,13 +1361,13 @@ case 5:
 this.state = 4;
 _result = (Integer) result[0];
 ;
- //BA.debugLineNum = 549;BA.debugLine="IsEnabled = True";
+ //BA.debugLineNum = 552;BA.debugLine="IsEnabled = True";
 parent._isenabled = anywheresoftware.b4a.keywords.Common.True;
- //BA.debugLineNum = 550;BA.debugLine="Changes = False";
+ //BA.debugLineNum = 553;BA.debugLine="Changes = False";
 parent._changes = anywheresoftware.b4a.keywords.Common.False;
- //BA.debugLineNum = 551;BA.debugLine="Btn_Guardar.Color = ColorEnabled";
+ //BA.debugLineNum = 554;BA.debugLine="Btn_Guardar.Color = ColorEnabled";
 parent.mostCurrent._btn_guardar.setColor(parent._colorenabled);
- //BA.debugLineNum = 552;BA.debugLine="Return True";
+ //BA.debugLineNum = 555;BA.debugLine="Return True";
 if (true) {
 anywheresoftware.b4a.keywords.Common.ReturnFromResumableSub(this,(Object)(anywheresoftware.b4a.keywords.Common.True));return;};
  if (true) break;
@@ -1376,13 +1376,13 @@ case 4:
 //C
 this.state = -1;
 ;
- //BA.debugLineNum = 554;BA.debugLine="Dim bmp1 As Bitmap";
+ //BA.debugLineNum = 557;BA.debugLine="Dim bmp1 As Bitmap";
 _bmp1 = new anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper();
- //BA.debugLineNum = 555;BA.debugLine="bmp1 = LoadBitmap(File.DirAssets, \"security-dange";
+ //BA.debugLineNum = 558;BA.debugLine="bmp1 = LoadBitmap(File.DirAssets, \"security-dange";
 _bmp1 = anywheresoftware.b4a.keywords.Common.LoadBitmap(anywheresoftware.b4a.keywords.Common.File.getDirAssets(),"security-danger.png");
- //BA.debugLineNum = 556;BA.debugLine="Msgbox2Async(\"Conexión Fallida\" , \"Notificación\",";
+ //BA.debugLineNum = 559;BA.debugLine="Msgbox2Async(\"Conexión Fallida\" , \"Notificación\",";
 anywheresoftware.b4a.keywords.Common.Msgbox2Async(BA.ObjectToCharSequence("Conexión Fallida"),BA.ObjectToCharSequence("Notificación"),"Aceptar","","",_bmp1,processBA,anywheresoftware.b4a.keywords.Common.False);
- //BA.debugLineNum = 557;BA.debugLine="Wait For Msgbox_Result (Result As Int)";
+ //BA.debugLineNum = 560;BA.debugLine="Wait For Msgbox_Result (Result As Int)";
 anywheresoftware.b4a.keywords.Common.WaitFor("msgbox_result", processBA, this, null);
 this.state = 6;
 return;
@@ -1391,10 +1391,10 @@ case 6:
 this.state = -1;
 _result = (Integer) result[0];
 ;
- //BA.debugLineNum = 558;BA.debugLine="Return True";
+ //BA.debugLineNum = 561;BA.debugLine="Return True";
 if (true) {
 anywheresoftware.b4a.keywords.Common.ReturnFromResumableSub(this,(Object)(anywheresoftware.b4a.keywords.Common.True));return;};
- //BA.debugLineNum = 560;BA.debugLine="End Sub";
+ //BA.debugLineNum = 563;BA.debugLine="End Sub";
 if (true) break;
 
             }
@@ -1402,10 +1402,10 @@ if (true) break;
     }
 }
 public static String  _btn_volver_click() throws Exception{
- //BA.debugLineNum = 638;BA.debugLine="Private Sub Btn_Volver_Click";
- //BA.debugLineNum = 639;BA.debugLine="Activity.Finish";
+ //BA.debugLineNum = 641;BA.debugLine="Private Sub Btn_Volver_Click";
+ //BA.debugLineNum = 642;BA.debugLine="Activity.Finish";
 mostCurrent._activity.Finish();
- //BA.debugLineNum = 641;BA.debugLine="End Sub";
+ //BA.debugLineNum = 644;BA.debugLine="End Sub";
 return "";
 }
 public static void  _cargarlista() throws Exception{
@@ -1434,9 +1434,9 @@ anywheresoftware.b4a.objects.PanelWrapper _p = null;
 anywheresoftware.b4a.BA.IterableList group21;
 int index21;
 int groupLen21;
-anywheresoftware.b4a.BA.IterableList group55;
-int index55;
-int groupLen55;
+anywheresoftware.b4a.BA.IterableList group58;
+int index58;
+int groupLen58;
 
 @Override
 public void resume(BA ba, Object[] result) throws Exception{
@@ -1461,9 +1461,9 @@ _listapersonas.Initialize();
 _js = _sb_traeretiquetas(frm_etiquetas.getObject());
  //BA.debugLineNum = 241;BA.debugLine="Wait For (Js) JobDone(Js As HttpJob)";
 anywheresoftware.b4a.keywords.Common.WaitFor("jobdone", processBA, this, (Object)(_js));
-this.state = 32;
+this.state = 36;
 return;
-case 32:
+case 36:
 //C
 this.state = 1;
 _js = (BaKapp.Movil.Tag.httpjob) result[0];
@@ -1473,11 +1473,11 @@ if (true) break;
 
 case 1:
 //if
-this.state = 28;
+this.state = 32;
 if (_js._success /*boolean*/ ) { 
 this.state = 3;
 }else {
-this.state = 23;
+this.state = 27;
 }if (true) break;
 
 case 3:
@@ -1508,9 +1508,9 @@ _bmp1 = anywheresoftware.b4a.keywords.Common.LoadBitmap(anywheresoftware.b4a.key
 anywheresoftware.b4a.keywords.Common.Msgbox2Async(BA.ObjectToCharSequence("No hay etiquetas de tipo '(Movil)' en la base de datos."),BA.ObjectToCharSequence("Error"),"OK","","",_bmp1,processBA,anywheresoftware.b4a.keywords.Common.False);
  //BA.debugLineNum = 252;BA.debugLine="Wait For Msgbox_Result (Result5 As Int)";
 anywheresoftware.b4a.keywords.Common.WaitFor("msgbox_result", processBA, this, null);
-this.state = 33;
+this.state = 37;
 return;
-case 33:
+case 37:
 //C
 this.state = 7;
 _result5 = (Integer) result[0];
@@ -1551,24 +1551,24 @@ if (true) break;
 
 case 12:
 //for
-this.state = 21;
+this.state = 25;
 group21 = parent._etiquetas;
 index21 = 0;
 groupLen21 = group21.getSize();
-this.state = 34;
+this.state = 38;
 if (true) break;
 
-case 34:
+case 38:
 //C
-this.state = 21;
+this.state = 25;
 if (index21 < groupLen21) {
 this.state = 14;
 _et = (BaKapp.Movil.Tag.frm_impresion._etiqueta)(group21.Get(index21));}
 if (true) break;
 
-case 35:
+case 39:
 //C
-this.state = 34;
+this.state = 38;
 index21++;
 if (true) break;
 
@@ -1587,18 +1587,18 @@ _ancho = BA.ObjectToString(_size.Get((Object)("Width")));
  //BA.debugLineNum = 274;BA.debugLine="Dim Alto As String = size.Get(\"Length\")";
 _alto = BA.ObjectToString(_size.Get((Object)("Length")));
  //BA.debugLineNum = 276;BA.debugLine="Log(\"Ancho: \" & Ancho & \" in\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("79502766","Ancho: "+_ancho+" in",0);
+anywheresoftware.b4a.keywords.Common.LogImpl("610289198","Ancho: "+_ancho+" in",0);
  //BA.debugLineNum = 277;BA.debugLine="Log(\"Alto: \" & Alto & \" in\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("79502767","Alto: "+_alto+" in",0);
+anywheresoftware.b4a.keywords.Common.LogImpl("610289199","Alto: "+_alto+" in",0);
  //BA.debugLineNum = 278;BA.debugLine="job.PostString($\"https://api.labelary.com/v1/pr";
 _job._poststring /*String*/ (("https://api.labelary.com/v1/printers/8dpmm/labels/"+anywheresoftware.b4a.keywords.Common.SmartStringFormatter("",(Object)(_ancho))+"x"+anywheresoftware.b4a.keywords.Common.SmartStringFormatter("",(Object)(_alto))+"/0/"),_et.FUNCION /*String*/ );
  //BA.debugLineNum = 281;BA.debugLine="job.GetRequest.SetHeader(\"Accept\", \"image/png\")";
 _job._getrequest /*anywheresoftware.b4h.okhttp.OkHttpClientWrapper.OkHttpRequest*/ ().SetHeader("Accept","image/png");
  //BA.debugLineNum = 283;BA.debugLine="Wait For (job) JobDone(j As HttpJob)";
 anywheresoftware.b4a.keywords.Common.WaitFor("jobdone", processBA, this, (Object)(_job));
-this.state = 36;
+this.state = 40;
 return;
-case 36:
+case 40:
 //C
 this.state = 15;
 _j = (BaKapp.Movil.Tag.httpjob) result[0];
@@ -1608,150 +1608,171 @@ if (true) break;
 
 case 15:
 //if
-this.state = 20;
+this.state = 24;
 if (_j._success /*boolean*/ ) { 
 this.state = 17;
 }else {
-this.state = 19;
+this.state = 23;
 }if (true) break;
 
 case 17:
 //C
-this.state = 20;
+this.state = 18;
  //BA.debugLineNum = 285;BA.debugLine="Dim bmp As Bitmap = j.GetBitmap";
 _bmp = new anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper();
 _bmp = _j._getbitmap /*anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper*/ ();
- //BA.debugLineNum = 286;BA.debugLine="Dim Etiqueta As Map";
-_etiqueta = new anywheresoftware.b4a.objects.collections.Map();
- //BA.debugLineNum = 287;BA.debugLine="Etiqueta.Initialize";
-_etiqueta.Initialize();
- //BA.debugLineNum = 288;BA.debugLine="Etiqueta.Put(\"tipo\", ET.NombreEtiqueta)";
-_etiqueta.Put((Object)("tipo"),(Object)(_et.NombreEtiqueta /*String*/ ));
- //BA.debugLineNum = 289;BA.debugLine="Etiqueta.Put(\"imagen\", bmp)";
-_etiqueta.Put((Object)("imagen"),(Object)(_bmp.getObject()));
- //BA.debugLineNum = 292;BA.debugLine="ListaPersonas.Add(Etiqueta)";
-_listapersonas.Add((Object)(_etiqueta.getObject()));
- if (true) break;
+ //BA.debugLineNum = 286;BA.debugLine="If ET.NombreEtiqueta.Contains(\"(R)\") Then";
+if (true) break;
 
-case 19:
-//C
+case 18:
+//if
+this.state = 21;
+if (_et.NombreEtiqueta /*String*/ .contains("(R)")) { 
 this.state = 20;
- //BA.debugLineNum = 295;BA.debugLine="Log(\"Error: \" & j.ErrorMessage)";
-anywheresoftware.b4a.keywords.Common.LogImpl("79502785","Error: "+_j._errormessage /*String*/ ,0);
- //BA.debugLineNum = 296;BA.debugLine="ToastMessageShow(\"No se pudo generar la etique";
-anywheresoftware.b4a.keywords.Common.ToastMessageShow(BA.ObjectToCharSequence("No se pudo generar la etiqueta"),anywheresoftware.b4a.keywords.Common.True);
- if (true) break;
+}if (true) break;
 
 case 20:
 //C
-this.state = 35;
-;
- //BA.debugLineNum = 298;BA.debugLine="j.Release";
-_j._release /*String*/ ();
+this.state = 21;
+ //BA.debugLineNum = 287;BA.debugLine="bmp = RotateImage(bmp,180)";
+_bmp = _rotateimage(_bmp,(float) (180));
  if (true) break;
-if (true) break;
 
 case 21:
 //C
-this.state = 28;
+this.state = 24;
 ;
+ //BA.debugLineNum = 289;BA.debugLine="Dim Etiqueta As Map";
+_etiqueta = new anywheresoftware.b4a.objects.collections.Map();
+ //BA.debugLineNum = 290;BA.debugLine="Etiqueta.Initialize";
+_etiqueta.Initialize();
+ //BA.debugLineNum = 291;BA.debugLine="Etiqueta.Put(\"tipo\", ET.NombreEtiqueta)";
+_etiqueta.Put((Object)("tipo"),(Object)(_et.NombreEtiqueta /*String*/ ));
+ //BA.debugLineNum = 292;BA.debugLine="Etiqueta.Put(\"imagen\", bmp)";
+_etiqueta.Put((Object)("imagen"),(Object)(_bmp.getObject()));
+ //BA.debugLineNum = 295;BA.debugLine="ListaPersonas.Add(Etiqueta)";
+_listapersonas.Add((Object)(_etiqueta.getObject()));
  if (true) break;
 
 case 23:
 //C
 this.state = 24;
- //BA.debugLineNum = 303;BA.debugLine="bmp1 = LoadBitmap(File.DirAssets, \"emoticon-sad.";
-_bmp1 = anywheresoftware.b4a.keywords.Common.LoadBitmap(anywheresoftware.b4a.keywords.Common.File.getDirAssets(),"emoticon-sad.png");
- //BA.debugLineNum = 304;BA.debugLine="Msgbox2Async(\"Error al traer las etiquetas.\", \"E";
-anywheresoftware.b4a.keywords.Common.Msgbox2Async(BA.ObjectToCharSequence("Error al traer las etiquetas."),BA.ObjectToCharSequence("Error"),"OK","","",_bmp1,processBA,anywheresoftware.b4a.keywords.Common.False);
- //BA.debugLineNum = 305;BA.debugLine="Wait For Msgbox_Result (Result5 As Int)";
-anywheresoftware.b4a.keywords.Common.WaitFor("msgbox_result", processBA, this, null);
-this.state = 37;
-return;
-case 37:
-//C
-this.state = 24;
-_result5 = (Integer) result[0];
-;
- //BA.debugLineNum = 306;BA.debugLine="If(Result5 = DialogResponse.POSITIVE)Then";
-if (true) break;
+ //BA.debugLineNum = 298;BA.debugLine="Log(\"Error: \" & j.ErrorMessage)";
+anywheresoftware.b4a.keywords.Common.LogImpl("610289220","Error: "+_j._errormessage /*String*/ ,0);
+ //BA.debugLineNum = 299;BA.debugLine="ToastMessageShow(\"No se pudo generar la etique";
+anywheresoftware.b4a.keywords.Common.ToastMessageShow(BA.ObjectToCharSequence("No se pudo generar la etiqueta"),anywheresoftware.b4a.keywords.Common.True);
+ if (true) break;
 
 case 24:
-//if
-this.state = 27;
-if ((_result5==anywheresoftware.b4a.keywords.Common.DialogResponse.POSITIVE)) { 
-this.state = 26;
-}if (true) break;
-
-case 26:
 //C
-this.state = 27;
- //BA.debugLineNum = 307;BA.debugLine="ProgressDialogHide";
-anywheresoftware.b4a.keywords.Common.ProgressDialogHide();
- //BA.debugLineNum = 309;BA.debugLine="Btn_Etq1.Enabled = False";
-parent.mostCurrent._btn_etq1.setEnabled(anywheresoftware.b4a.keywords.Common.False);
+this.state = 39;
+;
+ //BA.debugLineNum = 301;BA.debugLine="j.Release";
+_j._release /*String*/ ();
+ if (true) break;
+if (true) break;
+
+case 25:
+//C
+this.state = 32;
+;
  if (true) break;
 
 case 27:
 //C
 this.state = 28;
+ //BA.debugLineNum = 306;BA.debugLine="bmp1 = LoadBitmap(File.DirAssets, \"emoticon-sad.";
+_bmp1 = anywheresoftware.b4a.keywords.Common.LoadBitmap(anywheresoftware.b4a.keywords.Common.File.getDirAssets(),"emoticon-sad.png");
+ //BA.debugLineNum = 307;BA.debugLine="Msgbox2Async(\"Error al traer las etiquetas.\", \"E";
+anywheresoftware.b4a.keywords.Common.Msgbox2Async(BA.ObjectToCharSequence("Error al traer las etiquetas."),BA.ObjectToCharSequence("Error"),"OK","","",_bmp1,processBA,anywheresoftware.b4a.keywords.Common.False);
+ //BA.debugLineNum = 308;BA.debugLine="Wait For Msgbox_Result (Result5 As Int)";
+anywheresoftware.b4a.keywords.Common.WaitFor("msgbox_result", processBA, this, null);
+this.state = 41;
+return;
+case 41:
+//C
+this.state = 28;
+_result5 = (Integer) result[0];
 ;
- //BA.debugLineNum = 312;BA.debugLine="Return";
-if (true) return ;
- if (true) break;
-;
- //BA.debugLineNum = 314;BA.debugLine="For Each Etiqueta As Map In ListaPersonas";
+ //BA.debugLineNum = 309;BA.debugLine="If(Result5 = DialogResponse.POSITIVE)Then";
+if (true) break;
 
 case 28:
-//for
+//if
 this.state = 31;
-_etiqueta = new anywheresoftware.b4a.objects.collections.Map();
-group55 = _listapersonas;
-index55 = 0;
-groupLen55 = group55.getSize();
-this.state = 38;
-if (true) break;
-
-case 38:
-//C
-this.state = 31;
-if (index55 < groupLen55) {
+if ((_result5==anywheresoftware.b4a.keywords.Common.DialogResponse.POSITIVE)) { 
 this.state = 30;
-_etiqueta = (anywheresoftware.b4a.objects.collections.Map) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.collections.Map(), (java.util.Map)(group55.Get(index55)));}
-if (true) break;
-
-case 39:
-//C
-this.state = 38;
-index55++;
-if (true) break;
+}if (true) break;
 
 case 30:
 //C
-this.state = 39;
- //BA.debugLineNum = 315;BA.debugLine="Dim p As Panel = xui.CreatePanel(\"\")";
+this.state = 31;
+ //BA.debugLineNum = 310;BA.debugLine="ProgressDialogHide";
+anywheresoftware.b4a.keywords.Common.ProgressDialogHide();
+ //BA.debugLineNum = 312;BA.debugLine="Btn_Etq1.Enabled = False";
+parent.mostCurrent._btn_etq1.setEnabled(anywheresoftware.b4a.keywords.Common.False);
+ if (true) break;
+
+case 31:
+//C
+this.state = 32;
+;
+ //BA.debugLineNum = 315;BA.debugLine="Return";
+if (true) return ;
+ if (true) break;
+;
+ //BA.debugLineNum = 317;BA.debugLine="For Each Etiqueta As Map In ListaPersonas";
+
+case 32:
+//for
+this.state = 35;
+_etiqueta = new anywheresoftware.b4a.objects.collections.Map();
+group58 = _listapersonas;
+index58 = 0;
+groupLen58 = group58.getSize();
+this.state = 42;
+if (true) break;
+
+case 42:
+//C
+this.state = 35;
+if (index58 < groupLen58) {
+this.state = 34;
+_etiqueta = (anywheresoftware.b4a.objects.collections.Map) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.collections.Map(), (java.util.Map)(group58.Get(index58)));}
+if (true) break;
+
+case 43:
+//C
+this.state = 42;
+index58++;
+if (true) break;
+
+case 34:
+//C
+this.state = 43;
+ //BA.debugLineNum = 318;BA.debugLine="Dim p As Panel = xui.CreatePanel(\"\")";
 _p = new anywheresoftware.b4a.objects.PanelWrapper();
 _p = (anywheresoftware.b4a.objects.PanelWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.PanelWrapper(), (android.view.ViewGroup)(parent.mostCurrent._xui.CreatePanel(processBA,"").getObject()));
- //BA.debugLineNum = 316;BA.debugLine="p.SetLayoutAnimated(0, 0, 0, clv.AsView.Width, 2";
+ //BA.debugLineNum = 319;BA.debugLine="p.SetLayoutAnimated(0, 0, 0, clv.AsView.Width, 2";
 _p.SetLayoutAnimated((int) (0),(int) (0),(int) (0),parent.mostCurrent._clv._asview().getWidth(),anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (250)));
- //BA.debugLineNum = 317;BA.debugLine="p.LoadLayout(\"item_nombre_imagen\")";
+ //BA.debugLineNum = 320;BA.debugLine="p.LoadLayout(\"item_nombre_imagen\")";
 _p.LoadLayout("item_nombre_imagen",mostCurrent.activityBA);
- //BA.debugLineNum = 319;BA.debugLine="LBL_NOM.Text = Etiqueta.Get(\"tipo\")";
+ //BA.debugLineNum = 322;BA.debugLine="LBL_NOM.Text = Etiqueta.Get(\"tipo\")";
 parent.mostCurrent._lbl_nom.setText(BA.ObjectToCharSequence(_etiqueta.Get((Object)("tipo"))));
- //BA.debugLineNum = 320;BA.debugLine="IMGVIEW.Bitmap = Etiqueta.Get(\"imagen\")";
+ //BA.debugLineNum = 323;BA.debugLine="IMGVIEW.Bitmap = Etiqueta.Get(\"imagen\")";
 parent.mostCurrent._imgview._setbitmap /*anywheresoftware.b4a.objects.B4XViewWrapper.B4XBitmapWrapper*/ ((anywheresoftware.b4a.objects.B4XViewWrapper.B4XBitmapWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.B4XViewWrapper.B4XBitmapWrapper(), (android.graphics.Bitmap)(_etiqueta.Get((Object)("imagen")))));
- //BA.debugLineNum = 322;BA.debugLine="clv.Add(p, Etiqueta.Get(\"tipo\"))";
+ //BA.debugLineNum = 325;BA.debugLine="clv.Add(p, Etiqueta.Get(\"tipo\"))";
 parent.mostCurrent._clv._add((anywheresoftware.b4a.objects.B4XViewWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.B4XViewWrapper(), (java.lang.Object)(_p.getObject())),_etiqueta.Get((Object)("tipo")));
  if (true) break;
 if (true) break;
 
-case 31:
+case 35:
 //C
 this.state = -1;
 ;
- //BA.debugLineNum = 324;BA.debugLine="ProgressDialogHide";
+ //BA.debugLineNum = 327;BA.debugLine="ProgressDialogHide";
 anywheresoftware.b4a.keywords.Common.ProgressDialogHide();
- //BA.debugLineNum = 325;BA.debugLine="End Sub";
+ //BA.debugLineNum = 328;BA.debugLine="End Sub";
 if (true) break;
 
             }
@@ -1785,13 +1806,13 @@ return;
 case 0:
 //C
 this.state = 1;
- //BA.debugLineNum = 681;BA.debugLine="Dim bmp1 As Bitmap";
+ //BA.debugLineNum = 684;BA.debugLine="Dim bmp1 As Bitmap";
 _bmp1 = new anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper();
- //BA.debugLineNum = 682;BA.debugLine="bmp1 = LoadBitmap(File.DirAssets, \"question.png\")";
+ //BA.debugLineNum = 685;BA.debugLine="bmp1 = LoadBitmap(File.DirAssets, \"question.png\")";
 _bmp1 = anywheresoftware.b4a.keywords.Common.LoadBitmap(anywheresoftware.b4a.keywords.Common.File.getDirAssets(),"question.png");
- //BA.debugLineNum = 683;BA.debugLine="Msgbox2Async(\"Etiqueta seleccionada: \"&Value , \"C";
+ //BA.debugLineNum = 686;BA.debugLine="Msgbox2Async(\"Etiqueta seleccionada: \"&Value , \"C";
 anywheresoftware.b4a.keywords.Common.Msgbox2Async(BA.ObjectToCharSequence("Etiqueta seleccionada: "+BA.ObjectToString(_value)),BA.ObjectToCharSequence("Confirmación de etiqueta"),"Seleccionar","","Cancelar",_bmp1,processBA,anywheresoftware.b4a.keywords.Common.False);
- //BA.debugLineNum = 684;BA.debugLine="Wait For Msgbox_Result (Result5 As Int)";
+ //BA.debugLineNum = 687;BA.debugLine="Wait For Msgbox_Result (Result5 As Int)";
 anywheresoftware.b4a.keywords.Common.WaitFor("msgbox_result", processBA, this, null);
 this.state = 5;
 return;
@@ -1800,7 +1821,7 @@ case 5:
 this.state = 1;
 _result5 = (Integer) result[0];
 ;
- //BA.debugLineNum = 686;BA.debugLine="If Result5 = DialogResponse.POSITIVE Then";
+ //BA.debugLineNum = 689;BA.debugLine="If Result5 = DialogResponse.POSITIVE Then";
 if (true) break;
 
 case 1:
@@ -1813,11 +1834,11 @@ this.state = 3;
 case 3:
 //C
 this.state = 4;
- //BA.debugLineNum = 687;BA.debugLine="default = Value";
+ //BA.debugLineNum = 690;BA.debugLine="default = Value";
 parent._default = BA.ObjectToString(_value);
- //BA.debugLineNum = 688;BA.debugLine="ToastMessageShow(\"La etiqueta \"&default& \"Design";
+ //BA.debugLineNum = 691;BA.debugLine="ToastMessageShow(\"La etiqueta \"&default& \"Design";
 anywheresoftware.b4a.keywords.Common.ToastMessageShow(BA.ObjectToCharSequence("La etiqueta "+parent._default+"Designada para impresión"),anywheresoftware.b4a.keywords.Common.False);
- //BA.debugLineNum = 689;BA.debugLine="Btn_Etq1_Click";
+ //BA.debugLineNum = 692;BA.debugLine="Btn_Etq1_Click";
 _btn_etq1_click();
  if (true) break;
 
@@ -1825,9 +1846,9 @@ case 4:
 //C
 this.state = -1;
 ;
- //BA.debugLineNum = 692;BA.debugLine="Return";
+ //BA.debugLineNum = 695;BA.debugLine="Return";
 if (true) return ;
- //BA.debugLineNum = 693;BA.debugLine="End Sub";
+ //BA.debugLineNum = 696;BA.debugLine="End Sub";
 if (true) break;
 
             }
@@ -1893,7 +1914,7 @@ anywheresoftware.b4a.keywords.Common.ReturnFromResumableSub(this,null);return;}
 case 0:
 //C
 this.state = -1;
- //BA.debugLineNum = 562;BA.debugLine="Wait For Btn_Probar_Conexion_Click";
+ //BA.debugLineNum = 565;BA.debugLine="Wait For Btn_Probar_Conexion_Click";
 anywheresoftware.b4a.keywords.Common.WaitFor("btn_probar_conexion_click", processBA, this, null);
 this.state = 1;
 return;
@@ -1901,10 +1922,10 @@ case 1:
 //C
 this.state = -1;
 ;
- //BA.debugLineNum = 563;BA.debugLine="Return True";
+ //BA.debugLineNum = 566;BA.debugLine="Return True";
 if (true) {
 anywheresoftware.b4a.keywords.Common.ReturnFromResumableSub(this,(Object)(anywheresoftware.b4a.keywords.Common.True));return;};
- //BA.debugLineNum = 564;BA.debugLine="End Sub";
+ //BA.debugLineNum = 567;BA.debugLine="End Sub";
 if (true) break;
 
             }
@@ -2039,52 +2060,52 @@ return "";
 public static String  _leerdatos() throws Exception{
 BaKapp.Movil.Tag.frm_impresion._otherpricedata _aux = null;
 anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper _bmp1 = null;
- //BA.debugLineNum = 370;BA.debugLine="Sub LeerDatos()";
- //BA.debugLineNum = 371;BA.debugLine="If File.Exists(File.DirInternal, \"impresora.map\")";
+ //BA.debugLineNum = 373;BA.debugLine="Sub LeerDatos()";
+ //BA.debugLineNum = 374;BA.debugLine="If File.Exists(File.DirInternal, \"impresora.map\")";
 if (anywheresoftware.b4a.keywords.Common.File.Exists(anywheresoftware.b4a.keywords.Common.File.getDirInternal(),"impresora.map")) { 
- //BA.debugLineNum = 372;BA.debugLine="datos = File.ReadMap(File.DirInternal, \"impresor";
+ //BA.debugLineNum = 375;BA.debugLine="datos = File.ReadMap(File.DirInternal, \"impresor";
 mostCurrent._datos = anywheresoftware.b4a.keywords.Common.File.ReadMap(anywheresoftware.b4a.keywords.Common.File.getDirInternal(),"impresora.map");
- //BA.debugLineNum = 373;BA.debugLine="Lbl_IP.Text = datos.Get(\"Ip\")";
+ //BA.debugLineNum = 376;BA.debugLine="Lbl_IP.Text = datos.Get(\"Ip\")";
 mostCurrent._lbl_ip.setText(BA.ObjectToCharSequence(mostCurrent._datos.Get((Object)("Ip"))));
- //BA.debugLineNum = 374;BA.debugLine="Lbl_Nombre.Text = datos.Get(\"Nombre\")";
+ //BA.debugLineNum = 377;BA.debugLine="Lbl_Nombre.Text = datos.Get(\"Nombre\")";
 mostCurrent._lbl_nombre.setText(BA.ObjectToCharSequence(mostCurrent._datos.Get((Object)("Nombre"))));
- //BA.debugLineNum = 375;BA.debugLine="Lbl_precio_act.Text =  datos.Get(\"KOLT\")  &\"|\"&";
+ //BA.debugLineNum = 378;BA.debugLine="Lbl_precio_act.Text =  datos.Get(\"KOLT\")  &\"|\"&";
 mostCurrent._lbl_precio_act.setText(BA.ObjectToCharSequence(BA.ObjectToString(mostCurrent._datos.Get((Object)("KOLT")))+"|"+BA.ObjectToString(mostCurrent._datos.Get((Object)("NOKOLT")))));
- //BA.debugLineNum = 376;BA.debugLine="Dim aux As OtherPriceData = DataPrice.Get(Select";
+ //BA.debugLineNum = 379;BA.debugLine="Dim aux As OtherPriceData = DataPrice.Get(Select";
 _aux = (BaKapp.Movil.Tag.frm_impresion._otherpricedata)(mostCurrent._dataprice.Get(_selectedprice));
- //BA.debugLineNum = 377;BA.debugLine="SelectedPrice = datos.Get(\"Seleccionado\")";
+ //BA.debugLineNum = 380;BA.debugLine="SelectedPrice = datos.Get(\"Seleccionado\")";
 _selectedprice = (int)(BA.ObjectToNumber(mostCurrent._datos.Get((Object)("Seleccionado"))));
- //BA.debugLineNum = 378;BA.debugLine="stringPrecio = aux.KOLT";
+ //BA.debugLineNum = 381;BA.debugLine="stringPrecio = aux.KOLT";
 _stringprecio = _aux.KOLT /*String*/ ;
- //BA.debugLineNum = 379;BA.debugLine="Lbl_puerto.Text = datos.Get(\"Puerto\")";
+ //BA.debugLineNum = 382;BA.debugLine="Lbl_puerto.Text = datos.Get(\"Puerto\")";
 mostCurrent._lbl_puerto.setText(BA.ObjectToCharSequence(mostCurrent._datos.Get((Object)("Puerto"))));
- //BA.debugLineNum = 380;BA.debugLine="Dim bmp1 As Bitmap";
+ //BA.debugLineNum = 383;BA.debugLine="Dim bmp1 As Bitmap";
 _bmp1 = new anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper();
- //BA.debugLineNum = 381;BA.debugLine="bmp1 = LoadBitmap(File.DirAssets, \"printer.png\")";
+ //BA.debugLineNum = 384;BA.debugLine="bmp1 = LoadBitmap(File.DirAssets, \"printer.png\")";
 _bmp1 = anywheresoftware.b4a.keywords.Common.LoadBitmap(anywheresoftware.b4a.keywords.Common.File.getDirAssets(),"printer.png");
- //BA.debugLineNum = 382;BA.debugLine="Msgbox2Async(\"Se encontro la configuración de im";
+ //BA.debugLineNum = 385;BA.debugLine="Msgbox2Async(\"Se encontro la configuración de im";
 anywheresoftware.b4a.keywords.Common.Msgbox2Async(BA.ObjectToCharSequence("Se encontro la configuración de impresora"),BA.ObjectToCharSequence("Impresora encontrada"),"Ok","","",_bmp1,processBA,anywheresoftware.b4a.keywords.Common.False);
- //BA.debugLineNum = 383;BA.debugLine="Btn_Etq1.Enabled=True";
+ //BA.debugLineNum = 386;BA.debugLine="Btn_Etq1.Enabled=True";
 mostCurrent._btn_etq1.setEnabled(anywheresoftware.b4a.keywords.Common.True);
- //BA.debugLineNum = 384;BA.debugLine="Lbl_Imprimir.Visible = False";
+ //BA.debugLineNum = 387;BA.debugLine="Lbl_Imprimir.Visible = False";
 mostCurrent._lbl_imprimir.setVisible(anywheresoftware.b4a.keywords.Common.False);
  }else {
- //BA.debugLineNum = 386;BA.debugLine="Dim bmp1 As Bitmap";
+ //BA.debugLineNum = 389;BA.debugLine="Dim bmp1 As Bitmap";
 _bmp1 = new anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper();
- //BA.debugLineNum = 387;BA.debugLine="bmp1 = LoadBitmap(File.DirAssets, \"printer.png\")";
+ //BA.debugLineNum = 390;BA.debugLine="bmp1 = LoadBitmap(File.DirAssets, \"printer.png\")";
 _bmp1 = anywheresoftware.b4a.keywords.Common.LoadBitmap(anywheresoftware.b4a.keywords.Common.File.getDirAssets(),"printer.png");
- //BA.debugLineNum = 388;BA.debugLine="Msgbox2Async(\"Falta la configuración la configur";
+ //BA.debugLineNum = 391;BA.debugLine="Msgbox2Async(\"Falta la configuración la configur";
 anywheresoftware.b4a.keywords.Common.Msgbox2Async(BA.ObjectToCharSequence("Falta la configuración la configuración de la impresora."),BA.ObjectToCharSequence("Alerta"),"Ok","","",_bmp1,processBA,anywheresoftware.b4a.keywords.Common.False);
- //BA.debugLineNum = 389;BA.debugLine="Btn_Conf_Click";
+ //BA.debugLineNum = 392;BA.debugLine="Btn_Conf_Click";
 _btn_conf_click();
- //BA.debugLineNum = 390;BA.debugLine="Btn_Cerrar.Enabled = False";
+ //BA.debugLineNum = 393;BA.debugLine="Btn_Cerrar.Enabled = False";
 mostCurrent._btn_cerrar.setEnabled(anywheresoftware.b4a.keywords.Common.False);
- //BA.debugLineNum = 392;BA.debugLine="Log(\"El archivo no existe.\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("79699350","El archivo no existe.",0);
- //BA.debugLineNum = 393;BA.debugLine="datos.Initialize  ' Por si necesitas usar el Map";
+ //BA.debugLineNum = 395;BA.debugLine="Log(\"El archivo no existe.\")";
+anywheresoftware.b4a.keywords.Common.LogImpl("610485782","El archivo no existe.",0);
+ //BA.debugLineNum = 396;BA.debugLine="datos.Initialize  ' Por si necesitas usar el Map";
 mostCurrent._datos.Initialize();
  };
- //BA.debugLineNum = 401;BA.debugLine="End Sub";
+ //BA.debugLineNum = 404;BA.debugLine="End Sub";
 return "";
 }
 public static anywheresoftware.b4a.objects.collections.List  _parseetiquetas(String _json) throws Exception{
@@ -2094,22 +2115,22 @@ anywheresoftware.b4a.objects.collections.List _tablelist = null;
 anywheresoftware.b4a.objects.collections.List _result = null;
 anywheresoftware.b4a.objects.collections.Map _entry = null;
 BaKapp.Movil.Tag.frm_impresion._etiqueta _data = null;
- //BA.debugLineNum = 349;BA.debugLine="Sub ParseEtiquetas(Json As String ) As List";
- //BA.debugLineNum = 350;BA.debugLine="Dim parser As JSONParser";
+ //BA.debugLineNum = 352;BA.debugLine="Sub ParseEtiquetas(Json As String ) As List";
+ //BA.debugLineNum = 353;BA.debugLine="Dim parser As JSONParser";
 _parser = new anywheresoftware.b4a.objects.collections.JSONParser();
- //BA.debugLineNum = 351;BA.debugLine="parser.Initialize(Json)";
+ //BA.debugLineNum = 354;BA.debugLine="parser.Initialize(Json)";
 _parser.Initialize(_json);
- //BA.debugLineNum = 352;BA.debugLine="Dim root As Map = parser.NextObject";
+ //BA.debugLineNum = 355;BA.debugLine="Dim root As Map = parser.NextObject";
 _root = new anywheresoftware.b4a.objects.collections.Map();
 _root = _parser.NextObject();
- //BA.debugLineNum = 353;BA.debugLine="Dim tableList As List = root.Get(\"Table\")";
+ //BA.debugLineNum = 356;BA.debugLine="Dim tableList As List = root.Get(\"Table\")";
 _tablelist = new anywheresoftware.b4a.objects.collections.List();
 _tablelist = (anywheresoftware.b4a.objects.collections.List) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.collections.List(), (java.util.List)(_root.Get((Object)("Table"))));
- //BA.debugLineNum = 355;BA.debugLine="Dim result As List";
+ //BA.debugLineNum = 358;BA.debugLine="Dim result As List";
 _result = new anywheresoftware.b4a.objects.collections.List();
- //BA.debugLineNum = 356;BA.debugLine="result.Initialize";
+ //BA.debugLineNum = 359;BA.debugLine="result.Initialize";
 _result.Initialize();
- //BA.debugLineNum = 358;BA.debugLine="For Each entry As Map In tableList";
+ //BA.debugLineNum = 361;BA.debugLine="For Each entry As Map In tableList";
 _entry = new anywheresoftware.b4a.objects.collections.Map();
 {
 final anywheresoftware.b4a.BA.IterableList group7 = _tablelist;
@@ -2118,21 +2139,21 @@ final int groupLen7 = group7.getSize()
 ;
 for (; index7 < groupLen7;index7++){
 _entry = (anywheresoftware.b4a.objects.collections.Map) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.collections.Map(), (java.util.Map)(group7.Get(index7)));
- //BA.debugLineNum = 359;BA.debugLine="Dim data As Etiqueta";
+ //BA.debugLineNum = 362;BA.debugLine="Dim data As Etiqueta";
 _data = new BaKapp.Movil.Tag.frm_impresion._etiqueta();
- //BA.debugLineNum = 360;BA.debugLine="data.Initialize";
+ //BA.debugLineNum = 363;BA.debugLine="data.Initialize";
 _data.Initialize();
- //BA.debugLineNum = 361;BA.debugLine="data.NombreEtiqueta = entry.Get(\"NombreEtiqueta\"";
+ //BA.debugLineNum = 364;BA.debugLine="data.NombreEtiqueta = entry.Get(\"NombreEtiqueta\"";
 _data.NombreEtiqueta /*String*/  = BA.ObjectToString(_entry.Get((Object)("NombreEtiqueta")));
- //BA.debugLineNum = 362;BA.debugLine="data.FUNCION = entry.Get(\"FUNCION\")";
+ //BA.debugLineNum = 365;BA.debugLine="data.FUNCION = entry.Get(\"FUNCION\")";
 _data.FUNCION /*String*/  = BA.ObjectToString(_entry.Get((Object)("FUNCION")));
- //BA.debugLineNum = 365;BA.debugLine="result.Add(data)";
+ //BA.debugLineNum = 368;BA.debugLine="result.Add(data)";
 _result.Add((Object)(_data));
  }
 };
- //BA.debugLineNum = 368;BA.debugLine="Return result";
+ //BA.debugLineNum = 371;BA.debugLine="Return result";
 if (true) return _result;
- //BA.debugLineNum = 369;BA.debugLine="End Sub";
+ //BA.debugLineNum = 372;BA.debugLine="End Sub";
 return null;
 }
 public static anywheresoftware.b4a.objects.collections.List  _parseotherpricejson(String _json) throws Exception{
@@ -2208,20 +2229,20 @@ return null;
 public static boolean  _ping(String _ip) throws Exception{
 anywheresoftware.b4a.phone.Phone _p = null;
 int _r = 0;
- //BA.debugLineNum = 444;BA.debugLine="Sub Ping(IP As String) As Boolean";
- //BA.debugLineNum = 445;BA.debugLine="Try";
-try { //BA.debugLineNum = 446;BA.debugLine="Dim p As Phone";
+ //BA.debugLineNum = 447;BA.debugLine="Sub Ping(IP As String) As Boolean";
+ //BA.debugLineNum = 448;BA.debugLine="Try";
+try { //BA.debugLineNum = 449;BA.debugLine="Dim p As Phone";
 _p = new anywheresoftware.b4a.phone.Phone();
- //BA.debugLineNum = 447;BA.debugLine="Dim r As Int = p.Shell(\"ping -c 1 -w 1 \" & IP, N";
+ //BA.debugLineNum = 450;BA.debugLine="Dim r As Int = p.Shell(\"ping -c 1 -w 1 \" & IP, N";
 _r = _p.Shell("ping -c 1 -w 1 "+_ip,(String[])(anywheresoftware.b4a.keywords.Common.Null),(java.lang.StringBuilder)(anywheresoftware.b4a.keywords.Common.Null),(java.lang.StringBuilder)(anywheresoftware.b4a.keywords.Common.Null));
- //BA.debugLineNum = 448;BA.debugLine="Return (r = 0)  ' Si el ping es exitoso, devuelv";
+ //BA.debugLineNum = 451;BA.debugLine="Return (r = 0)  ' Si el ping es exitoso, devuelv";
 if (true) return (_r==0);
  } 
        catch (Exception e6) {
-			processBA.setLastException(e6); //BA.debugLineNum = 450;BA.debugLine="Return False";
+			processBA.setLastException(e6); //BA.debugLineNum = 453;BA.debugLine="Return False";
 if (true) return anywheresoftware.b4a.keywords.Common.False;
  };
- //BA.debugLineNum = 452;BA.debugLine="End Sub";
+ //BA.debugLineNum = 455;BA.debugLine="End Sub";
 return false;
 }
 public static String  _process_globals() throws Exception{
@@ -2240,6 +2261,29 @@ _etiquetas = new anywheresoftware.b4a.objects.collections.List();
 _default = "";
  //BA.debugLineNum = 16;BA.debugLine="End Sub";
 return "";
+}
+public static anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper  _rotateimage(anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper _original,float _degree) throws Exception{
+anywheresoftware.b4j.object.JavaObject _matrix = null;
+anywheresoftware.b4j.object.JavaObject _bmp = null;
+anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper _newimage = null;
+ //BA.debugLineNum = 697;BA.debugLine="Private Sub RotateImage(original As Bitmap, degree";
+ //BA.debugLineNum = 698;BA.debugLine="Dim matrix As JavaObject";
+_matrix = new anywheresoftware.b4j.object.JavaObject();
+ //BA.debugLineNum = 699;BA.debugLine="matrix.InitializeNewInstance(\"android.graphics.Ma";
+_matrix.InitializeNewInstance("android.graphics.Matrix",(Object[])(anywheresoftware.b4a.keywords.Common.Null));
+ //BA.debugLineNum = 700;BA.debugLine="matrix.RunMethod(\"postRotate\", Array(degree))";
+_matrix.RunMethod("postRotate",new Object[]{(Object)(_degree)});
+ //BA.debugLineNum = 702;BA.debugLine="Dim bmp As JavaObject";
+_bmp = new anywheresoftware.b4j.object.JavaObject();
+ //BA.debugLineNum = 703;BA.debugLine="bmp.InitializeStatic(\"android.graphics.Bitmap\")";
+_bmp.InitializeStatic("android.graphics.Bitmap");
+ //BA.debugLineNum = 705;BA.debugLine="Dim NewImage As Bitmap = bmp.RunMethod(\"createBit";
+_newimage = new anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper();
+_newimage = (anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper(), (android.graphics.Bitmap)(_bmp.RunMethod("createBitmap",new Object[]{(Object)(_original.getObject()),(Object)(0),(Object)(0),(Object)(_original.getWidth()),(Object)(_original.getHeight()),(Object)(_matrix.getObject()),(Object)(anywheresoftware.b4a.keywords.Common.True)})));
+ //BA.debugLineNum = 707;BA.debugLine="Return NewImage";
+if (true) return _newimage;
+ //BA.debugLineNum = 708;BA.debugLine="End Sub";
+return null;
 }
 public static BaKapp.Movil.Tag.httpjob  _sb_buscarlistaprecios(Object _me_) throws Exception{
 String _vxml = "";
@@ -2269,24 +2313,24 @@ public static BaKapp.Movil.Tag.httpjob  _sb_traeretiquetas(Object _me_) throws E
 String _vxml = "";
 String _poststring = "";
 BaKapp.Movil.Tag.httpjob _js = null;
- //BA.debugLineNum = 328;BA.debugLine="Private Sub Sb_TraerEtiquetas(Me_ As Object) As Ht";
- //BA.debugLineNum = 330;BA.debugLine="Dim vXml As String = $\"<?xml version=\"1.0\" encodi";
+ //BA.debugLineNum = 331;BA.debugLine="Private Sub Sb_TraerEtiquetas(Me_ As Object) As Ht";
+ //BA.debugLineNum = 333;BA.debugLine="Dim vXml As String = $\"<?xml version=\"1.0\" encodi";
 _vxml = ("<?xml version=\"1.0\" encoding=\"utf-8\"?>\n"+"<soap:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\n"+"  <soap:Body>\n"+"    <Sb_TraerEtiquetas xmlns=\"http://BakApp\" />\n"+"  </soap:Body>\n"+"</soap:Envelope>\n"+"");
- //BA.debugLineNum = 338;BA.debugLine="Dim PostString As String =\"http://\" & Variables.G";
+ //BA.debugLineNum = 341;BA.debugLine="Dim PostString As String =\"http://\" & Variables.G";
 _poststring = "http://"+mostCurrent._variables._global_ip_webservice /*String*/ +"/Ws_BakApp.asmx";
- //BA.debugLineNum = 339;BA.debugLine="Dim Js As HttpJob";
+ //BA.debugLineNum = 342;BA.debugLine="Dim Js As HttpJob";
 _js = new BaKapp.Movil.Tag.httpjob();
- //BA.debugLineNum = 341;BA.debugLine="Js.Initialize(\"\",Me_)'";
+ //BA.debugLineNum = 344;BA.debugLine="Js.Initialize(\"\",Me_)'";
 _js._initialize /*String*/ (processBA,"",_me_);
- //BA.debugLineNum = 342;BA.debugLine="Js.PostString(PostString,vXml)";
+ //BA.debugLineNum = 345;BA.debugLine="Js.PostString(PostString,vXml)";
 _js._poststring /*String*/ (_poststring,_vxml);
- //BA.debugLineNum = 343;BA.debugLine="Js.GetRequest.SetContentType(\"text/xml; charset=u";
+ //BA.debugLineNum = 346;BA.debugLine="Js.GetRequest.SetContentType(\"text/xml; charset=u";
 _js._getrequest /*anywheresoftware.b4h.okhttp.OkHttpClientWrapper.OkHttpRequest*/ ().SetContentType("text/xml; charset=utf-8");
- //BA.debugLineNum = 344;BA.debugLine="Js.GetRequest.SetHeader(\"SOAPAction\",$\"\"http://Ba";
+ //BA.debugLineNum = 347;BA.debugLine="Js.GetRequest.SetHeader(\"SOAPAction\",$\"\"http://Ba";
 _js._getrequest /*anywheresoftware.b4h.okhttp.OkHttpClientWrapper.OkHttpRequest*/ ().SetHeader("SOAPAction",("\"http://BakApp/Sb_TraerEtiquetas\""));
- //BA.debugLineNum = 345;BA.debugLine="Return Js";
+ //BA.debugLineNum = 348;BA.debugLine="Return Js";
 if (true) return _js;
- //BA.debugLineNum = 347;BA.debugLine="End Sub";
+ //BA.debugLineNum = 350;BA.debugLine="End Sub";
 return null;
 }
 }
