@@ -289,6 +289,9 @@ Sub CargarLista
 			Wait For (job) JobDone(j As HttpJob)
 			If j.Success Then
 				Dim bmp As Bitmap = j.GetBitmap
+				If ET.NombreEtiqueta.Contains("(R)") Then
+					bmp = RotateImage(bmp,180)
+				End If
 				Dim Etiqueta As Map
 				Etiqueta.Initialize
 				Etiqueta.Put("tipo", ET.NombreEtiqueta)
@@ -696,4 +699,16 @@ Private Sub clv_ItemClick (Index As Int, Value As Object)
 	End If
 
 	Return
+End Sub
+Private Sub RotateImage(original As Bitmap, degree As Float) As Bitmap
+	Dim matrix As JavaObject
+	matrix.InitializeNewInstance("android.graphics.Matrix", Null)
+	matrix.RunMethod("postRotate", Array(degree))
+    
+	Dim bmp As JavaObject
+	bmp.InitializeStatic("android.graphics.Bitmap")
+    
+	Dim NewImage As Bitmap = bmp.RunMethod("createBitmap", Array(original, 0, 0, original.Width, original.Height, matrix, True))
+    
+	Return NewImage
 End Sub

@@ -99,7 +99,7 @@ this.state = 1;
 _js = (BaKapp.Movil.Tag.httpjob) result[0];
 ;
  //BA.debugLineNum = 45;BA.debugLine="Log(\"Revisando la existencia de Tabla \" & Tabla)";
-parent.__c.LogImpl("714155786","Revisando la existencia de Tabla "+_tabla,0);
+parent.__c.LogImpl("614286858","Revisando la existencia de Tabla "+_tabla,0);
  //BA.debugLineNum = 47;BA.debugLine="If Js.Success Then";
 if (true) break;
 

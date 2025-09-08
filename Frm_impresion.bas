@@ -36,7 +36,7 @@ Sub Globals
 	Private Btn_BuscarProd As Button
 	Private Panel_Buscador As Panel
 	Private YaBusco As Boolean = False
-	Private ListView1 As ListView
+	Private ListView1 As CustomListView
 	Private EditText1 As EditText
 	Private B4XComboBox1 As B4XComboBox
 	Private Btn_CerrarBuscador As Button
@@ -46,6 +46,7 @@ Sub Globals
 	Private Lbl_codigo As Label
 	Private Lbl_Desc As Label
 	Private cantidad As Int
+	private xui as XUI
 	Private Lbl_precio As Label
 	Private Btn_imprimir As Button
 	Private Serial1 As Serial
@@ -68,6 +69,10 @@ Sub Globals
 	Private B4XPlusMinus1 As B4XPlusMinus
 	Private Spinner_cant As Spinner
 	Private Btn_limpiar As Button
+	Private Lbl_oferta As Label
+	Private Img_Alerta As ImageView
+	Private LBL_LISTDES As Label
+	Private LBL_LISTCOD As Label
 End Sub
 
 Sub Activity_Create(FirstTime As Boolean)
@@ -304,6 +309,7 @@ Sub Parse_Products_JSON(json As String)
 
 	DataList.Initialize
 	ListView1.Clear
+	ListView1.DefaultTextBackgroundColor = Colors.Transparent
 
 	For Each entry As Map In tableList
 		Dim data As TableData
@@ -321,7 +327,17 @@ Sub Parse_Products_JSON(json As String)
 	
 '		Dim text As String =  & " | " & 
 '		ListView1.Add
-		ListView1.AddTwoLinesAndBitmap("Codigo: "&data.CODIGO, data.DESCRIPCION, Null)
+		' Configuración antes de agregar ítems
+		Dim p As B4XView = xui.CreatePanel("")
+		p.SetLayoutAnimated(0, 0, 0, 100%x, 120dip) ' ancho = 100% del CLV, alto ajustable
+		p.LoadLayout("LISTITEM")   ' tu layout de fila
+    
+		LBL_LISTCOD.Text = data.CODIGO
+		LBL_LISTDES.Text = data.DESCRIPCION
+    
+		' Agregar al CustomListView
+		ListView1.Add(p, "")
+
 	Next
 End Sub
 
@@ -417,7 +433,48 @@ Private Sub Btn_BuscarProd_Click
 			Return
 	End If
 End Sub
+private Sub DescuentoHay(selectedData As TableData )
+	Dim Consulta_Sql As String = _
+    "SELECT Dres.CODIGO, Dres.NREG, Dres.ELEMENTO, NOKOPR, Eres.LISTAS " & _
+    "FROM MAEDRES Dres " & _
+    "INNER JOIN MAEERES Eres ON Eres.CODIGO = Dres.CODIGO " & _
+    "LEFT JOIN MAEPR ON KOPR = Dres.ELEMENTO " & _
+    "WHERE CAST(GETDATE() AS DATE) BETWEEN Eres.FIOFERTA AND Eres.FTOFERTA " & _
+    "AND Dres.ELEMENTO = '" & selectedData.CODIGO & "'"
+	Dim Js As HttpJob = Funciones.Fx_HttJob_Ws_Sb_GetDataSet_Json(Consulta_Sql,Me)
+	Wait For (Js) JobDone(Js As HttpJob)
+	If Js.Success Then
+	
+		Dim vJson As String = Js.GetString
+		If  vJson = $"{"Table":[]}"$  Then
+			Lbl_oferta.Visible = False
+			Img_Alerta.Visible = False
+			Return 
 
+			Else
+			Dim alerta As String =$"Codigo: ${selectedData.CODIGO}
+Descripción: ${selectedData.DESCRIPCION}
+				"$
+			Bucle(alerta)
+			Lbl_oferta.Visible = True
+			Img_Alerta.Visible = True
+		End If
+	End If
+End Sub
+private Sub Bucle(alerta As String)
+	Dim bmp1 As Bitmap
+	bmp1 = LoadBitmap(File.DirAssets, "security-danger.png")
+	
+	Msgbox2Async(alerta,"¡***Producto en oferta***!","Leido","","No Leido",bmp1,False)
+	Wait For Msgbox_Result (Result5 As Int)
+			
+	If Result5 = DialogResponse.POSITIVE Then
+		Return
+	Else
+		Bucle(alerta)
+		Return
+	End If
+End Sub
 Private Sub ListView1_ItemClick (Position As Int, Value As Object)
 	Dim selectedData As TableData = DataList.Get(Position)
 	ProgressDialogShow2("Rellenando la etiqueta", False)
@@ -485,11 +542,12 @@ Private Sub ListView1_ItemClick (Position As Int, Value As Object)
 		YaBusco = True
 		If EsCorrecto Then
 			etiqueta_ZPL = Etiqueta
+			DescuentoHay(selectedData)
 		Else
 			Dim bmp1 As Bitmap
 			
 			bmp1 = LoadBitmap(File.DirAssets, "emoticon-sad.png")
-			Msgbox2Async("Error creando la etiqueta.", "Error", "OK", "", "", bmp1, False)
+			Msgbox2Async($"Error creando la etiqueta:${Mensaje}"$, "Error", "OK", "", "", bmp1, False)
 			Wait For Msgbox_Result (Result5 As Int)
 			
 			If Result5 = DialogResponse.POSITIVE Then
@@ -503,6 +561,7 @@ Private Sub ListView1_ItemClick (Position As Int, Value As Object)
 		If Result5 = DialogResponse.POSITIVE Then
 		End If
 		Log("Error en la petición HTTP")
+		
 	End If
 	ProgressDialogHide
 	
@@ -1068,20 +1127,54 @@ Private Sub Btn_Calibrar_Click
 End Sub
 
 
+Public Sub GetLabelSizeInches(zpl As String, dpi As Int) As Map
+	Dim res As Map
+	res.Initialize
+    
+	Dim widthDots As Int = 0
+	Dim lengthDots As Int = 0
+    
+	'Buscar ^PW (Print Width)
+	Dim m As Matcher = Regex.Matcher("\^PW(\d+)", zpl)
+	If m.Find Then
+		widthDots = m.Group(1)
+	End If
+    
+	'Buscar ^LL (Label Length)
+	Dim m2 As Matcher = Regex.Matcher("\^LL(\d+)", zpl)
+	If m2.Find Then
+		lengthDots = m2.Group(1)
+	End If
+    
+	'Convertir a pulgadas
+	Dim widthInches As Double = widthDots / dpi
+	Dim lengthInches As Double = lengthDots / dpi
+    
+	res.Put("Width", widthInches)
+	res.Put("Length", lengthInches)
+    
+	Return res
+End Sub
 Private Sub Btn_Ver_Click()
 	Panelinfo.Visible=False
 	Dim FechaActual As String
 	FechaActual = DateTime.Date(DateTime.Now)
 	Dim zpl As String = etiqueta_ZPL
-		
+	Dim size As Map = GetLabelSizeInches(zpl, 203) 'ZPL está en ET.FUNCION
+
+	Dim ANC As String = size.Get("Width")
+	Dim ALT As String = size.Get("Length")
 	Dim job As HttpJob
 	job.Initialize("", Me)
-	job.PostString($"https://api.labelary.com/v1/printers/8dpmm/labels/${Ancho}x${Alto}/0/"$, zpl)
+	job.PostString($"https://api.labelary.com/v1/printers/8dpmm/labels/${ANC}x${ALT}/0/"$, zpl)
 	job.GetRequest.SetHeader("Accept", "image/png")
 
 	Wait For (job) JobDone(j As HttpJob)
 	If j.Success Then
 		Dim bmp As Bitmap = j.GetBitmap
+		If tip.Contains("(R)") Then
+			bmp = RotateImage(bmp,180)
+		End If
 		ImageView1.Bitmap = bmp
 	Else
 		Log("Error: " & j.ErrorMessage)
@@ -1196,6 +1289,7 @@ End Sub
 Private Sub Btn_rotar_Click
 	ImageView1.Bitmap = RotateImage(ImageView1.Bitmap,180)
 End Sub
+
 Private Sub RotateImage(original As Bitmap, degree As Float) As Bitmap
 	Dim matrix As JavaObject
 	matrix.InitializeNewInstance("android.graphics.Matrix", Null)

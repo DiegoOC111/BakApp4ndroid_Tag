@@ -768,7 +768,7 @@ case 34:
 //C
 this.state = 35;
  //BA.debugLineNum = 1277;BA.debugLine="Log(Codigo & \"-\" & Descripcion)";
-parent.__c.LogImpl("715728787",_codigo+"-"+_descripcion,0);
+parent.__c.LogImpl("615859859",_codigo+"-"+_descripcion,0);
  if (true) break;
 
 case 35:
@@ -915,7 +915,7 @@ this.state = 47;
  //BA.debugLineNum = 1339;BA.debugLine="DBUtils.UpdateRecord2(Variables.vSql,\"Detall";
 parent._dbutils._updaterecord2 /*String*/ (parent.getActivityBA(),parent._variables._vsql /*anywheresoftware.b4a.sql.SQL*/ ,"Detalle_Doc",_new_row,_fila_id);
  //BA.debugLineNum = 1341;BA.debugLine="Log(Codigo & \"-\" & Descripcion)";
-parent.__c.LogImpl("715728851",_codigo+"-"+_descripcion,0);
+parent.__c.LogImpl("615859923",_codigo+"-"+_descripcion,0);
  if (true) break;
 
 case 47:
@@ -1208,7 +1208,7 @@ case 4:
 this.state = 5;
 ;
  //BA.debugLineNum = 88;BA.debugLine="Log(\"Documento cargado... Id_DocEnc = \" & Id_DocE";
-parent.__c.LogImpl("715466550","Documento cargado... Id_DocEnc = "+BA.NumberToString(parent._id_docenc),0);
+parent.__c.LogImpl("615597622","Documento cargado... Id_DocEnc = "+BA.NumberToString(parent._id_docenc),0);
  //BA.debugLineNum = 91;BA.debugLine="Dim FechaEmision As Long = DateTime.Now";
 _fechaemision = parent.__c.DateTime.getNow();
  //BA.debugLineNum = 92;BA.debugLine="Dim Fecha_1er_Vencimiento As Long = FechaEmision";
@@ -2347,7 +2347,7 @@ case 9:
 //C
 this.state = 10;
  //BA.debugLineNum = 1502;BA.debugLine="Log(Js.ErrorMessage)";
-parent.__c.LogImpl("715925289",_js._errormessage /*String*/ ,0);
+parent.__c.LogImpl("616056361",_js._errormessage /*String*/ ,0);
  //BA.debugLineNum = 1503;BA.debugLine="ToastMessageShow(\"CONCEPTO NO ENCONTRADO\", False";
 parent.__c.ToastMessageShow(BA.ObjectToCharSequence("CONCEPTO NO ENCONTRADO"),parent.__c.False);
  if (true) break;
@@ -2552,7 +2552,7 @@ case 9:
 //C
 this.state = 10;
  //BA.debugLineNum = 1753;BA.debugLine="Log(Js.ErrorMessage)";
-parent.__c.LogImpl("716252951",_js._errormessage /*String*/ ,0);
+parent.__c.LogImpl("616384023",_js._errormessage /*String*/ ,0);
  if (true) break;
 
 case 10:
@@ -2659,7 +2659,7 @@ case 9:
 //C
 this.state = 10;
  //BA.debugLineNum = 1693;BA.debugLine="Log(Js.ErrorMessage)";
-parent.__c.LogImpl("716121879",_js._errormessage /*String*/ ,0);
+parent.__c.LogImpl("616252951",_js._errormessage /*String*/ ,0);
  if (true) break;
 
 case 10:
@@ -2770,7 +2770,7 @@ case 9:
 //C
 this.state = 10;
  //BA.debugLineNum = 1123;BA.debugLine="Log(Js.ErrorMessage)";
-parent.__c.LogImpl("715663127",_js._errormessage /*String*/ ,0);
+parent.__c.LogImpl("615794199",_js._errormessage /*String*/ ,0);
  if (true) break;
 
 case 10:
@@ -2877,7 +2877,7 @@ case 9:
 //C
 this.state = 10;
  //BA.debugLineNum = 1723;BA.debugLine="Log(Js.ErrorMessage)";
-parent.__c.LogImpl("716187415",_js._errormessage /*String*/ ,0);
+parent.__c.LogImpl("616318487",_js._errormessage /*String*/ ,0);
  if (true) break;
 
 case 10:
