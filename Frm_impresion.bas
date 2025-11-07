@@ -16,7 +16,7 @@ Sub Process_Globals
     DESCRIPCION As String, _
     MRPR As String, _
     RAPIDO As String, _
-    KOPRAL As String)
+    KOPRAL As String, BLOQUEAPR As String)
 	
 	Dim DataList As List
 	Dim DataPrice As List
@@ -46,7 +46,7 @@ Sub Globals
 	Private Lbl_codigo As Label
 	Private Lbl_Desc As Label
 	Private cantidad As Int
-	private xui as XUI
+	Private xui As XUI
 	Private Lbl_precio As Label
 	Private Btn_imprimir As Button
 	Private Serial1 As Serial
@@ -320,7 +320,7 @@ Sub Parse_Products_JSON(json As String)
 		data.MRPR = entry.Get("MRPR")
 		data.RAPIDO = entry.Get("RAPIDO")
 		data.KOPRAL = entry.Get("KOPRAL")
-
+		data.BLOQUEAPR = entry.Get("BLOQUEAPR")
 		DataList.Add(data)
 
 		
@@ -477,6 +477,35 @@ private Sub Bucle(alerta As String)
 End Sub
 Private Sub ListView1_ItemClick (Position As Int, Value As Object)
 	Dim selectedData As TableData = DataList.Get(Position)
+	Dim Mensaje As String 
+ 	Dim Mensaje = ""
+	Select selectedData.BLOQUEAPR
+		Case "V"
+			Mensaje = "bloqueado para ventas"
+		Case "C"
+			Mensaje = "bloqueado para compras"
+		Case "T"
+			Mensaje = "bloqueado para ventas y compras"
+		Case "X"
+			Mensaje = "bloqueado para ventas, compras y producción"
+	End Select
+	
+	If Mensaje <> "" Then
+		
+		ProgressDialogHide
+		Dim bmp1 As Bitmap
+			
+		bmp1 = LoadBitmap(File.DirAssets, "warning.png")
+		Msgbox2Async($"Este producto se encuentra ${Mensaje}. ¿Quieres seleccionarlo igualmente?"$,"Advertencia", "No", "Sí", "", bmp1, False)
+		Wait For Msgbox_Result (Result5 As Int)
+			
+		If Result5 = DialogResponse.POSITIVE Then
+			Return
+			
+		End If
+
+	End If
+	
 	ProgressDialogShow2("Rellenando la etiqueta", False)
 	Dim Js As HttpJob = Bsc("Principal",selectedData.CODIGO,Me,Variables.Gl_Empresa,Variables.Gl_Sucursal,Variables.Gl_Bodega, stringPrecio1)
 	Wait For (Js) JobDone(Js As HttpJob)
@@ -654,24 +683,24 @@ Private Sub Buscar_x_Comentario(Tipo As String, VDescripcion As String, Me_ As O
 	Dim tabcodal As String = ""
 	If selectedString = "Tecnico" Then
 		
-		Consul = "WHERE Mp.KOPRTE  Like '%" & vCadena & "%'"
+		Consul = "Mp.KOPRTE  Like '%" & vCadena & "%'"
 		
 	else if selectedString = "Rapido" Then
 		
-		Consul = "WHERE Mp.KOPRRA  Like '%" & vCadena & "%'"
+		Consul = "Mp.KOPRRA  Like '%" & vCadena & "%'"
 	  
 	Else if selectedString = "Principal" Then
 		
-		Consul = "WHERE (Mp.KOPR  Like '%" & vCadena & "%') OR ((ta.KOPRAL = '"& VDescripcion  &"' ) and (ta.KOEN = '')) "
+		Consul = "(Mp.KOPR  Like '%" & vCadena & "%') OR ((ta.KOPRAL = '"& VDescripcion  &"' ) and (ta.KOEN = '')) "
 		tabcodal = "left join TABCODAL ta on Mp.KOPR = ta.KOPR"
 		
 			
 	Else if selectedString = "Descripcion" Then
 		
-		Consul = "WHERE Mp.NOKOPR  Like '%" & vCadena & "%'"
+		Consul = "Mp.NOKOPR  Like '%" & vCadena & "%'"
 	Else if selectedString = "Alternativo" Then
 		
-		Consul = "WHERE ((ta.KOPRAL = '"& VDescripcion  &"' ) and (ta.KOEN = '')) "
+		Consul = "((ta.KOPRAL = '"& VDescripcion  &"' ) and (ta.KOEN = '')) "
 		tabcodal = "left join TABCODAL ta on Mp.KOPR = ta.KOPR"
 		
 		
@@ -693,16 +722,17 @@ Private Sub Buscar_x_Comentario(Tipo As String, VDescripcion As String, Me_ As O
                    "Order by Mp.KOPR" & CRLF & _
                    "Option ( Fast 25 )"
 				   
-	Consulta_Sql = $"SELECT distinct TOP (25) Mp.KOPR AS CODIGO,Mp.KOPRTE As CODTECNICO, NOKOPR AS DESCRIPCION,MRPR, KOPRRA as RAPIDO,
+	Consulta_Sql = $"SELECT distinct TOP (25) Mp.KOPR AS CODIGO,Mp.KOPRTE As CODTECNICO, NOKOPR AS DESCRIPCION,MRPR, KOPRRA as RAPIDO,Mp.BLOQUEAPR as BLOQUEAPR,
 Isnull((Select Top 1 KOPRAL From TABCODAL Tcd Where Mp.KOPR = Tcd.KOPR),'') As KOPRAL
 From MAEPR Mp With (Nolock)
 left join TABCODAL ta on Mp.KOPR = ta.KOPR
-inner join MAEPREM Me on Me.EMPRESA = '${Empresa}' and Me.KOPR = Mp.KOPR
+inner join MAEPREM Me on Me.EMPRESA = '${Empresa}' and Me.KOPR = Mp.KOPR 
 
-${Consul}
+
+Where Mp.ATPR <> 'OCU'  and ${Consul} 
 Order by Mp.KOPR"$
 				   
-				   
+			   
 	Dim Js As HttpJob = Funciones.Fx_HttJob_Ws_Sb_GetDataSet_Json(Consulta_Sql,Me)
 	Wait For (Js) JobDone(Js As HttpJob)
 	If Js.Success Then
@@ -716,7 +746,8 @@ Order by Mp.KOPR"$
 '			Log(Codigo & " - " & DESCRIPCION)
 '			
 		Else
-		
+			ProgressDialogHide
+			
 			ToastMessageShow("No se encontraron registros",False)
 			
 		End If
