@@ -85,6 +85,6 @@ ModuleClosedNodes6=
 ModuleClosedNodes7=
 ModuleClosedNodes8=
 ModuleClosedNodes9=
-NavigationStack=Frm_impresion,DescuentoHay,431,0,Frm_impresion,Btn_BuscarProd_Click,424,0,Frm_impresion,Bsc,629,0,Frm_impresion,ListView1_ItemClick,482,6,Frm_etiquetas,Activity_Create,89,0,Frm_impresion,ParseOtherPriceJSON,404,0,Crear_Documento,Sb_Traer_Producto2,1390,0,Frm_impresion,Parse_Products_JSON,307,0,Frm_impresion,Activity_KeyPress,233,0,Frm_impresion,Buscar_x_Comentario,744,6,Main,Globals,40,0
+NavigationStack=Frm_impresion,ParseOtherPriceJSON,404,0,Crear_Documento,Sb_Traer_Producto2,1390,0,Frm_impresion,Parse_Products_JSON,307,0,Frm_impresion,Activity_KeyPress,233,0,Frm_impresion,Buscar_x_Comentario,744,6,Frm_impresion,Btn_Menos_Click,1222,0,Diseñador Visual,Impresion.bal,-100,1,Frm_impresion,GetLabelSizeInches,1181,0,Frm_impresion,Btn_Ver_Click,1184,0,Main,Globals,40,0
 SelectedBuild=0
 VisibleModules=16,15,18,12,21,10,20,27
